@@ -1,0 +1,15 @@
+name: Tema
+type: theme
+description: Tema, a subtheme of Classy
+core: 8.x
+base theme: classy
+libraries:
+  - tema/global-styling
+  - tema/global-scripts
+regions:
+  header: Header
+  featured: Featured
+  content: Content
+  sidebar_first: First sidebar
+  sidebar_second: Second sidebar
+  footer: Footer

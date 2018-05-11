@@ -1,0 +1,18 @@
+global-styling:
+  version: VERSION
+  css:
+    base:
+      'https://fonts.googleapis.com/css?family=Gothic+A1': { type: external }
+      css/tema.css: {}
+global-scripts:
+  version: VERSION
+  js:
+    js/scripts.js: {}
+    js/header.js: {}
+  dependencies:
+    - core/jquery
+#custom:
+#    header: true
+#    js:
+#      js/header.js: {}
+        
