@@ -1,10 +1,10 @@
- module.exports = {
+module.exports = {
   browserSync: {
-    hostname: "local.aarome.test",
+    hostname: "localhost",
     port: 8080,
-    openAutomatically: true,
-    reloadDelay: 0,
-    injectChanges: true
+    openAutomatically: false,
+    reloadDelay: 50,
+    injectChanges: true,
   },
 
   drush: {
