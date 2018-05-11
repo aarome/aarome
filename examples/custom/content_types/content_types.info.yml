@@ -1,0 +1,5 @@
+name: 'Content Types'
+type: module
+description: 'Contains custom content types'
+core: 8.x
+package: 'Academy'

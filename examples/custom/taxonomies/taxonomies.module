@@ -1,0 +1,35 @@
+<?php
+
+/**
+ * @file
+ * Contains taxonomies.module.
+ */
+
+use Drupal\Core\Routing\RouteMatchInterface;
+
+/**
+ * Implements hook_help().
+ */
+function taxonomies_help($route_name, RouteMatchInterface $route_match) {
+  switch ($route_name) {
+    // Main module help for the taxonomies module.
+    case 'help.page.taxonomies':
+      $output = '';
+      $output .= '<h3>' . t('About') . '</h3>';
+      $output .= '<p>' . t('Custom taxonomies') . '</p>';
+      return $output;
+
+    default:
+  }
+}
+
+/**
+ * Implements hook_theme().
+ */
+function taxonomies_theme() {
+  return [
+    'taxonomies' => [
+      'render element' => 'children',
+    ],
+  ];
+}

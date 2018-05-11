@@ -1,0 +1,35 @@
+<?php
+
+/**
+ * @file
+ * Contains content_types.module.
+ */
+
+use Drupal\Core\Routing\RouteMatchInterface;
+
+/**
+ * Implements hook_help().
+ */
+function content_types_help($route_name, RouteMatchInterface $route_match) {
+  switch ($route_name) {
+    // Main module help for the content_types module.
+    case 'help.page.content_types':
+      $output = '';
+      $output .= '<h3>' . t('About') . '</h3>';
+      $output .= '<p>' . t('Contains custom content types') . '</p>';
+      return $output;
+
+    default:
+  }
+}
+
+/**
+ * Implements hook_theme().
+ */
+function content_types_theme() {
+  return [
+    'content_types' => [
+      'render element' => 'children',
+    ],
+  ];
+}

@@ -1,0 +1,5 @@
+name: 'Taxonomies'
+type: module
+description: 'Custom taxonomies'
+core: 8.x
+package: 'Academy'

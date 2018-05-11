@@ -1,0 +1,13 @@
+uuid: 223b014c-c81d-45e0-8c4c-0346b0b73d53
+langcode: en
+status: true
+dependencies: {  }
+id: people_and_events
+label: 'People and events'
+enabled: true
+first_field: field_related_people
+second_field: field_related_events
+bundles:
+  node:
+    - events
+    - people

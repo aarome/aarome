@@ -1,0 +1,22 @@
+uuid: 2d80e8a0-c706-4e3c-ae6f-1de13f1bc8b3
+langcode: en
+status: true
+dependencies:
+  module:
+    - system
+  theme:
+    - spacelift
+_core:
+  default_config_hash: KHQIJ7Vfl25lTjzIc7qIvnuistt-Mw2O0kG4jCofmkI
+id: spacelift_messages
+theme: spacelift
+region: utility
+weight: 0
+provider: null
+plugin: system_messages_block
+settings:
+  id: system_messages_block
+  label: 'Status messages'
+  provider: system
+  label_display: '0'
+visibility: {  }

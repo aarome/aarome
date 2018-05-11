@@ -1,0 +1,47 @@
+uuid: 8c8b0cb3-7995-439e-b0f5-817d5452f7cc
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.field.node.people.body
+    - field.field.node.people.field_date_range
+    - field.field.node.people.field_related_events
+    - node.type.people
+  module:
+    - datetime_range
+    - text
+    - user
+id: node.people.default
+targetEntityType: node
+bundle: people
+mode: default
+content:
+  body:
+    label: hidden
+    type: text_default
+    weight: 101
+    settings: {  }
+    third_party_settings: {  }
+    region: content
+  field_date_range:
+    weight: 102
+    label: above
+    settings:
+      separator: '-'
+      format_type: medium
+      timezone_override: ''
+    third_party_settings: {  }
+    type: daterange_default
+    region: content
+  field_related_events:
+    weight: 103
+    label: above
+    settings:
+      link: true
+    third_party_settings: {  }
+    type: entity_reference_label
+    region: content
+  links:
+    weight: 100
+    region: content
+hidden: {  }

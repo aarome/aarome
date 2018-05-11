@@ -1,0 +1,17 @@
+uuid: ddeef738-ee00-47d2-ae71-488eaf00f25b
+langcode: en
+status: true
+dependencies:
+  module:
+    - menu_ui
+third_party_settings:
+  menu_ui:
+    available_menus: {  }
+    parent: ''
+name: People
+type: people
+description: ''
+help: ''
+new_revision: false
+preview_mode: 1
+display_submitted: false

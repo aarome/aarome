@@ -1,0 +1,22 @@
+uuid: 4e8b5f84-e0d4-4201-832f-d30a8be6942d
+langcode: en
+status: true
+dependencies:
+  module:
+    - help
+  theme:
+    - spacelift
+_core:
+  default_config_hash: 8I8iACSa0sKO3k3jlvUG1ge52rfcKX7USJAQYnzuBgg
+id: spacelift_help
+theme: spacelift
+region: content
+weight: -30
+provider: null
+plugin: help_block
+settings:
+  id: help_block
+  label: Help
+  provider: help
+  label_display: '0'
+visibility: {  }

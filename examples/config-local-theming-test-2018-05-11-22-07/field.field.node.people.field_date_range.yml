@@ -1,0 +1,26 @@
+uuid: 19559b17-0f5b-45e8-a2fc-34248aaf887b
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_date_range
+    - node.type.people
+  module:
+    - datetime_range
+id: node.people.field_date_range
+field_name: field_date_range
+entity_type: node
+bundle: people
+label: 'Date range'
+description: ''
+required: false
+translatable: false
+default_value:
+  -
+    default_date_type: now
+    default_date: now
+    default_end_date_type: now
+    default_end_date: now
+default_value_callback: ''
+settings: {  }
+field_type: daterange
