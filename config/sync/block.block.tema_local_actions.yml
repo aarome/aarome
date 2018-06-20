@@ -1,0 +1,20 @@
+uuid: f42e2176-5c6d-4421-9aff-afddb011f3e1
+langcode: en
+status: true
+dependencies:
+  theme:
+    - tema
+_core:
+  default_config_hash: 13GQpeITIJsp1kyPniXtWZfyFH87vb1xxJCHifL4UeE
+id: tema_local_actions
+theme: tema
+region: content
+weight: -20
+provider: null
+plugin: local_actions_block
+settings:
+  id: local_actions_block
+  label: 'Primary admin actions'
+  provider: core
+  label_display: '0'
+visibility: {  }

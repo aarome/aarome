@@ -1,0 +1,22 @@
+uuid: 7b0ab2c9-2b1a-41f2-b29b-1c0d659c70b5
+langcode: en
+status: false
+dependencies:
+  module:
+    - help
+  theme:
+    - tema
+_core:
+  default_config_hash: 8I8iACSa0sKO3k3jlvUG1ge52rfcKX7USJAQYnzuBgg
+id: tema_help
+theme: tema
+region: content
+weight: -30
+provider: null
+plugin: help_block
+settings:
+  id: help_block
+  label: Help
+  provider: help
+  label_display: '0'
+visibility: {  }

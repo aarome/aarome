@@ -1,1 +1,1 @@
-{"version":3,"file":"../tema.css","sources":["../stdin"],"sourcesContent":["body {\n\tbackground-color: red;\n}"],"mappings":"AAAA,AAAA,IAAI,AAAC,CACJ,gBAAgB,CAAE,GAAI,CACtB","names":[]}
+{"version":3,"names":[],"mappings":"","sources":["tema.scss"],"sourcesContent":[""],"file":"../tema.css"}
