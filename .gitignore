@@ -28,3 +28,9 @@
 
 # Ignore Vagrant configuration files
 /vm
+
+# Ignore ST files
+/*.sublime*
+
+# Ignore local workspace files
+queries.sql

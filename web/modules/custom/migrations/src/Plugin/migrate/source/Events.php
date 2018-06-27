@@ -1,7 +1,7 @@
 <?php
 /**
  * @file
- * Contains Drupal\migrations\Plugin\migrate\source\People
+ * Contains Drupal\migrations\Plugin\migrate\source\Events
  */
 namespace Drupal\migrations\Plugin\migrate\source;
 use Drupal\migrate\Plugin\migrate\source\SqlBase;
@@ -10,10 +10,10 @@ use Drupal\migrate\Row;
  * Minimalistic example for a SqlBase source plugin.
  *
  * @MigrateSource(
- *   id = "people"
+ *   id = "events"
  * )
  */
-class People extends SqlBase {
+class Events extends SqlBase {
   /**
    * {@inheritdoc}
    */

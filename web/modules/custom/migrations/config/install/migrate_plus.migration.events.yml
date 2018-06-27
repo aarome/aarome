@@ -1,18 +1,18 @@
-id: people
-label: people
-migration_group: directory
+id: events
+label: events
+migration_group: aarome
 source:
-  plugin: people
-  key: directory
+  plugin: events
+  key: aarome
 destination: 
   plugin: entity:node
 process:
   type:
     plugin: default_value
-    default_value: people
+    default_value: events
   uid:
     plugin: default_value
     default_value: 8
   title: title  
-  field_people_legacy_id: nid
+  field_events_legacy_id: nid
 migration_dependencies: {}
