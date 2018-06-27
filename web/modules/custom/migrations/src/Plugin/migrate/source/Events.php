@@ -21,8 +21,10 @@ class Events extends SqlBase {
     $query = $this->select('node', 'n')
       ->fields('n', [
           'nid',
-          'title'
-        ]);
+          'title',
+          'type'
+        ])
+      ->condition('n.type','events','=');
     return $query;
   }
   /**
@@ -46,4 +48,21 @@ class Events extends SqlBase {
       ],
     ];
   }
+
+  /**
+   * {@inheritdoc}
+   */
+  public function prepareRow(Row $row) {
+    // Get Node revision body and teaser/summary value.
+    $body_data = $this->select('field_data_body')
+      ->fields('field_data_body', ['body_value', 'language'])
+      ->condition('entity_id', $row->getSourceProperty('nid'), '=')
+      ->condition('field_data_body.language', 'en', '=')
+      ->execute()
+      ->fetchAll();
+    $row->setSourceProperty('language', $body_data[0]['language']);  
+    $row->setSourceProperty('body', $body_data[0]['body']);
+    return parent::prepareRow($row);
+  }
+
 }
