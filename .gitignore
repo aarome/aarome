@@ -34,3 +34,8 @@
 
 # Ignore local workspace files
 queries.sql
+
+# Ignore drush aliases
+ansible.cfg
+drush.wrapper
+drush/site-aliases/
