@@ -4,7 +4,7 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#installing-dependencies",
         "This file is @generated automatically"
     ],
-    "content-hash": "95d2856b31c93910cfdcbe85fb69342d",
+    "content-hash": "332342474d20d668fe13149b3d781d0a",
     "packages": [
         {
             "name": "alchemy/zippy",
@@ -1823,6 +1823,91 @@
             }
         },
         {
+            "name": "drupal/basic",
+            "version": "2.0.0",
+            "source": {
+                "type": "git",
+                "url": "https://git.drupal.org/project/basic",
+                "reference": "8.x-2.0"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://ftp.drupal.org/files/projects/basic-8.x-2.0.zip",
+                "reference": "8.x-2.0",
+                "shasum": "ba5370af088ae923947745184b2f0ce8b28d1c65"
+            },
+            "require": {
+                "drupal/core": "~8.0"
+            },
+            "type": "drupal-theme",
+            "extra": {
+                "branch-alias": {
+                    "dev-2.x": "2.x-dev"
+                },
+                "drupal": {
+                    "version": "8.x-2.0",
+                    "datestamp": "1524949440",
+                    "security-coverage": {
+                        "status": "covered",
+                        "message": "Covered by Drupal's security advisory policy"
+                    }
+                }
+            },
+            "notification-url": "https://packages.drupal.org/8/downloads",
+            "license": [
+                "GPL-2.0+"
+            ],
+            "authors": [
+                {
+                    "name": "Steve Krueger",
+                    "homepage": "http://thejibe.com",
+                    "email": "steve@thejibe.com",
+                    "role": "Maintainer"
+                },
+                {
+                    "name": "Joël Pittet",
+                    "homepage": "https://www.drupal.org/u/joelpittet",
+                    "email": "joel@pittet.ca",
+                    "role": "Maintainer"
+                },
+                {
+                    "name": "Leah Wagner",
+                    "homepage": "http://thejibe.com",
+                    "email": "leah@thejibe.com",
+                    "role": "Maintainer"
+                },
+                {
+                    "name": "Catherine Winters",
+                    "homepage": "http://www.catherinewinters.com",
+                    "email": "catherine@catherinewinters.com",
+                    "role": "Maintainer"
+                },
+                {
+                    "name": "Johannes Schmidt",
+                    "homepage": "http://2tabs.com",
+                    "email": "mail@2tabs.com",
+                    "role": "Maintainer"
+                },
+                {
+                    "name": "Chuck Kosman",
+                    "homepage": "http://thejibe.com",
+                    "email": "chuck@thejibe.com",
+                    "role": "Maintainer"
+                },
+                {
+                    "name": "leahtard",
+                    "homepage": "https://www.drupal.org/user/683812"
+                }
+            ],
+            "description": "HTML5, SASS, Responsive grid starter theme.",
+            "homepage": "http://drupal.org/project/basic",
+            "support": {
+                "source": "http://cgit.drupalcode.org/basic",
+                "issues": "https://www.drupal.org/project/issues/basic",
+                "irc": "irc://irc.freenode.org/drupal-contribute"
+            }
+        },
+        {
             "name": "drupal/cer",
             "version": "4.0.0-alpha2",
             "source": {
@@ -1879,6 +1964,77 @@
             "homepage": "https://www.drupal.org/project/cer",
             "support": {
                 "source": "http://cgit.drupalcode.org/cer"
+            }
+        },
+        {
+            "name": "drupal/cog",
+            "version": "1.13.0",
+            "source": {
+                "type": "git",
+                "url": "https://git.drupal.org/project/cog",
+                "reference": "8.x-1.13"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://ftp.drupal.org/files/projects/cog-8.x-1.13.zip",
+                "reference": "8.x-1.13",
+                "shasum": "3eaa27fc8e4aa9cf1249f49d941ee34d8dc75e1a"
+            },
+            "require": {
+                "drupal/core": "~8.0"
+            },
+            "type": "drupal-theme",
+            "extra": {
+                "branch-alias": {
+                    "dev-1.x": "1.x-dev"
+                },
+                "drupal": {
+                    "version": "8.x-1.13",
+                    "datestamp": "1516296784",
+                    "security-coverage": {
+                        "status": "covered",
+                        "message": "Covered by Drupal's security advisory policy"
+                    }
+                }
+            },
+            "notification-url": "https://packages.drupal.org/8/downloads",
+            "license": [
+                "GPL-2.0+"
+            ],
+            "authors": [
+                {
+                    "name": "aellison",
+                    "homepage": "https://www.drupal.org/user/277818"
+                },
+                {
+                    "name": "elm45",
+                    "homepage": "https://www.drupal.org/user/805178"
+                },
+                {
+                    "name": "grasmash",
+                    "homepage": "https://www.drupal.org/user/455714"
+                },
+                {
+                    "name": "jenter",
+                    "homepage": "https://www.drupal.org/user/186584"
+                },
+                {
+                    "name": "littlekope0903",
+                    "homepage": "https://www.drupal.org/user/2867321"
+                },
+                {
+                    "name": "sarahjean",
+                    "homepage": "https://www.drupal.org/user/553728"
+                }
+            ],
+            "description": "Acquia maintained starter theme.",
+            "homepage": "https://github.com/acquia-pso/cog",
+            "keywords": [
+                "Drupal"
+            ],
+            "support": {
+                "source": "https://github.com/acquia-pso/cog",
+                "issues": "https://github.com/acquia-pso/cog/issues"
             }
         },
         {
@@ -3362,6 +3518,66 @@
             "support": {
                 "source": "http://cgit.drupalcode.org/name",
                 "issues": "https://www.drupal.org/project/issues/name"
+            }
+        },
+        {
+            "name": "drupal/neato",
+            "version": "1.8.0",
+            "source": {
+                "type": "git",
+                "url": "https://git.drupal.org/project/neato",
+                "reference": "8.x-1.8"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://ftp.drupal.org/files/projects/neato-8.x-1.8.zip",
+                "reference": "8.x-1.8",
+                "shasum": "cdcebd6d1e8b3df84ce9e2439c5721152952e497"
+            },
+            "require": {
+                "drupal/core": "~8.0"
+            },
+            "type": "drupal-theme",
+            "extra": {
+                "branch-alias": {
+                    "dev-1.x": "1.x-dev"
+                },
+                "drupal": {
+                    "version": "8.x-1.8",
+                    "datestamp": "1525773485",
+                    "security-coverage": {
+                        "status": "covered",
+                        "message": "Covered by Drupal's security advisory policy"
+                    }
+                }
+            },
+            "notification-url": "https://packages.drupal.org/8/downloads",
+            "license": [
+                "GPL-2.0+"
+            ],
+            "authors": [
+                {
+                    "name": "Kevin Quillen (kevinquillen)",
+                    "homepage": "https://www.drupal.org/u/kevinquillen",
+                    "role": "Maintainer"
+                },
+                {
+                    "name": "kevinquillen",
+                    "homepage": "https://www.drupal.org/user/317279"
+                },
+                {
+                    "name": "leymannx",
+                    "homepage": "https://www.drupal.org/user/2482808"
+                }
+            ],
+            "description": "Base Drupal theme based on the Neat grid system from Thoughtbot.",
+            "homepage": "http://drupal.org/project/neato",
+            "keywords": [
+                "Drupal"
+            ],
+            "support": {
+                "source": "http://cgit.drupalcode.org/neato",
+                "issues": "http://drupal.org/project/issues/neato"
             }
         },
         {
