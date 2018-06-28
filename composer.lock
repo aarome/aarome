@@ -4,7 +4,7 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#installing-dependencies",
         "This file is @generated automatically"
     ],
-    "content-hash": "1295e9a3d39358e21005f5044b478d8f",
+    "content-hash": "95d2856b31c93910cfdcbe85fb69342d",
     "packages": [
         {
             "name": "alchemy/zippy",
@@ -3122,6 +3122,60 @@
             "support": {
                 "source": "http://cgit.drupalcode.org/leaflet",
                 "issues": "https://www.drupal.org/project/issues/leaflet"
+            }
+        },
+        {
+            "name": "drupal/leaflet_more_maps",
+            "version": "1.0.0-alpha3",
+            "source": {
+                "type": "git",
+                "url": "https://git.drupal.org/project/leaflet_more_maps",
+                "reference": "8.x-1.0-alpha3"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://ftp.drupal.org/files/projects/leaflet_more_maps-8.x-1.0-alpha3.zip",
+                "reference": "8.x-1.0-alpha3",
+                "shasum": "0aa02138eed25efb6d579b2128bbe47a8b149842"
+            },
+            "require": {
+                "drupal/core": "~8.0"
+            },
+            "require-dev": {
+                "drupal/leaflet": "*"
+            },
+            "type": "drupal-module",
+            "extra": {
+                "branch-alias": {
+                    "dev-1.x": "1.x-dev"
+                },
+                "drupal": {
+                    "version": "8.x-1.0-alpha3",
+                    "datestamp": "1473325739",
+                    "security-coverage": {
+                        "status": "not-covered",
+                        "message": "Alpha releases are not covered by Drupal security advisories."
+                    }
+                }
+            },
+            "notification-url": "https://packages.drupal.org/8/downloads",
+            "license": [
+                "GPL-2.0-or-later"
+            ],
+            "authors": [
+                {
+                    "name": "RdeBoer",
+                    "homepage": "https://www.drupal.org/user/404007"
+                },
+                {
+                    "name": "rachel_norfolk",
+                    "homepage": "https://www.drupal.org/user/66273"
+                }
+            ],
+            "description": "Adds a swag of map styles to Leaflet, e.g Thunderforest, Esri, Stamen, Google.",
+            "homepage": "https://www.drupal.org/project/leaflet_more_maps",
+            "support": {
+                "source": "http://cgit.drupalcode.org/leaflet_more_maps"
             }
         },
         {
@@ -8845,6 +8899,7 @@
         "drupal/geocoder": 10,
         "drupal/geofield": 10,
         "drupal/leaflet": 10,
+        "drupal/leaflet_more_maps": 15,
         "drupal/migrate_tools": 20,
         "drupal/name": 5
     },
