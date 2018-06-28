@@ -39,3 +39,10 @@ queries.sql
 ansible.cfg
 drush.wrapper
 drush/site-aliases/
+
+# Ignore theme resources
+/web/themes/custom/tema/css/config.css
+/web/themes/custom/tema/css/maps/config.css.map
+/web/themes/custom/tema/scss/
+/web/themes/custom/tema/package-lock.json
+/web/themes/custom/tema/package.json
