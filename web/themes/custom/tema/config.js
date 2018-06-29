@@ -8,7 +8,7 @@
   },
 
   drush: {
-    enabled: false,
+    enabled: true,
     alias: {
       css_js: 'drush @SITE-ALIAS cc css-js',
       cr: 'drush @SITE-ALIAS cr'
