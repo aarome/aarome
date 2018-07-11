@@ -7,6 +7,7 @@ dependencies:
     - field.field.node.people.field_people_legacy_id
     - field.field.node.people.field_people_name
     - field.field.node.people.field_people_portrait
+    - field.field.node.people.field_people_related_events
     - node.type.people
   module:
     - inline_entity_form
@@ -62,6 +63,15 @@ content:
       allow_duplicate: false
     third_party_settings: {  }
     type: inline_entity_form_complex
+    region: content
+  field_people_related_events:
+    weight: 26
+    settings:
+      match_operator: CONTAINS
+      size: 60
+      placeholder: ''
+    third_party_settings: {  }
+    type: entity_reference_autocomplete
     region: content
   langcode:
     type: language_select

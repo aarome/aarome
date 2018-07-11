@@ -1,0 +1,18 @@
+uuid: a6a98364-4783-4643-acca-5b8ecdad322f
+langcode: en
+status: true
+dependencies:
+  config:
+    - paragraphs.paragraphs_type.academy_affiliations
+id: paragraph.academy_affiliations.created
+field_name: created
+entity_type: paragraph
+bundle: academy_affiliations
+label: 'Authored on'
+description: 'The time that the Paragraph was created.'
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: created

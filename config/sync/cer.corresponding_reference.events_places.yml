@@ -1,0 +1,13 @@
+uuid: 8f1dddcf-8a4e-48fa-b066-b3894e667e00
+langcode: en
+status: true
+dependencies: {  }
+id: events_places
+label: 'Events to places'
+enabled: true
+first_field: field_events_related_places
+second_field: field_places_related_events
+bundles:
+  node:
+    - events
+    - places

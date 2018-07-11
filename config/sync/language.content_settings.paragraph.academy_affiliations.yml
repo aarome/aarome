@@ -1,0 +1,18 @@
+uuid: 1c5456c5-9d2f-4df5-bcac-1fa2966cafb8
+langcode: en
+status: true
+dependencies:
+  config:
+    - paragraphs.paragraphs_type.academy_affiliations
+  module:
+    - content_translation
+third_party_settings:
+  content_translation:
+    enabled: false
+    bundle_settings:
+      untranslatable_fields_hide: '0'
+id: paragraph.academy_affiliations
+target_entity_type_id: paragraph
+target_bundle: academy_affiliations
+default_langcode: site_default
+language_alterable: true

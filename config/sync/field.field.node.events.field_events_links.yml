@@ -14,13 +14,8 @@ bundle: events
 label: Links
 description: ''
 required: false
-translatable: false
-default_value:
-  -
-    attributes: {  }
-    uri: 'https://livestream.com/aarome'
-    title: 'The lectures will be given in English. You can watch this event livestreamed at https://livestream.com/aarome'
-    options: {  }
+translatable: true
+default_value: {  }
 default_value_callback: ''
 settings:
   link_type: 17

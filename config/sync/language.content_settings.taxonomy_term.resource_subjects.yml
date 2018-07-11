@@ -1,0 +1,16 @@
+uuid: 004ccbe7-8611-4589-abe0-fb0e03e5d03f
+langcode: en
+status: true
+dependencies:
+  config:
+    - taxonomy.vocabulary.resource_subjects
+  module:
+    - content_translation
+third_party_settings:
+  content_translation:
+    enabled: true
+id: taxonomy_term.resource_subjects
+target_entity_type_id: taxonomy_term
+target_bundle: resource_subjects
+default_langcode: site_default
+language_alterable: true

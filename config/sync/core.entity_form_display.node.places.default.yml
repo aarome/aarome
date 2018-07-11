@@ -5,6 +5,7 @@ dependencies:
   config:
     - field.field.node.places.field_places_address
     - field.field.node.places.field_places_geofield
+    - field.field.node.places.field_places_related_events
     - node.type.places
   module:
     - address
@@ -34,6 +35,15 @@ content:
       html5_geolocation: false
     third_party_settings: {  }
     type: geofield_latlon
+    region: content
+  field_places_related_events:
+    weight: 123
+    settings:
+      match_operator: CONTAINS
+      size: 60
+      placeholder: ''
+    third_party_settings: {  }
+    type: entity_reference_autocomplete
     region: content
   langcode:
     type: language_select

@@ -3,7 +3,8 @@ langcode: en
 status: true
 dependencies:
   config:
-    - node.type.events
+    - core.entity_view_mode.node.full
+    - node.type.places
   module:
     - node
     - user
@@ -68,12 +69,10 @@ display:
       style:
         type: default
       row:
-        type: fields
+        type: 'entity:node'
         options:
-          default_field_elements: false
-          inline: {  }
-          separator: ''
-          hide_empty: false
+          relationship: none
+          view_mode: full
       fields:
         title:
           id: title
@@ -138,12 +137,57 @@ display:
           id: type
           table: node_field_data
           field: type
+          relationship: none
+          group_type: group
+          admin_label: ''
+          operator: in
           value:
-            events: events
+            places: places
+          group: 1
+          exposed: false
+          expose:
+            operator_id: ''
+            label: ''
+            description: ''
+            use_operator: false
+            operator: ''
+            identifier: ''
+            required: false
+            remember: false
+            multiple: false
+            remember_roles:
+              authenticated: authenticated
+            reduce: false
+          is_grouped: false
+          group_info:
+            label: ''
+            description: ''
+            identifier: ''
+            optional: true
+            widget: select
+            multiple: false
+            remember: false
+            default_group: All
+            default_group_multiple: {  }
+            group_items: {  }
           entity_type: node
           entity_field: type
           plugin_id: bundle
-      sorts: {  }
+      sorts:
+        title:
+          id: title
+          table: node_field_data
+          field: title
+          relationship: none
+          group_type: group
+          admin_label: ''
+          order: ASC
+          exposed: false
+          expose:
+            label: ''
+          entity_type: node
+          entity_field: title
+          plugin_id: standard
       title: Places
       header: {  }
       footer: {  }
@@ -160,14 +204,15 @@ display:
         - 'user.node_grants:view'
         - user.permissions
       tags: {  }
-  page_1:
+  places_all:
     display_plugin: page
-    id: page_1
-    display_title: Page
+    id: places_all
+    display_title: 'Places (all)'
     position: 1
     display_options:
       display_extenders: {  }
       path: places
+      display_description: ''
     cache_metadata:
       max-age: -1
       contexts:

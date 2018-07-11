@@ -5,6 +5,7 @@ dependencies:
   config:
     - field.field.node.places.field_places_address
     - field.field.node.places.field_places_geofield
+    - field.field.node.places.field_places_related_events
     - node.type.places
   module:
     - address
@@ -52,6 +53,14 @@ content:
       popup: 0
     third_party_settings: {  }
     type: leaflet_formatter_default
+    region: content
+  field_places_related_events:
+    weight: 103
+    label: above
+    settings:
+      link: true
+    third_party_settings: {  }
+    type: entity_reference_label
     region: content
   links:
     weight: 100

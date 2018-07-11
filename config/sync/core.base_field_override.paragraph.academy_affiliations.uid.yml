@@ -1,0 +1,20 @@
+uuid: 26003a3c-ab8a-4de2-84e6-41bca8ea13ed
+langcode: en
+status: true
+dependencies:
+  config:
+    - paragraphs.paragraphs_type.academy_affiliations
+id: paragraph.academy_affiliations.uid
+field_name: uid
+entity_type: paragraph
+bundle: academy_affiliations
+label: 'Authored by'
+description: 'The user ID of the paragraphs author.'
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: 'Drupal\paragraphs\Entity\Paragraph::getCurrentUserId'
+settings:
+  handler: default
+  handler_settings: {  }
+field_type: entity_reference
