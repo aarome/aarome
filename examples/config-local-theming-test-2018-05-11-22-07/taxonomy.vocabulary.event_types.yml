@@ -1,9 +1,0 @@
-uuid: adfc4c41-4733-4d53-8568-8d707dda1252
-langcode: en
-status: true
-dependencies: {  }
-name: 'Event types'
-vid: event_types
-description: ''
-hierarchy: 0
-weight: 0

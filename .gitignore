@@ -46,3 +46,6 @@ drush/site-aliases/
 /web/themes/custom/tema/scss/
 /web/themes/custom/tema/package-lock.json
 /web/themes/custom/tema/package.json
+
+# Ignore examples
+/examples/
