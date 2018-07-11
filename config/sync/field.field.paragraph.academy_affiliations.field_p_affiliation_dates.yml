@@ -1,0 +1,21 @@
+uuid: c49f2dc6-a8d5-4d38-a64b-7e5d96a0ce92
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.paragraph.field_p_affiliation_dates
+    - paragraphs.paragraphs_type.academy_affiliations
+  module:
+    - datetime_range
+id: paragraph.academy_affiliations.field_p_affiliation_dates
+field_name: field_p_affiliation_dates
+entity_type: paragraph
+bundle: academy_affiliations
+label: Date(s)
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: daterange

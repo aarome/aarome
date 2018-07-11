@@ -1,0 +1,9 @@
+uuid: b228ad79-df1c-40b1-b424-f64287f29372
+langcode: en
+status: true
+dependencies: {  }
+id: academy_affiliations
+label: 'Academy affiliations'
+icon_uuid: null
+description: ''
+behavior_plugins: {  }

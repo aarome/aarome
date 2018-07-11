@@ -1,0 +1,17 @@
+uuid: 748e4445-ff9e-404b-8ccc-817d463429a2
+langcode: en
+status: true
+dependencies:
+  module:
+    - menu_ui
+third_party_settings:
+  menu_ui:
+    available_menus: {  }
+    parent: ''
+name: Events
+type: events
+description: '<em>Events</em> describes scheduled lectures, Shoptalks, open studios, etc. on the Rome campus, in New York campuses, and at partner organizations. See www.aarome.org/help for a complete list of event types. '
+help: ''
+new_revision: false
+preview_mode: 1
+display_submitted: false

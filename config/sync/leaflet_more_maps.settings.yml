@@ -1,0 +1,22 @@
+leaflet_more_maps_custom_maps:
+  1:
+    map-key: ESRI
+    layer-keys:
+      'esri-specialty/soil_survey_map layer': 'esri-specialty/soil_survey_map layer'
+      'esri-specialty/world_navigation_charts layer': 'esri-specialty/world_navigation_charts layer'
+      'esri-world_imagery layer': 'esri-world_imagery layer'
+      'esri-natgeo_world_map layer': 'esri-natgeo_world_map layer'
+      'esri-world_physical_map layer': 'esri-world_physical_map layer'
+      'esri-ocean_basemap layer': 'esri-ocean_basemap layer'
+      'esri-reference/world_transportation layer': 'esri-reference/world_transportation layer'
+      'esri-world_topo_map layer': 'esri-world_topo_map layer'
+      'esri-world_street_map layer': 'esri-world_street_map layer'
+    reverse-order: 0
+  2:
+    map-key: ''
+    layer-keys: {  }
+    reverse-order: 0
+  3:
+    map-key: ''
+    layer-keys: {  }
+    reverse-order: 0

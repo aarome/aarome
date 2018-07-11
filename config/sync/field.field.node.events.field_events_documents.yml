@@ -1,0 +1,28 @@
+uuid: cfb95c95-2fc9-40e0-8259-2ce1b7c7071c
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_events_documents
+    - media.type.file
+    - node.type.events
+id: node.events.field_events_documents
+field_name: field_events_documents
+entity_type: node
+bundle: events
+label: Documents
+description: ''
+required: false
+translatable: true
+default_value: {  }
+default_value_callback: ''
+settings:
+  handler: 'default:media'
+  handler_settings:
+    target_bundles:
+      file: file
+    sort:
+      field: _none
+    auto_create: false
+    auto_create_bundle: ''
+field_type: entity_reference

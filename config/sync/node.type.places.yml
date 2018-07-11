@@ -1,0 +1,17 @@
+uuid: 25ff9ac3-847a-4849-b89b-54043eae8be0
+langcode: en
+status: true
+dependencies:
+  module:
+    - menu_ui
+third_party_settings:
+  menu_ui:
+    available_menus: {  }
+    parent: ''
+name: Places
+type: places
+description: ''
+help: ''
+new_revision: false
+preview_mode: 1
+display_submitted: false

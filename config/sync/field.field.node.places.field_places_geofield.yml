@@ -1,0 +1,39 @@
+uuid: 8230ea7a-78b7-44f6-96f8-56b0568147bb
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_places_geofield
+    - node.type.places
+  module:
+    - geocoder_field
+    - geofield
+third_party_settings:
+  geocoder_field:
+    method: source
+    weight: 0
+    geocode_field: field_places_address
+    reverse_geocode_field: {  }
+    hidden: true
+    disabled: false
+    plugins:
+      - googlemaps
+    dumper: wkt
+    delta_handling: default
+    failure:
+      handling: empty
+      status_message: true
+      log: true
+id: node.places.field_places_geofield
+field_name: field_places_geofield
+entity_type: node
+bundle: places
+label: Geofield
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings:
+  backend: geofield_backend_default
+field_type: geofield

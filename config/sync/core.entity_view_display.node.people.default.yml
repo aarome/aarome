@@ -1,0 +1,45 @@
+uuid: 36d6a664-7dba-447d-8e14-af62b5523db0
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.field.node.people.field_people_affiliation
+    - field.field.node.people.field_people_legacy_id
+    - field.field.node.people.field_people_name
+    - field.field.node.people.field_people_portrait
+    - node.type.people
+  module:
+    - entity_reference_revisions
+    - user
+id: node.people.default
+targetEntityType: node
+bundle: people
+mode: default
+content:
+  field_people_affiliation:
+    type: entity_reference_revisions_entity_view
+    weight: 1
+    label: hidden
+    settings:
+      view_mode: default
+      link: ''
+    third_party_settings: {  }
+    region: content
+  field_people_portrait:
+    type: entity_reference_entity_view
+    weight: 2
+    label: hidden
+    settings:
+      view_mode: default
+      link: false
+    third_party_settings: {  }
+    region: content
+  links:
+    weight: 0
+    region: content
+    settings: {  }
+    third_party_settings: {  }
+hidden:
+  field_people_legacy_id: true
+  field_people_name: true
+  langcode: true

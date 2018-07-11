@@ -1,0 +1,16 @@
+uuid: 950c56c2-6e8a-440a-abaf-063edcf2ab0a
+langcode: en
+status: true
+dependencies:
+  config:
+    - taxonomy.vocabulary.affiliation_types
+  module:
+    - content_translation
+third_party_settings:
+  content_translation:
+    enabled: true
+id: taxonomy_term.affiliation_types
+target_entity_type_id: taxonomy_term
+target_bundle: affiliation_types
+default_langcode: site_default
+language_alterable: false

@@ -1,0 +1,28 @@
+uuid: 32cea6a3-98bf-44f1-a886-8ec80dd25b0e
+langcode: en
+status: true
+dependencies:
+  module:
+    - language
+  theme:
+    - adminimal_theme
+id: languageswitcher_2
+theme: adminimal_theme
+region: pre_content
+weight: -4
+provider: null
+plugin: 'language_block:language_interface'
+settings:
+  id: 'language_block:language_interface'
+  label: 'Language switcher'
+  provider: language
+  label_display: '0'
+visibility:
+  language:
+    id: language
+    langcodes:
+      en: en
+      it: it
+    negate: false
+    context_mapping:
+      language: '@language.current_language_context:language_interface'

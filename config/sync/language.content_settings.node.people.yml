@@ -1,0 +1,16 @@
+uuid: 6ab32790-a5dd-4788-9f88-36e8bd8f600c
+langcode: en
+status: true
+dependencies:
+  config:
+    - node.type.people
+  module:
+    - content_translation
+third_party_settings:
+  content_translation:
+    enabled: true
+id: node.people
+target_entity_type_id: node
+target_bundle: people
+default_langcode: site_default
+language_alterable: true

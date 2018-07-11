@@ -1,0 +1,18 @@
+uuid: 39433025-1117-4fad-96a6-9958cf585c7e
+langcode: en
+status: true
+dependencies:
+  config:
+    - node.type.people
+id: node.people.title
+field_name: title
+entity_type: node
+bundle: people
+label: 'Preferred name'
+description: ''
+required: true
+translatable: true
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: string

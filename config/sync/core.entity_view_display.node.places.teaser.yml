@@ -1,0 +1,19 @@
+uuid: 663685bb-b995-4fdc-974b-a40f044bd6dd
+langcode: en
+status: true
+dependencies:
+  config:
+    - core.entity_view_mode.node.teaser
+    - node.type.places
+  module:
+    - user
+id: node.places.teaser
+targetEntityType: node
+bundle: places
+mode: teaser
+content:
+  links:
+    weight: 100
+    region: content
+hidden:
+  langcode: true

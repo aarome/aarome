@@ -1,0 +1,62 @@
+uuid: d151ea34-ebf4-406e-8bb1-af5f174c7200
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.field.node.places.field_places_address
+    - field.field.node.places.field_places_geofield
+    - node.type.places
+  module:
+    - address
+    - leaflet
+    - user
+id: node.places.default
+targetEntityType: node
+bundle: places
+mode: default
+content:
+  field_places_address:
+    weight: 101
+    label: hidden
+    settings: {  }
+    third_party_settings: {  }
+    type: address_default
+    region: content
+  field_places_geofield:
+    weight: 102
+    label: hidden
+    settings:
+      multiple_map: '0'
+      leaflet_map: ~ESRI
+      height: '400'
+      map_position:
+        zoom: '18'
+        minZoom: '15'
+        maxZoom: '18'
+        force: 0
+      icon:
+        iconUrl: ''
+        shadowUrl: ''
+        iconSize:
+          x: ''
+          'y': ''
+        iconAnchor:
+          x: ''
+          'y': ''
+        shadowAnchor:
+          x: ''
+          'y': ''
+        popupAnchor:
+          x: ''
+          'y': ''
+      popup: 0
+    third_party_settings: {  }
+    type: leaflet_formatter_default
+    region: content
+  links:
+    weight: 100
+    region: content
+    settings: {  }
+    third_party_settings: {  }
+hidden:
+  langcode: true
