@@ -5,7 +5,6 @@ dependencies:
   config:
     - core.entity_view_mode.node.full
     - node.type.people
-    - system.menu.main
   module:
     - node
 id: people
@@ -179,7 +178,7 @@ display:
       path: people
       display_description: ''
       menu:
-        type: normal
+        type: none
         title: People
         description: ''
         expanded: false

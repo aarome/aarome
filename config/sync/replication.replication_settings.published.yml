@@ -1,0 +1,11 @@
+uuid: 8ded05c4-0e17-4841-9bbb-54b6fecd022d
+langcode: en
+status: true
+dependencies: {  }
+_core:
+  default_config_hash: 4xxMPnO7OIMGkSN2gtaG0h7OPucOt8GRSVAY97KlWKc
+id: published
+label: 'Replicate published entities'
+filter_id: published
+parameters:
+  include_unpublishable_entities: false

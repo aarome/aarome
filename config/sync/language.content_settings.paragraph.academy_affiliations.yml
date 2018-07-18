@@ -15,4 +15,4 @@ id: paragraph.academy_affiliations
 target_entity_type_id: paragraph
 target_bundle: academy_affiliations
 default_langcode: site_default
-language_alterable: true
+language_alterable: false

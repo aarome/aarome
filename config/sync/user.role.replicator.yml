@@ -1,0 +1,13 @@
+uuid: 7f46f0fb-b1ba-4284-bba4-61bfbb194d1b
+langcode: en
+status: true
+dependencies: {  }
+id: replicator
+label: Replicator
+weight: 0
+is_admin: false
+permissions:
+  - 'administer users'
+  - 'administer workspaces'
+  - 'bypass node access'
+  - 'perform push replication'

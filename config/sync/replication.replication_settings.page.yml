@@ -1,0 +1,12 @@
+uuid: d0a836f3-c71d-4bba-a518-3b7a6ef5d0b2
+langcode: en
+status: true
+dependencies: {  }
+_core:
+  default_config_hash: mukvgfVmwPeQa287C4GYScrcQz77VC9itpZYthFVy9Q
+id: page
+label: 'Replicate only page entities'
+filter_id: entity_type
+parameters:
+  types:
+    - node.page
