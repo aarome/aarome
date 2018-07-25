@@ -1,4 +1,4 @@
-uuid: 3baf6cd2-77e8-429a-bd51-4cdb812883b7
+uuid: 6fa659e1-10c2-449e-9160-61d35911df80
 langcode: en
 status: true
 dependencies:
@@ -8,7 +8,7 @@ third_party_settings:
   menu_ui:
     available_menus: {  }
     parent: ''
-name: Resources
+name: 'Library resources'
 type: resources
 description: ''
 help: ''

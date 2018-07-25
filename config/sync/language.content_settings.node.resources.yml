@@ -1,4 +1,4 @@
-uuid: 4f078689-809d-4f69-835b-9560af25d91a
+uuid: b0f327dd-042e-409a-9ee7-aea798246824
 langcode: en
 status: true
 dependencies:
@@ -8,9 +8,7 @@ dependencies:
     - content_translation
 third_party_settings:
   content_translation:
-    enabled: false
-    bundle_settings:
-      untranslatable_fields_hide: '0'
+    enabled: true
 id: node.resources
 target_entity_type_id: node
 target_bundle: resources

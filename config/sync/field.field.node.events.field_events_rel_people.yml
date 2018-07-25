@@ -1,0 +1,28 @@
+uuid: f0bfaca4-2430-4db6-8879-46b28150e700
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_events_rel_people
+    - node.type.events
+    - node.type.people
+id: node.events.field_events_rel_people
+field_name: field_events_rel_people
+entity_type: node
+bundle: events
+label: 'Related people'
+description: ''
+required: false
+translatable: true
+default_value: {  }
+default_value_callback: ''
+settings:
+  handler: 'default:node'
+  handler_settings:
+    target_bundles:
+      people: people
+    sort:
+      field: _none
+    auto_create: false
+    auto_create_bundle: ''
+field_type: entity_reference

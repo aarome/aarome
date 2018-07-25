@@ -1,4 +1,4 @@
-uuid: 3594667d-0e2e-4958-b5e4-b2f78dfb69fa
+uuid: acb4a319-3e50-4876-acfb-1768f76ea037
 langcode: en
 status: true
 dependencies:
@@ -43,7 +43,7 @@ settings:
       override: hidden
     familyName:
       override: hidden
-    administrativeArea:
-      override: optional
+    organization:
+      override: hidden
   fields: {  }
 field_type: address

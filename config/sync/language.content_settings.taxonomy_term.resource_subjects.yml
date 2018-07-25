@@ -1,4 +1,4 @@
-uuid: 004ccbe7-8611-4589-abe0-fb0e03e5d03f
+uuid: 8ac9f981-6f8b-4dea-aeaa-511296ef0712
 langcode: en
 status: true
 dependencies:
@@ -9,8 +9,6 @@ dependencies:
 third_party_settings:
   content_translation:
     enabled: true
-    bundle_settings:
-      untranslatable_fields_hide: '0'
 id: taxonomy_term.resource_subjects
 target_entity_type_id: taxonomy_term
 target_bundle: resource_subjects

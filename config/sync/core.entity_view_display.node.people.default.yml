@@ -1,42 +1,37 @@
-uuid: 36d6a664-7dba-447d-8e14-af62b5523db0
+uuid: 8c9c6b95-00f7-4227-b0e1-6c5b751838dd
 langcode: en
 status: true
 dependencies:
   config:
-    - field.field.node.people.field_people_affiliation
-    - field.field.node.people.field_people_legacy_id
-    - field.field.node.people.field_people_name
-    - field.field.node.people.field_people_portrait
-    - field.field.node.people.field_people_related_events
+    - field.field.node.people.body
+    - field.field.node.people.field_people_rel_events
+    - field.field.node.people.field_people_rel_press_releases
     - node.type.people
   module:
-    - entity_reference_revisions
+    - text
     - user
 id: node.people.default
 targetEntityType: node
 bundle: people
 mode: default
 content:
-  field_people_affiliation:
-    type: entity_reference_revisions_entity_view
-    weight: 1
+  body:
     label: hidden
-    settings:
-      view_mode: default
-      link: ''
+    type: text_default
+    weight: 101
+    settings: {  }
     third_party_settings: {  }
     region: content
-  field_people_portrait:
-    type: entity_reference_entity_view
-    weight: 2
-    label: hidden
+  field_people_rel_events:
+    weight: 103
+    label: above
     settings:
-      view_mode: default
-      link: false
+      link: true
     third_party_settings: {  }
+    type: entity_reference_label
     region: content
-  field_people_related_events:
-    weight: 3
+  field_people_rel_press_releases:
+    weight: 102
     label: above
     settings:
       link: true
@@ -44,11 +39,7 @@ content:
     type: entity_reference_label
     region: content
   links:
-    weight: 0
+    weight: 100
     region: content
-    settings: {  }
-    third_party_settings: {  }
 hidden:
-  field_people_legacy_id: true
-  field_people_name: true
   langcode: true

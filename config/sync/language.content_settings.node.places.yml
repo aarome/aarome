@@ -1,4 +1,4 @@
-uuid: e9866dfb-01d5-4597-b199-382637e245f8
+uuid: bb419073-fe33-42cb-b754-1c91f33a5aad
 langcode: en
 status: true
 dependencies:
@@ -9,8 +9,6 @@ dependencies:
 third_party_settings:
   content_translation:
     enabled: true
-    bundle_settings:
-      untranslatable_fields_hide: '0'
 id: node.places
 target_entity_type_id: node
 target_bundle: places

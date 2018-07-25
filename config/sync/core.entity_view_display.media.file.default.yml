@@ -1,4 +1,4 @@
-uuid: 341b3bc5-bc38-4c69-abfc-db5ae37792bf
+uuid: 5a324519-fd6a-402c-b472-72d45053640d
 langcode: en
 status: true
 dependencies:
@@ -20,11 +20,26 @@ content:
       use_description_as_link_text: true
     third_party_settings: {  }
     type: file_default
+    weight: 2
+    region: content
+  langcode:
+    type: language
     weight: 1
     region: content
+    label: hidden
+    settings:
+      link_to_entity: false
+      native_language: false
+    third_party_settings: {  }
+  name:
+    type: string
+    weight: 0
+    region: content
+    label: hidden
+    settings:
+      link_to_entity: false
+    third_party_settings: {  }
 hidden:
   created: true
-  langcode: true
-  name: true
   thumbnail: true
   uid: true

@@ -1,4 +1,4 @@
-uuid: 312f7a32-4b1b-4847-b69e-4a0d8b9f7d8f
+uuid: 7a0cf050-8de0-4cc7-9802-8814c5d5411c
 langcode: en
 status: true
 dependencies:
@@ -9,10 +9,8 @@ dependencies:
 third_party_settings:
   content_translation:
     enabled: true
-    bundle_settings:
-      untranslatable_fields_hide: '0'
 id: node.events
 target_entity_type_id: node
 target_bundle: events
-default_langcode: en
+default_langcode: site_default
 language_alterable: true

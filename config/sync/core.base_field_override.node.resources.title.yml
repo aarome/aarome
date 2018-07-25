@@ -1,4 +1,4 @@
-uuid: 3cb6ea8e-5a3d-4e30-a6cf-3f0c41114990
+uuid: 44e6cc0d-30d5-48b9-a939-03b8c83057a4
 langcode: en
 status: true
 dependencies:
@@ -11,7 +11,7 @@ bundle: resources
 label: 'Resource title'
 description: ''
 required: true
-translatable: false
+translatable: true
 default_value: {  }
 default_value_callback: ''
 settings: {  }

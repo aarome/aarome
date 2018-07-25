@@ -1,4 +1,4 @@
-uuid: d04c7b5f-b5a9-4175-8c3c-b7398de0ecff
+uuid: 0a4e6c2c-7f4d-437e-996b-c5b64d802d64
 langcode: en
 status: true
 dependencies:
@@ -9,8 +9,6 @@ dependencies:
 third_party_settings:
   content_translation:
     enabled: true
-    bundle_settings:
-      untranslatable_fields_hide: '0'
 id: taxonomy_term.event_types
 target_entity_type_id: taxonomy_term
 target_bundle: event_types

@@ -1,0 +1,16 @@
+uuid: 239ae915-c80d-4c2f-acca-24e5b309e7ad
+langcode: en
+status: true
+dependencies:
+  config:
+    - node.type.press_releases
+  module:
+    - content_translation
+third_party_settings:
+  content_translation:
+    enabled: true
+id: node.press_releases
+target_entity_type_id: node
+target_bundle: press_releases
+default_langcode: site_default
+language_alterable: true

@@ -1,25 +1,29 @@
-uuid: c08c60ec-9d76-4411-97e0-4d6d1c57f281
+uuid: b2507cdf-8618-4d62-b3da-6dead713a7a8
 langcode: en
 status: true
 dependencies:
   config:
     - core.entity_view_mode.node.teaser
-    - field.field.node.people.field_people_affiliation
-    - field.field.node.people.field_people_legacy_id
-    - field.field.node.people.field_people_name
+    - field.field.node.people.body
     - node.type.people
   module:
+    - text
     - user
 id: node.people.teaser
 targetEntityType: node
 bundle: people
 mode: teaser
 content:
+  body:
+    label: hidden
+    type: text_summary_or_trimmed
+    weight: 101
+    settings:
+      trim_length: 600
+    third_party_settings: {  }
+    region: content
   links:
     weight: 100
     region: content
 hidden:
-  field_people_affiliation: true
-  field_people_legacy_id: true
-  field_people_name: true
   langcode: true

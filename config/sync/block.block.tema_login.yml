@@ -1,0 +1,22 @@
+uuid: 02ca742c-cdcd-4802-8cc0-1a409cb68b6c
+langcode: en
+status: true
+dependencies:
+  module:
+    - user
+  theme:
+    - tema
+_core:
+  default_config_hash: IItlF4SKHgxduIysVQdvirDJ_v3HGuAviOkidAOJYRE
+id: tema_login
+theme: tema
+region: content
+weight: -2
+provider: null
+plugin: user_login_block
+settings:
+  id: user_login_block
+  label: 'User login'
+  provider: user
+  label_display: visible
+visibility: {  }

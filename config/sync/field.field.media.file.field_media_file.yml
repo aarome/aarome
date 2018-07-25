@@ -1,4 +1,4 @@
-uuid: fed2b02f-4c25-4be6-858d-5fd1f1780b6f
+uuid: d9e7b26d-30e0-41c9-8da6-0e317c3e57f7
 langcode: en
 status: true
 dependencies:
@@ -19,14 +19,14 @@ bundle: file
 label: File
 description: ''
 required: true
-translatable: false
+translatable: true
 default_value: {  }
 default_value_callback: ''
 settings:
-  file_directory: 'documents/[current-page:url:unaliased:args:value:2]'
-  file_extensions: 'doc docx xls xlsx pdf numbers pages'
+  file_directory: pdf
+  file_extensions: 'doc docx pdf'
   max_filesize: '5 MB'
-  description_field: true
+  description_field: false
   handler: 'default:file'
   handler_settings: {  }
 field_type: file

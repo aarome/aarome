@@ -1,4 +1,4 @@
-uuid: e8bfd14a-172b-46ef-a89e-5dcbc5927a8c
+uuid: 05c92cd4-5f4c-447b-976c-8199085edf4c
 langcode: en
 status: true
 dependencies:
@@ -11,7 +11,7 @@ _core:
 id: seven_content
 theme: seven
 region: content
-weight: 0
+weight: -3
 provider: null
 plugin: system_main_block
 settings:

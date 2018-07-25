@@ -1,17 +1,17 @@
-uuid: 7b0ab2c9-2b1a-41f2-b29b-1c0d659c70b5
+uuid: 58a14a39-2933-4bdb-b3f3-dff855215068
 langcode: en
-status: false
+status: true
 dependencies:
   module:
     - help
   theme:
     - tema
 _core:
-  default_config_hash: 8I8iACSa0sKO3k3jlvUG1ge52rfcKX7USJAQYnzuBgg
+  default_config_hash: NU5A_49mwLHfs5xFzMFrZ850w9pgUolxMS9NNF3vv4c
 id: tema_help
 theme: tema
-region: content
-weight: -30
+region: header
+weight: 0
 provider: null
 plugin: help_block
 settings:

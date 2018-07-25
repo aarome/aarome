@@ -1,4 +1,4 @@
-uuid: c50e3690-46a9-45b6-a506-c6b58ef57017
+uuid: b7272b58-9fc0-4e92-a848-1ad259247bd9
 langcode: en
 status: true
 dependencies:
@@ -11,10 +11,10 @@ id: node.resources.body
 field_name: body
 entity_type: node
 bundle: resources
-label: Description
+label: Body
 description: ''
 required: false
-translatable: false
+translatable: true
 default_value: {  }
 default_value_callback: ''
 settings:

@@ -1,0 +1,25 @@
+uuid: 3a17b11a-a8c4-4d76-8cbb-24df33a45ca8
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_events_rel_press_releases
+    - node.type.events
+id: node.events.field_events_rel_press_releases
+field_name: field_events_rel_press_releases
+entity_type: node
+bundle: events
+label: 'Related press releases'
+description: ''
+required: false
+translatable: true
+default_value: {  }
+default_value_callback: ''
+settings:
+  handler: views
+  handler_settings:
+    view:
+      view_name: entity_references_nodes
+      display_name: entity_reference_1
+      arguments: {  }
+field_type: entity_reference

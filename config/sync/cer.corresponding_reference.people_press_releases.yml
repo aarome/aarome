@@ -1,0 +1,13 @@
+uuid: 4213b0dd-9686-403c-bf41-6cc5517f8eea
+langcode: en
+status: true
+dependencies: {  }
+id: people_press_releases
+label: 'People to press releases'
+enabled: true
+first_field: field_people_rel_press_releases
+second_field: field_press_releases_rel_people
+bundles:
+  node:
+    - people
+    - press_releases

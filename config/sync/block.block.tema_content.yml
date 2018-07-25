@@ -1,4 +1,4 @@
-uuid: 6e88f63a-8604-4a31-b473-bf9f026d1ede
+uuid: 7873f611-da39-45ce-aa1e-745475db5b1e
 langcode: en
 status: true
 dependencies:
@@ -7,11 +7,11 @@ dependencies:
   theme:
     - tema
 _core:
-  default_config_hash: 9EoWV2Lot6FVSr50t4hoKgiz1LIXYWNG-IIPYsWxBqo
+  default_config_hash: YRY68JWkaUiGeZlWMv1nzeIgDm0ZZwXYgpqUpLFzwAY
 id: tema_content
 theme: tema
 region: content
-weight: 0
+weight: -3
 provider: null
 plugin: system_main_block
 settings:
