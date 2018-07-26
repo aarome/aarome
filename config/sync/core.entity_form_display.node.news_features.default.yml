@@ -5,6 +5,7 @@ dependencies:
   config:
     - field.field.node.news_features.body
     - field.field.node.news_features.field_news_features_rel_events
+    - field.field.node.news_features.field_news_features_rel_people
     - node.type.news_features
   module:
     - path
@@ -31,6 +32,15 @@ content:
     third_party_settings: {  }
   field_news_features_rel_events:
     weight: 122
+    settings:
+      match_operator: CONTAINS
+      size: 60
+      placeholder: ''
+    third_party_settings: {  }
+    type: entity_reference_autocomplete
+    region: content
+  field_news_features_rel_people:
+    weight: 123
     settings:
       match_operator: CONTAINS
       size: 60

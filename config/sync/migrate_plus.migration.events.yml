@@ -1,9 +1,9 @@
-uuid: af1d3d77-5cd6-42b6-b9d1-e66dcb59bee8
+uuid: 72e59e1b-bc06-45e5-a5a2-22d306fe4e7a
 langcode: en
 status: true
 dependencies: {  }
 _core:
-  default_config_hash: w-3JV6ngzEkZKwYizyqcRk_HBiRk3dk6zW46_Vv8vF8
+  default_config_hash: jTZ7ozGNszkvwIqNrgemMmA9d4ac6-rl6jPh4gWH3ZI
 id: events
 class: null
 field_plugin_method: null
@@ -25,11 +25,17 @@ process:
     plugin: default_value
     default_value: events
   uid:
-    source: author
-    plugin: entity_lookup
-    entity_type: user
-    value_key: name
-    ignore_case: true
+    -
+      plugin: entity_lookup
+      source: author
+      ignore_case: true
+      value_key: name
+      entity_type: user
+    -
+      plugin: default_value
+      default_value: 3
+  created: post_date
+  changed: updated_date
   field_events_legacy_id: nid
   title: title
   field_events_event_series:

@@ -4,26 +4,29 @@ status: true
 dependencies:
   config:
     - field.field.node.press_releases.body
+    - field.field.node.press_releases.field_press_releases_files
+    - field.field.node.press_releases.field_press_releases_legacy_id
     - field.field.node.press_releases.field_press_releases_rel_events
     - field.field.node.press_releases.field_press_releases_rel_people
     - node.type.press_releases
   module:
-    - text
     - user
 id: node.press_releases.default
 targetEntityType: node
 bundle: press_releases
 mode: default
 content:
-  body:
-    label: hidden
-    type: text_default
-    weight: 101
-    settings: {  }
+  field_press_releases_files:
+    type: entity_reference_entity_view
+    weight: 3
+    label: above
+    settings:
+      view_mode: default
+      link: false
     third_party_settings: {  }
     region: content
   field_press_releases_rel_events:
-    weight: 103
+    weight: 2
     label: above
     settings:
       link: true
@@ -31,7 +34,7 @@ content:
     type: entity_reference_label
     region: content
   field_press_releases_rel_people:
-    weight: 102
+    weight: 1
     label: above
     settings:
       link: true
@@ -39,7 +42,11 @@ content:
     type: entity_reference_label
     region: content
   links:
-    weight: 100
+    weight: 0
     region: content
+    settings: {  }
+    third_party_settings: {  }
 hidden:
+  body: true
+  field_press_releases_legacy_id: true
   langcode: true

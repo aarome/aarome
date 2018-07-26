@@ -11,6 +11,7 @@ dependencies:
     - field.field.node.events.field_events_rel_news_feature
     - field.field.node.events.field_events_rel_people
     - field.field.node.events.field_events_rel_places
+    - field.field.node.events.field_events_rel_press
     - field.field.node.events.field_events_rel_press_releases
     - node.type.events
   module:
@@ -81,6 +82,14 @@ content:
     region: content
   field_events_rel_places:
     weight: 106
+    label: above
+    settings:
+      link: true
+    third_party_settings: {  }
+    type: entity_reference_label
+    region: content
+  field_events_rel_press:
+    weight: 111
     label: above
     settings:
       link: true

@@ -23,11 +23,17 @@ process:
     plugin: default_value
     default_value: events
   uid:
-    source: author
-    plugin: entity_lookup
-    entity_type: user
-    value_key: name
-    ignore_case: true
+    -
+      plugin: entity_lookup
+      source: author
+      ignore_case: true
+      value_key: name
+      entity_type: user
+    -      
+      plugin: default_value
+      default_value: 3
+  created: post_date
+  changed: updated_date
   field_events_legacy_id: nid
   title: title
   field_events_event_series:

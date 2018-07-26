@@ -1,0 +1,27 @@
+uuid: 83796cfb-7fe3-4364-a35c-852ad7762ae2
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.field.node.articles.body
+    - node.type.articles
+  module:
+    - text
+    - user
+id: node.articles.default
+targetEntityType: node
+bundle: articles
+mode: default
+content:
+  body:
+    label: hidden
+    type: text_default
+    weight: 101
+    settings: {  }
+    third_party_settings: {  }
+    region: content
+  links:
+    weight: 100
+    region: content
+hidden:
+  langcode: true

@@ -11,6 +11,7 @@ dependencies:
     - field.field.node.events.field_events_rel_news_feature
     - field.field.node.events.field_events_rel_people
     - field.field.node.events.field_events_rel_places
+    - field.field.node.events.field_events_rel_press
     - field.field.node.events.field_events_rel_press_releases
     - node.type.events
   module:
@@ -93,6 +94,15 @@ content:
     third_party_settings: {  }
     type: entity_reference_autocomplete
     region: content
+  field_events_rel_press:
+    weight: 28
+    settings:
+      match_operator: CONTAINS
+      size: 60
+      placeholder: ''
+    third_party_settings: {  }
+    type: entity_reference_autocomplete
+    region: content
   field_events_rel_press_releases:
     weight: 8
     settings:
@@ -107,7 +117,7 @@ content:
     weight: 0
     region: content
     settings:
-      include_locked: true
+      include_locked: false
     third_party_settings: {  }
   path:
     type: path

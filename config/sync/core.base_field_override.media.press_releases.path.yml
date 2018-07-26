@@ -1,0 +1,20 @@
+uuid: 2afdb82a-4baa-49d3-9ef7-eaafd78403f0
+langcode: en
+status: true
+dependencies:
+  config:
+    - media.type.press_releases
+  module:
+    - path
+id: media.press_releases.path
+field_name: path
+entity_type: media
+bundle: press_releases
+label: 'URL alias'
+description: ''
+required: false
+translatable: true
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: path

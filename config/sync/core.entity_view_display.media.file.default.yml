@@ -4,6 +4,7 @@ status: true
 dependencies:
   config:
     - field.field.media.file.field_media_file
+    - field.field.media.file.field_media_file_type
     - media.type.file
   module:
     - file
@@ -20,17 +21,16 @@ content:
       use_description_as_link_text: true
     third_party_settings: {  }
     type: file_default
-    weight: 2
-    region: content
-  langcode:
-    type: language
     weight: 1
     region: content
-    label: hidden
+  field_media_file_type:
+    weight: 2
+    label: above
     settings:
-      link_to_entity: false
-      native_language: false
+      link: true
     third_party_settings: {  }
+    type: entity_reference_label
+    region: content
   name:
     type: string
     weight: 0
@@ -41,5 +41,6 @@ content:
     third_party_settings: {  }
 hidden:
   created: true
+  langcode: true
   thumbnail: true
   uid: true

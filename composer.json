@@ -30,6 +30,7 @@
         "drupal/config_devel": "^1.2",
         "drupal/console": "^1.0.2",
         "drupal/core": "~8.5.3",
+        "drupal/filefield_paths": "1.x-dev",
         "drupal/inline_entity_form": "^1.0@RC",
         "drupal/migrate_plus": "4.0-beta3",
         "drupal/migrate_run": "^1.0@beta",
