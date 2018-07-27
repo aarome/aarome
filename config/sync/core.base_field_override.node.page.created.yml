@@ -1,4 +1,4 @@
-uuid: 8970a99e-edbe-4fcc-a96c-b7fdec0e2798
+uuid: 46e82bbb-bbc9-4e32-8052-43015052601e
 langcode: en
 status: true
 dependencies:
@@ -11,7 +11,7 @@ bundle: page
 label: 'Authored on'
 description: 'The time that the node was created.'
 required: false
-translatable: true
+translatable: false
 default_value: {  }
 default_value_callback: ''
 settings: {  }

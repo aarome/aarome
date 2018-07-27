@@ -1,9 +1,0 @@
-uuid: 8bb871e2-2da7-4994-8b74-092f47b6e3ba
-langcode: en
-status: true
-dependencies: {  }
-id: basic_page
-label: 'Basic page'
-icon_uuid: null
-description: ''
-behavior_plugins: {  }

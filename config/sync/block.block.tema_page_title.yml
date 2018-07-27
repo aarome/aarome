@@ -1,15 +1,15 @@
-uuid: 1fd63fef-7cea-46d7-b198-bf0598997ca8
+uuid: 44835844-78bd-4ce7-b68a-18ff27ae6d8c
 langcode: en
 status: true
 dependencies:
   theme:
     - tema
 _core:
-  default_config_hash: 7rR9chwXvdM2H8OYMAYx9Zj3GGlPMrZp_M3ZA4thYTk
+  default_config_hash: ZSpc3IoSaLd0PkB02nxjVPBMztIdsTdHek9SiGaqZ_c
 id: tema_page_title
 theme: tema
-region: content
-weight: -50
+region: header
+weight: -3
 provider: null
 plugin: page_title_block
 settings:

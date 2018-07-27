@@ -1,0 +1,13 @@
+uuid: 57c95453-6715-407c-a9fb-7d35049912ab
+langcode: en
+status: true
+dependencies: {  }
+id: press_releases
+label: 'Press releases'
+description: ''
+source: file
+queue_thumbnail_downloads: false
+new_revision: false
+source_configuration:
+  source_field: field_media_file_1
+field_map: {  }

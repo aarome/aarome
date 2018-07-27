@@ -1,0 +1,20 @@
+uuid: adcb1368-f218-446f-8ad4-4b77663da694
+langcode: en
+status: true
+dependencies:
+  config:
+    - media.type.press_releases
+id: media.press_releases.uid
+field_name: uid
+entity_type: media
+bundle: press_releases
+label: 'Authored by'
+description: 'The user ID of the author.'
+required: false
+translatable: true
+default_value: {  }
+default_value_callback: 'Drupal\media\Entity\Media::getCurrentUserId'
+settings:
+  handler: default
+  handler_settings: {  }
+field_type: entity_reference

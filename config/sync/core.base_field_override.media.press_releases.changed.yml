@@ -1,0 +1,18 @@
+uuid: 63338e70-546b-4ae4-9d62-07c7ea4fc8c9
+langcode: en
+status: true
+dependencies:
+  config:
+    - media.type.press_releases
+id: media.press_releases.changed
+field_name: changed
+entity_type: media
+bundle: press_releases
+label: Changed
+description: 'The time the media item was last edited.'
+required: false
+translatable: true
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: changed

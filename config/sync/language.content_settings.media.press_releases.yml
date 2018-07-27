@@ -1,0 +1,18 @@
+uuid: 0721ae47-13e2-4ce1-b09a-4afd42335b9e
+langcode: en
+status: true
+dependencies:
+  config:
+    - media.type.press_releases
+  module:
+    - content_translation
+third_party_settings:
+  content_translation:
+    enabled: true
+    bundle_settings:
+      untranslatable_fields_hide: '0'
+id: media.press_releases
+target_entity_type_id: media
+target_bundle: press_releases
+default_langcode: site_default
+language_alterable: true

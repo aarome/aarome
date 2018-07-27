@@ -1,4 +1,4 @@
-uuid: 4a1adf56-3009-439a-97c9-2a831d1ed4b5
+uuid: c8f51cb5-8523-4bf3-8854-dfb27f75b046
 langcode: en
 status: true
 dependencies:
@@ -11,7 +11,7 @@ bundle: page
 label: 'Menu link'
 description: 'Computed menu link for the node (only available during node saving).'
 required: false
-translatable: true
+translatable: false
 default_value: {  }
 default_value_callback: ''
 settings:

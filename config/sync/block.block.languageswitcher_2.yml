@@ -1,5 +1,5 @@
-uuid: 32cea6a3-98bf-44f1-a886-8ec80dd25b0e
-langcode: en
+uuid: d98d6943-d78c-45e2-bdbe-62ce65a46c29
+langcode: it
 status: true
 dependencies:
   module:
@@ -8,8 +8,8 @@ dependencies:
     - adminimal_theme
 id: languageswitcher_2
 theme: adminimal_theme
-region: pre_content
-weight: -4
+region: content
+weight: -1
 provider: null
 plugin: 'language_block:language_interface'
 settings:

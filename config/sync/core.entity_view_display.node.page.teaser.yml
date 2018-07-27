@@ -1,12 +1,10 @@
-uuid: 2ad445d5-bd3d-4862-935a-d3fbbb9dadd3
+uuid: 9ac43e44-ce87-4f75-86f2-f30ac384ab9d
 langcode: en
 status: true
 dependencies:
   config:
     - core.entity_view_mode.node.teaser
     - field.field.node.page.body
-    - field.field.node.page.field_date
-    - field.field.node.page.field_date_range
     - node.type.page
   module:
     - text
@@ -30,6 +28,4 @@ content:
     weight: 101
     region: content
 hidden:
-  field_date: true
-  field_date_range: true
   langcode: true

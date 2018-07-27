@@ -1,4 +1,4 @@
-uuid: 54a7493a-87d6-4f9b-89cf-3358599268ec
+uuid: 84801c9b-3a3a-483c-a9ad-bb7ad33ff74b
 langcode: en
 status: true
 dependencies:
@@ -12,7 +12,7 @@ bundle: events
 label: 'Legacy identifier'
 description: ''
 required: false
-translatable: true
+translatable: false
 default_value: {  }
 default_value_callback: ''
 settings: {  }
