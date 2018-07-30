@@ -1,6 +1,6 @@
 uuid: c33e1614-2f5e-4bfc-b742-542af5e16987
 langcode: en
-status: true
+status: false
 dependencies:
   config:
     - system.menu.main
@@ -11,7 +11,7 @@ dependencies:
     - tema
 id: mainnavigation
 theme: tema
-region: main_navigation
+region: header
 weight: -5
 provider: null
 plugin: 'system_menu_block:main'
