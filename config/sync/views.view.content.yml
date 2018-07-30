@@ -2,6 +2,15 @@ uuid: 953342ed-1431-45f3-ac30-89490314622a
 langcode: en
 status: true
 dependencies:
+  config:
+    - node.type.events
+    - node.type.library_resources
+    - node.type.news_features
+    - node.type.page
+    - node.type.people
+    - node.type.places
+    - node.type.press
+    - node.type.press_releases
   module:
     - node
     - user
@@ -404,7 +413,15 @@ display:
           group_type: group
           admin_label: ''
           operator: in
-          value: {  }
+          value:
+            page: page
+            events: events
+            library_resources: library_resources
+            news_features: news_features
+            people: people
+            places: places
+            press: press
+            press_releases: press_releases
           group: 1
           exposed: true
           expose:
@@ -421,7 +438,8 @@ display:
               authenticated: authenticated
               anonymous: '0'
               administrator: '0'
-            reduce: false
+              site_editor: '0'
+            reduce: true
           is_grouped: false
           group_info:
             label: ''
@@ -491,7 +509,9 @@ display:
           group_type: group
           admin_label: ''
           operator: in
-          value: {  }
+          value:
+            en: en
+            it: it
           group: 1
           exposed: true
           expose:
@@ -508,7 +528,8 @@ display:
               authenticated: authenticated
               anonymous: '0'
               administrator: '0'
-            reduce: false
+              site_editor: '0'
+            reduce: true
           is_grouped: false
           group_info:
             label: ''

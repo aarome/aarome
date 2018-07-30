@@ -1,6 +1,6 @@
 uuid: fcdb3e43-ea39-4844-b462-c46342fd6204
 langcode: en
-status: true
+status: false
 dependencies:
   module:
     - system
@@ -11,7 +11,7 @@ _core:
 id: tema_breadcrumbs
 theme: tema
 region: header
-weight: 0
+weight: 1
 provider: null
 plugin: system_breadcrumb_block
 settings:

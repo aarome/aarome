@@ -1,0 +1,34 @@
+uuid: 1acf337b-8f16-4b6e-b2f5-bfb4600a8457
+langcode: en
+status: false
+dependencies:
+  config:
+    - core.entity_view_mode.node.views_section_home_page
+    - field.field.node.page.body
+    - field.field.node.page.field_page_page_section
+    - node.type.page
+  module:
+    - paragraphs
+    - user
+_core:
+  default_config_hash: g1S3_GLaxq4l3I9RIca5Mlz02MxI2KmOquZpHw59akM
+id: node.page.views_section_home_page
+targetEntityType: node
+bundle: page
+mode: views_section_home_page
+content:
+  field_page_page_section:
+    type: paragraph_summary
+    weight: 2
+    label: hidden
+    settings: {  }
+    third_party_settings: {  }
+    region: content
+  links:
+    weight: 1
+    region: content
+    settings: {  }
+    third_party_settings: {  }
+hidden:
+  body: true
+  langcode: true

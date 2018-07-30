@@ -1,10 +1,11 @@
 uuid: 643aef40-ca5a-46a8-95ba-aa5930a674a3
 langcode: en
-status: true
+status: false
 dependencies:
   config:
     - core.entity_view_mode.node.search_index
     - field.field.node.page.body
+    - field.field.node.page.field_page_page_section
     - node.type.page
   module:
     - text
@@ -24,5 +25,6 @@ content:
     label: hidden
     region: content
 hidden:
+  field_page_page_section: true
   langcode: true
   links: true

@@ -9,14 +9,14 @@ dependencies:
 id: tema_languageswitcher
 theme: tema
 region: header
-weight: -4
+weight: -5
 provider: null
 plugin: 'language_block:language_interface'
 settings:
   id: 'language_block:language_interface'
   label: 'Language switcher'
   provider: language
-  label_display: visible
+  label_display: '0'
 visibility:
   language:
     id: language
