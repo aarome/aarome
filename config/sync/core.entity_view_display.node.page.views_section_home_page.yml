@@ -31,4 +31,5 @@ content:
     third_party_settings: {  }
 hidden:
   body: true
+  field_page_type: true
   langcode: true

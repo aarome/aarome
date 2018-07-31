@@ -26,5 +26,6 @@ content:
     region: content
 hidden:
   field_page_page_section: true
+  field_page_type: true
   langcode: true
   links: true
