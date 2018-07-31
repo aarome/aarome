@@ -366,6 +366,332 @@ display:
         - user.permissions
       tags:
         - 'config:field.storage.node.field_page_page_section'
+  page__apply_affiliated_fellowships:
+    display_plugin: page
+    id: page__apply_affiliated_fellowships
+    display_title: /apply/affiliated-fellowships
+    position: 2
+    display_options:
+      display_extenders: {  }
+      path: apply/affiliated-fellowships
+      title: 'Affiliated Fellowships'
+      defaults:
+        title: false
+        filters: false
+        filter_groups: false
+      filters:
+        status:
+          value: '1'
+          table: node_field_data
+          field: status
+          plugin_id: boolean
+          entity_type: node
+          entity_field: status
+          id: status
+          expose:
+            operator: ''
+          group: 1
+        field_page_type_target_id:
+          id: field_page_type_target_id
+          table: node__field_page_type
+          field: field_page_type_target_id
+          relationship: none
+          group_type: group
+          admin_label: ''
+          operator: or
+          value:
+            296: 296
+          group: 1
+          exposed: false
+          expose:
+            operator_id: ''
+            label: ''
+            description: ''
+            use_operator: false
+            operator: ''
+            identifier: ''
+            required: false
+            remember: false
+            multiple: false
+            remember_roles:
+              authenticated: authenticated
+            reduce: false
+          is_grouped: false
+          group_info:
+            label: ''
+            description: ''
+            identifier: ''
+            optional: true
+            widget: select
+            multiple: false
+            remember: false
+            default_group: All
+            default_group_multiple: {  }
+            group_items: {  }
+          reduce_duplicates: false
+          type: select
+          limit: true
+          vid: page_types
+          hierarchy: false
+          error_message: true
+          plugin_id: taxonomy_index_tid
+        langcode:
+          id: langcode
+          table: node_field_data
+          field: langcode
+          relationship: none
+          group_type: group
+          admin_label: ''
+          operator: in
+          value:
+            '***LANGUAGE_language_interface***': '***LANGUAGE_language_interface***'
+          group: 1
+          exposed: false
+          expose:
+            operator_id: ''
+            label: ''
+            description: ''
+            use_operator: false
+            operator: ''
+            identifier: ''
+            required: false
+            remember: false
+            multiple: false
+            remember_roles:
+              authenticated: authenticated
+            reduce: false
+          is_grouped: false
+          group_info:
+            label: ''
+            description: ''
+            identifier: ''
+            optional: true
+            widget: select
+            multiple: false
+            remember: false
+            default_group: All
+            default_group_multiple: {  }
+            group_items: {  }
+          entity_type: node
+          entity_field: langcode
+          plugin_id: language
+        title:
+          id: title
+          table: node_field_data
+          field: title
+          relationship: none
+          group_type: group
+          admin_label: ''
+          operator: '='
+          value: 'Affiliated Fellowships'
+          group: 1
+          exposed: false
+          expose:
+            operator_id: ''
+            label: ''
+            description: ''
+            use_operator: false
+            operator: ''
+            identifier: ''
+            required: false
+            remember: false
+            multiple: false
+            remember_roles:
+              authenticated: authenticated
+            placeholder: ''
+          is_grouped: false
+          group_info:
+            label: ''
+            description: ''
+            identifier: ''
+            optional: true
+            widget: select
+            multiple: false
+            remember: false
+            default_group: All
+            default_group_multiple: {  }
+            group_items: {  }
+          entity_type: node
+          entity_field: title
+          plugin_id: string
+      filter_groups:
+        operator: AND
+        groups:
+          1: AND
+      display_description: ''
+    cache_metadata:
+      max-age: -1
+      contexts:
+        - 'languages:language_content'
+        - 'languages:language_interface'
+        - url.query_args
+        - user
+        - 'user.node_grants:view'
+        - user.permissions
+      tags:
+        - 'config:field.storage.node.field_page_page_section'
+  page__apply_italian_fellowhips:
+    display_plugin: page
+    id: page__apply_italian_fellowhips
+    display_title: /apply/italian-fellowships
+    position: 3
+    display_options:
+      display_extenders: {  }
+      filters:
+        status:
+          value: '1'
+          table: node_field_data
+          field: status
+          plugin_id: boolean
+          entity_type: node
+          entity_field: status
+          id: status
+          expose:
+            operator: ''
+          group: 1
+        field_page_type_target_id:
+          id: field_page_type_target_id
+          table: node__field_page_type
+          field: field_page_type_target_id
+          relationship: none
+          group_type: group
+          admin_label: ''
+          operator: or
+          value:
+            296: 296
+          group: 1
+          exposed: false
+          expose:
+            operator_id: ''
+            label: ''
+            description: ''
+            use_operator: false
+            operator: ''
+            identifier: ''
+            required: false
+            remember: false
+            multiple: false
+            remember_roles:
+              authenticated: authenticated
+            reduce: false
+          is_grouped: false
+          group_info:
+            label: ''
+            description: ''
+            identifier: ''
+            optional: true
+            widget: select
+            multiple: false
+            remember: false
+            default_group: All
+            default_group_multiple: {  }
+            group_items: {  }
+          reduce_duplicates: false
+          type: select
+          limit: true
+          vid: page_types
+          hierarchy: false
+          error_message: true
+          plugin_id: taxonomy_index_tid
+        langcode:
+          id: langcode
+          table: node_field_data
+          field: langcode
+          relationship: none
+          group_type: group
+          admin_label: ''
+          operator: in
+          value:
+            '***LANGUAGE_language_interface***': '***LANGUAGE_language_interface***'
+          group: 1
+          exposed: false
+          expose:
+            operator_id: ''
+            label: ''
+            description: ''
+            use_operator: false
+            operator: ''
+            identifier: ''
+            required: false
+            remember: false
+            multiple: false
+            remember_roles:
+              authenticated: authenticated
+            reduce: false
+          is_grouped: false
+          group_info:
+            label: ''
+            description: ''
+            identifier: ''
+            optional: true
+            widget: select
+            multiple: false
+            remember: false
+            default_group: All
+            default_group_multiple: {  }
+            group_items: {  }
+          entity_type: node
+          entity_field: langcode
+          plugin_id: language
+        title:
+          id: title
+          table: node_field_data
+          field: title
+          relationship: none
+          group_type: group
+          admin_label: ''
+          operator: '='
+          value: 'Italian Fellowships'
+          group: 1
+          exposed: false
+          expose:
+            operator_id: ''
+            label: ''
+            description: ''
+            use_operator: false
+            operator: ''
+            identifier: ''
+            required: false
+            remember: false
+            multiple: false
+            remember_roles:
+              authenticated: authenticated
+            placeholder: ''
+          is_grouped: false
+          group_info:
+            label: ''
+            description: ''
+            identifier: ''
+            optional: true
+            widget: select
+            multiple: false
+            remember: false
+            default_group: All
+            default_group_multiple: {  }
+            group_items: {  }
+          entity_type: node
+          entity_field: title
+          plugin_id: string
+      defaults:
+        filters: false
+        filter_groups: false
+      filter_groups:
+        operator: AND
+        groups:
+          1: AND
+      path: apply/italian-fellowships
+      display_description: ''
+    cache_metadata:
+      max-age: -1
+      contexts:
+        - 'languages:language_content'
+        - 'languages:language_interface'
+        - url.query_args
+        - user
+        - 'user.node_grants:view'
+        - user.permissions
+      tags:
+        - 'config:field.storage.node.field_page_page_section'
   page__apply_rome_prize:
     display_plugin: page
     id: page__apply_rome_prize
@@ -519,6 +845,494 @@ display:
           1: AND
       display_description: ''
       title: 'Rome Prize'
+    cache_metadata:
+      max-age: -1
+      contexts:
+        - 'languages:language_content'
+        - 'languages:language_interface'
+        - url.query_args
+        - user
+        - 'user.node_grants:view'
+        - user.permissions
+      tags:
+        - 'config:field.storage.node.field_page_page_section'
+  page__apply_summer_programs:
+    display_plugin: page
+    id: page__apply_summer_programs
+    display_title: /apply/summer-programs
+    position: 5
+    display_options:
+      display_extenders: {  }
+      display_description: ''
+      filters:
+        status:
+          value: '1'
+          table: node_field_data
+          field: status
+          plugin_id: boolean
+          entity_type: node
+          entity_field: status
+          id: status
+          expose:
+            operator: ''
+          group: 1
+        field_page_type_target_id:
+          id: field_page_type_target_id
+          table: node__field_page_type
+          field: field_page_type_target_id
+          relationship: none
+          group_type: group
+          admin_label: ''
+          operator: or
+          value:
+            296: 296
+          group: 1
+          exposed: false
+          expose:
+            operator_id: ''
+            label: ''
+            description: ''
+            use_operator: false
+            operator: ''
+            identifier: ''
+            required: false
+            remember: false
+            multiple: false
+            remember_roles:
+              authenticated: authenticated
+            reduce: false
+          is_grouped: false
+          group_info:
+            label: ''
+            description: ''
+            identifier: ''
+            optional: true
+            widget: select
+            multiple: false
+            remember: false
+            default_group: All
+            default_group_multiple: {  }
+            group_items: {  }
+          reduce_duplicates: false
+          type: select
+          limit: true
+          vid: page_types
+          hierarchy: false
+          error_message: true
+          plugin_id: taxonomy_index_tid
+        langcode:
+          id: langcode
+          table: node_field_data
+          field: langcode
+          relationship: none
+          group_type: group
+          admin_label: ''
+          operator: in
+          value:
+            '***LANGUAGE_language_interface***': '***LANGUAGE_language_interface***'
+          group: 1
+          exposed: false
+          expose:
+            operator_id: ''
+            label: ''
+            description: ''
+            use_operator: false
+            operator: ''
+            identifier: ''
+            required: false
+            remember: false
+            multiple: false
+            remember_roles:
+              authenticated: authenticated
+            reduce: false
+          is_grouped: false
+          group_info:
+            label: ''
+            description: ''
+            identifier: ''
+            optional: true
+            widget: select
+            multiple: false
+            remember: false
+            default_group: All
+            default_group_multiple: {  }
+            group_items: {  }
+          entity_type: node
+          entity_field: langcode
+          plugin_id: language
+        title:
+          id: title
+          table: node_field_data
+          field: title
+          relationship: none
+          group_type: group
+          admin_label: ''
+          operator: '='
+          value: 'Summer Programs'
+          group: 1
+          exposed: false
+          expose:
+            operator_id: ''
+            label: ''
+            description: ''
+            use_operator: false
+            operator: ''
+            identifier: ''
+            required: false
+            remember: false
+            multiple: false
+            remember_roles:
+              authenticated: authenticated
+            placeholder: ''
+          is_grouped: false
+          group_info:
+            label: ''
+            description: ''
+            identifier: ''
+            optional: true
+            widget: select
+            multiple: false
+            remember: false
+            default_group: All
+            default_group_multiple: {  }
+            group_items: {  }
+          entity_type: node
+          entity_field: title
+          plugin_id: string
+      defaults:
+        filters: false
+        filter_groups: false
+      filter_groups:
+        operator: AND
+        groups:
+          1: AND
+      path: apply/summer-programs
+    cache_metadata:
+      max-age: -1
+      contexts:
+        - 'languages:language_content'
+        - 'languages:language_interface'
+        - url.query_args
+        - user
+        - 'user.node_grants:view'
+        - user.permissions
+      tags:
+        - 'config:field.storage.node.field_page_page_section'
+  page__apply_visiting_artists_scholars:
+    display_plugin: page
+    id: page__apply_visiting_artists_scholars
+    display_title: /apply/visiting-artists-scholars
+    position: 4
+    display_options:
+      display_extenders: {  }
+      title: 'Visiting Artists & Scholars'
+      defaults:
+        title: false
+        filters: false
+        filter_groups: false
+      display_description: ''
+      path: apply/visiting-artists-scholars
+      filters:
+        status:
+          value: '1'
+          table: node_field_data
+          field: status
+          plugin_id: boolean
+          entity_type: node
+          entity_field: status
+          id: status
+          expose:
+            operator: ''
+          group: 1
+        field_page_type_target_id:
+          id: field_page_type_target_id
+          table: node__field_page_type
+          field: field_page_type_target_id
+          relationship: none
+          group_type: group
+          admin_label: ''
+          operator: or
+          value:
+            296: 296
+          group: 1
+          exposed: false
+          expose:
+            operator_id: ''
+            label: ''
+            description: ''
+            use_operator: false
+            operator: ''
+            identifier: ''
+            required: false
+            remember: false
+            multiple: false
+            remember_roles:
+              authenticated: authenticated
+            reduce: false
+          is_grouped: false
+          group_info:
+            label: ''
+            description: ''
+            identifier: ''
+            optional: true
+            widget: select
+            multiple: false
+            remember: false
+            default_group: All
+            default_group_multiple: {  }
+            group_items: {  }
+          reduce_duplicates: false
+          type: select
+          limit: true
+          vid: page_types
+          hierarchy: false
+          error_message: true
+          plugin_id: taxonomy_index_tid
+        langcode:
+          id: langcode
+          table: node_field_data
+          field: langcode
+          relationship: none
+          group_type: group
+          admin_label: ''
+          operator: in
+          value:
+            '***LANGUAGE_language_interface***': '***LANGUAGE_language_interface***'
+          group: 1
+          exposed: false
+          expose:
+            operator_id: ''
+            label: ''
+            description: ''
+            use_operator: false
+            operator: ''
+            identifier: ''
+            required: false
+            remember: false
+            multiple: false
+            remember_roles:
+              authenticated: authenticated
+            reduce: false
+          is_grouped: false
+          group_info:
+            label: ''
+            description: ''
+            identifier: ''
+            optional: true
+            widget: select
+            multiple: false
+            remember: false
+            default_group: All
+            default_group_multiple: {  }
+            group_items: {  }
+          entity_type: node
+          entity_field: langcode
+          plugin_id: language
+        title:
+          id: title
+          table: node_field_data
+          field: title
+          relationship: none
+          group_type: group
+          admin_label: ''
+          operator: '='
+          value: 'Visiting Artists & Scholars'
+          group: 1
+          exposed: false
+          expose:
+            operator_id: ''
+            label: ''
+            description: ''
+            use_operator: false
+            operator: ''
+            identifier: ''
+            required: false
+            remember: false
+            multiple: false
+            remember_roles:
+              authenticated: authenticated
+            placeholder: ''
+          is_grouped: false
+          group_info:
+            label: ''
+            description: ''
+            identifier: ''
+            optional: true
+            widget: select
+            multiple: false
+            remember: false
+            default_group: All
+            default_group_multiple: {  }
+            group_items: {  }
+          entity_type: node
+          entity_field: title
+          plugin_id: string
+      filter_groups:
+        operator: AND
+        groups:
+          1: AND
+    cache_metadata:
+      max-age: -1
+      contexts:
+        - 'languages:language_content'
+        - 'languages:language_interface'
+        - url.query_args
+        - user
+        - 'user.node_grants:view'
+        - user.permissions
+      tags:
+        - 'config:field.storage.node.field_page_page_section'
+  page__apply_winter_programs:
+    display_plugin: page
+    id: page__apply_winter_programs
+    display_title: /apply/winter-programs
+    position: 6
+    display_options:
+      display_extenders: {  }
+      path: apply/winter-programs
+      filters:
+        status:
+          value: '1'
+          table: node_field_data
+          field: status
+          plugin_id: boolean
+          entity_type: node
+          entity_field: status
+          id: status
+          expose:
+            operator: ''
+          group: 1
+        field_page_type_target_id:
+          id: field_page_type_target_id
+          table: node__field_page_type
+          field: field_page_type_target_id
+          relationship: none
+          group_type: group
+          admin_label: ''
+          operator: or
+          value:
+            296: 296
+          group: 1
+          exposed: false
+          expose:
+            operator_id: ''
+            label: ''
+            description: ''
+            use_operator: false
+            operator: ''
+            identifier: ''
+            required: false
+            remember: false
+            multiple: false
+            remember_roles:
+              authenticated: authenticated
+            reduce: false
+          is_grouped: false
+          group_info:
+            label: ''
+            description: ''
+            identifier: ''
+            optional: true
+            widget: select
+            multiple: false
+            remember: false
+            default_group: All
+            default_group_multiple: {  }
+            group_items: {  }
+          reduce_duplicates: false
+          type: select
+          limit: true
+          vid: page_types
+          hierarchy: false
+          error_message: true
+          plugin_id: taxonomy_index_tid
+        langcode:
+          id: langcode
+          table: node_field_data
+          field: langcode
+          relationship: none
+          group_type: group
+          admin_label: ''
+          operator: in
+          value:
+            '***LANGUAGE_language_interface***': '***LANGUAGE_language_interface***'
+          group: 1
+          exposed: false
+          expose:
+            operator_id: ''
+            label: ''
+            description: ''
+            use_operator: false
+            operator: ''
+            identifier: ''
+            required: false
+            remember: false
+            multiple: false
+            remember_roles:
+              authenticated: authenticated
+            reduce: false
+          is_grouped: false
+          group_info:
+            label: ''
+            description: ''
+            identifier: ''
+            optional: true
+            widget: select
+            multiple: false
+            remember: false
+            default_group: All
+            default_group_multiple: {  }
+            group_items: {  }
+          entity_type: node
+          entity_field: langcode
+          plugin_id: language
+        title:
+          id: title
+          table: node_field_data
+          field: title
+          relationship: none
+          group_type: group
+          admin_label: ''
+          operator: '='
+          value: 'Winter Programs'
+          group: 1
+          exposed: false
+          expose:
+            operator_id: ''
+            label: ''
+            description: ''
+            use_operator: false
+            operator: ''
+            identifier: ''
+            required: false
+            remember: false
+            multiple: false
+            remember_roles:
+              authenticated: authenticated
+            placeholder: ''
+          is_grouped: false
+          group_info:
+            label: ''
+            description: ''
+            identifier: ''
+            optional: true
+            widget: select
+            multiple: false
+            remember: false
+            default_group: All
+            default_group_multiple: {  }
+            group_items: {  }
+          entity_type: node
+          entity_field: title
+          plugin_id: string
+      defaults:
+        filters: false
+        filter_groups: false
+      filter_groups:
+        operator: AND
+        groups:
+          1: AND
+      display_description: ''
     cache_metadata:
       max-age: -1
       contexts:
