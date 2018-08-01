@@ -1,0 +1,29 @@
+uuid: 87916165-60ce-457b-ba14-432cfa6999f9
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.paragraph.field_affil_rome_prize_name
+    - paragraphs.paragraphs_type.affiliations
+    - taxonomy.vocabulary.rome_prize_fellowship_names
+id: paragraph.affiliations.field_affil_rome_prize_name
+field_name: field_affil_rome_prize_name
+entity_type: paragraph
+bundle: affiliations
+label: 'Rome Prize Fellowship Name'
+description: ''
+required: false
+translatable: true
+default_value: {  }
+default_value_callback: ''
+settings:
+  handler: 'default:taxonomy_term'
+  handler_settings:
+    target_bundles:
+      rome_prize_fellowship_names: rome_prize_fellowship_names
+    sort:
+      field: name
+      direction: asc
+    auto_create: false
+    auto_create_bundle: ''
+field_type: entity_reference

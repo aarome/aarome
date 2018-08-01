@@ -1,0 +1,20 @@
+uuid: 47d8320f-b238-4b15-9ab8-c47f7bcdf483
+langcode: en
+status: true
+dependencies:
+  module:
+    - paragraphs
+    - taxonomy
+id: paragraph.field_affil_discipline
+field_name: field_affil_discipline
+entity_type: paragraph
+type: entity_reference
+settings:
+  target_type: taxonomy_term
+module: core
+locked: false
+cardinality: 1
+translatable: true
+indexes: {  }
+persist_with_no_fields: false
+custom_storage: false

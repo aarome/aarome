@@ -1,0 +1,35 @@
+uuid: 2c95de45-934b-4fec-93f9-4448bc52ce2b
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.field.paragraph.fellows_projects.field_projects_description
+    - field.field.paragraph.fellows_projects.field_projects_project_title
+    - paragraphs.paragraphs_type.fellows_projects
+  module:
+    - text
+id: paragraph.fellows_projects.default
+targetEntityType: paragraph
+bundle: fellows_projects
+mode: default
+content:
+  field_projects_description:
+    weight: 1
+    settings:
+      rows: 5
+      placeholder: ''
+    third_party_settings: {  }
+    type: text_textarea
+    region: content
+  field_projects_project_title:
+    weight: 0
+    settings:
+      size: 60
+      placeholder: ''
+    third_party_settings: {  }
+    type: string_textfield
+    region: content
+hidden:
+  created: true
+  status: true
+  uid: true

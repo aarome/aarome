@@ -1,0 +1,31 @@
+uuid: ee620b76-2e22-4a2c-ab08-90d7cd189ec7
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.field.paragraph.fellows_projects.field_projects_description
+    - field.field.paragraph.fellows_projects.field_projects_project_title
+    - paragraphs.paragraphs_type.fellows_projects
+  module:
+    - text
+id: paragraph.fellows_projects.default
+targetEntityType: paragraph
+bundle: fellows_projects
+mode: default
+content:
+  field_projects_description:
+    weight: 1
+    label: hidden
+    settings: {  }
+    third_party_settings: {  }
+    type: text_default
+    region: content
+  field_projects_project_title:
+    weight: 0
+    label: hidden
+    settings:
+      link_to_entity: false
+    third_party_settings: {  }
+    type: string
+    region: content
+hidden: {  }

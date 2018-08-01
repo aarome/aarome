@@ -1,9 +1,9 @@
-uuid: 8b86894a-3f95-4af7-a64e-68c0e916ff6a
+uuid: 6f979029-72b0-4064-8b9b-33d28d85fa24
 langcode: en
 status: true
 dependencies:
   config:
-    - taxonomy.vocabulary.page_types
+    - taxonomy.vocabulary.disciplines
   module:
     - content_translation
 third_party_settings:
@@ -11,8 +11,8 @@ third_party_settings:
     enabled: true
     bundle_settings:
       untranslatable_fields_hide: '0'
-id: taxonomy_term.page_types
+id: taxonomy_term.disciplines
 target_entity_type_id: taxonomy_term
-target_bundle: page_types
+target_bundle: disciplines
 default_langcode: site_default
 language_alterable: false

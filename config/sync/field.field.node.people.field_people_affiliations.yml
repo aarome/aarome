@@ -1,0 +1,37 @@
+uuid: 44dda184-33cd-4fc2-8ea2-2a031ba9b054
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_people_affiliations
+    - node.type.people
+    - paragraphs.paragraphs_type.affiliations
+  module:
+    - entity_reference_revisions
+id: node.people.field_people_affiliations
+field_name: field_people_affiliations
+entity_type: node
+bundle: people
+label: Affiliations
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings:
+  handler: 'default:paragraph'
+  handler_settings:
+    negate: 0
+    target_bundles:
+      affiliations: affiliations
+    target_bundles_drag_drop:
+      affiliation_type:
+        weight: 4
+        enabled: false
+      affiliations:
+        enabled: true
+        weight: 5
+      page_section:
+        weight: 6
+        enabled: false
+field_type: entity_reference_revisions

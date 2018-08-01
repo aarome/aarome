@@ -1,0 +1,70 @@
+uuid: fca34858-b5ee-433b-9b39-43a13c9d6c8e
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.field.paragraph.affiliations.field_affil_academy_position
+    - field.field.paragraph.affiliations.field_affil_dates
+    - field.field.paragraph.affiliations.field_affil_discipline
+    - field.field.paragraph.affiliations.field_affil_fellowship_name
+    - field.field.paragraph.affiliations.field_affil_rome_prize_name
+    - field.field.paragraph.affiliations.field_affil_type
+    - paragraphs.paragraphs_type.affiliations
+  module:
+    - datetime_range
+id: paragraph.affiliations.default
+targetEntityType: paragraph
+bundle: affiliations
+mode: default
+content:
+  field_affil_academy_position:
+    weight: 5
+    label: hidden
+    settings:
+      link: false
+    third_party_settings: {  }
+    type: entity_reference_label
+    region: content
+  field_affil_dates:
+    weight: 2
+    label: hidden
+    settings:
+      timezone_override: ''
+      format_type: html_year
+      separator: '-'
+    third_party_settings: {  }
+    type: daterange_default
+    region: content
+  field_affil_discipline:
+    weight: 1
+    label: hidden
+    settings:
+      link: false
+    third_party_settings: {  }
+    type: entity_reference_label
+    region: content
+  field_affil_fellowship_name:
+    weight: 4
+    label: hidden
+    settings:
+      link: false
+    third_party_settings: {  }
+    type: entity_reference_label
+    region: content
+  field_affil_rome_prize_name:
+    weight: 3
+    label: hidden
+    settings:
+      link: false
+    third_party_settings: {  }
+    type: entity_reference_label
+    region: content
+  field_affil_type:
+    weight: 0
+    label: hidden
+    settings:
+      link: false
+    third_party_settings: {  }
+    type: entity_reference_label
+    region: content
+hidden: {  }
