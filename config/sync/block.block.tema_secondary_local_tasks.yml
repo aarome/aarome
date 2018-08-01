@@ -9,7 +9,7 @@ _core:
 id: tema_secondary_local_tasks
 theme: tema
 region: header
-weight: 0
+weight: -1
 provider: null
 plugin: local_tasks_block
 settings:

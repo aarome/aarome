@@ -1,0 +1,41 @@
+uuid: 00977b7a-485a-4c79-9f7c-bdaed3693b8c
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.field.paragraph.page_section.field_page_section_body
+    - field.field.paragraph.page_section.field_page_section_title
+    - paragraphs.paragraphs_type.page_section
+  module:
+    - text
+id: paragraph.page_section.default
+targetEntityType: paragraph
+bundle: page_section
+mode: default
+content:
+  field_page_section_body:
+    weight: 1
+    settings:
+      rows: 9
+      summary_rows: 3
+      placeholder: ''
+    third_party_settings: {  }
+    type: text_textarea_with_summary
+    region: content
+  field_page_section_title:
+    weight: 0
+    settings:
+      size: 60
+      placeholder: ''
+    third_party_settings: {  }
+    type: string_textfield
+    region: content
+  translation:
+    weight: 2
+    region: content
+    settings: {  }
+    third_party_settings: {  }
+hidden:
+  created: true
+  status: true
+  uid: true

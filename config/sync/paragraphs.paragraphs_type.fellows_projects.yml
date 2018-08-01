@@ -1,0 +1,9 @@
+uuid: fed1150e-e7cb-403d-8acd-0cbe49743b62
+langcode: en
+status: true
+dependencies: {  }
+id: fellows_projects
+label: 'Fellows projects'
+icon_uuid: null
+description: ''
+behavior_plugins: {  }

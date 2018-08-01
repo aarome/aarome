@@ -1,0 +1,18 @@
+uuid: 4e6e952c-a94b-4982-9c5e-752567b9a3f7
+langcode: en
+status: true
+dependencies:
+  config:
+    - paragraphs.paragraphs_type.fellows_projects
+  module:
+    - content_translation
+third_party_settings:
+  content_translation:
+    enabled: true
+    bundle_settings:
+      untranslatable_fields_hide: '0'
+id: paragraph.fellows_projects
+target_entity_type_id: paragraph
+target_bundle: fellows_projects
+default_langcode: site_default
+language_alterable: true

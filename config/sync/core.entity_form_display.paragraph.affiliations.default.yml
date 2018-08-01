@@ -1,0 +1,68 @@
+uuid: 80d895e3-4a9b-4dbe-a28c-9819e14e70ef
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.field.paragraph.affiliations.field_affil_academy_position
+    - field.field.paragraph.affiliations.field_affil_dates
+    - field.field.paragraph.affiliations.field_affil_discipline
+    - field.field.paragraph.affiliations.field_affil_fellowship_name
+    - field.field.paragraph.affiliations.field_affil_rome_prize_name
+    - field.field.paragraph.affiliations.field_affil_type
+    - paragraphs.paragraphs_type.affiliations
+  module:
+    - datetime_range
+id: paragraph.affiliations.default
+targetEntityType: paragraph
+bundle: affiliations
+mode: default
+content:
+  field_affil_academy_position:
+    weight: 5
+    settings:
+      match_operator: CONTAINS
+      size: 60
+      placeholder: ''
+    third_party_settings: {  }
+    type: entity_reference_autocomplete
+    region: content
+  field_affil_dates:
+    weight: 2
+    settings: {  }
+    third_party_settings: {  }
+    type: daterange_default
+    region: content
+  field_affil_discipline:
+    weight: 1
+    settings: {  }
+    third_party_settings: {  }
+    type: options_select
+    region: content
+  field_affil_fellowship_name:
+    weight: 4
+    settings:
+      match_operator: STARTS_WITH
+      size: 60
+      placeholder: ''
+    third_party_settings: {  }
+    type: entity_reference_autocomplete
+    region: content
+  field_affil_rome_prize_name:
+    weight: 3
+    settings:
+      match_operator: STARTS_WITH
+      size: 60
+      placeholder: ''
+    third_party_settings: {  }
+    type: entity_reference_autocomplete
+    region: content
+  field_affil_type:
+    weight: 0
+    settings: {  }
+    third_party_settings: {  }
+    type: options_select
+    region: content
+hidden:
+  created: true
+  status: true
+  uid: true

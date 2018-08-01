@@ -1,0 +1,21 @@
+uuid: 357c8596-9094-4aab-913a-9355a7c44882
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.paragraph.field_projects_description
+    - paragraphs.paragraphs_type.fellows_projects
+  module:
+    - text
+id: paragraph.fellows_projects.field_projects_description
+field_name: field_projects_description
+entity_type: paragraph
+bundle: fellows_projects
+label: 'Project description'
+description: ''
+required: false
+translatable: true
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: text_long

@@ -1,0 +1,8 @@
+uuid: 8d45258e-1a16-43c5-988a-ff675ad5de6a
+langcode: en
+status: true
+dependencies: {  }
+id: news_features
+label: 'News features'
+locked: false
+pattern: 'F j, Y'
