@@ -45,6 +45,7 @@ drush/site-aliases/
 # Ignore theme resources
 # Classy subtheme available at: https://github.com/aarome/tema
 /web/themes/custom/tema/
+/web/modules/custom/migrations/
 
 # Ignore examples
 /examples/
