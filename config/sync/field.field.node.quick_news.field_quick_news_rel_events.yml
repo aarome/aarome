@@ -1,0 +1,25 @@
+uuid: 36ef1b10-d5a4-405d-8f04-365764a1c3d5
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_quick_news_rel_events
+    - node.type.quick_news
+id: node.quick_news.field_quick_news_rel_events
+field_name: field_quick_news_rel_events
+entity_type: node
+bundle: quick_news
+label: 'Related events'
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings:
+  handler: views
+  handler_settings:
+    view:
+      view_name: entity_references_nodes
+      display_name: entity_reference_2
+      arguments: {  }
+field_type: entity_reference

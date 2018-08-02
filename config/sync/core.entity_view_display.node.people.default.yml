@@ -5,7 +5,6 @@ dependencies:
   config:
     - field.field.node.people.body
     - field.field.node.people.field_people_affiliations
-    - field.field.node.people.field_people_legacy_id
     - field.field.node.people.field_people_name
     - field.field.node.people.field_people_project
     - field.field.node.people.field_people_rel_events
@@ -30,14 +29,6 @@ content:
       view_mode: default
       link: ''
     third_party_settings: {  }
-    region: content
-  field_people_legacy_id:
-    weight: 8
-    label: above
-    settings:
-      link_to_entity: false
-    third_party_settings: {  }
-    type: string
     region: content
   field_people_name:
     weight: 1

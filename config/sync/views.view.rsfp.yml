@@ -1,4 +1,4 @@
-uuid: 6af12105-0e9d-4ce6-8aff-e4cf5ef3cd58
+uuid: f37aa316-19fc-4166-9aca-38f8e42bda4b
 langcode: en
 status: true
 dependencies:
@@ -7,13 +7,13 @@ dependencies:
     - node.type.page
     - taxonomy.vocabulary.page_types
   content:
-    - 'taxonomy_term:page_types:c7f475b5-9815-48a4-9149-44b3b4dea129'
+    - 'taxonomy_term:page_types:79833e90-0782-4f07-92c8-6d1d468eac72'
   module:
     - node
     - taxonomy
     - user
-id: about
-label: About
+id: rsfp
+label: 'Rome Sustainable Food Project'
 module: views
 description: ''
 tag: ''
@@ -154,6 +154,50 @@ display:
           entity_type: node
           entity_field: type
           plugin_id: bundle
+        field_page_type_target_id:
+          id: field_page_type_target_id
+          table: node__field_page_type
+          field: field_page_type_target_id
+          relationship: none
+          group_type: group
+          admin_label: ''
+          operator: or
+          value:
+            - 529
+          group: 1
+          exposed: false
+          expose:
+            operator_id: ''
+            label: ''
+            description: ''
+            use_operator: false
+            operator: ''
+            identifier: ''
+            required: false
+            remember: false
+            multiple: false
+            remember_roles:
+              authenticated: authenticated
+            reduce: false
+          is_grouped: false
+          group_info:
+            label: ''
+            description: ''
+            identifier: ''
+            optional: true
+            widget: select
+            multiple: false
+            remember: false
+            default_group: All
+            default_group_multiple: {  }
+            group_items: {  }
+          reduce_duplicates: false
+          type: textfield
+          limit: true
+          vid: page_types
+          hierarchy: false
+          error_message: true
+          plugin_id: taxonomy_index_tid
         langcode:
           id: langcode
           table: node_field_data
@@ -194,50 +238,6 @@ display:
           entity_type: node
           entity_field: langcode
           plugin_id: language
-        field_page_type_target_id:
-          id: field_page_type_target_id
-          table: node__field_page_type
-          field: field_page_type_target_id
-          relationship: none
-          group_type: group
-          admin_label: ''
-          operator: or
-          value:
-            - 528
-          group: 1
-          exposed: false
-          expose:
-            operator_id: ''
-            label: ''
-            description: ''
-            use_operator: false
-            operator: ''
-            identifier: ''
-            required: false
-            remember: false
-            multiple: false
-            remember_roles:
-              authenticated: authenticated
-            reduce: false
-          is_grouped: false
-          group_info:
-            label: ''
-            description: ''
-            identifier: ''
-            optional: true
-            widget: select
-            multiple: false
-            remember: false
-            default_group: All
-            default_group_multiple: {  }
-            group_items: {  }
-          reduce_duplicates: false
-          type: textfield
-          limit: true
-          vid: page_types
-          hierarchy: false
-          error_message: true
-          plugin_id: taxonomy_index_tid
       sorts: {  }
       header: {  }
       footer: {  }
@@ -310,17 +310,17 @@ display:
         - 'user.node_grants:view'
         - user.permissions
       tags: {  }
-  page__about:
+  page__rsfp:
     display_plugin: page
-    id: page__about
-    display_title: 'About (Basic page)'
+    id: page__rsfp
+    display_title: 'RSFP (Basic page)'
     position: 1
     display_options:
       display_extenders: {  }
-      path: about/%
+      path: rome-sustainable-food-project/%
       rendering_language: '***LANGUAGE_language_interface***'
       display_description: ''
-      display_comment: 'Supports /about, /bylaws, /history'
+      display_comment: 'Supports /sample-menus, /testimonials'
     cache_metadata:
       max-age: -1
       contexts:

@@ -1,3 +1,4 @@
+label: Media
 display:
   default:
     display_title: Principale
@@ -7,6 +8,7 @@ display:
           submit_button: Filtra
           reset_button_label: Ripristina
           exposed_sorts_label: 'Ordina per'
+          sort_asc_label: Asc
           sort_desc_label: Disc
       pager:
         options:
@@ -22,17 +24,24 @@ display:
       fields:
         thumbnail__target_id:
           label: Miniatura
+          separator: ', '
+        name:
+          separator: ', '
         bundle:
           label: Tipo
+          separator: ', '
         uid:
           label: Autore
+          separator: ', '
         status:
           label: Stato
           settings:
             format_custom_true: Pubblicato
             format_custom_false: 'Non pubblicato'
+          separator: ', '
         changed:
           label: Aggiornato
+          separator: ', '
         operations:
           label: Operazioni
       filters:
@@ -52,6 +61,12 @@ display:
         langcode:
           expose:
             label: Lingua
+      title: Media
       empty:
         area_text_custom:
           content: 'Nessun contenuto disponibile.'
+  media_page_list:
+    display_title: Media
+    display_options:
+      menu:
+        title: Media

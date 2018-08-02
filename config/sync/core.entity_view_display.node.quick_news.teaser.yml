@@ -1,0 +1,29 @@
+uuid: 690b92c0-4c08-4849-a3b5-740ae6d5882c
+langcode: en
+status: true
+dependencies:
+  config:
+    - core.entity_view_mode.node.teaser
+    - field.field.node.quick_news.body
+    - node.type.quick_news
+  module:
+    - text
+    - user
+id: node.quick_news.teaser
+targetEntityType: node
+bundle: quick_news
+mode: teaser
+content:
+  body:
+    label: hidden
+    type: text_summary_or_trimmed
+    weight: 101
+    settings:
+      trim_length: 600
+    third_party_settings: {  }
+    region: content
+  links:
+    weight: 100
+    region: content
+hidden:
+  langcode: true
