@@ -1,9 +1,9 @@
-uuid: 6a0ade8d-222b-4930-9483-490fb1d19fcc
+uuid: fb5a2a81-e099-4319-a460-c0da0378244e
 langcode: en
 status: true
 dependencies: {  }
 _core:
-  default_config_hash: IkgZYapupHp5-XWLXK7o78LmBbldtGo39vvvVL67W6k
+  default_config_hash: mxbmGsWpFHUuyjvEskpm2N3gADGrquZw7Xr65JkJClU
 id: news_features
 class: null
 field_plugin_method: null
@@ -14,7 +14,7 @@ label: 'Migrating news features from CSV file'
 source:
   plugin: csv
   track_changes: true
-  path: 'public://migrations/news_features.csv'
+  path: 'public://migrations/news_features_join.csv'
   delimiter: ','
   enclosure: '"'
   header_row_count: 1

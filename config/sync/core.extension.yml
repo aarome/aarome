@@ -32,6 +32,7 @@ module:
   inline_entity_form: 0
   language: 0
   link: 0
+  linkit: 0
   locale: 0
   media: 0
   menu_ui: 0
@@ -42,6 +43,7 @@ module:
   migrations: 0
   name: 0
   node: 0
+  noreqnewpass: 0
   options: 0
   page_cache: 0
   path: 0
