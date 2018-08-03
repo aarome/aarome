@@ -252,7 +252,7 @@ display:
           empty: true
           tokenize: false
           content:
-            value: 'page not found'
+            value: 'Page not found.'
             format: basic_html
           plugin_id: text
       relationships: {  }
