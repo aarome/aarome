@@ -7,7 +7,7 @@ dependencies:
     - node.type.page
     - taxonomy.vocabulary.page_types
   content:
-    - 'taxonomy_term:page_types:c7f475b5-9815-48a4-9149-44b3b4dea129'
+    - 'taxonomy_term:page_types:414a4dea-9cae-4e8d-908a-e04c78e64361'
   module:
     - node
     - taxonomy
@@ -203,7 +203,7 @@ display:
           admin_label: ''
           operator: or
           value:
-            - 528
+            - 301
           group: 1
           exposed: false
           expose:
