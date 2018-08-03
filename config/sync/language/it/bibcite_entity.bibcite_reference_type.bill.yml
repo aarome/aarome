@@ -1,0 +1,7 @@
+fields:
+  bibcite_secondary_title:
+    label: Codice
+  bibcite_edition:
+    label: Sessione
+  bibcite_original_publication:
+    label: Cronologia

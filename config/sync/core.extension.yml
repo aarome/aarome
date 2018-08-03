@@ -5,6 +5,11 @@ module:
   adminimal_admin_toolbar: 0
   auto_entitylabel: 0
   automated_cron: 0
+  bibcite: 0
+  bibcite_entity: 0
+  bibcite_export: 0
+  bibcite_import: 0
+  bibcite_marc: 0
   block: 0
   block_content: 0
   breakpoint: 0
@@ -52,6 +57,7 @@ module:
   search: 0
   search_api: 0
   search_api_solr: 0
+  serialization: 0
   shortcut: 0
   system: 0
   taxonomy: 0

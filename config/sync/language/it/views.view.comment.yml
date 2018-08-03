@@ -8,6 +8,7 @@ display:
           submit_button: Applica
           reset_button_label: Ripristina
           exposed_sorts_label: 'Ordina per'
+          sort_asc_label: Asc
           sort_desc_label: Disc
       pager:
         options:
@@ -25,14 +26,22 @@ display:
           action_title: Azione
         subject:
           label: Oggetto
+          separator: ', '
+        uid:
+          separator: ', '
         name:
           label: Autore
+          separator: ', '
         entity_id:
           label: 'Inserito in'
+          separator: ', '
         changed:
           label: Aggiornato
+          separator: ', '
         operations:
           label: Operazioni
+        name_1:
+          separator: ', '
       filters:
         subject:
           expose:
@@ -70,11 +79,19 @@ display:
           action_title: Azione
         subject:
           label: Oggetto
+          separator: ', '
+        uid:
+          separator: ', '
         name:
           label: Autore
+          separator: ', '
         entity_id:
           label: 'Inserito in'
+          separator: ', '
         changed:
           label: Aggiornato
+          separator: ', '
         operations:
           label: Operazioni
+        name_1:
+          separator: ', '
