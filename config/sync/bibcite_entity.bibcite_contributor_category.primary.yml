@@ -1,9 +1,0 @@
-uuid: 74749c1e-bea1-4ea4-b67f-5e864ca203b0
-langcode: en
-status: true
-dependencies: {  }
-_core:
-  default_config_hash: e50A6hIBwQod6SVapfxIQeKdc5gBVjYk073r9BLOFpw
-id: primary
-label: Primary
-weight: -10

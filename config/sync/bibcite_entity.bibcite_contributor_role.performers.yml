@@ -1,9 +1,0 @@
-uuid: 8f87755e-8181-4e58-935f-9a48528971ec
-langcode: en
-status: true
-dependencies: {  }
-_core:
-  default_config_hash: fwch4IL9Nm0F98JauvSc263pjoQgmLhfmhbPeaR7VFM
-id: performers
-label: Performers
-weight: -4
