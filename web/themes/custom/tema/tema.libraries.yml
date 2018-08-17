@@ -2,7 +2,6 @@ global-styling:
   version: VERSION
   css:
     base:
-      'https://fonts.googleapis.com/css?family=Gothic+A1': { type: external }
       'https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.0/normalize.min.css': { type: external }
       css/tema.css: {}
 global-scripts:

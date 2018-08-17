@@ -1,0 +1,23 @@
+uuid: 770701ad-dbc9-4206-bfb2-4be4f92acb46
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_people_profession
+    - node.type.people
+  module:
+    - entity_reference_revisions
+id: node.people.field_people_profession
+field_name: field_people_profession
+entity_type: node
+bundle: people
+label: Profession
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings:
+  handler: 'default:paragraph'
+  handler_settings: {  }
+field_type: entity_reference_revisions

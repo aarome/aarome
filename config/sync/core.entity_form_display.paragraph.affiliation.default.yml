@@ -1,0 +1,54 @@
+uuid: 475d0366-5dd7-4f05-9278-fdab453563c3
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.field.paragraph.affiliation.field_affil_dates
+    - field.field.paragraph.affiliation.field_affil_discipline
+    - field.field.paragraph.affiliation.field_affil_rome_prize_name
+    - field.field.paragraph.affiliation.field_affil_type
+    - paragraphs.paragraphs_type.affiliation
+  module:
+    - datetime_range
+id: paragraph.affiliation.default
+targetEntityType: paragraph
+bundle: affiliation
+mode: default
+content:
+  field_affil_dates:
+    weight: 0
+    settings: {  }
+    third_party_settings: {  }
+    type: daterange_default
+    region: content
+  field_affil_discipline:
+    weight: 1
+    settings:
+      match_operator: CONTAINS
+      size: 60
+      placeholder: ''
+    third_party_settings: {  }
+    type: entity_reference_autocomplete
+    region: content
+  field_affil_rome_prize_name:
+    weight: 2
+    settings:
+      match_operator: CONTAINS
+      size: 60
+      placeholder: ''
+    third_party_settings: {  }
+    type: entity_reference_autocomplete
+    region: content
+  field_affil_type:
+    weight: 3
+    settings:
+      match_operator: CONTAINS
+      size: 60
+      placeholder: ''
+    third_party_settings: {  }
+    type: entity_reference_autocomplete
+    region: content
+hidden:
+  created: true
+  status: true
+  uid: true

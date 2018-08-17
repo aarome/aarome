@@ -1,9 +1,9 @@
-uuid: 4e47021e-7f57-455d-aab0-cebc57ad097a
+uuid: 9ecd8581-ccf6-478d-87d7-542292455f9c
 langcode: en
 status: true
 dependencies:
   config:
-    - paragraphs.paragraphs_type.affiliations
+    - paragraphs.paragraphs_type.affiliation
   module:
     - content_translation
 third_party_settings:
@@ -11,8 +11,8 @@ third_party_settings:
     enabled: true
     bundle_settings:
       untranslatable_fields_hide: '0'
-id: paragraph.affiliations
+id: paragraph.affiliation
 target_entity_type_id: paragraph
-target_bundle: affiliations
+target_bundle: affiliation
 default_langcode: site_default
 language_alterable: true

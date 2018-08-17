@@ -1,11 +1,11 @@
-uuid: 44dda184-33cd-4fc2-8ea2-2a031ba9b054
+uuid: 9f0f97b9-a6c8-4642-81a0-abee88c2ade2
 langcode: en
 status: true
 dependencies:
   config:
     - field.storage.node.field_people_affiliations
     - node.type.people
-    - paragraphs.paragraphs_type.affiliations
+    - paragraphs.paragraphs_type.affiliation
   module:
     - entity_reference_revisions
 id: node.people.field_people_affiliations
@@ -23,15 +23,12 @@ settings:
   handler_settings:
     negate: 0
     target_bundles:
-      affiliations: affiliations
+      affiliation: affiliation
     target_bundles_drag_drop:
-      affiliation_type:
-        weight: 4
-        enabled: false
-      affiliations:
+      affiliation:
         enabled: true
-        weight: 5
+        weight: 3
       page_section:
-        weight: 6
+        weight: 4
         enabled: false
 field_type: entity_reference_revisions

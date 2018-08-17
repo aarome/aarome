@@ -1,0 +1,28 @@
+uuid: 35b7674d-1fc9-475b-b547-c0f79c44cb78
+langcode: it
+status: true
+dependencies:
+  module:
+    - language
+  theme:
+    - bartik
+id: bartik_languageswitcher
+theme: bartik
+region: header
+weight: -5
+provider: null
+plugin: 'language_block:language_interface'
+settings:
+  id: 'language_block:language_interface'
+  label: 'Language switcher'
+  provider: language
+  label_display: '0'
+visibility:
+  language:
+    id: language
+    langcodes:
+      en: en
+      it: it
+    negate: false
+    context_mapping:
+      language: '@language.current_language_context:language_interface'

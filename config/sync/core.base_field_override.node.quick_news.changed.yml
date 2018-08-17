@@ -1,0 +1,18 @@
+uuid: 13e97010-7221-48d3-9771-f466d2674a8c
+langcode: en
+status: true
+dependencies:
+  config:
+    - node.type.quick_news
+id: node.quick_news.changed
+field_name: changed
+entity_type: node
+bundle: quick_news
+label: Changed
+description: 'The time that the node was last edited.'
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: changed

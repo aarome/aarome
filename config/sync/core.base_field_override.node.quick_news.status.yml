@@ -1,0 +1,22 @@
+uuid: 7e67d801-7a09-4aa5-a00f-ea5b55400d36
+langcode: en
+status: true
+dependencies:
+  config:
+    - node.type.quick_news
+id: node.quick_news.status
+field_name: status
+entity_type: node
+bundle: quick_news
+label: Published
+description: ''
+required: false
+translatable: false
+default_value:
+  -
+    value: 1
+default_value_callback: ''
+settings:
+  on_label: 'On'
+  off_label: 'Off'
+field_type: boolean

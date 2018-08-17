@@ -6,6 +6,7 @@ dependencies:
     - field.field.node.people.body
     - field.field.node.people.field_people_affiliations
     - field.field.node.people.field_people_name
+    - field.field.node.people.field_people_profession
     - field.field.node.people.field_people_project
     - field.field.node.people.field_people_rel_events
     - field.field.node.people.field_people_rel_news_features
@@ -23,8 +24,8 @@ mode: default
 content:
   field_people_affiliations:
     type: entity_reference_revisions_entity_view
-    weight: 2
-    label: hidden
+    weight: 9
+    label: above
     settings:
       view_mode: default
       link: ''
@@ -45,6 +46,15 @@ content:
       multiple_el_al_first: '1'
     third_party_settings: {  }
     type: name_default
+    region: content
+  field_people_profession:
+    type: entity_reference_revisions_entity_view
+    weight: 8
+    label: above
+    settings:
+      view_mode: default
+      link: ''
+    third_party_settings: {  }
     region: content
   field_people_project:
     type: entity_reference_revisions_entity_view

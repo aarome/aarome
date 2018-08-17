@@ -1,0 +1,18 @@
+uuid: bde7d338-69be-4c68-ac2a-ce4271b6673f
+langcode: en
+status: true
+dependencies:
+  config:
+    - node.type.quick_news
+id: node.quick_news.title
+field_name: title
+entity_type: node
+bundle: quick_news
+label: Title
+description: ''
+required: true
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: string

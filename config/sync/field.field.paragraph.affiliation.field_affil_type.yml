@@ -1,16 +1,16 @@
-uuid: 0403d29b-c668-44f1-a637-bf94dddc3e34
+uuid: 8027a4e6-2d51-4f34-8885-3d1ae477e2a6
 langcode: en
 status: true
 dependencies:
   config:
-    - field.storage.paragraph.field_affil_discipline
-    - paragraphs.paragraphs_type.affiliations
-    - taxonomy.vocabulary.disciplines
-id: paragraph.affiliations.field_affil_discipline
-field_name: field_affil_discipline
+    - field.storage.paragraph.field_affil_type
+    - paragraphs.paragraphs_type.affiliation
+    - taxonomy.vocabulary.affiliation_types
+id: paragraph.affiliation.field_affil_type
+field_name: field_affil_type
 entity_type: paragraph
-bundle: affiliations
-label: Discipline
+bundle: affiliation
+label: Type
 description: ''
 required: false
 translatable: true
@@ -20,7 +20,7 @@ settings:
   handler: 'default:taxonomy_term'
   handler_settings:
     target_bundles:
-      disciplines: disciplines
+      affiliation_types: affiliation_types
     sort:
       field: name
       direction: asc

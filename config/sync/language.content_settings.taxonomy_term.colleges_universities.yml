@@ -1,9 +1,9 @@
-uuid: 4e6e952c-a94b-4982-9c5e-752567b9a3f7
+uuid: 891c28f5-6800-4e22-9c9b-b69754e83de7
 langcode: en
 status: true
 dependencies:
   config:
-    - paragraphs.paragraphs_type.fellows_projects
+    - taxonomy.vocabulary.colleges_universities
   module:
     - content_translation
 third_party_settings:
@@ -11,8 +11,8 @@ third_party_settings:
     enabled: true
     bundle_settings:
       untranslatable_fields_hide: '0'
-id: paragraph.fellows_projects
-target_entity_type_id: paragraph
-target_bundle: fellows_projects
+id: taxonomy_term.colleges_universities
+target_entity_type_id: taxonomy_term
+target_bundle: colleges_universities
 default_langcode: site_default
-language_alterable: true
+language_alterable: false

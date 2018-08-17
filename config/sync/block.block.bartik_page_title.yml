@@ -1,27 +1,24 @@
-uuid: c33e1614-2f5e-4bfc-b742-542af5e16987
+uuid: b046db79-96ca-4b1a-917a-4c07708777e8
 langcode: en
 status: true
 dependencies:
-  config:
-    - system.menu.main
   module:
     - language
-    - system
   theme:
-    - tema
-id: mainnavigation
-theme: tema
+    - bartik
+_core:
+  default_config_hash: ZSpc3IoSaLd0PkB02nxjVPBMztIdsTdHek9SiGaqZ_c
+id: bartik_page_title
+theme: bartik
 region: header
-weight: -5
+weight: -4
 provider: null
-plugin: 'system_menu_block:main'
+plugin: page_title_block
 settings:
-  id: 'system_menu_block:main'
-  label: 'Main navigation'
-  provider: system
+  id: page_title_block
+  label: 'Page title'
+  provider: core
   label_display: '0'
-  level: 1
-  depth: 0
 visibility:
   language:
     id: language

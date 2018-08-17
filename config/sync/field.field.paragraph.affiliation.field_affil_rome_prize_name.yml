@@ -1,15 +1,15 @@
-uuid: 87916165-60ce-457b-ba14-432cfa6999f9
+uuid: e31e74de-c321-427f-8b4c-e12e7d8bc72e
 langcode: en
 status: true
 dependencies:
   config:
     - field.storage.paragraph.field_affil_rome_prize_name
-    - paragraphs.paragraphs_type.affiliations
+    - paragraphs.paragraphs_type.affiliation
     - taxonomy.vocabulary.rome_prize_fellowship_names
-id: paragraph.affiliations.field_affil_rome_prize_name
+id: paragraph.affiliation.field_affil_rome_prize_name
 field_name: field_affil_rome_prize_name
 entity_type: paragraph
-bundle: affiliations
+bundle: affiliation
 label: 'Rome Prize Fellowship Name'
 description: ''
 required: false

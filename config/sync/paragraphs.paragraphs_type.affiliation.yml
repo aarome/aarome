@@ -1,9 +1,9 @@
-uuid: fed1150e-e7cb-403d-8acd-0cbe49743b62
+uuid: ec0bcb27-7b90-46f8-a011-9d27d64cfa21
 langcode: en
 status: true
 dependencies: {  }
-id: fellows_projects
-label: 'Fellows projects'
+id: affiliation
+label: Affiliation
 icon_uuid: null
 description: ''
 behavior_plugins: {  }

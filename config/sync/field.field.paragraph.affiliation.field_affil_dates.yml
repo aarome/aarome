@@ -1,21 +1,26 @@
-uuid: c1c9b6e2-d692-42fc-8f87-1d5b4d89b625
+uuid: b4a295af-4648-467c-8523-8c4adcaf0fec
 langcode: en
 status: true
 dependencies:
   config:
     - field.storage.paragraph.field_affil_dates
-    - paragraphs.paragraphs_type.affiliations
+    - paragraphs.paragraphs_type.affiliation
   module:
     - datetime_range
-id: paragraph.affiliations.field_affil_dates
+id: paragraph.affiliation.field_affil_dates
 field_name: field_affil_dates
 entity_type: paragraph
-bundle: affiliations
+bundle: affiliation
 label: Date(s)
 description: ''
 required: false
 translatable: true
-default_value: {  }
+default_value:
+  -
+    default_date_type: now
+    default_date: now
+    default_end_date_type: now
+    default_end_date: now
 default_value_callback: ''
 settings: {  }
 field_type: daterange
