@@ -51,3 +51,11 @@ function tema_preprocess_page(&$variables) {
  * @param array $variables
  */
 function tema_preprocess_node(&$variables) {}
+
+/**
+ * Change the link title of the language block.
+ */
+function tema_preprocess_links__language_block(&$variables) {
+  $variables['links']['en']['link']['#title'] = 'EN';
+  $variables['links']['it']['link']['#title'] = 'IT';
+}

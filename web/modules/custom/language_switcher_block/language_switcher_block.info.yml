@@ -1,0 +1,5 @@
+name: 'Language Switcher Block'
+type: module
+description: 'Changes text of the language switcher block to a desired shortcode.'
+core: 8.x
+package: 'Custom'

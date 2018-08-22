@@ -36,6 +36,7 @@
         "drupal/filefield_paths": "1.x-dev",
         "drupal/inline_entity_form": "^1.0@RC",
         "drupal/linkit": "^4.3",
+        "drupal/menu_link_attributes": "^1.0",
         "drupal/migrate_plus": "4.0-beta3",
         "drupal/migrate_run": "^1.0@beta",
         "drupal/migrate_source_csv": "^2.2",
