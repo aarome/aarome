@@ -1,6 +1,0 @@
-tema.extra-small:
-  label: extra-small
-  mediaQuery: '(max-width: 480px)'
-  weight: 0
-  multipliers:
-    - 1x
