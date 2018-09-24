@@ -49,3 +49,8 @@ drush/site-aliases/
 
 # Ignore examples
 /examples/
+/images/
+/resources/
+/web/modules/custom/d8views-master.zip
+/web/modules/custom/d8views/
+/web/modules/custom/input/
