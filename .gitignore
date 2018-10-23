@@ -31,6 +31,9 @@
 # Ignore Vagrant configuration files
 /vm
 
+# Ignore developer  resources
+/web/sites/development.services.yml
+
 # Ignore ST files
 /*.sublime*
 
