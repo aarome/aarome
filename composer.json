@@ -61,6 +61,7 @@
         "drupal/views_slideshow": "^4.6",
         "drupal/views_url_alias": "^1.0",
         "drupal/views_url_path_arguments": "1.x-dev",
+        "drupal/webform": "^5.0@RC",
         "drush/drush": "^9.0.0",
         "vlucas/phpdotenv": "^2.4",
         "webflo/drupal-finder": "^1.0.0",
