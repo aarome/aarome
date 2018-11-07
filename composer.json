@@ -35,6 +35,7 @@
         "drupal/context": "4.0.0-beta2",
         "drupal/core": "~8.5.3",
         "drupal/delete_all": "^1.0",
+        "drupal/easy_breadcrumb": "^1.8",
         "drupal/entity_language_fallback": "^1.2",
         "drupal/filefield_paths": "1.x-dev",
         "drupal/inline_entity_form": "^1.0@RC",
