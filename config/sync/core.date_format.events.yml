@@ -5,4 +5,4 @@ dependencies: {  }
 id: events
 label: Events
 locked: false
-pattern: 'F j, Y h:i A'
+pattern: 'l, F j'

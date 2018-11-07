@@ -1,0 +1,28 @@
+uuid: 709d212a-77f7-4df5-86e9-d4c2fe67a36c
+langcode: en
+status: true
+dependencies:
+  config:
+    - system.menu.social-media
+  module:
+    - block_class
+    - system
+  theme:
+    - tema
+third_party_settings:
+  block_class:
+    classes: social
+id: socialmedia
+theme: tema
+region: footer_second
+weight: -8
+provider: null
+plugin: 'system_menu_block:social-media'
+settings:
+  id: 'system_menu_block:social-media'
+  label: 'Social media'
+  provider: system
+  label_display: '0'
+  level: 1
+  depth: 0
+visibility: {  }

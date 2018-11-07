@@ -10,7 +10,7 @@ third_party_settings:
     parent: ''
 name: 'Quick news'
 type: quick_news
-description: ''
+description: 'Short news items about Academy fellows and residents. '
 help: ''
 new_revision: false
 preview_mode: 1

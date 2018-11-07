@@ -4,10 +4,13 @@ status: true
 dependencies:
   config:
     - field.field.node.quick_news.body
+    - field.field.node.quick_news.field_quick_news_image
+    - field.field.node.quick_news.field_quick_news_links
     - field.field.node.quick_news.field_quick_news_rel_events
     - field.field.node.quick_news.field_quick_news_rel_people
     - node.type.quick_news
   module:
+    - link
     - path
     - text
 id: node.quick_news.default
@@ -30,6 +33,23 @@ content:
     region: content
     settings: {  }
     third_party_settings: {  }
+  field_quick_news_image:
+    weight: 126
+    settings:
+      match_operator: CONTAINS
+      size: 60
+      placeholder: ''
+    third_party_settings: {  }
+    type: entity_reference_autocomplete
+    region: content
+  field_quick_news_links:
+    weight: 125
+    settings:
+      placeholder_url: ''
+      placeholder_title: ''
+    third_party_settings: {  }
+    type: link_default
+    region: content
   field_quick_news_rel_events:
     weight: 123
     settings:
@@ -90,6 +110,9 @@ content:
       size: 60
       placeholder: ''
     third_party_settings: {  }
+  translation:
+    weight: 10
+    region: content
   uid:
     type: entity_reference_autocomplete
     weight: 5

@@ -1,0 +1,87 @@
+uuid: 139a8d2c-77a1-4b33-a39a-c05438aa2324
+langcode: en
+status: true
+dependencies:
+  module:
+    - system
+name: place
+label: Place
+group: Frontpages
+description: ''
+requireAllConditions: false
+disabled: false
+conditions:
+  request_path:
+    id: request_path
+    pages: "/place\r\n/luoghi"
+    negate: 0
+    uuid: 4811e3b4-87db-42d8-ac86-ae5c263517c8
+    context_mapping: {  }
+reactions:
+  blocks:
+    blocks:
+      2ba52f76-cd2b-4780-95d2-a0a8fe0a0272:
+        id: 'views_block:front_page_place-about_library'
+        label: ''
+        provider: views
+        label_display: 0
+        views_label: ''
+        items_per_page: none
+        region: content
+        weight: '1'
+        context_mapping: {  }
+        theme: tema
+        css_class: ''
+        unique: 0
+        context_id: place
+        uuid: 2ba52f76-cd2b-4780-95d2-a0a8fe0a0272
+      c0172146-b40e-421e-88be-29d7d50a2ce0:
+        id: 'views_block:front_page_place-about_gardens'
+        label: ''
+        provider: views
+        label_display: 0
+        views_label: ''
+        items_per_page: none
+        region: content
+        weight: '0'
+        context_mapping: {  }
+        theme: tema
+        css_class: ''
+        unique: 0
+        context_id: place
+        uuid: c0172146-b40e-421e-88be-29d7d50a2ce0
+      60ff71a7-db05-4b51-82e8-0543a52f4246:
+        id: 'views_block:front_page_place-about_villa_aurelia'
+        label: ''
+        provider: views
+        label_display: 0
+        views_label: ''
+        items_per_page: none
+        region: content
+        weight: '-1'
+        context_mapping: {  }
+        theme: tema
+        css_class: ''
+        unique: 0
+        context_id: place
+        uuid: 60ff71a7-db05-4b51-82e8-0543a52f4246
+      28376ee1-79d9-4810-bbe3-f7a5bf6036f5:
+        id: 'views_block:front_page_place-about_directions'
+        label: ''
+        provider: views
+        label_display: visible
+        views_label: ''
+        items_per_page: none
+        region: content
+        weight: '2'
+        context_mapping: {  }
+        theme: tema
+        css_class: ''
+        unique: 0
+        context_id: place
+        uuid: 28376ee1-79d9-4810-bbe3-f7a5bf6036f5
+    id: blocks
+    saved: false
+    uuid: 3ea3dab5-0d04-45b7-ba8a-ff0d29ba96aa
+    include_default_blocks: 1
+weight: 0

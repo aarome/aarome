@@ -10,7 +10,7 @@ third_party_settings:
     parent: ''
 name: Places
 type: places
-description: ''
+description: 'A list of locations associated with Academy events. '
 help: ''
 new_revision: false
 preview_mode: 1

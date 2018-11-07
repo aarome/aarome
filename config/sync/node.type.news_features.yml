@@ -10,7 +10,7 @@ third_party_settings:
     parent: ''
 name: 'News features'
 type: news_features
-description: ''
+description: 'Bi-monthly and occasional writing about the Academy, its artists and scholars, and attendant activities.'
 help: ''
 new_revision: false
 preview_mode: 1

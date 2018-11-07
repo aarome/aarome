@@ -10,7 +10,7 @@ id: node.press_releases.field_press_releases_files
 field_name: field_press_releases_files
 entity_type: node
 bundle: press_releases
-label: File(s)
+label: 'Press release file(s)'
 description: ''
 required: false
 translatable: true

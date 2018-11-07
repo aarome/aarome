@@ -1,0 +1,42 @@
+uuid: 7d1a3034-1621-4cd2-8ab5-3760f4536be3
+langcode: en
+status: true
+dependencies:
+  module:
+    - system
+name: press_releases
+label: 'Press Releases'
+group: 'Inside pages'
+description: ''
+requireAllConditions: false
+disabled: false
+conditions:
+  request_path:
+    id: request_path
+    pages: /news/press-releases
+    negate: 0
+    uuid: 460027ae-e4ef-456d-ba2d-e8bdef68f69e
+    context_mapping: {  }
+reactions:
+  blocks:
+    blocks:
+      acb8f984-159c-49b4-ba28-99c6c88db1c8:
+        id: 'views_block:press-press_press_releases'
+        label: ''
+        provider: views
+        label_display: visible
+        views_label: ''
+        items_per_page: none
+        region: content
+        weight: '0'
+        context_mapping: {  }
+        theme: tema
+        css_class: ''
+        unique: 0
+        context_id: press_releases
+        uuid: acb8f984-159c-49b4-ba28-99c6c88db1c8
+    id: blocks
+    saved: false
+    uuid: 5015bba4-5bc0-40d1-b4f7-54878a3e89e7
+    include_default_blocks: 0
+weight: 0

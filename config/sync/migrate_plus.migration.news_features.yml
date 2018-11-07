@@ -1,9 +1,9 @@
-uuid: fb5a2a81-e099-4319-a460-c0da0378244e
+uuid: 08206b86-873c-4e5e-abbe-a2d2a3f0de83
 langcode: en
 status: true
 dependencies: {  }
 _core:
-  default_config_hash: mxbmGsWpFHUuyjvEskpm2N3gADGrquZw7Xr65JkJClU
+  default_config_hash: MpUYrE_8jRjn5hvw_54IuOqNvSD3cSCWxRXFUeTSkL0
 id: news_features
 class: null
 field_plugin_method: null
@@ -42,6 +42,12 @@ process:
     plugin: default_value
     default_value: basic_html
   body/value: body
+  field_news_feature_date/value:
+    plugin: format_date
+    source: post_date
+    from_format: Y-m-d
+    to_format: Y-m-d
 destination:
   plugin: 'entity:node'
+  urlencode: true
 migration_dependencies: null

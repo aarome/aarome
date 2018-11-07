@@ -1,13 +1,13 @@
-uuid: 57c95453-6715-407c-a9fb-7d35049912ab
+uuid: 58d7d31e-a1a1-4347-8bda-60c42961bfa2
 langcode: en
 status: true
 dependencies: {  }
 id: press_releases
 label: 'Press releases'
-description: ''
+description: 'Use <em>Press releases</em> for official communication about the Academy.'
 source: file
 queue_thumbnail_downloads: false
 new_revision: false
 source_configuration:
-  source_field: field_media_file_1
+  source_field: field_media_file
 field_map: {  }

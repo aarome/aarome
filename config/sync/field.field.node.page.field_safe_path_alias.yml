@@ -1,0 +1,24 @@
+uuid: 77615f9b-449f-4815-918a-aa6175f4ea01
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_safe_path_alias
+    - node.type.page
+  module:
+    - computed_field
+id: node.page.field_safe_path_alias
+field_name: field_safe_path_alias
+entity_type: node
+bundle: page
+label: 'Safe path alias'
+description: ''
+required: false
+translatable: false
+default_value:
+  -
+    value: ''
+default_value_callback: ''
+settings:
+  code: "$str = $fields['title'][0]['value'];\r\n$str = strtolower(preg_replace('/[^a-zA-Z0-9-_\\.]/','-', $str));\r\n$str = preg_replace('{(\\-)\\1+}','$1',$str);\r\n$value = $str;"
+field_type: computed_string

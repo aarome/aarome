@@ -7,6 +7,7 @@ dependencies:
     - field.field.node.events.field_events_event_dates
     - field.field.node.events.field_events_event_series
     - field.field.node.events.field_events_event_type
+    - field.field.node.events.field_events_image
     - field.field.node.events.field_events_legacy_id
     - field.field.node.events.field_events_rel_news_feature
     - field.field.node.events.field_events_rel_people
@@ -16,6 +17,7 @@ dependencies:
     - node.type.events
   module:
     - datetime_range
+    - inline_entity_form
     - path
     - text
 id: node.events.default
@@ -58,6 +60,22 @@ content:
     settings: {  }
     third_party_settings: {  }
     type: options_select
+    region: content
+  field_events_image:
+    weight: 29
+    settings:
+      form_mode: default
+      label_singular: ''
+      label_plural: ''
+      collapsible: true
+      allow_new: true
+      allow_existing: true
+      match_operator: CONTAINS
+      override_labels: false
+      collapsed: false
+      allow_duplicate: false
+    third_party_settings: {  }
+    type: inline_entity_form_complex
     region: content
   field_events_legacy_id:
     weight: 27

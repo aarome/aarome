@@ -10,7 +10,7 @@ third_party_settings:
     parent: ''
 name: 'Library resources'
 type: library_resources
-description: ''
+description: 'Includes links and descriptions of scholarly resources. '
 help: ''
 new_revision: false
 preview_mode: 1

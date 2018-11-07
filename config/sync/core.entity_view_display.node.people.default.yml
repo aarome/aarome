@@ -5,17 +5,34 @@ dependencies:
   config:
     - field.field.node.people.body
     - field.field.node.people.field_people_affiliations
+    - field.field.node.people.field_people_birthplace
+    - field.field.node.people.field_people_dob
+    - field.field.node.people.field_people_dod
+    - field.field.node.people.field_people_education
+    - field.field.node.people.field_people_gender
+    - field.field.node.people.field_people_honors_awards
+    - field.field.node.people.field_people_memberships
     - field.field.node.people.field_people_name
-    - field.field.node.people.field_people_profession
-    - field.field.node.people.field_people_project
+    - field.field.node.people.field_people_place_death
+    - field.field.node.people.field_people_portrait
+    - field.field.node.people.field_people_professions
+    - field.field.node.people.field_people_project_description
+    - field.field.node.people.field_people_project_title
+    - field.field.node.people.field_people_re_bio_id
+    - field.field.node.people.field_people_re_system_id
     - field.field.node.people.field_people_rel_events
     - field.field.node.people.field_people_rel_news_features
     - field.field.node.people.field_people_rel_press
     - field.field.node.people.field_people_rel_press_releases
+    - field.field.node.people.field_people_website
     - node.type.people
   module:
+    - address
+    - datetime
     - entity_reference_revisions
-    - name
+    - link
+    - options
+    - text
     - user
 id: node.people.default
 targetEntityType: node
@@ -24,78 +41,164 @@ mode: default
 content:
   field_people_affiliations:
     type: entity_reference_revisions_entity_view
-    weight: 9
-    label: above
+    weight: 2
+    label: hidden
     settings:
       view_mode: default
       link: ''
     third_party_settings: {  }
     region: content
-  field_people_name:
+  field_people_birthplace:
+    weight: 15
+    label: above
+    settings: {  }
+    third_party_settings: {  }
+    type: address_default
+    region: content
+  field_people_dob:
+    weight: 17
+    label: above
+    settings:
+      format_type: medium
+      timezone_override: ''
+    third_party_settings: {  }
+    type: datetime_default
+    region: content
+  field_people_dod:
+    weight: 18
+    label: above
+    settings:
+      format_type: medium
+      timezone_override: ''
+    third_party_settings: {  }
+    type: datetime_default
+    region: content
+  field_people_education:
+    weight: 12
+    label: above
+    settings: {  }
+    third_party_settings: {  }
+    type: text_default
+    region: content
+  field_people_gender:
+    weight: 14
+    label: above
+    settings: {  }
+    third_party_settings: {  }
+    type: list_default
+    region: content
+  field_people_honors_awards:
+    weight: 13
+    label: above
+    settings: {  }
+    third_party_settings: {  }
+    type: text_default
+    region: content
+  field_people_memberships:
+    weight: 19
+    label: above
+    settings: {  }
+    third_party_settings: {  }
+    type: text_default
+    region: content
+  field_people_place_death:
+    weight: 16
+    label: above
+    settings: {  }
+    third_party_settings: {  }
+    type: address_default
+    region: content
+  field_people_portrait:
+    type: entity_reference_entity_view
+    weight: 23
+    label: above
+    settings:
+      view_mode: default
+      link: false
+    third_party_settings: {  }
+    region: content
+  field_people_professions:
     weight: 1
     label: hidden
     settings:
-      format: default
-      markup: true
-      output: default
-      multiple: default
-      multiple_delimiter: ', '
-      multiple_and: text
-      multiple_delimiter_precedes_last: never
-      multiple_el_al_min: '3'
-      multiple_el_al_first: '1'
+      link_to_entity: false
     third_party_settings: {  }
-    type: name_default
+    type: string
     region: content
-  field_people_profession:
-    type: entity_reference_revisions_entity_view
-    weight: 8
+  field_people_project_description:
+    weight: 6
+    label: hidden
+    settings: {  }
+    third_party_settings: {  }
+    type: text_default
+    region: content
+  field_people_project_title:
+    weight: 5
+    label: visually_hidden
+    settings:
+      link_to_entity: false
+    third_party_settings: {  }
+    type: string
+    region: content
+  field_people_re_bio_id:
+    weight: 20
     label: above
     settings:
-      view_mode: default
-      link: ''
+      link_to_entity: false
     third_party_settings: {  }
+    type: string
     region: content
-  field_people_project:
-    type: entity_reference_revisions_entity_view
-    weight: 3
-    label: hidden
+  field_people_re_system_id:
+    weight: 21
+    label: above
     settings:
-      view_mode: default
-      link: ''
+      link_to_entity: false
     third_party_settings: {  }
+    type: string
     region: content
   field_people_rel_events:
-    weight: 5
-    label: above
+    weight: 8
+    label: hidden
     settings:
-      link: true
+      link: false
     third_party_settings: {  }
     type: entity_reference_label
     region: content
   field_people_rel_news_features:
-    weight: 7
-    label: above
+    weight: 10
+    label: hidden
     settings:
-      link: true
+      link: false
     third_party_settings: {  }
     type: entity_reference_label
     region: content
   field_people_rel_press:
-    weight: 6
-    label: above
+    weight: 9
+    label: hidden
     settings:
-      link: true
+      link: false
     third_party_settings: {  }
     type: entity_reference_label
     region: content
   field_people_rel_press_releases:
-    weight: 4
+    weight: 7
     label: hidden
     settings:
-      link: true
+      link: false
     third_party_settings: {  }
     type: entity_reference_label
+    region: content
+  field_people_website:
+    weight: 22
+    label: above
+    settings:
+      trim_length: 80
+      url_only: false
+      url_plain: false
+      rel: ''
+      target: ''
+    third_party_settings: {  }
+    type: link
     region: content
   links:
     weight: 0
@@ -104,4 +207,5 @@ content:
     third_party_settings: {  }
 hidden:
   body: true
+  field_people_name: true
   langcode: true

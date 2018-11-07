@@ -1,0 +1,28 @@
+uuid: b0b5ac3c-cb30-42f4-ad41-9a6183a9443f
+langcode: en
+status: true
+dependencies:
+  config:
+    - system.menu.legal
+  module:
+    - block_class
+    - system
+  theme:
+    - tema
+third_party_settings:
+  block_class:
+    classes: legal
+id: legal
+theme: tema
+region: footer_second
+weight: -6
+provider: null
+plugin: 'system_menu_block:legal'
+settings:
+  id: 'system_menu_block:legal'
+  label: Legal
+  provider: system
+  label_display: '0'
+  level: 1
+  depth: 0
+visibility: {  }

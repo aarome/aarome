@@ -3,15 +3,20 @@ langcode: en
 status: true
 dependencies:
   module:
+    - block_class
     - language
+    - system
   theme:
     - tema
+third_party_settings:
+  block_class:
+    classes: block-page-title
 _core:
   default_config_hash: ZSpc3IoSaLd0PkB02nxjVPBMztIdsTdHek9SiGaqZ_c
 id: tema_page_title
 theme: tema
-region: header
-weight: -4
+region: content
+weight: -3
 provider: null
 plugin: page_title_block
 settings:
@@ -28,3 +33,8 @@ visibility:
     negate: false
     context_mapping:
       language: '@language.current_language_context:language_interface'
+  request_path:
+    id: request_path
+    pages: "/about\r\n/informazioni\r\n/people\r\n/comunita\r\n/people/*\r\n/research\r\n/ricerca\r\n/research/*/*\r\n/ricerca/*/*\r\n/publications\r\n/pubblicazioni\r\n/publications/*\r\n/pubblicazioni/*\r\n/society-of-fellows\r\n/membri-dell-aar\r\n/search"
+    negate: false
+    context_mapping: {  }

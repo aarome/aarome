@@ -1,0 +1,121 @@
+uuid: 4ab5fdd9-f247-4ace-88f7-f39b1b77c9ac
+langcode: en
+status: true
+dependencies:
+  module:
+    - system
+name: home
+label: Home
+group: Frontpages
+description: ''
+requireAllConditions: true
+disabled: false
+conditions:
+  request_path:
+    id: request_path
+    pages: '<front>'
+    negate: 0
+    uuid: 104e06fd-d66f-436d-886a-aa26a49b3cc0
+    context_mapping: {  }
+reactions:
+  blocks:
+    blocks:
+      7811a319-afca-4c6e-8643-e90bed9bbb71:
+        id: 'views_block:front_page_home-front_fellows'
+        label: ''
+        provider: views
+        label_display: visible
+        views_label: ''
+        items_per_page: none
+        region: content
+        weight: '1'
+        context_mapping: {  }
+        theme: tema
+        css_class: ''
+        unique: 0
+        context_id: home
+        uuid: 7811a319-afca-4c6e-8643-e90bed9bbb71
+      b8f4f117-6455-4cce-8190-0f441afb7e6b:
+        id: 'views_block:front_page_home-front_join_us'
+        label: ''
+        provider: views
+        label_display: visible
+        views_label: ''
+        items_per_page: none
+        region: content
+        weight: '2'
+        context_mapping: {  }
+        theme: tema
+        css_class: ''
+        unique: 0
+        context_id: home
+        uuid: b8f4f117-6455-4cce-8190-0f441afb7e6b
+      71f0b8d5-6153-48de-a7b6-d65d3ed1d616:
+        id: 'views_block:front_page_home-front_news'
+        label: ''
+        provider: views
+        label_display: visible
+        views_label: ''
+        items_per_page: none
+        region: content
+        weight: '-1'
+        context_mapping: {  }
+        theme: tema
+        css_class: ''
+        unique: 0
+        context_id: home
+        uuid: 71f0b8d5-6153-48de-a7b6-d65d3ed1d616
+      3aa093bc-59f9-4931-878d-7e039e237d28:
+        id: 'views_block:front_page_home-front_residents'
+        label: ''
+        provider: views
+        label_display: visible
+        views_label: ''
+        items_per_page: none
+        region: content
+        weight: '3'
+        context_mapping: {  }
+        theme: tema
+        css_class: ''
+        unique: 0
+        context_id: home
+        uuid: 3aa093bc-59f9-4931-878d-7e039e237d28
+      77c62f7d-7e04-4c9c-b38d-52665fb2c624:
+        id: 'views_block:front_page_home-front_rome_prize'
+        label: ''
+        provider: views
+        label_display: visible
+        views_label: ''
+        items_per_page: none
+        region: content
+        weight: '0'
+        context_mapping: {  }
+        theme: tema
+        css_class: ''
+        unique: 0
+        context_id: home
+        uuid: 77c62f7d-7e04-4c9c-b38d-52665fb2c624
+      5605dbbc-753d-4d81-8a92-6c25f6d2b925:
+        id: 'views_block:front_page_home-front_events'
+        label: ''
+        provider: views
+        label_display: 0
+        views_label: ''
+        items_per_page: none
+        region: content
+        weight: '-2'
+        context_mapping: {  }
+        theme: tema
+        css_class: ''
+        unique: 0
+        context_id: home
+        uuid: 5605dbbc-753d-4d81-8a92-6c25f6d2b925
+    id: blocks
+    saved: false
+    uuid: 92e95f84-c940-4ddc-a6fd-f9abb05c8571
+    include_default_blocks: 1
+  body_class:
+    id: body_class
+    body_class: meow
+    saved: false
+weight: 0

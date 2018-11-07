@@ -1,0 +1,8 @@
+uuid: f7c7e8bf-cf15-4575-adaa-3f3cf21574d9
+langcode: en
+status: true
+dependencies: {  }
+id: academy_date_and_time
+label: 'Academy date and time'
+locked: false
+pattern: 'l, F j, Y  g:i A'

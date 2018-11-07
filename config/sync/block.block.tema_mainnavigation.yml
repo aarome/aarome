@@ -12,7 +12,7 @@ dependencies:
 id: tema_mainnavigation
 theme: tema
 region: header
-weight: -5
+weight: -8
 provider: null
 plugin: 'system_menu_block:main'
 settings:

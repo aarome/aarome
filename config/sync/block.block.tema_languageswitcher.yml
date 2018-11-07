@@ -9,7 +9,7 @@ dependencies:
 id: tema_languageswitcher
 theme: tema
 region: header
-weight: -5
+weight: -7
 provider: null
 plugin: 'language_block:language_interface'
 settings:

@@ -1,0 +1,121 @@
+uuid: a4537323-8c30-4a1e-9c33-b5aa66cfcade
+langcode: en
+status: true
+dependencies:
+  module:
+    - system
+name: people
+label: People
+group: Frontpages
+description: ''
+requireAllConditions: false
+disabled: false
+conditions:
+  request_path:
+    id: request_path
+    pages: "/people\r\n/comunita"
+    negate: 0
+    uuid: bf472e9d-23a6-4e5b-9d65-16dc8c153599
+    context_mapping: {  }
+reactions:
+  blocks:
+    blocks:
+      72e182cd-04fa-49c1-be57-1f78e3a65f2d:
+        id: 'views_block:front_page_people-people__rome_prize_fellows'
+        label: ''
+        provider: views
+        label_display: 0
+        views_label: ''
+        items_per_page: none
+        region: content
+        weight: '-2'
+        context_mapping: {  }
+        theme: tema
+        css_class: ''
+        unique: 0
+        context_id: people
+        uuid: 72e182cd-04fa-49c1-be57-1f78e3a65f2d
+      501305cd-1f21-4c18-bc10-0287d9961681:
+        id: 'views_block:front_page_people-people__advisors'
+        label: ''
+        provider: views
+        label_display: 0
+        views_label: ''
+        items_per_page: none
+        region: content
+        weight: '3'
+        context_mapping: {  }
+        theme: tema
+        css_class: ''
+        unique: 0
+        context_id: people
+        uuid: 501305cd-1f21-4c18-bc10-0287d9961681
+      e8168906-2a46-478f-b21d-bc0ed9b30591:
+        id: 'views_block:front_page_people-people__residents'
+        label: ''
+        provider: views
+        label_display: 0
+        views_label: ''
+        items_per_page: none
+        region: content
+        weight: '0'
+        context_mapping: {  }
+        theme: tema
+        css_class: ''
+        unique: 0
+        context_id: people
+        uuid: e8168906-2a46-478f-b21d-bc0ed9b30591
+      83c43f22-3da4-4999-bd85-e41c772497f5:
+        id: 'views_block:front_page_people-people__italian_fellows'
+        label: ''
+        provider: views
+        label_display: 0
+        views_label: ''
+        items_per_page: none
+        region: content
+        weight: '-1'
+        context_mapping: {  }
+        theme: tema
+        css_class: ''
+        unique: 0
+        context_id: people
+        uuid: 83c43f22-3da4-4999-bd85-e41c772497f5
+      45a55066-292c-4a80-acb5-d02f296ba622:
+        id: 'views_block:front_page_people-people__affiliated_fellows'
+        label: ''
+        provider: views
+        label_display: 0
+        views_label: ''
+        items_per_page: none
+        region: content
+        weight: '1'
+        context_mapping: {  }
+        theme: tema
+        css_class: ''
+        unique: 0
+        context_id: people
+        uuid: 45a55066-292c-4a80-acb5-d02f296ba622
+      a6d0dd6f-9400-467d-b2da-65263ba19906:
+        id: 'views_block:front_page_people-people__visiting_artists_scholars'
+        label: ''
+        provider: views
+        label_display: 0
+        views_label: ''
+        items_per_page: none
+        region: content
+        weight: '2'
+        context_mapping: {  }
+        theme: tema
+        css_class: ''
+        unique: 0
+        context_id: people
+        uuid: a6d0dd6f-9400-467d-b2da-65263ba19906
+    id: blocks
+    saved: false
+    uuid: 1d38bd1e-be3b-4a9a-87ed-74498e73f11a
+    include_default_blocks: 1
+  body_class:
+    id: body_class
+    body_class: 'front front-people'
+    saved: false
+weight: 0

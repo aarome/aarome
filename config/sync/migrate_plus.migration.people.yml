@@ -1,32 +1,38 @@
-uuid: 704d1f7b-31aa-4c7b-b068-ea7b2819172c
+uuid: 7d5c6580-641c-4b8a-ba42-4a79b04aeff4
 langcode: en
 status: true
 dependencies: {  }
 _core:
-  default_config_hash: 6jMQ4oGJgf1DnoR0_aRx4IAHA21HjtUwG3lxD1lP2EE
+  default_config_hash: awjF9zjvtDBXAdboVAKlE5BwjpgDYNhqG63JbTuHrtg
 id: people
 class: null
 field_plugin_method: null
 cck_plugin_method: null
 migration_tags: csv
-migration_group: academy
-label: 'Migrating events from CSV file'
+migration_group: directory
+label: 'Migrating people from CSV file'
 source:
   plugin: csv
-  track_changes: true
-  path: 'public://migrations/people.csv'
+  path: 'public://migrations/people_fellows.csv'
   delimiter: ','
   enclosure: '"'
   header_row_count: 1
   keys:
-    - nid
+    - id
 process:
   type:
     plugin: default_value
     default_value: people
+  uid:
+    plugin: default_value
+    default_value: 193
   field_people_legacy_id: nid
-  field_people_name/given: first_name
-  field_people_name/family: last_name
+  field_people_name/given: fname
+  field_people_name/family: lname
+  field_people_project_title: rp_proj_title
+  field_people_project_description: rp_proj_descr
+  field_people_professions: profession
+  field_people_portrait/target_id: fid
   field_people_affiliations/target_id:
     -
       plugin: migration
@@ -50,5 +56,5 @@ process:
 destination:
   plugin: 'entity:node'
 migration_dependencies:
-  required:
+  optional:
     - affiliations

@@ -1,9 +1,9 @@
-uuid: 0491ce5c-71a2-492b-878d-1df88b8063c0
+uuid: df6fe319-949f-485d-991e-4803fde250be
 langcode: en
 status: true
 dependencies: {  }
 _core:
-  default_config_hash: RWYtsuDIME2V_RxrRjBuQpM1V-canifk9HecUV3Mdkk
+  default_config_hash: ktaNTpv3Q6veM97Zb0NJ7obMLbk3l2Do-yPCpdcGotQ
 id: press_releases
 class: null
 field_plugin_method: null
@@ -26,25 +26,12 @@ process:
     default_value: press_releases
   uid:
     -
-      plugin: entity_lookup
-      source: author
-      ignore_case: true
-      value_key: name
-      entity_type: user
-    -
       plugin: default_value
-      default_value: 3
+      default_value: 19
   created: post_date
-  changed: updated_date
-  field_press_releases_legacy_id: nid
+  field_press_releases_files/target_id: fid
   title: title
-  field_press_releases_files:
-    plugin: migration
-    source: file
-    migration: press_release_files
-    no_stub: true
+  field_events_image/target_id: fid
 destination:
   plugin: 'entity:node'
-migration_dependencies:
-  optional:
-    - press_release_files
+migration_dependencies: null

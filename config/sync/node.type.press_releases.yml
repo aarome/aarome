@@ -10,7 +10,7 @@ third_party_settings:
     parent: ''
 name: 'Press releases'
 type: press_releases
-description: ''
+description: 'Press releases issued by the Academy''s communications team.'
 help: ''
 new_revision: false
 preview_mode: 1

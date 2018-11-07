@@ -1,6 +1,6 @@
 uuid: 6b1189f4-5ec6-4786-8750-85d1d68fb739
 langcode: en
-status: false
+status: true
 dependencies:
   module:
     - system
@@ -10,8 +10,8 @@ _core:
   default_config_hash: WWu2OQswgCztl9OeXjD1stexIEMZsSgPMYIdC-JHx9c
 id: tema_breadcrumbs
 theme: tema
-region: header
-weight: 1
+region: content
+weight: -6
 provider: null
 plugin: system_breadcrumb_block
 settings:

@@ -6,9 +6,8 @@ dependencies:
     - menu_ui
 third_party_settings:
   menu_ui:
-    available_menus:
-      - main
-    parent: 'main:'
+    available_menus: {  }
+    parent: ''
 name: People
 type: people
 description: 'Includes Rome Prize recipients, Academy resident artists and scholars, visiting artists, staff, and administration. A complete list of support types is available at http://aarome.org/help'

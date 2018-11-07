@@ -10,7 +10,7 @@ third_party_settings:
     parent: ''
 name: Press
 type: press
-description: ''
+description: 'Press about the American Academy in Rome.'
 help: ''
 new_revision: false
 preview_mode: 1

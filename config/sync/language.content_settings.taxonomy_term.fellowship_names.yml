@@ -1,0 +1,18 @@
+uuid: f8d95a3f-c12a-44a3-858a-379db6a1aef4
+langcode: en
+status: true
+dependencies:
+  config:
+    - taxonomy.vocabulary.fellowship_names
+  module:
+    - content_translation
+third_party_settings:
+  content_translation:
+    enabled: true
+    bundle_settings:
+      untranslatable_fields_hide: '0'
+id: taxonomy_term.fellowship_names
+target_entity_type_id: taxonomy_term
+target_bundle: fellowship_names
+default_langcode: site_default
+language_alterable: true

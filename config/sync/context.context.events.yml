@@ -1,0 +1,27 @@
+uuid: 6342d0c2-8e69-4e84-9830-357077482d30
+langcode: en
+status: true
+dependencies:
+  module:
+    - system
+name: events
+label: Events
+group: 'Inside pages'
+description: ''
+requireAllConditions: true
+disabled: false
+conditions:
+  request_path:
+    id: request_path
+    pages: 'events/*'
+    negate: 0
+    uuid: f0d29dfe-8812-4482-b1bb-1152d19576d7
+    context_mapping: {  }
+reactions:
+  blocks:
+    blocks: {  }
+    id: blocks
+    saved: false
+    uuid: f0d199a2-f9a5-41ff-9463-925624c51163
+    include_default_blocks: 0
+weight: 0

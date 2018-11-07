@@ -4,10 +4,15 @@ status: true
 dependencies:
   config:
     - field.field.node.news_features.body
+    - field.field.node.news_features.field_news_feature_date
+    - field.field.node.news_features.field_news_features_images
     - field.field.node.news_features.field_news_features_rel_events
     - field.field.node.news_features.field_news_features_rel_people
+    - field.field.node.news_features.field_safe_path_alias
     - node.type.news_features
   module:
+    - computed_field
+    - datetime
     - path
     - text
 id: node.news_features.default
@@ -30,6 +35,21 @@ content:
     region: content
     settings: {  }
     third_party_settings: {  }
+  field_news_feature_date:
+    weight: 124
+    settings: {  }
+    third_party_settings: {  }
+    type: datetime_default
+    region: content
+  field_news_features_images:
+    weight: 125
+    settings:
+      match_operator: CONTAINS
+      size: 60
+      placeholder: ''
+    third_party_settings: {  }
+    type: entity_reference_autocomplete
+    region: content
   field_news_features_rel_events:
     weight: 122
     settings:
@@ -47,6 +67,12 @@ content:
       placeholder: ''
     third_party_settings: {  }
     type: entity_reference_autocomplete
+    region: content
+  field_safe_path_alias:
+    weight: 126
+    settings: {  }
+    third_party_settings: {  }
+    type: computed_string_widget
     region: content
   langcode:
     type: language_select

@@ -5,4 +5,4 @@ dependencies: {  }
 id: news_features
 label: 'News features'
 locked: false
-pattern: 'F j, Y'
+pattern: 'F j Y'

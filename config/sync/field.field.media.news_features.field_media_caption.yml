@@ -1,0 +1,21 @@
+uuid: aafee764-176d-4db8-8e4a-fb67019522a4
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.media.field_media_caption
+    - media.type.news_features
+  module:
+    - text
+id: media.news_features.field_media_caption
+field_name: field_media_caption
+entity_type: media
+bundle: news_features
+label: Caption
+description: ''
+required: false
+translatable: true
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: text

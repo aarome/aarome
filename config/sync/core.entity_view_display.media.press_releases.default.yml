@@ -1,9 +1,9 @@
-uuid: 5bf9a5bd-f899-4ec9-be58-762d82db5daf
+uuid: 45b74356-7d95-4e50-9711-d73aa8f0ca10
 langcode: en
 status: true
 dependencies:
   config:
-    - field.field.media.press_releases.field_media_file_1
+    - field.field.media.press_releases.field_media_file
     - image.style.thumbnail
     - media.type.press_releases
   module:
@@ -25,7 +25,7 @@ content:
       custom_date_format: ''
       timezone: ''
     third_party_settings: {  }
-  field_media_file_1:
+  field_media_file:
     weight: 6
     label: above
     settings:
