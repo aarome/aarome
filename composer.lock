@@ -5,6 +5,8 @@
         "This file is @generated automatically"
     ],
     "content-hash": "bc1d859da4acf5c4790849a62977cb1f",
+    "content-hash": "f1c05f0ecc05e2cbb2461be2e99c3b5b",
+    "content-hash": "521fb20c3078c25336b8bb99498162ce",
     "packages": [
         {
             "name": "alchemy/zippy",
@@ -4722,7 +4724,7 @@
                 },
                 "drupal": {
                     "version": "8.x-1.0-alpha1",
-                    "datestamp": "1536437580",
+                    "datestamp": "1475245822",
                     "security-coverage": {
                         "status": "not-covered",
                         "message": "Alpha releases are not covered by Drupal security advisories."
@@ -4734,10 +4736,6 @@
                 "GPL-2.0+"
             ],
             "authors": [
-                {
-                    "name": "TR",
-                    "homepage": "https://www.drupal.org/user/202830"
-                },
                 {
                     "name": "fago",
                     "homepage": "https://www.drupal.org/user/16747"
@@ -10640,17 +10638,6 @@
         {
             "name": "webflo/drupal-core-require-dev",
             "version": "8.5.5",
-            "source": {
-                "type": "git",
-                "url": "https://github.com/webflo/drupal-core-require-dev.git",
-                "reference": "f7be17bcdcff1e6d346e20476262a4eed7e5a741"
-            },
-            "dist": {
-                "type": "zip",
-                "url": "https://api.github.com/repos/webflo/drupal-core-require-dev/zipball/f7be17bcdcff1e6d346e20476262a4eed7e5a741",
-                "reference": "f7be17bcdcff1e6d346e20476262a4eed7e5a741",
-                "shasum": ""
-            },
             "require": {
                 "behat/mink": "1.7.x-dev",
                 "behat/mink-goutte-driver": "^1.2",
