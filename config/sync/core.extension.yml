@@ -53,7 +53,6 @@ module:
   migrate_plus: 0
   migrate_run: 0
   migrate_source_csv: 0
-  migrations: 0
   name: 0
   node: 0
   noreqnewpass: 0
