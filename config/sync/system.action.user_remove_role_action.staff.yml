@@ -1,0 +1,14 @@
+uuid: 38aa5a76-b2ff-434f-bebf-3a62538afe12
+langcode: en
+status: true
+dependencies:
+  config:
+    - user.role.staff
+  module:
+    - user
+id: user_remove_role_action.staff
+label: 'Remove the Academy staff role from the selected user(s)'
+type: user
+plugin: user_remove_role_action
+configuration:
+  rid: staff

@@ -1,0 +1,24 @@
+uuid: 860b44a7-c63c-4199-8566-068eec404ccb
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_events_notice
+    - node.type.events
+  module:
+    - text
+id: node.events.field_events_notice
+field_name: field_events_notice
+entity_type: node
+bundle: events
+label: Notice
+description: ''
+required: false
+translatable: true
+default_value:
+  -
+    value: "<p>Please note: a valid photo ID is required for entry into the American Academy in Rome. Backpacks and luggage with dimensions larger than 40 x 35 x 15 cm (16 x 14 x 6 in) are not permitted on the property. There are no locker facilities available.</p>\r\n"
+    format: basic_html
+default_value_callback: ''
+settings: {  }
+field_type: text_long

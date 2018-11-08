@@ -9,13 +9,16 @@ dependencies:
     - field.field.node.events.field_events_event_type
     - field.field.node.events.field_events_image
     - field.field.node.events.field_events_legacy_id
+    - field.field.node.events.field_events_notice
     - field.field.node.events.field_events_rel_news_feature
     - field.field.node.events.field_events_rel_people
     - field.field.node.events.field_events_rel_places
     - field.field.node.events.field_events_rel_press
     - field.field.node.events.field_events_rel_press_releases
+    - field.field.node.events.field_safe_path_alias
     - node.type.events
   module:
+    - computed_field
     - datetime_range
     - text
     - user
@@ -66,6 +69,13 @@ content:
       link: false
     third_party_settings: {  }
     region: content
+  field_events_notice:
+    weight: 12
+    label: above
+    settings: {  }
+    third_party_settings: {  }
+    type: text_default
+    region: content
   field_events_rel_news_feature:
     weight: 7
     label: above
@@ -105,6 +115,16 @@ content:
       link: true
     third_party_settings: {  }
     type: entity_reference_label
+    region: content
+  field_safe_path_alias:
+    weight: 11
+    label: above
+    settings:
+      sanitized: true
+      cache_unit: -1
+      cache_duration: 1
+    third_party_settings: {  }
+    type: computed_string
     region: content
   links:
     weight: 0

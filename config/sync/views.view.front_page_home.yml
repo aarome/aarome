@@ -3,11 +3,8 @@ langcode: en
 status: true
 dependencies:
   config:
-    - field.storage.media.field_media_caption
     - field.storage.media.field_media_image
     - field.storage.node.field_events_event_dates
-    - field.storage.node.field_events_event_series
-    - field.storage.node.field_events_image
     - field.storage.node.field_news_feature_date
     - field.storage.node.field_page_page_section
     - field.storage.paragraph.field_affil_discipline
@@ -32,8 +29,8 @@ dependencies:
     - node
     - paragraphs
     - responsive_image
+    - slick_views
     - taxonomy
-    - text
     - user
     - views_url_alias_node
 id: front_page_home
@@ -173,73 +170,6 @@ display:
           entity_type: node
           entity_field: title
           plugin_id: field
-        field_page_section_links:
-          id: field_page_section_links
-          table: paragraph__field_page_section_links
-          field: field_page_section_links
-          relationship: field_page_page_section
-          group_type: group
-          admin_label: ''
-          label: ''
-          exclude: false
-          alter:
-            alter_text: false
-            text: ''
-            make_link: false
-            path: ''
-            absolute: false
-            external: false
-            replace_spaces: false
-            path_case: none
-            trim_whitespace: false
-            alt: ''
-            rel: ''
-            link_class: ''
-            prefix: ''
-            suffix: ''
-            target: ''
-            nl2br: false
-            max_length: 0
-            word_boundary: true
-            ellipsis: true
-            more_link: false
-            more_link_text: ''
-            more_link_path: ''
-            strip_tags: false
-            trim: false
-            preserve_tags: ''
-            html: false
-          element_type: ''
-          element_class: ''
-          element_label_type: ''
-          element_label_class: ''
-          element_label_colon: false
-          element_wrapper_type: ''
-          element_wrapper_class: ''
-          element_default_classes: true
-          empty: ''
-          hide_empty: false
-          empty_zero: false
-          hide_alter_empty: true
-          click_sort_column: uri
-          type: link
-          settings:
-            trim_length: 80
-            url_only: false
-            url_plain: false
-            rel: '0'
-            target: '0'
-          group_column: ''
-          group_columns: {  }
-          group_rows: true
-          delta_limit: 0
-          delta_offset: 0
-          delta_reversed: false
-          delta_first_last: false
-          multi_type: separator
-          separator: ' '
-          field_api_classes: false
-          plugin_id: field
       filters:
         status:
           value: '1'
@@ -356,8 +286,7 @@ display:
         - url.query_args
         - 'user.node_grants:view'
         - user.permissions
-      tags:
-        - 'config:field.storage.paragraph.field_page_section_links'
+      tags: {  }
   front_events:
     display_plugin: block
     id: front_events
@@ -399,8 +328,7 @@ display:
           admin_label: ''
           operator: in
           value:
-            en: en
-            it: it
+            '***LANGUAGE_language_interface***': '***LANGUAGE_language_interface***'
           group: 1
           exposed: false
           expose:
@@ -515,6 +443,82 @@ display:
           1: AND
       rendering_language: '***LANGUAGE_language_interface***'
       display_description: ''
+      relationships:
+        field_events_image:
+          id: field_events_image
+          table: node__field_events_image
+          field: field_events_image
+          relationship: none
+          group_type: group
+          admin_label: 'field_events_image: Media'
+          required: false
+          plugin_id: standard
+      pager:
+        type: some
+        options:
+          items_per_page: 5
+          offset: 0
+      css_class: 'front front_events'
+      sorts:
+        field_events_event_dates_value:
+          id: field_events_event_dates_value
+          table: node__field_events_event_dates
+          field: field_events_event_dates_value
+          relationship: none
+          group_type: group
+          admin_label: ''
+          order: DESC
+          exposed: false
+          expose:
+            label: ''
+          plugin_id: standard
+      style:
+        type: slick
+        options:
+          vanilla: true
+          optionset: front_events
+          skin: ''
+          layout: ''
+          caption:
+            field_media_image: '0'
+            title: '0'
+            field_events_event_dates: '0'
+            edit_node: '0'
+          optionset_thumbnail: ''
+          skin_thumbnail: ''
+          thumbnail_caption: ''
+          grid_header: ''
+          grid: null
+          grid_medium: null
+          grid_small: null
+          visible_items: null
+          preserve_keys: false
+          image: ''
+          thumbnail: ''
+          overlay: ''
+          title: ''
+          link: ''
+          class: ''
+          id: ''
+          override: true
+          overridables:
+            arrows: arrows
+            draggable: draggable
+            infinite: infinite
+            autoplay: '0'
+            dots: '0'
+            mouseWheel: '0'
+            randomize: '0'
+            variableWidth: '0'
+          cache: 0
+          current_view_mode: front_events
+      row:
+        type: fields
+        options:
+          default_field_elements: false
+          inline: {  }
+          separator: ''
+          hide_empty: false
       fields:
         alias:
           id: alias
@@ -559,17 +563,17 @@ display:
           element_label_colon: false
           element_wrapper_type: ''
           element_wrapper_class: ''
-          element_default_classes: false
+          element_default_classes: true
           empty: ''
           hide_empty: false
           empty_zero: false
           hide_alter_empty: true
           plugin_id: standard
-        field_events_image:
-          id: field_events_image
-          table: node__field_events_image
-          field: field_events_image
-          relationship: none
+        field_media_image:
+          id: field_media_image
+          table: media__field_media_image
+          field: field_media_image
+          relationship: field_events_image
           group_type: group
           admin_label: ''
           label: ''
@@ -582,7 +586,7 @@ display:
             absolute: false
             external: false
             replace_spaces: false
-            path_case: lower
+            path_case: none
             trim_whitespace: false
             alt: ''
             rel: ''
@@ -614,72 +618,11 @@ display:
           empty_zero: false
           hide_alter_empty: true
           click_sort_column: target_id
-          type: entity_reference_entity_view
+          type: image
           settings:
-            view_mode: event_front
-          group_column: target_id
-          group_columns: {  }
-          group_rows: true
-          delta_limit: 0
-          delta_offset: 0
-          delta_reversed: false
-          delta_first_last: false
-          multi_type: separator
-          separator: ', '
-          field_api_classes: false
-          plugin_id: field
-        field_media_caption:
-          id: field_media_caption
-          table: media__field_media_caption
-          field: field_media_caption
-          relationship: field_events_image
-          group_type: group
-          admin_label: ''
-          label: ''
-          exclude: false
-          alter:
-            alter_text: false
-            text: ''
-            make_link: false
-            path: ''
-            absolute: false
-            external: false
-            replace_spaces: false
-            path_case: none
-            trim_whitespace: false
-            alt: ''
-            rel: ''
-            link_class: ''
-            prefix: ''
-            suffix: ''
-            target: ''
-            nl2br: false
-            max_length: 0
-            word_boundary: true
-            ellipsis: true
-            more_link: false
-            more_link_text: ''
-            more_link_path: ''
-            strip_tags: false
-            trim: false
-            preserve_tags: ''
-            html: false
-          element_type: ''
-          element_class: ''
-          element_label_type: ''
-          element_label_class: ''
-          element_label_colon: false
-          element_wrapper_type: ''
-          element_wrapper_class: ''
-          element_default_classes: false
-          empty: ''
-          hide_empty: false
-          empty_zero: false
-          hide_alter_empty: true
-          click_sort_column: value
-          type: text_default
-          settings: {  }
-          group_column: value
+            image_style: ''
+            image_link: ''
+          group_column: ''
           group_columns: {  }
           group_rows: true
           delta_limit: 0
@@ -703,7 +646,7 @@ display:
             alter_text: false
             text: ''
             make_link: true
-            path: 'events{{alias}}'
+            path: 'events{{ alias }}'
             absolute: false
             external: false
             replace_spaces: false
@@ -726,7 +669,7 @@ display:
             trim: false
             preserve_tags: ''
             html: false
-          element_type: h4
+          element_type: h1
           element_class: title
           element_label_type: ''
           element_label_class: ''
@@ -755,20 +698,20 @@ display:
           entity_type: node
           entity_field: title
           plugin_id: field
-        field_events_event_series:
-          id: field_events_event_series
-          table: node__field_events_event_series
-          field: field_events_event_series
+        field_events_event_dates:
+          id: field_events_event_dates
+          table: node__field_events_event_dates
+          field: field_events_event_dates
           relationship: none
           group_type: group
           admin_label: ''
           label: ''
-          exclude: true
+          exclude: false
           alter:
             alter_text: false
             text: ''
-            make_link: false
-            path: ''
+            make_link: true
+            path: 'events{{ alias }}'
             absolute: false
             external: false
             replace_spaces: false
@@ -803,25 +746,27 @@ display:
           hide_empty: false
           empty_zero: false
           hide_alter_empty: true
-          click_sort_column: target_id
-          type: entity_reference_label
+          click_sort_column: value
+          type: daterange_default
           settings:
-            link: false
-          group_column: target_id
+            timezone_override: ''
+            format_type: events
+            separator: '-'
+          group_column: value
           group_columns: {  }
           group_rows: true
-          delta_limit: 0
+          delta_limit: 2
           delta_offset: 0
           delta_reversed: false
-          delta_first_last: false
+          delta_first_last: true
           multi_type: separator
           separator: ', '
           field_api_classes: false
           plugin_id: field
-        field_events_event_dates:
-          id: field_events_event_dates
-          table: node__field_events_event_dates
-          field: field_events_event_dates
+        edit_node:
+          id: edit_node
+          table: node
+          field: edit_node
           relationship: none
           group_type: group
           admin_label: ''
@@ -854,8 +799,8 @@ display:
             trim: false
             preserve_tags: ''
             html: false
-          element_type: '0'
-          element_class: time
+          element_type: div
+          element_class: edit
           element_label_type: ''
           element_label_class: ''
           element_label_colon: false
@@ -866,65 +811,11 @@ display:
           hide_empty: false
           empty_zero: false
           hide_alter_empty: true
-          click_sort_column: value
-          type: daterange_default
-          settings:
-            timezone_override: ''
-            format_type: academy_date
-            separator: '-'
-          group_column: value
-          group_columns: {  }
-          group_rows: true
-          delta_limit: 0
-          delta_offset: 0
-          delta_reversed: false
-          delta_first_last: false
-          multi_type: separator
-          separator: ', '
-          field_api_classes: false
-          plugin_id: field
-      relationships:
-        field_events_image:
-          id: field_events_image
-          table: node__field_events_image
-          field: field_events_image
-          relationship: none
-          group_type: group
-          admin_label: 'field_events_image: Media'
-          required: false
-          plugin_id: standard
-      pager:
-        type: some
-        options:
-          items_per_page: 5
-          offset: 0
-      css_class: 'front front_events'
-      sorts:
-        field_events_event_dates_value:
-          id: field_events_event_dates_value
-          table: node__field_events_event_dates
-          field: field_events_event_dates_value
-          relationship: none
-          group_type: group
-          admin_label: ''
-          order: DESC
-          exposed: false
-          expose:
-            label: ''
-          plugin_id: standard
-      style:
-        type: default
-        options:
-          grouping: {  }
-          row_class: ''
-          default_row_class: false
-      row:
-        type: fields
-        options:
-          default_field_elements: false
-          inline: {  }
-          separator: ''
-          hide_empty: false
+          text: edit
+          output_url_as_text: false
+          absolute: false
+          entity_type: node
+          plugin_id: entity_link_edit
     cache_metadata:
       max-age: -1
       contexts:
@@ -932,10 +823,8 @@ display:
         - 'user.node_grants:view'
         - user.permissions
       tags:
-        - 'config:field.storage.media.field_media_caption'
+        - 'config:field.storage.media.field_media_image'
         - 'config:field.storage.node.field_events_event_dates'
-        - 'config:field.storage.node.field_events_event_series'
-        - 'config:field.storage.node.field_events_image'
   front_fellows:
     display_plugin: block
     id: front_fellows
@@ -1826,6 +1715,55 @@ display:
         groups:
           1: AND
       fields:
+        alias:
+          id: alias
+          table: views_url_alias_node
+          field: alias
+          relationship: none
+          group_type: group
+          admin_label: ''
+          label: ''
+          exclude: true
+          alter:
+            alter_text: false
+            text: ''
+            make_link: false
+            path: ''
+            absolute: false
+            external: false
+            replace_spaces: false
+            path_case: none
+            trim_whitespace: false
+            alt: ''
+            rel: ''
+            link_class: ''
+            prefix: ''
+            suffix: ''
+            target: ''
+            nl2br: false
+            max_length: 0
+            word_boundary: true
+            ellipsis: true
+            more_link: false
+            more_link_text: ''
+            more_link_path: ''
+            strip_tags: false
+            trim: false
+            preserve_tags: ''
+            html: false
+          element_type: ''
+          element_class: ''
+          element_label_type: ''
+          element_label_class: ''
+          element_label_colon: false
+          element_wrapper_type: ''
+          element_wrapper_class: ''
+          element_default_classes: true
+          empty: ''
+          hide_empty: false
+          empty_zero: false
+          hide_alter_empty: true
+          plugin_id: standard
         field_news_feature_date:
           id: field_news_feature_date
           table: node__field_news_feature_date
@@ -1902,8 +1840,8 @@ display:
           alter:
             alter_text: false
             text: ''
-            make_link: false
-            path: ''
+            make_link: true
+            path: 'news/features{{ alias }}'
             absolute: false
             external: false
             replace_spaces: false

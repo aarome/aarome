@@ -9,11 +9,13 @@ dependencies:
     - field.field.node.events.field_events_event_type
     - field.field.node.events.field_events_image
     - field.field.node.events.field_events_legacy_id
+    - field.field.node.events.field_events_notice
     - field.field.node.events.field_events_rel_news_feature
     - field.field.node.events.field_events_rel_people
     - field.field.node.events.field_events_rel_places
     - field.field.node.events.field_events_rel_press
     - field.field.node.events.field_events_rel_press_releases
+    - field.field.node.events.field_safe_path_alias
     - node.type.events
   module:
     - datetime_range
@@ -27,7 +29,7 @@ mode: default
 content:
   body:
     type: text_textarea_with_summary
-    weight: 5
+    weight: 7
     settings:
       rows: 9
       summary_rows: 3
@@ -36,7 +38,7 @@ content:
     region: content
   created:
     type: datetime_timestamp
-    weight: 10
+    weight: 14
     region: content
     settings: {  }
     third_party_settings: {  }
@@ -47,7 +49,7 @@ content:
     type: daterange_default
     region: content
   field_events_event_series:
-    weight: 26
+    weight: 1
     settings:
       match_operator: CONTAINS
       size: 60
@@ -62,7 +64,7 @@ content:
     type: options_select
     region: content
   field_events_image:
-    weight: 29
+    weight: 6
     settings:
       form_mode: default
       label_singular: ''
@@ -77,16 +79,16 @@ content:
     third_party_settings: {  }
     type: inline_entity_form_complex
     region: content
-  field_events_legacy_id:
-    weight: 27
+  field_events_notice:
+    weight: 8
     settings:
-      size: 60
+      rows: 5
       placeholder: ''
     third_party_settings: {  }
-    type: string_textfield
+    type: text_textarea
     region: content
   field_events_rel_news_feature:
-    weight: 6
+    weight: 9
     settings:
       match_operator: STARTS_WITH
       size: 60
@@ -95,7 +97,7 @@ content:
     type: entity_reference_autocomplete
     region: content
   field_events_rel_people:
-    weight: 7
+    weight: 10
     settings:
       match_operator: STARTS_WITH
       size: 60
@@ -104,7 +106,7 @@ content:
     type: entity_reference_autocomplete
     region: content
   field_events_rel_places:
-    weight: 3
+    weight: 5
     settings:
       match_operator: STARTS_WITH
       size: 60
@@ -113,7 +115,7 @@ content:
     type: entity_reference_autocomplete
     region: content
   field_events_rel_press:
-    weight: 28
+    weight: 11
     settings:
       match_operator: CONTAINS
       size: 60
@@ -122,7 +124,7 @@ content:
     type: entity_reference_autocomplete
     region: content
   field_events_rel_press_releases:
-    weight: 8
+    weight: 12
     settings:
       match_operator: STARTS_WITH
       size: 60
@@ -139,7 +141,7 @@ content:
     third_party_settings: {  }
   path:
     type: path
-    weight: 14
+    weight: 18
     region: content
     settings: {  }
     third_party_settings: {  }
@@ -147,43 +149,45 @@ content:
     type: boolean_checkbox
     settings:
       display_label: true
-    weight: 12
+    weight: 16
     region: content
     third_party_settings: {  }
   status:
     type: boolean_checkbox
     settings:
       display_label: true
-    weight: 15
+    weight: 19
     region: content
     third_party_settings: {  }
   sticky:
     type: boolean_checkbox
     settings:
       display_label: true
-    weight: 13
+    weight: 17
     region: content
     third_party_settings: {  }
   title:
     type: string_textfield
-    weight: 1
+    weight: 3
     region: content
     settings:
       size: 60
       placeholder: ''
     third_party_settings: {  }
   translation:
-    weight: 11
+    weight: 15
     region: content
     settings: {  }
     third_party_settings: {  }
   uid:
     type: entity_reference_autocomplete
-    weight: 9
+    weight: 13
     settings:
       match_operator: CONTAINS
       size: 60
       placeholder: ''
     region: content
     third_party_settings: {  }
-hidden: {  }
+hidden:
+  field_events_legacy_id: true
+  field_safe_path_alias: true
