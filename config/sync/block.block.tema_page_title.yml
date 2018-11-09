@@ -35,6 +35,6 @@ visibility:
       language: '@language.current_language_context:language_interface'
   request_path:
     id: request_path
-    pages: "/about\r\n/informazioni\r\n/people\r\n/comunita\r\n/people/*\r\n/research\r\n/ricerca\r\n/research/*/*\r\n/ricerca/*/*\r\n/publications\r\n/pubblicazioni\r\n/publications/*\r\n/pubblicazioni/*\r\n/society-of-fellows\r\n/membri-dell-aar\r\n/search"
+    pages: "/about\r\n/informazioni\r\n/people\r\n/comunita\r\n/people/*\r\n/research\r\n/ricerca\r\n/research/*/*\r\n/ricerca/*/*\r\n/publications\r\n/pubblicazioni\r\n/publications/*\r\n/pubblicazioni/*\r\n/society-of-fellows\r\n/membri-dell-aar\r\n/search\r\n/place\r\n/luoghi"
     negate: false
     context_mapping: {  }

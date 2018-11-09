@@ -28,7 +28,7 @@ reactions:
         views_label: ''
         items_per_page: none
         region: content
-        weight: '-2'
+        weight: '1'
         context_mapping: {  }
         theme: tema
         css_class: ''
@@ -43,7 +43,7 @@ reactions:
         views_label: ''
         items_per_page: none
         region: content
-        weight: '-1'
+        weight: '-3'
         context_mapping: {  }
         theme: tema
         css_class: ''
@@ -58,7 +58,7 @@ reactions:
         views_label: ''
         items_per_page: none
         region: content
-        weight: '0'
+        weight: '-2'
         context_mapping: {  }
         theme: tema
         css_class: ''
@@ -73,7 +73,7 @@ reactions:
         views_label: ''
         items_per_page: none
         region: content
-        weight: '1'
+        weight: '2'
         context_mapping: {  }
         theme: tema
         css_class: ''
@@ -88,13 +88,58 @@ reactions:
         views_label: ''
         items_per_page: none
         region: content
-        weight: '2'
+        weight: '4'
         context_mapping: {  }
         theme: tema
         css_class: ''
         unique: 0
         context_id: sof
         uuid: c2bd6366-9c0f-40e1-bd09-f6ea235e9d54
+      a4c3a4e0-14b1-4356-9e90-faf1c5c59bd8:
+        id: 'views_block:front_page_sof-sof_directory'
+        label: ''
+        provider: views
+        label_display: 0
+        views_label: ''
+        items_per_page: none
+        region: content
+        weight: '3'
+        context_mapping: {  }
+        theme: tema
+        css_class: ''
+        unique: 0
+        context_id: sof
+        uuid: a4c3a4e0-14b1-4356-9e90-faf1c5c59bd8
+      6084c6d0-3fe6-49a5-a542-bc9249444956:
+        id: 'views_block:front_page_sof-sof_news'
+        label: ''
+        provider: views
+        label_display: 0
+        views_label: ''
+        items_per_page: none
+        region: content
+        weight: '0'
+        context_mapping: {  }
+        theme: tema
+        css_class: ''
+        unique: 0
+        context_id: sof
+        uuid: 6084c6d0-3fe6-49a5-a542-bc9249444956
+      b1a13fdf-4a7e-4bfa-ab6a-6d26b539f746:
+        id: 'views_block:front_page_sof-sof_history'
+        label: ''
+        provider: views
+        label_display: 0
+        views_label: ''
+        items_per_page: none
+        region: content
+        weight: '-1'
+        context_mapping: {  }
+        theme: tema
+        css_class: ''
+        unique: 0
+        context_id: sof
+        uuid: b1a13fdf-4a7e-4bfa-ab6a-6d26b539f746
     id: blocks
     saved: false
     uuid: 4dc6ee89-f759-4b67-8b23-388bb297ada7

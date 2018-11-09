@@ -58,7 +58,7 @@ reactions:
         views_label: ''
         items_per_page: none
         region: content
-        weight: '3'
+        weight: '2'
         context_mapping: {  }
         theme: tema
         css_class: ''
@@ -103,7 +103,7 @@ reactions:
         views_label: ''
         items_per_page: none
         region: content
-        weight: '2'
+        weight: '3'
         context_mapping: {  }
         theme: tema
         css_class: ''

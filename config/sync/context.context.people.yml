@@ -20,8 +20,23 @@ conditions:
 reactions:
   blocks:
     blocks:
-      72e182cd-04fa-49c1-be57-1f78e3a65f2d:
-        id: 'views_block:front_page_people-people__rome_prize_fellows'
+      bd2f3ae7-e131-4dd4-b100-a4138be8147c:
+        id: 'views_block:front_page_people-people_rome_prize_fellows'
+        label: ''
+        provider: views
+        label_display: 0
+        views_label: ''
+        items_per_page: none
+        region: content
+        weight: '-3'
+        context_mapping: {  }
+        theme: tema
+        css_class: ''
+        unique: 0
+        context_id: people
+        uuid: bd2f3ae7-e131-4dd4-b100-a4138be8147c
+      4b8a522c-36b8-4965-b5ae-f60285785698:
+        id: 'views_block:front_page_people-people_italian_fellows'
         label: ''
         provider: views
         label_display: 0
@@ -34,39 +49,9 @@ reactions:
         css_class: ''
         unique: 0
         context_id: people
-        uuid: 72e182cd-04fa-49c1-be57-1f78e3a65f2d
-      501305cd-1f21-4c18-bc10-0287d9961681:
-        id: 'views_block:front_page_people-people__advisors'
-        label: ''
-        provider: views
-        label_display: 0
-        views_label: ''
-        items_per_page: none
-        region: content
-        weight: '3'
-        context_mapping: {  }
-        theme: tema
-        css_class: ''
-        unique: 0
-        context_id: people
-        uuid: 501305cd-1f21-4c18-bc10-0287d9961681
-      e8168906-2a46-478f-b21d-bc0ed9b30591:
-        id: 'views_block:front_page_people-people__residents'
-        label: ''
-        provider: views
-        label_display: 0
-        views_label: ''
-        items_per_page: none
-        region: content
-        weight: '0'
-        context_mapping: {  }
-        theme: tema
-        css_class: ''
-        unique: 0
-        context_id: people
-        uuid: e8168906-2a46-478f-b21d-bc0ed9b30591
-      83c43f22-3da4-4999-bd85-e41c772497f5:
-        id: 'views_block:front_page_people-people__italian_fellows'
+        uuid: 4b8a522c-36b8-4965-b5ae-f60285785698
+      b88ea5b2-5fc4-4c61-9ca4-eb7ecde24edb:
+        id: 'views_block:front_page_people-people_residents'
         label: ''
         provider: views
         label_display: 0
@@ -79,9 +64,24 @@ reactions:
         css_class: ''
         unique: 0
         context_id: people
-        uuid: 83c43f22-3da4-4999-bd85-e41c772497f5
-      45a55066-292c-4a80-acb5-d02f296ba622:
-        id: 'views_block:front_page_people-people__affiliated_fellows'
+        uuid: b88ea5b2-5fc4-4c61-9ca4-eb7ecde24edb
+      0f582a11-b8f7-4e12-b985-9c52c460ee0c:
+        id: 'views_block:front_page_people-people_affiliated_fellows'
+        label: ''
+        provider: views
+        label_display: 0
+        views_label: ''
+        items_per_page: none
+        region: content
+        weight: '0'
+        context_mapping: {  }
+        theme: tema
+        css_class: ''
+        unique: 0
+        context_id: people
+        uuid: 0f582a11-b8f7-4e12-b985-9c52c460ee0c
+      dc329104-c394-4b8b-88b8-f753f3d9dedb:
+        id: 'views_block:front_page_people-people_visiting_artists_scholars'
         label: ''
         provider: views
         label_display: 0
@@ -94,9 +94,9 @@ reactions:
         css_class: ''
         unique: 0
         context_id: people
-        uuid: 45a55066-292c-4a80-acb5-d02f296ba622
-      a6d0dd6f-9400-467d-b2da-65263ba19906:
-        id: 'views_block:front_page_people-people__visiting_artists_scholars'
+        uuid: dc329104-c394-4b8b-88b8-f753f3d9dedb
+      eea2f85b-beae-4759-9e64-055f5dc50681:
+        id: 'views_block:front_page_people-people_advisors'
         label: ''
         provider: views
         label_display: 0
@@ -109,7 +109,22 @@ reactions:
         css_class: ''
         unique: 0
         context_id: people
-        uuid: a6d0dd6f-9400-467d-b2da-65263ba19906
+        uuid: eea2f85b-beae-4759-9e64-055f5dc50681
+      fe004224-0893-44a8-9d23-82d05cbbebfe:
+        id: 'views_block:front_page_people-people_sof'
+        label: ''
+        provider: views
+        label_display: 0
+        views_label: ''
+        items_per_page: none
+        region: content
+        weight: '3'
+        context_mapping: {  }
+        theme: tema
+        css_class: ''
+        unique: 0
+        context_id: people
+        uuid: fe004224-0893-44a8-9d23-82d05cbbebfe
     id: blocks
     saved: false
     uuid: 1d38bd1e-be3b-4a9a-87ed-74498e73f11a

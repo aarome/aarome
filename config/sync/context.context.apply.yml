@@ -20,51 +20,6 @@ conditions:
 reactions:
   blocks:
     blocks:
-      09f99ac1-e46c-4390-8860-86953d9d7cd4:
-        id: 'views_block:front_page_apply-apply__rome_prize'
-        label: ''
-        provider: views
-        label_display: visible
-        views_label: ''
-        items_per_page: none
-        region: content
-        weight: '-2'
-        context_mapping: {  }
-        theme: tema
-        css_class: ''
-        unique: 0
-        context_id: apply
-        uuid: 09f99ac1-e46c-4390-8860-86953d9d7cd4
-      24ce3064-2437-491e-8e3c-661569cedbec:
-        id: 'views_block:front_page_apply-block_5'
-        label: ''
-        provider: views
-        label_display: visible
-        views_label: ''
-        items_per_page: none
-        region: content
-        weight: '1'
-        context_mapping: {  }
-        theme: tema
-        css_class: ''
-        unique: 0
-        context_id: apply
-        uuid: 24ce3064-2437-491e-8e3c-661569cedbec
-      c88f9ba0-7f20-48d9-821a-5a59d3ccfe28:
-        id: 'views_block:front_page_apply-block_2'
-        label: ''
-        provider: views
-        label_display: visible
-        views_label: ''
-        items_per_page: none
-        region: content
-        weight: '2'
-        context_mapping: {  }
-        theme: tema
-        css_class: ''
-        unique: 0
-        context_id: apply
-        uuid: c88f9ba0-7f20-48d9-821a-5a59d3ccfe28
       9c4ea2b8-e8be-4876-bb04-e254b5a7e747:
         id: 'views_block:front_page_apply-apply_italian_fellowship'
         label: ''
@@ -80,21 +35,6 @@ reactions:
         unique: 0
         context_id: apply
         uuid: 9c4ea2b8-e8be-4876-bb04-e254b5a7e747
-      a129265d-a084-4a6b-9a67-ea9a8b5e0350:
-        id: 'views_block:front_page_apply-apply__visiting'
-        label: ''
-        provider: views
-        label_display: visible
-        views_label: ''
-        items_per_page: none
-        region: content
-        weight: '0'
-        context_mapping: {  }
-        theme: tema
-        css_class: ''
-        unique: 0
-        context_id: apply
-        uuid: a129265d-a084-4a6b-9a67-ea9a8b5e0350
       d8ac93d5-9f5a-475b-8e94-22d9d4edfb2f:
         id: 'views_block:front_page_apply-block__frontpage'
         label: ''
@@ -110,6 +50,66 @@ reactions:
         unique: 0
         context_id: apply
         uuid: d8ac93d5-9f5a-475b-8e94-22d9d4edfb2f
+      92daad31-1f08-4365-bfd6-cd748d512af6:
+        id: 'views_block:front_page_apply-apply_rome_prize'
+        label: ''
+        provider: views
+        label_display: 0
+        views_label: ''
+        items_per_page: none
+        region: content
+        weight: '-2'
+        context_mapping: {  }
+        theme: tema
+        css_class: ''
+        unique: 0
+        context_id: apply
+        uuid: 92daad31-1f08-4365-bfd6-cd748d512af6
+      69d2c001-382d-4845-8c3f-818a6dcda636:
+        id: 'views_block:front_page_apply-apply_visiting'
+        label: ''
+        provider: views
+        label_display: 0
+        views_label: ''
+        items_per_page: none
+        region: content
+        weight: '0'
+        context_mapping: {  }
+        theme: tema
+        css_class: ''
+        unique: 0
+        context_id: apply
+        uuid: 69d2c001-382d-4845-8c3f-818a6dcda636
+      85cd9e71-ab98-4c39-83e8-968bba083443:
+        id: 'views_block:front_page_apply-apply_affiliated'
+        label: ''
+        provider: views
+        label_display: 0
+        views_label: ''
+        items_per_page: none
+        region: content
+        weight: '1'
+        context_mapping: {  }
+        theme: tema
+        css_class: ''
+        unique: 0
+        context_id: apply
+        uuid: 85cd9e71-ab98-4c39-83e8-968bba083443
+      d79a3296-bedc-475b-8bb7-01eb105742f4:
+        id: 'views_block:front_page_apply-apply_academic_programs'
+        label: ''
+        provider: views
+        label_display: 0
+        views_label: ''
+        items_per_page: none
+        region: content
+        weight: '2'
+        context_mapping: {  }
+        theme: tema
+        css_class: ''
+        unique: 0
+        context_id: apply
+        uuid: d79a3296-bedc-475b-8bb7-01eb105742f4
     id: blocks
     saved: false
     uuid: f3054c04-c3bf-432d-81aa-bc7b24f86cb4

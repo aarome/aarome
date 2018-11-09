@@ -2635,7 +2635,7 @@ display:
             alter_text: false
             text: ''
             make_link: true
-            path: /about/place
+            path: /place
             absolute: false
             external: false
             replace_spaces: false
@@ -2699,7 +2699,7 @@ display:
             alter_text: false
             text: ''
             make_link: true
-            path: /about/place
+            path: /place
             absolute: false
             external: false
             replace_spaces: false
@@ -2763,8 +2763,8 @@ display:
           alter:
             alter_text: false
             text: ''
-            make_link: false
-            path: ''
+            make_link: true
+            path: /place
             absolute: false
             external: false
             replace_spaces: false
@@ -2827,7 +2827,7 @@ display:
             alter_text: true
             text: '{{ title }}'
             make_link: true
-            path: /about/place
+            path: /place
             absolute: false
             external: false
             replace_spaces: false
