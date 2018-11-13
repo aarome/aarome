@@ -28,7 +28,7 @@ reactions:
         views_label: ''
         items_per_page: none
         region: content
-        weight: '0'
+        weight: '2'
         context_mapping: {  }
         theme: tema
         css_class: ''
@@ -43,7 +43,7 @@ reactions:
         views_label: ''
         items_per_page: none
         region: content
-        weight: '-1'
+        weight: '0'
         context_mapping: {  }
         theme: tema
         css_class: ''
@@ -73,7 +73,7 @@ reactions:
         views_label: ''
         items_per_page: none
         region: content
-        weight: '2'
+        weight: '3'
         context_mapping: {  }
         theme: tema
         css_class: ''
@@ -95,6 +95,21 @@ reactions:
         unique: 0
         context_id: news
         uuid: e8488dec-60cb-4e16-bf1e-5942f3633e7d
+      e60c18d4-9620-494e-bf29-3b61aaaef260:
+        id: 'views_block:front_page_news-news_quick_news'
+        label: ''
+        provider: views
+        label_display: 0
+        views_label: ''
+        items_per_page: none
+        region: content
+        weight: '-1'
+        context_mapping: {  }
+        theme: tema
+        css_class: ''
+        unique: 0
+        context_id: news
+        uuid: e60c18d4-9620-494e-bf29-3b61aaaef260
     id: blocks
     saved: false
     uuid: 656c08f2-0572-4177-a135-b2dd4becb996

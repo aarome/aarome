@@ -1,11 +1,11 @@
-uuid: a0723ea1-744d-4092-a55f-2433eef54139
+uuid: c739a4e1-1273-47b5-8421-cacd4c9cdb8c
 langcode: en
 status: true
 dependencies:
   module:
     - system
-name: research
-label: Research
+name: library
+label: Library
 group: Frontpages
 description: ''
 requireAllConditions: false
@@ -13,63 +13,18 @@ disabled: false
 conditions:
   request_path:
     id: request_path
-    pages: "/research\r\n/ricerca"
+    pages: "/library\r\n/biblioteca"
     negate: 0
-    uuid: a8597fa7-6f6c-4030-800a-a16630c69977
+    uuid: 4628f2c0-4150-44d5-b6b8-97f2a1eab63c
     context_mapping: {  }
 reactions:
   blocks:
     blocks:
-      dfecd1c4-bae2-4b3e-b7ee-2806fa614668:
-        id: 'views_block:front_page_research-research_library'
+      6ab5a203-c535-44d6-8d0f-b98e14f20bba:
+        id: 'views_block:front_page_library-research_resources'
         label: ''
         provider: views
-        label_display: visible
-        views_label: ''
-        items_per_page: none
-        region: content
-        weight: '-3'
-        context_mapping: {  }
-        theme: tema
-        css_class: ''
-        unique: 0
-        context_id: research
-        uuid: dfecd1c4-bae2-4b3e-b7ee-2806fa614668
-      5b54bf06-d27c-4b7f-a5e6-24dfaa3d9df6:
-        id: 'views_block:front_page_research-research_archaeological_study_collection'
-        label: ''
-        provider: views
-        label_display: visible
-        views_label: ''
-        items_per_page: none
-        region: content
-        weight: '4'
-        context_mapping: {  }
-        theme: tema
-        css_class: ''
-        unique: 0
-        context_id: research
-        uuid: 5b54bf06-d27c-4b7f-a5e6-24dfaa3d9df6
-      3ab6ec98-832b-4aff-b68c-ae126140a21c:
-        id: 'views_block:front_page_research-research_archaeology_projects'
-        label: ''
-        provider: views
-        label_display: visible
-        views_label: ''
-        items_per_page: none
-        region: content
-        weight: '3'
-        context_mapping: {  }
-        theme: tema
-        css_class: ''
-        unique: 0
-        context_id: research
-        uuid: 3ab6ec98-832b-4aff-b68c-ae126140a21c
-      143bc2be-bd22-4b26-8a7b-5fe70f606036:
-        id: 'views_block:front_page_research-research_resources'
-        label: ''
-        provider: views
-        label_display: visible
+        label_display: 0
         views_label: ''
         items_per_page: none
         region: content
@@ -78,10 +33,10 @@ reactions:
         theme: tema
         css_class: ''
         unique: 0
-        context_id: research
-        uuid: 143bc2be-bd22-4b26-8a7b-5fe70f606036
-      a9911324-0888-4456-9d12-87dcef68064d:
-        id: 'views_block:front_page_research-research_special_collections'
+        context_id: library
+        uuid: 6ab5a203-c535-44d6-8d0f-b98e14f20bba
+      fa8b698b-7b84-467c-b4ae-e2997bccfcdb:
+        id: 'views_block:front_page_library-research_special_collections'
         label: ''
         provider: views
         label_display: visible
@@ -93,40 +48,10 @@ reactions:
         theme: tema
         css_class: ''
         unique: 0
-        context_id: research
-        uuid: a9911324-0888-4456-9d12-87dcef68064d
-      1f9dac16-21a6-451a-8ab3-57f4ee6b4b95:
-        id: 'views_block:front_page_research-research_photo_archive'
-        label: ''
-        provider: views
-        label_display: visible
-        views_label: ''
-        items_per_page: none
-        region: content
-        weight: '1'
-        context_mapping: {  }
-        theme: tema
-        css_class: ''
-        unique: 0
-        context_id: research
-        uuid: 1f9dac16-21a6-451a-8ab3-57f4ee6b4b95
-      57104813-65e8-4ef0-9387-4278860782e4:
-        id: 'views_block:front_page_research-research_institutional_archive'
-        label: ''
-        provider: views
-        label_display: 0
-        views_label: ''
-        items_per_page: none
-        region: content
-        weight: '2'
-        context_mapping: {  }
-        theme: tema
-        css_class: ''
-        unique: 0
-        context_id: research
-        uuid: 57104813-65e8-4ef0-9387-4278860782e4
-      129cd4e5-e70c-4aa9-917d-673bc0060619:
-        id: 'views_block:front_page_research-research_digital_humanities_center'
+        context_id: library
+        uuid: fa8b698b-7b84-467c-b4ae-e2997bccfcdb
+      d77d02b2-9850-4929-ad49-e26eb26ed1d4:
+        id: 'views_block:front_page_library-research_digital_humanities_center'
         label: ''
         provider: views
         label_display: 0
@@ -138,14 +63,89 @@ reactions:
         theme: tema
         css_class: ''
         unique: 0
-        context_id: research
-        uuid: 129cd4e5-e70c-4aa9-917d-673bc0060619
+        context_id: library
+        uuid: d77d02b2-9850-4929-ad49-e26eb26ed1d4
+      ca61fcc7-19ad-4f4d-97a3-1fac27981c1a:
+        id: 'views_block:front_page_library-research_photo_archive'
+        label: ''
+        provider: views
+        label_display: 0
+        views_label: ''
+        items_per_page: none
+        region: content
+        weight: '1'
+        context_mapping: {  }
+        theme: tema
+        css_class: ''
+        unique: 0
+        context_id: library
+        uuid: ca61fcc7-19ad-4f4d-97a3-1fac27981c1a
+      e4d63c12-0ecb-466b-8c7d-b614ac52a989:
+        id: 'views_block:front_page_library-research_institutional_archive'
+        label: ''
+        provider: views
+        label_display: 0
+        views_label: ''
+        items_per_page: none
+        region: content
+        weight: '2'
+        context_mapping: {  }
+        theme: tema
+        css_class: ''
+        unique: 0
+        context_id: library
+        uuid: e4d63c12-0ecb-466b-8c7d-b614ac52a989
+      b02d0516-d328-47b2-ab56-91b87339584c:
+        id: 'views_block:front_page_library-research_archaeological_study_collection'
+        label: ''
+        provider: views
+        label_display: visible
+        views_label: ''
+        items_per_page: none
+        region: content
+        weight: '3'
+        context_mapping: {  }
+        theme: tema
+        css_class: ''
+        unique: 0
+        context_id: library
+        uuid: b02d0516-d328-47b2-ab56-91b87339584c
+      5dcc75fc-9450-4c21-8922-e2aa27f08f9a:
+        id: 'views_block:front_page_library-research_archaeology_projects'
+        label: ''
+        provider: views
+        label_display: 0
+        views_label: ''
+        items_per_page: none
+        region: content
+        weight: '4'
+        context_mapping: {  }
+        theme: tema
+        css_class: ''
+        unique: 0
+        context_id: library
+        uuid: 5dcc75fc-9450-4c21-8922-e2aa27f08f9a
+      c25b46ff-61d6-4ab5-b4e0-d3d399164978:
+        id: 'views_block:front_page_library-library_notices'
+        label: ''
+        provider: views
+        label_display: 0
+        views_label: ''
+        items_per_page: none
+        region: content
+        weight: '-3'
+        context_mapping: {  }
+        theme: tema
+        css_class: ''
+        unique: 0
+        context_id: library
+        uuid: c25b46ff-61d6-4ab5-b4e0-d3d399164978
     id: blocks
     saved: false
-    uuid: 7f9c446a-0ec7-4f95-b577-94354fb27221
+    uuid: 22c50481-227e-45b8-8435-c506739923b4
     include_default_blocks: 1
   body_class:
     id: body_class
-    body_class: 'front front-research'
+    body_class: 'front library-front'
     saved: false
 weight: 0
