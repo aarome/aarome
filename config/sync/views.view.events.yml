@@ -13,6 +13,7 @@ dependencies:
     - field.storage.node.field_events_rel_places
     - node.type.events
   module:
+    - address
     - datetime_range
     - image
     - media
@@ -69,15 +70,16 @@ display:
         options:
           grouping: {  }
           row_class: ''
-          default_row_class: true
-          uses_fields: false
+          default_row_class: false
       row:
         type: fields
         options:
-          inline: {  }
-          separator: ''
+          default_field_elements: false
+          inline:
+            field_events_rel_places: field_events_rel_places
+            field_places_address_locality: field_places_address_locality
+          separator: ', '
           hide_empty: false
-          default_field_elements: true
       fields:
         field_events_event_series:
           id: field_events_event_series
@@ -178,8 +180,8 @@ display:
             trim: false
             preserve_tags: ''
             html: false
-          element_type: ''
-          element_class: ''
+          element_type: h2
+          element_class: type
           element_label_type: ''
           element_label_class: ''
           element_label_colon: false
@@ -323,7 +325,7 @@ display:
           settings:
             timezone_override: ''
             format_type: academy_date_and_time
-            separator: '-'
+            separator: ' to '
           group_column: value
           group_columns: {  }
           group_rows: true
@@ -332,7 +334,7 @@ display:
           delta_reversed: false
           delta_first_last: false
           multi_type: separator
-          separator: ', '
+          separator: ''
           field_api_classes: false
           plugin_id: field
         field_events_rel_places:
@@ -343,7 +345,7 @@ display:
           group_type: group
           admin_label: ''
           label: ''
-          exclude: false
+          exclude: true
           alter:
             alter_text: false
             text: ''
@@ -371,14 +373,14 @@ display:
             trim: false
             preserve_tags: ''
             html: false
-          element_type: ''
-          element_class: ''
+          element_type: div
+          element_class: place
           element_label_type: ''
           element_label_class: ''
           element_label_colon: false
           element_wrapper_type: ''
           element_wrapper_class: ''
-          element_default_classes: true
+          element_default_classes: false
           empty: ''
           hide_empty: false
           empty_zero: false
@@ -398,6 +400,105 @@ display:
           separator: ', '
           field_api_classes: false
           plugin_id: field
+        field_places_address_locality:
+          id: field_places_address_locality
+          table: node__field_places_address
+          field: field_places_address_locality
+          relationship: field_events_rel_places
+          group_type: group
+          admin_label: ''
+          label: ''
+          exclude: true
+          alter:
+            alter_text: false
+            text: ''
+            make_link: false
+            path: ''
+            absolute: false
+            external: false
+            replace_spaces: false
+            path_case: none
+            trim_whitespace: false
+            alt: ''
+            rel: ''
+            link_class: ''
+            prefix: ''
+            suffix: ''
+            target: ''
+            nl2br: false
+            max_length: 0
+            word_boundary: true
+            ellipsis: true
+            more_link: false
+            more_link_text: ''
+            more_link_path: ''
+            strip_tags: false
+            trim: false
+            preserve_tags: ''
+            html: false
+          element_type: div
+          element_class: city
+          element_label_type: ''
+          element_label_class: ''
+          element_label_colon: false
+          element_wrapper_type: ''
+          element_wrapper_class: ''
+          element_default_classes: false
+          empty: ''
+          hide_empty: false
+          empty_zero: false
+          hide_alter_empty: true
+          display_name: true
+          plugin_id: subdivision
+        nothing:
+          id: nothing
+          table: views
+          field: nothing
+          relationship: none
+          group_type: group
+          admin_label: ''
+          label: ''
+          exclude: false
+          alter:
+            alter_text: true
+            text: '{{ field_events_rel_places }}, {{ field_places_address_locality }} '
+            make_link: false
+            path: ''
+            absolute: false
+            external: false
+            replace_spaces: false
+            path_case: none
+            trim_whitespace: false
+            alt: ''
+            rel: ''
+            link_class: ''
+            prefix: ''
+            suffix: ''
+            target: ''
+            nl2br: false
+            max_length: 0
+            word_boundary: true
+            ellipsis: true
+            more_link: false
+            more_link_text: ''
+            more_link_path: ''
+            strip_tags: false
+            trim: false
+            preserve_tags: ''
+            html: false
+          element_type: div
+          element_class: place
+          element_label_type: ''
+          element_label_class: ''
+          element_label_colon: false
+          element_wrapper_type: ''
+          element_wrapper_class: ''
+          element_default_classes: false
+          empty: ''
+          hide_empty: false
+          empty_zero: false
+          hide_alter_empty: false
+          plugin_id: custom
         field_media_image:
           id: field_media_image
           table: media__field_media_image
@@ -560,7 +661,7 @@ display:
             trim: false
             preserve_tags: ''
             html: false
-          element_type: ''
+          element_type: article
           element_class: ''
           element_label_type: ''
           element_label_class: ''
@@ -734,6 +835,15 @@ display:
           relationship: none
           group_type: group
           admin_label: 'field_events_image: Media'
+          required: false
+          plugin_id: standard
+        field_events_rel_places:
+          id: field_events_rel_places
+          table: node__field_events_rel_places
+          field: field_events_rel_places
+          relationship: none
+          group_type: group
+          admin_label: 'field_events_rel_places: Content'
           required: false
           plugin_id: standard
       arguments:

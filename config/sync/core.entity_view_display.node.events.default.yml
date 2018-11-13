@@ -117,7 +117,7 @@ content:
     type: entity_reference_label
     region: content
   field_safe_path_alias:
-    weight: 11
+    weight: 13
     label: above
     settings:
       sanitized: true

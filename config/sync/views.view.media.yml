@@ -801,6 +801,20 @@ display:
           entity_field: langcode
           plugin_id: language
       sorts:
+        mid:
+          id: mid
+          table: media_field_data
+          field: mid
+          relationship: none
+          group_type: group
+          admin_label: ''
+          order: DESC
+          exposed: true
+          expose:
+            label: mid
+          entity_type: media
+          entity_field: mid
+          plugin_id: standard
         created:
           id: created
           table: media_field_data
@@ -841,6 +855,8 @@ display:
         - 'languages:language_interface'
         - url
         - url.query_args
+        - 'url.query_args:sort_by'
+        - 'url.query_args:sort_order'
         - user.permissions
       tags: {  }
   media_page_list:
@@ -868,5 +884,7 @@ display:
         - 'languages:language_interface'
         - url
         - url.query_args
+        - 'url.query_args:sort_by'
+        - 'url.query_args:sort_order'
         - user.permissions
       tags: {  }

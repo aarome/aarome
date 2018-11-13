@@ -29,6 +29,7 @@ dependencies:
   module:
     - address
     - datetime
+    - inline_entity_form
     - link
     - name
     - paragraphs
@@ -122,11 +123,18 @@ content:
   field_people_portrait:
     weight: 37
     settings:
+      form_mode: default
+      label_singular: ''
+      label_plural: ''
+      allow_new: true
+      allow_existing: true
       match_operator: CONTAINS
-      size: 60
-      placeholder: ''
+      override_labels: false
+      collapsible: false
+      collapsed: false
+      allow_duplicate: false
     third_party_settings: {  }
-    type: entity_reference_autocomplete
+    type: inline_entity_form_complex
     region: content
   field_people_professions:
     weight: 2

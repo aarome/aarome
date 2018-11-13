@@ -727,7 +727,21 @@ display:
           plugin_id: file_status
           entity_type: file
           entity_field: status
-      sorts: {  }
+      sorts:
+        fid:
+          id: fid
+          table: file_managed
+          field: fid
+          relationship: none
+          group_type: group
+          admin_label: ''
+          order: DESC
+          exposed: true
+          expose:
+            label: 'File ID'
+          entity_type: file
+          entity_field: fid
+          plugin_id: standard
       title: Files
       header: {  }
       footer: {  }
@@ -758,6 +772,8 @@ display:
         - 'languages:language_interface'
         - url
         - url.query_args
+        - 'url.query_args:sort_by'
+        - 'url.query_args:sort_order'
         - user.permissions
       max-age: -1
       tags: {  }
@@ -795,6 +811,8 @@ display:
         - 'languages:language_interface'
         - url
         - url.query_args
+        - 'url.query_args:sort_by'
+        - 'url.query_args:sort_order'
         - user.permissions
       max-age: -1
       tags: {  }
@@ -1152,6 +1170,8 @@ display:
         - 'languages:language_interface'
         - url
         - url.query_args
+        - 'url.query_args:sort_by'
+        - 'url.query_args:sort_order'
         - user.permissions
       max-age: -1
       tags: {  }

@@ -15,7 +15,7 @@ third_party_settings:
   filefield_paths:
     enabled: true
     file_path:
-      value: images
+      value: images/generic
       options:
         slashes: true
         pathauto: true

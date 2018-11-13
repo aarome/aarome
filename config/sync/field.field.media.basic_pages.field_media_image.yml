@@ -14,14 +14,14 @@ third_party_settings:
     file_path:
       value: images/basic_pages
       options:
-        slashes: false
-        pathauto: false
+        slashes: true
+        pathauto: true
         transliterate: false
     redirect: false
-    retroactive_update: false
-    active_updating: false
+    retroactive_update: true
+    active_updating: true
     file_name:
-      value: '[file:ffp-name-only-original].[file:ffp-extension-original]'
+      value: '[media:name].[file:ffp-extension-original]'
       options:
         slashes: false
         pathauto: false
@@ -47,7 +47,7 @@ settings:
   title_field: false
   title_field_required: false
   default_image:
-    uuid: 3cc1cd8a-a4d5-4de2-bb1f-b14e7065609d
+    uuid: ''
     alt: ''
     title: ''
     width: 1280

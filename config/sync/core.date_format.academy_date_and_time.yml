@@ -5,4 +5,4 @@ dependencies: {  }
 id: academy_date_and_time
 label: 'Academy date and time'
 locked: false
-pattern: 'l, F j, Y  g:i A'
+pattern: 'l, F j, Y–g:i A'
