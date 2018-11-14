@@ -57,6 +57,7 @@ module:
   name: 0
   node: 0
   noreqnewpass: 0
+  optional_end_date: 0
   options: 0
   page_cache: 0
   path: 0

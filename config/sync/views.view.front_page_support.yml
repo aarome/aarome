@@ -1,4 +1,4 @@
-uuid: 624131fb-e879-49b7-95ef-de96d2b5d23c
+uuid: 8a278876-094b-44d4-8a5f-9a4c6947722f
 langcode: en
 status: true
 dependencies:
@@ -12,8 +12,8 @@ dependencies:
     - node
     - paragraphs
     - user
-id: front_page_publications
-label: 'Front page (publications)'
+id: front_page_support
+label: 'Front page (support)'
 module: views
 description: ''
 tag: ''
@@ -478,7 +478,7 @@ display:
       arguments: {  }
       display_extenders: {  }
       rendering_language: '***LANGUAGE_language_interface***'
-      css_class: 'block_front block_publications_front'
+      css_class: 'block_front block_support_front'
       filter_groups:
         operator: AND
         groups:
@@ -492,14 +492,140 @@ display:
       tags:
         - 'config:field.storage.media.field_media_image'
         - 'config:field.storage.node.field_page_page_section'
-  publications_aar_magazine:
+  support_corporate:
     display_plugin: block
-    id: publications_aar_magazine
-    display_title: /publications/aar-magazine
+    id: support_corporate
+    display_title: /support/corporate
     position: 1
     display_options:
       display_extenders: {  }
-      block_description: 'Publications (AAR Magazine)'
+      block_description: 'Support (Corporate)'
+      display_description: ''
+      arguments: {  }
+      defaults:
+        arguments: false
+        filters: false
+        filter_groups: false
+        fields: true
+        css_class: true
+      rendering_language: '***LANGUAGE_language_interface***'
+      filters:
+        status:
+          value: '1'
+          table: node_field_data
+          field: status
+          plugin_id: boolean
+          entity_type: node
+          entity_field: status
+          id: status
+          expose:
+            operator: ''
+          group: 1
+        langcode:
+          id: langcode
+          table: node_field_data
+          field: langcode
+          relationship: none
+          group_type: group
+          admin_label: ''
+          operator: in
+          value:
+            '***LANGUAGE_language_interface***': '***LANGUAGE_language_interface***'
+          group: 1
+          exposed: false
+          expose:
+            operator_id: ''
+            label: ''
+            description: ''
+            use_operator: false
+            operator: ''
+            identifier: ''
+            required: false
+            remember: false
+            multiple: false
+            remember_roles:
+              authenticated: authenticated
+            reduce: false
+          is_grouped: false
+          group_info:
+            label: ''
+            description: ''
+            identifier: ''
+            optional: true
+            widget: select
+            multiple: false
+            remember: false
+            default_group: All
+            default_group_multiple: {  }
+            group_items: {  }
+          entity_type: node
+          entity_field: langcode
+          plugin_id: language
+        nid:
+          id: nid
+          table: node_field_data
+          field: nid
+          relationship: none
+          group_type: group
+          admin_label: ''
+          operator: '='
+          value:
+            min: ''
+            max: ''
+            value: '2419'
+          group: 1
+          exposed: false
+          expose:
+            operator_id: ''
+            label: ''
+            description: ''
+            use_operator: false
+            operator: ''
+            identifier: ''
+            required: false
+            remember: false
+            multiple: false
+            remember_roles:
+              authenticated: authenticated
+            placeholder: ''
+            min_placeholder: ''
+            max_placeholder: ''
+          is_grouped: false
+          group_info:
+            label: ''
+            description: ''
+            identifier: ''
+            optional: true
+            widget: select
+            multiple: false
+            remember: false
+            default_group: All
+            default_group_multiple: {  }
+            group_items: {  }
+          entity_type: node
+          entity_field: nid
+          plugin_id: numeric
+      filter_groups:
+        operator: AND
+        groups:
+          1: AND
+    cache_metadata:
+      max-age: -1
+      contexts:
+        - 'languages:language_interface'
+        - 'user.node_grants:view'
+        - user.permissions
+      tags:
+        - 'config:field.storage.media.field_media_image'
+        - 'config:field.storage.node.field_page_page_section'
+  support_donate:
+    display_plugin: block
+    id: support_donate
+    display_title: /support/donate
+    position: 1
+    display_options:
+      display_extenders: {  }
+      block_description: 'Support (Donate)'
       display_description: ''
       arguments: {  }
       defaults:
@@ -621,14 +747,14 @@ display:
       tags:
         - 'config:field.storage.media.field_media_image'
         - 'config:field.storage.node.field_page_page_section'
-  publications_cookbooks:
+  support_experience_packages:
     display_plugin: block
-    id: publications_cookbooks
-    display_title: /publications/cookbooks
+    id: support_experience_packages
+    display_title: /support/experience-packages
     position: 1
     display_options:
       display_extenders: {  }
-      block_description: 'Publications (Cookbooks)'
+      block_description: 'Support (Experience Packages)'
       display_description: ''
       arguments: {  }
       defaults:
@@ -701,7 +827,7 @@ display:
           value:
             min: ''
             max: ''
-            value: '3276'
+            value: '3281'
           group: 1
           exposed: false
           expose:
@@ -747,14 +873,14 @@ display:
       tags:
         - 'config:field.storage.media.field_media_image'
         - 'config:field.storage.node.field_page_page_section'
-  publications_exhibition_catalogues:
+  support_fall_gala:
     display_plugin: block
-    id: publications_exhibition_catalogues
-    display_title: /publications/exhibition-catalogues
+    id: support_fall_gala
+    display_title: /support/fall-gala
     position: 1
     display_options:
       display_extenders: {  }
-      block_description: 'Publications (Exhibition Catalogues)'
+      block_description: 'Support (Fall Gala)'
       display_description: ''
       arguments: {  }
       defaults:
@@ -827,7 +953,7 @@ display:
           value:
             min: ''
             max: ''
-            value: '3277'
+            value: '2406'
           group: 1
           exposed: false
           expose:
@@ -873,14 +999,14 @@ display:
       tags:
         - 'config:field.storage.media.field_media_image'
         - 'config:field.storage.node.field_page_page_section'
-  publications_memoirs:
+  support_join:
     display_plugin: block
-    id: publications_memoirs
-    display_title: /publications/memoirs
+    id: support_join
+    display_title: /support/join
     position: 1
     display_options:
       display_extenders: {  }
-      block_description: 'Publications (Memoirs)'
+      block_description: 'Support (Join)'
       display_description: ''
       arguments: {  }
       defaults:
@@ -953,7 +1079,7 @@ display:
           value:
             min: ''
             max: ''
-            value: '3278'
+            value: '66'
           group: 1
           exposed: false
           expose:
@@ -999,14 +1125,14 @@ display:
       tags:
         - 'config:field.storage.media.field_media_image'
         - 'config:field.storage.node.field_page_page_section'
-  publications_papers_and_monographs:
+  support_mckim_medal_gala:
     display_plugin: block
-    id: publications_papers_and_monographs
-    display_title: /publications/papers-and-monographs
+    id: support_mckim_medal_gala
+    display_title: /support/mckim-medal-gala
     position: 1
     display_options:
       display_extenders: {  }
-      block_description: 'Publications (Papers and Monographs)'
+      block_description: 'Support (McKim Medal Gala)'
       display_description: ''
       arguments: {  }
       defaults:
@@ -1079,7 +1205,7 @@ display:
           value:
             min: ''
             max: ''
-            value: '3279'
+            value: '1'
           group: 1
           exposed: false
           expose:
@@ -1125,14 +1251,14 @@ display:
       tags:
         - 'config:field.storage.media.field_media_image'
         - 'config:field.storage.node.field_page_page_section'
-  publications_society_fellows_news:
+  support_planned_giving:
     display_plugin: block
-    id: publications_society_fellows_news
-    display_title: /society-of-fellows/news
+    id: support_planned_giving
+    display_title: /support/planned-giving
     position: 1
     display_options:
       display_extenders: {  }
-      block_description: 'Publications (Society of Fellows News)'
+      block_description: 'Support (Planned Giving)'
       display_description: ''
       arguments: {  }
       defaults:
@@ -1205,7 +1331,7 @@ display:
           value:
             min: ''
             max: ''
-            value: '68'
+            value: '2418'
           group: 1
           exposed: false
           expose:
@@ -1252,14 +1378,14 @@ display:
       tags:
         - 'config:field.storage.media.field_media_image'
         - 'config:field.storage.node.field_page_page_section'
-  publications_supplements:
+  support_society_fellows:
     display_plugin: block
-    id: publications_supplements
-    display_title: /publications/supplements
+    id: support_society_fellows
+    display_title: /support/society-of-fellows
     position: 1
     display_options:
       display_extenders: {  }
-      block_description: 'Publications (Supplements)'
+      block_description: 'Support (Society of Fellows)'
       display_description: ''
       arguments: {  }
       defaults:
@@ -1332,7 +1458,7 @@ display:
           value:
             min: ''
             max: ''
-            value: '3280'
+            value: '3282'
           group: 1
           exposed: false
           expose:

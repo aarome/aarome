@@ -28,7 +28,7 @@ reactions:
         views_label: ''
         items_per_page: none
         region: content
-        weight: '-2'
+        weight: '-3'
         context_mapping: {  }
         theme: tema
         css_class: ''
@@ -43,7 +43,7 @@ reactions:
         views_label: ''
         items_per_page: none
         region: content
-        weight: '3'
+        weight: '2'
         context_mapping: {  }
         theme: tema
         css_class: ''
@@ -58,7 +58,7 @@ reactions:
         views_label: ''
         items_per_page: none
         region: content
-        weight: '-1'
+        weight: '-2'
         context_mapping: {  }
         theme: tema
         css_class: ''
@@ -73,7 +73,7 @@ reactions:
         views_label: ''
         items_per_page: none
         region: content
-        weight: '0'
+        weight: '-1'
         context_mapping: {  }
         theme: tema
         css_class: ''
@@ -88,7 +88,7 @@ reactions:
         views_label: ''
         items_per_page: none
         region: content
-        weight: '1'
+        weight: '0'
         context_mapping: {  }
         theme: tema
         css_class: ''
@@ -103,13 +103,28 @@ reactions:
         views_label: ''
         items_per_page: none
         region: content
-        weight: '2'
+        weight: '1'
         context_mapping: {  }
         theme: tema
         css_class: ''
         unique: 0
         context_id: publications
         uuid: 0d62007c-e893-4714-a91a-2fede1906517
+      a671e2fc-00aa-4c81-94a2-55baf4149581:
+        id: 'views_block:front_page_sof-sof_news'
+        label: ''
+        provider: views
+        label_display: 0
+        views_label: ''
+        items_per_page: none
+        region: content
+        weight: '3'
+        context_mapping: {  }
+        theme: tema
+        css_class: ''
+        unique: 0
+        context_id: publications
+        uuid: a671e2fc-00aa-4c81-94a2-55baf4149581
     id: blocks
     saved: false
     uuid: 311bc3a1-8933-407b-9b88-73d652da653d

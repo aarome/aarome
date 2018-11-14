@@ -1,4 +1,4 @@
-uuid: 624131fb-e879-49b7-95ef-de96d2b5d23c
+uuid: 8dee3253-d4fa-476f-bd90-d8e8634b3b80
 langcode: en
 status: true
 dependencies:
@@ -12,8 +12,8 @@ dependencies:
     - node
     - paragraphs
     - user
-id: front_page_publications
-label: 'Front page (publications)'
+id: front_page_resources
+label: 'Front page (resources)'
 module: views
 description: ''
 tag: ''
@@ -478,7 +478,7 @@ display:
       arguments: {  }
       display_extenders: {  }
       rendering_language: '***LANGUAGE_language_interface***'
-      css_class: 'block_front block_publications_front'
+      css_class: 'block_front block_resources_front'
       filter_groups:
         operator: AND
         groups:
@@ -492,14 +492,140 @@ display:
       tags:
         - 'config:field.storage.media.field_media_image'
         - 'config:field.storage.node.field_page_page_section'
-  publications_aar_magazine:
+  resources_databases_digital_collections:
     display_plugin: block
-    id: publications_aar_magazine
-    display_title: /publications/aar-magazine
+    id: resources_databases_digital_collections
+    display_title: /resources/databases-digital-collections
     position: 1
     display_options:
       display_extenders: {  }
-      block_description: 'Publications (AAR Magazine)'
+      block_description: 'Resources (Databases and Digital Collections)'
+      display_description: ''
+      arguments: {  }
+      defaults:
+        arguments: false
+        filters: false
+        filter_groups: false
+        fields: true
+        css_class: true
+      rendering_language: '***LANGUAGE_language_interface***'
+      filters:
+        status:
+          value: '1'
+          table: node_field_data
+          field: status
+          plugin_id: boolean
+          entity_type: node
+          entity_field: status
+          id: status
+          expose:
+            operator: ''
+          group: 1
+        langcode:
+          id: langcode
+          table: node_field_data
+          field: langcode
+          relationship: none
+          group_type: group
+          admin_label: ''
+          operator: in
+          value:
+            '***LANGUAGE_language_interface***': '***LANGUAGE_language_interface***'
+          group: 1
+          exposed: false
+          expose:
+            operator_id: ''
+            label: ''
+            description: ''
+            use_operator: false
+            operator: ''
+            identifier: ''
+            required: false
+            remember: false
+            multiple: false
+            remember_roles:
+              authenticated: authenticated
+            reduce: false
+          is_grouped: false
+          group_info:
+            label: ''
+            description: ''
+            identifier: ''
+            optional: true
+            widget: select
+            multiple: false
+            remember: false
+            default_group: All
+            default_group_multiple: {  }
+            group_items: {  }
+          entity_type: node
+          entity_field: langcode
+          plugin_id: language
+        nid:
+          id: nid
+          table: node_field_data
+          field: nid
+          relationship: none
+          group_type: group
+          admin_label: ''
+          operator: '='
+          value:
+            min: ''
+            max: ''
+            value: '3284'
+          group: 1
+          exposed: false
+          expose:
+            operator_id: ''
+            label: ''
+            description: ''
+            use_operator: false
+            operator: ''
+            identifier: ''
+            required: false
+            remember: false
+            multiple: false
+            remember_roles:
+              authenticated: authenticated
+            placeholder: ''
+            min_placeholder: ''
+            max_placeholder: ''
+          is_grouped: false
+          group_info:
+            label: ''
+            description: ''
+            identifier: ''
+            optional: true
+            widget: select
+            multiple: false
+            remember: false
+            default_group: All
+            default_group_multiple: {  }
+            group_items: {  }
+          entity_type: node
+          entity_field: nid
+          plugin_id: numeric
+      filter_groups:
+        operator: AND
+        groups:
+          1: AND
+    cache_metadata:
+      max-age: -1
+      contexts:
+        - 'languages:language_interface'
+        - 'user.node_grants:view'
+        - user.permissions
+      tags:
+        - 'config:field.storage.media.field_media_image'
+        - 'config:field.storage.node.field_page_page_section'
+  resources_digital_humanities_center:
+    display_plugin: block
+    id: resources_digital_humanities_center
+    display_title: /resources/digital-humanities-center
+    position: 1
+    display_options:
+      display_extenders: {  }
+      block_description: 'Resources (Digital Humanities Center)'
       display_description: ''
       arguments: {  }
       defaults:
@@ -575,7 +701,7 @@ display:
           value:
             min: ''
             max: ''
-            value: '3275'
+            value: '57'
           group: 1
           exposed: false
           expose:
@@ -621,14 +747,14 @@ display:
       tags:
         - 'config:field.storage.media.field_media_image'
         - 'config:field.storage.node.field_page_page_section'
-  publications_cookbooks:
+  resources_digital_maps_gis:
     display_plugin: block
-    id: publications_cookbooks
-    display_title: /publications/cookbooks
+    id: resources_digital_maps_gis
+    display_title: /resources/digital-maps-gis
     position: 1
     display_options:
       display_extenders: {  }
-      block_description: 'Publications (Cookbooks)'
+      block_description: 'Resources (Digital Maps and GIS)'
       display_description: ''
       arguments: {  }
       defaults:
@@ -701,21 +827,25 @@ display:
           value:
             min: ''
             max: ''
-            value: '3276'
+            value: '2422'
           group: 1
-          exposed: false
+          exposed: true
           expose:
-            operator_id: ''
-            label: ''
+            operator_id: nid_op
+            label: ID
             description: ''
             use_operator: false
-            operator: ''
-            identifier: ''
+            operator: nid_op
+            identifier: nid
             required: false
             remember: false
             multiple: false
             remember_roles:
               authenticated: authenticated
+              anonymous: '0'
+              administrator: '0'
+              site_editor: '0'
+              staff: '0'
             placeholder: ''
             min_placeholder: ''
             max_placeholder: ''
@@ -742,19 +872,20 @@ display:
       max-age: -1
       contexts:
         - 'languages:language_interface'
+        - url
         - 'user.node_grants:view'
         - user.permissions
       tags:
         - 'config:field.storage.media.field_media_image'
         - 'config:field.storage.node.field_page_page_section'
-  publications_exhibition_catalogues:
+  resources_electronic_journals:
     display_plugin: block
-    id: publications_exhibition_catalogues
-    display_title: /publications/exhibition-catalogues
+    id: resources_electronic_journals
+    display_title: /resources/electronic-journals
     position: 1
     display_options:
       display_extenders: {  }
-      block_description: 'Publications (Exhibition Catalogues)'
+      block_description: 'Resources (Electronic Journals)'
       display_description: ''
       arguments: {  }
       defaults:
@@ -827,7 +958,7 @@ display:
           value:
             min: ''
             max: ''
-            value: '3277'
+            value: '3283'
           group: 1
           exposed: false
           expose:
@@ -873,14 +1004,14 @@ display:
       tags:
         - 'config:field.storage.media.field_media_image'
         - 'config:field.storage.node.field_page_page_section'
-  publications_memoirs:
+  resources_libraries_institutions:
     display_plugin: block
-    id: publications_memoirs
-    display_title: /publications/memoirs
+    id: resources_libraries_institutions
+    display_title: /resources/libraries-institutions
     position: 1
     display_options:
       display_extenders: {  }
-      block_description: 'Publications (Memoirs)'
+      block_description: 'Resources (Libraries and Institutions)'
       display_description: ''
       arguments: {  }
       defaults:
@@ -953,7 +1084,7 @@ display:
           value:
             min: ''
             max: ''
-            value: '3278'
+            value: '3285'
           group: 1
           exposed: false
           expose:
@@ -999,14 +1130,14 @@ display:
       tags:
         - 'config:field.storage.media.field_media_image'
         - 'config:field.storage.node.field_page_page_section'
-  publications_papers_and_monographs:
+  resources_online_catalogues:
     display_plugin: block
-    id: publications_papers_and_monographs
-    display_title: /publications/papers-and-monographs
+    id: resources_online_catalogues
+    display_title: /resources/online-catalogues
     position: 1
     display_options:
       display_extenders: {  }
-      block_description: 'Publications (Papers and Monographs)'
+      block_description: 'Resources (Online catalogues)'
       display_description: ''
       arguments: {  }
       defaults:
@@ -1079,7 +1210,7 @@ display:
           value:
             min: ''
             max: ''
-            value: '3279'
+            value: '2421'
           group: 1
           exposed: false
           expose:
@@ -1125,14 +1256,14 @@ display:
       tags:
         - 'config:field.storage.media.field_media_image'
         - 'config:field.storage.node.field_page_page_section'
-  publications_society_fellows_news:
+  resources_tutorials:
     display_plugin: block
-    id: publications_society_fellows_news
-    display_title: /society-of-fellows/news
+    id: resources_tutorials
+    display_title: /resources/tutorials
     position: 1
     display_options:
       display_extenders: {  }
-      block_description: 'Publications (Society of Fellows News)'
+      block_description: 'Resources (Tutorials)'
       display_description: ''
       arguments: {  }
       defaults:
@@ -1205,7 +1336,7 @@ display:
           value:
             min: ''
             max: ''
-            value: '68'
+            value: '2423'
           group: 1
           exposed: false
           expose:
@@ -1252,14 +1383,14 @@ display:
       tags:
         - 'config:field.storage.media.field_media_image'
         - 'config:field.storage.node.field_page_page_section'
-  publications_supplements:
+  resources_useful_links:
     display_plugin: block
-    id: publications_supplements
-    display_title: /publications/supplements
+    id: resources_useful_links
+    display_title: /resources/useful-links
     position: 1
     display_options:
       display_extenders: {  }
-      block_description: 'Publications (Supplements)'
+      block_description: 'Resources (Useful Links)'
       display_description: ''
       arguments: {  }
       defaults:
@@ -1332,7 +1463,7 @@ display:
           value:
             min: ''
             max: ''
-            value: '3280'
+            value: '3286'
           group: 1
           exposed: false
           expose:
