@@ -1,17 +1,16 @@
-uuid: 03b2fe4d-8d54-443c-8e93-1aa552d87456
+uuid: 0bb3fdef-cd6a-4285-8930-7c230ce92e5d
 langcode: en
 status: true
 dependencies:
   module:
-    - datetime
     - node
-id: node.field_news_feature_date
-field_name: field_news_feature_date
+    - text
+id: node.field_news_features_summary
+field_name: field_news_features_summary
 entity_type: node
-type: datetime
-settings:
-  datetime_type: date
-module: datetime
+type: text_long
+settings: {  }
+module: text
 locked: false
 cardinality: 1
 translatable: true

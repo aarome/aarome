@@ -16,16 +16,16 @@ third_party_settings:
       options:
         slashes: true
         pathauto: true
-        transliterate: false
+        transliterate: true
     redirect: false
-    retroactive_update: false
-    active_updating: false
+    retroactive_update: true
+    active_updating: true
     file_name:
       value: '[file:ffp-name-only-original].[file:ffp-extension-original]'
       options:
-        slashes: false
-        pathauto: false
-        transliterate: false
+        slashes: true
+        pathauto: true
+        transliterate: true
 id: media.quick_news.field_media_image
 field_name: field_media_image
 entity_type: media

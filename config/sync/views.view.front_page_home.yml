@@ -1,11 +1,10 @@
 uuid: 7db469b1-2c9a-4df1-b7c0-641c90fcd49d
 langcode: en
-status: true
+status: false
 dependencies:
   config:
     - field.storage.media.field_media_image
     - field.storage.node.field_events_event_dates
-    - field.storage.node.field_news_feature_date
     - field.storage.node.field_page_page_section
     - field.storage.paragraph.field_affil_discipline
     - field.storage.paragraph.field_page_section_links
@@ -1798,70 +1797,6 @@ display:
           empty_zero: false
           hide_alter_empty: true
           plugin_id: standard
-        field_news_feature_date:
-          id: field_news_feature_date
-          table: node__field_news_feature_date
-          field: field_news_feature_date
-          relationship: none
-          group_type: group
-          admin_label: ''
-          label: ''
-          exclude: false
-          alter:
-            alter_text: false
-            text: ''
-            make_link: true
-            path: 'news/features{{ alias }}'
-            absolute: false
-            external: false
-            replace_spaces: false
-            path_case: none
-            trim_whitespace: false
-            alt: ''
-            rel: ''
-            link_class: ''
-            prefix: ''
-            suffix: ''
-            target: ''
-            nl2br: false
-            max_length: 0
-            word_boundary: true
-            ellipsis: true
-            more_link: false
-            more_link_text: ''
-            more_link_path: ''
-            strip_tags: false
-            trim: false
-            preserve_tags: ''
-            html: false
-          element_type: ''
-          element_class: ''
-          element_label_type: ''
-          element_label_class: ''
-          element_label_colon: false
-          element_wrapper_type: ''
-          element_wrapper_class: ''
-          element_default_classes: false
-          empty: ''
-          hide_empty: false
-          empty_zero: false
-          hide_alter_empty: true
-          click_sort_column: value
-          type: datetime_default
-          settings:
-            timezone_override: ''
-            format_type: academy_date
-          group_column: value
-          group_columns: {  }
-          group_rows: true
-          delta_limit: 0
-          delta_offset: 0
-          delta_reversed: false
-          delta_first_last: false
-          multi_type: separator
-          separator: ', '
-          field_api_classes: false
-          plugin_id: field
         title:
           id: title
           table: node_field_data
@@ -1974,8 +1909,7 @@ display:
         - 'languages:language_interface'
         - 'user.node_grants:view'
         - user.permissions
-      tags:
-        - 'config:field.storage.node.field_news_feature_date'
+      tags: {  }
   front_residents:
     display_plugin: block
     id: front_residents

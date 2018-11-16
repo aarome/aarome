@@ -1,21 +1,21 @@
-uuid: f68e15fa-55e1-4a38-a008-aa965f20c78d
+uuid: 12f5413c-bdfa-4656-ade9-665c3f6507c6
 langcode: en
 status: true
 dependencies:
   config:
-    - field.storage.node.field_news_feature_date
+    - field.storage.node.field_news_features_summary
     - node.type.news_features
   module:
-    - datetime
-id: node.news_features.field_news_feature_date
-field_name: field_news_feature_date
+    - text
+id: node.news_features.field_news_features_summary
+field_name: field_news_features_summary
 entity_type: node
 bundle: news_features
-label: 'Publication date'
+label: Summary
 description: ''
 required: false
 translatable: true
 default_value: {  }
 default_value_callback: ''
 settings: {  }
-field_type: datetime
+field_type: text_long

@@ -4,10 +4,11 @@ status: true
 dependencies:
   config:
     - field.field.node.news_features.body
-    - field.field.node.news_features.field_news_feature_date
+    - field.field.node.news_features.field_news_features_date
     - field.field.node.news_features.field_news_features_images
     - field.field.node.news_features.field_news_features_rel_events
     - field.field.node.news_features.field_news_features_rel_people
+    - field.field.node.news_features.field_news_features_summary
     - field.field.node.news_features.field_safe_path_alias
     - node.type.news_features
   module:
@@ -27,12 +28,12 @@ content:
     settings: {  }
     third_party_settings: {  }
     region: content
-  field_news_feature_date:
-    weight: 104
+  field_news_features_date:
+    weight: 107
     label: above
     settings:
-      format_type: medium
       timezone_override: ''
+      format_type: academy_date
     third_party_settings: {  }
     type: datetime_default
     region: content
@@ -60,6 +61,13 @@ content:
       link: true
     third_party_settings: {  }
     type: entity_reference_label
+    region: content
+  field_news_features_summary:
+    weight: 108
+    label: above
+    settings: {  }
+    third_party_settings: {  }
+    type: text_default
     region: content
   field_safe_path_alias:
     weight: 106

@@ -13,6 +13,9 @@ module:
   block_content: 0
   breakpoint: 0
   cer: 0
+  chosen: 0
+  chosen_field: 0
+  chosen_lib: 0
   ckeditor: 0
   compact_forms: 0
   computed_field: 0
@@ -57,7 +60,6 @@ module:
   name: 0
   node: 0
   noreqnewpass: 0
-  optional_end_date: 0
   options: 0
   page_cache: 0
   path: 0
