@@ -1,0 +1,25 @@
+uuid: e12af107-2a17-40a9-8b4e-ed4c755f8231
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_people_rel_news_features
+    - node.type.people
+id: node.people.field_people_rel_news_features
+field_name: field_people_rel_news_features
+entity_type: node
+bundle: people
+label: 'Related news features'
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings:
+  handler: views
+  handler_settings:
+    view:
+      view_name: entity_references_nodes
+      display_name: entity_reference_news_feature
+      arguments: {  }
+field_type: entity_reference

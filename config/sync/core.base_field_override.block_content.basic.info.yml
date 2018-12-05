@@ -1,4 +1,4 @@
-uuid: b7612880-6fde-4809-85eb-721151ab0a76
+uuid: 4c09ce21-8246-4059-a8ba-5de8b4b5d044
 langcode: en
 status: true
 dependencies:
@@ -11,7 +11,7 @@ bundle: basic
 label: 'Block description'
 description: 'A brief description of your block.'
 required: true
-translatable: false
+translatable: true
 default_value: {  }
 default_value_callback: ''
 settings: {  }

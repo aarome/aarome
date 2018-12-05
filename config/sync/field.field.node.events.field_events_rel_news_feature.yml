@@ -1,0 +1,25 @@
+uuid: cc49156d-f4a0-4c26-9823-fc9829b884c8
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_events_rel_news_feature
+    - node.type.events
+id: node.events.field_events_rel_news_feature
+field_name: field_events_rel_news_feature
+entity_type: node
+bundle: events
+label: 'Related news feature'
+description: ''
+required: false
+translatable: true
+default_value: {  }
+default_value_callback: ''
+settings:
+  handler: views
+  handler_settings:
+    view:
+      view_name: entity_references_nodes
+      display_name: entity_reference_news_feature
+      arguments: {  }
+field_type: entity_reference

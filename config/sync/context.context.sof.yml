@@ -1,0 +1,151 @@
+uuid: 19ec6066-5f9b-4c7c-a294-07d6126710df
+langcode: en
+status: true
+dependencies:
+  module:
+    - system
+name: sof
+label: SOF
+group: Frontpages
+description: ''
+requireAllConditions: false
+disabled: false
+conditions:
+  request_path:
+    id: request_path
+    pages: "/society-of-fellows\r\n/membri-dell-aar"
+    negate: 0
+    uuid: 83526fab-ef71-489a-ae6c-62cba14028d6
+    context_mapping: {  }
+reactions:
+  blocks:
+    blocks:
+      b1ce0d54-85eb-4ab4-9415-8398116bf09b:
+        id: 'views_block:front_page_sof-sof_bylaws'
+        label: ''
+        provider: views
+        label_display: 0
+        views_label: ''
+        items_per_page: none
+        region: content
+        weight: '1'
+        context_mapping: {  }
+        theme: tema
+        css_class: ''
+        unique: 0
+        context_id: sof
+        uuid: b1ce0d54-85eb-4ab4-9415-8398116bf09b
+      4b20f951-57df-4151-9bc3-581f89d9d4ab:
+        id: 'views_block:front_page_sof-sof_council'
+        label: ''
+        provider: views
+        label_display: 0
+        views_label: ''
+        items_per_page: none
+        region: content
+        weight: '-3'
+        context_mapping: {  }
+        theme: tema
+        css_class: ''
+        unique: 0
+        context_id: sof
+        uuid: 4b20f951-57df-4151-9bc3-581f89d9d4ab
+      b2670ffa-f724-48f3-a304-2faea5a8dc97:
+        id: 'views_block:front_page_sof-sof_events'
+        label: ''
+        provider: views
+        label_display: 0
+        views_label: ''
+        items_per_page: none
+        region: content
+        weight: '-2'
+        context_mapping: {  }
+        theme: tema
+        css_class: ''
+        unique: 0
+        context_id: sof
+        uuid: b2670ffa-f724-48f3-a304-2faea5a8dc97
+      735d8ef4-a16d-437f-92cb-9e77a20520da:
+        id: 'views_block:front_page_sof-sof_past_presidents'
+        label: ''
+        provider: views
+        label_display: 0
+        views_label: ''
+        items_per_page: none
+        region: content
+        weight: '2'
+        context_mapping: {  }
+        theme: tema
+        css_class: ''
+        unique: 0
+        context_id: sof
+        uuid: 735d8ef4-a16d-437f-92cb-9e77a20520da
+      c2bd6366-9c0f-40e1-bd09-f6ea235e9d54:
+        id: 'views_block:front_page_sof-sof_support'
+        label: ''
+        provider: views
+        label_display: 0
+        views_label: ''
+        items_per_page: none
+        region: content
+        weight: '4'
+        context_mapping: {  }
+        theme: tema
+        css_class: ''
+        unique: 0
+        context_id: sof
+        uuid: c2bd6366-9c0f-40e1-bd09-f6ea235e9d54
+      a4c3a4e0-14b1-4356-9e90-faf1c5c59bd8:
+        id: 'views_block:front_page_sof-sof_directory'
+        label: ''
+        provider: views
+        label_display: 0
+        views_label: ''
+        items_per_page: none
+        region: content
+        weight: '3'
+        context_mapping: {  }
+        theme: tema
+        css_class: ''
+        unique: 0
+        context_id: sof
+        uuid: a4c3a4e0-14b1-4356-9e90-faf1c5c59bd8
+      6084c6d0-3fe6-49a5-a542-bc9249444956:
+        id: 'views_block:front_page_sof-sof_news'
+        label: ''
+        provider: views
+        label_display: 0
+        views_label: ''
+        items_per_page: none
+        region: content
+        weight: '0'
+        context_mapping: {  }
+        theme: tema
+        css_class: ''
+        unique: 0
+        context_id: sof
+        uuid: 6084c6d0-3fe6-49a5-a542-bc9249444956
+      b1a13fdf-4a7e-4bfa-ab6a-6d26b539f746:
+        id: 'views_block:front_page_sof-sof_history'
+        label: ''
+        provider: views
+        label_display: 0
+        views_label: ''
+        items_per_page: none
+        region: content
+        weight: '-1'
+        context_mapping: {  }
+        theme: tema
+        css_class: ''
+        unique: 0
+        context_id: sof
+        uuid: b1a13fdf-4a7e-4bfa-ab6a-6d26b539f746
+    id: blocks
+    saved: false
+    uuid: 4dc6ee89-f759-4b67-8b23-388bb297ada7
+    include_default_blocks: 1
+  body_class:
+    id: body_class
+    body_class: 'front sof-front'
+    saved: false
+weight: 0

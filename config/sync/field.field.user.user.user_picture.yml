@@ -1,19 +1,12 @@
-uuid: 4f0e8774-2f10-41d2-a422-75234592287a
+uuid: 9081d1e9-174b-416e-8235-fa783a1e90fd
 langcode: en
 status: true
 dependencies:
   config:
     - field.storage.user.user_picture
   module:
-    - content_translation
     - image
     - user
-third_party_settings:
-  content_translation:
-    translation_sync:
-      alt: alt
-      title: title
-      file: '0'
 _core:
   default_config_hash: Iiq0AttdhgbebJwabSFwQQ1ORn64GoGz0xSZ_eyCJ8A
 id: user.user.user_picture
@@ -23,7 +16,7 @@ bundle: user
 label: Picture
 description: 'Your virtual face or picture.'
 required: false
-translatable: true
+translatable: false
 default_value: {  }
 default_value_callback: ''
 settings:

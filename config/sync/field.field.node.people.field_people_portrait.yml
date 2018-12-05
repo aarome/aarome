@@ -1,11 +1,13 @@
-uuid: abcfd47b-00ad-4130-a281-da6c54c5451c
+uuid: 62afb720-0359-408c-9ef5-4f98538e17d6
 langcode: en
 status: true
 dependencies:
   config:
     - field.storage.node.field_people_portrait
-    - media.type.image
+    - media.type.people
     - node.type.people
+  content:
+    - 'media:people:fb3949e9-54ee-4c4a-8f5f-9fb0a368aee2'
 id: node.people.field_people_portrait
 field_name: field_people_portrait
 entity_type: node
@@ -14,13 +16,15 @@ label: Portrait
 description: ''
 required: false
 translatable: true
-default_value: {  }
+default_value:
+  -
+    target_uuid: fb3949e9-54ee-4c4a-8f5f-9fb0a368aee2
 default_value_callback: ''
 settings:
   handler: 'default:media'
   handler_settings:
     target_bundles:
-      image: image
+      people: people
     sort:
       field: _none
     auto_create: false

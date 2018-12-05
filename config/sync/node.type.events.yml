@@ -1,4 +1,4 @@
-uuid: 748e4445-ff9e-404b-8ccc-817d463429a2
+uuid: a868a3bd-3efe-4d2f-b99b-bb190aec38ae
 langcode: en
 status: true
 dependencies:
@@ -10,7 +10,7 @@ third_party_settings:
     parent: ''
 name: Events
 type: events
-description: '<em>Events</em> describes scheduled lectures, Shoptalks, open studios, etc. on the Rome campus, in New York campuses, and at partner organizations. See www.aarome.org/help for a complete list of event types. '
+description: 'Events describes scheduled lectures, Shoptalks, open studios, etc. on the Rome campus, in New York campuses, and at partner organizations. See http://aarome.org/help for a complete list of event types.'
 help: ''
 new_revision: false
 preview_mode: 1

@@ -1,0 +1,13 @@
+uuid: 9c595c7b-95c7-431c-9bfc-a421dec6c372
+langcode: en
+status: true
+dependencies: {  }
+id: events_press_releases
+label: 'Events to press releases'
+enabled: true
+first_field: field_events_rel_press_releases
+second_field: field_press_releases_rel_events
+bundles:
+  node:
+    - events
+    - press_releases

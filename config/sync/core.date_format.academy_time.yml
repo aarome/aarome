@@ -1,0 +1,8 @@
+uuid: eee1a1ce-df31-4d53-9bcc-fd18f6b082b0
+langcode: en
+status: true
+dependencies: {  }
+id: academy_time
+label: 'Academy time'
+locked: false
+pattern: 'l, F j, Y'

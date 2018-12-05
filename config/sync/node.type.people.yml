@@ -1,4 +1,4 @@
-uuid: 85dfcef0-d5dd-459d-b9a5-3443549aca83
+uuid: 985ead38-d459-4dde-9c6e-d64c0e7112cc
 langcode: en
 status: true
 dependencies:
@@ -10,7 +10,7 @@ third_party_settings:
     parent: ''
 name: People
 type: people
-description: ''
+description: 'Includes Rome Prize recipients, Academy resident artists and scholars, visiting artists, staff, and administration. A complete list of support types is available at http://aarome.org/help'
 help: ''
 new_revision: false
 preview_mode: 1

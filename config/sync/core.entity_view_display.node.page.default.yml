@@ -1,14 +1,16 @@
-uuid: d4dc71c9-a5fc-424e-a229-36687b05ef86
+uuid: 9b85a619-7d02-4e15-8f82-00214b8336b6
 langcode: en
 status: true
 dependencies:
   config:
     - field.field.node.page.body
-    - field.field.node.page.field_basic_page_body
-    - field.field.node.page.field_date
-    - field.field.node.page.field_date_range
+    - field.field.node.page.field_page_image
+    - field.field.node.page.field_page_page_section
+    - field.field.node.page.field_page_type
+    - field.field.node.page.field_safe_path_alias
     - node.type.page
   module:
+    - computed_field
     - entity_reference_revisions
     - user
 _core:
@@ -18,18 +20,40 @@ targetEntityType: node
 bundle: page
 mode: default
 content:
-  field_basic_page_body:
+  field_page_image:
+    type: entity_reference_entity_view
+    weight: 3
+    label: above
+    settings:
+      view_mode: default
+      link: false
+    third_party_settings: {  }
+    region: content
+  field_page_page_section:
     type: entity_reference_revisions_entity_view
-    weight: 0
+    weight: 2
     label: hidden
     settings:
       view_mode: default
       link: ''
     third_party_settings: {  }
     region: content
+  field_safe_path_alias:
+    weight: 0
+    label: above
+    settings:
+      sanitized: true
+      cache_unit: -1
+      cache_duration: 1
+    third_party_settings: {  }
+    type: computed_string
+    region: content
+  links:
+    weight: 1
+    region: content
+    settings: {  }
+    third_party_settings: {  }
 hidden:
   body: true
-  field_date: true
-  field_date_range: true
+  field_page_type: true
   langcode: true
-  links: true

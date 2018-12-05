@@ -1,9 +1,10 @@
-uuid: 341b3bc5-bc38-4c69-abfc-db5ae37792bf
+uuid: 5a324519-fd6a-402c-b472-72d45053640d
 langcode: en
 status: true
 dependencies:
   config:
     - field.field.media.file.field_media_file
+    - field.field.media.file.field_media_file_type
     - media.type.file
   module:
     - file
@@ -22,9 +23,24 @@ content:
     type: file_default
     weight: 1
     region: content
+  field_media_file_type:
+    weight: 2
+    label: above
+    settings:
+      link: true
+    third_party_settings: {  }
+    type: entity_reference_label
+    region: content
+  name:
+    type: string
+    weight: 0
+    region: content
+    label: hidden
+    settings:
+      link_to_entity: false
+    third_party_settings: {  }
 hidden:
   created: true
   langcode: true
-  name: true
   thumbnail: true
   uid: true

@@ -1,4 +1,4 @@
-uuid: 972c0a38-019b-4c9f-9856-29fbde6d8150
+uuid: 0f23e9f5-979f-4c38-a906-bb3010810976
 langcode: en
 status: true
 dependencies: {  }
@@ -9,7 +9,7 @@ label: Image
 description: 'Use local images for reusable media.'
 source: image
 queue_thumbnail_downloads: false
-new_revision: true
+new_revision: false
 source_configuration:
   source_field: field_media_image
 field_map: {  }

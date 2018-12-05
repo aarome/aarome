@@ -1,4 +1,4 @@
-uuid: b09c6095-f2ad-4dad-9400-9d4894d4cd76
+uuid: 3f05321a-ca62-4490-ae36-b1722464034b
 langcode: en
 status: true
 dependencies:
@@ -29,7 +29,7 @@ settings:
     given: Given
     middle: 'Middle name(s)'
     family: Family
-    generational: Suffix
+    generational: Generational
     credentials: Credentials
   max_length:
     title: 31
@@ -78,8 +78,8 @@ settings:
     - IX
     - X
   sort_options:
-    title: true
-    generational: true
+    title: false
+    generational: false
 module: name
 locked: false
 cardinality: 1

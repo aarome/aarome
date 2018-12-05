@@ -1,14 +1,17 @@
-uuid: 2e290e85-edeb-4717-aac3-e8526a268916
+uuid: 0fbca2cb-d0a3-4d58-80ce-88c66ccf2457
 langcode: en
 status: true
 dependencies:
   config:
     - field.field.node.page.body
-    - field.field.node.page.field_basic_page_body
-    - field.field.node.page.field_date
-    - field.field.node.page.field_date_range
+    - field.field.node.page.field_page_image
+    - field.field.node.page.field_page_page_section
+    - field.field.node.page.field_page_type
+    - field.field.node.page.field_safe_path_alias
     - node.type.page
   module:
+    - computed_field
+    - inline_entity_form
     - paragraphs
     - path
 _core:
@@ -20,32 +23,66 @@ mode: default
 content:
   created:
     type: datetime_timestamp
-    weight: 3
+    weight: 4
     region: content
     settings: {  }
     third_party_settings: {  }
-  field_basic_page_body:
-    type: entity_reference_paragraphs
-    weight: 8
+  field_page_image:
+    weight: 10
     settings:
-      title: Paragraph
-      title_plural: Paragraphs
+      form_mode: default
+      label_singular: ''
+      label_plural: ''
+      collapsible: true
+      allow_new: true
+      allow_existing: true
+      match_operator: CONTAINS
+      override_labels: false
+      collapsed: false
+      allow_duplicate: false
+    third_party_settings: {  }
+    type: inline_entity_form_complex
+    region: content
+  field_page_page_section:
+    type: paragraphs
+    weight: 11
+    settings:
+      title: 'Page section'
+      title_plural: 'Page ections'
       edit_mode: open
+      closed_mode: summary
+      autocollapse: none
       add_mode: dropdown
       form_display_mode: default
-      default_paragraph_type: ''
+      default_paragraph_type: page_section
+      features:
+        duplicate: duplicate
+        collapse_edit_all: collapse_edit_all
+        add_above: '0'
     third_party_settings: {  }
+    region: content
+  field_page_type:
+    weight: 0
+    settings: {  }
+    third_party_settings: {  }
+    type: options_select
+    region: content
+  field_safe_path_alias:
+    weight: 26
+    settings: {  }
+    third_party_settings: {  }
+    type: computed_string_widget
     region: content
   langcode:
     type: language_select
-    weight: 1
+    weight: 2
     region: content
     settings:
       include_locked: true
     third_party_settings: {  }
   path:
     type: path
-    weight: 6
+    weight: 8
     region: content
     settings: {  }
     third_party_settings: {  }
@@ -53,34 +90,39 @@ content:
     type: boolean_checkbox
     settings:
       display_label: true
-    weight: 4
+    weight: 6
     region: content
     third_party_settings: {  }
   status:
     type: boolean_checkbox
     settings:
       display_label: true
-    weight: 7
+    weight: 9
     region: content
     third_party_settings: {  }
   sticky:
     type: boolean_checkbox
     settings:
       display_label: true
-    weight: 5
+    weight: 7
     region: content
     third_party_settings: {  }
   title:
     type: string_textfield
-    weight: 0
+    weight: 1
     region: content
     settings:
       size: 60
       placeholder: ''
     third_party_settings: {  }
+  translation:
+    weight: 5
+    region: content
+    settings: {  }
+    third_party_settings: {  }
   uid:
     type: entity_reference_autocomplete
-    weight: 2
+    weight: 3
     region: content
     settings:
       match_operator: CONTAINS
@@ -89,5 +131,3 @@ content:
     third_party_settings: {  }
 hidden:
   body: true
-  field_date: true
-  field_date_range: true

@@ -1,4 +1,4 @@
-uuid: 5a3d4ee2-ae58-4f2c-b7f5-30029cfa8ab5
+uuid: a096f328-cdda-43c5-a9cc-fa0e47640da0
 langcode: en
 status: true
 dependencies:
@@ -7,11 +7,11 @@ dependencies:
   theme:
     - tema
 _core:
-  default_config_hash: KHQIJ7Vfl25lTjzIc7qIvnuistt-Mw2O0kG4jCofmkI
+  default_config_hash: XJqWwLt1LDCnazcEN6QkJmCLjk4R0__-8s0OO9xeNjg
 id: tema_messages
 theme: tema
-region: header
-weight: -2
+region: content
+weight: -7
 provider: null
 plugin: system_messages_block
 settings:

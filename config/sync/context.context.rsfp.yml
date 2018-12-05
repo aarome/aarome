@@ -1,0 +1,91 @@
+uuid: 154e354b-164f-41a1-a48c-f5f2f5f20837
+langcode: en
+status: true
+dependencies:
+  module:
+    - system
+name: rsfp
+label: RSFP
+group: Frontpages
+description: ''
+requireAllConditions: false
+disabled: false
+conditions:
+  request_path:
+    id: request_path
+    pages: "/rome-sustainable-food-project\r\n/roma-progetto-alimentare-sostenible"
+    negate: 0
+    uuid: 0a52ad72-f7cf-4f97-8468-3840a920b7fd
+    context_mapping: {  }
+reactions:
+  blocks:
+    blocks:
+      335deed0-3837-40d2-94b6-ce8102085722:
+        id: 'views_block:front_page_apply-block__frontpage'
+        label: ''
+        provider: views
+        label_display: 0
+        views_label: ''
+        items_per_page: none
+        region: content
+        weight: '-1'
+        context_mapping: {  }
+        theme: tema
+        css_class: ''
+        unique: 0
+        context_id: rsfp
+        uuid: 335deed0-3837-40d2-94b6-ce8102085722
+      8df5116b-6283-475e-9e2a-ebb733da00c0:
+        id: 'views_block:front_page_rsfp-rsfp_publications'
+        label: ''
+        provider: views
+        label_display: 0
+        views_label: ''
+        items_per_page: none
+        region: content
+        weight: '2'
+        context_mapping: {  }
+        theme: tema
+        css_class: ''
+        unique: 0
+        context_id: rsfp
+        uuid: 8df5116b-6283-475e-9e2a-ebb733da00c0
+      affe18dc-8bf6-40fe-b2e6-6e86bd35d4ab:
+        id: 'views_block:front_page_rsfp-rsfp_testimonials'
+        label: ''
+        provider: views
+        label_display: 0
+        views_label: ''
+        items_per_page: none
+        region: content
+        weight: '0'
+        context_mapping: {  }
+        theme: tema
+        css_class: ''
+        unique: 0
+        context_id: rsfp
+        uuid: affe18dc-8bf6-40fe-b2e6-6e86bd35d4ab
+      4e14f691-1dda-4d3d-b0e7-9be1e74624f4:
+        id: 'views_block:front_page_rsfp-rsfp_sample_menus'
+        label: ''
+        provider: views
+        label_display: 0
+        views_label: ''
+        items_per_page: none
+        region: content
+        weight: '1'
+        context_mapping: {  }
+        theme: tema
+        css_class: ''
+        unique: 0
+        context_id: rsfp
+        uuid: 4e14f691-1dda-4d3d-b0e7-9be1e74624f4
+    id: blocks
+    saved: false
+    uuid: bb2a7a79-182e-4341-a5c1-2675a3e1eac0
+    include_default_blocks: 1
+  body_class:
+    id: body_class
+    body_class: 'front rsvp-front'
+    saved: false
+weight: 0
