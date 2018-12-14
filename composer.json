@@ -37,7 +37,7 @@
         "drupal/config_tools": "^1.0@alpha",
         "drupal/console": "^1.0.2",
         "drupal/context": "4.0.0-beta2",
-        "drupal/core": "~8.5.3",
+        "drupal/core": "~8.6.4",
         "drupal/date_popup": "^1.0",
         "drupal/datetime_extras": "1.x-dev",
         "drupal/delete_all": "^1.0",
@@ -90,7 +90,7 @@
     "require-dev": {
         "drupal/devel": "^1.2",
         "geerlingguy/drupal-vm": "^4.9",
-        "webflo/drupal-core-require-dev": "~8.5.3"
+        "webflo/drupal-core-require-dev": "~8.6.4"
     },
     "conflict": {
         "drupal/drupal": "*"
