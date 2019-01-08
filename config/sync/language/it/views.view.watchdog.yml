@@ -45,7 +45,7 @@ display:
       title: 'Messaggi di log recenti'
       empty:
         area:
-          content:
-            value: 'Nessun messaggio di log disponibile.'
+          admin_label: 'Nessun messaggio di log disponibile.'
+          content: 'Nessun messaggio di log disponibile.'
   page:
     display_title: Pagina

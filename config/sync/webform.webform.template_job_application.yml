@@ -1,12 +1,9 @@
-uuid: 3646cf9f-dfe7-4737-a715-2518fd7ed77c
 langcode: en
 status: closed
 dependencies:
   enforced:
     module:
       - webform_templates
-_core:
-  default_config_hash: dwoZrI_UUxp66ZozV2xXNPNrCptj5E2erVidSnbuGEo
 open: null
 close: null
 weight: 0
@@ -34,6 +31,7 @@ settings:
   form_previous_submissions: true
   form_confidential: false
   form_confidential_message: ''
+  form_remote_addr: true
   form_convert_anonymous: false
   form_prepopulate: false
   form_prepopulate_source_entity: false
@@ -166,6 +164,10 @@ access:
     roles: {  }
     users: {  }
     permissions: {  }
+  configuration:
+    roles: {  }
+    users: {  }
+    permissions: {  }
 handlers:
   email_notification:
     id: email
@@ -201,3 +203,6 @@ handlers:
       return_path: ''
       sender_mail: ''
       sender_name: ''
+uuid: 3646cf9f-dfe7-4737-a715-2518fd7ed77c
+_core:
+  default_config_hash: dwoZrI_UUxp66ZozV2xXNPNrCptj5E2erVidSnbuGEo

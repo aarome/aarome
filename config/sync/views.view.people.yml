@@ -19,6 +19,7 @@ dependencies:
     - 'taxonomy_term:affiliation_types:d8ba162d-18f6-4f01-9cb5-0d634ca1ba51'
     - 'taxonomy_term:affiliation_types:f440de69-3364-4600-9a79-1d073945e660'
   module:
+    - datetime
     - datetime_range
     - entity_reference_revisions
     - media
@@ -1058,7 +1059,11 @@ display:
           group_type: group
           admin_label: ''
           operator: '='
-          value: '2019-01-01'
+          value:
+            min: ''
+            max: ''
+            value: '2019-01-01'
+            type: date
           group: 1
           exposed: false
           expose:
@@ -1086,7 +1091,8 @@ display:
             default_group: All
             default_group_multiple: {  }
             group_items: {  }
-          plugin_id: string
+          plugin_id: datetime
+          entity_type: paragraph
       filter_groups:
         operator: AND
         groups:
@@ -1544,7 +1550,11 @@ display:
           group_type: group
           admin_label: ''
           operator: '='
-          value: '2019-01-01'
+          value:
+            min: ''
+            max: ''
+            value: '2019-01-01'
+            type: date
           group: 1
           exposed: false
           expose:
@@ -1572,7 +1582,8 @@ display:
             default_group: All
             default_group_multiple: {  }
             group_items: {  }
-          plugin_id: string
+          plugin_id: datetime
+          entity_type: paragraph
       filter_groups:
         operator: AND
         groups:
@@ -2030,7 +2041,11 @@ display:
           group_type: group
           admin_label: ''
           operator: '='
-          value: '2019-01-01'
+          value:
+            min: ''
+            max: ''
+            value: '2019-01-01'
+            type: date
           group: 1
           exposed: false
           expose:
@@ -2058,7 +2073,8 @@ display:
             default_group: All
             default_group_multiple: {  }
             group_items: {  }
-          plugin_id: string
+          plugin_id: datetime
+          entity_type: paragraph
       filter_groups:
         operator: AND
         groups:
@@ -2516,7 +2532,11 @@ display:
           group_type: group
           admin_label: ''
           operator: '='
-          value: '2019-01-01'
+          value:
+            min: ''
+            max: ''
+            value: '2019-01-01'
+            type: date
           group: 1
           exposed: false
           expose:
@@ -2544,7 +2564,8 @@ display:
             default_group: All
             default_group_multiple: {  }
             group_items: {  }
-          plugin_id: string
+          plugin_id: datetime
+          entity_type: paragraph
       filter_groups:
         operator: AND
         groups:

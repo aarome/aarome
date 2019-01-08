@@ -20,6 +20,6 @@ settings:
   handler_settings:
     view:
       view_name: entity_references_nodes
-      display_name: entity_reference_3
+      display_name: entity_reference_press
       arguments: {  }
 field_type: entity_reference

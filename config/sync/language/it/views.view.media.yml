@@ -60,6 +60,3 @@ display:
         langcode:
           expose:
             label: Lingua
-      empty:
-        area_text_custom:
-          content: 'Nessun contenuto disponibile.'

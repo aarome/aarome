@@ -1,12 +1,9 @@
-uuid: f9bfaa65-d9ca-496f-9a3e-da5bd0bce44e
 langcode: en
 status: closed
 dependencies:
   enforced:
     module:
       - webform_templates
-_core:
-  default_config_hash: NGNxC4BoTF35ajZ23BIXYiVrNqNqvwN5RtMn8voqn4M
 open: null
 close: null
 weight: 0
@@ -34,6 +31,7 @@ settings:
   form_previous_submissions: true
   form_confidential: false
   form_confidential_message: ''
+  form_remote_addr: true
   form_convert_anonymous: false
   form_prepopulate: false
   form_prepopulate_source_entity: false
@@ -166,6 +164,10 @@ access:
     roles: {  }
     users: {  }
     permissions: {  }
+  configuration:
+    roles: {  }
+    users: {  }
+    permissions: {  }
 handlers:
   email_notification:
     id: email
@@ -201,3 +203,6 @@ handlers:
       return_path: ''
       sender_mail: ''
       sender_name: ''
+uuid: f9bfaa65-d9ca-496f-9a3e-da5bd0bce44e
+_core:
+  default_config_hash: NGNxC4BoTF35ajZ23BIXYiVrNqNqvwN5RtMn8voqn4M

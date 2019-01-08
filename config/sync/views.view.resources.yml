@@ -997,7 +997,7 @@ display:
     position: 2
     display_options:
       display_extenders: {  }
-      path: research/resources/libraries-institutions
+      path: research/resources/libraries-and-institutions
       filters:
         status:
           id: status
@@ -1511,7 +1511,7 @@ display:
     position: 2
     display_options:
       display_extenders: {  }
-      path: research/resources/research-databases
+      path: research/resources/research-databases-digital-collections
       filters:
         status:
           id: status
@@ -2028,7 +2028,7 @@ display:
     position: 3
     display_options:
       display_extenders: {  }
-      path: research/resources/links
+      path: research/resources/useful-links
       filters:
         status:
           id: status

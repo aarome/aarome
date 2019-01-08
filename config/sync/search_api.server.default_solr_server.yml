@@ -31,3 +31,5 @@ backend_config:
   skip_schema_check: false
   domain: generic
   site_hash: true
+  finalize_timeout: 30
+  server_prefix: ''

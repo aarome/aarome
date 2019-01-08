@@ -6,7 +6,15 @@ dependencies:
     - field.storage.media.field_media_caption
     - media.type.news_features
   module:
+    - allowed_formats
     - text
+third_party_settings:
+  allowed_formats:
+    summary_html: summary_html
+    basic_html: '0'
+    restricted_html: '0'
+    full_html: '0'
+    plain_text: '0'
 id: media.news_features.field_media_caption
 field_name: field_media_caption
 entity_type: media

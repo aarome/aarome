@@ -8,7 +8,6 @@ register_admin_created:
 register_no_approval_required:
   subject: 'Dettagli profilo per [user:display-name] su [site:name]'
 register_pending_approval:
-  body: "[user:display-name],\r\n\r\nGrazie per esservi registrati su [site:name].\r\nLa vostra richiesta di un account è attualmente in attesa di approvazione. Una volta approvata, riceverete una ulteriore e-mail contenente le informazioni su come accedere, impostare la password e altri dettagli.\r\n\r\n\r\n-- Il team di  [site:name]"
   subject: 'Dettagli del profilo per [user:display-name] su [site:name] (in attesa dell''approvazione dell''amministratore)'
 register_pending_approval_admin:
   subject: 'Dettagli del profilo per [user:display-name] su [site:name] (in attesa dell''approvazione dell''amministratore)'

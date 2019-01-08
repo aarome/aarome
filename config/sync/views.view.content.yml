@@ -16,6 +16,7 @@ dependencies:
     - node.type.press_releases
     - node.type.publications
     - node.type.quick_news
+    - node.type.society_of_fellows
     - taxonomy.vocabulary.page_types
   module:
     - node
@@ -616,7 +617,6 @@ display:
           admin_label: ''
           operator: in
           value:
-            all: all
             article: article
             articles: articles
             page: page
@@ -629,6 +629,7 @@ display:
             press_releases: press_releases
             publications: publications
             quick_news: quick_news
+            society_of_fellows: society_of_fellows
           group: 1
           exposed: true
           expose:
@@ -646,6 +647,7 @@ display:
               anonymous: '0'
               administrator: '0'
               site_editor: '0'
+              staff: '0'
             reduce: false
           is_grouped: false
           group_info:
@@ -893,6 +895,7 @@ display:
             press_releases: press_releases
             publications: publications
             quick_news: quick_news
+            society_of_fellows: society_of_fellows
           group: 1
           exposed: true
           expose:
@@ -910,6 +913,7 @@ display:
               anonymous: '0'
               administrator: '0'
               site_editor: '0'
+              staff: '0'
             reduce: true
           is_grouped: false
           group_info:
