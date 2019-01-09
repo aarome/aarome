@@ -420,8 +420,8 @@ display:
       pager:
         type: some
         options:
-          items_per_page: 5
-          offset: 0
+          items_per_page: 10
+          offset: 2
       css_class: 'front front_events'
       sorts:
         field_events_event_dates_value:
@@ -435,8 +435,8 @@ display:
           exposed: false
           expose:
             label: ''
+          granularity: day
           plugin_id: datetime
-          entity_type: node
       style:
         type: slick
         options:
@@ -445,11 +445,12 @@ display:
           skin: ''
           layout: ''
           caption:
+            field_safe_path_alias: '0'
             alias: '0'
             field_media_image: '0'
             title: '0'
             field_events_event_dates: '0'
-            edit_node: '0'
+            nothing: '0'
           optionset_thumbnail: ''
           skin_thumbnail: ''
           thumbnail_caption: ''
@@ -468,9 +469,9 @@ display:
           id: ''
           override: true
           overridables:
+            arrows: arrows
             draggable: draggable
             infinite: infinite
-            arrows: '0'
             autoplay: '0'
             dots: '0'
             mouseWheel: '0'
@@ -486,6 +487,71 @@ display:
           separator: ''
           hide_empty: false
       fields:
+        field_safe_path_alias:
+          id: field_safe_path_alias
+          table: node__field_safe_path_alias
+          field: field_safe_path_alias
+          relationship: none
+          group_type: group
+          admin_label: ''
+          label: ''
+          exclude: true
+          alter:
+            alter_text: false
+            text: ''
+            make_link: false
+            path: ''
+            absolute: false
+            external: false
+            replace_spaces: false
+            path_case: none
+            trim_whitespace: false
+            alt: ''
+            rel: ''
+            link_class: ''
+            prefix: ''
+            suffix: ''
+            target: ''
+            nl2br: false
+            max_length: 0
+            word_boundary: true
+            ellipsis: true
+            more_link: false
+            more_link_text: ''
+            more_link_path: ''
+            strip_tags: false
+            trim: false
+            preserve_tags: ''
+            html: false
+          element_type: ''
+          element_class: ''
+          element_label_type: ''
+          element_label_class: ''
+          element_label_colon: false
+          element_wrapper_type: ''
+          element_wrapper_class: ''
+          element_default_classes: true
+          empty: ''
+          hide_empty: false
+          empty_zero: false
+          hide_alter_empty: true
+          click_sort_column: value
+          type: computed_string
+          settings:
+            sanitized: 1
+            cache_unit: '-1'
+            cache_duration: '1'
+          group_column: value
+          group_columns: {  }
+          group_rows: true
+          delta_limit: 0
+          delta_offset: 0
+          delta_reversed: false
+          delta_first_last: false
+          multi_type: separator
+          separator: ', '
+          field_api_classes: false
+          plugin_id: field
         alias:
           id: alias
           table: views_url_alias_node
@@ -543,11 +609,11 @@ display:
           group_type: group
           admin_label: ''
           label: ''
-          exclude: false
+          exclude: true
           alter:
             alter_text: false
             text: ''
-            make_link: true
+            make_link: false
             path: 'events{{ alias }}'
             absolute: false
             external: false
@@ -571,7 +637,7 @@ display:
             trim: false
             preserve_tags: ''
             html: false
-          element_type: figure
+          element_type: ''
           element_class: ''
           element_label_type: ''
           element_label_class: ''
@@ -586,7 +652,7 @@ display:
           click_sort_column: target_id
           type: image
           settings:
-            image_style: ''
+            image_style: large
             image_link: ''
           group_column: ''
           group_columns: {  }
@@ -607,11 +673,11 @@ display:
           group_type: group
           admin_label: ''
           label: ''
-          exclude: false
+          exclude: true
           alter:
             alter_text: false
             text: ''
-            make_link: true
+            make_link: false
             path: 'events{{ alias }}'
             absolute: false
             external: false
@@ -635,8 +701,8 @@ display:
             trim: false
             preserve_tags: ''
             html: false
-          element_type: h1
-          element_class: title
+          element_type: ''
+          element_class: ''
           element_label_type: ''
           element_label_class: ''
           element_label_colon: false
@@ -672,11 +738,11 @@ display:
           group_type: group
           admin_label: ''
           label: ''
-          exclude: false
+          exclude: true
           alter:
             alter_text: false
             text: ''
-            make_link: true
+            make_link: false
             path: 'events{{ alias }}'
             absolute: false
             external: false
@@ -729,20 +795,20 @@ display:
           separator: ', '
           field_api_classes: false
           plugin_id: field
-        edit_node:
-          id: edit_node
-          table: node
-          field: edit_node
+        nothing:
+          id: nothing
+          table: views
+          field: nothing
           relationship: none
           group_type: group
           admin_label: ''
           label: ''
           exclude: false
           alter:
-            alter_text: false
-            text: ''
-            make_link: false
-            path: ''
+            alter_text: true
+            text: "<figure>{{ field_media_image }}</figure>\r\n<h3 class=\"title\">{{ title }}</h3>\r\n<time>{{ field_events_event_dates }}</time>"
+            make_link: true
+            path: '/events/{{ field_safe_path_alias }}'
             absolute: false
             external: false
             replace_spaces: false
@@ -765,23 +831,19 @@ display:
             trim: false
             preserve_tags: ''
             html: false
-          element_type: div
-          element_class: edit
+          element_type: ''
+          element_class: ''
           element_label_type: ''
           element_label_class: ''
           element_label_colon: false
           element_wrapper_type: ''
           element_wrapper_class: ''
-          element_default_classes: false
+          element_default_classes: true
           empty: ''
           hide_empty: false
           empty_zero: false
-          hide_alter_empty: true
-          text: edit
-          output_url_as_text: false
-          absolute: false
-          entity_type: node
-          plugin_id: entity_link_edit
+          hide_alter_empty: false
+          plugin_id: custom
     cache_metadata:
       max-age: -1
       contexts:
@@ -791,6 +853,7 @@ display:
       tags:
         - 'config:field.storage.media.field_media_image'
         - 'config:field.storage.node.field_events_event_dates'
+        - 'config:field.storage.node.field_safe_path_alias'
   front_fellows:
     display_plugin: block
     id: front_fellows
@@ -799,17 +862,6 @@ display:
     display_options:
       display_extenders: {  }
       filters:
-        status:
-          value: '1'
-          table: node_field_data
-          field: status
-          plugin_id: boolean
-          entity_type: node
-          entity_field: status
-          id: status
-          expose:
-            operator: ''
-          group: 1
         langcode:
           id: langcode
           table: node_field_data
@@ -936,48 +988,6 @@ display:
           hierarchy: false
           error_message: true
           plugin_id: taxonomy_index_tid
-        field_affil_dates_end_value:
-          id: field_affil_dates_end_value
-          table: paragraph__field_affil_dates
-          field: field_affil_dates_end_value
-          relationship: field_people_affiliations
-          group_type: group
-          admin_label: ''
-          operator: '='
-          value:
-            min: ''
-            max: ''
-            value: '2019-01-01'
-            type: date
-          group: 1
-          exposed: false
-          expose:
-            operator_id: ''
-            label: ''
-            description: ''
-            use_operator: false
-            operator: ''
-            identifier: ''
-            required: false
-            remember: false
-            multiple: false
-            remember_roles:
-              authenticated: authenticated
-            placeholder: ''
-          is_grouped: false
-          group_info:
-            label: ''
-            description: ''
-            identifier: ''
-            optional: true
-            widget: select
-            multiple: false
-            remember: false
-            default_group: All
-            default_group_multiple: {  }
-            group_items: {  }
-          plugin_id: datetime
-          entity_type: paragraph
         field_people_portrait_target_id:
           id: field_people_portrait_target_id
           table: node__field_people_portrait
@@ -1042,10 +1052,76 @@ display:
       css_class: 'front front_fellows'
       rendering_language: '***LANGUAGE_language_interface***'
       pager:
-        type: none
+        type: some
         options:
+          items_per_page: 104
           offset: 0
       fields:
+        field_safe_path_alias:
+          id: field_safe_path_alias
+          table: node__field_safe_path_alias
+          field: field_safe_path_alias
+          relationship: none
+          group_type: group
+          admin_label: ''
+          label: ''
+          exclude: true
+          alter:
+            alter_text: false
+            text: ''
+            make_link: false
+            path: ''
+            absolute: false
+            external: false
+            replace_spaces: false
+            path_case: none
+            trim_whitespace: false
+            alt: ''
+            rel: ''
+            link_class: ''
+            prefix: ''
+            suffix: ''
+            target: ''
+            nl2br: false
+            max_length: 0
+            word_boundary: true
+            ellipsis: true
+            more_link: false
+            more_link_text: ''
+            more_link_path: ''
+            strip_tags: false
+            trim: false
+            preserve_tags: ''
+            html: false
+          element_type: ''
+          element_class: ''
+          element_label_type: ''
+          element_label_class: ''
+          element_label_colon: false
+          element_wrapper_type: ''
+          element_wrapper_class: ''
+          element_default_classes: true
+          empty: ''
+          hide_empty: false
+          empty_zero: false
+          hide_alter_empty: true
+          click_sort_column: value
+          type: computed_string
+          settings:
+            sanitized: 1
+            cache_unit: '-1'
+            cache_duration: '1'
+          group_column: value
+          group_columns: {  }
+          group_rows: true
+          delta_limit: 0
+          delta_offset: 0
+          delta_reversed: false
+          delta_first_last: false
+          multi_type: separator
+          separator: ', '
+          field_api_classes: false
+          plugin_id: field
         field_media_image:
           id: field_media_image
           table: media__field_media_image
@@ -1054,7 +1130,7 @@ display:
           group_type: group
           admin_label: ''
           label: ''
-          exclude: false
+          exclude: true
           alter:
             alter_text: false
             text: ''
@@ -1118,7 +1194,7 @@ display:
           group_type: group
           admin_label: ''
           label: ''
-          exclude: false
+          exclude: true
           alter:
             alter_text: false
             text: ''
@@ -1146,7 +1222,7 @@ display:
             trim: false
             preserve_tags: ''
             html: false
-          element_type: h2
+          element_type: h3
           element_class: title
           element_label_type: ''
           element_label_class: ''
@@ -1183,7 +1259,7 @@ display:
           group_type: group
           admin_label: ''
           label: ''
-          exclude: false
+          exclude: true
           alter:
             alter_text: false
             text: ''
@@ -1238,6 +1314,55 @@ display:
           separator: ', '
           field_api_classes: false
           plugin_id: field
+        nothing:
+          id: nothing
+          table: views
+          field: nothing
+          relationship: none
+          group_type: group
+          admin_label: ''
+          label: ''
+          exclude: false
+          alter:
+            alter_text: true
+            text: "<figure>{{ field_media_image }}</figure>\r\n<h3 class=\"title\">{{ title }}</h3>\r\n<div class=\"discipline\">{{ field_affil_discipline }}</div>"
+            make_link: true
+            path: '/people/{{ field_safe_path_alias }}'
+            absolute: false
+            external: false
+            replace_spaces: false
+            path_case: none
+            trim_whitespace: false
+            alt: ''
+            rel: ''
+            link_class: ''
+            prefix: ''
+            suffix: ''
+            target: ''
+            nl2br: false
+            max_length: 0
+            word_boundary: true
+            ellipsis: true
+            more_link: false
+            more_link_text: ''
+            more_link_path: ''
+            strip_tags: false
+            trim: false
+            preserve_tags: ''
+            html: false
+          element_type: ''
+          element_class: ''
+          element_label_type: ''
+          element_label_class: ''
+          element_label_colon: false
+          element_wrapper_type: ''
+          element_wrapper_class: ''
+          element_default_classes: false
+          empty: ''
+          hide_empty: false
+          empty_zero: false
+          hide_alter_empty: false
+          plugin_id: custom
       relationships:
         field_people_affiliations:
           id: field_people_affiliations
@@ -1286,11 +1411,11 @@ display:
           id: ''
           override: true
           overridables:
+            autoplay: autoplay
             draggable: draggable
             infinite: infinite
             variableWidth: variableWidth
             arrows: '0'
-            autoplay: '0'
             dots: '0'
             mouseWheel: '0'
             randomize: '0'
@@ -1339,6 +1464,7 @@ display:
         - user.permissions
       tags:
         - 'config:field.storage.media.field_media_image'
+        - 'config:field.storage.node.field_safe_path_alias'
         - 'config:field.storage.paragraph.field_affil_discipline'
   front_join_us:
     display_plugin: block
@@ -2264,7 +2390,7 @@ display:
       pager:
         type: some
         options:
-          items_per_page: 5
+          items_per_page: 10
           offset: 0
       fields:
         field_media_image:
@@ -2367,7 +2493,7 @@ display:
             trim: false
             preserve_tags: ''
             html: false
-          element_type: h2
+          element_type: h3
           element_class: title
           element_label_type: ''
           element_label_class: ''
@@ -2507,16 +2633,16 @@ display:
           id: ''
           override: true
           overridables:
+            arrows: arrows
             draggable: draggable
             infinite: infinite
             variableWidth: variableWidth
-            arrows: '0'
             autoplay: '0'
             dots: '0'
             mouseWheel: '0'
             randomize: '0'
           cache: 0
-          current_view_mode: front_fellows
+          current_view_mode: front_residents
       row:
         type: fields
         options:
@@ -2524,7 +2650,19 @@ display:
           inline: {  }
           separator: ''
           hide_empty: false
-      sorts: {  }
+      sorts:
+        field_people_name_family:
+          id: field_people_name_family
+          table: node__field_people_name
+          field: field_people_name_family
+          relationship: none
+          group_type: group
+          admin_label: ''
+          order: ASC
+          exposed: false
+          expose:
+            label: ''
+          plugin_id: standard
       title: 'Invited Residents'
       header: {  }
       use_ajax: true
