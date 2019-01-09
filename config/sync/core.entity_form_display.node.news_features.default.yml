@@ -16,6 +16,7 @@ dependencies:
     - chosen_field
     - datetime
     - inline_entity_form
+    - path
     - text
 id: node.news_features.default
 targetEntityType: node
@@ -89,6 +90,12 @@ content:
     settings:
       include_locked: true
     third_party_settings: {  }
+  path:
+    type: path
+    weight: 13
+    region: content
+    settings: {  }
+    third_party_settings: {  }
   promote:
     type: boolean_checkbox
     settings:
@@ -127,6 +134,5 @@ content:
     third_party_settings: {  }
 hidden:
   field_safe_path_alias: true
-  path: true
   revision_log: true
   sticky: true
