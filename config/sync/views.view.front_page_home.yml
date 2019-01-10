@@ -10,8 +10,8 @@ dependencies:
     - field.storage.node.field_safe_path_alias
     - field.storage.paragraph.field_affil_discipline
     - field.storage.paragraph.field_page_section_links
-    - image.style.large
     - image.style.max_1300x1300
+    - image.style.max_650x650
     - node.type.events
     - node.type.news_features
     - node.type.people
@@ -331,7 +331,8 @@ display:
           admin_label: ''
           operator: in
           value:
-            '***LANGUAGE_language_interface***': '***LANGUAGE_language_interface***'
+            en: en
+            it: it
           group: 1
           exposed: false
           expose:
@@ -872,7 +873,8 @@ display:
           admin_label: ''
           operator: in
           value:
-            '***LANGUAGE_language_interface***': '***LANGUAGE_language_interface***'
+            en: en
+            it: it
           group: 1
           exposed: false
           expose:
@@ -1174,7 +1176,7 @@ display:
           click_sort_column: target_id
           type: image
           settings:
-            image_style: large
+            image_style: max_650x650
             image_link: ''
           group_column: ''
           group_columns: {  }
@@ -1391,9 +1393,11 @@ display:
           skin: ''
           layout: ''
           caption:
+            field_safe_path_alias: '0'
             field_media_image: '0'
             title: '0'
             field_affil_discipline: '0'
+            nothing: '0'
           optionset_thumbnail: ''
           skin_thumbnail: ''
           thumbnail_caption: ''
@@ -1495,7 +1499,8 @@ display:
           admin_label: ''
           operator: in
           value:
-            '***LANGUAGE_language_interface***': '***LANGUAGE_language_interface***'
+            en: en
+            it: it
           group: 1
           exposed: false
           expose:
@@ -1760,7 +1765,8 @@ display:
           admin_label: ''
           operator: in
           value:
-            '***LANGUAGE_language_interface***': '***LANGUAGE_language_interface***'
+            en: en
+            it: it
           group: 1
           exposed: false
           expose:
@@ -2210,7 +2216,8 @@ display:
           admin_label: ''
           operator: in
           value:
-            '***LANGUAGE_language_interface***': '***LANGUAGE_language_interface***'
+            en: en
+            it: it
           group: 1
           exposed: false
           expose:
@@ -2394,15 +2401,15 @@ display:
           items_per_page: 10
           offset: 0
       fields:
-        field_media_image:
-          id: field_media_image
-          table: media__field_media_image
-          field: field_media_image
-          relationship: field_people_portrait
+        field_safe_path_alias:
+          id: field_safe_path_alias
+          table: node__field_safe_path_alias
+          field: field_safe_path_alias
+          relationship: none
           group_type: group
           admin_label: ''
           label: ''
-          exclude: false
+          exclude: true
           alter:
             alter_text: false
             text: ''
@@ -2430,7 +2437,72 @@ display:
             trim: false
             preserve_tags: ''
             html: false
-          element_type: figure
+          element_type: ''
+          element_class: ''
+          element_label_type: ''
+          element_label_class: ''
+          element_label_colon: false
+          element_wrapper_type: ''
+          element_wrapper_class: ''
+          element_default_classes: true
+          empty: ''
+          hide_empty: false
+          empty_zero: false
+          hide_alter_empty: true
+          click_sort_column: value
+          type: computed_string
+          settings:
+            sanitized: 1
+            cache_unit: '-1'
+            cache_duration: '1'
+          group_column: value
+          group_columns: {  }
+          group_rows: true
+          delta_limit: 0
+          delta_offset: 0
+          delta_reversed: false
+          delta_first_last: false
+          multi_type: separator
+          separator: ', '
+          field_api_classes: false
+          plugin_id: field
+        field_media_image:
+          id: field_media_image
+          table: media__field_media_image
+          field: field_media_image
+          relationship: field_people_portrait
+          group_type: group
+          admin_label: ''
+          label: ''
+          exclude: true
+          alter:
+            alter_text: false
+            text: ''
+            make_link: false
+            path: ''
+            absolute: false
+            external: false
+            replace_spaces: false
+            path_case: none
+            trim_whitespace: false
+            alt: ''
+            rel: ''
+            link_class: ''
+            prefix: ''
+            suffix: ''
+            target: ''
+            nl2br: false
+            max_length: 0
+            word_boundary: true
+            ellipsis: true
+            more_link: false
+            more_link_text: ''
+            more_link_path: ''
+            strip_tags: false
+            trim: false
+            preserve_tags: ''
+            html: false
+          element_type: ''
           element_class: ''
           element_label_type: ''
           element_label_class: ''
@@ -2445,7 +2517,7 @@ display:
           click_sort_column: target_id
           type: image
           settings:
-            image_style: large
+            image_style: max_650x650
             image_link: ''
           group_column: ''
           group_columns: {  }
@@ -2466,7 +2538,7 @@ display:
           group_type: group
           admin_label: ''
           label: ''
-          exclude: false
+          exclude: true
           alter:
             alter_text: false
             text: ''
@@ -2494,8 +2566,8 @@ display:
             trim: false
             preserve_tags: ''
             html: false
-          element_type: h3
-          element_class: title
+          element_type: ''
+          element_class: ''
           element_label_type: ''
           element_label_class: ''
           element_label_colon: false
@@ -2531,7 +2603,7 @@ display:
           group_type: group
           admin_label: ''
           label: ''
-          exclude: false
+          exclude: true
           alter:
             alter_text: false
             text: ''
@@ -2559,8 +2631,8 @@ display:
             trim: false
             preserve_tags: ''
             html: false
-          element_type: div
-          element_class: discipline
+          element_type: ''
+          element_class: ''
           element_label_type: ''
           element_label_class: ''
           element_label_colon: false
@@ -2586,6 +2658,55 @@ display:
           separator: ', '
           field_api_classes: false
           plugin_id: field
+        nothing:
+          id: nothing
+          table: views
+          field: nothing
+          relationship: none
+          group_type: group
+          admin_label: ''
+          label: ''
+          exclude: false
+          alter:
+            alter_text: true
+            text: "<figure>{{ field_media_image }}</figure>\r\n<h3 class=\"title\">{{ title }}</h3>\r\n<div class=\"discipline\">{{ field_affil_discipline }}</div>"
+            make_link: true
+            path: '/people/{{ field_safe_path_alias }}'
+            absolute: false
+            external: false
+            replace_spaces: false
+            path_case: none
+            trim_whitespace: false
+            alt: ''
+            rel: ''
+            link_class: ''
+            prefix: ''
+            suffix: ''
+            target: ''
+            nl2br: false
+            max_length: 0
+            word_boundary: true
+            ellipsis: true
+            more_link: false
+            more_link_text: ''
+            more_link_path: ''
+            strip_tags: false
+            trim: false
+            preserve_tags: ''
+            html: false
+          element_type: ''
+          element_class: ''
+          element_label_type: ''
+          element_label_class: ''
+          element_label_colon: false
+          element_wrapper_type: ''
+          element_wrapper_class: ''
+          element_default_classes: true
+          empty: ''
+          hide_empty: false
+          empty_zero: false
+          hide_alter_empty: false
+          plugin_id: custom
       relationships:
         field_people_affiliations:
           id: field_people_affiliations
@@ -2634,11 +2755,11 @@ display:
           id: ''
           override: true
           overridables:
-            arrows: arrows
+            autoplay: autoplay
             draggable: draggable
             infinite: infinite
             variableWidth: variableWidth
-            autoplay: '0'
+            arrows: '0'
             dots: '0'
             mouseWheel: '0'
             randomize: '0'
@@ -2676,6 +2797,7 @@ display:
         - user.permissions
       tags:
         - 'config:field.storage.media.field_media_image'
+        - 'config:field.storage.node.field_safe_path_alias'
         - 'config:field.storage.paragraph.field_affil_discipline'
   front_rome_prize:
     display_plugin: block
@@ -2705,7 +2827,8 @@ display:
           admin_label: ''
           operator: in
           value:
-            '***LANGUAGE_language_interface***': '***LANGUAGE_language_interface***'
+            en: en
+            it: it
           group: 1
           exposed: false
           expose:
