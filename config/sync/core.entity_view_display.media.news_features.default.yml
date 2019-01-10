@@ -34,13 +34,6 @@ content:
     third_party_settings: {  }
     type: image
     region: content
-  field_media_sub_caption:
-    weight: 3
-    label: hidden
-    settings: {  }
-    third_party_settings: {  }
-    type: text_default
-    region: content
   name:
     type: string
     weight: 0
