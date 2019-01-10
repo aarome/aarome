@@ -7,6 +7,7 @@ dependencies:
     - field.storage.node.field_page_page_section
     - field.storage.node.field_safe_path_alias
     - image.style.frontpages_386x386
+    - image.style.max_650x650
     - taxonomy.vocabulary.event_types
   content:
     - 'taxonomy_term:event_types:fbe7f0e4-f187-4908-84ad-370deeaf5659'
@@ -195,7 +196,7 @@ display:
           click_sort_column: target_id
           type: image
           settings:
-            image_style: frontpages_386x386
+            image_style: max_650x650
             image_link: ''
           group_column: ''
           group_columns: {  }

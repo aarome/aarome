@@ -6,6 +6,7 @@ dependencies:
     - core.entity_view_mode.media.news_front
     - field.field.media.news_features.field_media_caption
     - field.field.media.news_features.field_media_image
+    - field.field.media.news_features.field_media_sub_caption
     - media.type.news_features
   module:
     - image
@@ -26,6 +27,7 @@ content:
 hidden:
   created: true
   field_media_caption: true
+  field_media_sub_caption: true
   langcode: true
   name: true
   thumbnail: true

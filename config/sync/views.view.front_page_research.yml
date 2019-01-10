@@ -8,6 +8,7 @@ dependencies:
     - field.storage.node.field_page_summary
     - field.storage.node.field_safe_path_alias
     - image.style.frontpages_386x386
+    - image.style.max_650x650
   module:
     - computed_field
     - image
@@ -191,7 +192,7 @@ display:
           click_sort_column: target_id
           type: image
           settings:
-            image_style: frontpages_386x386
+            image_style: max_650x650
             image_link: ''
           group_column: ''
           group_columns: {  }
