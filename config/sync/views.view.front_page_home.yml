@@ -11,6 +11,7 @@ dependencies:
     - field.storage.paragraph.field_affil_discipline
     - field.storage.paragraph.field_page_section_links
     - image.style.large
+    - image.style.max_1300x1300
     - node.type.events
     - node.type.news_features
     - node.type.people
@@ -472,11 +473,11 @@ display:
             arrows: arrows
             draggable: draggable
             infinite: infinite
+            variableWidth: variableWidth
             autoplay: '0'
             dots: '0'
             mouseWheel: '0'
             randomize: '0'
-            variableWidth: '0'
           cache: 0
           current_view_mode: front_events
       row:
@@ -652,7 +653,7 @@ display:
           click_sort_column: target_id
           type: image
           settings:
-            image_style: large
+            image_style: max_1300x1300
             image_link: ''
           group_column: ''
           group_columns: {  }
