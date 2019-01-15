@@ -736,11 +736,11 @@ display:
   page_people_1:
     display_plugin: page
     id: page_people_1
-    display_title: 'People detail'
+    display_title: /people/fellows/%
     position: 1
     display_options:
       display_extenders: {  }
-      path: people/%
+      path: people/fellows/%
       rendering_language: '***LANGUAGE_language_interface***'
       display_description: ''
     cache_metadata:
