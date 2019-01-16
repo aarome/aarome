@@ -2,6 +2,8 @@ uuid: 2ae1cef0-bfb7-4d8f-8bee-3d505c46bc99
 langcode: en
 status: true
 dependencies:
+  module:
+    - system
   theme:
     - tema
 id: pagetitle
@@ -15,4 +17,9 @@ settings:
   label: 'Page title'
   provider: core
   label_display: '0'
-visibility: {  }
+visibility:
+  request_path:
+    id: request_path
+    pages: '/society-of-fellows/*'
+    negate: true
+    context_mapping: {  }

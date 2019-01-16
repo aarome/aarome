@@ -6,7 +6,7 @@ dependencies:
     - field.storage.media.field_media_image
     - field.storage.node.field_page_summary
     - field.storage.node.field_safe_path_alias
-    - image.style.frontpages_386x386
+    - image.style.max_650x650
   module:
     - computed_field
     - image
@@ -190,7 +190,7 @@ display:
           click_sort_column: target_id
           type: image
           settings:
-            image_style: frontpages_386x386
+            image_style: max_650x650
             image_link: ''
           group_column: ''
           group_columns: {  }
@@ -430,7 +430,7 @@ display:
           plugin_id: custom
         edit_node:
           id: edit_node
-          table: node_field_revision
+          table: node
           field: edit_node
           relationship: none
           group_type: group
@@ -464,7 +464,7 @@ display:
             trim: false
             preserve_tags: ''
             html: false
-          element_type: ''
+          element_type: div
           element_class: edit
           element_label_type: ''
           element_label_class: ''

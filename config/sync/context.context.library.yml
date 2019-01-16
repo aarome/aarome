@@ -20,98 +20,8 @@ conditions:
 reactions:
   blocks:
     blocks:
-      fa8b698b-7b84-467c-b4ae-e2997bccfcdb:
-        id: 'views_block:front_page_library-research_special_collections'
-        label: ''
-        provider: views
-        label_display: visible
-        views_label: ''
-        items_per_page: none
-        region: content
-        weight: '0'
-        context_mapping: {  }
-        theme: tema
-        css_class: ''
-        unique: 0
-        context_id: library
-        uuid: fa8b698b-7b84-467c-b4ae-e2997bccfcdb
-      d77d02b2-9850-4929-ad49-e26eb26ed1d4:
-        id: 'views_block:front_page_library-research_digital_humanities_center'
-        label: ''
-        provider: views
-        label_display: 0
-        views_label: ''
-        items_per_page: none
-        region: content
-        weight: '-2'
-        context_mapping: {  }
-        theme: tema
-        css_class: ''
-        unique: 0
-        context_id: library
-        uuid: d77d02b2-9850-4929-ad49-e26eb26ed1d4
-      ca61fcc7-19ad-4f4d-97a3-1fac27981c1a:
-        id: 'views_block:front_page_library-research_photo_archive'
-        label: ''
-        provider: views
-        label_display: 0
-        views_label: ''
-        items_per_page: none
-        region: content
-        weight: '1'
-        context_mapping: {  }
-        theme: tema
-        css_class: ''
-        unique: 0
-        context_id: library
-        uuid: ca61fcc7-19ad-4f4d-97a3-1fac27981c1a
-      e4d63c12-0ecb-466b-8c7d-b614ac52a989:
-        id: 'views_block:front_page_library-research_institutional_archive'
-        label: ''
-        provider: views
-        label_display: 0
-        views_label: ''
-        items_per_page: none
-        region: content
-        weight: '2'
-        context_mapping: {  }
-        theme: tema
-        css_class: ''
-        unique: 0
-        context_id: library
-        uuid: e4d63c12-0ecb-466b-8c7d-b614ac52a989
-      b02d0516-d328-47b2-ab56-91b87339584c:
-        id: 'views_block:front_page_library-research_archaeological_study_collection'
-        label: ''
-        provider: views
-        label_display: visible
-        views_label: ''
-        items_per_page: none
-        region: content
-        weight: '3'
-        context_mapping: {  }
-        theme: tema
-        css_class: ''
-        unique: 0
-        context_id: library
-        uuid: b02d0516-d328-47b2-ab56-91b87339584c
-      5dcc75fc-9450-4c21-8922-e2aa27f08f9a:
-        id: 'views_block:front_page_library-research_archaeology_projects'
-        label: ''
-        provider: views
-        label_display: 0
-        views_label: ''
-        items_per_page: none
-        region: content
-        weight: '4'
-        context_mapping: {  }
-        theme: tema
-        css_class: ''
-        unique: 0
-        context_id: library
-        uuid: 5dcc75fc-9450-4c21-8922-e2aa27f08f9a
-      35fcd404-6be7-4d1f-99c0-a1811f3f9f53:
-        id: 'views_block:front_page_library-research_notices'
+      5cec271d-c36a-4580-8a01-8b4081246dd2:
+        id: 'views_block:front_page_library-research_library_notices'
         label: ''
         provider: views
         label_display: 0
@@ -124,9 +34,24 @@ reactions:
         css_class: ''
         unique: 0
         context_id: library
-        uuid: 35fcd404-6be7-4d1f-99c0-a1811f3f9f53
-      a64bab8f-7b34-4ced-a4fc-fbfb468b361f:
-        id: 'views_block:front_page_library-block_1'
+        uuid: 5cec271d-c36a-4580-8a01-8b4081246dd2
+      97937ef0-3376-4a4b-b21f-8238e03b7d41:
+        id: 'views_block:front_page_library-research_library_request_forms'
+        label: ''
+        provider: views
+        label_display: 0
+        views_label: ''
+        items_per_page: none
+        region: content
+        weight: '-2'
+        context_mapping: {  }
+        theme: tema
+        css_class: ''
+        unique: 0
+        context_id: library
+        uuid: 97937ef0-3376-4a4b-b21f-8238e03b7d41
+      28f3b02e-cc45-473e-98d8-0a473aa8f4e4:
+        id: 'views_block:front_page_library-research_library_access'
         label: ''
         provider: views
         label_display: 0
@@ -139,7 +64,82 @@ reactions:
         css_class: ''
         unique: 0
         context_id: library
-        uuid: a64bab8f-7b34-4ced-a4fc-fbfb468b361f
+        uuid: 28f3b02e-cc45-473e-98d8-0a473aa8f4e4
+      a5ef5197-017d-45d7-8d4a-09cfac42f00f:
+        id: 'views_block:front_page_research-research_special_collections'
+        label: ''
+        provider: views
+        label_display: 0
+        views_label: ''
+        items_per_page: none
+        region: content
+        weight: '0'
+        context_mapping: {  }
+        theme: tema
+        css_class: ''
+        unique: 0
+        context_id: library
+        uuid: a5ef5197-017d-45d7-8d4a-09cfac42f00f
+      22413ec8-d9ea-4387-a359-0e52a6a68163:
+        id: 'views_block:front_page_library-research_library_services'
+        label: ''
+        provider: views
+        label_display: 0
+        views_label: ''
+        items_per_page: none
+        region: content
+        weight: '1'
+        context_mapping: {  }
+        theme: tema
+        css_class: ''
+        unique: 0
+        context_id: library
+        uuid: 22413ec8-d9ea-4387-a359-0e52a6a68163
+      0d3362e6-682a-49b3-9335-55f9bbd0c89f:
+        id: 'views_block:front_page_library-research_library_guide'
+        label: ''
+        provider: views
+        label_display: 0
+        views_label: ''
+        items_per_page: none
+        region: content
+        weight: '2'
+        context_mapping: {  }
+        theme: tema
+        css_class: ''
+        unique: 0
+        context_id: library
+        uuid: 0d3362e6-682a-49b3-9335-55f9bbd0c89f
+      af0bf19b-5276-4f0b-946c-bf9ec85d1f9b:
+        id: 'views_block:front_page_library-research_library_new_acquisitions'
+        label: ''
+        provider: views
+        label_display: 0
+        views_label: ''
+        items_per_page: none
+        region: content
+        weight: '3'
+        context_mapping: {  }
+        theme: tema
+        css_class: ''
+        unique: 0
+        context_id: library
+        uuid: af0bf19b-5276-4f0b-946c-bf9ec85d1f9b
+      aa4238cb-41b6-47f9-a04f-133f36ba9917:
+        id: 'views_block:front_page_library-research_library_friends'
+        label: ''
+        provider: views
+        label_display: 0
+        views_label: ''
+        items_per_page: none
+        region: content
+        weight: '4'
+        context_mapping: {  }
+        theme: tema
+        css_class: ''
+        unique: 0
+        context_id: library
+        uuid: aa4238cb-41b6-47f9-a04f-133f36ba9917
     id: blocks
     saved: false
     uuid: 22c50481-227e-45b8-8435-c506739923b4

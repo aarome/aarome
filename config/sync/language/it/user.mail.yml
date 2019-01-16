@@ -1,4 +1,5 @@
 cancel_confirm:
+  body: "[user:display-name],\r\n\r\nA request to cancel your account has been made at [site:name].\r\n\r\nYou may now cancel your account on [site:url-brief] by clicking this link or copying and pasting it into your browser:\r\n\r\n[user:cancel-url]\r\n\r\nNOTE: The cancellation of your account is not reversible.\r\n\r\nThis link expires in one day and nothing will happen if it is not used.\r\n\r\n--  [site:name] team"
   subject: 'Richiesta rimozione profilo per [user:display-name] su [site:name]'
 password_reset:
   body: "[user:display-name],\r\n\r\nUna richiesta di reimpostazione password è stata effettuata per il tuo profilo su [site:name].\r\n\r\nPuoi autenticarti con un clic su questo collegamento oppure copiando ed incollando il collegamento nel tuo browser:\r\n\r\n[user:one-time-login-url]\r\n\r\nQuesto collegamento può essere usato solo una volta per l'autenticazione e ti consentirà di scegliere la tua password. Il collegamento scadrà dopo un giorno e niente sarà modificato se non utilizzato.\r\n\r\n-- Il team di [site:name]"

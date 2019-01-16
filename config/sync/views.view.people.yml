@@ -877,14 +877,14 @@ display:
     display_plugin: page
     id: people_fellows
     display_title: /people/fellows
-    position: 1
+    position: 2
     display_options:
       display_extenders: {  }
       path: people/rome-prize-fellows
       display_description: ''
       display_comment: 'Display current Rome Prize winners'
       defaults:
-        fields: true
+        fields: false
         filters: false
         filter_groups: false
         title: false
@@ -893,41 +893,13 @@ display:
         sorts: false
         pager: false
         css_class: false
+        style: true
+        row: true
       rendering_language: '***LANGUAGE_language_interface***'
       title: 'Rome Prize Fellows'
-      relationships:
-        field_people_affiliations:
-          id: field_people_affiliations
-          table: node__field_people_affiliations
-          field: field_people_affiliations
-          relationship: none
-          group_type: group
-          admin_label: 'field_people_affiliations: Paragraph'
-          required: false
-          plugin_id: standard
-        field_people_portrait:
-          id: field_people_portrait
-          table: node__field_people_portrait
-          field: field_people_portrait
-          relationship: none
-          group_type: group
-          admin_label: 'field_people_portrait: Media'
-          required: false
-          plugin_id: standard
+      relationships: {  }
       arguments: {  }
       sorts:
-        field_affil_discipline_target_id:
-          id: field_affil_discipline_target_id
-          table: paragraph__field_affil_discipline
-          field: field_affil_discipline_target_id
-          relationship: field_people_affiliations
-          group_type: group
-          admin_label: ''
-          order: ASC
-          exposed: false
-          expose:
-            label: ''
-          plugin_id: standard
         field_people_name_family:
           id: field_people_name_family
           table: node__field_people_name
@@ -1020,65 +992,25 @@ display:
           entity_type: node
           entity_field: langcode
           plugin_id: language
-        field_affil_type_target_id:
-          id: field_affil_type_target_id
-          table: paragraph__field_affil_type
-          field: field_affil_type_target_id
-          relationship: field_people_affiliations
-          group_type: group
-          admin_label: ''
-          operator: or
-          value:
-            389: 389
-          group: 1
-          exposed: false
-          expose:
-            operator_id: ''
-            label: ''
-            description: ''
-            use_operator: false
-            operator: ''
-            identifier: ''
-            required: false
-            remember: false
-            multiple: false
-            remember_roles:
-              authenticated: authenticated
-            reduce: false
-          is_grouped: false
-          group_info:
-            label: ''
-            description: ''
-            identifier: ''
-            optional: true
-            widget: select
-            multiple: false
-            remember: false
-            default_group: All
-            default_group_multiple: {  }
-            group_items: {  }
-          reduce_duplicates: false
-          type: select
-          limit: true
-          vid: affiliation_types
-          hierarchy: false
-          error_message: true
-          plugin_id: taxonomy_index_tid
       filter_groups:
         operator: AND
         groups:
           1: AND
+      fields:
+        title_1:
+          id: title_1
+          table: node_field_data
+          field: title
+          entity_type: node
+          entity_field: title
+          plugin_id: field
     cache_metadata:
       max-age: -1
       contexts:
         - 'languages:language_interface'
-        - user
         - 'user.node_grants:view'
         - user.permissions
-      tags:
-        - 'config:field.storage.media.field_media_image'
-        - 'config:field.storage.node.field_safe_path_alias'
-        - 'config:field.storage.paragraph.field_affil_discipline'
+      tags: {  }
   people_italian_fellows:
     display_plugin: page
     id: people_italian_fellows
