@@ -7750,6 +7750,7 @@ display:
         filter_groups: false
         arguments: false
         fields: false
+        title: false
       filters:
         status:
           value: '1'
@@ -8220,6 +8221,7 @@ display:
           separator: ' '
           field_api_classes: false
           plugin_id: field
+      title: ''
     cache_metadata:
       max-age: -1
       contexts:

@@ -6,7 +6,7 @@ dependencies:
     - field.storage.media.field_media_image
     - field.storage.node.field_page_summary
     - field.storage.node.field_safe_path_alias
-    - image.style.frontpages_386x386
+    - image.style.max_650x650
     - node.type.page
     - responsive_image.styles.narrow
     - taxonomy.vocabulary.page_types
@@ -397,7 +397,7 @@ display:
           exclude: false
           alter:
             alter_text: true
-            text: "<figure>{{ field_media_image }}</figure>\n<h2>{{ title }}</h2>\n<section>{{ field_page_summary }}</section>\n<div class=\"more\">{{ nothing }}</div>"
+            text: "<figure>{{ field_media_image }}</figure>\r\n<h2>{{ title }}</h2>\r\n<section>{{ field_page_summary }}</section>\r\n<div class=\"more\">{{ nothing }}</div>"
             make_link: true
             path: '/apply/{{ field_safe_path_alias }}'
             absolute: false
@@ -429,7 +429,7 @@ display:
           element_label_colon: false
           element_wrapper_type: ''
           element_wrapper_class: ''
-          element_default_classes: true
+          element_default_classes: false
           empty: ''
           hide_empty: false
           empty_zero: false
@@ -1860,7 +1860,7 @@ display:
           click_sort_column: target_id
           type: image
           settings:
-            image_style: frontpages_386x386
+            image_style: max_650x650
             image_link: ''
           group_column: ''
           group_columns: {  }

@@ -7,7 +7,7 @@ dependencies:
 id: pagetitle
 theme: tema
 region: title
-weight: 0
+weight: -7
 provider: null
 plugin: page_title_block
 settings:
