@@ -514,7 +514,7 @@ display:
           plugin_id: string
       display_extenders: {  }
       rendering_language: '***LANGUAGE_language_interface***'
-      css_class: about
+      css_class: inside_page
       group_by: false
     cache_metadata:
       max-age: -1
@@ -538,9 +538,8 @@ display:
       path: research/resources/%
       display_description: ''
       rendering_language: '***LANGUAGE_language_interface***'
-      css_class: support
       defaults:
-        css_class: false
+        css_class: true
         filters: false
         filter_groups: false
         arguments: false
@@ -1082,9 +1081,8 @@ display:
       path: research/photo-archive/%
       display_description: ''
       rendering_language: '***LANGUAGE_language_interface***'
-      css_class: research
       defaults:
-        css_class: false
+        css_class: true
         filters: false
         filter_groups: false
         title: false
@@ -1577,189 +1575,6 @@ display:
         - 'config:field.storage.media.field_media_caption'
         - 'config:field.storage.media.field_media_image'
         - 'config:field.storage.node.field_page_page_section'
-  page_about_place:
-    display_plugin: page
-    id: page_about_place
-    display_title: about/place
-    position: 2
-    display_options:
-      display_extenders: {  }
-      display_description: ''
-      path: about/place
-      arguments: {  }
-      defaults:
-        arguments: false
-        title: false
-        filters: false
-        filter_groups: false
-      rendering_language: '***LANGUAGE_language_interface***'
-      title: ''
-      filters:
-        status:
-          value: '1'
-          table: node_field_data
-          field: status
-          plugin_id: boolean
-          entity_type: node
-          entity_field: status
-          id: status
-          expose:
-            operator: ''
-          group: 1
-        type:
-          id: type
-          table: node_field_data
-          field: type
-          value:
-            page: page
-          entity_type: node
-          entity_field: type
-          plugin_id: bundle
-        langcode:
-          id: langcode
-          table: node_field_data
-          field: langcode
-          relationship: none
-          group_type: group
-          admin_label: ''
-          operator: in
-          value:
-            en: en
-            it: it
-          group: 1
-          exposed: false
-          expose:
-            operator_id: ''
-            label: ''
-            description: ''
-            use_operator: false
-            operator: ''
-            identifier: ''
-            required: false
-            remember: false
-            multiple: false
-            remember_roles:
-              authenticated: authenticated
-            reduce: false
-          is_grouped: false
-          group_info:
-            label: ''
-            description: ''
-            identifier: ''
-            optional: true
-            widget: select
-            multiple: false
-            remember: false
-            default_group: All
-            default_group_multiple: {  }
-            group_items: {  }
-          entity_type: node
-          entity_field: langcode
-          plugin_id: language
-        field_page_type_target_id:
-          id: field_page_type_target_id
-          table: node__field_page_type
-          field: field_page_type_target_id
-          relationship: none
-          group_type: group
-          admin_label: ''
-          operator: or
-          value:
-            - 135
-          group: 1
-          exposed: false
-          expose:
-            operator_id: ''
-            label: ''
-            description: ''
-            use_operator: false
-            operator: ''
-            identifier: ''
-            required: false
-            remember: false
-            multiple: false
-            remember_roles:
-              authenticated: authenticated
-            reduce: false
-          is_grouped: false
-          group_info:
-            label: ''
-            description: ''
-            identifier: ''
-            optional: true
-            widget: select
-            multiple: false
-            remember: false
-            default_group: All
-            default_group_multiple: {  }
-            group_items: {  }
-          reduce_duplicates: false
-          type: textfield
-          limit: true
-          vid: page_types
-          hierarchy: false
-          error_message: true
-          plugin_id: taxonomy_index_tid
-        nid:
-          id: nid
-          table: node_field_data
-          field: nid
-          relationship: none
-          group_type: group
-          admin_label: ''
-          operator: '='
-          value:
-            min: ''
-            max: ''
-            value: '1815'
-          group: 1
-          exposed: false
-          expose:
-            operator_id: ''
-            label: ''
-            description: ''
-            use_operator: false
-            operator: ''
-            identifier: ''
-            required: false
-            remember: false
-            multiple: false
-            remember_roles:
-              authenticated: authenticated
-            placeholder: ''
-            min_placeholder: ''
-            max_placeholder: ''
-          is_grouped: false
-          group_info:
-            label: ''
-            description: ''
-            identifier: ''
-            optional: true
-            widget: select
-            multiple: false
-            remember: false
-            default_group: All
-            default_group_multiple: {  }
-            group_items: {  }
-          entity_type: node
-          entity_field: nid
-          plugin_id: numeric
-      filter_groups:
-        operator: AND
-        groups:
-          1: AND
-      enabled: false
-    cache_metadata:
-      max-age: -1
-      contexts:
-        - 'languages:language_interface'
-        - user
-        - 'user.node_grants:view'
-        - user.permissions
-      tags:
-        - 'config:field.storage.media.field_media_caption'
-        - 'config:field.storage.media.field_media_image'
-        - 'config:field.storage.node.field_page_page_section'
   page_affiliated_fellowships_1:
     display_plugin: page
     id: page_affiliated_fellowships_1
@@ -1813,7 +1628,7 @@ display:
         filters: false
         filter_groups: false
         fields: false
-        css_class: false
+        css_class: true
       rendering_language: '***LANGUAGE_language_interface***'
       filters:
         status:
@@ -2171,7 +1986,6 @@ display:
           separator: ' '
           field_api_classes: false
           plugin_id: field
-      css_class: apply
     cache_metadata:
       max-age: -1
       contexts:
@@ -2188,15 +2002,14 @@ display:
     display_plugin: page
     id: page_apply_1
     display_title: apply/%
-    position: 4
+    position: 3
     display_options:
       display_extenders: {  }
       path: apply/%
       display_description: ''
       rendering_language: '***LANGUAGE_language_interface***'
-      css_class: inside
       defaults:
-        css_class: false
+        css_class: true
         filters: false
         filter_groups: false
         fields: false
@@ -2717,9 +2530,8 @@ display:
       path: apply/academic-programs/%
       display_description: ''
       rendering_language: '***LANGUAGE_language_interface***'
-      css_class: apply
       defaults:
-        css_class: false
+        css_class: true
         filters: false
         filter_groups: false
       filters:
@@ -2897,9 +2709,8 @@ display:
       path: apply/italian-fellowships/faq
       display_description: ''
       rendering_language: '***LANGUAGE_language_interface***'
-      css_class: apply
       defaults:
-        css_class: false
+        css_class: true
         filters: false
         filter_groups: false
         arguments: false
@@ -3078,9 +2889,8 @@ display:
       path: apply/rome-prize/faq
       display_description: ''
       rendering_language: '***LANGUAGE_language_interface***'
-      css_class: apply
       defaults:
-        css_class: false
+        css_class: true
         filters: false
         filter_groups: false
         arguments: false
@@ -3259,9 +3069,8 @@ display:
       path: apply/rome-sustainable-food-project
       display_description: ''
       rendering_language: '***LANGUAGE_language_interface***'
-      css_class: apply
       defaults:
-        css_class: false
+        css_class: true
         filters: false
         filter_groups: false
         fields: false
@@ -3646,9 +3455,8 @@ display:
       path: research/library/visit/new-acquisitions
       display_description: ''
       rendering_language: '***LANGUAGE_language_interface***'
-      css_class: research
       defaults:
-        css_class: false
+        css_class: true
         filters: false
         filter_groups: false
         title: false
@@ -3830,7 +3638,7 @@ display:
     display_plugin: page
     id: page_place_1
     display_title: /about/place/%
-    position: 3
+    position: 2
     display_options:
       display_extenders: {  }
       display_description: ''
@@ -3881,7 +3689,7 @@ display:
         filters: false
         filter_groups: false
         fields: false
-        css_class: false
+        css_class: true
       rendering_language: '***LANGUAGE_language_interface***'
       title: ''
       filters:
@@ -4428,7 +4236,6 @@ display:
           separator: ' '
           field_api_classes: false
           plugin_id: field
-      css_class: place
     cache_metadata:
       max-age: -1
       contexts:
@@ -4451,9 +4258,8 @@ display:
       path: research/%
       display_description: ''
       rendering_language: '***LANGUAGE_language_interface***'
-      css_class: research
       defaults:
-        css_class: false
+        css_class: true
         filters: false
         filter_groups: false
         arguments: false
@@ -5084,9 +4890,8 @@ display:
       path: research/archaeological-study-collection/%
       display_description: ''
       rendering_language: '***LANGUAGE_language_interface***'
-      css_class: research
       defaults:
-        css_class: false
+        css_class: true
         filters: false
         filter_groups: false
         title: false
@@ -5363,9 +5168,8 @@ display:
       path: research/archaeology/%
       display_description: ''
       rendering_language: '***LANGUAGE_language_interface***'
-      css_class: research
       defaults:
-        css_class: false
+        css_class: true
         filters: false
         filter_groups: false
         title: false
@@ -6006,9 +5810,8 @@ display:
       path: research/library/%
       display_description: ''
       rendering_language: '***LANGUAGE_language_interface***'
-      css_class: research
       defaults:
-        css_class: false
+        css_class: true
         filters: false
         filter_groups: false
         title: false
@@ -6516,9 +6319,8 @@ display:
       path: research/library/visit/services
       display_description: ''
       rendering_language: '***LANGUAGE_language_interface***'
-      css_class: research
       defaults:
-        css_class: false
+        css_class: true
         filters: false
         filter_groups: false
         title: false
@@ -6706,9 +6508,8 @@ display:
       path: research/special-collections/%
       display_description: ''
       rendering_language: '***LANGUAGE_language_interface***'
-      css_class: research
       defaults:
-        css_class: false
+        css_class: true
         filters: false
         filter_groups: false
         fields: false
@@ -7249,9 +7050,8 @@ display:
       path: apply/rome-prize/application
       display_description: ''
       rendering_language: '***LANGUAGE_language_interface***'
-      css_class: apply
       defaults:
-        css_class: false
+        css_class: true
         filters: false
         filter_groups: false
         arguments: false
@@ -7607,7 +7407,7 @@ display:
         title: false
         filters: false
         filter_groups: false
-        css_class: false
+        css_class: true
       rendering_language: '***LANGUAGE_language_interface***'
       title: ''
       filters:
@@ -7720,7 +7520,6 @@ display:
         operator: AND
         groups:
           1: AND
-      css_class: sof
     cache_metadata:
       max-age: -1
       contexts:
@@ -7743,9 +7542,8 @@ display:
       path: support/%
       display_description: ''
       rendering_language: '***LANGUAGE_language_interface***'
-      css_class: support
       defaults:
-        css_class: false
+        css_class: true
         filters: false
         filter_groups: false
         arguments: false
