@@ -20,21 +20,6 @@ conditions:
 reactions:
   blocks:
     blocks:
-      128c93ef-2b56-49f2-8324-2e22b4950231:
-        id: 'views_block:front_page_events-events_events'
-        label: ''
-        provider: views
-        label_display: 0
-        views_label: ''
-        items_per_page: none
-        region: content
-        weight: '0'
-        context_mapping: {  }
-        theme: tema
-        css_class: ''
-        unique: 0
-        context_id: eventsf
-        uuid: 128c93ef-2b56-49f2-8324-2e22b4950231
       fb8940b7-45ac-469a-ba8b-1da050210e99:
         id: 'views_block:front_page_events-events_exhibtions'
         label: ''
@@ -80,6 +65,21 @@ reactions:
         unique: 0
         context_id: events
         uuid: 2f091b2e-0345-4e26-87c1-2baf88ca4e1c
+      fc6b7cba-c867-4de4-abc7-c1b4fed45fab:
+        id: 'views_block:front_page_events-events_calendar'
+        label: ''
+        provider: views
+        label_display: 0
+        views_label: ''
+        items_per_page: none
+        region: content
+        weight: '0'
+        context_mapping: {  }
+        theme: tema
+        css_class: ''
+        unique: 0
+        context_id: events
+        uuid: fc6b7cba-c867-4de4-abc7-c1b4fed45fab
     id: blocks
     saved: false
     uuid: f1cb3668-384e-4cea-9739-1e69411a32fb

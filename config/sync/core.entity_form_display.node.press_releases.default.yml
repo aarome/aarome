@@ -4,12 +4,14 @@ status: true
 dependencies:
   config:
     - field.field.node.press_releases.body
+    - field.field.node.press_releases.field_press_date
     - field.field.node.press_releases.field_press_releases_files
     - field.field.node.press_releases.field_press_releases_legacy_id
     - field.field.node.press_releases.field_press_releases_rel_events
     - field.field.node.press_releases.field_press_releases_rel_people
     - node.type.press_releases
   module:
+    - datetime
     - hide_revision_field
     - inline_entity_form
     - path
@@ -20,12 +22,18 @@ mode: default
 content:
   created:
     type: datetime_timestamp
-    weight: 3
+    weight: 4
     region: content
     settings: {  }
     third_party_settings: {  }
+  field_press_date:
+    weight: 1
+    settings: {  }
+    third_party_settings: {  }
+    type: datetime_default
+    region: content
   field_press_releases_files:
-    weight: 26
+    weight: 13
     settings:
       form_mode: default
       label_singular: ''
@@ -38,14 +46,14 @@ content:
     region: content
   field_press_releases_legacy_id:
     type: string_textfield
-    weight: 11
+    weight: 12
     region: content
     settings:
       size: 60
       placeholder: ''
     third_party_settings: {  }
   field_press_releases_rel_events:
-    weight: 10
+    weight: 11
     settings:
       match_operator: CONTAINS
       size: 60
@@ -54,7 +62,7 @@ content:
     type: entity_reference_autocomplete
     region: content
   field_press_releases_rel_people:
-    weight: 9
+    weight: 10
     settings:
       match_operator: CONTAINS
       size: 60
@@ -64,14 +72,14 @@ content:
     region: content
   langcode:
     type: language_select
-    weight: 1
+    weight: 2
     region: content
     settings:
       include_locked: false
     third_party_settings: {  }
   path:
     type: path
-    weight: 7
+    weight: 8
     region: content
     settings: {  }
     third_party_settings: {  }
@@ -79,33 +87,33 @@ content:
     type: boolean_checkbox
     settings:
       display_label: true
-    weight: 5
+    weight: 6
     region: content
     third_party_settings: {  }
   revision_log:
     type: hide_revision_field_log_widget
-    weight: 80
+    weight: 14
     region: content
     settings:
       show: true
       default: ''
       permission_based: false
       allow_user_settings: true
-      rows: '5'
+      rows: 5
       placeholder: ''
     third_party_settings: {  }
   status:
     type: boolean_checkbox
     settings:
       display_label: true
-    weight: 8
+    weight: 9
     region: content
     third_party_settings: {  }
   sticky:
     type: boolean_checkbox
     settings:
       display_label: true
-    weight: 6
+    weight: 7
     region: content
     third_party_settings: {  }
   title:
@@ -117,13 +125,13 @@ content:
       placeholder: ''
     third_party_settings: {  }
   translation:
-    weight: 4
+    weight: 5
     region: content
     settings: {  }
     third_party_settings: {  }
   uid:
     type: entity_reference_autocomplete
-    weight: 2
+    weight: 3
     settings:
       match_operator: CONTAINS
       size: 60

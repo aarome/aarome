@@ -8,7 +8,11 @@ dependencies:
     - media.type.society_of_fellows
   module:
     - image
+    - layout_builder
     - text
+third_party_settings:
+  layout_builder:
+    sections: {  }
 id: media.society_of_fellows.default
 targetEntityType: media
 bundle: society_of_fellows

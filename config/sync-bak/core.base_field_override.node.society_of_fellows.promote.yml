@@ -1,0 +1,22 @@
+uuid: 8249c017-5dce-4a0d-a1a9-26111145406a
+langcode: en
+status: true
+dependencies:
+  config:
+    - node.type.society_of_fellows
+id: node.society_of_fellows.promote
+field_name: promote
+entity_type: node
+bundle: society_of_fellows
+label: 'Promoted to front page'
+description: ''
+required: false
+translatable: true
+default_value:
+  -
+    value: 0
+default_value_callback: ''
+settings:
+  on_label: 'On'
+  off_label: 'Off'
+field_type: boolean

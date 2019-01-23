@@ -1,0 +1,18 @@
+uuid: d7306b85-2340-487d-882b-1116de8140b4
+langcode: en
+status: true
+dependencies:
+  config:
+    - taxonomy.vocabulary.corporate_entities
+  module:
+    - content_translation
+third_party_settings:
+  content_translation:
+    enabled: true
+    bundle_settings:
+      untranslatable_fields_hide: '0'
+id: taxonomy_term.corporate_entities
+target_entity_type_id: taxonomy_term
+target_bundle: corporate_entities
+default_langcode: site_default
+language_alterable: true

@@ -1,0 +1,13 @@
+uuid: ccdf8e23-ca7e-48c7-b0a9-8e530e60d412
+langcode: en
+status: true
+dependencies: {  }
+id: people_press
+label: 'People to press'
+enabled: true
+first_field: field_people_rel_press
+second_field: field_press_rel_people
+bundles:
+  node:
+    - people
+    - press

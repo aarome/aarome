@@ -1,0 +1,71 @@
+uuid: 2b3943a5-7699-4993-b296-3cdf353598ce
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.field.node.quick_news.body
+    - field.field.node.quick_news.field_quick_news_image
+    - field.field.node.quick_news.field_quick_news_links
+    - field.field.node.quick_news.field_quick_news_rel_events
+    - field.field.node.quick_news.field_quick_news_rel_people
+    - node.type.quick_news
+  module:
+    - link
+    - text
+    - user
+id: node.quick_news.default
+targetEntityType: node
+bundle: quick_news
+mode: default
+content:
+  body:
+    label: hidden
+    type: text_default
+    weight: 101
+    settings: {  }
+    third_party_settings: {  }
+    region: content
+  field_quick_news_image:
+    type: entity_reference_entity_view
+    weight: 106
+    label: above
+    settings:
+      view_mode: default
+      link: false
+    third_party_settings: {  }
+    region: content
+  field_quick_news_links:
+    weight: 105
+    label: above
+    settings:
+      trim_length: 80
+      url_only: false
+      url_plain: false
+      rel: ''
+      target: ''
+    third_party_settings: {  }
+    type: link
+    region: content
+  field_quick_news_rel_events:
+    weight: 103
+    label: above
+    settings:
+      link: true
+    third_party_settings: {  }
+    type: entity_reference_label
+    region: content
+  field_quick_news_rel_people:
+    weight: 104
+    label: above
+    settings:
+      link: true
+    third_party_settings: {  }
+    type: entity_reference_label
+    region: content
+  links:
+    weight: 100
+    region: content
+    settings: {  }
+    third_party_settings: {  }
+hidden:
+  langcode: true

@@ -1,0 +1,15 @@
+uuid: 89e1c73f-7a9e-4e7e-afee-c8fbd4659636
+langcode: en
+status: true
+dependencies: {  }
+name: events_front
+label: 'Events front'
+effects:
+  321fe49b-36a9-425e-b81e-a1c96bd0aa49:
+    uuid: 321fe49b-36a9-425e-b81e-a1c96bd0aa49
+    id: image_scale
+    weight: 1
+    data:
+      width: 1300
+      height: 746
+      upscale: false

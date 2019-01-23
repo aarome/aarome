@@ -1,0 +1,20 @@
+uuid: 3ce2013e-1b0e-461a-9b73-dfd8a030f1f8
+langcode: en
+status: true
+dependencies:
+  module:
+    - node
+    - taxonomy
+id: node.field_events_event_series
+field_name: field_events_event_series
+entity_type: node
+type: entity_reference
+settings:
+  target_type: taxonomy_term
+module: core
+locked: false
+cardinality: 1
+translatable: true
+indexes: {  }
+persist_with_no_fields: false
+custom_storage: false

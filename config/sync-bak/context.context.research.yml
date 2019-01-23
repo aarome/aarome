@@ -1,0 +1,136 @@
+uuid: a0723ea1-744d-4092-a55f-2433eef54139
+langcode: en
+status: true
+dependencies:
+  module:
+    - system
+name: research
+label: Research
+group: Frontpages
+description: ''
+requireAllConditions: false
+disabled: false
+conditions:
+  request_path:
+    id: request_path
+    pages: "/research\r\n/ricerca"
+    negate: 0
+    uuid: a8597fa7-6f6c-4030-800a-a16630c69977
+    context_mapping: {  }
+reactions:
+  blocks:
+    blocks:
+      dfecd1c4-bae2-4b3e-b7ee-2806fa614668:
+        id: 'views_block:front_page_research-research_library'
+        label: ''
+        provider: views
+        label_display: visible
+        views_label: ''
+        items_per_page: none
+        region: content
+        weight: '-3'
+        context_mapping: {  }
+        theme: tema
+        css_class: ''
+        unique: 0
+        context_id: research
+        uuid: dfecd1c4-bae2-4b3e-b7ee-2806fa614668
+      143bc2be-bd22-4b26-8a7b-5fe70f606036:
+        id: 'views_block:front_page_research-research_resources'
+        label: ''
+        provider: views
+        label_display: visible
+        views_label: ''
+        items_per_page: none
+        region: content
+        weight: '-1'
+        context_mapping: {  }
+        theme: tema
+        css_class: ''
+        unique: 0
+        context_id: research
+        uuid: 143bc2be-bd22-4b26-8a7b-5fe70f606036
+      a9911324-0888-4456-9d12-87dcef68064d:
+        id: 'views_block:front_page_research-research_special_collections'
+        label: ''
+        provider: views
+        label_display: visible
+        views_label: ''
+        items_per_page: none
+        region: content
+        weight: '0'
+        context_mapping: {  }
+        theme: tema
+        css_class: ''
+        unique: 0
+        context_id: research
+        uuid: a9911324-0888-4456-9d12-87dcef68064d
+      1f9dac16-21a6-451a-8ab3-57f4ee6b4b95:
+        id: 'views_block:front_page_research-research_photo_archive'
+        label: ''
+        provider: views
+        label_display: visible
+        views_label: ''
+        items_per_page: none
+        region: content
+        weight: '1'
+        context_mapping: {  }
+        theme: tema
+        css_class: ''
+        unique: 0
+        context_id: research
+        uuid: 1f9dac16-21a6-451a-8ab3-57f4ee6b4b95
+      57104813-65e8-4ef0-9387-4278860782e4:
+        id: 'views_block:front_page_research-research_institutional_archive'
+        label: ''
+        provider: views
+        label_display: 0
+        views_label: ''
+        items_per_page: none
+        region: content
+        weight: '2'
+        context_mapping: {  }
+        theme: tema
+        css_class: ''
+        unique: 0
+        context_id: research
+        uuid: 57104813-65e8-4ef0-9387-4278860782e4
+      129cd4e5-e70c-4aa9-917d-673bc0060619:
+        id: 'views_block:front_page_research-research_digital_humanities_center'
+        label: ''
+        provider: views
+        label_display: 0
+        views_label: ''
+        items_per_page: none
+        region: content
+        weight: '-2'
+        context_mapping: {  }
+        theme: tema
+        css_class: ''
+        unique: 0
+        context_id: research
+        uuid: 129cd4e5-e70c-4aa9-917d-673bc0060619
+      ef910c76-cadc-41bf-9661-18f9a43362ca:
+        id: 'views_block:front_page_research-research_archaeology'
+        label: ''
+        provider: views
+        label_display: 0
+        views_label: ''
+        items_per_page: none
+        region: content
+        weight: '3'
+        context_mapping: {  }
+        theme: tema
+        css_class: ''
+        unique: 0
+        context_id: research
+        uuid: ef910c76-cadc-41bf-9661-18f9a43362ca
+    id: blocks
+    saved: false
+    uuid: 7f9c446a-0ec7-4f95-b577-94354fb27221
+    include_default_blocks: 1
+  body_class:
+    id: body_class
+    body_class: section-front
+    saved: false
+weight: 0

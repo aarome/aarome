@@ -1,0 +1,22 @@
+uuid: 62b3c238-1761-4b1a-8738-3dc728b57a75
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.body
+    - node.type.press
+  module:
+    - text
+id: node.press.body
+field_name: body
+entity_type: node
+bundle: press
+label: Body
+description: ''
+required: false
+translatable: true
+default_value: {  }
+default_value_callback: ''
+settings:
+  display_summary: true
+field_type: text_with_summary

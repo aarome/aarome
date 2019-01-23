@@ -471,10 +471,10 @@ display:
           id: ''
           override: true
           overridables:
-            arrows: arrows
             draggable: draggable
             infinite: infinite
             variableWidth: variableWidth
+            arrows: '0'
             autoplay: '0'
             dots: '0'
             mouseWheel: '0'

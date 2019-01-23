@@ -9,7 +9,11 @@ dependencies:
     - node.type.places
   module:
     - address
+    - layout_builder
     - user
+third_party_settings:
+  layout_builder:
+    sections: {  }
 id: node.places.default
 targetEntityType: node
 bundle: places

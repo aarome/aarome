@@ -1,0 +1,32 @@
+uuid: 22bbde03-9f68-48da-92f7-4ad8ce688568
+langcode: en
+status: true
+dependencies:
+  config:
+    - core.entity_view_mode.media.event_front
+    - field.field.media.events.field_media_caption
+    - field.field.media.events.field_media_image
+    - media.type.events
+  module:
+    - image
+id: media.events.event_front
+targetEntityType: media
+bundle: events
+mode: event_front
+content:
+  field_media_image:
+    weight: 0
+    label: hidden
+    settings:
+      image_style: ''
+      image_link: ''
+    third_party_settings: {  }
+    type: image
+    region: content
+hidden:
+  created: true
+  field_media_caption: true
+  langcode: true
+  name: true
+  thumbnail: true
+  uid: true

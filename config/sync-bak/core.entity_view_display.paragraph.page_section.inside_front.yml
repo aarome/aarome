@@ -1,0 +1,33 @@
+uuid: 52d1481f-c397-46ed-869e-bfddd3e618c1
+langcode: en
+status: false
+dependencies:
+  config:
+    - core.entity_view_mode.paragraph.inside_front
+    - field.field.paragraph.page_section.field_page_section_body
+    - field.field.paragraph.page_section.field_page_section_title
+    - paragraphs.paragraphs_type.page_section
+  module:
+    - text
+id: paragraph.page_section.inside_front
+targetEntityType: paragraph
+bundle: page_section
+mode: inside_front
+content:
+  field_page_section_body:
+    weight: 1
+    label: hidden
+    settings:
+      trim_length: 600
+    third_party_settings: {  }
+    type: text_summary_or_trimmed
+    region: content
+  field_page_section_title:
+    weight: 0
+    label: hidden
+    settings:
+      link_to_entity: false
+    third_party_settings: {  }
+    type: string
+    region: content
+hidden: {  }

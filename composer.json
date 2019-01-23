@@ -39,6 +39,7 @@
         "drupal/core": "8.6.4",
         "drupal/date_popup": "^1.0",
         "drupal/datetime_extras": "1.x-dev",
+        "drupal/delete_all": "^1.0",
         "drupal/easy_breadcrumb": "^1.8",
         "drupal/empty_page": "^2.0",
         "drupal/entity": "^1.0",

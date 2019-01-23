@@ -140,8 +140,8 @@ reactions:
         unique: 0
         context_id: sof
         uuid: b1a13fdf-4a7e-4bfa-ab6a-6d26b539f746
-      fa2fc120-d672-4b68-b8aa-3b443118686f:
-        id: 'views_block:front_page_sof-block_1'
+      2639fa12-0675-4fc7-bdfa-b26c95225dd4:
+        id: 'views_block:front_page_sof-sof_obituaries'
         label: ''
         provider: views
         label_display: 0
@@ -154,7 +154,7 @@ reactions:
         css_class: ''
         unique: 0
         context_id: sof
-        uuid: fa2fc120-d672-4b68-b8aa-3b443118686f
+        uuid: 2639fa12-0675-4fc7-bdfa-b26c95225dd4
     id: blocks
     saved: false
     uuid: 4dc6ee89-f759-4b67-8b23-388bb297ada7

@@ -6,7 +6,7 @@ dependencies:
     - system
 name: special_collections
 label: 'Special Collections'
-group: null
+group: 'Inside pages'
 description: ''
 requireAllConditions: false
 disabled: false
@@ -103,4 +103,4 @@ reactions:
     id: body_class
     body_class: section-front
     saved: false
-weight: 0
+weight: -10

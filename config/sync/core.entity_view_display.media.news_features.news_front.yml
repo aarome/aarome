@@ -6,9 +6,14 @@ dependencies:
     - core.entity_view_mode.media.news_front
     - field.field.media.news_features.field_media_caption
     - field.field.media.news_features.field_media_image
+    - image.style.max_650x650
     - media.type.news_features
   module:
     - image
+    - layout_builder
+third_party_settings:
+  layout_builder:
+    sections: {  }
 id: media.news_features.news_front
 targetEntityType: media
 bundle: news_features
@@ -18,7 +23,7 @@ content:
     weight: 0
     label: hidden
     settings:
-      image_style: ''
+      image_style: max_650x650
       image_link: ''
     third_party_settings: {  }
     type: image

@@ -13,7 +13,7 @@ disabled: false
 conditions:
   request_path:
     id: request_path
-    pages: /news
+    pages: "/news\r\n/attualita"
     negate: 0
     uuid: 67f18d6b-2421-42e1-9c78-003327b755fd
     context_mapping: {  }
