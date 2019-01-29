@@ -1,9 +1,0 @@
-fields:
-  bibcite_secondary_title:
-    label: 'Titolo del libro'
-  bibcite_section:
-    label: Capitolo
-  bibcite_place_published:
-    label: Città
-  bibcite_alternate_title:
-    label: Abbreviazione
