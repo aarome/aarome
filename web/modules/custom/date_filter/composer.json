@@ -1,0 +1,14 @@
+{
+  "name": "drupal/date_filter",
+  "type": "drupal-module",
+  "description": "Provides a custom date filter for news and events.",
+  "keywords": ["Drupal"],
+  "license": "GPL-2.0+",
+  "homepage": "https://www.drupal.org/project/date_filter",
+  "minimum-stability": "dev",
+  "support": {
+    "issues": "https://www.drupal.org/project/issues/date_filter",
+    "source": "http://cgit.drupalcode.org/date_filter"
+  },
+  "require": { }
+}

@@ -28,7 +28,10 @@ module:
   context_ui: 0
   contextual: 0
   ctools: 0
+  date_filter: 0
+  date_popup: 0
   datetime: 0
+  datetime_extras: 0
   datetime_range: 0
   dblog: 0
   delete_all: 0
@@ -85,6 +88,7 @@ module:
   update: 0
   user: 0
   views_fieldsets: 0
+  views_infinite_scroll: 0
   views_slideshow: 0
   views_slideshow_cycle: 0
   views_ui: 0

@@ -1,4 +1,4 @@
-page_alter: false
+page_alter: true
 raw_names: false
 error_handlers:
   2: 2

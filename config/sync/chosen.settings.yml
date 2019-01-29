@@ -13,6 +13,6 @@ disabled_themes:
   seven: '0'
   adminimal_theme: '0'
   tema: '0'
-chosen_include: 2
+chosen_include: 0
 _core:
   default_config_hash: JUHKHJeHl1bWXY41HMIcDR-VmAWvJ4OJycDubCkIeDU

@@ -1,0 +1,5 @@
+name: 'Date filter'
+type: module
+description: 'Provides a custom date filter for news and events.'
+core: 8.x
+package: 'Custom'

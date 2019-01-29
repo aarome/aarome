@@ -10,7 +10,7 @@ _core:
   default_config_hash: XJqWwLt1LDCnazcEN6QkJmCLjk4R0__-8s0OO9xeNjg
 id: tema_messages
 theme: tema
-region: featured
+region: content
 weight: -8
 provider: null
 plugin: system_messages_block
