@@ -25,10 +25,10 @@ reactions:
         label: ''
         provider: views
         label_display: visible
-        views_label: ''
-        items_per_page: none
         region: content
         weight: '0'
+        views_label: ''
+        items_per_page: none
         context_mapping: {  }
         theme: tema
         css_class: ''
@@ -38,5 +38,5 @@ reactions:
     id: blocks
     saved: false
     uuid: 5015bba4-5bc0-40d1-b4f7-54878a3e89e7
-    include_default_blocks: 0
+    include_default_blocks: 1
 weight: -8
