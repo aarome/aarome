@@ -1,9 +1,0 @@
-uuid: 5a7a8e40-f1ee-47a7-83af-91e13aa7adb3
-langcode: en
-status: true
-dependencies: {  }
-name: 'Publication types'
-vid: publication_types
-description: ''
-hierarchy: 0
-weight: 0

@@ -1,9 +1,0 @@
-uuid: 225c5901-fb79-4a9b-a25e-6905fec7c75c
-langcode: en
-status: true
-dependencies: {  }
-name: 'Resident fellowship names'
-vid: resident_fellowship_names
-description: ''
-hierarchy: 0
-weight: 0
