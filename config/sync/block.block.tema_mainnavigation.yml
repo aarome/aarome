@@ -1,0 +1,33 @@
+uuid: 7f758a51-a69b-481c-a81e-5d7a1523749a
+langcode: en
+status: true
+dependencies:
+  config:
+    - system.menu.main
+  module:
+    - language
+    - system
+  theme:
+    - tema
+id: tema_mainnavigation
+theme: tema
+region: header
+weight: -8
+provider: null
+plugin: 'system_menu_block:main'
+settings:
+  id: 'system_menu_block:main'
+  label: 'Main navigation'
+  provider: system
+  label_display: '0'
+  level: 1
+  depth: 0
+visibility:
+  language:
+    id: language
+    langcodes:
+      en: en
+      it: it
+    negate: false
+    context_mapping:
+      language: '@language.current_language_context:language_interface'

@@ -1,0 +1,29 @@
+uuid: 1222c868-d68b-44bc-808e-d463f4918ce0
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_events_event_series
+    - node.type.events
+    - taxonomy.vocabulary.event_series
+id: node.events.field_events_event_series
+field_name: field_events_event_series
+entity_type: node
+bundle: events
+label: 'Event series'
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings:
+  handler: 'default:taxonomy_term'
+  handler_settings:
+    target_bundles:
+      event_series: event_series
+    sort:
+      field: name
+      direction: asc
+    auto_create: false
+    auto_create_bundle: ''
+field_type: entity_reference

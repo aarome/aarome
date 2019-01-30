@@ -1,0 +1,13 @@
+uuid: bef6908e-70ed-4848-8fcf-174a6d25eadc
+langcode: en
+status: true
+dependencies: {  }
+id: publications
+label: Publications
+description: ''
+source: image
+queue_thumbnail_downloads: false
+new_revision: false
+source_configuration:
+  source_field: field_media_image
+field_map: {  }

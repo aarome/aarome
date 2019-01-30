@@ -1,0 +1,41 @@
+uuid: fe358d67-8347-4590-84d6-290bb43d063d
+langcode: en
+status: true
+dependencies: {  }
+_core:
+  default_config_hash: zWsi2UOODerYaQVGT4-1jXbe_fJVrx9KiKlGVPRfzlU
+id: news_features
+class: null
+field_plugin_method: null
+cck_plugin_method: null
+migration_tags: csv
+migration_group: academy
+label: 'Migrating news features from CSV file'
+source:
+  plugin: csv
+  track_changes: true
+  path: 'public://migrations/news_slideshow_nodes.csv'
+  delimiter: ','
+  enclosure: '"'
+  header_row_count: 1
+  keys:
+    - nid
+process:
+  type:
+    plugin: default_value
+    default_value: news_features
+  uid:
+    -
+      plugin: entity_lookup
+      source: author
+      ignore_case: true
+      value_key: name
+      entity_type: user
+    -
+      plugin: default_value
+      default_value: 19
+  changed: updated_date
+  title: title
+destination:
+  plugin: 'entity:node'
+migration_dependencies: null

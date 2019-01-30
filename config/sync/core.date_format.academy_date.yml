@@ -1,0 +1,8 @@
+uuid: 219089fd-9566-4217-afb0-a49a64e88302
+langcode: en
+status: true
+dependencies: {  }
+id: academy_date
+label: 'Academy date'
+locked: false
+pattern: 'F j, Y'

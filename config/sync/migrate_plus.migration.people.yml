@@ -1,0 +1,29 @@
+uuid: 5f9318a6-6825-4a4a-b87a-7d527de549fb
+langcode: en
+status: true
+dependencies: {  }
+_core:
+  default_config_hash: 1gYZV-IHyLPHVSZ5QeFluBHAr5ai4t4N7990Qk5jfVA
+id: people
+class: null
+field_plugin_method: null
+cck_plugin_method: null
+migration_tags: csv
+migration_group: directory
+label: 'Migrating people from CSV file'
+source:
+  plugin: csv
+  path: 'public://migrations/people_fellows.csv'
+  delimiter: ','
+  enclosure: '"'
+  header_row_count: 1
+  keys:
+    - id
+process:
+  type:
+    plugin: default_value
+    default_value: people
+  field_people_portrait/target_id: fid
+destination:
+  plugin: 'entity:node'
+migration_dependencies: null

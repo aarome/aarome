@@ -1,0 +1,136 @@
+uuid: a1c341c9-306f-487e-a26d-b4f4cf6eb261
+langcode: en
+status: true
+dependencies:
+  module:
+    - system
+name: photographic_archive
+label: 'Photographic Archive'
+group: Frontpages
+description: ''
+requireAllConditions: false
+disabled: false
+conditions:
+  request_path:
+    id: request_path
+    pages: /research/photographic-archive
+    negate: 0
+    uuid: d1ef553c-6215-417b-91ad-29a77afad286
+    context_mapping: {  }
+reactions:
+  blocks:
+    blocks:
+      c672005f-205b-4805-afa9-bb6416c7cc0b:
+        id: 'views_block:front_page_photographic_archive-photographic_archive_notice'
+        label: ''
+        provider: views
+        label_display: 0
+        views_label: ''
+        items_per_page: none
+        region: content
+        weight: '-3'
+        context_mapping: {  }
+        theme: tema
+        css_class: ''
+        unique: 0
+        context_id: photographic_archive
+        uuid: c672005f-205b-4805-afa9-bb6416c7cc0b
+      78c49c5d-5eeb-420e-a3a2-1a8d96aafa50:
+        id: 'views_block:front_page_photographic_archive-photographic_archive_overview'
+        label: ''
+        provider: views
+        label_display: 0
+        views_label: ''
+        items_per_page: none
+        region: content
+        weight: '-2'
+        context_mapping: {  }
+        theme: tema
+        css_class: ''
+        unique: 0
+        context_id: photographic_archive
+        uuid: 78c49c5d-5eeb-420e-a3a2-1a8d96aafa50
+      657225d5-bdfc-4b6f-9dde-c87e1ad30cf5:
+        id: 'views_block:front_page_photographic_archive-photographic_archive_index'
+        label: ''
+        provider: views
+        label_display: 0
+        views_label: ''
+        items_per_page: none
+        region: content
+        weight: '-1'
+        context_mapping: {  }
+        theme: tema
+        css_class: ''
+        unique: 0
+        context_id: photographic_archive
+        uuid: 657225d5-bdfc-4b6f-9dde-c87e1ad30cf5
+      93c23cbe-01ba-425d-b446-f7cb0a83a019:
+        id: 'views_block:front_page_photographic_archive-photographic_archive_rights_permissions'
+        label: ''
+        provider: views
+        label_display: 0
+        views_label: ''
+        items_per_page: none
+        region: content
+        weight: '0'
+        context_mapping: {  }
+        theme: tema
+        css_class: ''
+        unique: 0
+        context_id: photographic_archive
+        uuid: 93c23cbe-01ba-425d-b446-f7cb0a83a019
+      b23bf3f9-e628-43de-a694-ee362e6af342:
+        id: 'views_block:front_page_photographic_archive-photographic_archive_exhibitions_events'
+        label: ''
+        provider: views
+        label_display: 0
+        views_label: ''
+        items_per_page: none
+        region: content
+        weight: '1'
+        context_mapping: {  }
+        theme: tema
+        css_class: ''
+        unique: 0
+        context_id: photographic_archive
+        uuid: b23bf3f9-e628-43de-a694-ee362e6af342
+      6a9d0c65-3864-4809-a3d2-43ec3b20ec56:
+        id: 'views_block:front_page_photographic_archive-photographic_archive_publications'
+        label: ''
+        provider: views
+        label_display: 0
+        views_label: ''
+        items_per_page: none
+        region: content
+        weight: '2'
+        context_mapping: {  }
+        theme: tema
+        css_class: ''
+        unique: 0
+        context_id: photographic_archive
+        uuid: 6a9d0c65-3864-4809-a3d2-43ec3b20ec56
+      d1132d04-5e76-4544-b9df-b606faf9f853:
+        id: 'views_block:front_page_photographic_archive-photographic_archive_online_exhibitions_projects'
+        label: ''
+        provider: views
+        label_display: 0
+        views_label: ''
+        items_per_page: none
+        region: content
+        weight: '3'
+        context_mapping: {  }
+        theme: tema
+        css_class: ''
+        unique: 0
+        context_id: photographic_archive
+        uuid: d1132d04-5e76-4544-b9df-b606faf9f853
+    id: blocks
+    saved: false
+    uuid: 5d2521c3-4691-4643-a22f-0e201d7bdc4a
+    include_default_blocks: 0
+  body_class:
+    id: body_class
+    body_class: section-front
+    saved: false
+weight: -7

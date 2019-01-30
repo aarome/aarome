@@ -1,0 +1,10 @@
+uuid: bcd036f7-72d6-47eb-a178-d395577373fe
+langcode: en
+status: true
+dependencies: {  }
+id: quick_news
+label: quick_news
+description: ''
+source_type: null
+module: null
+shared_configuration: null

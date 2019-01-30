@@ -1,0 +1,29 @@
+uuid: 14aff40c-589c-4186-92c6-bf1b6b439df5
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.field.media.publications.field_media_image
+    - media.type.publications
+  module:
+    - image
+id: media.publications.default
+targetEntityType: media
+bundle: publications
+mode: default
+content:
+  field_media_image:
+    weight: 0
+    label: hidden
+    settings:
+      image_style: ''
+      image_link: ''
+    third_party_settings: {  }
+    type: image
+    region: content
+hidden:
+  created: true
+  langcode: true
+  name: true
+  thumbnail: true
+  uid: true

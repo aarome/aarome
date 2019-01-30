@@ -1,0 +1,10 @@
+uuid: 3feb4803-c013-42a9-a662-38612f705629
+langcode: en
+status: true
+dependencies: {  }
+id: directory
+label: directory
+description: ''
+source_type: null
+module: null
+shared_configuration: null

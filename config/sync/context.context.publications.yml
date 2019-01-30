@@ -1,0 +1,166 @@
+uuid: 123ac5b1-d96e-43a0-baff-adfad23fd645
+langcode: en
+status: true
+dependencies:
+  module:
+    - system
+name: publications
+label: Publications
+group: Frontpages
+description: ''
+requireAllConditions: false
+disabled: false
+conditions:
+  request_path:
+    id: request_path
+    pages: "/publications\r\n/pubblicazioni"
+    negate: 0
+    uuid: 5fe58bce-a06d-4193-84f4-36562d841176
+    context_mapping: {  }
+reactions:
+  blocks:
+    blocks:
+      f08cd53d-0700-40c6-b73f-96141b8e487f:
+        id: 'views_block:front_page_publications-publications_aar_magazine'
+        label: ''
+        provider: views
+        label_display: 0
+        views_label: ''
+        items_per_page: none
+        region: content
+        weight: '-4'
+        context_mapping: {  }
+        theme: tema
+        css_class: ''
+        unique: 0
+        context_id: publications
+        uuid: f08cd53d-0700-40c6-b73f-96141b8e487f
+      e0276467-d59d-48c5-b31d-1124b2fb90b5:
+        id: 'views_block:front_page_publications-publications_cookbooks'
+        label: ''
+        provider: views
+        label_display: 0
+        views_label: ''
+        items_per_page: none
+        region: content
+        weight: '3'
+        context_mapping: {  }
+        theme: tema
+        css_class: ''
+        unique: 0
+        context_id: publications
+        uuid: e0276467-d59d-48c5-b31d-1124b2fb90b5
+      d154948e-1b54-4da6-93d4-e29f89abab3c:
+        id: 'views_block:front_page_publications-publications_exhibition_catalogues'
+        label: ''
+        provider: views
+        label_display: 0
+        views_label: ''
+        items_per_page: none
+        region: content
+        weight: '-3'
+        context_mapping: {  }
+        theme: tema
+        css_class: ''
+        unique: 0
+        context_id: publications
+        uuid: d154948e-1b54-4da6-93d4-e29f89abab3c
+      538fabe4-68c9-4aca-8c21-79b5653dff10:
+        id: 'views_block:front_page_publications-publications_memoirs'
+        label: ''
+        provider: views
+        label_display: 0
+        views_label: ''
+        items_per_page: none
+        region: content
+        weight: '0'
+        context_mapping: {  }
+        theme: tema
+        css_class: ''
+        unique: 0
+        context_id: publications
+        uuid: 538fabe4-68c9-4aca-8c21-79b5653dff10
+      610600f8-fc38-45eb-ab42-9a6d49939b5a:
+        id: 'views_block:front_page_publications-publications_supplements'
+        label: ''
+        provider: views
+        label_display: 0
+        views_label: ''
+        items_per_page: none
+        region: content
+        weight: '1'
+        context_mapping: {  }
+        theme: tema
+        css_class: ''
+        unique: 0
+        context_id: publications
+        uuid: 610600f8-fc38-45eb-ab42-9a6d49939b5a
+      0d62007c-e893-4714-a91a-2fede1906517:
+        id: 'views_block:front_page_publications-publications_papers_and_monographs'
+        label: ''
+        provider: views
+        label_display: 0
+        views_label: ''
+        items_per_page: none
+        region: content
+        weight: '2'
+        context_mapping: {  }
+        theme: tema
+        css_class: ''
+        unique: 0
+        context_id: publications
+        uuid: 0d62007c-e893-4714-a91a-2fede1906517
+      a671e2fc-00aa-4c81-94a2-55baf4149581:
+        id: 'views_block:front_page_sof-sof_news'
+        label: ''
+        provider: views
+        label_display: 0
+        views_label: ''
+        items_per_page: none
+        region: content
+        weight: '4'
+        context_mapping: {  }
+        theme: tema
+        css_class: ''
+        unique: 0
+        context_id: publications
+        uuid: a671e2fc-00aa-4c81-94a2-55baf4149581
+      e6167e8a-c95c-4fdf-8936-5e6bd8008094:
+        id: 'views_block:front_page_publications-publications_academy_books'
+        label: ''
+        provider: views
+        label_display: 0
+        views_label: ''
+        items_per_page: none
+        region: content
+        weight: '-2'
+        context_mapping: {  }
+        theme: tema
+        css_class: ''
+        unique: 0
+        context_id: publications
+        uuid: e6167e8a-c95c-4fdf-8936-5e6bd8008094
+      59850eb8-b31d-43c2-b323-7a8628c5df0b:
+        id: 'views_block:front_page_publications-publications_affiliated_books'
+        label: ''
+        provider: views
+        label_display: 0
+        views_label: ''
+        items_per_page: none
+        region: content
+        weight: '-1'
+        context_mapping: {  }
+        theme: tema
+        css_class: ''
+        unique: 0
+        context_id: publications
+        uuid: 59850eb8-b31d-43c2-b323-7a8628c5df0b
+    id: blocks
+    saved: false
+    uuid: 311bc3a1-8933-407b-9b88-73d652da653d
+    include_default_blocks: 1
+  body_class:
+    id: body_class
+    body_class: section-front
+    saved: false
+weight: 0
