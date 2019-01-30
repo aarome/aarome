@@ -25,6 +25,7 @@ dependencies:
     - 'taxonomy_term:affiliation_types:f440de69-3364-4600-9a79-1d073945e660'
   module:
     - computed_field
+    - datetime
     - image
     - media
     - node
@@ -81,9 +82,9 @@ display:
           grouping:
             -
               field: field_affil_discipline
-              rendered: true
+              rendered: false
               rendered_strip: false
-          row_class: ''
+          row_class: person-wrapper
           default_row_class: false
       row:
         type: fields
@@ -221,6 +222,10 @@ display:
           separator: ', '
           field_api_classes: false
           plugin_id: field
+          fields:
+            - field_media_image
+            - title
+            - nothing
         field_media_image:
           id: field_media_image
           table: media__field_media_image
@@ -361,7 +366,7 @@ display:
           exclude: false
           alter:
             alter_text: true
-            text: "<figure>{{ field_media_image }}</figure>\r\n<h3 class=\"title\">{{ title }}</h3>\r\n<div class=\"discipline\">{{ field_affil_discipline }}</div>"
+            text: "<figure>{{ field_media_image }}</figure>\r\n<h2 class=\"title\">{{ title }}</h2>\r\n<div class=\"discipline\">{{ field_affil_discipline }}</div>"
             make_link: true
             path: '/people/{{ field_safe_path_alias }}'
             absolute: false
@@ -556,6 +561,18 @@ display:
           entity_field: status
           plugin_id: boolean
       sorts:
+        field_affil_discipline_target_id:
+          id: field_affil_discipline_target_id
+          table: paragraph__field_affil_discipline
+          field: field_affil_discipline_target_id
+          relationship: field_people_affiliations
+          group_type: group
+          admin_label: ''
+          order: ASC
+          exposed: false
+          expose:
+            label: ''
+          plugin_id: standard
         field_people_name_family:
           id: field_people_name_family
           table: node__field_people_name
@@ -633,7 +650,7 @@ display:
     display_plugin: page
     id: people_affiliated_fellows
     display_title: /people/affiliated-fellows
-    position: 3
+    position: 4
     display_options:
       display_extenders: {  }
       path: people/affiliated-fellows
@@ -873,149 +890,11 @@ display:
         - 'config:field.storage.media.field_media_image'
         - 'config:field.storage.node.field_safe_path_alias'
         - 'config:field.storage.paragraph.field_affil_discipline'
-  people_fellows:
-    display_plugin: page
-    id: people_fellows
-    display_title: /people/fellows
-    position: 2
-    display_options:
-      display_extenders: {  }
-      path: people/rome-prize-fellows
-      display_description: ''
-      display_comment: 'Display current Rome Prize winners'
-      defaults:
-        fields: false
-        filters: false
-        filter_groups: false
-        title: false
-        relationships: false
-        arguments: false
-        sorts: false
-        pager: false
-        css_class: false
-        style: true
-        row: true
-      rendering_language: '***LANGUAGE_language_interface***'
-      title: 'Rome Prize Fellows'
-      relationships: {  }
-      arguments: {  }
-      sorts:
-        field_people_name_family:
-          id: field_people_name_family
-          table: node__field_people_name
-          field: field_people_name_family
-          relationship: none
-          group_type: group
-          admin_label: ''
-          order: ASC
-          exposed: false
-          expose:
-            label: ''
-          plugin_id: standard
-        field_people_name_given:
-          id: field_people_name_given
-          table: node__field_people_name
-          field: field_people_name_given
-          relationship: none
-          group_type: group
-          admin_label: ''
-          order: ASC
-          exposed: false
-          expose:
-            label: ''
-          plugin_id: standard
-      pager:
-        type: some
-        options:
-          items_per_page: 0
-          offset: 0
-      css_class: 'people people_current'
-      filters:
-        status:
-          value: '1'
-          table: node_field_data
-          field: status
-          plugin_id: boolean
-          entity_type: node
-          entity_field: status
-          id: status
-          expose:
-            operator: ''
-          group: 1
-        type:
-          id: type
-          table: node_field_data
-          field: type
-          value:
-            people: people
-          entity_type: node
-          entity_field: type
-          plugin_id: bundle
-        langcode:
-          id: langcode
-          table: node_field_data
-          field: langcode
-          relationship: none
-          group_type: group
-          admin_label: ''
-          operator: in
-          value:
-            en: en
-            it: it
-          group: 1
-          exposed: false
-          expose:
-            operator_id: ''
-            label: ''
-            description: ''
-            use_operator: false
-            operator: ''
-            identifier: ''
-            required: false
-            remember: false
-            multiple: false
-            remember_roles:
-              authenticated: authenticated
-            reduce: false
-          is_grouped: false
-          group_info:
-            label: ''
-            description: ''
-            identifier: ''
-            optional: true
-            widget: select
-            multiple: false
-            remember: false
-            default_group: All
-            default_group_multiple: {  }
-            group_items: {  }
-          entity_type: node
-          entity_field: langcode
-          plugin_id: language
-      filter_groups:
-        operator: AND
-        groups:
-          1: AND
-      fields:
-        title_1:
-          id: title_1
-          table: node_field_data
-          field: title
-          entity_type: node
-          entity_field: title
-          plugin_id: field
-    cache_metadata:
-      max-age: -1
-      contexts:
-        - 'languages:language_interface'
-        - 'user.node_grants:view'
-        - user.permissions
-      tags: {  }
   people_italian_fellows:
     display_plugin: page
     id: people_italian_fellows
     display_title: /people/italian-fellows
-    position: 4
+    position: 5
     display_options:
       display_extenders: {  }
       path: people/italian-fellows
@@ -1221,7 +1100,7 @@ display:
     display_plugin: page
     id: people_residents
     display_title: /people/residents
-    position: 2
+    position: 3
     display_options:
       display_extenders: {  }
       path: people/residents
@@ -1414,6 +1293,223 @@ display:
         operator: AND
         groups:
           1: AND
+    cache_metadata:
+      max-age: -1
+      contexts:
+        - 'languages:language_interface'
+        - user
+        - 'user.node_grants:view'
+        - user.permissions
+      tags:
+        - 'config:field.storage.media.field_media_image'
+        - 'config:field.storage.node.field_safe_path_alias'
+        - 'config:field.storage.paragraph.field_affil_discipline'
+  people_rome_prize_fellows:
+    display_plugin: page
+    id: people_rome_prize_fellows
+    display_title: /people/rome-prize-fellows
+    position: 1
+    display_options:
+      display_extenders: {  }
+      display_description: ''
+      path: people/rome-prize-fellows
+      filters:
+        status:
+          value: '1'
+          table: node_field_data
+          field: status
+          plugin_id: boolean
+          entity_type: node
+          entity_field: status
+          id: status
+          expose:
+            operator: ''
+          group: 1
+        type:
+          id: type
+          table: node_field_data
+          field: type
+          value:
+            people: people
+          entity_type: node
+          entity_field: type
+          plugin_id: bundle
+        langcode:
+          id: langcode
+          table: node_field_data
+          field: langcode
+          relationship: none
+          group_type: group
+          admin_label: ''
+          operator: in
+          value:
+            en: en
+            it: it
+          group: 1
+          exposed: false
+          expose:
+            operator_id: ''
+            label: ''
+            description: ''
+            use_operator: false
+            operator: ''
+            identifier: ''
+            required: false
+            remember: false
+            multiple: false
+            remember_roles:
+              authenticated: authenticated
+            reduce: false
+          is_grouped: false
+          group_info:
+            label: ''
+            description: ''
+            identifier: ''
+            optional: true
+            widget: select
+            multiple: false
+            remember: false
+            default_group: All
+            default_group_multiple: {  }
+            group_items: {  }
+          entity_type: node
+          entity_field: langcode
+          plugin_id: language
+        field_affil_type_target_id:
+          id: field_affil_type_target_id
+          table: paragraph__field_affil_type
+          field: field_affil_type_target_id
+          relationship: field_people_affiliations
+          group_type: group
+          admin_label: ''
+          operator: or
+          value:
+            389: 389
+          group: 1
+          exposed: false
+          expose:
+            operator_id: ''
+            label: ''
+            description: ''
+            use_operator: false
+            operator: ''
+            identifier: ''
+            required: false
+            remember: false
+            multiple: false
+            remember_roles:
+              authenticated: authenticated
+            reduce: false
+          is_grouped: false
+          group_info:
+            label: ''
+            description: ''
+            identifier: ''
+            optional: true
+            widget: select
+            multiple: false
+            remember: false
+            default_group: All
+            default_group_multiple: {  }
+            group_items: {  }
+          reduce_duplicates: false
+          type: select
+          limit: true
+          vid: affiliation_types
+          hierarchy: false
+          error_message: true
+          plugin_id: taxonomy_index_tid
+        status_1:
+          id: status_1
+          table: node_field_data
+          field: status
+          relationship: none
+          group_type: group
+          admin_label: ''
+          operator: '='
+          value: '1'
+          group: 1
+          exposed: false
+          expose:
+            operator_id: ''
+            label: ''
+            description: ''
+            use_operator: false
+            operator: ''
+            identifier: ''
+            required: false
+            remember: false
+            multiple: false
+            remember_roles:
+              authenticated: authenticated
+          is_grouped: false
+          group_info:
+            label: ''
+            description: ''
+            identifier: ''
+            optional: true
+            widget: select
+            multiple: false
+            remember: false
+            default_group: All
+            default_group_multiple: {  }
+            group_items: {  }
+          entity_type: node
+          entity_field: status
+          plugin_id: boolean
+        field_affil_dates_value:
+          id: field_affil_dates_value
+          table: paragraph__field_affil_dates
+          field: field_affil_dates_value
+          relationship: field_people_affiliations
+          group_type: group
+          admin_label: ''
+          operator: between
+          value:
+            min: '2018-01-01'
+            max: '2019-01-01'
+            value: '2018'
+            type: date
+          group: 1
+          exposed: false
+          expose:
+            operator_id: ''
+            label: ''
+            description: ''
+            use_operator: false
+            operator: ''
+            identifier: ''
+            required: false
+            remember: false
+            multiple: false
+            remember_roles:
+              authenticated: authenticated
+            placeholder: ''
+            min_placeholder: ''
+            max_placeholder: ''
+          is_grouped: false
+          group_info:
+            label: ''
+            description: ''
+            identifier: ''
+            optional: true
+            widget: select
+            multiple: false
+            remember: false
+            default_group: All
+            default_group_multiple: {  }
+            group_items: {  }
+          plugin_id: datetime
+      defaults:
+        filters: false
+        filter_groups: false
+        title: false
+      filter_groups:
+        operator: AND
+        groups:
+          1: AND
+      rendering_language: '***LANGUAGE_language_interface***'
+      title: 'Rome Prize Fellows'
     cache_metadata:
       max-age: -1
       contexts:
