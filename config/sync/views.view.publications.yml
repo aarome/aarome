@@ -1159,7 +1159,7 @@ display:
     position: 1
     display_options:
       display_extenders: {  }
-      path: publications/aar-magazine
+      path: publications/magazine
       filters:
         status:
           id: status
@@ -2159,7 +2159,7 @@ display:
     position: 1
     display_options:
       display_extenders: {  }
-      path: publications/memoirs-of-the-aar
+      path: publications/memoirs
       filters:
         status:
           id: status
