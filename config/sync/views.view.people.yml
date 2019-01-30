@@ -366,7 +366,7 @@ display:
           exclude: false
           alter:
             alter_text: true
-            text: "<figure>{{ field_media_image }}</figure>\r\n<h2 class=\"title\">{{ title }}</h2>\r\n<div class=\"discipline\">{{ field_affil_discipline }}</div>"
+            text: "<figure>{{ field_media_image }}</figure>\r\n<h4 class=\"title\">{{ title }}</h4>\r\n<div class=\"discipline\">{{ field_affil_discipline }}</div>"
             make_link: true
             path: '/people/{{ field_safe_path_alias }}'
             absolute: false
