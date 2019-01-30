@@ -1,0 +1,9 @@
+uuid: 1df557fe-15de-434b-8751-dd56c3040ce9
+langcode: en
+status: true
+dependencies: {  }
+name: 'Resource subjects'
+vid: resource_subjects
+description: ''
+hierarchy: 0
+weight: 0

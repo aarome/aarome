@@ -1,0 +1,24 @@
+uuid: 3bfa5d5b-bf8c-4e81-ac79-76b305707661
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_safe_path_alias
+    - node.type.events
+  module:
+    - computed_field
+id: node.events.field_safe_path_alias
+field_name: field_safe_path_alias
+entity_type: node
+bundle: events
+label: 'Safe path alias'
+description: ''
+required: false
+translatable: false
+default_value:
+  -
+    value: ''
+default_value_callback: ''
+settings:
+  code: "$str = $fields['title'][0]['value'];\r\n$str = strtolower(preg_replace('/[^a-zA-Z-_]/','-', $str));\r\n$init  = array(\"/\\\\ba\\\\b/\",\"/\\\\ban\\\\b/\",\"/\\\\band\\\\b/\",\"/\\\\bas\\\\b/\",\"/\\\\bat\\\\b/\",\"/\\\\bbut\\\\b/\",\"/\\\\bby\\\\b/\",\"/\\\\bfor\\\\b/\",\"/\\\\bfrom\\\\b/\",\"/\\\\bis\\\\b/\",\"/\\\\bin\\\\b/\",\"/\\\\binto\\\\b/\",\"/\\\\bof\\\\b/\",\"/\\\\boff\\\\b/\",\"/\\\\bon\\\\b/\",\"/\\\\bonto\\\\b/\",\"/\\\\bthan\\\\b/\",\"/\\\\bthe\\\\b/\",\"/\\\\bthis\\\\b/\",\"/\\\\bthat\\\\b/\",\"/\\\\bto\\\\b/\",\"/\\\\bup\\\\b/\",\"/\\\\braar\\\\b/\",\"/\\\\bfaar\\\\b/\");\r\n$str = preg_replace($init,'',$str);\r\n$str = preg_replace('{(\\-)\\1+}','$1',$str);\r\n$str = rtrim($str, '-');\r\n$str = ltrim($str, '-');\r\n$value = $str;"
+field_type: computed_string

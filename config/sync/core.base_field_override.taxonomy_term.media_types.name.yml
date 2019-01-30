@@ -1,0 +1,18 @@
+uuid: 93754c0b-2735-48d7-b3b6-b0315cdc5b70
+langcode: en
+status: true
+dependencies:
+  config:
+    - taxonomy.vocabulary.media_types
+id: taxonomy_term.media_types.name
+field_name: name
+entity_type: taxonomy_term
+bundle: media_types
+label: Name
+description: ''
+required: true
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: string
