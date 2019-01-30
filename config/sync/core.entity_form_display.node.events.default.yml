@@ -45,7 +45,7 @@ content:
     region: content
   created:
     type: datetime_timestamp
-    weight: 16
+    weight: 12
     region: content
     settings: {  }
     third_party_settings: {  }
@@ -91,32 +91,8 @@ content:
     third_party_settings: {  }
     type: text_textarea
     region: content
-  field_events_rel_news_feature:
-    weight: 10
-    settings: {  }
-    third_party_settings: {  }
-    type: chosen_select
-    region: content
-  field_events_rel_people:
-    weight: 11
-    settings: {  }
-    third_party_settings: {  }
-    type: chosen_select
-    region: content
   field_events_rel_places:
     weight: 8
-    settings: {  }
-    third_party_settings: {  }
-    type: chosen_select
-    region: content
-  field_events_rel_press:
-    weight: 12
-    settings: {  }
-    third_party_settings: {  }
-    type: chosen_select
-    region: content
-  field_events_rel_press_releases:
-    weight: 13
     settings: {  }
     third_party_settings: {  }
     type: chosen_select
@@ -141,7 +117,7 @@ content:
     third_party_settings: {  }
   path:
     type: path
-    weight: 19
+    weight: 15
     region: content
     settings: {  }
     third_party_settings: {  }
@@ -149,12 +125,12 @@ content:
     type: boolean_checkbox
     settings:
       display_label: true
-    weight: 17
+    weight: 13
     region: content
     third_party_settings: {  }
   revision_log:
     type: hide_revision_field_log_widget
-    weight: 80
+    weight: 16
     region: content
     settings:
       show: true
@@ -168,7 +144,7 @@ content:
     type: boolean_checkbox
     settings:
       display_label: true
-    weight: 18
+    weight: 14
     region: content
     third_party_settings: {  }
   title:
@@ -180,13 +156,13 @@ content:
       placeholder: ''
     third_party_settings: {  }
   translation:
-    weight: 14
+    weight: 10
     region: content
     settings: {  }
     third_party_settings: {  }
   uid:
     type: entity_reference_autocomplete
-    weight: 15
+    weight: 11
     settings:
       match_operator: CONTAINS
       size: 60
@@ -195,5 +171,9 @@ content:
     third_party_settings: {  }
 hidden:
   field_events_legacy_id: true
+  field_events_rel_news_feature: true
+  field_events_rel_people: true
+  field_events_rel_press: true
+  field_events_rel_press_releases: true
   field_safe_path_alias: true
   sticky: true

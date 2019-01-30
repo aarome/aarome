@@ -10,6 +10,7 @@ dependencies:
     - field.storage.node.field_safe_path_alias
     - field.storage.paragraph.field_affil_discipline
     - field.storage.paragraph.field_page_section_links
+    - field.storage.taxonomy_term.field_affiliation_types_plural
     - image.style.max_1300x1300
     - image.style.max_650x650
     - node.type.events
@@ -1060,6 +1061,69 @@ display:
           items_per_page: 104
           offset: 0
       fields:
+        field_affiliation_types_plural:
+          id: field_affiliation_types_plural
+          table: taxonomy_term__field_affiliation_types_plural
+          field: field_affiliation_types_plural
+          relationship: field_affil_type
+          group_type: group
+          admin_label: ''
+          label: ''
+          exclude: true
+          alter:
+            alter_text: true
+            text: '{{ field_affiliation_types_plural | lower | replace('' '', ''-'') }}'
+            make_link: false
+            path: ''
+            absolute: false
+            external: false
+            replace_spaces: false
+            path_case: none
+            trim_whitespace: false
+            alt: ''
+            rel: ''
+            link_class: ''
+            prefix: ''
+            suffix: ''
+            target: ''
+            nl2br: false
+            max_length: 0
+            word_boundary: true
+            ellipsis: true
+            more_link: false
+            more_link_text: ''
+            more_link_path: ''
+            strip_tags: false
+            trim: false
+            preserve_tags: ''
+            html: false
+          element_type: ''
+          element_class: ''
+          element_label_type: ''
+          element_label_class: ''
+          element_label_colon: false
+          element_wrapper_type: ''
+          element_wrapper_class: ''
+          element_default_classes: false
+          empty: ''
+          hide_empty: false
+          empty_zero: false
+          hide_alter_empty: true
+          click_sort_column: value
+          type: string
+          settings:
+            link_to_entity: false
+          group_column: value
+          group_columns: {  }
+          group_rows: true
+          delta_limit: 0
+          delta_offset: 0
+          delta_reversed: false
+          delta_first_last: false
+          multi_type: separator
+          separator: ', '
+          field_api_classes: false
+          plugin_id: field
         field_safe_path_alias:
           id: field_safe_path_alias
           table: node__field_safe_path_alias
@@ -1330,11 +1394,11 @@ display:
             alter_text: true
             text: "<figure>{{ field_media_image }}</figure>\r\n<h3 class=\"title\">{{ title }}</h3>\r\n<div class=\"discipline\">{{ field_affil_discipline }}</div>"
             make_link: true
-            path: '/people/{{ field_safe_path_alias }}'
+            path: '/people/{{ field_affiliation_types_plural }}/{{ field_safe_path_alias }}'
             absolute: false
             external: false
-            replace_spaces: false
-            path_case: none
+            replace_spaces: true
+            path_case: lower
             trim_whitespace: false
             alt: ''
             rel: ''
@@ -1383,6 +1447,15 @@ display:
           relationship: none
           group_type: group
           admin_label: 'field_people_portrait: Media'
+          required: false
+          plugin_id: standard
+        field_affil_type:
+          id: field_affil_type
+          table: paragraph__field_affil_type
+          field: field_affil_type
+          relationship: field_people_affiliations
+          group_type: group
+          admin_label: 'field_affil_type: Taxonomy term'
           required: false
           plugin_id: standard
       style:
@@ -1471,6 +1544,7 @@ display:
         - 'config:field.storage.media.field_media_image'
         - 'config:field.storage.node.field_safe_path_alias'
         - 'config:field.storage.paragraph.field_affil_discipline'
+        - 'config:field.storage.taxonomy_term.field_affiliation_types_plural'
   front_join_us:
     display_plugin: block
     id: front_join_us
@@ -2671,7 +2745,7 @@ display:
             alter_text: true
             text: "<figure>{{ field_media_image }}</figure>\r\n<h3 class=\"title\">{{ title }}</h3>\r\n<div class=\"discipline\">{{ field_affil_discipline }}</div>"
             make_link: true
-            path: '/people/{{ field_safe_path_alias }}'
+            path: '/people/residents/{{ field_safe_path_alias }}'
             absolute: false
             external: false
             replace_spaces: false
