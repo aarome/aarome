@@ -6293,7 +6293,7 @@ display:
           absolute: false
           entity_type: node
           plugin_id: entity_link_edit
-      path: society-of-fellows/news
+      path: society-of-fellows/obituaries
       relationships: {  }
       rendering_language: '***LANGUAGE_language_interface***'
       sorts:

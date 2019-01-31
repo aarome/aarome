@@ -1,11 +1,11 @@
-uuid: 26ee2a32-c0e8-4f75-babc-b32389db5e69
+uuid: e0cdec7a-13ef-47da-a8ff-b3adac2c2979
 langcode: en
 status: true
 dependencies:
   module:
     - system
-name: society_of_fellows_news_detail
-label: 'Society of Fellows news detail'
+name: society_of_fellows_events_detail
+label: 'Society of Fellows events detail'
 group: 'Inside pages'
 description: ''
 requireAllConditions: false
@@ -13,30 +13,15 @@ disabled: false
 conditions:
   request_path:
     id: request_path
-    pages: '/society-of-fellows/news/*'
+    pages: '/society-of-fellows/events/*'
     negate: 0
-    uuid: 296dcec5-6e40-4659-9c89-20ba1c714818
+    uuid: 5db15476-562b-49a2-a37f-25212e576133
     context_mapping: {  }
 reactions:
   blocks:
     blocks:
-      63f2cc0b-5090-4291-8517-f5e2232ef745:
-        id: 'views_block:news_detail-block_society_of_fellows_news_slideshow'
-        label: ''
-        provider: views
-        label_display: 0
-        views_label: ''
-        items_per_page: none
-        region: content
-        weight: '0'
-        context_mapping: {  }
-        theme: tema
-        css_class: ''
-        unique: 0
-        context_id: society_of_fellows_news_detail
-        uuid: 63f2cc0b-5090-4291-8517-f5e2232ef745
-      38beb7ed-7046-48b6-afa7-31b5a74b706d:
-        id: 'views_block:news_detail-block_society_of_fellows_news_body'
+      d046a276-1973-4694-be02-79cd9a1eef27:
+        id: 'views_block:events_detail-block_society_of_fellows_events_body'
         label: ''
         provider: views
         label_display: 0
@@ -48,10 +33,25 @@ reactions:
         theme: tema
         css_class: ''
         unique: 0
-        context_id: society_of_fellows_news_detail
-        uuid: 38beb7ed-7046-48b6-afa7-31b5a74b706d
+        context_id: society_of_fellows_events_detail
+        uuid: d046a276-1973-4694-be02-79cd9a1eef27
+      82064ce4-b8fa-4859-822e-cad394a8955e:
+        id: 'views_block:events_detail-block_society_of_fellows_events_slideshow'
+        label: ''
+        provider: views
+        label_display: 0
+        views_label: ''
+        items_per_page: none
+        region: content
+        weight: '0'
+        context_mapping: {  }
+        theme: tema
+        css_class: ''
+        unique: 0
+        context_id: society_of_fellows_events_detail
+        uuid: 82064ce4-b8fa-4859-822e-cad394a8955e
     id: blocks
     saved: false
-    uuid: bbfcfb49-8282-4f5b-a85b-0d6a719de11b
+    uuid: f83b8d12-6388-4c2f-982b-ea7915ec23e0
     include_default_blocks: 1
-weight: -9
+weight: -10

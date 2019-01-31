@@ -1,27 +1,27 @@
-uuid: 26ee2a32-c0e8-4f75-babc-b32389db5e69
+uuid: a12bb2db-7b79-4a1c-9e37-769f03fd9ff1
 langcode: en
 status: true
 dependencies:
   module:
     - system
-name: society_of_fellows_news_detail
-label: 'Society of Fellows news detail'
-group: 'Inside pages'
+name: society_of_fellows_obituaries_detail
+label: 'Society of Fellows obituaries detail'
+group: null
 description: ''
 requireAllConditions: false
 disabled: false
 conditions:
   request_path:
     id: request_path
-    pages: '/society-of-fellows/news/*'
+    pages: '/society-of-fellows/obituaries/*'
     negate: 0
-    uuid: 296dcec5-6e40-4659-9c89-20ba1c714818
+    uuid: 0dd73de6-6cb6-4cd0-80e7-e62fa966c6fd
     context_mapping: {  }
 reactions:
   blocks:
     blocks:
-      63f2cc0b-5090-4291-8517-f5e2232ef745:
-        id: 'views_block:news_detail-block_society_of_fellows_news_slideshow'
+      0c77a5f4-b713-4bd2-8e26-a8f616503ab3:
+        id: 'views_block:events_detail-block_society_of_fellows_obituaries_body'
         label: ''
         provider: views
         label_display: 0
@@ -33,25 +33,25 @@ reactions:
         theme: tema
         css_class: ''
         unique: 0
-        context_id: society_of_fellows_news_detail
-        uuid: 63f2cc0b-5090-4291-8517-f5e2232ef745
-      38beb7ed-7046-48b6-afa7-31b5a74b706d:
-        id: 'views_block:news_detail-block_society_of_fellows_news_body'
+        context_id: society_of_fellows_obituaries_detail
+        uuid: 0c77a5f4-b713-4bd2-8e26-a8f616503ab3
+      e3e39472-27d9-4604-b0bf-3668989403fa:
+        id: 'views_block:events_detail-block_society_of_fellows_obituaries_slideshow'
         label: ''
         provider: views
         label_display: 0
         views_label: ''
         items_per_page: none
         region: content
-        weight: '1'
+        weight: '0'
         context_mapping: {  }
         theme: tema
         css_class: ''
         unique: 0
-        context_id: society_of_fellows_news_detail
-        uuid: 38beb7ed-7046-48b6-afa7-31b5a74b706d
+        context_id: society_of_fellows_obituaries_detail
+        uuid: e3e39472-27d9-4604-b0bf-3668989403fa
     id: blocks
     saved: false
-    uuid: bbfcfb49-8282-4f5b-a85b-0d6a719de11b
+    uuid: c700bb85-2028-407f-a3f8-e09cb0dbd251
     include_default_blocks: 1
-weight: -9
+weight: 0
