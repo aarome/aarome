@@ -6,7 +6,7 @@ dependencies:
     - system
 name: society_of_fellows_obituaries_detail
 label: 'Society of Fellows obituaries detail'
-group: null
+group: 'Inside pages'
 description: ''
 requireAllConditions: false
 disabled: false
@@ -54,4 +54,4 @@ reactions:
     saved: false
     uuid: c700bb85-2028-407f-a3f8-e09cb0dbd251
     include_default_blocks: 1
-weight: 0
+weight: -11
