@@ -4,7 +4,7 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#installing-dependencies",
         "This file is @generated automatically"
     ],
-    "content-hash": "a7fba72ee79abc7dd9ab2ca8abab9186",
+    "content-hash": "445f4198d0e9425612728636c2627a23",
     "packages": [
         {
             "name": "alchemy/zippy",
@@ -4078,6 +4078,53 @@
             "homepage": "https://www.drupal.org/project/delete_all",
             "support": {
                 "source": "http://cgit.drupalcode.org/delete_all"
+            }
+        },
+        {
+            "name": "drupal/dropdown_language",
+            "version": "2.2.0",
+            "source": {
+                "type": "git",
+                "url": "https://git.drupal.org/project/dropdown_language",
+                "reference": "8.x-2.2"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://ftp.drupal.org/files/projects/dropdown_language-8.x-2.2.zip",
+                "reference": "8.x-2.2",
+                "shasum": "78e9c73fe7414114eaf4884e23eac671c74e302f"
+            },
+            "require": {
+                "drupal/core": "*"
+            },
+            "type": "drupal-module",
+            "extra": {
+                "branch-alias": {
+                    "dev-2.x": "2.x-dev"
+                },
+                "drupal": {
+                    "version": "8.x-2.2",
+                    "datestamp": "1540134181",
+                    "security-coverage": {
+                        "status": "covered",
+                        "message": "Covered by Drupal's security advisory policy"
+                    }
+                }
+            },
+            "notification-url": "https://packages.drupal.org/8/downloads",
+            "license": [
+                "GPL-2.0-or-later"
+            ],
+            "authors": [
+                {
+                    "name": "SKAUGHT",
+                    "homepage": "https://www.drupal.org/user/297907"
+                }
+            ],
+            "description": "Provides a block with a Dropdown Language Switcher",
+            "homepage": "https://www.drupal.org/project/dropdown_language",
+            "support": {
+                "source": "http://cgit.drupalcode.org/dropdown_language"
             }
         },
         {
