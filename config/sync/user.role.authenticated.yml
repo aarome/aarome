@@ -16,3 +16,4 @@ permissions:
   - 'skip comment approval'
   - 'use text format basic_html'
   - 'use text format summary_html'
+  - 'view media'
