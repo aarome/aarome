@@ -1,0 +1,11 @@
+uuid: 1b8eeded-8b40-45b3-9b3f-b0e90f85cded
+langcode: en
+status: true
+dependencies:
+  config:
+    - webform.webform.library_missing_book
+id: webform_submission.library_missing_book
+target_entity_type_id: webform_submission
+target_bundle: library_missing_book
+default_langcode: site_default
+language_alterable: false

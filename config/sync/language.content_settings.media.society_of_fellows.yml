@@ -4,8 +4,15 @@ status: true
 dependencies:
   config:
     - media.type.society_of_fellows
+  module:
+    - content_translation
+third_party_settings:
+  content_translation:
+    enabled: true
+    bundle_settings:
+      untranslatable_fields_hide: '0'
 id: media.society_of_fellows
 target_entity_type_id: media
 target_bundle: society_of_fellows
 default_langcode: site_default
-language_alterable: false
+language_alterable: true

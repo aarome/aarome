@@ -37,6 +37,7 @@ hidden:
   langcode: true
   path: true
   promote: true
+  revision_log: true
   status: true
   sticky: true
   translation: true
