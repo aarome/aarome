@@ -3,14 +3,12 @@ langcode: en
 status: true
 dependencies:
   config:
-    - field.storage.node.body
     - field.storage.node.field_safe_path_alias
     - search_api.index.academy
   module:
     - better_exposed_filters
     - computed_field
     - search_api
-    - text
 id: search
 label: Search
 module: views
@@ -228,6 +226,79 @@ display:
               node_type:
                 display_method: label
           plugin_id: search_api_field
+        type_2:
+          id: type_2
+          table: search_api_index_academy
+          field: type
+          relationship: none
+          group_type: group
+          admin_label: ''
+          label: ''
+          exclude: false
+          alter:
+            alter_text: false
+            text: ''
+            make_link: false
+            path: ''
+            absolute: false
+            external: false
+            replace_spaces: false
+            path_case: none
+            trim_whitespace: false
+            alt: ''
+            rel: ''
+            link_class: ''
+            prefix: ''
+            suffix: ''
+            target: ''
+            nl2br: false
+            max_length: 0
+            word_boundary: true
+            ellipsis: true
+            more_link: false
+            more_link_text: ''
+            more_link_path: ''
+            strip_tags: false
+            trim: false
+            preserve_tags: ''
+            html: false
+          element_type: ''
+          element_class: ''
+          element_label_type: ''
+          element_label_class: ''
+          element_label_colon: false
+          element_wrapper_type: ''
+          element_wrapper_class: ''
+          element_default_classes: false
+          empty: ''
+          hide_empty: false
+          empty_zero: false
+          hide_alter_empty: true
+          click_sort_column: target_id
+          type: entity_reference_label
+          settings:
+            link: false
+          group_column: target_id
+          group_columns: {  }
+          group_rows: true
+          delta_limit: 0
+          delta_offset: 0
+          delta_reversed: false
+          delta_first_last: false
+          multi_type: separator
+          separator: ', '
+          field_api_classes: false
+          field_rendering: true
+          fallback_handler: search_api_entity
+          fallback_options:
+            link_to_item: false
+            use_highlighting: false
+            multi_type: separator
+            multi_separator: ', '
+            display_methods:
+              node_type:
+                display_method: label
+          plugin_id: search_api_field
         type_1:
           id: type_1
           table: search_api_index_academy
@@ -264,8 +335,8 @@ display:
             trim: false
             preserve_tags: ''
             html: false
-          element_type: ''
-          element_class: ''
+          element_type: div
+          element_class: type
           element_label_type: ''
           element_label_class: ''
           element_label_colon: false
@@ -373,6 +444,59 @@ display:
           entity_type: null
           entity_field: null
           plugin_id: search_api_field
+        search_api_excerpt:
+          id: search_api_excerpt
+          table: search_api_index_academy
+          field: search_api_excerpt
+          relationship: none
+          group_type: group
+          admin_label: ''
+          label: ''
+          exclude: true
+          alter:
+            alter_text: false
+            text: ''
+            make_link: false
+            path: ''
+            absolute: false
+            external: false
+            replace_spaces: false
+            path_case: none
+            trim_whitespace: false
+            alt: ''
+            rel: ''
+            link_class: ''
+            prefix: ''
+            suffix: ''
+            target: ''
+            nl2br: false
+            max_length: 0
+            word_boundary: true
+            ellipsis: true
+            more_link: false
+            more_link_text: ''
+            more_link_path: ''
+            strip_tags: false
+            trim: false
+            preserve_tags: ''
+            html: false
+          element_type: div
+          element_class: excerpt
+          element_label_type: ''
+          element_label_class: ''
+          element_label_colon: false
+          element_wrapper_type: ''
+          element_wrapper_class: ''
+          element_default_classes: false
+          empty: ''
+          hide_empty: false
+          empty_zero: false
+          hide_alter_empty: true
+          link_to_item: false
+          use_highlighting: true
+          multi_type: separator
+          multi_separator: ', '
+          plugin_id: search_api
         nothing:
           id: nothing
           table: views
@@ -384,9 +508,9 @@ display:
           exclude: false
           alter:
             alter_text: true
-            text: '{{ title }}'
+            text: "<h2 class=\"title\">{{ title }}</h2>\r\n<div class=\"excerpt\">{{ search_api_excerpt }}</div>"
             make_link: true
-            path: '{{ type }}/{{ field_safe_path_alias }}'
+            path: '<front>'
             absolute: false
             external: false
             replace_spaces: true
@@ -422,79 +546,10 @@ display:
           empty_zero: false
           hide_alter_empty: false
           plugin_id: custom
-        body:
-          id: body
+        nid:
+          id: nid
           table: search_api_index_academy
-          field: body
-          relationship: none
-          group_type: group
-          admin_label: ''
-          label: ''
-          exclude: true
-          alter:
-            alter_text: false
-            text: ''
-            make_link: false
-            path: ''
-            absolute: false
-            external: false
-            replace_spaces: false
-            path_case: none
-            trim_whitespace: false
-            alt: ''
-            rel: ''
-            link_class: ''
-            prefix: ''
-            suffix: ''
-            target: ''
-            nl2br: false
-            max_length: 0
-            word_boundary: true
-            ellipsis: true
-            more_link: false
-            more_link_text: ''
-            more_link_path: ''
-            strip_tags: false
-            trim: false
-            preserve_tags: ''
-            html: false
-          element_type: ''
-          element_class: ''
-          element_label_type: ''
-          element_label_class: ''
-          element_label_colon: false
-          element_wrapper_type: ''
-          element_wrapper_class: ''
-          element_default_classes: false
-          empty: ''
-          hide_empty: false
-          empty_zero: false
-          hide_alter_empty: true
-          click_sort_column: value
-          type: text_default
-          settings: {  }
-          group_column: value
-          group_columns: {  }
-          group_rows: true
-          delta_limit: 0
-          delta_offset: 0
-          delta_reversed: false
-          delta_first_last: false
-          multi_type: separator
-          separator: ', '
-          field_api_classes: false
-          field_rendering: true
-          fallback_handler: search_api
-          fallback_options:
-            link_to_item: false
-            use_highlighting: false
-            multi_type: separator
-            multi_separator: ', '
-          plugin_id: search_api_field
-        search_api_excerpt:
-          id: search_api_excerpt
-          table: search_api_index_academy
-          field: search_api_excerpt
+          field: nid
           relationship: none
           group_type: group
           admin_label: ''
@@ -534,16 +589,45 @@ display:
           element_label_colon: false
           element_wrapper_type: ''
           element_wrapper_class: ''
-          element_default_classes: false
+          element_default_classes: true
           empty: ''
           hide_empty: false
           empty_zero: false
           hide_alter_empty: true
-          link_to_item: false
-          use_highlighting: true
+          click_sort_column: value
+          type: number_integer
+          settings:
+            thousand_separator: ''
+            prefix_suffix: false
+          group_column: value
+          group_columns: {  }
+          group_rows: true
+          delta_limit: 0
+          delta_offset: 0
+          delta_reversed: false
+          delta_first_last: false
           multi_type: separator
-          multi_separator: ', '
-          plugin_id: search_api
+          separator: ', '
+          field_api_classes: false
+          field_rendering: true
+          fallback_handler: search_api_numeric
+          fallback_options:
+            set_precision: false
+            precision: 0
+            decimal: .
+            separator: ','
+            format_plural: false
+            format_plural_string: !!binary MQNAY291bnQ=
+            prefix: ''
+            suffix: ''
+            link_to_item: false
+            use_highlighting: false
+            multi_type: separator
+            multi_separator: ', '
+            format_plural_values:
+              - '1'
+              - '@count'
+          plugin_id: search_api_field
       filters:
         search_api_fulltext:
           id: search_api_fulltext
@@ -673,7 +757,6 @@ display:
         - 'languages:language_interface'
         - url
       tags:
-        - 'config:field.storage.node.body'
         - 'config:field.storage.node.field_safe_path_alias'
   page_search:
     display_plugin: page
@@ -691,5 +774,4 @@ display:
         - 'languages:language_interface'
         - url
       tags:
-        - 'config:field.storage.node.body'
         - 'config:field.storage.node.field_safe_path_alias'
