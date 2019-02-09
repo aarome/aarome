@@ -9,6 +9,7 @@ dependencies:
     - field.storage.paragraph.field_affil_discipline
     - image.style.max_600x300
     - node.type.people
+    - responsive_image.styles.narrow
     - taxonomy.vocabulary.affiliation_types
   content:
     - 'taxonomy_term:affiliation_types:0be3afd6-2acb-4790-b4ee-58ea25414732'
@@ -31,6 +32,7 @@ dependencies:
     - media
     - node
     - paragraphs
+    - responsive_image
     - taxonomy
     - user
 id: people
@@ -2693,9 +2695,9 @@ display:
           empty_zero: false
           hide_alter_empty: true
           click_sort_column: target_id
-          type: image
+          type: responsive_image
           settings:
-            image_style: max_600x300
+            responsive_image_style: narrow
             image_link: ''
           group_column: ''
           group_columns: {  }

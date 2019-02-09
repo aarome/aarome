@@ -11,11 +11,11 @@ dependencies:
     - field.storage.paragraph.field_affil_discipline
     - field.storage.paragraph.field_page_section_links
     - field.storage.taxonomy_term.field_affiliation_types_plural
-    - image.style.max_1300x1300
-    - image.style.max_650x650
     - node.type.events
     - node.type.news_features
     - node.type.people
+    - responsive_image.styles.narrow
+    - responsive_image.styles.wide
     - taxonomy.vocabulary.affiliation_types
   content:
     - 'taxonomy_term:affiliation_types:76cddf8f-d83f-48c1-9d80-b61567160fe3'
@@ -31,6 +31,7 @@ dependencies:
     - media
     - node
     - paragraphs
+    - responsive_image
     - slick_views
     - taxonomy
     - text
@@ -653,9 +654,9 @@ display:
           empty_zero: false
           hide_alter_empty: true
           click_sort_column: target_id
-          type: image
+          type: responsive_image
           settings:
-            image_style: max_1300x1300
+            responsive_image_style: wide
             image_link: ''
           group_column: ''
           group_columns: {  }
@@ -1034,6 +1035,44 @@ display:
             default_group_multiple: {  }
             group_items: {  }
           plugin_id: numeric
+        promote:
+          id: promote
+          table: node_field_data
+          field: promote
+          relationship: none
+          group_type: group
+          admin_label: ''
+          operator: '='
+          value: '1'
+          group: 1
+          exposed: false
+          expose:
+            operator_id: ''
+            label: ''
+            description: ''
+            use_operator: false
+            operator: ''
+            identifier: ''
+            required: false
+            remember: false
+            multiple: false
+            remember_roles:
+              authenticated: authenticated
+          is_grouped: false
+          group_info:
+            label: ''
+            description: ''
+            identifier: ''
+            optional: true
+            widget: select
+            multiple: false
+            remember: false
+            default_group: All
+            default_group_multiple: {  }
+            group_items: {  }
+          entity_type: node
+          entity_field: promote
+          plugin_id: boolean
       defaults:
         filters: false
         filter_groups: false
@@ -1238,9 +1277,9 @@ display:
           empty_zero: false
           hide_alter_empty: true
           click_sort_column: target_id
-          type: image
+          type: responsive_image
           settings:
-            image_style: max_650x650
+            responsive_image_style: narrow
             image_link: ''
           group_column: ''
           group_columns: {  }
@@ -2211,20 +2250,7 @@ display:
           empty_zero: false
           hide_alter_empty: false
           plugin_id: custom
-      footer:
-        area:
-          id: area
-          table: views
-          field: area
-          relationship: none
-          group_type: group
-          admin_label: ''
-          empty: false
-          tokenize: false
-          content:
-            value: '<div class="more-news"><a href="/news/features">more</a></div>'
-            format: basic_html
-          plugin_id: text
+      footer: {  }
       pager:
         type: some
         options:
@@ -2589,9 +2615,9 @@ display:
           empty_zero: false
           hide_alter_empty: true
           click_sort_column: target_id
-          type: image
+          type: responsive_image
           settings:
-            image_style: max_650x650
+            responsive_image_style: narrow
             image_link: ''
           group_column: ''
           group_columns: {  }
@@ -3050,8 +3076,7 @@ display:
           fields:
             - nothing_2
             - field_page_summary
-            - nothing
-            - nothing_1
+            - fieldset_1
           wrapper: div
           legend: ''
           classes: rome-prize-fieldset
@@ -3169,6 +3194,63 @@ display:
           separator: ', '
           field_api_classes: false
           plugin_id: field
+        fieldset_1:
+          id: fieldset_1
+          table: views
+          field: fieldset
+          relationship: none
+          group_type: group
+          admin_label: ''
+          label: ''
+          exclude: false
+          alter:
+            alter_text: false
+            text: ''
+            make_link: false
+            path: ''
+            absolute: false
+            external: false
+            replace_spaces: false
+            path_case: none
+            trim_whitespace: false
+            alt: ''
+            rel: ''
+            link_class: ''
+            prefix: ''
+            suffix: ''
+            target: ''
+            nl2br: false
+            max_length: 0
+            word_boundary: true
+            ellipsis: true
+            more_link: false
+            more_link_text: ''
+            more_link_path: ''
+            strip_tags: false
+            trim: false
+            preserve_tags: ''
+            html: false
+          element_type: ''
+          element_class: ''
+          element_label_type: ''
+          element_label_class: ''
+          element_label_colon: true
+          element_wrapper_type: ''
+          element_wrapper_class: ''
+          element_default_classes: true
+          empty: ''
+          hide_empty: false
+          empty_zero: false
+          hide_alter_empty: true
+          fields:
+            - nothing
+            - nothing_1
+          wrapper: div
+          legend: ''
+          classes: button-wrapper
+          collapsible: 0
+          collapsed: 0
+          plugin_id: fieldset
         nothing:
           id: nothing
           table: views
