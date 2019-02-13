@@ -101,7 +101,7 @@ display:
                 bef_collapsible: false
                 is_secondary: false
                 rewrite:
-                  filter_rewrite_values: ''
+                  filter_rewrite_values: '- Any -|All subjects'
           text_input_required_format: basic_html
       pager:
         type: none
@@ -572,7 +572,7 @@ display:
           group_type: group
           admin_label: ''
           operator: '='
-          value: '0'
+          value: '1'
           group: 1
           exposed: false
           expose:
@@ -652,76 +652,6 @@ display:
           entity_type: node
           entity_field: langcode
           plugin_id: language
-        field_resources_resource_subject_target_id:
-          id: field_resources_resource_subject_target_id
-          table: node__field_resources_resource_subject
-          field: field_resources_resource_subject_target_id
-          relationship: none
-          group_type: group
-          admin_label: ''
-          operator: or
-          value:
-            434: 434
-            435: 435
-            436: 436
-            437: 437
-            438: 438
-            439: 439
-            440: 440
-            441: 441
-            442: 442
-            443: 443
-            444: 444
-            445: 445
-            446: 446
-            447: 447
-            448: 448
-            449: 449
-            450: 450
-            451: 451
-            452: 452
-            453: 453
-            454: 454
-            455: 455
-            456: 456
-            457: 457
-          group: 1
-          exposed: true
-          expose:
-            operator_id: field_resources_resource_subject_target_id_op
-            label: Subject
-            description: ''
-            use_operator: false
-            operator: field_resources_resource_subject_target_id_op
-            identifier: field_resources_resource_subject_target_id
-            required: false
-            remember: false
-            multiple: false
-            remember_roles:
-              authenticated: authenticated
-              anonymous: '0'
-              administrator: '0'
-              site_editor: '0'
-            reduce: false
-          is_grouped: false
-          group_info:
-            label: ''
-            description: ''
-            identifier: ''
-            optional: true
-            widget: select
-            multiple: false
-            remember: false
-            default_group: All
-            default_group_multiple: {  }
-            group_items: {  }
-          reduce_duplicates: false
-          type: select
-          limit: true
-          vid: resource_subjects
-          hierarchy: false
-          error_message: true
-          plugin_id: taxonomy_index_tid
         field_resources_resource_type_target_id:
           id: field_resources_resource_type_target_id
           table: node__field_resources_resource_type
@@ -763,6 +693,53 @@ display:
           type: textfield
           limit: true
           vid: resource_types
+          hierarchy: false
+          error_message: true
+          plugin_id: taxonomy_index_tid
+        field_resources_resource_subject_target_id:
+          id: field_resources_resource_subject_target_id
+          table: node__field_resources_resource_subject
+          field: field_resources_resource_subject_target_id
+          relationship: none
+          group_type: group
+          admin_label: ''
+          operator: or
+          value: {  }
+          group: 1
+          exposed: true
+          expose:
+            operator_id: field_resources_resource_subject_target_id_op
+            label: ''
+            description: ''
+            use_operator: false
+            operator: field_resources_resource_subject_target_id_op
+            identifier: field_resources_resource_subject_target_id
+            required: false
+            remember: false
+            multiple: false
+            remember_roles:
+              authenticated: authenticated
+              anonymous: '0'
+              administrator: '0'
+              site_editor: '0'
+              staff: '0'
+            reduce: false
+          is_grouped: false
+          group_info:
+            label: ''
+            description: ''
+            identifier: ''
+            optional: true
+            widget: select
+            multiple: false
+            remember: false
+            default_group: All
+            default_group_multiple: {  }
+            group_items: {  }
+          reduce_duplicates: false
+          type: select
+          limit: true
+          vid: resource_subjects
           hierarchy: false
           error_message: true
           plugin_id: taxonomy_index_tid
@@ -1007,7 +984,7 @@ display:
           group_type: group
           admin_label: ''
           operator: '='
-          value: '0'
+          value: '1'
           group: 1
           exposed: false
           expose:
@@ -1155,7 +1132,7 @@ display:
           exposed: true
           expose:
             operator_id: field_resources_resource_subject_target_id_op
-            label: Subject
+            label: ''
             description: ''
             use_operator: false
             operator: field_resources_resource_subject_target_id_op
@@ -1168,6 +1145,7 @@ display:
               anonymous: '0'
               administrator: '0'
               site_editor: '0'
+              staff: '0'
             reduce: true
           is_grouped: false
           group_info:
@@ -1521,7 +1499,7 @@ display:
           group_type: group
           admin_label: ''
           operator: '='
-          value: '0'
+          value: '1'
           group: 1
           exposed: false
           expose:
@@ -2038,7 +2016,7 @@ display:
           group_type: group
           admin_label: ''
           operator: '='
-          value: '0'
+          value: '1'
           group: 1
           exposed: false
           expose:
