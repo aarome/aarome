@@ -6476,7 +6476,7 @@ display:
           2: AND
           3: AND
           4: AND
-      title: ''
+      title: '{{ title }}'
       arguments:
         field_safe_path_alias_value:
           id: field_safe_path_alias_value
@@ -6597,7 +6597,7 @@ display:
           group_type: group
           admin_label: ''
           label: ''
-          exclude: false
+          exclude: true
           alter:
             alter_text: true
             text: ''
@@ -6690,7 +6690,7 @@ display:
             trim: false
             preserve_tags: ''
             html: false
-          element_type: ''
+          element_type: figure
           element_class: ''
           element_label_type: ''
           element_label_class: ''
@@ -6754,8 +6754,8 @@ display:
             trim: false
             preserve_tags: ''
             html: false
-          element_type: ''
-          element_class: ''
+          element_type: div
+          element_class: caption
           element_label_type: ''
           element_label_class: ''
           element_label_colon: false
