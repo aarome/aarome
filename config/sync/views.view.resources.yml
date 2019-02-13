@@ -974,7 +974,7 @@ display:
     position: 2
     display_options:
       display_extenders: {  }
-      path: research/resources/libraries-and-institutions
+      path: research/resources/libraries-institutions
       filters:
         status:
           id: status
@@ -1650,7 +1650,7 @@ display:
           exposed: true
           expose:
             operator_id: field_resources_resource_subject_target_id_op
-            label: Subject
+            label: ''
             description: ''
             use_operator: false
             operator: field_resources_resource_subject_target_id_op
@@ -1663,6 +1663,7 @@ display:
               anonymous: '0'
               administrator: '0'
               site_editor: '0'
+              staff: '0'
             reduce: true
           is_grouped: false
           group_info:
