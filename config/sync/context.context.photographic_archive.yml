@@ -128,7 +128,7 @@ reactions:
     id: blocks
     saved: false
     uuid: 5d2521c3-4691-4643-a22f-0e201d7bdc4a
-    include_default_blocks: 0
+    include_default_blocks: 1
   body_class:
     id: body_class
     body_class: section-front
