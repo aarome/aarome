@@ -1,0 +1,42 @@
+uuid: 808f0d8c-b378-4335-b973-94f13a616537
+langcode: en
+status: true
+dependencies:
+  module:
+    - system
+name: resources_lists
+label: 'Resources lists'
+group: Lists
+description: ''
+requireAllConditions: false
+disabled: false
+conditions:
+  request_path:
+    id: request_path
+    pages: "/research/resources/research-databases-digital-collections\r\n/research/resources/libraries-institutions\r\n/research/resources/useful-links\r\n/research/resources/electronic-journals"
+    negate: 0
+    uuid: 957218ce-a90e-4bd3-95e0-688dda643241
+    context_mapping: {  }
+reactions:
+  blocks:
+    blocks:
+      0ea6d756-41fe-4ce8-b23f-3813bd70c454:
+        id: 'views_exposed_filter_block:resources-page_research_databases'
+        label: ''
+        provider: views
+        label_display: 0
+        views_label: ''
+        region: content_pre
+        weight: '0'
+        context_mapping: {  }
+        theme: tema
+        css_class: ''
+        unique: 0
+        context_id: resources_lists
+        uuid: 0ea6d756-41fe-4ce8-b23f-3813bd70c454
+        custom_id: views_exposed_filter_block_resources_page_research_databases
+    id: blocks
+    saved: false
+    uuid: 8cd08382-687e-47bb-ba25-e265bc76fa17
+    include_default_blocks: 1
+weight: 0
