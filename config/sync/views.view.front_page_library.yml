@@ -1128,7 +1128,7 @@ display:
             alter_text: true
             text: "<figure>{{ field_media_image }}</figure>\r\n<h2>{{ title }}</h2>\r\n<section>{{ field_page_summary }}</section>\r\n<div class=\"more\">{{ nothing }}</div>"
             make_link: true
-            path: /research/library/access
+            path: /research/library/access-rules-policies
             absolute: false
             external: false
             replace_spaces: false
@@ -1665,7 +1665,7 @@ display:
             alter_text: true
             text: "<figure>{{ field_media_image }}</figure>\r\n<h2>{{ title }}</h2>\r\n<section>{{ field_page_summary }}</section>\r\n<div class=\"more\">{{ nothing }}</div>"
             make_link: true
-            path: /research/library/friends
+            path: /research/library/friends-library
             absolute: false
             external: false
             replace_spaces: false
@@ -2201,7 +2201,7 @@ display:
             alter_text: true
             text: "<figure>{{ field_media_image }}</figure>\r\n<h2>{{ title }}</h2>\r\n<section>{{ field_page_summary }}</section>\r\n<div class=\"more\">{{ nothing }}</div>"
             make_link: true
-            path: /research/library/guide
+            path: /research/library/library-guides-histories
             absolute: false
             external: false
             replace_spaces: false
