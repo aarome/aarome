@@ -90,6 +90,7 @@ module:
   user: 0
   views_fieldsets: 0
   views_infinite_scroll: 0
+  views_rows_wrapper: 0
   views_slideshow: 0
   views_slideshow_cycle: 0
   views_ui: 0

@@ -10,9 +10,13 @@ dependencies:
     - field.field.node.library_resources.field_resources_resource_type
     - node.type.library_resources
   module:
+    - layout_builder
     - link
     - text
     - user
+third_party_settings:
+  layout_builder:
+    sections: {  }
 id: node.library_resources.default
 targetEntityType: node
 bundle: library_resources

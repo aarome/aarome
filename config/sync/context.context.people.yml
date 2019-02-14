@@ -103,7 +103,7 @@ reactions:
         views_label: ''
         items_per_page: none
         region: content
-        weight: '2'
+        weight: '3'
         context_mapping: {  }
         theme: tema
         css_class: ''
@@ -118,13 +118,29 @@ reactions:
         views_label: ''
         items_per_page: none
         region: content
-        weight: '3'
+        weight: '4'
         context_mapping: {  }
         theme: tema
         css_class: ''
         unique: 0
         context_id: people
         uuid: fe004224-0893-44a8-9d23-82d05cbbebfe
+      2dcca92c-3e1a-42a0-8b44-25e10db93dc8:
+        id: 'views_block:front_page_people-people_juries'
+        label: ''
+        provider: views
+        label_display: 0
+        views_label: ''
+        items_per_page: none
+        region: content
+        weight: '2'
+        context_mapping: {  }
+        custom_id: views_block_front_page_people_people_juries
+        theme: tema
+        css_class: ''
+        unique: 0
+        context_id: people
+        uuid: 2dcca92c-3e1a-42a0-8b44-25e10db93dc8
     id: blocks
     saved: false
     uuid: 1d38bd1e-be3b-4a9a-87ed-74498e73f11a
