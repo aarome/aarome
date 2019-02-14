@@ -103,7 +103,7 @@ reactions:
         views_label: ''
         items_per_page: none
         region: content
-        weight: '3'
+        weight: '2'
         context_mapping: {  }
         theme: tema
         css_class: ''
@@ -133,7 +133,7 @@ reactions:
         views_label: ''
         items_per_page: none
         region: content
-        weight: '2'
+        weight: '3'
         context_mapping: {  }
         custom_id: views_block_front_page_people_people_juries
         theme: tema
