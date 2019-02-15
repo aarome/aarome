@@ -939,7 +939,7 @@ display:
           value:
             min: ''
             max: ''
-            value: '4000'
+            value: '4001'
           group: 1
           exposed: false
           expose:

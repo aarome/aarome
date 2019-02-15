@@ -1035,15 +1035,19 @@ display:
             default_group_multiple: {  }
             group_items: {  }
           plugin_id: numeric
-        promote:
-          id: promote
-          table: node_field_data
-          field: promote
-          relationship: none
+        field_affil_dates_end_value:
+          id: field_affil_dates_end_value
+          table: paragraph__field_affil_dates
+          field: field_affil_dates_end_value
+          relationship: field_people_affiliations
           group_type: group
           admin_label: ''
           operator: '='
-          value: '1'
+          value:
+            min: ''
+            max: ''
+            value: '2019-01-01'
+            type: date
           group: 1
           exposed: false
           expose:
@@ -1058,6 +1062,9 @@ display:
             multiple: false
             remember_roles:
               authenticated: authenticated
+            placeholder: ''
+            min_placeholder: ''
+            max_placeholder: ''
           is_grouped: false
           group_info:
             label: ''
@@ -1070,9 +1077,7 @@ display:
             default_group: All
             default_group_multiple: {  }
             group_items: {  }
-          entity_type: node
-          entity_field: promote
-          plugin_id: boolean
+          plugin_id: datetime
       defaults:
         filters: false
         filter_groups: false
@@ -1097,7 +1102,7 @@ display:
       pager:
         type: some
         options:
-          items_per_page: 104
+          items_per_page: 0
           offset: 0
       fields:
         field_affiliation_types_plural:
@@ -2474,6 +2479,49 @@ display:
             default_group_multiple: {  }
             group_items: {  }
           plugin_id: numeric
+        field_affil_dates_end_value:
+          id: field_affil_dates_end_value
+          table: paragraph__field_affil_dates
+          field: field_affil_dates_end_value
+          relationship: field_people_affiliations
+          group_type: group
+          admin_label: ''
+          operator: between
+          value:
+            min: '2018-08-01'
+            max: '2019-07-31'
+            value: ''
+            type: date
+          group: 1
+          exposed: false
+          expose:
+            operator_id: ''
+            label: ''
+            description: ''
+            use_operator: false
+            operator: ''
+            identifier: ''
+            required: false
+            remember: false
+            multiple: false
+            remember_roles:
+              authenticated: authenticated
+            placeholder: ''
+            min_placeholder: ''
+            max_placeholder: ''
+          is_grouped: false
+          group_info:
+            label: ''
+            description: ''
+            identifier: ''
+            optional: true
+            widget: select
+            multiple: false
+            remember: false
+            default_group: All
+            default_group_multiple: {  }
+            group_items: {  }
+          plugin_id: datetime
       defaults:
         filters: false
         filter_groups: false
@@ -2498,7 +2546,7 @@ display:
       pager:
         type: some
         options:
-          items_per_page: 10
+          items_per_page: 0
           offset: 0
       fields:
         field_safe_path_alias:
@@ -2873,10 +2921,10 @@ display:
           separator: ''
           hide_empty: false
       sorts:
-        field_people_name_family:
-          id: field_people_name_family
-          table: node__field_people_name
-          field: field_people_name_family
+        random:
+          id: random
+          table: views
+          field: random
           relationship: none
           group_type: group
           admin_label: ''
@@ -2884,12 +2932,12 @@ display:
           exposed: false
           expose:
             label: ''
-          plugin_id: standard
+          plugin_id: random
       title: 'Invited Residents'
       header: {  }
       use_ajax: true
     cache_metadata:
-      max-age: -1
+      max-age: 0
       contexts:
         - 'languages:language_interface'
         - user
