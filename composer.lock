@@ -4,7 +4,7 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#installing-dependencies",
         "This file is @generated automatically"
     ],
-    "content-hash": "e14372f8efa3b33bd2bd0efb64f47b70",
+    "content-hash": "28ad431986997ead3e51076eef7892b9",
     "packages": [
         {
             "name": "alchemy/zippy",
@@ -3447,17 +3447,11 @@
         },
         {
             "name": "drupal/context",
-            "version": "4.0.0-beta2",
+            "version": "dev-4.x",
             "source": {
                 "type": "git",
                 "url": "https://git.drupal.org/project/context",
-                "reference": "8.x-4.0-beta2"
-            },
-            "dist": {
-                "type": "zip",
-                "url": "https://ftp.drupal.org/files/projects/context-8.x-4.0-beta2.zip",
-                "reference": "8.x-4.0-beta2",
-                "shasum": "e41bc912e1ec73bc4d08a3cf730dc2405a9213d3"
+                "reference": "ea6051a4919177397ca6685381e9b35ac3bd547b"
             },
             "require": {
                 "drupal/core": "~8.0"
@@ -3468,11 +3462,11 @@
                     "dev-4.x": "4.x-dev"
                 },
                 "drupal": {
-                    "version": "8.x-4.0-beta2",
-                    "datestamp": "1505378944",
+                    "version": "8.x-4.0-beta2+16-dev",
+                    "datestamp": "1547500980",
                     "security-coverage": {
                         "status": "not-covered",
-                        "message": "Beta releases are not covered by Drupal security advisories."
+                        "message": "Dev releases are not covered by Drupal security advisories."
                     }
                 }
             },
@@ -3532,6 +3526,10 @@
                     "homepage": "https://www.drupal.org/user/31731"
                 },
                 {
+                    "name": "nedjo",
+                    "homepage": "https://www.drupal.org/user/4481"
+                },
+                {
                     "name": "tekante",
                     "homepage": "https://www.drupal.org/user/640024"
                 },
@@ -3553,7 +3551,8 @@
                 "source": "https://github.com/oddhill/context",
                 "issues": "https://github.com/oddhill/context/issues",
                 "docs": "https://github.com/oddhill/context"
-            }
+            },
+            "time": "2019-01-14T21:54:49+00:00"
         },
         {
             "name": "drupal/core",
@@ -4423,6 +4422,66 @@
             "homepage": "https://www.drupal.org/project/entity_reference_revisions",
             "support": {
                 "source": "http://cgit.drupalcode.org/entity_reference_revisions"
+            }
+        },
+        {
+            "name": "drupal/facets",
+            "version": "1.2.0",
+            "source": {
+                "type": "git",
+                "url": "https://git.drupal.org/project/facets",
+                "reference": "8.x-1.2"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://ftp.drupal.org/files/projects/facets-8.x-1.2.zip",
+                "reference": "8.x-1.2",
+                "shasum": "bf0f9249d90025dcd16c0af7b7cd59e515fb9d9e"
+            },
+            "require": {
+                "drupal/core": "~8.0"
+            },
+            "require-dev": {
+                "drupal/search_api": "~1.5"
+            },
+            "type": "drupal-module",
+            "extra": {
+                "branch-alias": {
+                    "dev-1.x": "1.x-dev"
+                },
+                "drupal": {
+                    "version": "8.x-1.2",
+                    "datestamp": "1543065481",
+                    "security-coverage": {
+                        "status": "covered",
+                        "message": "Covered by Drupal's security advisory policy"
+                    }
+                }
+            },
+            "notification-url": "https://packages.drupal.org/8/downloads",
+            "license": [
+                "GPL-2.0+"
+            ],
+            "authors": [
+                {
+                    "name": "See all contributors",
+                    "homepage": "https://www.drupal.org/node/2348769/committers"
+                },
+                {
+                    "name": "StryKaizer",
+                    "homepage": "https://www.drupal.org/user/462700"
+                },
+                {
+                    "name": "borisson_",
+                    "homepage": "https://www.drupal.org/user/2393360"
+                }
+            ],
+            "description": "The Facet module allows site builders to easily create and manage faceted search interfaces.",
+            "homepage": "https://www.drupal.org/project/facets",
+            "support": {
+                "source": "git://git.drupal.org/project/facets.git",
+                "issues": "https://www.drupal.org/project/issues/facets",
+                "irc": "irc://irc.freenode.org/drupal-search-api"
             }
         },
         {
@@ -5619,6 +5678,65 @@
             }
         },
         {
+            "name": "drupal/obfuscate",
+            "version": "1.0.0-alpha3",
+            "source": {
+                "type": "git",
+                "url": "https://git.drupal.org/project/obfuscate",
+                "reference": "8.x-1.0-alpha3"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://ftp.drupal.org/files/projects/obfuscate-8.x-1.0-alpha3.zip",
+                "reference": "8.x-1.0-alpha3",
+                "shasum": "fcdd77e00e99dd96923f02ae5b8b31dbc2024541"
+            },
+            "require": {
+                "drupal/core": "*"
+            },
+            "type": "drupal-module",
+            "extra": {
+                "branch-alias": {
+                    "dev-1.x": "1.x-dev"
+                },
+                "drupal": {
+                    "version": "8.x-1.0-alpha3",
+                    "datestamp": "1538406480",
+                    "security-coverage": {
+                        "status": "not-covered",
+                        "message": "Project has not opted into security advisory coverage!"
+                    }
+                }
+            },
+            "notification-url": "https://packages.drupal.org/8/downloads",
+            "license": [
+                "GPL-2.0+"
+            ],
+            "authors": [
+                {
+                    "name": "Raphael Larrinaga",
+                    "homepage": "https://www.drupal.org/user/2873013"
+                },
+                {
+                    "name": "Rockabelly",
+                    "homepage": "https://www.drupal.org/user/2649181"
+                },
+                {
+                    "name": "colorfield",
+                    "homepage": "https://www.drupal.org/user/2295486"
+                }
+            ],
+            "description": "Obfuscates email addresses with a Field Formatter of Email field, a text Filter and a Twig extension.",
+            "homepage": "https://www.drupal.org/project/obfuscate",
+            "keywords": [
+                "Drupal"
+            ],
+            "support": {
+                "source": "http://cgit.drupalcode.org/obfuscate",
+                "issues": "https://www.drupal.org/project/issues/obfuscate"
+            }
+        },
+        {
             "name": "drupal/optional_end_date",
             "version": "1.0.0-beta1",
             "source": {
@@ -6194,6 +6312,61 @@
             }
         },
         {
+            "name": "drupal/spamspan",
+            "version": "1.0.0",
+            "source": {
+                "type": "git",
+                "url": "https://git.drupal.org/project/spamspan",
+                "reference": "8.x-1.0"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://ftp.drupal.org/files/projects/spamspan-8.x-1.0.zip",
+                "reference": "8.x-1.0",
+                "shasum": "1f13dbf3a907fbc19878f05674ae29897b88b0ab"
+            },
+            "require": {
+                "drupal/core": "~8.1"
+            },
+            "type": "drupal-module",
+            "extra": {
+                "branch-alias": {
+                    "dev-1.x": "1.x-dev"
+                },
+                "drupal": {
+                    "version": "8.x-1.0",
+                    "datestamp": "1549358285",
+                    "security-coverage": {
+                        "status": "covered",
+                        "message": "Covered by Drupal's security advisory policy"
+                    }
+                }
+            },
+            "notification-url": "https://packages.drupal.org/8/downloads",
+            "license": [
+                "GPL-2.0+"
+            ],
+            "authors": [
+                {
+                    "name": "lakka",
+                    "homepage": "https://www.drupal.org/user/63367"
+                },
+                {
+                    "name": "peterx",
+                    "homepage": "https://www.drupal.org/user/23516"
+                },
+                {
+                    "name": "vitalie",
+                    "homepage": "https://www.drupal.org/user/175134"
+                }
+            ],
+            "description": "The SpamSpan module obfuscates email addresses to help prevent spambots from collecting them. It implements the technique at http://www.spamspan.com.",
+            "homepage": "http://drupal.org/project/spamspan",
+            "support": {
+                "source": "http://cgit.drupalcode.org/spamspan"
+            }
+        },
+        {
             "name": "drupal/tmgmt",
             "version": "1.6.0",
             "source": {
@@ -6538,6 +6711,53 @@
             "homepage": "https://www.drupal.org/project/views_infinite_scroll",
             "support": {
                 "source": "http://cgit.drupalcode.org/views_infinite_scroll"
+            }
+        },
+        {
+            "name": "drupal/views_rows_wrapper",
+            "version": "1.1.0",
+            "source": {
+                "type": "git",
+                "url": "https://git.drupal.org/project/views_rows_wrapper",
+                "reference": "8.x-1.1"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://ftp.drupal.org/files/projects/views_rows_wrapper-8.x-1.1.zip",
+                "reference": "8.x-1.1",
+                "shasum": "f6e538133a185b7e006ff8c7bd2e5515e9775835"
+            },
+            "require": {
+                "drupal/core": "*"
+            },
+            "type": "drupal-module",
+            "extra": {
+                "branch-alias": {
+                    "dev-1.x": "1.x-dev"
+                },
+                "drupal": {
+                    "version": "8.x-1.1",
+                    "datestamp": "1541614380",
+                    "security-coverage": {
+                        "status": "covered",
+                        "message": "Covered by Drupal's security advisory policy"
+                    }
+                }
+            },
+            "notification-url": "https://packages.drupal.org/8/downloads",
+            "license": [
+                "GPL-2.0-or-later"
+            ],
+            "authors": [
+                {
+                    "name": "Polarwinds",
+                    "homepage": "https://www.drupal.org/user/3554061"
+                }
+            ],
+            "description": "The view style plugin, that combines result rows into sets, wrapped by HTML element and attribute.",
+            "homepage": "https://www.drupal.org/project/views_rows_wrapper",
+            "support": {
+                "source": "http://cgit.drupalcode.org/views_rows_wrapper"
             }
         },
         {
@@ -12861,6 +13081,7 @@
         "drupal/cer": 15,
         "drupal/conditional_fields": 15,
         "drupal/config_tools": 15,
+        "drupal/context": 20,
         "drupal/datetime_extras": 20,
         "drupal/filefield_paths": 20,
         "drupal/geocoder": 10,
@@ -12869,6 +13090,7 @@
         "drupal/leaflet": 10,
         "drupal/migrate_run": 10,
         "drupal/name": 5,
+        "drupal/obfuscate": 15,
         "drupal/optional_end_date": 10,
         "drupal/paragraphs": 20,
         "drupal/slick_views": 5,

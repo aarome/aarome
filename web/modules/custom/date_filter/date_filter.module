@@ -16,7 +16,7 @@ function date_filter_help($route_name, RouteMatchInterface $route_match) {
     case 'help.page.date_filter':
       $output = '';
       $output .= '<h3>' . t('About') . '</h3>';
-      $output .= '<p>' . t('Provides a custom date filter for news and events.') . '</p>';
+      $output .= '<p>' . t('Provides a custom date filter for news, events, people.') . '</p>';
       return $output;
 
     default:
@@ -30,14 +30,14 @@ use Drupal\Core\StringTranslation\TranslatableMarkup;
  * Implements hook_form_FORM_ID_alter().
  */
 function date_filter_views_exposed_form_alter(&$form, FormStateInterface $form_state, $form_id) {
-  if (isset($form['#id']) && $form['#id'] == 'views-exposed-form-news-events-press-lists-page-events-list') {
+  if (isset($form['#id']) && $form['#id'] == 'views-exposed-form-directory-simple-page-simple-directory') {
     $options = [
       'all' => t('- Any -'),
-      '2015' => '2015',
-      '2016' => '2016',
-      '2017' => '2017',
-      '2018' => '2018',
       '2019' => '2019',
+      '2018' => '2018',
+      '2017' => '2017',
+      '2016' => '2016',
+      '2015' => '2015',
     ];
 
     $form['year'] = [
@@ -45,7 +45,7 @@ function date_filter_views_exposed_form_alter(&$form, FormStateInterface $form_s
       '#type' => 'select',
       '#options' => $options,
       '#size' => NULL,
-      '#default_value' => 'all',
+      '#default_value' => 'All',
     ];
   }
 }
