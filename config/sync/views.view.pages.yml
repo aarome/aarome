@@ -3482,7 +3482,7 @@ display:
         operator: AND
         groups:
           1: AND
-      enabled: true
+      enabled: false
       arguments:
         field_safe_path_alias_value:
           id: field_safe_path_alias_value
