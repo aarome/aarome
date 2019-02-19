@@ -2407,7 +2407,7 @@ display:
           value:
             min: ''
             max: ''
-            value: '28'
+            value: '35'
           group: 1
           exposed: false
           expose:
