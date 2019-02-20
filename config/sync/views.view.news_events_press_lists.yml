@@ -25,7 +25,6 @@ dependencies:
     - taxonomy.vocabulary.society_of_fellows_types
   content:
     - 'taxonomy_term:event_types:59a9e259-ff9c-4054-8dad-60bf6b74f5c6'
-    - 'taxonomy_term:event_types:d31b7607-e292-4ca2-986c-1c63142ec4ff'
     - 'taxonomy_term:society_of_fellows_types:1b6536a7-5019-4181-8d43-99cec05f9448'
     - 'taxonomy_term:society_of_fellows_types:4a4e01d9-dbd3-490a-9d44-2122f342181d'
     - 'taxonomy_term:society_of_fellows_types:915be594-3dc8-416a-806b-9074f9fb3f1f'
@@ -1226,6 +1225,9 @@ display:
         arguments: false
         pager: false
         exposed_form: false
+        use_more: false
+        use_more_always: false
+        use_more_text: false
       filters:
         status:
           value: '1'
@@ -1914,7 +1916,7 @@ display:
       pager:
         type: infinite_scroll
         options:
-          items_per_page: 10
+          items_per_page: 12
           offset: 0
           id: 0
           total_pages: null
@@ -1931,7 +1933,7 @@ display:
             offset_label: Offset
           views_infinite_scroll:
             button_text: 'Load More'
-            automatically_load_content: true
+            automatically_load_content: false
       exposed_form:
         type: basic
         options:
@@ -1942,6 +1944,9 @@ display:
           expose_sort_order: false
           sort_asc_label: Asc
           sort_desc_label: Desc
+      use_more: false
+      use_more_always: false
+      use_more_text: more
     cache_metadata:
       max-age: -1
       contexts:
