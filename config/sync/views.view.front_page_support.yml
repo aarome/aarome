@@ -9,7 +9,6 @@ dependencies:
     - image.style.max_650x650
   module:
     - computed_field
-    - datetime
     - image
     - media
     - node
@@ -2301,7 +2300,7 @@ display:
           value:
             min: ''
             max: ''
-            value: '2417'
+            value: '4002'
           group: 1
           exposed: false
           expose:
@@ -2338,20 +2337,7 @@ display:
         operator: AND
         groups:
           1: AND
-      sorts:
-        field_events_event_dates_value:
-          id: field_events_event_dates_value
-          table: node__field_events_event_dates
-          field: field_events_event_dates_value
-          relationship: none
-          group_type: group
-          admin_label: ''
-          order: DESC
-          exposed: false
-          expose:
-            label: ''
-          plugin_id: datetime
-          entity_type: node
+      sorts: {  }
       fields:
         field_safe_path_alias:
           id: field_safe_path_alias
