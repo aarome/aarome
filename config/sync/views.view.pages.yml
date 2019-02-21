@@ -8,6 +8,7 @@ dependencies:
     - field.storage.node.field_page_page_section
     - field.storage.node.field_safe_path_alias
     - node.type.page
+    - responsive_image.styles.wide
     - taxonomy.vocabulary.page_types
   content:
     - 'taxonomy_term:page_types:12534f24-edbd-4c63-9c11-00ba0553213d'
@@ -23,6 +24,7 @@ dependencies:
     - image
     - media
     - node
+    - responsive_image
     - taxonomy
     - text
     - user
@@ -1605,6 +1607,7 @@ display:
         filter_groups: false
         fields: false
         css_class: true
+        title: false
       rendering_language: '***LANGUAGE_language_interface***'
       filters:
         status:
@@ -1716,7 +1719,7 @@ display:
           group_type: group
           admin_label: ''
           label: ''
-          exclude: false
+          exclude: true
           alter:
             alter_text: false
             text: ''
@@ -1822,9 +1825,9 @@ display:
           empty_zero: false
           hide_alter_empty: true
           click_sort_column: target_id
-          type: image
+          type: responsive_image
           settings:
-            image_style: ''
+            responsive_image_style: wide
             image_link: ''
           group_column: ''
           group_columns: {  }
@@ -1962,6 +1965,7 @@ display:
           separator: ' '
           field_api_classes: false
           plugin_id: field
+      title: '{{ title }}'
     cache_metadata:
       max-age: -1
       contexts:
