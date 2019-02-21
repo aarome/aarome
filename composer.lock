@@ -4,7 +4,7 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#installing-dependencies",
         "This file is @generated automatically"
     ],
-    "content-hash": "28ad431986997ead3e51076eef7892b9",
+    "content-hash": "e9c124698633f195b477d38e9298c0d3",
     "packages": [
         {
             "name": "alchemy/zippy",
@@ -5988,6 +5988,124 @@
             }
         },
         {
+            "name": "drupal/responsive_favicons",
+            "version": "1.4.0",
+            "source": {
+                "type": "git",
+                "url": "https://git.drupal.org/project/responsive_favicons",
+                "reference": "8.x-1.4"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://ftp.drupal.org/files/projects/responsive_favicons-8.x-1.4.zip",
+                "reference": "8.x-1.4",
+                "shasum": "966d4d20b8bb41ecef8a3d9fa87777926eea3542"
+            },
+            "require": {
+                "drupal/core": "~8.0"
+            },
+            "type": "drupal-module",
+            "extra": {
+                "branch-alias": {
+                    "dev-1.x": "1.x-dev"
+                },
+                "drupal": {
+                    "version": "8.x-1.4",
+                    "datestamp": "1495624384",
+                    "security-coverage": {
+                        "status": "covered",
+                        "message": "Covered by Drupal's security advisory policy"
+                    }
+                }
+            },
+            "notification-url": "https://packages.drupal.org/8/downloads",
+            "license": [
+                "GPL-2.0+"
+            ],
+            "authors": [
+                {
+                    "name": "liuba",
+                    "homepage": "https://www.drupal.org/user/318617"
+                },
+                {
+                    "name": "wiifm",
+                    "homepage": "https://www.drupal.org/user/358731"
+                }
+            ],
+            "description": "Add responsive favicons to your site based on the code from http://realfavicongenerator.net/",
+            "homepage": "https://www.drupal.org/project/responsive_favicons",
+            "keywords": [
+                "Drupal",
+                "Favicon",
+                "realfavicongenerator"
+            ],
+            "support": {
+                "source": "http://cgit.drupalcode.org/responsive_favicons",
+                "issues": "https://www.drupal.org/project/issues/responsive_favicons"
+            }
+        },
+        {
+            "name": "drupal/rules",
+            "version": "3.0.0-alpha4",
+            "source": {
+                "type": "git",
+                "url": "https://git.drupal.org/project/rules",
+                "reference": "8.x-3.0-alpha4"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://ftp.drupal.org/files/projects/rules-8.x-3.0-alpha4.zip",
+                "reference": "8.x-3.0-alpha4",
+                "shasum": "d6f11a6bd867b3479504b00278b4465a5b138d3a"
+            },
+            "require": {
+                "drupal/core": "~8.0",
+                "drupal/typed_data": "*"
+            },
+            "require-dev": {
+                "dealerdirect/phpcodesniffer-composer-installer": "dev-master",
+                "drupal/coder": "8.2.*",
+                "squizlabs/php_codesniffer": "2.9.*"
+            },
+            "type": "drupal-module",
+            "extra": {
+                "branch-alias": {
+                    "dev-3.x": "3.x-dev"
+                },
+                "drupal": {
+                    "version": "8.x-3.0-alpha4",
+                    "datestamp": "1526654284",
+                    "security-coverage": {
+                        "status": "not-covered",
+                        "message": "Alpha releases are not covered by Drupal security advisories."
+                    }
+                }
+            },
+            "notification-url": "https://packages.drupal.org/8/downloads",
+            "license": [
+                "GPL-2.0+"
+            ],
+            "authors": [
+                {
+                    "name": "TR",
+                    "homepage": "https://www.drupal.org/user/202830"
+                },
+                {
+                    "name": "fago",
+                    "homepage": "https://www.drupal.org/user/16747"
+                },
+                {
+                    "name": "klausi",
+                    "homepage": "https://www.drupal.org/user/262198"
+                }
+            ],
+            "description": "React on events and conditionally evaluate actions.",
+            "homepage": "https://www.drupal.org/project/rules",
+            "support": {
+                "source": "http://cgit.drupalcode.org/rules"
+            }
+        },
+        {
             "name": "drupal/search_api",
             "version": "1.11.0",
             "source": {
@@ -6563,6 +6681,63 @@
             "homepage": "https://www.drupal.org/project/toolbar_anti_flicker",
             "support": {
                 "source": "http://cgit.drupalcode.org/toolbar_anti_flicker"
+            }
+        },
+        {
+            "name": "drupal/typed_data",
+            "version": "1.0.0-alpha2",
+            "source": {
+                "type": "git",
+                "url": "https://git.drupal.org/project/typed_data",
+                "reference": "8.x-1.0-alpha2"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://ftp.drupal.org/files/projects/typed_data-8.x-1.0-alpha2.zip",
+                "reference": "8.x-1.0-alpha2",
+                "shasum": "a4e5f9fe5ad5842c335414ae2cbfb2aed69ef0fe"
+            },
+            "require": {
+                "drupal/core": "~8.0"
+            },
+            "require-dev": {
+                "dealerdirect/phpcodesniffer-composer-installer": "dev-master",
+                "drupal/coder": "8.2.*",
+                "squizlabs/php_codesniffer": "2.9.*",
+                "symfony/yaml": "3.*"
+            },
+            "type": "drupal-module",
+            "extra": {
+                "branch-alias": {
+                    "dev-1.x": "1.x-dev"
+                },
+                "drupal": {
+                    "version": "8.x-1.0-alpha2",
+                    "datestamp": "1536437580",
+                    "security-coverage": {
+                        "status": "not-covered",
+                        "message": "Alpha releases are not covered by Drupal security advisories."
+                    }
+                }
+            },
+            "notification-url": "https://packages.drupal.org/8/downloads",
+            "license": [
+                "GPL-2.0+"
+            ],
+            "authors": [
+                {
+                    "name": "TR",
+                    "homepage": "https://www.drupal.org/user/202830"
+                },
+                {
+                    "name": "fago",
+                    "homepage": "https://www.drupal.org/user/16747"
+                }
+            ],
+            "description": "Extends the core Typed Data API with new APIS and features.",
+            "homepage": "https://www.drupal.org/project/typed_data",
+            "support": {
+                "source": "http://cgit.drupalcode.org/typed_data"
             }
         },
         {
@@ -12261,6 +12436,7 @@
                 "mock",
                 "xunit"
             ],
+            "abandoned": true,
             "time": "2018-08-09T05:50:03+00:00"
         },
         {
@@ -13093,7 +13269,9 @@
         "drupal/obfuscate": 15,
         "drupal/optional_end_date": 10,
         "drupal/paragraphs": 20,
+        "drupal/rules": 15,
         "drupal/slick_views": 5,
+        "drupal/typed_data": 15,
         "drupal/views_fieldset": 20,
         "drupal/views_url_path_arguments": 20,
         "drupal/webform": 5,
