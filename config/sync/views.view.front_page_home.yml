@@ -11,10 +11,10 @@ dependencies:
     - field.storage.paragraph.field_affil_discipline
     - field.storage.paragraph.field_page_section_links
     - field.storage.taxonomy_term.field_affiliation_types_plural
+    - image.style.portrait
     - node.type.events
     - node.type.news_features
     - node.type.people
-    - responsive_image.styles.narrow
     - responsive_image.styles.wide
     - taxonomy.vocabulary.affiliation_types
   content:
@@ -1282,9 +1282,9 @@ display:
           empty_zero: false
           hide_alter_empty: true
           click_sort_column: target_id
-          type: responsive_image
+          type: image
           settings:
-            responsive_image_style: narrow
+            image_style: portrait
             image_link: ''
           group_column: ''
           group_columns: {  }
@@ -2663,9 +2663,9 @@ display:
           empty_zero: false
           hide_alter_empty: true
           click_sort_column: target_id
-          type: responsive_image
+          type: image
           settings:
-            responsive_image_style: narrow
+            image_style: portrait
             image_link: ''
           group_column: ''
           group_columns: {  }
