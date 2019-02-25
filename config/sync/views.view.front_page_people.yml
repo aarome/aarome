@@ -6,18 +6,18 @@ dependencies:
     - field.storage.media.field_media_image
     - field.storage.node.field_page_summary
     - field.storage.node.field_safe_path_alias
-    - image.style.max_650x650
     - node.type.page
     - node.type.people
+    - responsive_image.styles.narrow
     - taxonomy.vocabulary.page_types
   content:
     - 'taxonomy_term:page_types:27175096-ffbf-4c16-b4c8-d9a6508afb1f'
     - 'taxonomy_term:page_types:97bfc54e-22a4-40b9-bab6-ee465270fd20'
   module:
     - computed_field
-    - image
     - media
     - node
+    - responsive_image
     - taxonomy
     - text
     - user
@@ -195,9 +195,9 @@ display:
           empty_zero: false
           hide_alter_empty: true
           click_sort_column: target_id
-          type: image
+          type: responsive_image
           settings:
-            image_style: max_650x650
+            responsive_image_style: narrow
             image_link: ''
           group_column: ''
           group_columns: {  }

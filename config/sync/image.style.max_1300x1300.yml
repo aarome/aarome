@@ -17,4 +17,4 @@ effects:
     data:
       width: 1300
       height: 746
-      upscale: false
+      upscale: true

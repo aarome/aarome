@@ -3,7 +3,7 @@ langcode: en
 status: true
 dependencies:
   config:
-    - image.style.portrait
+    - image.style.max_1300x1300
 _core:
   default_config_hash: xAduWBNBoi9WKBMCoVIKSueNYqPK84SiiZwQYKPbkaE
 id: narrow
@@ -12,7 +12,10 @@ image_style_mappings:
   -
     breakpoint_id: responsive_image.viewport_sizing
     multiplier: 1x
-    image_mapping_type: image_style
-    image_mapping: portrait
+    image_mapping_type: sizes
+    image_mapping:
+      sizes: '(max-width:1090px) 100vw'
+      sizes_image_styles:
+        - max_1300x1300
 breakpoint_group: responsive_image
-fallback_image_style: portrait
+fallback_image_style: '_original image_'
