@@ -21,8 +21,12 @@ dependencies:
   module:
     - computed_field
     - datetime_range
+    - layout_builder
     - text
     - user
+third_party_settings:
+  layout_builder:
+    sections: {  }
 id: node.events.default
 targetEntityType: node
 bundle: events
@@ -66,7 +70,7 @@ content:
     weight: 1
     label: hidden
     settings:
-      view_mode: default
+      view_mode: event_front
       link: false
     third_party_settings: {  }
     region: content
