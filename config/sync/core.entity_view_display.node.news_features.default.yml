@@ -13,8 +13,12 @@ dependencies:
     - node.type.news_features
   module:
     - datetime
+    - layout_builder
     - text
     - user
+third_party_settings:
+  layout_builder:
+    sections: {  }
 id: node.news_features.default
 targetEntityType: node
 bundle: news_features
@@ -41,7 +45,7 @@ content:
     weight: 6
     label: hidden
     settings:
-      view_mode: default
+      view_mode: news_front
       link: false
     third_party_settings: {  }
     region: content
