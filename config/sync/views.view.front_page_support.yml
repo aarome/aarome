@@ -6,11 +6,9 @@ dependencies:
     - field.storage.media.field_media_image
     - field.storage.node.field_page_summary
     - field.storage.node.field_safe_path_alias
-    - image.style.max_650x650
-    - responsive_image.styles.narrow
+    - responsive_image.styles.section_front
   module:
     - computed_field
-    - image
     - media
     - node
     - responsive_image
@@ -149,12 +147,12 @@ display:
           group_type: group
           admin_label: ''
           label: ''
-          exclude: true
+          exclude: false
           alter:
             alter_text: false
             text: ''
-            make_link: false
-            path: ''
+            make_link: true
+            path: '/support/{{ field_safe_path_alias }}'
             absolute: false
             external: false
             replace_spaces: false
@@ -190,9 +188,9 @@ display:
           empty_zero: false
           hide_alter_empty: true
           click_sort_column: target_id
-          type: image
+          type: responsive_image
           settings:
-            image_style: max_650x650
+            responsive_image_style: section_front
             image_link: ''
           group_column: ''
           group_columns: {  }
@@ -392,9 +390,9 @@ display:
           exclude: false
           alter:
             alter_text: true
-            text: "<figure>{{ field_media_image }}</figure>\r\n<h2>{{ title }}</h2>\r\n<section>{{ field_page_summary }}</section>\r\n<div class=\"more\">{{ nothing_1 }}</div>"
+            text: "<h2>{{ title }}</h2>\r\n<section>{{ field_page_summary }}</section>\r\n<div class=\"more\">{{ nothing_1 }}</div>"
             make_link: true
-            path: /support/
+            path: '/support/{{ field_safe_path_alias }}'
             absolute: false
             external: false
             replace_spaces: false
@@ -803,12 +801,12 @@ display:
           group_type: group
           admin_label: ''
           label: ''
-          exclude: true
+          exclude: false
           alter:
             alter_text: false
             text: ''
-            make_link: false
-            path: ''
+            make_link: true
+            path: '/support/{{ field_safe_path_alias }}'
             absolute: false
             external: false
             replace_spaces: false
@@ -846,7 +844,7 @@ display:
           click_sort_column: target_id
           type: responsive_image
           settings:
-            responsive_image_style: narrow
+            responsive_image_style: section_front
             image_link: ''
           group_column: ''
           group_columns: {  }
@@ -1046,7 +1044,7 @@ display:
           exclude: false
           alter:
             alter_text: true
-            text: "<figure>{{ field_media_image }}</figure>\r\n<h2>{{ title }}</h2>\r\n<section>{{ field_page_summary }}</section>\r\n<div class=\"more\">{{ nothing_1 }}</div>"
+            text: "<h2>{{ title }}</h2>\r\n<section>{{ field_page_summary }}</section>\r\n<div class=\"more\">{{ nothing_1 }}</div>"
             make_link: true
             path: /support/corporate
             absolute: false
@@ -1341,12 +1339,12 @@ display:
           group_type: group
           admin_label: ''
           label: ''
-          exclude: true
+          exclude: false
           alter:
             alter_text: false
             text: ''
-            make_link: false
-            path: ''
+            make_link: true
+            path: '/support/{{ field_safe_path_alias }}'
             absolute: false
             external: false
             replace_spaces: false
@@ -1384,7 +1382,7 @@ display:
           click_sort_column: target_id
           type: responsive_image
           settings:
-            responsive_image_style: narrow
+            responsive_image_style: section_front
             image_link: ''
           group_column: ''
           group_columns: {  }
@@ -1584,7 +1582,7 @@ display:
           exclude: false
           alter:
             alter_text: true
-            text: "<figure>{{ field_media_image }}</figure>\r\n<h2>{{ title }}</h2>\r\n<section>{{ field_page_summary }}</section>\r\n<div class=\"more\">{{ nothing_1 }}</div>"
+            text: "<h2>{{ title }}</h2>\r\n<section>{{ field_page_summary }}</section>\r\n<div class=\"more\">{{ nothing_1 }}</div>"
             make_link: true
             path: /support/donate
             absolute: false
@@ -1876,12 +1874,12 @@ display:
           group_type: group
           admin_label: ''
           label: ''
-          exclude: true
+          exclude: false
           alter:
             alter_text: false
             text: ''
-            make_link: false
-            path: ''
+            make_link: true
+            path: '/support/{{ field_safe_path_alias }}'
             absolute: false
             external: false
             replace_spaces: false
@@ -1919,7 +1917,7 @@ display:
           click_sort_column: target_id
           type: responsive_image
           settings:
-            responsive_image_style: narrow
+            responsive_image_style: section_front
             image_link: ''
           group_column: ''
           group_columns: {  }
@@ -2119,7 +2117,7 @@ display:
           exclude: false
           alter:
             alter_text: true
-            text: "<figure>{{ field_media_image }}</figure>\r\n<h2>{{ title }}</h2>\r\n<section>{{ field_page_summary }}</section>\r\n<div class=\"more\">{{ nothing_1 }}</div>"
+            text: "<h2>{{ title }}</h2>\r\n<section>{{ field_page_summary }}</section>\r\n<div class=\"more\">{{ nothing_1 }}</div>"
             make_link: true
             path: /support/support-opportunities
             absolute: false
@@ -2414,12 +2412,12 @@ display:
           group_type: group
           admin_label: ''
           label: ''
-          exclude: true
+          exclude: false
           alter:
             alter_text: false
             text: ''
-            make_link: false
-            path: ''
+            make_link: true
+            path: '/support/{{ field_safe_path_alias }}'
             absolute: false
             external: false
             replace_spaces: false
@@ -2457,7 +2455,7 @@ display:
           click_sort_column: target_id
           type: responsive_image
           settings:
-            responsive_image_style: narrow
+            responsive_image_style: section_front
             image_link: ''
           group_column: ''
           group_columns: {  }
@@ -2657,7 +2655,7 @@ display:
           exclude: false
           alter:
             alter_text: true
-            text: "<figure>{{ field_media_image }}</figure>\r\n<h2>{{ title }}</h2>\r\n<section>{{ field_page_summary }}</section>\r\n<div class=\"more\">{{ nothing_1 }}</div>"
+            text: "<h2>{{ title }}</h2>\r\n<section>{{ field_page_summary }}</section>\r\n<div class=\"more\">{{ nothing_1 }}</div>"
             make_link: true
             path: /support/galas
             absolute: false
@@ -2949,12 +2947,12 @@ display:
           group_type: group
           admin_label: ''
           label: ''
-          exclude: true
+          exclude: false
           alter:
             alter_text: false
             text: ''
-            make_link: false
-            path: ''
+            make_link: true
+            path: '/support/{{ field_safe_path_alias }}'
             absolute: false
             external: false
             replace_spaces: false
@@ -2992,7 +2990,7 @@ display:
           click_sort_column: target_id
           type: responsive_image
           settings:
-            responsive_image_style: narrow
+            responsive_image_style: section_front
             image_link: ''
           group_column: ''
           group_columns: {  }
@@ -3192,7 +3190,7 @@ display:
           exclude: false
           alter:
             alter_text: true
-            text: "<figure>{{ field_media_image }}</figure>\r\n<h2>{{ title }}</h2>\r\n<section>{{ field_page_summary }}</section>\r\n<div class=\"more\">{{ nothing_1 }}</div>"
+            text: "<h2>{{ title }}</h2>\r\n<section>{{ field_page_summary }}</section>\r\n<div class=\"more\">{{ nothing_1 }}</div>"
             make_link: true
             path: /support/join-renew
             absolute: false
@@ -3485,12 +3483,12 @@ display:
           group_type: group
           admin_label: ''
           label: ''
-          exclude: true
+          exclude: false
           alter:
             alter_text: false
             text: ''
-            make_link: false
-            path: ''
+            make_link: true
+            path: '/support/{{ field_safe_path_alias }}'
             absolute: false
             external: false
             replace_spaces: false
@@ -3528,7 +3526,7 @@ display:
           click_sort_column: target_id
           type: responsive_image
           settings:
-            responsive_image_style: narrow
+            responsive_image_style: section_front
             image_link: ''
           group_column: ''
           group_columns: {  }
@@ -3728,7 +3726,7 @@ display:
           exclude: false
           alter:
             alter_text: true
-            text: "<figure>{{ field_media_image }}</figure>\r\n<h2>{{ title }}</h2>\r\n<section>{{ field_page_summary }}</section>\r\n<div class=\"more\">{{ nothing_1 }}</div>"
+            text: "<h2>{{ title }}</h2>\r\n<section>{{ field_page_summary }}</section>\r\n<div class=\"more\">{{ nothing_1 }}</div>"
             make_link: true
             path: /support/planned-giving
             absolute: false

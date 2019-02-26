@@ -8,6 +8,7 @@ dependencies:
     - field.storage.node.field_page_page_section
     - field.storage.node.field_safe_path_alias
     - node.type.page
+    - responsive_image.styles.inside_page
     - responsive_image.styles.wide
     - taxonomy.vocabulary.page_types
   content:
@@ -1401,9 +1402,9 @@ display:
           empty_zero: false
           hide_alter_empty: true
           click_sort_column: target_id
-          type: image
+          type: responsive_image
           settings:
-            image_style: ''
+            responsive_image_style: inside_page
             image_link: ''
           group_column: ''
           group_columns: {  }

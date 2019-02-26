@@ -8,6 +8,7 @@ dependencies:
     - field.storage.node.field_safe_path_alias
     - node.type.page
     - responsive_image.styles.narrow
+    - responsive_image.styles.section_front
     - taxonomy.vocabulary.page_types
   content:
     - 'taxonomy_term:page_types:f6e0c726-1ec0-4b4d-afcf-a9452d65339b'
@@ -217,12 +218,12 @@ display:
           group_type: group
           admin_label: ''
           label: ''
-          exclude: true
+          exclude: false
           alter:
             alter_text: false
             text: ''
-            make_link: false
-            path: '/apply/{{ title_1| lower | replace({'' '':''-''}) }}'
+            make_link: true
+            path: '/news/{{ field_safe_path_alias }}'
             absolute: false
             external: false
             replace_spaces: false
@@ -245,7 +246,7 @@ display:
             trim: false
             preserve_tags: ''
             html: false
-          element_type: figure
+          element_type: ''
           element_class: ''
           element_label_type: ''
           element_label_class: ''
@@ -260,7 +261,7 @@ display:
           click_sort_column: target_id
           type: responsive_image
           settings:
-            responsive_image_style: narrow
+            responsive_image_style: section_front
             image_link: ''
           group_column: ''
           group_columns: {  }
@@ -460,7 +461,7 @@ display:
           exclude: false
           alter:
             alter_text: true
-            text: "<figure>{{ field_media_image }}</figure>\n<h2>{{ title }}</h2>\n<section>{{ field_page_summary }}</section>\n<div class=\"more\">{{ nothing }}</div>"
+            text: "<h2>{{ title }}</h2>\r\n<section>{{ field_page_summary }}</section>\r\n<div class=\"more\">{{ nothing }}</div>"
             make_link: true
             path: '/news/{{ field_safe_path_alias }}'
             absolute: false
@@ -2341,12 +2342,12 @@ display:
           group_type: group
           admin_label: ''
           label: ''
-          exclude: true
+          exclude: false
           alter:
             alter_text: false
             text: ''
-            make_link: false
-            path: '/apply/{{ title_1| lower | replace({'' '':''-''}) }}'
+            make_link: true
+            path: /press/coverage
             absolute: false
             external: false
             replace_spaces: false
@@ -2369,7 +2370,7 @@ display:
             trim: false
             preserve_tags: ''
             html: false
-          element_type: figure
+          element_type: ''
           element_class: ''
           element_label_type: ''
           element_label_class: ''
@@ -2384,7 +2385,7 @@ display:
           click_sort_column: target_id
           type: responsive_image
           settings:
-            responsive_image_style: narrow
+            responsive_image_style: section_front
             image_link: ''
           group_column: ''
           group_columns: {  }
@@ -2584,7 +2585,7 @@ display:
           exclude: false
           alter:
             alter_text: true
-            text: "<figure>{{ field_media_image }}</figure>\r\n<h2>{{ title }}</h2>\r\n<section>{{ field_page_summary }}</section>\r\n<div class=\"more\">{{ nothing }}</div>"
+            text: "<h2>{{ title }}</h2>\r\n<section>{{ field_page_summary }}</section>\r\n<div class=\"more\">{{ nothing }}</div>"
             make_link: true
             path: /press/coverage
             absolute: false
@@ -2940,12 +2941,12 @@ display:
           group_type: group
           admin_label: ''
           label: ''
-          exclude: true
+          exclude: false
           alter:
             alter_text: false
             text: ''
-            make_link: false
-            path: '/apply/{{ title_1| lower | replace({'' '':''-''}) }}'
+            make_link: true
+            path: /press/releases
             absolute: false
             external: false
             replace_spaces: false
@@ -2983,7 +2984,7 @@ display:
           click_sort_column: target_id
           type: responsive_image
           settings:
-            responsive_image_style: narrow
+            responsive_image_style: section_front
             image_link: ''
           group_column: ''
           group_columns: {  }
@@ -3183,9 +3184,9 @@ display:
           exclude: false
           alter:
             alter_text: true
-            text: "<figure>{{ field_media_image }}</figure>\r\n<h2>{{ title }}</h2>\r\n<section>{{ field_page_summary }}</section>\r\n<div class=\"more\">{{ nothing }}</div>"
+            text: "<h2>{{ title }}</h2>\r\n<section>{{ field_page_summary }}</section>\r\n<div class=\"more\">{{ nothing }}</div>"
             make_link: true
-            path: /press/press-releases
+            path: /press/releases
             absolute: false
             external: false
             replace_spaces: false
@@ -3543,8 +3544,8 @@ display:
           alter:
             alter_text: false
             text: ''
-            make_link: false
-            path: '/apply/{{ title_1| lower | replace({'' '':''-''}) }}'
+            make_link: true
+            path: /news/quick-news
             absolute: false
             external: false
             replace_spaces: false
@@ -3567,7 +3568,7 @@ display:
             trim: false
             preserve_tags: ''
             html: false
-          element_type: figure
+          element_type: ''
           element_class: ''
           element_label_type: ''
           element_label_class: ''
@@ -3582,7 +3583,7 @@ display:
           click_sort_column: target_id
           type: responsive_image
           settings:
-            responsive_image_style: narrow
+            responsive_image_style: section_front
             image_link: ''
           group_column: ''
           group_columns: {  }
@@ -3782,7 +3783,7 @@ display:
           exclude: false
           alter:
             alter_text: true
-            text: "<figure>{{ field_media_image }}</figure>\r\n<h2>{{ title }}</h2>\r\n<section>{{ field_page_summary }}</section>\r\n<div class=\"more\">{{ nothing }}</div>"
+            text: "<h2>{{ title }}</h2>\r\n<section>{{ field_page_summary }}</section>\r\n<div class=\"more\">{{ nothing }}</div>"
             make_link: true
             path: /news/quick-news
             absolute: false

@@ -1,0 +1,18 @@
+uuid: 57236d00-67d3-4756-908f-9ffb93b5f1de
+langcode: en
+status: true
+dependencies:
+  config:
+    - image.style.max_1440x1440
+  theme:
+    - tema
+id: inside_page
+label: 'Inside page'
+image_style_mappings:
+  -
+    breakpoint_id: tema.extra-large
+    multiplier: 1x
+    image_mapping_type: image_style
+    image_mapping: max_1440x1440
+breakpoint_group: tema
+fallback_image_style: '_empty image_'
