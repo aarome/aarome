@@ -8,7 +8,7 @@ dependencies:
     - field.storage.node.field_safe_path_alias
     - image.style.max_650x650
     - node.type.page
-    - responsive_image.styles.narrow
+    - responsive_image.styles.section_front
     - taxonomy.vocabulary.page_types
   content:
     - 'taxonomy_term:page_types:12534f24-edbd-4c63-9c11-00ba0553213d'
@@ -154,11 +154,11 @@ display:
           group_type: group
           admin_label: ''
           label: ''
-          exclude: true
+          exclude: false
           alter:
             alter_text: false
             text: ''
-            make_link: false
+            make_link: true
             path: '/apply/{{ field_safe_path_alias }}'
             absolute: false
             external: false
@@ -197,7 +197,7 @@ display:
           click_sort_column: target_id
           type: responsive_image
           settings:
-            responsive_image_style: narrow
+            responsive_image_style: section_front
             image_link: ''
           group_column: ''
           group_columns: {  }
@@ -397,7 +397,7 @@ display:
           exclude: false
           alter:
             alter_text: true
-            text: "<figure>{{ field_media_image }}</figure>\r\n<h2>{{ title }}</h2>\r\n<section>{{ field_page_summary }}</section>\r\n<div class=\"more\">{{ nothing }}</div>"
+            text: "<h2>{{ title }}</h2>\r\n<section>{{ field_page_summary }}</section>\r\n<div class=\"more\">{{ nothing }}</div>"
             make_link: true
             path: '/apply/{{ field_safe_path_alias }}'
             absolute: false

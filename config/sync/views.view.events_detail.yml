@@ -14,6 +14,7 @@ dependencies:
     - field.storage.node.field_safe_path_alias
     - node.type.events
     - node.type.society_of_fellows
+    - responsive_image.styles.inside_page
     - taxonomy.vocabulary.society_of_fellows_types
   content:
     - 'taxonomy_term:society_of_fellows_types:4a4e01d9-dbd3-490a-9d44-2122f342181d'
@@ -25,6 +26,7 @@ dependencies:
     - image
     - media
     - node
+    - responsive_image
     - slick_views
     - taxonomy
     - text
@@ -2912,9 +2914,9 @@ display:
           empty_zero: false
           hide_alter_empty: true
           click_sort_column: target_id
-          type: image
+          type: responsive_image
           settings:
-            image_style: ''
+            responsive_image_style: inside_page
             image_link: ''
           group_column: ''
           group_columns: {  }
