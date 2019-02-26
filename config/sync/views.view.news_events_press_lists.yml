@@ -101,10 +101,10 @@ display:
       pager:
         type: infinite_scroll
         options:
-          items_per_page: 10
+          items_per_page: 12
           offset: 0
           id: 0
-          total_pages: 1
+          total_pages: null
           tags:
             previous: ‹‹
             next: ››
@@ -1446,12 +1446,12 @@ display:
           group_type: group
           admin_label: ''
           label: ''
-          exclude: true
+          exclude: false
           alter:
             alter_text: false
             text: ''
-            make_link: false
-            path: ''
+            make_link: true
+            path: '/events/{{ field_safe_path_alias }}'
             absolute: false
             external: false
             replace_spaces: false
@@ -1754,7 +1754,7 @@ display:
           exclude: false
           alter:
             alter_text: true
-            text: "<figure>{{ field_events_image }}</figure>\r\n<h2>{{ title }}</h2>\r\n{{ field_events_event_dates }}\r\n<div class=\"more\">{{ nothing }}</div>"
+            text: "<h2>{{ title }}</h2>\r\n{{ field_events_event_dates }}\r\n<div class=\"more\">{{ nothing }}</div>"
             make_link: true
             path: '/events/{{ field_safe_path_alias }}'
             absolute: false
@@ -2242,12 +2242,12 @@ display:
           group_type: group
           admin_label: ''
           label: ''
-          exclude: true
+          exclude: false
           alter:
             alter_text: false
             text: ''
-            make_link: false
-            path: ''
+            make_link: true
+            path: '/events/{{ field_safe_path_alias }}'
             absolute: false
             external: false
             replace_spaces: false
@@ -2550,7 +2550,7 @@ display:
           exclude: false
           alter:
             alter_text: true
-            text: "<figure>{{ field_events_image }}</figure>\r\n<h2>{{ title }}</h2>\r\n{{ field_events_event_dates }}\r\n<div class=\"more\">{{ nothing }}</div>"
+            text: "<h2>{{ title }}</h2>\r\n{{ field_events_event_dates }}\r\n<div class=\"more\">{{ nothing }}</div>"
             make_link: true
             path: '/events/{{ field_safe_path_alias }}'
             absolute: false
@@ -3962,6 +3962,7 @@ display:
                 rewrite:
                   filter_rewrite_values: ''
           text_input_required_format: basic_html
+      enabled: false
     cache_metadata:
       max-age: -1
       contexts:
@@ -4164,12 +4165,12 @@ display:
           group_type: group
           admin_label: ''
           label: ''
-          exclude: true
+          exclude: false
           alter:
             alter_text: false
             text: ''
-            make_link: false
-            path: ''
+            make_link: true
+            path: '/news/features/{{ field_safe_path_alias }}'
             absolute: false
             external: false
             replace_spaces: false
@@ -4207,7 +4208,7 @@ display:
           click_sort_column: target_id
           type: entity_reference_entity_view
           settings:
-            view_mode: default
+            view_mode: news_front
           group_column: target_id
           group_columns: {  }
           group_rows: true
@@ -4470,7 +4471,7 @@ display:
           exclude: false
           alter:
             alter_text: true
-            text: "<figure>{{ field_news_features_images }}</figure>\r\n{{ field_news_features_date }}\r\n<h2>{{ title }}</h2>\r\n<section>{{ field_news_features_summary }}</section>\r\n<div class=\"more\">{{ nothing }}</div>"
+            text: "{{ field_news_features_date }}\r\n<h2>{{ title }}</h2>\r\n<section>{{ field_news_features_summary }}</section>\r\n<div class=\"more\">{{ nothing }}</div>"
             make_link: true
             path: '/news/features/{{ field_safe_path_alias }}'
             absolute: false
@@ -4858,7 +4859,7 @@ display:
           group_type: group
           admin_label: ''
           label: ''
-          exclude: true
+          exclude: false
           alter:
             alter_text: false
             text: ''
@@ -5100,7 +5101,7 @@ display:
           exclude: false
           alter:
             alter_text: true
-            text: "<figure>{{ field_quick_news_image }} </figure>\r\n{{ field_news_features_date }}\r\n<h2>{{ title }}</h2>\r\n<section>{{ field_news_features_summary }}</section>\r\n<div class=\"more\">{{ nothing }}</div>"
+            text: "{{ field_news_features_date }}\r\n<h2>{{ title }}</h2>\r\n<section>{{ field_news_features_summary }}</section>\r\n<div class=\"more\">{{ nothing }}</div>"
             make_link: true
             path: '/news/quick-news/{{ field_safe_path_alias }}'
             absolute: false
@@ -5209,16 +5210,11 @@ display:
           granularity: second
           plugin_id: datetime
       style:
-        type: grid
+        type: default
         options:
           grouping: {  }
-          columns: 2
-          automatic_width: true
-          alignment: horizontal
-          col_class_default: true
-          col_class_custom: ''
-          row_class_default: true
-          row_class_custom: ''
+          row_class: ''
+          default_row_class: false
       row:
         type: fields
         options:

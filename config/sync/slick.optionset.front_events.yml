@@ -15,9 +15,9 @@ options:
   settings:
     mobileFirst: true
     autoplay: true
-    autoplaySpeed: 500
-    arrows: false
+    autoplaySpeed: 3500
     centerMode: true
+    centerPadding: ''
     lazyLoad: ondemand
     slidesToShow: 1
     speed: 1500
