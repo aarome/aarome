@@ -7340,11 +7340,11 @@ display:
           relationship: none
           group_type: group
           admin_label: ''
-          operator: between
+          operator: '='
           value:
             min: '44'
             max: '45'
-            value: '44'
+            value: '45'
           group: 3
           exposed: false
           expose:
@@ -7390,6 +7390,50 @@ display:
             max: ''
             value: '3977'
           group: 4
+          exposed: false
+          expose:
+            operator_id: ''
+            label: ''
+            description: ''
+            use_operator: false
+            operator: ''
+            identifier: ''
+            required: false
+            remember: false
+            multiple: false
+            remember_roles:
+              authenticated: authenticated
+            placeholder: ''
+            min_placeholder: ''
+            max_placeholder: ''
+          is_grouped: false
+          group_info:
+            label: ''
+            description: ''
+            identifier: ''
+            optional: true
+            widget: select
+            multiple: false
+            remember: false
+            default_group: All
+            default_group_multiple: {  }
+            group_items: {  }
+          entity_type: node
+          entity_field: nid
+          plugin_id: numeric
+        nid_3:
+          id: nid_3
+          table: node_field_data
+          field: nid
+          relationship: none
+          group_type: group
+          admin_label: ''
+          operator: '!='
+          value:
+            min: ''
+            max: ''
+            value: '44'
+          group: 1
           exposed: false
           expose:
             operator_id: ''
