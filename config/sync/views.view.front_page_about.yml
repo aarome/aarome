@@ -1040,7 +1040,7 @@ display:
           alter:
             alter_text: false
             text: ''
-            make_link: false
+            make_link: true
             path: '/about/{{ field_safe_path_alias }}'
             absolute: false
             external: false
@@ -1659,7 +1659,7 @@ display:
           alter:
             alter_text: false
             text: ''
-            make_link: false
+            make_link: true
             path: '/about/{{ field_safe_path_alias }}'
             absolute: false
             external: false
@@ -2280,7 +2280,7 @@ display:
           alter:
             alter_text: false
             text: ''
-            make_link: false
+            make_link: true
             path: '/about/{{ field_safe_path_alias }}'
             absolute: false
             external: false
@@ -2901,8 +2901,8 @@ display:
           alter:
             alter_text: false
             text: ''
-            make_link: false
-            path: '/about/{{ field_safe_path_alias }}'
+            make_link: true
+            path: /about/place
             absolute: false
             external: false
             replace_spaces: false
@@ -3519,8 +3519,8 @@ display:
           alter:
             alter_text: false
             text: ''
-            make_link: false
-            path: '/about/{{ field_safe_path_alias }}'
+            make_link: true
+            path: /rome-sustainable-food-project
             absolute: false
             external: false
             replace_spaces: false
@@ -4138,7 +4138,7 @@ display:
           alter:
             alter_text: false
             text: ''
-            make_link: false
+            make_link: true
             path: '/about/{{ field_safe_path_alias }}'
             absolute: false
             external: false

@@ -9,7 +9,7 @@ _core:
 id: tema_primary_local_tasks
 theme: tema
 region: content
-weight: -8
+weight: -7
 provider: null
 plugin: local_tasks_block
 settings:
