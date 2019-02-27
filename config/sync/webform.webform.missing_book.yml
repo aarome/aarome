@@ -1,4 +1,4 @@
-uuid: 0ba39864-211c-4cbd-acda-15a8e2571595
+uuid: 8130db01-b545-4a3a-b470-54b9a67a0988
 langcode: en
 status: closed
 dependencies:
@@ -10,11 +10,11 @@ third_party_settings:
 open: null
 close: null
 weight: 0
-uid: 19
+uid: 1
 template: true
 archive: false
-id: library
-title: Library
+id: missing_book
+title: 'Missing book'
 description: ''
 category: library
 elements: "general_section:\n  '#type': webform_section\n  '#title': 'Contact information'\n  general_contact_name:\n    '#type': webform_name\n    '#title': 'Name and email address'\n    '#required': true\n  your_affiliation:\n    '#type': textfield\n    '#title': 'Your affiliation'\npublication_information:\n  '#type': webform_section\n  '#title': 'Publication information'\n  author:\n    '#type': textfield\n    '#title': Author\n  title:\n    '#type': textfield\n    '#title': Title\n  volume_number:\n    '#type': textfield\n    '#title': 'Volume number'\n  issue_number:\n    '#type': textfield\n    '#title': 'Issue number'\n  publisher:\n    '#type': textfield\n    '#title': Publisher\n  publication_year:\n    '#type': textfield\n    '#title': 'Publication year'\n  call_number:\n    '#type': textfield\n    '#title': 'Call number'\nlast_useful_date:\n  '#type': datelist\n  '#title': 'Last useful date'\n  '#date_part_order':\n    - year\n    - month\n    - day\n  '#date_year_range': '2019:2021'\n  '#date_abbreviate': false\nstaff_member_details:\n  '#type': textfield\n  '#title': 'Staff member details (for staff mediated queries only)'\ncomments:\n  '#type': textarea\n  '#title': Comments"
@@ -26,7 +26,7 @@ settings:
   page: true
   page_submit_path: ''
   page_confirm_path: ''
-  form_title: both
+  form_title: source_entity_webform
   form_submit_once: false
   form_exception_message: ''
   form_open_message: ''
@@ -75,13 +75,13 @@ settings:
   autofill: false
   autofill_message: ''
   autofill_excluded_elements: {  }
-  wizard_progress_bar: true
+  wizard_progress_bar: false
   wizard_progress_pages: false
   wizard_progress_percentage: false
   wizard_progress_link: false
   wizard_start_label: ''
   wizard_preview_link: false
-  wizard_confirmation: true
+  wizard_confirmation: false
   wizard_confirmation_label: ''
   wizard_track: ''
   preview: 0

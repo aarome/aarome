@@ -760,12 +760,12 @@ display:
           group_type: group
           admin_label: ''
           label: ''
-          exclude: true
+          exclude: false
           alter:
             alter_text: false
             text: ''
-            make_link: false
-            path: ''
+            make_link: true
+            path: '/events/{{ field_safe_path_alias }}'
             absolute: false
             external: false
             replace_spaces: false
@@ -1068,7 +1068,7 @@ display:
           exclude: false
           alter:
             alter_text: true
-            text: "<figure>{{ field_events_image }}</figure>\r\n<h2>{{ title }}</h2>\r\n{{ field_events_event_dates }}\r\n<div class=\"more\">{{ nothing }}</div>"
+            text: "<h2>{{ title }}</h2>\r\n{{ field_events_event_dates }}\r\n<div class=\"more\">{{ nothing }}</div>"
             make_link: true
             path: '/events/{{ field_safe_path_alias }}'
             absolute: false

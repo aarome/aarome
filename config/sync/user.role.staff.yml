@@ -6,4 +6,7 @@ id: staff
 label: 'Academy staff'
 weight: 4
 is_admin: null
-permissions: {  }
+permissions:
+  - 'access content overview'
+  - 'access workbench'
+  - 'edit any articles content'

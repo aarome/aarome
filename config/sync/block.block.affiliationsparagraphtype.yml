@@ -11,7 +11,7 @@ dependencies:
 id: affiliationsparagraphtype
 theme: tema
 region: content
-weight: -5
+weight: -4
 provider: null
 plugin: 'facet_block:affiliations_paragraph_type'
 settings:
