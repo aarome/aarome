@@ -5,6 +5,7 @@ dependencies:
   config:
     - field.field.node.people.body
     - field.field.node.people.field_people_affiliations
+    - field.field.node.people.field_people_biographical_note
     - field.field.node.people.field_people_birthplace
     - field.field.node.people.field_people_dob
     - field.field.node.people.field_people_dod
@@ -49,6 +50,13 @@ content:
       view_mode: default
       link: ''
     third_party_settings: {  }
+    region: content
+  field_people_biographical_note:
+    weight: 25
+    label: above
+    settings: {  }
+    third_party_settings: {  }
+    type: text_default
     region: content
   field_people_birthplace:
     weight: 15
