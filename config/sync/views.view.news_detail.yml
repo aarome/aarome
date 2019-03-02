@@ -21,6 +21,7 @@ dependencies:
     - node.type.quick_news
     - node.type.society_of_fellows
     - node.type.webform
+    - responsive_image.styles.slideshow
     - taxonomy.vocabulary.society_of_fellows_types
   content:
     - 'taxonomy_term:society_of_fellows_types:1b6536a7-5019-4181-8d43-99cec05f9448'
@@ -30,6 +31,7 @@ dependencies:
     - image
     - media
     - node
+    - responsive_image
     - slick_views
     - taxonomy
     - text
@@ -594,7 +596,7 @@ display:
             trim: false
             preserve_tags: ''
             html: false
-          element_type: ''
+          element_type: article
           element_class: ''
           element_label_type: ''
           element_label_class: ''
@@ -925,9 +927,9 @@ display:
           empty_zero: false
           hide_alter_empty: true
           click_sort_column: target_id
-          type: image
+          type: responsive_image
           settings:
-            image_style: ''
+            responsive_image_style: slideshow
             image_link: ''
           group_column: ''
           group_columns: {  }
@@ -1115,7 +1117,7 @@ display:
           link: ''
           class: ''
           id: ''
-          override: true
+          override: false
           overridables:
             arrows: arrows
             autoplay: autoplay
@@ -1983,6 +1985,9 @@ display:
         filter_groups: false
         css_class: false
         arguments: false
+        title: false
+        style: false
+        row: false
       display_description: ''
       path: news/features/%
       fields:
@@ -2321,6 +2326,20 @@ display:
           transform_dash: false
           break_phrase: false
           plugin_id: string
+      title: ''
+      style:
+        type: default
+        options:
+          grouping: {  }
+          row_class: ''
+          default_row_class: false
+      row:
+        type: fields
+        options:
+          default_field_elements: false
+          inline: {  }
+          separator: ''
+          hide_empty: false
     cache_metadata:
       max-age: -1
       contexts:
