@@ -1,0 +1,15 @@
+uuid: 16280a57-3a4e-421d-97ec-b9e9cae25a28
+langcode: en
+status: true
+dependencies: {  }
+name: portrait_front
+label: 'Portrait front'
+effects:
+  4cd93e8e-0811-4f77-a5ff-3241df594438:
+    uuid: 4cd93e8e-0811-4f77-a5ff-3241df594438
+    id: image_scale
+    weight: 1
+    data:
+      width: null
+      height: 450
+      upscale: true

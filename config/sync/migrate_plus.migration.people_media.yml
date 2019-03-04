@@ -1,19 +1,19 @@
-uuid: 5b8f7b23-6440-4627-ae9c-4582671a927d
+uuid: aa097673-d7e0-4120-8703-acb398c81c19
 langcode: en
 status: true
 dependencies: {  }
 _core:
-  default_config_hash: 4ZsVG21UlQ0orS5vRmi9mZEOG-3-Fme5AkAwkvs5v4I
+  default_config_hash: 3MCIYNE2C_jlDIm_euHtQCll7s0Cmxo8Q2p96swOdBc
 id: people_media
 class: null
 field_plugin_method: null
 cck_plugin_method: null
 migration_tags: null
 migration_group: null
-label: 'Migrating News Feature slideshow media from CSV file'
+label: 'Attaching people media to people'
 source:
   plugin: csv
-  path: 'public://migrations/news_feature_slideshow_files.csv'
+  path: 'public://migrations/people_fellows.csv'
   header_row_count: 1
   keys:
     - fid

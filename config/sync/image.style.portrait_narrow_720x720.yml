@@ -1,0 +1,15 @@
+uuid: 8070adda-b179-486e-a48f-f2d7b3318426
+langcode: en
+status: true
+dependencies: {  }
+name: portrait_narrow_720x720
+label: 'Portrait narrow 720x720'
+effects:
+  1ab695d7-3f28-433a-82f5-c87e8560c67c:
+    uuid: 1ab695d7-3f28-433a-82f5-c87e8560c67c
+    id: image_scale
+    weight: 1
+    data:
+      width: 720
+      height: 720
+      upscale: false
