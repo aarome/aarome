@@ -1616,7 +1616,7 @@ display:
           group_type: group
           admin_label: ''
           label: ''
-          exclude: true
+          exclude: false
           alter:
             alter_text: false
             text: ''
@@ -1644,7 +1644,7 @@ display:
             trim: false
             preserve_tags: ''
             html: false
-          element_type: figure
+          element_type: ''
           element_class: ''
           element_label_type: ''
           element_label_class: ''
@@ -1659,7 +1659,7 @@ display:
           click_sort_column: target_id
           type: responsive_image
           settings:
-            responsive_image_style: narrow
+            responsive_image_style: section_front
             image_link: ''
           group_column: ''
           group_columns: {  }
@@ -1859,7 +1859,7 @@ display:
           exclude: false
           alter:
             alter_text: true
-            text: "<figure>{{ field_media_image }}</figure>\r\n<h2>{{ title }}</h2>\r\n<section>{{ field_page_summary }}</section>\r\n<div class=\"more\">{{ nothing }}</div>"
+            text: "<h2>{{ title }}</h2>\r\n<section>{{ field_page_summary }}</section>\r\n<div class=\"more\">{{ nothing }}</div>"
             make_link: true
             path: /contact/submit-news
             absolute: false
