@@ -1,0 +1,20 @@
+uuid: 91c56cc9-ad71-4255-accb-35cd4b381fd5
+langcode: en
+status: true
+dependencies:
+  config:
+    - node.type.quick_news
+id: node.quick_news.menu_link
+field_name: menu_link
+entity_type: node
+bundle: quick_news
+label: 'Menu link'
+description: 'Computed menu link for the node (only available during node saving).'
+required: false
+translatable: true
+default_value: {  }
+default_value_callback: ''
+settings:
+  handler: default
+  handler_settings: {  }
+field_type: entity_reference

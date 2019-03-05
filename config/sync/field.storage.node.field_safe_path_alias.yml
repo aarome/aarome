@@ -1,0 +1,22 @@
+uuid: ee560795-ab2a-41f1-9d79-e17663c636c4
+langcode: en
+status: true
+dependencies:
+  module:
+    - computed_field
+    - node
+id: node.field_safe_path_alias
+field_name: field_safe_path_alias
+entity_type: node
+type: computed_string
+settings:
+  max_length: '255'
+  is_ascii: false
+  case_sensitive: false
+module: computed_field
+locked: false
+cardinality: 1
+translatable: true
+indexes: {  }
+persist_with_no_fields: false
+custom_storage: false

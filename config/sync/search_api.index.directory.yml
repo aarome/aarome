@@ -1,0 +1,117 @@
+uuid: e2feb73a-a66d-4685-90d0-766f7f53ee87
+langcode: en
+status: true
+dependencies:
+  module:
+    - search_api_solr
+    - paragraphs
+    - search_api
+    - node
+  config:
+    - field.storage.node.field_people_affiliations
+    - field.storage.paragraph.field_affil_dates
+    - field.storage.paragraph.field_affil_discipline
+    - field.storage.paragraph.field_affil_type
+    - field.storage.node.field_people_name
+    - search_api.server.default_solr_server
+third_party_settings:
+  search_api_solr:
+    finalize: false
+    commit_before_finalize: false
+    commit_after_finalize: false
+    highlighter:
+      maxAnalyzedChars: 51200
+      fragmenter: gap
+      regex:
+        slop: 0.5
+        pattern: blank
+        maxAnalyzedChars: 10000
+      usePhraseHighlighter: true
+      highlightMultiTerm: true
+      preserveMulti: false
+      highlight:
+        mergeContiguous: false
+        requireFieldMatch: false
+        snippets: 3
+        fragsize: 0
+    advanced:
+      index_prefix: ''
+id: directory
+name: directory
+description: ''
+read_only: false
+field_settings:
+  family:
+    label: 'Name » Family'
+    datasource_id: 'entity:node'
+    property_path: 'field_people_name:family'
+    type: text
+    boost: !!float 8
+    dependencies:
+      config:
+        - field.storage.node.field_people_name
+  field_affil_dates:
+    label: 'Affiliations » Paragraph » Date(s)'
+    datasource_id: 'entity:node'
+    property_path: 'field_people_affiliations:entity:field_affil_dates'
+    type: integer
+    dependencies:
+      config:
+        - field.storage.node.field_people_affiliations
+        - field.storage.paragraph.field_affil_dates
+      module:
+        - paragraphs
+  field_affil_discipline:
+    label: 'Affiliations » Paragraph » Discipline'
+    datasource_id: 'entity:node'
+    property_path: 'field_people_affiliations:entity:field_affil_discipline'
+    type: text
+    boost: !!float 13
+    dependencies:
+      config:
+        - field.storage.node.field_people_affiliations
+        - field.storage.paragraph.field_affil_discipline
+      module:
+        - paragraphs
+  field_affil_type:
+    label: 'Affiliations » Paragraph » Type'
+    datasource_id: 'entity:node'
+    property_path: 'field_people_affiliations:entity:field_affil_type'
+    type: text
+    boost: !!float 8
+    dependencies:
+      config:
+        - field.storage.node.field_people_affiliations
+        - field.storage.paragraph.field_affil_type
+      module:
+        - paragraphs
+  given:
+    label: 'Name » Given'
+    datasource_id: 'entity:node'
+    property_path: 'field_people_name:given'
+    type: text
+    boost: !!float 8
+    dependencies:
+      config:
+        - field.storage.node.field_people_name
+datasource_settings:
+  'entity:node':
+    bundles:
+      default: false
+      selected:
+        - people
+    languages:
+      default: true
+      selected: {  }
+processor_settings:
+  add_url: {  }
+  aggregated_field: {  }
+  rendered_item: {  }
+  solr_date_range: {  }
+tracker_settings:
+  default:
+    indexing_order: fifo
+options:
+  index_directly: true
+  cron_limit: 50
+server: default_solr_server

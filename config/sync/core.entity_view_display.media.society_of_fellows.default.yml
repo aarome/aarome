@@ -1,0 +1,49 @@
+uuid: 8e97b5d2-92a9-4d9e-88a3-8298f7fccbc7
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.field.media.society_of_fellows.field_media_caption
+    - field.field.media.society_of_fellows.field_media_image
+    - media.type.society_of_fellows
+  module:
+    - image
+    - layout_builder
+    - text
+third_party_settings:
+  layout_builder:
+    sections: {  }
+id: media.society_of_fellows.default
+targetEntityType: media
+bundle: society_of_fellows
+mode: default
+content:
+  field_media_caption:
+    weight: 2
+    label: hidden
+    settings: {  }
+    third_party_settings: {  }
+    type: text_default
+    region: content
+  field_media_image:
+    weight: 1
+    label: hidden
+    settings:
+      image_style: ''
+      image_link: ''
+    third_party_settings: {  }
+    type: image
+    region: content
+  name:
+    type: string
+    weight: 0
+    region: content
+    label: above
+    settings:
+      link_to_entity: false
+    third_party_settings: {  }
+hidden:
+  created: true
+  langcode: true
+  thumbnail: true
+  uid: true

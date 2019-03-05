@@ -1,0 +1,9 @@
+uuid: 15a6f559-2e89-443b-8d5c-f7dd8983caf5
+langcode: en
+status: true
+dependencies: {  }
+name: 'Page types'
+vid: page_types
+description: ''
+hierarchy: 0
+weight: 0
