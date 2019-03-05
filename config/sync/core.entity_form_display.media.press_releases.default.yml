@@ -3,64 +3,42 @@ langcode: en
 status: true
 dependencies:
   config:
+    - field.field.media.press_releases.field_file_language
     - field.field.media.press_releases.field_media_file
     - media.type.press_releases
   module:
     - file
-    - path
 id: media.press_releases.default
 targetEntityType: media
 bundle: press_releases
 mode: default
 content:
-  created:
-    type: datetime_timestamp
-    weight: 10
-    region: content
+  field_file_language:
+    weight: 0
     settings: {  }
     third_party_settings: {  }
+    type: options_select
+    region: content
   field_media_file:
-    weight: 0
+    weight: 2
     settings:
       progress_indicator: throbber
     third_party_settings: {  }
     type: file_generic
     region: content
-  langcode:
-    type: language_select
-    weight: 2
-    region: content
-    settings:
-      include_locked: true
-    third_party_settings: {  }
   name:
     type: string_textfield
-    weight: -5
+    weight: 1
     region: content
     settings:
       size: 60
       placeholder: ''
     third_party_settings: {  }
-  path:
-    type: path
-    weight: 30
-    region: content
-    settings: {  }
-    third_party_settings: {  }
-  status:
-    type: boolean_checkbox
-    settings:
-      display_label: true
-    weight: 100
-    region: content
-    third_party_settings: {  }
-  uid:
-    type: entity_reference_autocomplete
-    weight: 5
-    settings:
-      match_operator: CONTAINS
-      size: 60
-      placeholder: ''
-    region: content
-    third_party_settings: {  }
-hidden: {  }
+hidden:
+  created: true
+  langcode: true
+  path: true
+  revision_log_message: true
+  status: true
+  translation: true
+  uid: true

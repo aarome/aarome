@@ -16,23 +16,23 @@ third_party_settings:
       options:
         slashes: true
         pathauto: true
-        transliterate: false
+        transliterate: true
     redirect: false
     retroactive_update: false
     active_updating: false
     file_name:
-      value: '[file:ffp-name-only-original].[file:ffp-extension-original]'
+      value: '[media:name].[file:ffp-extension-original]'
       options:
-        slashes: false
-        pathauto: false
-        transliterate: false
+        slashes: true
+        pathauto: true
+        transliterate: true
 id: media.press_releases.field_media_file
 field_name: field_media_file
 entity_type: media
 bundle: press_releases
 label: File
 description: ''
-required: true
+required: false
 translatable: true
 default_value: {  }
 default_value_callback: ''

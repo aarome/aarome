@@ -16,8 +16,10 @@ options:
     mobileFirst: true
     autoplay: true
     autoplaySpeed: 3500
+    prevArrow: '<button type="button" data-role="none" class="slick-prev" aria-label="Previous" tabindex="0" role="button">prev</button>'
+    nextArrow: '<button type="button" data-role="none" class="slick-next" aria-label="Next" tabindex="0" role="button">next</button>'
     centerMode: true
     centerPadding: ''
-    lazyLoad: ondemand
+    lazyLoad: blazy
     slidesToShow: 1
     speed: 1500

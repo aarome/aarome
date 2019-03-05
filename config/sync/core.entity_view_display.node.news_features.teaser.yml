@@ -13,27 +13,18 @@ dependencies:
     - field.field.node.news_features.field_safe_path_alias
     - node.type.news_features
   module:
-    - text
+    - layout_builder
     - user
+third_party_settings:
+  layout_builder:
+    sections: {  }
 id: node.news_features.teaser
 targetEntityType: node
 bundle: news_features
 mode: teaser
-content:
-  body:
-    label: hidden
-    type: text_summary_or_trimmed
-    weight: 101
-    settings:
-      trim_length: 600
-    third_party_settings: {  }
-    region: content
-  links:
-    weight: 100
-    region: content
-    settings: {  }
-    third_party_settings: {  }
+content: {  }
 hidden:
+  body: true
   field_news_features_date: true
   field_news_features_images: true
   field_news_features_rel_events: true
@@ -41,3 +32,4 @@ hidden:
   field_news_features_summary: true
   field_safe_path_alias: true
   langcode: true
+  links: true

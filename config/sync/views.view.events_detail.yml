@@ -11,6 +11,7 @@ dependencies:
     - field.storage.node.field_events_event_type
     - field.storage.node.field_events_notice
     - field.storage.node.field_events_rel_places
+    - field.storage.node.field_places_address
     - field.storage.node.field_safe_path_alias
     - node.type.events
     - node.type.society_of_fellows
@@ -2653,15 +2654,15 @@ display:
           separator: ''
           field_api_classes: false
           plugin_id: field
-        field_events_rel_places:
-          id: field_events_rel_places
-          table: node__field_events_rel_places
-          field: field_events_rel_places
-          relationship: none
+        title_1:
+          id: title_1
+          table: node_field_data
+          field: title
+          relationship: field_events_rel_places
           group_type: group
           admin_label: ''
           label: ''
-          exclude: true
+          exclude: false
           alter:
             alter_text: false
             text: ''
@@ -2690,7 +2691,7 @@ display:
             preserve_tags: ''
             html: false
           element_type: div
-          element_class: place
+          element_class: address-title
           element_label_type: ''
           element_label_class: ''
           element_label_colon: false
@@ -2698,14 +2699,14 @@ display:
           element_wrapper_class: ''
           element_default_classes: false
           empty: ''
-          hide_empty: true
+          hide_empty: false
           empty_zero: false
           hide_alter_empty: true
-          click_sort_column: target_id
-          type: entity_reference_label
+          click_sort_column: value
+          type: string
           settings:
-            link: false
-          group_column: target_id
+            link_to_entity: false
+          group_column: value
           group_columns: {  }
           group_rows: true
           delta_limit: 0
@@ -2715,66 +2716,18 @@ display:
           multi_type: separator
           separator: ', '
           field_api_classes: false
+          entity_type: node
+          entity_field: title
           plugin_id: field
-        field_places_address_locality:
-          id: field_places_address_locality
+        field_places_address:
+          id: field_places_address
           table: node__field_places_address
-          field: field_places_address_locality
+          field: field_places_address
           relationship: field_events_rel_places
           group_type: group
           admin_label: ''
           label: ''
-          exclude: true
-          alter:
-            alter_text: false
-            text: ''
-            make_link: false
-            path: ''
-            absolute: false
-            external: false
-            replace_spaces: false
-            path_case: none
-            trim_whitespace: false
-            alt: ''
-            rel: ''
-            link_class: ''
-            prefix: ''
-            suffix: ''
-            target: ''
-            nl2br: false
-            max_length: 0
-            word_boundary: true
-            ellipsis: true
-            more_link: false
-            more_link_text: ''
-            more_link_path: ''
-            strip_tags: false
-            trim: false
-            preserve_tags: ''
-            html: false
-          element_type: div
-          element_class: city
-          element_label_type: ''
-          element_label_class: ''
-          element_label_colon: false
-          element_wrapper_type: ''
-          element_wrapper_class: ''
-          element_default_classes: false
-          empty: ''
-          hide_empty: true
-          empty_zero: true
-          hide_alter_empty: true
-          display_name: true
-          plugin_id: subdivision
-        field_places_address_administrative_area:
-          id: field_places_address_administrative_area
-          table: node__field_places_address
-          field: field_places_address_administrative_area
-          relationship: field_events_rel_places
-          group_type: group
-          admin_label: ''
-          label: ''
-          exclude: true
+          exclude: false
           alter:
             alter_text: false
             text: ''
@@ -2809,62 +2762,25 @@ display:
           element_label_colon: false
           element_wrapper_type: ''
           element_wrapper_class: ''
-          element_default_classes: false
+          element_default_classes: true
           empty: ''
-          hide_empty: true
+          hide_empty: false
           empty_zero: false
           hide_alter_empty: true
-          display_name: true
-          plugin_id: subdivision
-        nothing:
-          id: nothing
-          table: views
-          field: nothing
-          relationship: none
-          group_type: group
-          admin_label: ''
-          label: ''
-          exclude: false
-          alter:
-            alter_text: true
-            text: '{{ field_events_rel_places }}, {{ field_places_address_locality }}, {{ field_places_address_administrative_area }} '
-            make_link: false
-            path: ''
-            absolute: false
-            external: false
-            replace_spaces: false
-            path_case: none
-            trim_whitespace: false
-            alt: ''
-            rel: ''
-            link_class: ''
-            prefix: ''
-            suffix: ''
-            target: ''
-            nl2br: false
-            max_length: 0
-            word_boundary: true
-            ellipsis: true
-            more_link: false
-            more_link_text: ''
-            more_link_path: ''
-            strip_tags: false
-            trim: false
-            preserve_tags: ''
-            html: false
-          element_type: div
-          element_class: place
-          element_label_type: ''
-          element_label_class: ''
-          element_label_colon: false
-          element_wrapper_type: ''
-          element_wrapper_class: ''
-          element_default_classes: false
-          empty: ''
-          hide_empty: true
-          empty_zero: true
-          hide_alter_empty: true
-          plugin_id: custom
+          click_sort_column: langcode
+          type: address_default
+          settings: {  }
+          group_column: ''
+          group_columns: {  }
+          group_rows: true
+          delta_limit: 0
+          delta_offset: 0
+          delta_reversed: false
+          delta_first_last: false
+          multi_type: separator
+          separator: ', '
+          field_api_classes: false
+          plugin_id: field
         field_media_image:
           id: field_media_image
           table: media__field_media_image
@@ -2965,8 +2881,8 @@ display:
             trim: false
             preserve_tags: ''
             html: false
-          element_type: ''
-          element_class: ''
+          element_type: div
+          element_class: caption
           element_label_type: ''
           element_label_class: ''
           element_label_colon: false
@@ -2981,6 +2897,69 @@ display:
           type: text_default
           settings: {  }
           group_column: value
+          group_columns: {  }
+          group_rows: true
+          delta_limit: 0
+          delta_offset: 0
+          delta_reversed: false
+          delta_first_last: false
+          multi_type: separator
+          separator: ', '
+          field_api_classes: false
+          plugin_id: field
+        field_events_rel_places:
+          id: field_events_rel_places
+          table: node__field_events_rel_places
+          field: field_events_rel_places
+          relationship: none
+          group_type: group
+          admin_label: ''
+          label: ''
+          exclude: true
+          alter:
+            alter_text: false
+            text: ''
+            make_link: false
+            path: ''
+            absolute: false
+            external: false
+            replace_spaces: false
+            path_case: none
+            trim_whitespace: false
+            alt: ''
+            rel: ''
+            link_class: ''
+            prefix: ''
+            suffix: ''
+            target: ''
+            nl2br: false
+            max_length: 0
+            word_boundary: true
+            ellipsis: true
+            more_link: false
+            more_link_text: ''
+            more_link_path: ''
+            strip_tags: false
+            trim: false
+            preserve_tags: ''
+            html: false
+          element_type: div
+          element_class: place
+          element_label_type: ''
+          element_label_class: ''
+          element_label_colon: false
+          element_wrapper_type: ''
+          element_wrapper_class: ''
+          element_default_classes: false
+          empty: ''
+          hide_empty: true
+          empty_zero: false
+          hide_alter_empty: true
+          click_sort_column: target_id
+          type: entity_reference_label
+          settings:
+            link: false
+          group_column: target_id
           group_columns: {  }
           group_rows: true
           delta_limit: 0
@@ -3053,68 +3032,6 @@ display:
           separator: ', '
           field_api_classes: false
           plugin_id: field
-        field_events_notice:
-          id: field_events_notice
-          table: node__field_events_notice
-          field: field_events_notice
-          relationship: none
-          group_type: group
-          admin_label: ''
-          label: ''
-          exclude: false
-          alter:
-            alter_text: false
-            text: ''
-            make_link: false
-            path: ''
-            absolute: false
-            external: false
-            replace_spaces: false
-            path_case: none
-            trim_whitespace: false
-            alt: ''
-            rel: ''
-            link_class: ''
-            prefix: ''
-            suffix: ''
-            target: ''
-            nl2br: false
-            max_length: 0
-            word_boundary: true
-            ellipsis: true
-            more_link: false
-            more_link_text: ''
-            more_link_path: ''
-            strip_tags: false
-            trim: false
-            preserve_tags: ''
-            html: false
-          element_type: div
-          element_class: notice
-          element_label_type: ''
-          element_label_class: ''
-          element_label_colon: false
-          element_wrapper_type: ''
-          element_wrapper_class: ''
-          element_default_classes: false
-          empty: ''
-          hide_empty: false
-          empty_zero: false
-          hide_alter_empty: true
-          click_sort_column: value
-          type: text_default
-          settings: {  }
-          group_column: value
-          group_columns: {  }
-          group_rows: true
-          delta_limit: 0
-          delta_offset: 0
-          delta_reversed: false
-          delta_first_last: false
-          multi_type: separator
-          separator: ', '
-          field_api_classes: false
-          plugin_id: field
     cache_metadata:
       max-age: -1
       contexts:
@@ -3129,8 +3046,8 @@ display:
         - 'config:field.storage.node.field_events_event_dates'
         - 'config:field.storage.node.field_events_event_series'
         - 'config:field.storage.node.field_events_event_type'
-        - 'config:field.storage.node.field_events_notice'
         - 'config:field.storage.node.field_events_rel_places'
+        - 'config:field.storage.node.field_places_address'
   page_society_of_fellows_events_1:
     display_plugin: page
     id: page_society_of_fellows_events_1

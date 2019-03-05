@@ -15,7 +15,7 @@ dependencies:
     - node.type.events
     - node.type.news_features
     - node.type.people
-    - responsive_image.styles.slideshow
+    - responsive_image.styles.lists
     - taxonomy.vocabulary.affiliation_types
   content:
     - 'taxonomy_term:affiliation_types:76cddf8f-d83f-48c1-9d80-b61567160fe3'
@@ -23,6 +23,7 @@ dependencies:
     - 'taxonomy_term:affiliation_types:d8ba162d-18f6-4f01-9cb5-0d634ca1ba51'
     - 'taxonomy_term:affiliation_types:f440de69-3364-4600-9a79-1d073945e660'
   module:
+    - blazy
     - computed_field
     - datetime
     - datetime_range
@@ -473,14 +474,14 @@ display:
           id: ''
           override: false
           overridables:
-            arrows: arrows
-            draggable: draggable
-            infinite: infinite
-            variableWidth: variableWidth
+            arrows: '0'
             autoplay: '0'
             dots: '0'
+            draggable: '0'
+            infinite: '0'
             mouseWheel: '0'
             randomize: '0'
+            variableWidth: '0'
           cache: 0
           current_view_mode: front_events
       row:
@@ -654,10 +655,40 @@ display:
           empty_zero: false
           hide_alter_empty: true
           click_sort_column: target_id
-          type: responsive_image
+          type: blazy
           settings:
+            background: false
+            caption:
+              title: '0'
+              alt: '0'
+            image_style: ''
+            thumbnail_style: ''
             responsive_image_style: slideshow
-            image_link: ''
+            media_switch: ''
+            ratio: ''
+            sizes: ''
+            breakpoints:
+              xs:
+                image_style: ''
+                width: ''
+                breakpoint: ''
+              sm:
+                image_style: ''
+                width: ''
+                breakpoint: ''
+              md:
+                image_style: ''
+                width: ''
+                breakpoint: ''
+              lg:
+                image_style: ''
+                width: ''
+                breakpoint: ''
+              xl:
+                image_style: ''
+                width: ''
+                breakpoint: ''
+            current_view_mode: _custom
           group_column: ''
           group_columns: {  }
           group_rows: true
@@ -3446,9 +3477,9 @@ display:
           empty_zero: false
           hide_alter_empty: true
           click_sort_column: target_id
-          type: image
+          type: responsive_image
           settings:
-            image_style: ''
+            responsive_image_style: lists
             image_link: ''
           group_column: ''
           group_columns: {  }

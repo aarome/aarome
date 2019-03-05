@@ -1,0 +1,78 @@
+uuid: 25292c60-6b1f-437c-924f-6ac9964568d8
+langcode: en
+status: true
+dependencies:
+  module:
+    - system
+name: callout
+label: Callout
+group: null
+description: ''
+requireAllConditions: false
+disabled: false
+conditions:
+  request_path:
+    id: request_path
+    pages: '/press/*'
+    negate: 0
+    uuid: 8670dff4-223d-4a8b-8eea-4eee1951bbf8
+    context_mapping: {  }
+reactions:
+  blocks:
+    blocks:
+      643a9c22-2149-47b9-adbf-83c3f45db0ca:
+        id: 'block_content:3a37cca5-7dad-4bc3-92ef-7071a3f0e1e8'
+        label: 'Press inquiries'
+        provider: block_content
+        label_display: visible
+        status: true
+        info: ''
+        view_mode: full
+        region: callout
+        weight: '-1'
+        context_mapping: {  }
+        custom_id: block_content_3a37cca5_7dad_4bc3_92ef_7071a3f0e1e8
+        theme: tema
+        css_class: ''
+        unique: 1
+        context_id: callout
+        uuid: 643a9c22-2149-47b9-adbf-83c3f45db0ca
+      2f938290-4581-47e2-a853-1e7f0cf71204:
+        id: 'block_content:461201c6-7f54-4420-ba10-09d44037557b'
+        label: 'Contact information: Rome'
+        provider: block_content
+        label_display: visible
+        status: true
+        info: ''
+        view_mode: full
+        region: callout
+        weight: '0'
+        context_mapping: {  }
+        custom_id: block_content_461201c6_7f54_4420_ba10_09d44037557b
+        theme: tema
+        css_class: ''
+        unique: 1
+        context_id: callout
+        uuid: 2f938290-4581-47e2-a853-1e7f0cf71204
+      c1abf439-5fc9-4d52-97f6-c7a9b009b9a4:
+        id: 'block_content:c0b5cbde-579d-40a4-ae60-b35a421bfbf1'
+        label: 'Contact information: NYC'
+        provider: block_content
+        label_display: visible
+        status: true
+        info: ''
+        view_mode: full
+        region: callout
+        weight: '1'
+        context_mapping: {  }
+        custom_id: block_content_c0b5cbde_579d_40a4_ae60_b35a421bfbf1
+        theme: tema
+        css_class: ''
+        unique: 1
+        context_id: callout
+        uuid: c1abf439-5fc9-4d52-97f6-c7a9b009b9a4
+    id: blocks
+    saved: false
+    uuid: 8c7a7b1b-9648-4428-8a69-cb9a9f9921de
+    include_default_blocks: 1
+weight: 0

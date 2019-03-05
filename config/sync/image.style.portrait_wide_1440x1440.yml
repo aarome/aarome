@@ -1,15 +1,15 @@
-uuid: fa4dcdbd-aa28-474f-96b5-0203cd59b3b5
+uuid: bfe4e73f-6856-4b26-abc5-51524eb6ebff
 langcode: en
 status: true
 dependencies: {  }
 name: portrait_wide_1440x1440
 label: 'Portrait wide 1440x1440'
 effects:
-  da62384f-33d3-4e26-b025-8654a7c17142:
-    uuid: da62384f-33d3-4e26-b025-8654a7c17142
+  c34574e6-5a98-4941-9bbb-43b5c0743e18:
+    uuid: c34574e6-5a98-4941-9bbb-43b5c0743e18
     id: image_scale
     weight: 1
     data:
       width: 1440
       height: 1440
-      upscale: false
+      upscale: true

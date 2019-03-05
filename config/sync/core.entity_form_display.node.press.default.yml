@@ -14,6 +14,7 @@ dependencies:
   module:
     - datetime
     - hide_revision_field
+    - inline_entity_form
     - path
 id: node.press.default
 targetEntityType: node
@@ -35,11 +36,18 @@ content:
   field_press_files:
     weight: 26
     settings:
+      form_mode: default
+      label_singular: ''
+      label_plural: ''
+      collapsible: true
+      allow_new: true
+      allow_existing: true
       match_operator: CONTAINS
-      size: 60
-      placeholder: ''
+      override_labels: false
+      collapsed: false
+      allow_duplicate: false
     third_party_settings: {  }
-    type: entity_reference_autocomplete
+    type: inline_entity_form_complex
     region: content
   field_press_publication:
     weight: 9
@@ -103,7 +111,7 @@ content:
       default: ''
       permission_based: false
       allow_user_settings: true
-      rows: '5'
+      rows: 5
       placeholder: ''
     third_party_settings: {  }
   status:

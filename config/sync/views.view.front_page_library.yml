@@ -7,11 +7,13 @@ dependencies:
     - field.storage.node.field_page_summary
     - field.storage.node.field_safe_path_alias
     - image.style.max_650x650
+    - responsive_image.styles.section_front
   module:
     - computed_field
     - image
     - media
     - node
+    - responsive_image
     - text
     - user
 id: front_page_library
@@ -883,11 +885,11 @@ display:
           group_type: group
           admin_label: ''
           label: ''
-          exclude: true
+          exclude: false
           alter:
             alter_text: false
             text: ''
-            make_link: false
+            make_link: true
             path: '/research/library/{{ field_safe_path_alias }}'
             absolute: false
             external: false
@@ -924,9 +926,9 @@ display:
           empty_zero: false
           hide_alter_empty: true
           click_sort_column: target_id
-          type: image
+          type: responsive_image
           settings:
-            image_style: max_650x650
+            responsive_image_style: section_front
             image_link: ''
           group_column: ''
           group_columns: {  }
@@ -1126,7 +1128,7 @@ display:
           exclude: false
           alter:
             alter_text: true
-            text: "<figure>{{ field_media_image }}</figure>\r\n<h2>{{ title }}</h2>\r\n<section>{{ field_page_summary }}</section>\r\n<div class=\"more\">{{ nothing }}</div>"
+            text: "<h2>{{ title }}</h2>\r\n<section>{{ field_page_summary }}</section>\r\n<div class=\"more\">{{ nothing }}</div>"
             make_link: true
             path: /research/library/access-rules-policies
             absolute: false
@@ -1420,11 +1422,11 @@ display:
           group_type: group
           admin_label: ''
           label: ''
-          exclude: true
+          exclude: false
           alter:
             alter_text: false
             text: ''
-            make_link: false
+            make_link: true
             path: '/research/library/{{ field_safe_path_alias }}'
             absolute: false
             external: false
@@ -1461,9 +1463,9 @@ display:
           empty_zero: false
           hide_alter_empty: true
           click_sort_column: target_id
-          type: image
+          type: responsive_image
           settings:
-            image_style: max_650x650
+            responsive_image_style: section_front
             image_link: ''
           group_column: ''
           group_columns: {  }
@@ -1663,7 +1665,7 @@ display:
           exclude: false
           alter:
             alter_text: true
-            text: "<figure>{{ field_media_image }}</figure>\r\n<h2>{{ title }}</h2>\r\n<section>{{ field_page_summary }}</section>\r\n<div class=\"more\">{{ nothing }}</div>"
+            text: "<h2>{{ title }}</h2>\r\n<section>{{ field_page_summary }}</section>\r\n<div class=\"more\">{{ nothing }}</div>"
             make_link: true
             path: /research/library/friends-library
             absolute: false
@@ -1956,11 +1958,11 @@ display:
           group_type: group
           admin_label: ''
           label: ''
-          exclude: true
+          exclude: false
           alter:
             alter_text: false
             text: ''
-            make_link: false
+            make_link: true
             path: '/research/library/{{ field_safe_path_alias }}'
             absolute: false
             external: false
@@ -1997,9 +1999,9 @@ display:
           empty_zero: false
           hide_alter_empty: true
           click_sort_column: target_id
-          type: image
+          type: responsive_image
           settings:
-            image_style: max_650x650
+            responsive_image_style: section_front
             image_link: ''
           group_column: ''
           group_columns: {  }
@@ -2199,7 +2201,7 @@ display:
           exclude: false
           alter:
             alter_text: true
-            text: "<figure>{{ field_media_image }}</figure>\r\n<h2>{{ title }}</h2>\r\n<section>{{ field_page_summary }}</section>\r\n<div class=\"more\">{{ nothing }}</div>"
+            text: "<h2>{{ title }}</h2>\r\n<section>{{ field_page_summary }}</section>\r\n<div class=\"more\">{{ nothing }}</div>"
             make_link: true
             path: /research/library/library-guides-histories
             absolute: false
@@ -2492,11 +2494,11 @@ display:
           group_type: group
           admin_label: ''
           label: ''
-          exclude: true
+          exclude: false
           alter:
             alter_text: false
             text: ''
-            make_link: false
+            make_link: true
             path: '/research/library/{{ field_safe_path_alias }}'
             absolute: false
             external: false
@@ -2533,9 +2535,9 @@ display:
           empty_zero: false
           hide_alter_empty: true
           click_sort_column: target_id
-          type: image
+          type: responsive_image
           settings:
-            image_style: max_650x650
+            responsive_image_style: section_front
             image_link: ''
           group_column: ''
           group_columns: {  }
@@ -2735,7 +2737,7 @@ display:
           exclude: false
           alter:
             alter_text: true
-            text: "<figure>{{ field_media_image }}</figure>\r\n<h2>{{ title }}</h2>\r\n<section>{{ field_page_summary }}</section>\r\n<div class=\"more\">{{ nothing }}</div>"
+            text: "<h2>{{ title }}</h2>\r\n<section>{{ field_page_summary }}</section>\r\n<div class=\"more\">{{ nothing }}</div>"
             make_link: true
             path: /research/library/new-acquisitions
             absolute: false
@@ -3028,11 +3030,11 @@ display:
           group_type: group
           admin_label: ''
           label: ''
-          exclude: true
+          exclude: false
           alter:
             alter_text: false
             text: ''
-            make_link: false
+            make_link: true
             path: '/research/library/{{ field_safe_path_alias }}'
             absolute: false
             external: false
@@ -3069,9 +3071,9 @@ display:
           empty_zero: false
           hide_alter_empty: true
           click_sort_column: target_id
-          type: image
+          type: responsive_image
           settings:
-            image_style: max_650x650
+            responsive_image_style: section_front
             image_link: ''
           group_column: ''
           group_columns: {  }
@@ -3271,7 +3273,7 @@ display:
           exclude: false
           alter:
             alter_text: true
-            text: "<figure>{{ field_media_image }}</figure>\r\n<h2>{{ title }}</h2>\r\n<section>{{ field_page_summary }}</section>\r\n<div class=\"more\">{{ nothing }}</div>"
+            text: "<h2>{{ title }}</h2>\r\n<section>{{ field_page_summary }}</section>\r\n<div class=\"more\">{{ nothing }}</div>"
             make_link: true
             path: /research/library/notices
             absolute: false
@@ -3603,11 +3605,11 @@ display:
           group_type: group
           admin_label: ''
           label: ''
-          exclude: true
+          exclude: false
           alter:
             alter_text: false
             text: ''
-            make_link: false
+            make_link: true
             path: '/research/library/{{ field_safe_path_alias }}'
             absolute: false
             external: false
@@ -3644,9 +3646,9 @@ display:
           empty_zero: false
           hide_alter_empty: true
           click_sort_column: target_id
-          type: image
+          type: responsive_image
           settings:
-            image_style: max_650x650
+            responsive_image_style: section_front
             image_link: ''
           group_column: ''
           group_columns: {  }
@@ -3846,7 +3848,7 @@ display:
           exclude: false
           alter:
             alter_text: true
-            text: "<figure>{{ field_media_image }}</figure>\r\n<h2>{{ title }}</h2>\r\n<section>{{ field_page_summary }}</section>\r\n<div class=\"more\">{{ nothing }}</div>"
+            text: "<h2>{{ title }}</h2>\r\n<section>{{ field_page_summary }}</section>\r\n<div class=\"more\">{{ nothing }}</div>"
             make_link: true
             path: /research/library/request-forms
             absolute: false
@@ -4139,11 +4141,11 @@ display:
           group_type: group
           admin_label: ''
           label: ''
-          exclude: true
+          exclude: false
           alter:
             alter_text: false
             text: ''
-            make_link: false
+            make_link: true
             path: '/research/library/{{ field_safe_path_alias }}'
             absolute: false
             external: false
@@ -4180,9 +4182,9 @@ display:
           empty_zero: false
           hide_alter_empty: true
           click_sort_column: target_id
-          type: image
+          type: responsive_image
           settings:
-            image_style: max_650x650
+            responsive_image_style: section_front
             image_link: ''
           group_column: ''
           group_columns: {  }
@@ -4382,7 +4384,7 @@ display:
           exclude: false
           alter:
             alter_text: true
-            text: "<figure>{{ field_media_image }}</figure>\r\n<h2>{{ title }}</h2>\r\n<section>{{ field_page_summary }}</section>\r\n<div class=\"more\">{{ nothing }}</div>"
+            text: "<h2>{{ title }}</h2>\r\n<section>{{ field_page_summary }}</section>\r\n<div class=\"more\">{{ nothing }}</div>"
             make_link: true
             path: /research/library/services
             absolute: false
@@ -4675,11 +4677,11 @@ display:
           group_type: group
           admin_label: ''
           label: ''
-          exclude: true
+          exclude: false
           alter:
             alter_text: false
             text: ''
-            make_link: false
+            make_link: true
             path: '/research/library/{{ field_safe_path_alias }}'
             absolute: false
             external: false
@@ -4716,9 +4718,9 @@ display:
           empty_zero: false
           hide_alter_empty: true
           click_sort_column: target_id
-          type: image
+          type: responsive_image
           settings:
-            image_style: max_650x650
+            responsive_image_style: section_front
             image_link: ''
           group_column: ''
           group_columns: {  }
@@ -4918,7 +4920,7 @@ display:
           exclude: false
           alter:
             alter_text: true
-            text: "<figure>{{ field_media_image }}</figure>\r\n<h2>{{ title }}</h2>\r\n<section>{{ field_page_summary }}</section>\r\n<div class=\"more\">{{ nothing }}</div>"
+            text: "<h2>{{ title }}</h2>\r\n<section>{{ field_page_summary }}</section>\r\n<div class=\"more\">{{ nothing }}</div>"
             make_link: true
             path: /research/library/collections
             absolute: false
