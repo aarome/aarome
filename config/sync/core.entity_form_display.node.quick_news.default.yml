@@ -11,6 +11,7 @@ dependencies:
     - node.type.quick_news
   module:
     - hide_revision_field
+    - inline_entity_form
     - link
     - path
     - text
@@ -37,11 +38,18 @@ content:
   field_quick_news_image:
     weight: 126
     settings:
+      form_mode: default
+      label_singular: ''
+      label_plural: ''
+      collapsible: true
+      allow_new: true
+      allow_existing: true
       match_operator: CONTAINS
-      size: 60
-      placeholder: ''
+      override_labels: false
+      collapsed: false
+      allow_duplicate: false
     third_party_settings: {  }
-    type: entity_reference_autocomplete
+    type: inline_entity_form_complex
     region: content
   field_quick_news_links:
     weight: 125
@@ -98,7 +106,7 @@ content:
       default: ''
       permission_based: false
       allow_user_settings: true
-      rows: '5'
+      rows: 5
       placeholder: ''
     third_party_settings: {  }
   status:
