@@ -1,0 +1,16 @@
+uuid: 2e6011ef-3dba-4085-8590-dfbac732efc5
+langcode: en
+status: true
+dependencies:
+  config:
+    - taxonomy.vocabulary.affiliated_fellowship_names
+  module:
+    - content_translation
+third_party_settings:
+  content_translation:
+    enabled: true
+id: taxonomy_term.affiliated_fellowship_names
+target_entity_type_id: taxonomy_term
+target_bundle: affiliated_fellowship_names
+default_langcode: site_default
+language_alterable: false
