@@ -11,11 +11,11 @@ dependencies:
     - field.storage.paragraph.field_affil_discipline
     - field.storage.paragraph.field_page_section_links
     - field.storage.taxonomy_term.field_affiliation_types_plural
-    - image.style.portrait
     - node.type.events
     - node.type.news_features
     - node.type.people
     - responsive_image.styles.lists
+    - responsive_image.styles.portrait_front
     - taxonomy.vocabulary.affiliation_types
   content:
     - 'taxonomy_term:affiliation_types:76cddf8f-d83f-48c1-9d80-b61567160fe3'
@@ -27,7 +27,6 @@ dependencies:
     - computed_field
     - datetime
     - datetime_range
-    - image
     - link
     - media
     - node
@@ -1272,7 +1271,7 @@ display:
           group_type: group
           admin_label: ''
           label: ''
-          exclude: true
+          exclude: false
           alter:
             alter_text: false
             text: ''
@@ -1300,7 +1299,7 @@ display:
             trim: false
             preserve_tags: ''
             html: false
-          element_type: figure
+          element_type: ''
           element_class: ''
           element_label_type: ''
           element_label_class: ''
@@ -1313,9 +1312,9 @@ display:
           empty_zero: false
           hide_alter_empty: true
           click_sort_column: target_id
-          type: image
+          type: responsive_image
           settings:
-            image_style: portrait
+            responsive_image_style: portrait_front
             image_link: ''
           group_column: ''
           group_columns: {  }
@@ -1467,7 +1466,7 @@ display:
           exclude: false
           alter:
             alter_text: true
-            text: "<figure>{{ field_media_image }}</figure>\r\n<h3 class=\"title\">{{ title }}</h3>\r\n<div class=\"discipline\">{{ field_affil_discipline }}</div>"
+            text: "<h3 class=\"title\">{{ title }}</h3>\r\n<div class=\"discipline\">{{ field_affil_discipline }}</div>"
             make_link: true
             path: '/people/{{ field_affiliation_types_plural }}/{{ field_safe_path_alias }}'
             absolute: false
@@ -2653,7 +2652,7 @@ display:
           group_type: group
           admin_label: ''
           label: ''
-          exclude: true
+          exclude: false
           alter:
             alter_text: false
             text: ''
@@ -2694,9 +2693,9 @@ display:
           empty_zero: false
           hide_alter_empty: true
           click_sort_column: target_id
-          type: image
+          type: responsive_image
           settings:
-            image_style: portrait
+            responsive_image_style: portrait_front
             image_link: ''
           group_column: ''
           group_columns: {  }
@@ -2848,7 +2847,7 @@ display:
           exclude: false
           alter:
             alter_text: true
-            text: "<figure>{{ field_media_image }}</figure>\r\n<h3 class=\"title\">{{ title }}</h3>\r\n<div class=\"discipline\">{{ field_affil_discipline }}</div>"
+            text: "<h3 class=\"title\">{{ title }}</h3>\r\n<div class=\"discipline\">{{ field_affil_discipline }}</div>"
             make_link: true
             path: '/people/residents/{{ field_safe_path_alias }}'
             absolute: false
@@ -3366,8 +3365,8 @@ display:
             trim: false
             preserve_tags: ''
             html: false
-          element_type: ''
-          element_class: ''
+          element_type: div
+          element_class: apply
           element_label_type: ''
           element_label_class: ''
           element_label_colon: false
@@ -3415,8 +3414,8 @@ display:
             trim: false
             preserve_tags: ''
             html: false
-          element_type: ''
-          element_class: ''
+          element_type: div
+          element_class: other
           element_label_type: ''
           element_label_class: ''
           element_label_colon: false
