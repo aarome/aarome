@@ -1,28 +1,20 @@
-uuid: 91f37faa-057c-4bd3-94ce-eddab6573609
+uuid: 6afb1981-daec-46e6-9e77-33e58f586017
 langcode: en
 status: open
-dependencies:
-  enforced:
-    module:
-      - webform
-  module:
-    - honeypot
-third_party_settings:
-  honeypot:
-    honeypot: true
+dependencies: {  }
 _core:
-  default_config_hash: B-E6t3OGPrgG1OPuVOmoXmjWLXkta_R-lSr_ppfU2Ww
+  default_config_hash: Wr3D_FbFiYNueRX67Vz66-JZi2Lj7KGcu8Q3xqCaQwg
 open: null
 close: null
 weight: 0
-uid: null
+uid: 1
 template: false
 archive: false
-id: contact
-title: Contact
-description: 'Basic email contact webform.'
+id: quick_news
+title: 'Quick news'
+description: ''
 category: ''
-elements: "name:\n  '#type': textfield\n  '#title': Name\n  '#required': true\n  '#default_value': '[current-user:display-name]'\nemail:\n  '#type': email\n  '#title': Email\n  '#required': true\n  '#default_value': '[current-user:mail]'\nsubject:\n  '#title': Subject\n  '#type': textfield\n  '#required': true\n  '#test': 'Testing contact webform from [site:name]'\nmessage:\n  '#title': Message\n  '#type': textarea\n  '#required': true\n  '#test': 'Please ignore this email.'\nactions:\n  '#type': webform_actions\n  '#title': 'Submit button(s)'\n  '#submit__label': 'Send message'"
+elements: "name:\n  '#type': textfield\n  '#title': Name\n  '#required': true\nemail:\n  '#type': email\n  '#title': Email\n  '#required': true\nquick_news_year:\n  '#type': textfield\n  '#title': 'Fellowship or residency year'\n  '#required': true\nquick_news_url:\n  '#type': url\n  '#title': 'URL of news or event item'\n  '#required': true\nquick_news_description:\n  '#type': textarea\n  '#title': 'Description of news or event'\n  '#required': true\nactions:\n  '#type': webform_actions\n  '#title': 'Submit button(s)'\n  '#submit__label': 'Send message'"
 css: ''
 javascript: ''
 settings:
@@ -102,7 +94,7 @@ settings:
   draft_auto_save: false
   draft_saved_message: ''
   draft_loaded_message: ''
-  confirmation_type: url_message
+  confirmation_type: inline
   confirmation_title: ''
   confirmation_message: 'Your message has been sent.'
   confirmation_url: '<front>'

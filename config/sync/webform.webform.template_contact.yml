@@ -1,9 +1,12 @@
+uuid: 15d016f7-0831-42fe-b0f3-341cc1d8623a
 langcode: en
 status: closed
 dependencies:
   enforced:
     module:
       - webform_templates
+_core:
+  default_config_hash: Wr3D_FbFiYNueRX67Vz66-JZi2Lj7KGcu8Q3xqCaQwg
 open: null
 close: null
 weight: 0
@@ -14,7 +17,7 @@ id: template_contact
 title: 'Contact Us'
 description: 'A basic contact webform template.'
 category: ''
-elements: "name:\n  '#title': 'Your Name'\n  '#type': textfield\n  '#required': true\nemail:\n  '#title': 'Your Email'\n  '#type': email\n  '#required': true\nsubject:\n  '#title': Subject\n  '#type': textfield\n  '#required': true\nmessage:\n  '#title': Message\n  '#type': textarea\n  '#required': true\nactions:\n  '#type': webform_actions\n  '#title': 'Submit button(s)'\n  '#submit__label': 'Send message'\n"
+elements: "name:\n  '#type': textfield\n  '#title': Name\n  '#required': true\nemail:\n  '#type': email\n  '#title': Email\n  '#required': true\nsubject:\n  '#title': Subject\n  '#type': textfield\n  '#required': true\nmessage:\n  '#title': Message\n  '#type': textarea\n  '#required': true\nactions:\n  '#type': webform_actions\n  '#title': 'Submit button(s)'\n  '#submit__label': 'Send message'"
 css: ''
 javascript: ''
 settings:
@@ -94,7 +97,7 @@ settings:
   draft_auto_save: false
   draft_saved_message: ''
   draft_loaded_message: ''
-  confirmation_type: url_message
+  confirmation_type: inline
   confirmation_title: ''
   confirmation_message: 'Your message has been sent.'
   confirmation_url: '<front>'
@@ -237,6 +240,3 @@ handlers:
       return_path: ''
       sender_mail: ''
       sender_name: ''
-uuid: 15d016f7-0831-42fe-b0f3-341cc1d8623a
-_core:
-  default_config_hash: Wr3D_FbFiYNueRX67Vz66-JZi2Lj7KGcu8Q3xqCaQwg

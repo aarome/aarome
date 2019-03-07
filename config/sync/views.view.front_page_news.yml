@@ -7,7 +7,6 @@ dependencies:
     - field.storage.node.field_page_summary
     - field.storage.node.field_safe_path_alias
     - node.type.page
-    - responsive_image.styles.narrow
     - responsive_image.styles.section_front
     - taxonomy.vocabulary.page_types
   content:
@@ -1017,12 +1016,12 @@ display:
           group_type: group
           admin_label: ''
           label: ''
-          exclude: true
+          exclude: false
           alter:
             alter_text: false
             text: ''
-            make_link: false
-            path: '/apply/{{ title_1| lower | replace({'' '':''-''}) }}'
+            make_link: true
+            path: /news/film-photo-request
             absolute: false
             external: false
             replace_spaces: false
@@ -1060,7 +1059,7 @@ display:
           click_sort_column: target_id
           type: responsive_image
           settings:
-            responsive_image_style: narrow
+            responsive_image_style: section_front
             image_link: ''
           group_column: ''
           group_columns: {  }
@@ -1260,9 +1259,9 @@ display:
           exclude: false
           alter:
             alter_text: true
-            text: "<figure>{{ field_media_image }}</figure>\r\n<h2>{{ title }}</h2>\r\n<section>{{ field_page_summary }}</section>\r\n<div class=\"more\">{{ nothing }}</div>"
+            text: "<h2>{{ title }}</h2>\r\n<section>{{ field_page_summary }}</section>\r\n<div class=\"more\">{{ nothing }}</div>"
             make_link: true
-            path: /contact/film-photography-request
+            path: /news/film-photo-request
             absolute: false
             external: false
             replace_spaces: false
