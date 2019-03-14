@@ -12,7 +12,6 @@ dependencies:
     - node.type.page
   module:
     - allowed_formats
-    - chosen_field
     - inline_entity_form
     - paragraphs
     - path
@@ -77,10 +76,13 @@ content:
     type: text_textarea
     region: content
   field_page_type:
-    weight: 1
-    settings: {  }
+    weight: 12
+    settings:
+      match_operator: CONTAINS
+      size: 60
+      placeholder: ''
     third_party_settings: {  }
-    type: chosen_select
+    type: entity_reference_autocomplete
     region: content
   langcode:
     type: language_select

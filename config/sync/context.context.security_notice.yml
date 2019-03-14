@@ -1,42 +1,43 @@
-uuid: 9ec10f01-b321-44cb-830d-f7d86a2daa3f
+uuid: 18ce3c67-07eb-4f44-a1ca-e095aa893239
 langcode: en
 status: true
 dependencies:
   module:
     - system
-name: research_resources_lists
-label: 'Research resources lists'
+name: security_notice
+label: 'Security notice'
 group: Callouts
 description: ''
 requireAllConditions: false
-disabled: true
+disabled: false
 conditions:
   request_path:
     id: request_path
-    pages: /research/resources/research-databases-digital-collections
+    pages: '/events/*/*'
     negate: 0
-    uuid: ad894169-0b44-4ee4-ade1-d4c415778071
+    uuid: b7f1b2d2-3fce-47ef-8238-56d5f7b74fd7
     context_mapping: {  }
 reactions:
   blocks:
     blocks:
-      043322e8-36e0-4eb6-ab9d-3e3a56da29b7:
-        id: 'views_block:resources-block_1'
+      0d4c0cbf-ff54-46f4-bd82-32b2846bc37c:
+        id: 'views_block:events_detail-block_events_callout'
         label: ''
         provider: views
         label_display: 0
         views_label: ''
         items_per_page: none
-        region: content
+        region: callout
         weight: '0'
         context_mapping: {  }
+        custom_id: views_block_events_detail_block_events_callout
         theme: tema
         css_class: ''
         unique: 0
-        context_id: research_resources_lists
-        uuid: 043322e8-36e0-4eb6-ab9d-3e3a56da29b7
+        context_id: security_notice
+        uuid: 0d4c0cbf-ff54-46f4-bd82-32b2846bc37c
     id: blocks
     saved: false
-    uuid: 6f20d81e-4a17-4cdf-b2da-f62bd8b71f4a
+    uuid: 7438f8ca-4d6e-497d-ad2f-67512c21e815
     include_default_blocks: 1
-weight: -15
+weight: 0

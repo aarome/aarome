@@ -13,7 +13,7 @@ disabled: false
 conditions:
   request_path:
     id: request_path
-    pages: /research/photographic-archive
+    pages: "/research/photographic-archive\r\n/ricerca/archivio-fotografico"
     negate: 0
     uuid: d1ef553c-6215-417b-91ad-29a77afad286
     context_mapping: {  }

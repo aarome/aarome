@@ -333,8 +333,7 @@ display:
           admin_label: ''
           operator: in
           value:
-            en: en
-            it: it
+            '***LANGUAGE_language_interface***': '***LANGUAGE_language_interface***'
           group: 1
           exposed: false
           expose:

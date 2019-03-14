@@ -8,25 +8,24 @@ dependencies:
 id: events
 label: Events
 type: 'canonical_entities:node'
-pattern: '[node:title]'
+pattern: '/events/calendar/[node:title]'
 selection_criteria:
-  b2695f08-c8aa-4662-b83e-44afe71f64de:
+  82c2b802-73f0-46ac-bece-402fa99b1b30:
     id: node_type
     bundles:
       events: events
     negate: false
     context_mapping:
       node: node
-    uuid: b2695f08-c8aa-4662-b83e-44afe71f64de
-  5350aaf9-f5ee-4923-be5b-1b7d5bdd13cc:
+    uuid: 82c2b802-73f0-46ac-bece-402fa99b1b30
+  30668948-dc87-4fea-9503-1f5d4822fe0d:
     id: language
     langcodes:
       en: en
-      it: it
     negate: false
     context_mapping:
       language: 'node:langcode:language'
-    uuid: 5350aaf9-f5ee-4923-be5b-1b7d5bdd13cc
+    uuid: 30668948-dc87-4fea-9503-1f5d4822fe0d
 selection_logic: and
 weight: -5
 relationships:

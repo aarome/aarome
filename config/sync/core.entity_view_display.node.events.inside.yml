@@ -1,0 +1,160 @@
+uuid: 3ed5a31b-ecee-49c5-a7c5-cb25e1907698
+langcode: en
+status: true
+dependencies:
+  config:
+    - core.entity_view_mode.node.inside
+    - field.field.node.events.body
+    - field.field.node.events.field_events_event_dates
+    - field.field.node.events.field_events_event_series
+    - field.field.node.events.field_events_event_type
+    - field.field.node.events.field_events_image
+    - field.field.node.events.field_events_legacy_id
+    - field.field.node.events.field_events_notice
+    - field.field.node.events.field_events_rel_news_feature
+    - field.field.node.events.field_events_rel_people
+    - field.field.node.events.field_events_rel_places
+    - field.field.node.events.field_events_rel_press
+    - field.field.node.events.field_events_rel_press_releases
+    - field.field.node.events.field_events_security_notice
+    - field.field.node.events.field_events_summary
+    - field.field.node.events.field_safe_path_alias
+    - node.type.events
+  module:
+    - computed_field
+    - datetime_range
+    - layout_builder
+    - text
+    - user
+third_party_settings:
+  layout_builder:
+    sections: {  }
+    allow_custom: false
+    enabled: false
+id: node.events.inside
+targetEntityType: node
+bundle: events
+mode: inside
+content:
+  body:
+    label: hidden
+    type: text_default
+    weight: 2
+    settings: {  }
+    third_party_settings: {  }
+    region: content
+  field_events_event_dates:
+    weight: 8
+    label: above
+    settings:
+      separator: '-'
+      format_type: medium
+      timezone_override: ''
+    third_party_settings: {  }
+    type: daterange_default
+    region: content
+  field_events_event_series:
+    weight: 9
+    label: above
+    settings:
+      link: true
+    third_party_settings: {  }
+    type: entity_reference_label
+    region: content
+  field_events_event_type:
+    weight: 5
+    label: above
+    settings:
+      link: true
+    third_party_settings: {  }
+    type: entity_reference_label
+    region: content
+  field_events_image:
+    type: entity_reference_entity_view
+    weight: 1
+    label: hidden
+    settings:
+      view_mode: event_front
+      link: false
+    third_party_settings: {  }
+    region: content
+  field_events_notice:
+    weight: 12
+    label: above
+    settings: {  }
+    third_party_settings: {  }
+    type: text_default
+    region: content
+  field_events_rel_news_feature:
+    weight: 7
+    label: above
+    settings:
+      link: true
+    third_party_settings: {  }
+    type: entity_reference_label
+    region: content
+  field_events_rel_people:
+    weight: 3
+    label: above
+    settings:
+      link: true
+    third_party_settings: {  }
+    type: entity_reference_label
+    region: content
+  field_events_rel_places:
+    weight: 6
+    label: above
+    settings:
+      link: true
+    third_party_settings: {  }
+    type: entity_reference_label
+    region: content
+  field_events_rel_press:
+    weight: 10
+    label: above
+    settings:
+      link: true
+    third_party_settings: {  }
+    type: entity_reference_label
+    region: content
+  field_events_rel_press_releases:
+    weight: 4
+    label: above
+    settings:
+      link: true
+    third_party_settings: {  }
+    type: entity_reference_label
+    region: content
+  field_events_security_notice:
+    weight: 15
+    label: above
+    settings:
+      link: true
+    third_party_settings: {  }
+    type: entity_reference_label
+    region: content
+  field_events_summary:
+    weight: 14
+    label: above
+    settings: {  }
+    third_party_settings: {  }
+    type: text_default
+    region: content
+  field_safe_path_alias:
+    weight: 13
+    label: above
+    settings:
+      sanitized: true
+      cache_unit: -1
+      cache_duration: 1
+    third_party_settings: {  }
+    type: computed_string
+    region: content
+  links:
+    weight: 0
+    region: content
+    settings: {  }
+    third_party_settings: {  }
+hidden:
+  field_events_legacy_id: true
+  langcode: true

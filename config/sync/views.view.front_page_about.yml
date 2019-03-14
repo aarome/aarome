@@ -691,7 +691,6 @@ display:
     cache_metadata:
       max-age: -1
       contexts:
-        - 'languages:language_content'
         - 'languages:language_interface'
         - user
         - 'user.node_grants:view'
@@ -1312,7 +1311,6 @@ display:
     cache_metadata:
       max-age: -1
       contexts:
-        - 'languages:language_content'
         - 'languages:language_interface'
         - user
         - 'user.node_grants:view'
@@ -1662,7 +1660,7 @@ display:
             alter_text: false
             text: ''
             make_link: true
-            path: /about/jobs-internships
+            path: '/about/{{ field_safe_path_alias }}'
             absolute: false
             external: false
             replace_spaces: false
@@ -1840,7 +1838,7 @@ display:
             alter_text: true
             text: "<h2>{{ title }}</h2>\r\n<section>{{ field_page_summary }}</section>\r\n<div class=\"more\">{{ nothing }}</div>"
             make_link: true
-            path: /about/jobs-and-internships
+            path: '/about/{{ field_safe_path_alias }}'
             absolute: false
             external: false
             replace_spaces: false
@@ -1932,7 +1930,6 @@ display:
     cache_metadata:
       max-age: -1
       contexts:
-        - 'languages:language_content'
         - 'languages:language_interface'
         - user
         - 'user.node_grants:view'
@@ -2554,7 +2551,6 @@ display:
     cache_metadata:
       max-age: -1
       contexts:
-        - 'languages:language_content'
         - 'languages:language_interface'
         - user
         - 'user.node_grants:view'
@@ -2728,7 +2724,7 @@ display:
           value:
             min: ''
             max: ''
-            value: '1815'
+            value: '3266'
           group: 1
           exposed: false
           expose:
@@ -3176,7 +3172,6 @@ display:
     cache_metadata:
       max-age: -1
       contexts:
-        - 'languages:language_content'
         - 'languages:language_interface'
         - user
         - 'user.node_grants:view'
@@ -3525,7 +3520,7 @@ display:
             alter_text: false
             text: ''
             make_link: true
-            path: /rome-sustainable-food-project
+            path: /about/rome-sustainable-food-project
             absolute: false
             external: false
             replace_spaces: false
@@ -3703,7 +3698,7 @@ display:
             alter_text: true
             text: "<h2>{{ title }}</h2>\r\n<section>{{ field_page_summary }}</section>\r\n<div class=\"more\">{{ nothing }}</div>"
             make_link: true
-            path: /rome-sustainable-food-project
+            path: /about//rome-sustainable-food-project
             absolute: false
             external: false
             replace_spaces: false
@@ -3795,7 +3790,6 @@ display:
     cache_metadata:
       max-age: -1
       contexts:
-        - 'languages:language_content'
         - 'languages:language_interface'
         - user
         - 'user.node_grants:view'
@@ -4415,7 +4409,6 @@ display:
     cache_metadata:
       max-age: -1
       contexts:
-        - 'languages:language_content'
         - 'languages:language_interface'
         - user
         - 'user.node_grants:view'

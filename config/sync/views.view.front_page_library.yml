@@ -2499,7 +2499,7 @@ display:
             alter_text: false
             text: ''
             make_link: true
-            path: '/research/library/{{ field_safe_path_alias }}'
+            path: /research/library/collection-development-policy-new-acquisitions
             absolute: false
             external: false
             replace_spaces: false
@@ -2739,7 +2739,7 @@ display:
             alter_text: true
             text: "<h2>{{ title }}</h2>\r\n<section>{{ field_page_summary }}</section>\r\n<div class=\"more\">{{ nothing }}</div>"
             make_link: true
-            path: /research/library/new-acquisitions
+            path: /research/library/collection-development-policy-new-acquisitions
             absolute: false
             external: false
             replace_spaces: false

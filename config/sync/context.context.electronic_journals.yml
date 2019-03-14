@@ -35,6 +35,22 @@ reactions:
         unique: 0
         context_id: electronic_journals
         uuid: e63f084b-d4ad-40b5-9cc3-6fe9bb44881c
+      9a236bcf-a87c-4572-9dfc-25a0f238bc79:
+        id: 'views_block:resources-block_electronic_journals_image'
+        label: ''
+        provider: views
+        label_display: 0
+        views_label: ''
+        items_per_page: none
+        region: content_pre
+        weight: '0'
+        context_mapping: {  }
+        custom_id: views_block_resources_block_electronic_journals_image
+        theme: tema
+        css_class: ''
+        unique: 0
+        context_id: electronic_journals
+        uuid: 9a236bcf-a87c-4572-9dfc-25a0f238bc79
     id: blocks
     saved: false
     uuid: bad692c9-676f-47e4-a89f-4c1c8ee4cd80

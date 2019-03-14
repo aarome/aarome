@@ -13,7 +13,7 @@ disabled: false
 conditions:
   request_path:
     id: request_path
-    pages: "/apply/affiliated-fellowships\r\n/partecipazione/studio-affiliate"
+    pages: "/apply/affiliated-fellowships\r\n/partecipazione/borse-di-studio-affiliate"
     negate: 0
     uuid: cd197554-c108-4cd4-a348-bf9f35be9e61
     context_mapping: {  }
