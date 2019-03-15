@@ -15,4 +15,4 @@ id: node.society_of_fellows
 target_entity_type_id: node
 target_bundle: society_of_fellows
 default_langcode: site_default
-language_alterable: false
+language_alterable: true

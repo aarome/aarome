@@ -1,17 +1,17 @@
-uuid: 357b76a0-50e1-48ba-84cd-2e3e0997846f
+uuid: cae32d82-f33c-47ca-88d5-f6f2b5859434
 langcode: en
 status: true
 dependencies:
   config:
-    - media.type.basic_pages
-id: media.basic_pages.changed
+    - media.type.file
+id: media.file.changed
 field_name: changed
 entity_type: media
-bundle: basic_pages
+bundle: file
 label: Changed
 description: 'The time the media item was last edited.'
 required: false
-translatable: true
+translatable: false
 default_value: {  }
 default_value_callback: ''
 settings: {  }

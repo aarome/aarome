@@ -22,7 +22,7 @@ bundle: basic_pages
 label: Caption
 description: ''
 required: false
-translatable: false
+translatable: true
 default_value:
   -
     value: 'Sample caption'

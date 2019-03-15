@@ -13,7 +13,7 @@ disabled: false
 conditions:
   request_path:
     id: request_path
-    pages: "/research/archaeology\r\n/research/archeologia"
+    pages: "/research/archaeology\r\n/ricerca/archeologia"
     negate: 0
     uuid: ccad99eb-9a63-4528-89b3-6604e1f22f22
     context_mapping: {  }

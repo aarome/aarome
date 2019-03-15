@@ -15,4 +15,4 @@ id: taxonomy_term.society_of_fellows_types
 target_entity_type_id: taxonomy_term
 target_bundle: society_of_fellows_types
 default_langcode: site_default
-language_alterable: false
+language_alterable: true

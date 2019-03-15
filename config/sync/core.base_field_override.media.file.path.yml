@@ -1,19 +1,19 @@
-uuid: 35ebe3e4-ac35-4ceb-b5e6-178abb626839
+uuid: cc400b57-0190-41ae-b14f-38b9cc2fd826
 langcode: en
 status: true
 dependencies:
   config:
-    - media.type.basic_pages
+    - media.type.file
   module:
     - path
-id: media.basic_pages.path
+id: media.file.path
 field_name: path
 entity_type: media
-bundle: basic_pages
+bundle: file
 label: 'URL alias'
 description: ''
 required: false
-translatable: true
+translatable: false
 default_value: {  }
 default_value_callback: ''
 settings: {  }

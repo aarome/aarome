@@ -1,17 +1,17 @@
-uuid: b106944a-51e6-4220-91be-d426c38c1e1c
+uuid: 48735a39-a71a-4627-bde0-5cba8ac7d1fd
 langcode: en
 status: true
 dependencies:
   config:
-    - media.type.basic_pages
-id: media.basic_pages.metatag
+    - media.type.file
+id: media.file.metatag
 field_name: metatag
 entity_type: media
-bundle: basic_pages
+bundle: file
 label: Metatags
 description: 'The meta tags for the entity.'
 required: false
-translatable: true
+translatable: false
 default_value: {  }
 default_value_callback: ''
 settings: {  }

@@ -1,26 +1,19 @@
-uuid: 87e0ec0c-b0d5-4d98-89a1-7299883310d6
+uuid: 4d11d750-ba44-497c-be49-18a4884d5219
 langcode: en
 status: true
 dependencies:
   config:
-    - media.type.quick_news
+    - media.type.events
   module:
-    - content_translation
     - image
-third_party_settings:
-  content_translation:
-    translation_sync:
-      file: file
-      alt: 0
-      title: 0
-id: media.quick_news.thumbnail
+id: media.events.thumbnail
 field_name: thumbnail
 entity_type: media
-bundle: quick_news
+bundle: events
 label: Thumbnail
 description: 'The thumbnail of the media item.'
 required: false
-translatable: true
+translatable: false
 default_value: {  }
 default_value_callback: ''
 settings:
