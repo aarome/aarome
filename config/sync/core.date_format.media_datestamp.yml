@@ -1,8 +1,0 @@
-uuid: 1c17ff30-b350-4ad1-b1b2-34aa2bc03d62
-langcode: en
-status: true
-dependencies: {  }
-id: media_datestamp
-label: 'Media datestamp'
-locked: false
-pattern: Ymd

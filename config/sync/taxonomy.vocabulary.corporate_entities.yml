@@ -1,9 +1,0 @@
-uuid: 948bb9fb-362e-4405-99ea-b050510edc22
-langcode: en
-status: true
-dependencies: {  }
-name: 'Corporate entities'
-vid: corporate_entities
-description: ''
-hierarchy: 0
-weight: 0
