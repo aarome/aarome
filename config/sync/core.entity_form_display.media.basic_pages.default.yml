@@ -1,0 +1,52 @@
+uuid: 50668b6a-cb5c-418e-9bba-83a641204abc
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.field.media.basic_pages.field_media_caption
+    - field.field.media.basic_pages.field_media_image
+    - image.style.thumbnail
+    - media.type.basic_pages
+  module:
+    - allowed_formats
+    - image
+    - text
+id: media.basic_pages.default
+targetEntityType: media
+bundle: basic_pages
+mode: default
+content:
+  field_media_caption:
+    weight: 2
+    settings:
+      size: 60
+      placeholder: ''
+    third_party_settings:
+      allowed_formats:
+        hide_help: '1'
+        hide_guidelines: '1'
+    type: text_textfield
+    region: content
+  field_media_image:
+    weight: 1
+    settings:
+      progress_indicator: throbber
+      preview_image_style: thumbnail
+    third_party_settings: {  }
+    type: image_image
+    region: content
+  name:
+    type: string_textfield
+    weight: 0
+    region: content
+    settings:
+      size: 60
+      placeholder: ''
+    third_party_settings: {  }
+hidden:
+  created: true
+  langcode: true
+  path: true
+  revision_log_message: true
+  status: true
+  uid: true

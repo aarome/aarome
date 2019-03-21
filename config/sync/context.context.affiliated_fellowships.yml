@@ -1,0 +1,196 @@
+uuid: d9454f75-68c8-4eef-9741-d6eecf9dc088
+langcode: en
+status: true
+dependencies:
+  module:
+    - system
+name: affiliated_fellowships
+label: 'Affiliated Fellowships'
+group: Frontpages
+description: ''
+requireAllConditions: false
+disabled: false
+conditions:
+  request_path:
+    id: request_path
+    pages: "/apply/affiliated-fellowships\r\n/partecipazione/borse-di-studio-affiliate"
+    negate: 0
+    uuid: cd197554-c108-4cd4-a348-bf9f35be9e61
+    context_mapping: {  }
+reactions:
+  blocks:
+    blocks:
+      fb61c181-752e-4229-afc0-1bd304ee80b8:
+        id: 'views_block:front_page_affiliated_fellowships-affiliated_fellowships_acls'
+        label: ''
+        provider: views
+        label_display: 0
+        views_label: ''
+        items_per_page: none
+        region: content
+        weight: '0'
+        context_mapping: {  }
+        theme: tema
+        css_class: ''
+        unique: 1
+        context_id: affiliated_fellowships
+        uuid: fb61c181-752e-4229-afc0-1bd304ee80b8
+      13a283c6-78d3-4d58-89b9-f3ba50094c05:
+        id: 'views_block:front_page_affiliated_fellowships-affiliated_fellowships_caorc'
+        label: ''
+        provider: views
+        label_display: 0
+        views_label: ''
+        items_per_page: none
+        region: content
+        weight: '0'
+        context_mapping: {  }
+        theme: tema
+        css_class: ''
+        unique: 1
+        context_id: affiliated_fellowships
+        uuid: 13a283c6-78d3-4d58-89b9-f3ba50094c05
+      a45f4b79-dfe0-4c51-a97c-9e37fa1f9ddc:
+        id: 'views_block:front_page_affiliated_fellowships-affiliated_fellowships_brodsky_literature'
+        label: ''
+        provider: views
+        label_display: 0
+        views_label: ''
+        items_per_page: none
+        region: content
+        weight: '0'
+        context_mapping: {  }
+        theme: tema
+        css_class: ''
+        unique: 1
+        context_id: affiliated_fellowships
+        uuid: a45f4b79-dfe0-4c51-a97c-9e37fa1f9ddc
+      2be99e82-1e8c-449a-968e-f699209e7c99:
+        id: 'views_block:front_page_affiliated_fellowships-affiliated_fellowships_brodsky_visual'
+        label: ''
+        provider: views
+        label_display: 0
+        views_label: ''
+        items_per_page: none
+        region: content
+        weight: '0'
+        context_mapping: {  }
+        theme: tema
+        css_class: ''
+        unique: 1
+        context_id: affiliated_fellowships
+        uuid: 2be99e82-1e8c-449a-968e-f699209e7c99
+      ee1d4e74-cb57-4da0-9fbf-60b81a8a91a6:
+        id: 'views_block:front_page_affiliated_fellowships-affiliated_fellowships_kress'
+        label: ''
+        provider: views
+        label_display: 0
+        views_label: ''
+        items_per_page: none
+        region: content
+        weight: '0'
+        context_mapping: {  }
+        theme: tema
+        css_class: ''
+        unique: 1
+        context_id: affiliated_fellowships
+        uuid: ee1d4e74-cb57-4da0-9fbf-60b81a8a91a6
+      24365d61-901b-4d6c-894d-9a19d2d63faa:
+        id: 'views_block:front_page_affiliated_fellowships-affiliated_fellowships_kress_aamd'
+        label: ''
+        provider: views
+        label_display: 0
+        views_label: ''
+        items_per_page: none
+        region: content
+        weight: '0'
+        context_mapping: {  }
+        theme: tema
+        css_class: ''
+        unique: 1
+        context_id: affiliated_fellowships
+        uuid: 24365d61-901b-4d6c-894d-9a19d2d63faa
+      b6295f6a-f4a2-434e-9f2a-549d7751f731:
+        id: 'views_block:front_page_affiliated_fellowships-affiliated_fellowships_mordant'
+        label: ''
+        provider: views
+        label_display: 0
+        views_label: ''
+        items_per_page: none
+        region: content
+        weight: '0'
+        context_mapping: {  }
+        theme: tema
+        css_class: ''
+        unique: 1
+        context_id: affiliated_fellowships
+        uuid: b6295f6a-f4a2-434e-9f2a-549d7751f731
+      7e6757b1-aab9-4fb1-b88e-e654c217385a:
+        id: 'views_block:front_page_affiliated_fellowships-affiliated_fellowships_broneer'
+        label: ''
+        provider: views
+        label_display: 0
+        views_label: ''
+        items_per_page: none
+        region: content
+        weight: '0'
+        context_mapping: {  }
+        theme: tema
+        css_class: ''
+        unique: 1
+        context_id: affiliated_fellowships
+        uuid: 7e6757b1-aab9-4fb1-b88e-e654c217385a
+      33a9c754-2af8-4ac2-849e-fa6728b6cc0b:
+        id: 'views_block:front_page_affiliated_fellowships-affiliated_fellowships_raiziss'
+        label: ''
+        provider: views
+        label_display: 0
+        views_label: ''
+        items_per_page: none
+        region: content
+        weight: '0'
+        context_mapping: {  }
+        theme: tema
+        css_class: ''
+        unique: 0
+        context_id: affiliated_fellowships
+        uuid: 33a9c754-2af8-4ac2-849e-fa6728b6cc0b
+      69e2d420-bd1e-4a1d-856d-8d83cc1f4416:
+        id: 'views_block:front_page_affiliated_fellowships-affiliated_fellowships_tennessee'
+        label: ''
+        provider: views
+        label_display: 0
+        views_label: ''
+        items_per_page: none
+        region: content
+        weight: '0'
+        context_mapping: {  }
+        theme: tema
+        css_class: ''
+        unique: 1
+        context_id: affiliated_fellowships
+        uuid: 69e2d420-bd1e-4a1d-856d-8d83cc1f4416
+      b410bb2c-0a9b-4f70-85ae-02ca0e9957a0:
+        id: 'views_block:front_page_affiliated_fellowships-affiliated_fellowships_terra'
+        label: ''
+        provider: views
+        label_display: 0
+        views_label: ''
+        items_per_page: none
+        region: content
+        weight: '0'
+        context_mapping: {  }
+        theme: tema
+        css_class: ''
+        unique: 0
+        context_id: affiliated_fellowships
+        uuid: b410bb2c-0a9b-4f70-85ae-02ca0e9957a0
+    id: blocks
+    saved: false
+    uuid: a4faea4d-2b03-4d53-aa0a-9ae0bc37d30d
+    include_default_blocks: 1
+  body_class:
+    id: body_class
+    body_class: section-front
+    saved: false
+weight: 0

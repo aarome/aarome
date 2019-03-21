@@ -1,0 +1,10 @@
+display:
+  page_events_list:
+    display_options:
+      title: Calendario
+  page_news_features_list:
+    display_options:
+      title: Articoli
+  page_press_press_releases:
+    display_options:
+      title: 'Comunicati Stampa'

@@ -1,0 +1,33 @@
+uuid: afac9f30-745d-4cb9-a4de-829516278192
+langcode: en
+status: true
+dependencies:
+  module:
+    - language
+    - node
+id: events_italian
+label: 'Events (Italian)'
+type: 'canonical_entities:node'
+pattern: '/eventi/calendario/[node:title]'
+selection_criteria:
+  e39354cb-a17c-42e3-a1ae-6bbe418807b0:
+    id: node_type
+    bundles:
+      events: events
+    negate: false
+    context_mapping:
+      node: node
+    uuid: e39354cb-a17c-42e3-a1ae-6bbe418807b0
+  35150b8d-5876-4aa5-98f0-3de4dcadcdc1:
+    id: language
+    langcodes:
+      it: it
+    negate: false
+    context_mapping:
+      language: 'node:langcode:language'
+    uuid: 35150b8d-5876-4aa5-98f0-3de4dcadcdc1
+selection_logic: and
+weight: -8
+relationships:
+  'node:langcode:language':
+    label: Language

@@ -1,0 +1,25 @@
+uuid: a2101fff-30fe-4410-979d-72c4f674e776
+langcode: en
+status: true
+dependencies:
+  module:
+    - system
+  theme:
+    - tema
+id: messages
+theme: tema
+region: messages
+weight: -8
+provider: null
+plugin: system_messages_block
+settings:
+  id: system_messages_block
+  label: Messages
+  provider: system
+  label_display: '0'
+visibility:
+  request_path:
+    id: request_path
+    pages: /user/login
+    negate: false
+    context_mapping: {  }

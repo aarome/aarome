@@ -1,0 +1,43 @@
+uuid: 0636f10e-06e6-4e22-ac7e-56efd9fc85d2
+langcode: en
+status: true
+dependencies:
+  config:
+    - core.entity_view_mode.node.teaser
+    - field.field.node.press.body
+    - field.field.node.press.field_press_date
+    - field.field.node.press.field_press_files
+    - field.field.node.press.field_press_publication
+    - field.field.node.press.field_press_published_date
+    - field.field.node.press.field_press_rel_events
+    - field.field.node.press.field_press_rel_people
+    - node.type.press
+  module:
+    - text
+    - user
+id: node.press.teaser
+targetEntityType: node
+bundle: press
+mode: teaser
+content:
+  body:
+    label: hidden
+    type: text_summary_or_trimmed
+    weight: 101
+    settings:
+      trim_length: 600
+    third_party_settings: {  }
+    region: content
+  links:
+    weight: 100
+    region: content
+    settings: {  }
+    third_party_settings: {  }
+hidden:
+  field_press_date: true
+  field_press_files: true
+  field_press_publication: true
+  field_press_published_date: true
+  field_press_rel_events: true
+  field_press_rel_people: true
+  langcode: true

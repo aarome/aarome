@@ -1,0 +1,32 @@
+uuid: 3ba6f5ab-b044-42d6-876d-b9368771fb4a
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.media.field_media_caption
+    - media.type.basic_pages
+  module:
+    - allowed_formats
+    - text
+third_party_settings:
+  allowed_formats:
+    summary_html: summary_html
+    basic_html: '0'
+    restricted_html: '0'
+    full_html: '0'
+    plain_text: '0'
+id: media.basic_pages.field_media_caption
+field_name: field_media_caption
+entity_type: media
+bundle: basic_pages
+label: Caption
+description: ''
+required: false
+translatable: true
+default_value:
+  -
+    value: 'Sample caption'
+    format: summary_html
+default_value_callback: ''
+settings: {  }
+field_type: text

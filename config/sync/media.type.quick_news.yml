@@ -1,0 +1,13 @@
+uuid: aafdbc73-23bd-4f76-839b-a701dcdf199c
+langcode: en
+status: true
+dependencies: {  }
+id: quick_news
+label: 'Quick News'
+description: ''
+source: image
+queue_thumbnail_downloads: false
+new_revision: false
+source_configuration:
+  source_field: field_media_image
+field_map: {  }

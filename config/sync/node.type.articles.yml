@@ -1,0 +1,17 @@
+uuid: dc98847a-3b3e-4cfd-8160-a796fd19028b
+langcode: en
+status: true
+dependencies:
+  module:
+    - menu_ui
+third_party_settings:
+  menu_ui:
+    available_menus: {  }
+    parent: ''
+name: Articles
+type: articles
+description: ''
+help: ''
+new_revision: false
+preview_mode: 1
+display_submitted: false
