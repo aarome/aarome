@@ -21,12 +21,40 @@ dependencies:
     - node.type.events
   module:
     - datetime_range
+    - ds
     - layout_builder
     - text
     - user
 third_party_settings:
   layout_builder:
     sections: {  }
+  ds:
+    layout:
+      id: ds_2col_stacked_fluid
+      library: ds/ds_2col_stacked_fluid
+      disable_css: false
+      entity_classes: no_classes
+      settings:
+        wrappers:
+          header: div
+          left: div
+          right: div
+          footer: div
+        outer_wrapper: div
+        attributes: ''
+        link_attribute: ''
+        link_custom: ''
+        classes:
+          layout_class: {  }
+    regions:
+      header:
+        - field_events_event_series
+        - field_events_event_dates
+        - field_events_rel_places
+        - field_events_image
+      right:
+        - body
+        - field_events_security_notice
 id: node.events.default
 targetEntityType: node
 bundle: events
@@ -35,12 +63,12 @@ content:
   body:
     label: hidden
     type: text_default
-    weight: 5
+    weight: 4
     settings: {  }
     third_party_settings: {  }
-    region: content
+    region: right
   field_events_event_dates:
-    weight: 3
+    weight: 1
     label: hidden
     settings:
       timezone_override: ''
@@ -48,19 +76,19 @@ content:
       separator: '-'
     third_party_settings: {  }
     type: daterange_default
-    region: content
-  field_events_event_type:
-    weight: 1
+    region: header
+  field_events_event_series:
+    type: entity_reference_label
+    weight: 0
+    region: header
     label: hidden
     settings:
       link: false
     third_party_settings: {  }
-    type: entity_reference_label
-    region: content
   field_events_image:
     type: entity_reference_entity_view
-    weight: 4
-    region: content
+    weight: 3
+    region: header
     label: hidden
     settings:
       view_mode: event_detail
@@ -74,23 +102,18 @@ content:
       link: false
     third_party_settings: {  }
     type: entity_reference_entity_view
-    region: content
+    region: header
   field_events_security_notice:
     type: entity_reference_entity_view
-    weight: 6
-    region: content
+    weight: 5
+    region: right
     label: hidden
     settings:
-      link: true
-      view_mode: default
-    third_party_settings: {  }
-  links:
-    weight: 0
-    region: content
-    settings: {  }
+      view_mode: inside
+      link: false
     third_party_settings: {  }
 hidden:
-  field_events_event_series: true
+  field_events_event_type: true
   field_events_legacy_id: true
   field_events_notice: true
   field_events_rel_news_feature: true
@@ -100,3 +123,4 @@ hidden:
   field_events_summary: true
   field_safe_path_alias: true
   langcode: true
+  links: true
