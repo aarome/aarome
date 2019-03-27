@@ -2549,6 +2549,7 @@ display:
           absolute: false
           entity_type: node
           plugin_id: entity_link_edit
+      enabled: true
     cache_metadata:
       max-age: -1
       contexts:

@@ -4,7 +4,13 @@ display:
       title: Eventi
   front_news:
     display_options:
-      title: Attualità
+      title: '<a href="/it/attualita">Attualità</a>'
   front_residents:
     display_options:
-      title: 'Residenti Invitati'
+      title: '<a href="/it/comunita/residenti-invitati">Residenti Invitati</a>'
+  front_join_us:
+    display_options:
+      title: 'Unisciti a noi a Roma...'
+  front_fellows:
+    display_options:
+      title: '<a href="/it/comunita">Incontra i borsisti</a>'

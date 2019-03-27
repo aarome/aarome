@@ -1541,6 +1541,7 @@ display:
           separator: ' '
           field_api_classes: false
           plugin_id: field
+      enabled: true
     cache_metadata:
       max-age: -1
       contexts:
@@ -9901,6 +9902,7 @@ display:
           field_api_classes: false
           plugin_id: field
       title: '{{ title }}'
+      enabled: true
     cache_metadata:
       max-age: -1
       contexts:

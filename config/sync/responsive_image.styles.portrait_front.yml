@@ -3,7 +3,6 @@ langcode: en
 status: true
 dependencies:
   config:
-    - image.style.portrait_front_narrow
     - image.style.portrait_front_wide
   theme:
     - tema
@@ -34,21 +33,21 @@ image_style_mappings:
     breakpoint_id: tema.medium
     multiplier: 1x
     image_mapping_type: image_style
-    image_mapping: portrait_front_narrow
+    image_mapping: portrait_front_wide
   -
     breakpoint_id: tema.medium
     multiplier: 2x
     image_mapping_type: image_style
-    image_mapping: portrait_front_narrow
+    image_mapping: portrait_front_wide
   -
     breakpoint_id: tema.small
     multiplier: 1x
     image_mapping_type: image_style
-    image_mapping: portrait_front_narrow
+    image_mapping: portrait_front_wide
   -
     breakpoint_id: tema.small
     multiplier: 2x
     image_mapping_type: image_style
-    image_mapping: portrait_front_narrow
+    image_mapping: portrait_front_wide
 breakpoint_group: tema
 fallback_image_style: '_empty image_'

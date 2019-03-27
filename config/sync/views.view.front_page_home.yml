@@ -28,6 +28,7 @@ dependencies:
     - link
     - media
     - node
+    - owlcarousel
     - paragraphs
     - responsive_image
     - slick_views
@@ -438,47 +439,35 @@ display:
           granularity: day
           plugin_id: datetime
       style:
-        type: slick
+        type: owlcarousel
         options:
-          vanilla: true
-          optionset: front_events
-          skin: ''
-          layout: ''
-          caption:
-            field_safe_path_alias: '0'
-            alias: '0'
-            field_media_image: '0'
-            title: '0'
-            field_events_event_dates: '0'
-            nothing: '0'
-          optionset_thumbnail: ''
-          skin_thumbnail: ''
-          thumbnail_caption: ''
-          grid_header: ''
-          grid: null
-          grid_medium: null
-          grid_small: null
-          visible_items: null
-          preserve_keys: false
-          image: ''
-          thumbnail: ''
-          overlay: ''
-          title: ''
-          link: ''
-          class: ''
-          id: ''
-          override: false
-          overridables:
-            arrows: '0'
-            autoplay: '0'
-            dots: '0'
-            draggable: '0'
-            infinite: '0'
-            mouseWheel: '0'
-            randomize: '0'
-            variableWidth: '0'
-          cache: 0
-          current_view_mode: front_events
+          grouping: {  }
+          row_class: ''
+          default_row_class: false
+          items: '5'
+          itemsDesktop: '[1199,4]'
+          itemsDesktopSmall: '[979,3]'
+          itemsTablet: '[768,2]'
+          itemsMobile: '[479,1]'
+          singleItem: 1
+          itemsScaleUp: 1
+          slideSpeed: '200'
+          paginationSpeed: '800'
+          rewindSpeed: '1000'
+          autoPlay: 0
+          stopOnHover: 0
+          navigation: 1
+          prevText: prev
+          nextText: next
+          rewindNav: 0
+          scrollPerPage: 1
+          pagination: 0
+          paginationNumbers: 0
+          responsive: 1
+          responsiveRefreshRate: '200'
+          mouseDrag: 1
+          touchDrag: 1
+          transitionStyle: fade
       row:
         type: fields
         options:
@@ -1506,7 +1495,8 @@ display:
           skin: ''
           layout: ''
           caption:
-            field_safe_path_alias: '0'
+            view_node: '0'
+            field_affiliation_types_plural: '0'
             field_media_image: '0'
             title: '0'
             field_affil_discipline: '0'
@@ -1531,12 +1521,12 @@ display:
           overridables:
             autoplay: autoplay
             draggable: draggable
-            infinite: infinite
+            randomize: randomize
             variableWidth: variableWidth
             arrows: '0'
             dots: '0'
+            infinite: '0'
             mouseWheel: '0'
-            randomize: '0'
           cache: 0
           current_view_mode: front_fellows
       row:
@@ -1559,7 +1549,7 @@ display:
           expose:
             label: ''
           plugin_id: standard
-      title: 'Meet the Fellows'
+      title: '<a href="/people">Meet the Fellows</a>'
       header:
         area_text_custom:
           id: area_text_custom
@@ -2202,7 +2192,7 @@ display:
           offset: 0
       display_description: ''
       block_description: 'Front (News)'
-      title: News
+      title: '<a href="/news/features">News</a>'
       rendering_language: '***LANGUAGE_language_interface***'
       css_class: 'front front_news'
       sorts:
@@ -2806,9 +2796,11 @@ display:
           skin: ''
           layout: ''
           caption:
+            view_node: '0'
             field_media_image: '0'
             title: '0'
             field_affil_discipline: '0'
+            nothing: '0'
           optionset_thumbnail: ''
           skin_thumbnail: ''
           thumbnail_caption: ''
@@ -2830,11 +2822,11 @@ display:
             autoplay: autoplay
             draggable: draggable
             infinite: infinite
+            randomize: randomize
             variableWidth: variableWidth
             arrows: '0'
             dots: '0'
             mouseWheel: '0'
-            randomize: '0'
           cache: 0
           current_view_mode: front_residents
       row:
@@ -2857,7 +2849,7 @@ display:
           expose:
             label: ''
           plugin_id: standard
-      title: 'Invited Residents'
+      title: '<a href="/people/residents">Invited Residents</a>'
       header: {  }
       use_ajax: true
       query:
@@ -2867,7 +2859,7 @@ display:
           distinct: true
           replica: false
           query_comment: ''
-          query_tags: null
+          query_tags: {  }
     cache_metadata:
       max-age: -1
       contexts:
@@ -3001,6 +2993,72 @@ display:
           items_per_page: 1
           offset: 0
       fields:
+        langcode:
+          id: langcode
+          table: node_field_data
+          field: langcode
+          relationship: none
+          group_type: group
+          admin_label: ''
+          label: ''
+          exclude: true
+          alter:
+            alter_text: false
+            text: ''
+            make_link: false
+            path: ''
+            absolute: false
+            external: false
+            replace_spaces: false
+            path_case: none
+            trim_whitespace: false
+            alt: ''
+            rel: ''
+            link_class: ''
+            prefix: ''
+            suffix: ''
+            target: ''
+            nl2br: false
+            max_length: 0
+            word_boundary: true
+            ellipsis: true
+            more_link: false
+            more_link_text: ''
+            more_link_path: ''
+            strip_tags: false
+            trim: false
+            preserve_tags: ''
+            html: false
+          element_type: ''
+          element_class: ''
+          element_label_type: ''
+          element_label_class: ''
+          element_label_colon: false
+          element_wrapper_type: ''
+          element_wrapper_class: ''
+          element_default_classes: true
+          empty: ''
+          hide_empty: false
+          empty_zero: false
+          hide_alter_empty: true
+          click_sort_column: value
+          type: language
+          settings:
+            link_to_entity: false
+            native_language: false
+          group_column: value
+          group_columns: {  }
+          group_rows: true
+          delta_limit: 0
+          delta_offset: 0
+          delta_reversed: false
+          delta_first_last: false
+          multi_type: separator
+          separator: ', '
+          field_api_classes: false
+          entity_type: node
+          entity_field: langcode
+          plugin_id: field
         fieldset:
           id: fieldset
           table: views
@@ -3070,7 +3128,7 @@ display:
           exclude: false
           alter:
             alter_text: true
-            text: "<h2>Rome Prize</h2>\r\n<h2>Time and space to think and work</h2>"
+            text: "{% if langcode == 'Italian' %}\r\n<h2>Rome Prize</h2>\r\n<h2>Tempo e spazio per pensare e lavorare</h2>\r\n{% elseif langcode == 'English' %}\r\n<h2>Rome Prize</h2>\r\n<h2>Time and space to think and work</h2>\r\n{% endif %}"
             make_link: false
             path: ''
             absolute: false
@@ -3238,7 +3296,7 @@ display:
           exclude: false
           alter:
             alter_text: true
-            text: Apply
+            text: "{% if langcode == 'Italian' %}\r\nFai domanda\r\n{% elseif langcode == 'English' %}\r\nApply\r\n{% endif %}"
             make_link: true
             path: /apply/rome-prize
             absolute: false
@@ -3287,7 +3345,7 @@ display:
           exclude: false
           alter:
             alter_text: true
-            text: 'Other opportunities'
+            text: "{% if langcode == 'Italian' %}\r\nAltre opportunità\r\n{% elseif langcode == 'English' %}\r\nOther opporunities\r\n{% endif %}"
             make_link: true
             path: /apply
             absolute: false
