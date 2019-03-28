@@ -6,8 +6,10 @@ dependencies:
     - core.entity_form_mode.node.inline_form
     - field.field.node.events.body
     - field.field.node.events.field_events_event_dates
+    - field.field.node.events.field_events_event_month
     - field.field.node.events.field_events_event_series
     - field.field.node.events.field_events_event_type
+    - field.field.node.events.field_events_event_year
     - field.field.node.events.field_events_image
     - field.field.node.events.field_events_legacy_id
     - field.field.node.events.field_events_notice
@@ -33,7 +35,7 @@ mode: default
 content:
   body:
     type: text_textarea_with_summary
-    weight: 8
+    weight: 10
     settings:
       rows: 9
       placeholder: ''
@@ -45,18 +47,24 @@ content:
     region: content
   created:
     type: datetime_timestamp
-    weight: 12
+    weight: 14
     region: content
     settings: {  }
     third_party_settings: {  }
   field_events_event_dates:
-    weight: 2
+    weight: 4
     settings: {  }
     third_party_settings: {  }
     type: daterange_default
     region: content
+  field_events_event_month:
+    weight: 3
+    settings: {  }
+    third_party_settings: {  }
+    type: options_select
+    region: content
   field_events_event_series:
-    weight: 4
+    weight: 6
     settings:
       match_operator: CONTAINS
       size: 60
@@ -65,7 +73,7 @@ content:
     type: entity_reference_autocomplete
     region: content
   field_events_event_type:
-    weight: 3
+    weight: 5
     settings:
       match_operator: CONTAINS
       size: 60
@@ -73,8 +81,14 @@ content:
     third_party_settings: {  }
     type: entity_reference_autocomplete
     region: content
+  field_events_event_year:
+    weight: 2
+    settings: {  }
+    third_party_settings: {  }
+    type: options_select
+    region: content
   field_events_image:
-    weight: 9
+    weight: 11
     settings:
       form_mode: default
       label_singular: ''
@@ -90,7 +104,7 @@ content:
     type: inline_entity_form_complex
     region: content
   field_events_rel_places:
-    weight: 5
+    weight: 7
     settings:
       form_mode: inline_form
       override_labels: true
@@ -106,13 +120,13 @@ content:
     type: inline_entity_form_complex
     region: content
   field_events_security_notice:
-    weight: 6
+    weight: 8
     settings: {  }
     third_party_settings: {  }
     type: options_buttons
     region: content
   field_events_summary:
-    weight: 7
+    weight: 9
     settings:
       rows: 1
       placeholder: ''
@@ -131,7 +145,7 @@ content:
     third_party_settings: {  }
   path:
     type: path
-    weight: 15
+    weight: 17
     region: content
     settings: {  }
     third_party_settings: {  }
@@ -139,14 +153,14 @@ content:
     type: boolean_checkbox
     settings:
       display_label: true
-    weight: 13
+    weight: 15
     region: content
     third_party_settings: {  }
   status:
     type: boolean_checkbox
     settings:
       display_label: true
-    weight: 14
+    weight: 16
     region: content
     third_party_settings: {  }
   title:
@@ -158,13 +172,13 @@ content:
       placeholder: ''
     third_party_settings: {  }
   translation:
-    weight: 10
+    weight: 12
     region: content
     settings: {  }
     third_party_settings: {  }
   uid:
     type: entity_reference_autocomplete
-    weight: 11
+    weight: 13
     settings:
       match_operator: CONTAINS
       size: 60

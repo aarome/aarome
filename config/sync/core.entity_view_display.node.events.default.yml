@@ -5,8 +5,10 @@ dependencies:
   config:
     - field.field.node.events.body
     - field.field.node.events.field_events_event_dates
+    - field.field.node.events.field_events_event_month
     - field.field.node.events.field_events_event_series
     - field.field.node.events.field_events_event_type
+    - field.field.node.events.field_events_event_year
     - field.field.node.events.field_events_image
     - field.field.node.events.field_events_legacy_id
     - field.field.node.events.field_events_notice
@@ -77,6 +79,14 @@ content:
     third_party_settings: {  }
     type: daterange_default
     region: header
+  field_events_event_month:
+    weight: 7
+    label: above
+    settings:
+      link: true
+    third_party_settings: {  }
+    type: entity_reference_label
+    region: content
   field_events_event_series:
     type: entity_reference_label
     weight: 0
@@ -85,6 +95,14 @@ content:
     settings:
       link: false
     third_party_settings: {  }
+  field_events_event_year:
+    weight: 6
+    label: above
+    settings:
+      link: true
+    third_party_settings: {  }
+    type: entity_reference_label
+    region: content
   field_events_image:
     type: entity_reference_entity_view
     weight: 3

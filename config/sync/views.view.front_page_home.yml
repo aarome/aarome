@@ -28,7 +28,6 @@ dependencies:
     - link
     - media
     - node
-    - owlcarousel
     - paragraphs
     - responsive_image
     - slick_views
@@ -439,35 +438,46 @@ display:
           granularity: day
           plugin_id: datetime
       style:
-        type: owlcarousel
+        type: slick
         options:
-          grouping: {  }
-          row_class: ''
-          default_row_class: false
-          items: '5'
-          itemsDesktop: '[1199,4]'
-          itemsDesktopSmall: '[979,3]'
-          itemsTablet: '[768,2]'
-          itemsMobile: '[479,1]'
-          singleItem: 1
-          itemsScaleUp: 1
-          slideSpeed: '200'
-          paginationSpeed: '800'
-          rewindSpeed: '1000'
-          autoPlay: 0
-          stopOnHover: 0
-          navigation: 1
-          prevText: prev
-          nextText: next
-          rewindNav: 0
-          scrollPerPage: 1
-          pagination: 0
-          paginationNumbers: 0
-          responsive: 1
-          responsiveRefreshRate: '200'
-          mouseDrag: 1
-          touchDrag: 1
-          transitionStyle: fade
+          vanilla: true
+          optionset: default
+          skin: ''
+          layout: ''
+          caption:
+            view_node: '0'
+            field_media_image: '0'
+            title: '0'
+            field_events_event_dates: '0'
+            nothing: '0'
+          optionset_thumbnail: ''
+          skin_thumbnail: ''
+          thumbnail_caption: ''
+          grid_header: ''
+          grid: null
+          grid_medium: null
+          grid_small: null
+          visible_items: null
+          preserve_keys: false
+          image: ''
+          thumbnail: ''
+          overlay: ''
+          title: ''
+          link: ''
+          class: ''
+          id: ''
+          override: false
+          overridables:
+            arrows: '0'
+            autoplay: '0'
+            dots: '0'
+            draggable: '0'
+            infinite: '0'
+            mouseWheel: '0'
+            randomize: '0'
+            variableWidth: '0'
+          cache: 0
+          current_view_mode: front_events
       row:
         type: fields
         options:
