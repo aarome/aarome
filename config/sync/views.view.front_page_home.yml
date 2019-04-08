@@ -774,7 +774,7 @@ display:
           exclude: false
           alter:
             alter_text: true
-            text: "<h3 class=\"title\">{{ title }}</h3>\r\n<time>{{ field_events_event_dates }}</time>"
+            text: "<h2 class=\"title\">{{ title }}</h2>\r\n{{ field_events_event_dates }}"
             make_link: true
             path: '{{ view_node }}'
             absolute: false
@@ -1393,7 +1393,7 @@ display:
             trim: false
             preserve_tags: ''
             html: false
-          element_type: div
+          element_type: '0'
           element_class: discipline
           element_label_type: ''
           element_label_class: ''
@@ -1431,7 +1431,7 @@ display:
           exclude: false
           alter:
             alter_text: true
-            text: "<h3 class=\"title\">{{ title }}</h3>\r\n<div class=\"discipline\">{{ field_affil_discipline }}</div>"
+            text: "<h3 class=\"title\">{{ title }}</h3>\r\n<h4 class=\"discipline\">{{ field_affil_discipline }}</h4>"
             make_link: true
             path: '{{ view_node }}'
             absolute: false
@@ -2741,7 +2741,7 @@ display:
           exclude: false
           alter:
             alter_text: true
-            text: "<h3 class=\"title\">{{ title }}</h3>\r\n<div class=\"discipline\">{{ field_affil_discipline }}</div>"
+            text: "<h3 class=\"title\">{{ title }}</h3>\r\n<h4 class=\"discipline\">{{ field_affil_discipline }}</h4>"
             make_link: true
             path: '{{ view_node }}'
             absolute: false

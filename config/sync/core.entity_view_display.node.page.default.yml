@@ -11,9 +11,12 @@ dependencies:
     - field.field.node.page.field_safe_path_alias
     - node.type.page
   module:
-    - entity_reference_revisions
+    - layout_builder
     - text
     - user
+third_party_settings:
+  layout_builder:
+    sections: {  }
 _core:
   default_config_hash: g1S3_GLaxq4l3I9RIca5Mlz02MxI2KmOquZpHw59akM
 id: node.page.default
@@ -30,15 +33,6 @@ content:
       link: false
     third_party_settings: {  }
     region: content
-  field_page_page_section:
-    type: entity_reference_revisions_entity_view
-    weight: 2
-    label: hidden
-    settings:
-      view_mode: default
-      link: ''
-    third_party_settings: {  }
-    region: content
   field_page_summary:
     weight: 1
     label: hidden
@@ -48,6 +42,7 @@ content:
     region: content
 hidden:
   body: true
+  field_page_page_section: true
   field_page_type: true
   field_safe_path_alias: true
   langcode: true

@@ -1,4 +1,4 @@
-uuid: d2b22a6a-06ec-42cb-9522-4d4781639b44
+uuid: fade7ff7-ae93-4223-9c06-8eb5064b9f6b
 langcode: en
 status: true
 dependencies:
@@ -9,7 +9,7 @@ dependencies:
 id: responsivemenumobileicon
 theme: tema
 region: header
-weight: -5
+weight: 0
 provider: null
 plugin: responsive_menu_toggle
 settings:

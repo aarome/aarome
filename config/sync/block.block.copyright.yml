@@ -1,9 +1,9 @@
-uuid: e1857282-d746-4360-8163-37dafb53f2f3
+uuid: 1e2731b8-d401-422f-b9ce-e0bac5100eae
 langcode: en
 status: true
 dependencies:
   content:
-    - 'block_content:basic:bc50f9b7-194f-4fdb-bd93-b940a7ca21ce'
+    - 'block_content:basic:0475385a-de8f-4d7d-80dc-00480ed92743'
   module:
     - block_class
     - block_content
@@ -15,11 +15,11 @@ third_party_settings:
 id: copyright
 theme: tema
 region: footer_second
-weight: -4
+weight: 0
 provider: null
-plugin: 'block_content:bc50f9b7-194f-4fdb-bd93-b940a7ca21ce'
+plugin: 'block_content:0475385a-de8f-4d7d-80dc-00480ed92743'
 settings:
-  id: 'block_content:bc50f9b7-194f-4fdb-bd93-b940a7ca21ce'
+  id: 'block_content:0475385a-de8f-4d7d-80dc-00480ed92743'
   label: Copyright
   provider: block_content
   label_display: '0'

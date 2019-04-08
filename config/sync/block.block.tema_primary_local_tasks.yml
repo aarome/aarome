@@ -2,6 +2,8 @@ uuid: 208ea39b-1187-437e-9e62-6e646c21afde
 langcode: en
 status: true
 dependencies:
+  module:
+    - system
   theme:
     - tema
 _core:
@@ -19,4 +21,9 @@ settings:
   label_display: '0'
   primary: true
   secondary: false
-visibility: {  }
+visibility:
+  request_path:
+    id: request_path
+    pages: "/about\r\n/apply\r\n/news\r\n/events\r\n/support\r\n/research\r\n/research/*\r\n/research/archaeology\r\n/publications"
+    negate: true
+    context_mapping: {  }

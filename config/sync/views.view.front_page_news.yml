@@ -1621,8 +1621,8 @@ display:
           alter:
             alter_text: false
             text: ''
-            make_link: false
-            path: '/apply/{{ title_1| lower | replace({'' '':''-''}) }}'
+            make_link: true
+            path: /news/quick-news/submit
             absolute: false
             external: false
             replace_spaces: false
@@ -1862,7 +1862,7 @@ display:
             alter_text: true
             text: "<h2>{{ title }}</h2>\r\n<section>{{ field_page_summary }}</section>\r\n<div class=\"more\">{{ nothing }}</div>"
             make_link: true
-            path: /contact/submit-news
+            path: /news/quick-news/submit
             absolute: false
             external: false
             replace_spaces: false

@@ -28,7 +28,7 @@ reactions:
         views_label: ''
         items_per_page: none
         region: content
-        weight: '-3'
+        weight: '-9'
         context_mapping: {  }
         theme: tema
         css_class: ''
@@ -43,7 +43,7 @@ reactions:
         views_label: ''
         items_per_page: none
         region: content
-        weight: '-2'
+        weight: '-8'
         context_mapping: {  }
         theme: tema
         css_class: ''
@@ -58,7 +58,7 @@ reactions:
         views_label: ''
         items_per_page: none
         region: content
-        weight: '-1'
+        weight: '-7'
         context_mapping: {  }
         theme: tema
         css_class: ''
@@ -73,7 +73,7 @@ reactions:
         views_label: ''
         items_per_page: none
         region: content
-        weight: '0'
+        weight: '-6'
         context_mapping: {  }
         theme: tema
         css_class: ''
@@ -88,7 +88,7 @@ reactions:
         views_label: ''
         items_per_page: none
         region: content
-        weight: '1'
+        weight: '-5'
         context_mapping: {  }
         theme: tema
         css_class: ''
@@ -103,7 +103,7 @@ reactions:
         views_label: ''
         items_per_page: none
         region: content
-        weight: '2'
+        weight: '-4'
         context_mapping: {  }
         theme: tema
         css_class: ''
@@ -118,13 +118,27 @@ reactions:
         views_label: ''
         items_per_page: none
         region: content
-        weight: '3'
+        weight: '-3'
         context_mapping: {  }
         theme: tema
         css_class: ''
         unique: 0
         context_id: photographic_archive
         uuid: d1132d04-5e76-4544-b9df-b606faf9f853
+      b8339cbe-15c8-4f2e-b0f1-904b3d9926ab:
+        id: page_title_block
+        label: 'Page title'
+        provider: core
+        label_display: 0
+        region: content_pre
+        weight: '-3'
+        context_mapping: {  }
+        custom_id: page_title_block
+        theme: tema
+        css_class: ''
+        unique: 0
+        context_id: photographic_archive
+        uuid: b8339cbe-15c8-4f2e-b0f1-904b3d9926ab
     id: blocks
     saved: false
     uuid: 5d2521c3-4691-4643-a22f-0e201d7bdc4a

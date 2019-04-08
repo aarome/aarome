@@ -13,7 +13,11 @@ dependencies:
     - node.type.page
   module:
     - entity_reference_revisions
+    - layout_builder
     - user
+third_party_settings:
+  layout_builder:
+    sections: {  }
 _core:
   default_config_hash: g1S3_GLaxq4l3I9RIca5Mlz02MxI2KmOquZpHw59akM
 id: node.page.full
@@ -23,16 +27,16 @@ mode: full
 content:
   field_page_image:
     type: entity_reference_entity_view
-    weight: 2
+    weight: 1
     region: content
-    label: above
+    label: hidden
     settings:
       link: true
       view_mode: default
     third_party_settings: {  }
   field_page_page_section:
     type: entity_reference_revisions_entity_view
-    weight: 1
+    weight: 2
     label: hidden
     settings:
       view_mode: default

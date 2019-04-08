@@ -1,14 +1,16 @@
-uuid: 86f9741d-a20b-4cd6-81d0-ba1de0db0648
+uuid: 31bb5239-65ad-4d9d-ae8a-b27a7b8bc563
 langcode: en
 status: true
 dependencies:
   config:
+    - core.entity_view_mode.paragraph.inside_page
     - field.field.paragraph.page_section.field_page_section_body
     - field.field.paragraph.page_section.field_page_section_files
     - field.field.paragraph.page_section.field_page_section_links
     - field.field.paragraph.page_section.field_page_section_title
     - paragraphs.paragraphs_type.page_section
   module:
+    - ds
     - file
     - layout_builder
     - link
@@ -16,10 +18,35 @@ dependencies:
 third_party_settings:
   layout_builder:
     sections: {  }
-id: paragraph.page_section.default
+    allow_custom: false
+    enabled: false
+  ds:
+    layout:
+      id: ds_2col_fluid
+      library: ds/ds_2col_fluid
+      disable_css: false
+      entity_classes: no_classes
+      settings:
+        wrappers:
+          left: div
+          right: div
+        outer_wrapper: div
+        attributes: ''
+        link_attribute: ''
+        link_custom: ''
+        classes:
+          layout_class: {  }
+    regions:
+      left:
+        - field_page_section_title
+      right:
+        - field_page_section_body
+        - field_page_section_files
+        - field_page_section_links
+id: paragraph.page_section.inside_page
 targetEntityType: paragraph
 bundle: page_section
-mode: default
+mode: inside_page
 content:
   field_page_section_body:
     weight: 1
@@ -27,7 +54,7 @@ content:
     settings: {  }
     third_party_settings: {  }
     type: text_default
-    region: content
+    region: right
   field_page_section_files:
     weight: 2
     label: hidden
@@ -35,7 +62,7 @@ content:
       use_description_as_link_text: true
     third_party_settings: {  }
     type: file_default
-    region: content
+    region: right
   field_page_section_links:
     weight: 3
     label: hidden
@@ -47,7 +74,7 @@ content:
       target: ''
     third_party_settings: {  }
     type: link
-    region: content
+    region: right
   field_page_section_title:
     weight: 0
     label: hidden
@@ -55,5 +82,5 @@ content:
       link_to_entity: false
     third_party_settings: {  }
     type: string
-    region: content
+    region: left
 hidden: {  }
