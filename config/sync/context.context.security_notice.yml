@@ -9,7 +9,7 @@ label: 'Security notice'
 group: Callouts
 description: ''
 requireAllConditions: false
-disabled: false
+disabled: true
 conditions:
   request_path:
     id: request_path

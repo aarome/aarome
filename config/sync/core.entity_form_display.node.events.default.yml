@@ -12,7 +12,6 @@ dependencies:
     - field.field.node.events.field_events_event_year
     - field.field.node.events.field_events_image
     - field.field.node.events.field_events_legacy_id
-    - field.field.node.events.field_events_notice
     - field.field.node.events.field_events_rel_news_feature
     - field.field.node.events.field_events_rel_people
     - field.field.node.events.field_events_rel_places
@@ -120,7 +119,7 @@ content:
     type: inline_entity_form_complex
     region: content
   field_events_security_notice:
-    weight: 8
+    weight: 18
     settings: {  }
     third_party_settings: {  }
     type: options_buttons
@@ -187,7 +186,6 @@ content:
     third_party_settings: {  }
 hidden:
   field_events_legacy_id: true
-  field_events_notice: true
   field_events_rel_news_feature: true
   field_events_rel_people: true
   field_events_rel_press: true

@@ -1,6 +1,6 @@
 uuid: 208ea39b-1187-437e-9e62-6e646c21afde
 langcode: en
-status: true
+status: false
 dependencies:
   module:
     - system
@@ -10,8 +10,8 @@ _core:
   default_config_hash: ddy1OsBbWxjwEI8VL1viD4I69qcLHOkul4BxbTqLBTs
 id: tema_primary_local_tasks
 theme: tema
-region: content
-weight: -8
+region: content_pre
+weight: -10
 provider: null
 plugin: local_tasks_block
 settings:
@@ -24,6 +24,6 @@ settings:
 visibility:
   request_path:
     id: request_path
-    pages: "/about\r\n/apply\r\n/news\r\n/events\r\n/support\r\n/research\r\n/research/*\r\n/research/archaeology\r\n/publications"
+    pages: "/about\r\n/apply\r\n/apply/*\r\n/partecipazione\r\n/partecipazione/*\r\n/news\r\n/events\r\n/support\r\n/research\r\n/research/*\r\n/research/archaeology\r\n/publications"
     negate: true
     context_mapping: {  }

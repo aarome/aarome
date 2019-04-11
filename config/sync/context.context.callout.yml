@@ -13,7 +13,7 @@ disabled: false
 conditions:
   request_path:
     id: request_path
-    pages: '/press/*'
+    pages: "/news/coverage\r\n/news/press-releases"
     negate: 0
     uuid: 8670dff4-223d-4a8b-8eea-4eee1951bbf8
     context_mapping: {  }

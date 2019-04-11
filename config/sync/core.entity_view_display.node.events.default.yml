@@ -11,7 +11,6 @@ dependencies:
     - field.field.node.events.field_events_event_year
     - field.field.node.events.field_events_image
     - field.field.node.events.field_events_legacy_id
-    - field.field.node.events.field_events_notice
     - field.field.node.events.field_events_rel_news_feature
     - field.field.node.events.field_events_rel_people
     - field.field.node.events.field_events_rel_places
@@ -67,7 +66,7 @@ content:
   body:
     label: hidden
     type: text_default
-    weight: 4
+    weight: 6
     settings: {  }
     third_party_settings: {  }
     region: right
@@ -82,7 +81,7 @@ content:
     type: daterange_default
     region: header
   field_events_event_month:
-    weight: 7
+    weight: 5
     label: above
     settings:
       link: true
@@ -98,7 +97,7 @@ content:
       link: false
     third_party_settings: {  }
   field_events_event_year:
-    weight: 6
+    weight: 4
     label: above
     settings:
       link: true
@@ -124,18 +123,17 @@ content:
     type: entity_reference_entity_view
     region: header
   field_events_security_notice:
-    type: entity_reference_entity_view
-    weight: 5
-    region: right
+    weight: 7
     label: hidden
     settings:
-      view_mode: inside
+      view_mode: security_notice
       link: false
     third_party_settings: {  }
+    type: entity_reference_entity_view
+    region: right
 hidden:
   field_events_event_type: true
   field_events_legacy_id: true
-  field_events_notice: true
   field_events_rel_news_feature: true
   field_events_rel_people: true
   field_events_rel_press: true

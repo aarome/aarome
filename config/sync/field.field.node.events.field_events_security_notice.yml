@@ -1,4 +1,4 @@
-uuid: dbb19fac-7668-4ff8-8b06-77c843a9e8a4
+uuid: 2fa432c1-b213-47d8-bcd6-86973f922fbe
 langcode: en
 status: true
 dependencies:
@@ -12,7 +12,7 @@ bundle: events
 label: 'Security notice'
 description: ''
 required: false
-translatable: true
+translatable: false
 default_value: {  }
 default_value_callback: ''
 settings:

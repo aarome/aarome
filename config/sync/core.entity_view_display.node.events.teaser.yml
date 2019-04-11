@@ -6,11 +6,12 @@ dependencies:
     - core.entity_view_mode.node.teaser
     - field.field.node.events.body
     - field.field.node.events.field_events_event_dates
+    - field.field.node.events.field_events_event_month
     - field.field.node.events.field_events_event_series
     - field.field.node.events.field_events_event_type
+    - field.field.node.events.field_events_event_year
     - field.field.node.events.field_events_image
     - field.field.node.events.field_events_legacy_id
-    - field.field.node.events.field_events_notice
     - field.field.node.events.field_events_rel_news_feature
     - field.field.node.events.field_events_rel_people
     - field.field.node.events.field_events_rel_places
@@ -42,11 +43,12 @@ content:
     third_party_settings: {  }
 hidden:
   field_events_event_dates: true
+  field_events_event_month: true
   field_events_event_series: true
   field_events_event_type: true
+  field_events_event_year: true
   field_events_image: true
   field_events_legacy_id: true
-  field_events_notice: true
   field_events_rel_news_feature: true
   field_events_rel_people: true
   field_events_rel_places: true
