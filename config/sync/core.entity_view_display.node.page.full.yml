@@ -12,6 +12,7 @@ dependencies:
     - field.field.node.page.field_safe_path_alias
     - node.type.page
   module:
+    - ds
     - entity_reference_revisions
     - layout_builder
     - user
@@ -39,9 +40,11 @@ content:
     weight: 2
     label: hidden
     settings:
-      view_mode: default
+      view_mode: inside_page
       link: ''
-    third_party_settings: {  }
+    third_party_settings:
+      ds:
+        ds_limit: ''
     region: content
   links:
     weight: 0
