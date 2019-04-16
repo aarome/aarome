@@ -5,10 +5,8 @@ dependencies:
   config:
     - field.storage.media.field_media_image
     - field.storage.node.field_page_summary
-    - field.storage.node.field_safe_path_alias
     - responsive_image.styles.section_front
   module:
-    - computed_field
     - media
     - node
     - responsive_image
@@ -74,10 +72,10 @@ display:
           separator: ''
           hide_empty: false
       fields:
-        field_safe_path_alias:
-          id: field_safe_path_alias
-          table: node__field_safe_path_alias
-          field: field_safe_path_alias
+        view_node:
+          id: view_node
+          table: node
+          field: view_node
           relationship: none
           group_type: group
           admin_label: ''
@@ -122,23 +120,11 @@ display:
           hide_empty: false
           empty_zero: false
           hide_alter_empty: true
-          click_sort_column: value
-          type: computed_string
-          settings:
-            sanitized: 1
-            cache_unit: '-1'
-            cache_duration: '1'
-          group_column: value
-          group_columns: {  }
-          group_rows: true
-          delta_limit: 0
-          delta_offset: 0
-          delta_reversed: false
-          delta_first_last: false
-          multi_type: separator
-          separator: ', '
-          field_api_classes: false
-          plugin_id: field
+          text: view
+          output_url_as_text: true
+          absolute: false
+          entity_type: node
+          plugin_id: entity_link
         field_media_image:
           id: field_media_image
           table: media__field_media_image
@@ -152,7 +138,7 @@ display:
             alter_text: false
             text: ''
             make_link: true
-            path: '/research/photographic-archive/{{ field_safe_path_alias }}'
+            path: '{{ view_node }}'
             absolute: false
             external: false
             replace_spaces: false
@@ -392,7 +378,7 @@ display:
             alter_text: true
             text: "<h2>{{ title }}</h2>\r\n<section>{{ field_page_summary }}</section>\r\n<div class=\"more\">{{ nothing }}</div>"
             make_link: true
-            path: '/research/photographic-archive/{{ field_safe_path_alias }}'
+            path: '{{ view_node }}'
             absolute: false
             external: false
             replace_spaces: false
@@ -493,17 +479,15 @@ display:
           expose:
             operator: ''
           group: 1
-        langcode:
-          id: langcode
+        default_langcode:
+          id: default_langcode
           table: node_field_data
-          field: langcode
+          field: default_langcode
           relationship: none
           group_type: group
           admin_label: ''
-          operator: in
-          value:
-            en: en
-            it: it
+          operator: '='
+          value: '1'
           group: 1
           exposed: false
           expose:
@@ -518,7 +502,6 @@ display:
             multiple: false
             remember_roles:
               authenticated: authenticated
-            reduce: false
           is_grouped: false
           group_info:
             label: ''
@@ -532,8 +515,52 @@ display:
             default_group_multiple: {  }
             group_items: {  }
           entity_type: node
-          entity_field: langcode
-          plugin_id: language
+          entity_field: default_langcode
+          plugin_id: boolean
+        nid:
+          id: nid
+          table: node_field_data
+          field: nid
+          relationship: none
+          group_type: group
+          admin_label: ''
+          operator: '='
+          value:
+            min: ''
+            max: ''
+            value: ''
+          group: 1
+          exposed: false
+          expose:
+            operator_id: ''
+            label: ''
+            description: ''
+            use_operator: false
+            operator: ''
+            identifier: ''
+            required: false
+            remember: false
+            multiple: false
+            remember_roles:
+              authenticated: authenticated
+            placeholder: ''
+            min_placeholder: ''
+            max_placeholder: ''
+          is_grouped: false
+          group_info:
+            label: ''
+            description: ''
+            identifier: ''
+            optional: true
+            widget: select
+            multiple: false
+            remember: false
+            default_group: All
+            default_group_multiple: {  }
+            group_items: {  }
+          entity_type: node
+          entity_field: nid
+          plugin_id: numeric
       sorts: {  }
       header: {  }
       footer: {  }
@@ -602,7 +629,6 @@ display:
       tags:
         - 'config:field.storage.media.field_media_image'
         - 'config:field.storage.node.field_page_summary'
-        - 'config:field.storage.node.field_safe_path_alias'
   photographic_archive_exhibitions_events:
     display_plugin: block
     id: photographic_archive_exhibitions_events
@@ -631,17 +657,15 @@ display:
           expose:
             operator: ''
           group: 1
-        langcode:
-          id: langcode
+        default_langcode:
+          id: default_langcode
           table: node_field_data
-          field: langcode
+          field: default_langcode
           relationship: none
           group_type: group
           admin_label: ''
-          operator: in
-          value:
-            en: en
-            it: it
+          operator: '='
+          value: '1'
           group: 1
           exposed: false
           expose:
@@ -656,7 +680,6 @@ display:
             multiple: false
             remember_roles:
               authenticated: authenticated
-            reduce: false
           is_grouped: false
           group_info:
             label: ''
@@ -670,8 +693,8 @@ display:
             default_group_multiple: {  }
             group_items: {  }
           entity_type: node
-          entity_field: langcode
-          plugin_id: language
+          entity_field: default_langcode
+          plugin_id: boolean
         nid:
           id: nid
           table: node_field_data
@@ -729,7 +752,6 @@ display:
       tags:
         - 'config:field.storage.media.field_media_image'
         - 'config:field.storage.node.field_page_summary'
-        - 'config:field.storage.node.field_safe_path_alias'
   photographic_archive_index:
     display_plugin: block
     id: photographic_archive_index
@@ -759,17 +781,15 @@ display:
           expose:
             operator: ''
           group: 1
-        langcode:
-          id: langcode
+        default_langcode:
+          id: default_langcode
           table: node_field_data
-          field: langcode
+          field: default_langcode
           relationship: none
           group_type: group
           admin_label: ''
-          operator: in
-          value:
-            en: en
-            it: it
+          operator: '='
+          value: '1'
           group: 1
           exposed: false
           expose:
@@ -784,7 +804,6 @@ display:
             multiple: false
             remember_roles:
               authenticated: authenticated
-            reduce: false
           is_grouped: false
           group_info:
             label: ''
@@ -798,8 +817,8 @@ display:
             default_group_multiple: {  }
             group_items: {  }
           entity_type: node
-          entity_field: langcode
-          plugin_id: language
+          entity_field: default_langcode
+          plugin_id: boolean
         nid:
           id: nid
           table: node_field_data
@@ -857,7 +876,6 @@ display:
       tags:
         - 'config:field.storage.media.field_media_image'
         - 'config:field.storage.node.field_page_summary'
-        - 'config:field.storage.node.field_safe_path_alias'
   photographic_archive_notice:
     display_plugin: block
     id: photographic_archive_notice
@@ -887,17 +905,15 @@ display:
           expose:
             operator: ''
           group: 1
-        langcode:
-          id: langcode
+        default_langcode:
+          id: default_langcode
           table: node_field_data
-          field: langcode
+          field: default_langcode
           relationship: none
           group_type: group
           admin_label: ''
-          operator: in
-          value:
-            en: en
-            it: it
+          operator: '='
+          value: '1'
           group: 1
           exposed: false
           expose:
@@ -912,7 +928,6 @@ display:
             multiple: false
             remember_roles:
               authenticated: authenticated
-            reduce: false
           is_grouped: false
           group_info:
             label: ''
@@ -926,8 +941,8 @@ display:
             default_group_multiple: {  }
             group_items: {  }
           entity_type: node
-          entity_field: langcode
-          plugin_id: language
+          entity_field: default_langcode
+          plugin_id: boolean
         nid:
           id: nid
           table: node_field_data
@@ -985,7 +1000,6 @@ display:
       tags:
         - 'config:field.storage.media.field_media_image'
         - 'config:field.storage.node.field_page_summary'
-        - 'config:field.storage.node.field_safe_path_alias'
   photographic_archive_online_exhibitions_projects:
     display_plugin: block
     id: photographic_archive_online_exhibitions_projects
@@ -1015,17 +1029,15 @@ display:
           expose:
             operator: ''
           group: 1
-        langcode:
-          id: langcode
+        default_langcode:
+          id: default_langcode
           table: node_field_data
-          field: langcode
+          field: default_langcode
           relationship: none
           group_type: group
           admin_label: ''
-          operator: in
-          value:
-            en: en
-            it: it
+          operator: '='
+          value: '1'
           group: 1
           exposed: false
           expose:
@@ -1040,7 +1052,6 @@ display:
             multiple: false
             remember_roles:
               authenticated: authenticated
-            reduce: false
           is_grouped: false
           group_info:
             label: ''
@@ -1054,8 +1065,8 @@ display:
             default_group_multiple: {  }
             group_items: {  }
           entity_type: node
-          entity_field: langcode
-          plugin_id: language
+          entity_field: default_langcode
+          plugin_id: boolean
         nid:
           id: nid
           table: node_field_data
@@ -1113,7 +1124,6 @@ display:
       tags:
         - 'config:field.storage.media.field_media_image'
         - 'config:field.storage.node.field_page_summary'
-        - 'config:field.storage.node.field_safe_path_alias'
   photographic_archive_overview:
     display_plugin: block
     id: photographic_archive_overview
@@ -1128,7 +1138,7 @@ display:
         arguments: false
         filters: false
         filter_groups: false
-        fields: false
+        fields: true
         css_class: true
       rendering_language: '***LANGUAGE_language_interface***'
       filters:
@@ -1143,17 +1153,15 @@ display:
           expose:
             operator: ''
           group: 1
-        langcode:
-          id: langcode
+        default_langcode:
+          id: default_langcode
           table: node_field_data
-          field: langcode
+          field: default_langcode
           relationship: none
           group_type: group
           admin_label: ''
-          operator: in
-          value:
-            en: en
-            it: it
+          operator: '='
+          value: '1'
           group: 1
           exposed: false
           expose:
@@ -1168,7 +1176,6 @@ display:
             multiple: false
             remember_roles:
               authenticated: authenticated
-            reduce: false
           is_grouped: false
           group_info:
             label: ''
@@ -1182,8 +1189,8 @@ display:
             default_group_multiple: {  }
             group_items: {  }
           entity_type: node
-          entity_field: langcode
-          plugin_id: language
+          entity_field: default_langcode
+          plugin_id: boolean
         nid:
           id: nid
           table: node_field_data
@@ -1232,414 +1239,6 @@ display:
         operator: AND
         groups:
           1: AND
-      fields:
-        field_safe_path_alias:
-          id: field_safe_path_alias
-          table: node__field_safe_path_alias
-          field: field_safe_path_alias
-          relationship: none
-          group_type: group
-          admin_label: ''
-          label: ''
-          exclude: true
-          alter:
-            alter_text: false
-            text: ''
-            make_link: false
-            path: ''
-            absolute: false
-            external: false
-            replace_spaces: false
-            path_case: none
-            trim_whitespace: false
-            alt: ''
-            rel: ''
-            link_class: ''
-            prefix: ''
-            suffix: ''
-            target: ''
-            nl2br: false
-            max_length: 0
-            word_boundary: true
-            ellipsis: true
-            more_link: false
-            more_link_text: ''
-            more_link_path: ''
-            strip_tags: false
-            trim: false
-            preserve_tags: ''
-            html: false
-          element_type: ''
-          element_class: ''
-          element_label_type: ''
-          element_label_class: ''
-          element_label_colon: false
-          element_wrapper_type: ''
-          element_wrapper_class: ''
-          element_default_classes: true
-          empty: ''
-          hide_empty: false
-          empty_zero: false
-          hide_alter_empty: true
-          click_sort_column: value
-          type: computed_string
-          settings:
-            sanitized: 1
-            cache_unit: '-1'
-            cache_duration: '1'
-          group_column: value
-          group_columns: {  }
-          group_rows: true
-          delta_limit: 0
-          delta_offset: 0
-          delta_reversed: false
-          delta_first_last: false
-          multi_type: separator
-          separator: ', '
-          field_api_classes: false
-          plugin_id: field
-        field_media_image:
-          id: field_media_image
-          table: media__field_media_image
-          field: field_media_image
-          relationship: field_page_image
-          group_type: group
-          admin_label: ''
-          label: ''
-          exclude: false
-          alter:
-            alter_text: false
-            text: ''
-            make_link: true
-            path: '/research/photographic-archive/{{ field_safe_path_alias }}'
-            absolute: false
-            external: false
-            replace_spaces: false
-            path_case: none
-            trim_whitespace: false
-            alt: ''
-            rel: ''
-            link_class: ''
-            prefix: ''
-            suffix: ''
-            target: ''
-            nl2br: false
-            max_length: 0
-            word_boundary: true
-            ellipsis: true
-            more_link: false
-            more_link_text: ''
-            more_link_path: ''
-            strip_tags: false
-            trim: false
-            preserve_tags: ''
-            html: false
-          element_type: ''
-          element_class: ''
-          element_label_type: ''
-          element_label_class: ''
-          element_label_colon: false
-          element_wrapper_type: ''
-          element_wrapper_class: ''
-          element_default_classes: false
-          empty: ''
-          hide_empty: false
-          empty_zero: false
-          hide_alter_empty: true
-          click_sort_column: target_id
-          type: responsive_image
-          settings:
-            responsive_image_style: section_front
-            image_link: ''
-          group_column: ''
-          group_columns: {  }
-          group_rows: true
-          delta_limit: 0
-          delta_offset: 0
-          delta_reversed: false
-          delta_first_last: false
-          multi_type: separator
-          separator: ', '
-          field_api_classes: false
-          plugin_id: field
-        title:
-          id: title
-          table: node_field_data
-          field: title
-          relationship: none
-          group_type: group
-          admin_label: ''
-          label: ''
-          exclude: true
-          alter:
-            alter_text: false
-            text: ''
-            make_link: false
-            path: '/research/{{ field_safe_path_alias }}'
-            absolute: false
-            external: false
-            replace_spaces: false
-            path_case: lower
-            trim_whitespace: false
-            alt: ''
-            rel: ''
-            link_class: ''
-            prefix: ''
-            suffix: ''
-            target: ''
-            nl2br: false
-            max_length: 0
-            word_boundary: false
-            ellipsis: false
-            more_link: false
-            more_link_text: ''
-            more_link_path: ''
-            strip_tags: false
-            trim: false
-            preserve_tags: ''
-            html: false
-          element_type: h2
-          element_class: title
-          element_label_type: ''
-          element_label_class: ''
-          element_label_colon: false
-          element_wrapper_type: ''
-          element_wrapper_class: ''
-          element_default_classes: false
-          empty: ''
-          hide_empty: false
-          empty_zero: false
-          hide_alter_empty: true
-          click_sort_column: value
-          type: string
-          settings:
-            link_to_entity: false
-          group_column: value
-          group_columns: {  }
-          group_rows: true
-          delta_limit: 0
-          delta_offset: 0
-          delta_reversed: false
-          delta_first_last: false
-          multi_type: separator
-          separator: ', '
-          field_api_classes: false
-          entity_type: node
-          entity_field: title
-          plugin_id: field
-        field_page_summary:
-          id: field_page_summary
-          table: node__field_page_summary
-          field: field_page_summary
-          relationship: none
-          group_type: group
-          admin_label: ''
-          label: ''
-          exclude: true
-          alter:
-            alter_text: false
-            text: ''
-            make_link: false
-            path: ''
-            absolute: false
-            external: false
-            replace_spaces: false
-            path_case: none
-            trim_whitespace: false
-            alt: ''
-            rel: ''
-            link_class: ''
-            prefix: ''
-            suffix: ''
-            target: ''
-            nl2br: false
-            max_length: 0
-            word_boundary: true
-            ellipsis: true
-            more_link: false
-            more_link_text: ''
-            more_link_path: ''
-            strip_tags: false
-            trim: false
-            preserve_tags: ''
-            html: false
-          element_type: ''
-          element_class: ''
-          element_label_type: ''
-          element_label_class: ''
-          element_label_colon: false
-          element_wrapper_type: ''
-          element_wrapper_class: ''
-          element_default_classes: false
-          empty: ''
-          hide_empty: false
-          empty_zero: false
-          hide_alter_empty: true
-          click_sort_column: value
-          type: text_default
-          settings: {  }
-          group_column: value
-          group_columns: {  }
-          group_rows: true
-          delta_limit: 0
-          delta_offset: 0
-          delta_reversed: false
-          delta_first_last: false
-          multi_type: separator
-          separator: ', '
-          field_api_classes: false
-          plugin_id: field
-        nothing:
-          id: nothing
-          table: views
-          field: nothing
-          relationship: none
-          group_type: group
-          admin_label: More
-          label: ''
-          exclude: true
-          alter:
-            alter_text: true
-            text: '{{ title }}'
-            make_link: false
-            path: 'https://dhc.aarome.org'
-            absolute: false
-            external: false
-            replace_spaces: false
-            path_case: none
-            trim_whitespace: false
-            alt: '{{ title }}'
-            rel: ''
-            link_class: ''
-            prefix: ''
-            suffix: ''
-            target: ''
-            nl2br: false
-            max_length: 0
-            word_boundary: true
-            ellipsis: true
-            more_link: false
-            more_link_text: ''
-            more_link_path: ''
-            strip_tags: false
-            trim: false
-            preserve_tags: ''
-            html: false
-          element_type: div
-          element_class: more
-          element_label_type: ''
-          element_label_class: ''
-          element_label_colon: false
-          element_wrapper_type: ''
-          element_wrapper_class: ''
-          element_default_classes: false
-          empty: ''
-          hide_empty: false
-          empty_zero: false
-          hide_alter_empty: false
-          plugin_id: custom
-        nothing_1:
-          id: nothing_1
-          table: views
-          field: nothing
-          relationship: none
-          group_type: group
-          admin_label: ''
-          label: ''
-          exclude: false
-          alter:
-            alter_text: true
-            text: "<h2>{{ title }}</h2>\r\n<section>{{ field_page_summary }}</section>\r\n<div class=\"more\">{{ nothing }}</div>"
-            make_link: true
-            path: '/research/photographic-archive/{{ field_safe_path_alias }}'
-            absolute: false
-            external: false
-            replace_spaces: false
-            path_case: none
-            trim_whitespace: false
-            alt: ''
-            rel: ''
-            link_class: ''
-            prefix: ''
-            suffix: ''
-            target: ''
-            nl2br: false
-            max_length: 0
-            word_boundary: true
-            ellipsis: true
-            more_link: false
-            more_link_text: ''
-            more_link_path: ''
-            strip_tags: false
-            trim: false
-            preserve_tags: ''
-            html: false
-          element_type: ''
-          element_class: ''
-          element_label_type: ''
-          element_label_class: ''
-          element_label_colon: false
-          element_wrapper_type: ''
-          element_wrapper_class: ''
-          element_default_classes: false
-          empty: ''
-          hide_empty: false
-          empty_zero: false
-          hide_alter_empty: false
-          plugin_id: custom
-        edit_node:
-          id: edit_node
-          table: node
-          field: edit_node
-          relationship: none
-          group_type: group
-          admin_label: ''
-          label: ''
-          exclude: false
-          alter:
-            alter_text: false
-            text: ''
-            make_link: false
-            path: ''
-            absolute: false
-            external: false
-            replace_spaces: false
-            path_case: none
-            trim_whitespace: false
-            alt: ''
-            rel: ''
-            link_class: ''
-            prefix: ''
-            suffix: ''
-            target: ''
-            nl2br: false
-            max_length: 0
-            word_boundary: true
-            ellipsis: true
-            more_link: false
-            more_link_text: ''
-            more_link_path: ''
-            strip_tags: false
-            trim: false
-            preserve_tags: ''
-            html: false
-          element_type: div
-          element_class: edit
-          element_label_type: ''
-          element_label_class: ''
-          element_label_colon: false
-          element_wrapper_type: ''
-          element_wrapper_class: ''
-          element_default_classes: false
-          empty: ''
-          hide_empty: false
-          empty_zero: false
-          hide_alter_empty: true
-          text: edit
-          output_url_as_text: false
-          absolute: false
-          entity_type: node
-          plugin_id: entity_link_edit
     cache_metadata:
       max-age: -1
       contexts:
@@ -1649,7 +1248,6 @@ display:
       tags:
         - 'config:field.storage.media.field_media_image'
         - 'config:field.storage.node.field_page_summary'
-        - 'config:field.storage.node.field_safe_path_alias'
   photographic_archive_publications:
     display_plugin: block
     id: photographic_archive_publications
@@ -1679,17 +1277,15 @@ display:
           expose:
             operator: ''
           group: 1
-        langcode:
-          id: langcode
+        default_langcode:
+          id: default_langcode
           table: node_field_data
-          field: langcode
+          field: default_langcode
           relationship: none
           group_type: group
           admin_label: ''
-          operator: in
-          value:
-            en: en
-            it: it
+          operator: '='
+          value: '1'
           group: 1
           exposed: false
           expose:
@@ -1704,7 +1300,6 @@ display:
             multiple: false
             remember_roles:
               authenticated: authenticated
-            reduce: false
           is_grouped: false
           group_info:
             label: ''
@@ -1718,8 +1313,8 @@ display:
             default_group_multiple: {  }
             group_items: {  }
           entity_type: node
-          entity_field: langcode
-          plugin_id: language
+          entity_field: default_langcode
+          plugin_id: boolean
         nid:
           id: nid
           table: node_field_data
@@ -1777,7 +1372,6 @@ display:
       tags:
         - 'config:field.storage.media.field_media_image'
         - 'config:field.storage.node.field_page_summary'
-        - 'config:field.storage.node.field_safe_path_alias'
   photographic_archive_rights_permissions:
     display_plugin: block
     id: photographic_archive_rights_permissions
@@ -1807,17 +1401,15 @@ display:
           expose:
             operator: ''
           group: 1
-        langcode:
-          id: langcode
+        default_langcode:
+          id: default_langcode
           table: node_field_data
-          field: langcode
+          field: default_langcode
           relationship: none
           group_type: group
           admin_label: ''
-          operator: in
-          value:
-            en: en
-            it: it
+          operator: '='
+          value: '1'
           group: 1
           exposed: false
           expose:
@@ -1832,7 +1424,6 @@ display:
             multiple: false
             remember_roles:
               authenticated: authenticated
-            reduce: false
           is_grouped: false
           group_info:
             label: ''
@@ -1846,8 +1437,8 @@ display:
             default_group_multiple: {  }
             group_items: {  }
           entity_type: node
-          entity_field: langcode
-          plugin_id: language
+          entity_field: default_langcode
+          plugin_id: boolean
         nid:
           id: nid
           table: node_field_data
@@ -1905,4 +1496,3 @@ display:
       tags:
         - 'config:field.storage.media.field_media_image'
         - 'config:field.storage.node.field_page_summary'
-        - 'config:field.storage.node.field_safe_path_alias'

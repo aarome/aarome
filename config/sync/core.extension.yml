@@ -30,7 +30,6 @@ module:
   ctools: 0
   date_popup: 0
   datetime: 0
-  datetime_extras: 0
   datetime_range: 0
   dblog: 0
   delete_all: 0
@@ -55,6 +54,7 @@ module:
   layout_builder: 0
   layout_discovery: 0
   link: 0
+  linkit: 0
   locale: 0
   media: 0
   menu_block: 0

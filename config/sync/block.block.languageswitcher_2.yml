@@ -8,8 +8,8 @@ dependencies:
     - adminimal_theme
 id: languageswitcher_2
 theme: adminimal_theme
-region: content
-weight: -1
+region: breadcrumb
+weight: -4
 provider: null
 plugin: 'language_block:language_interface'
 settings:

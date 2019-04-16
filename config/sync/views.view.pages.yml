@@ -9,7 +9,6 @@ dependencies:
     - field.storage.node.field_safe_path_alias
     - node.type.page
     - responsive_image.styles.inside_page
-    - responsive_image.styles.wide
     - taxonomy.vocabulary.page_types
   content:
     - 'taxonomy_term:page_types:12534f24-edbd-4c63-9c11-00ba0553213d'
@@ -1777,7 +1776,7 @@ display:
           click_sort_column: target_id
           type: responsive_image
           settings:
-            responsive_image_style: wide
+            responsive_image_style: inside_page
             image_link: ''
           group_column: ''
           group_columns: {  }
@@ -2051,7 +2050,7 @@ display:
         operator: AND
         groups:
           1: AND
-      enabled: true
+      enabled: false
       arguments:
         field_safe_path_alias_value:
           id: field_safe_path_alias_value
@@ -3912,7 +3911,7 @@ display:
           separator: ' '
           field_api_classes: false
           plugin_id: field
-      enabled: true
+      enabled: false
       arguments: {  }
       empty: {  }
     cache_metadata:
@@ -4268,7 +4267,7 @@ display:
         groups:
           1: AND
           2: OR
-      enabled: true
+      enabled: false
       fields:
         title:
           id: title
@@ -4918,7 +4917,7 @@ display:
           transform_dash: false
           break_phrase: false
           plugin_id: string
-      enabled: true
+      enabled: false
       fields:
         field_safe_path_alias:
           id: field_safe_path_alias
@@ -5516,6 +5515,7 @@ display:
         options:
           items_per_page: 1
           offset: 0
+      enabled: false
     cache_metadata:
       max-age: -1
       contexts:
@@ -5790,14 +5790,14 @@ display:
           2: OR
       title: ''
       arguments:
-        field_safe_path_alias_value:
-          id: field_safe_path_alias_value
-          table: node__field_safe_path_alias
-          field: field_safe_path_alias_value
+        title:
+          id: title
+          table: node_field_data
+          field: title
           relationship: none
           group_type: group
           admin_label: ''
-          default_action: empty
+          default_action: default
           exception:
             value: all
             title_enable: false
@@ -5825,9 +5825,11 @@ display:
           glossary: false
           limit: 0
           case: none
-          path_case: none
-          transform_dash: false
+          path_case: lower
+          transform_dash: true
           break_phrase: false
+          entity_type: node
+          entity_field: title
           plugin_id: string
       empty: {  }
       pager:
@@ -6155,6 +6157,7 @@ display:
           separator: ''
           field_api_classes: false
           plugin_id: field
+      enabled: false
     cache_metadata:
       max-age: -1
       contexts:
@@ -6664,6 +6667,7 @@ display:
           separator: ' '
           field_api_classes: false
           plugin_id: field
+      enabled: false
     cache_metadata:
       max-age: -1
       contexts:
@@ -7387,7 +7391,7 @@ display:
           separator: ' '
           field_api_classes: false
           plugin_id: field
-      enabled: true
+      enabled: false
     cache_metadata:
       max-age: -1
       contexts:
@@ -7930,6 +7934,7 @@ display:
           transform_dash: false
           break_phrase: false
           plugin_id: string
+      enabled: false
     cache_metadata:
       max-age: -1
       contexts:
@@ -9478,7 +9483,7 @@ display:
           field_api_classes: false
           plugin_id: field
       title: '{{ title }}'
-      enabled: true
+      enabled: false
     cache_metadata:
       max-age: -1
       contexts:

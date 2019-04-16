@@ -80,8 +80,8 @@ reactions:
         unique: 0
         context_id: place
         uuid: 9f7387a8-52cd-4efc-a8c4-83b335692d3c
-      5cc79abb-9ba3-4023-a7c0-7bb39c3b2f8a:
-        id: 'views_block:front_page_place-block_1'
+      a1c53861-d526-4223-bf5b-400d5d21a488:
+        id: 'views_block:front_page_place-place_tours'
         label: ''
         provider: views
         label_display: 0
@@ -90,12 +90,12 @@ reactions:
         region: content
         weight: '2'
         context_mapping: {  }
-        custom_id: views_block_front_page_place_block_1
+        custom_id: views_block_front_page_place_place_tours
         theme: tema
         css_class: ''
         unique: 0
         context_id: place
-        uuid: 5cc79abb-9ba3-4023-a7c0-7bb39c3b2f8a
+        uuid: a1c53861-d526-4223-bf5b-400d5d21a488
     id: blocks
     saved: false
     uuid: 3ea3dab5-0d04-45b7-ba8a-ff0d29ba96aa

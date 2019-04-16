@@ -54,6 +54,7 @@ hidden:
   field_events_rel_places: true
   field_events_rel_press: true
   field_events_rel_press_releases: true
+  field_events_security_notice: true
   field_events_summary: true
   field_safe_path_alias: true
   langcode: true

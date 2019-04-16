@@ -1,0 +1,33 @@
+uuid: 8fa791c2-d363-4c15-8ad0-9390ae61bcfa
+langcode: en
+status: true
+dependencies:
+  module:
+    - language
+    - node
+id: basic_page_italian
+label: 'Basic page (Italian)'
+type: 'canonical_entities:node'
+pattern: '[node:title]'
+selection_criteria:
+  29d71ebf-047a-4546-a666-2253aa2f7793:
+    id: node_type
+    bundles:
+      page: page
+    negate: false
+    context_mapping:
+      node: node
+    uuid: 29d71ebf-047a-4546-a666-2253aa2f7793
+  d24f288f-ed9f-4671-9453-8ea64a6a5acf:
+    id: language
+    langcodes:
+      it: it
+    negate: false
+    context_mapping:
+      language: 'node:langcode:language'
+    uuid: d24f288f-ed9f-4671-9453-8ea64a6a5acf
+selection_logic: and
+weight: -10
+relationships:
+  'node:langcode:language':
+    label: Language

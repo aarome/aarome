@@ -1,0 +1,20 @@
+uuid: 628dda39-4576-4d3b-971f-dfb350e7695e
+langcode: en
+status: true
+dependencies:
+  config:
+    - node.type.empty_page
+  module:
+    - layout_builder
+    - user
+third_party_settings:
+  layout_builder:
+    sections: {  }
+id: node.empty_page.default
+targetEntityType: node
+bundle: empty_page
+mode: default
+content: {  }
+hidden:
+  langcode: true
+  links: true

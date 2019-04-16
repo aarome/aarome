@@ -19,7 +19,7 @@ id: node.people.field_people_biographical_note
 field_name: field_people_biographical_note
 entity_type: node
 bundle: people
-label: 'Biographical note'
+label: Biography
 description: ''
 required: false
 translatable: true

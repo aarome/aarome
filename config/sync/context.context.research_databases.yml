@@ -13,28 +13,29 @@ disabled: false
 conditions:
   request_path:
     id: request_path
-    pages: /research/resources/research-databases-digital-collections
+    pages: "/research/resources/research-databases\r\n/ricerca/risorse/banche-dati-collezioni-digitali"
     negate: 0
     uuid: 19138ef4-7c91-4811-97ea-c6679010901c
     context_mapping: {  }
 reactions:
   blocks:
     blocks:
-      f2faf449-c627-41fa-b63d-6cbfb12ef3a5:
-        id: 'views_exposed_filter_block:resources-page_research_databases'
+      6ab9fde7-deca-4829-8bc0-7911d99c3486:
+        id: 'views_block:resources-block_research_database_list'
         label: ''
         provider: views
         label_display: 0
         views_label: ''
-        region: content_pre
+        items_per_page: none
+        region: content
         weight: '0'
         context_mapping: {  }
-        custom_id: views_exposed_filter_block_resources_page_research_databases
+        custom_id: views_block_resources_block_research_database_list
         theme: tema
         css_class: ''
         unique: 0
         context_id: research_databases
-        uuid: f2faf449-c627-41fa-b63d-6cbfb12ef3a5
+        uuid: 6ab9fde7-deca-4829-8bc0-7911d99c3486
     id: blocks
     saved: false
     uuid: ad3e3a26-ebe7-415d-bcc5-c5f1c22916c6

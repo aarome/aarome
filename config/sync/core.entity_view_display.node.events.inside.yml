@@ -144,4 +144,5 @@ hidden:
   field_events_event_month: true
   field_events_event_year: true
   field_events_legacy_id: true
+  field_events_security_notice: true
   langcode: true
