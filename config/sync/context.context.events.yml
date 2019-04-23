@@ -80,6 +80,22 @@ reactions:
         unique: 0
         context_id: events
         uuid: fc6b7cba-c867-4de4-abc7-c1b4fed45fab
+      faf66151-f958-4a5c-9a88-3148274398d8:
+        id: 'views_block:front_page_events-events_calendar_next'
+        label: ''
+        provider: views
+        label_display: 0
+        views_label: ''
+        items_per_page: none
+        region: content
+        weight: '0'
+        context_mapping: {  }
+        custom_id: views_block_front_page_events_events_calendar_next
+        theme: tema
+        css_class: ''
+        unique: 0
+        context_id: events
+        uuid: faf66151-f958-4a5c-9a88-3148274398d8
     id: blocks
     saved: false
     uuid: f1cb3668-384e-4cea-9739-1e69411a32fb
