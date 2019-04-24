@@ -14,7 +14,6 @@ dependencies:
     - responsive_image.styles.inside_page
     - responsive_image.styles.portrait_front
     - taxonomy.vocabulary.affiliation_types
-    - taxonomy.vocabulary.disciplines
   content:
     - 'taxonomy_term:affiliation_types:0be3afd6-2acb-4790-b4ee-58ea25414732'
     - 'taxonomy_term:affiliation_types:201542b2-fe7d-4c49-b334-0ec6f7ec0392'
@@ -3259,10 +3258,10 @@ display:
           relationship: field_people_affiliations
           group_type: group
           admin_label: ''
-          operator: '='
+          operator: between
           value:
-            min: ''
-            max: ''
+            min: '20180901'
+            max: '20190726'
             value: '2019-01-01'
             type: date
           group: 1
