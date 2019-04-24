@@ -13,7 +13,7 @@ dependencies:
     - field.field.paragraph.affiliation.field_affil_type
     - paragraphs.paragraphs_type.affiliation
   module:
-    - datetime_range
+    - daterange_compact
     - ds
     - layout_builder
 third_party_settings:
@@ -27,14 +27,12 @@ bundle: affiliation
 mode: fellowship
 content:
   field_affil_dates:
-    type: daterange_default
+    type: daterange_compact
     weight: 3
     region: content
     label: hidden
     settings:
-      timezone_override: ''
-      format_type: academy_date
-      separator: –
+      format_type: medium
     third_party_settings:
       ds:
         ds_limit: ''
