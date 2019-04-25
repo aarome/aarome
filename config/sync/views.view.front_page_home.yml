@@ -969,11 +969,11 @@ display:
           relationship: field_people_affiliations
           group_type: group
           admin_label: ''
-          operator: '='
+          operator: between
           value:
-            min: ''
-            max: ''
-            value: '2019-01-01'
+            min: '20180901'
+            max: '20190731'
+            value: '2019-0-01'
             type: date
           group: 1
           exposed: false

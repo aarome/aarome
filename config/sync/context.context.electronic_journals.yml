@@ -20,7 +20,7 @@ conditions:
 reactions:
   blocks:
     blocks:
-      f6dca48b-4ede-4ee1-b547-1ec76bd5a2c0:
+      5d70412d-fa52-4304-863d-1b71a8ba6d63:
         id: 'views_block:resources-block_electronic_journals_list'
         label: ''
         provider: views
@@ -35,7 +35,7 @@ reactions:
         css_class: ''
         unique: 0
         context_id: electronic_journals
-        uuid: f6dca48b-4ede-4ee1-b547-1ec76bd5a2c0
+        uuid: 5d70412d-fa52-4304-863d-1b71a8ba6d63
     id: blocks
     saved: false
     uuid: bad692c9-676f-47e4-a89f-4c1c8ee4cd80
