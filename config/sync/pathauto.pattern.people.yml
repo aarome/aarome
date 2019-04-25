@@ -8,24 +8,24 @@ dependencies:
 id: people
 label: People
 type: 'canonical_entities:node'
-pattern: '/people/[node:field_people_affiliations:0:entity:field_affil_type]s/[node:title]'
+pattern: '/people/[node:field_people_affiliations:0:entity:field_affil_type]/[node:title]'
 selection_criteria:
-  df8b9cda-03cd-48ec-b401-3648590de694:
+  ede510f2-254e-4503-9556-837a545d8be1:
     id: node_type
     bundles:
       people: people
     negate: false
     context_mapping:
       node: node
-    uuid: df8b9cda-03cd-48ec-b401-3648590de694
-  30c47c2f-4629-4ac9-bee8-4bc0dff16983:
+    uuid: ede510f2-254e-4503-9556-837a545d8be1
+  90e95c7a-05c2-4f9f-98e9-e008b915d977:
     id: language
     langcodes:
       en: en
     negate: false
     context_mapping:
       language: 'node:langcode:language'
-    uuid: 30c47c2f-4629-4ac9-bee8-4bc0dff16983
+    uuid: 90e95c7a-05c2-4f9f-98e9-e008b915d977
 selection_logic: and
 weight: -5
 relationships:

@@ -17,3 +17,6 @@ display:
   page_visting_artists_scholars:
     display_options:
       title: 'Artisti e Studiosi Ospiti'
+  page_rome_prize_fellows:
+    display_options:
+      title: 'Victorini del Rome Prize'
