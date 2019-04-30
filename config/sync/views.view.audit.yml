@@ -1,6 +1,6 @@
 uuid: e0ac8fac-1f67-4e34-a0b0-62bbaad53309
 langcode: en
-status: true
+status: false
 dependencies:
   config:
     - node.type.events
