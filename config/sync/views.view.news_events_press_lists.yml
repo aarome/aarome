@@ -15,6 +15,7 @@ dependencies:
     - field.storage.node.field_news_features_summary
     - field.storage.node.field_press_date
     - field.storage.node.field_press_publication
+    - field.storage.node.field_quick_news_links
     - field.storage.node.field_safe_path_alias
     - field.storage.node.field_sof_images
     - node.type.events
@@ -37,9 +38,11 @@ dependencies:
   module:
     - better_exposed_filters
     - computed_field
+    - daterange_compact
     - datetime
     - datetime_range
     - file
+    - link
     - media
     - node
     - options
@@ -2694,11 +2697,9 @@ display:
           empty_zero: false
           hide_alter_empty: true
           click_sort_column: value
-          type: daterange_default
+          type: daterange_compact
           settings:
-            timezone_override: ''
-            format_type: academy_date_and_time
-            separator: 'to '
+            format_type: medium
           group_column: value
           group_columns: {  }
           group_rows: true
@@ -3051,7 +3052,7 @@ display:
   page_events_list_next:
     display_plugin: page
     id: page_events_list_next
-    display_title: /events/calendar/next-30-days
+    display_title: /events/next-30-days
     position: 1
     display_options:
       display_extenders: {  }
@@ -3834,7 +3835,7 @@ display:
           empty_zero: false
           hide_alter_empty: false
           plugin_id: custom
-      path: events/calendar/next-30-days
+      path: events/next-30-days
       relationships: {  }
       rendering_language: '***LANGUAGE_language_interface***'
       sorts:
@@ -6330,6 +6331,73 @@ display:
           empty_zero: false
           hide_alter_empty: false
           plugin_id: custom
+        field_quick_news_links:
+          id: field_quick_news_links
+          table: node__field_quick_news_links
+          field: field_quick_news_links
+          relationship: none
+          group_type: group
+          admin_label: ''
+          label: ''
+          exclude: false
+          alter:
+            alter_text: true
+            text: '<a href="{{ field_quick_news_links__uri }}" target="_blank">Read more</a>'
+            make_link: false
+            path: '{{ field_quick_news_links }}'
+            absolute: false
+            external: true
+            replace_spaces: false
+            path_case: none
+            trim_whitespace: false
+            alt: ''
+            rel: ''
+            link_class: ''
+            prefix: ''
+            suffix: ''
+            target: ''
+            nl2br: false
+            max_length: 0
+            word_boundary: true
+            ellipsis: true
+            more_link: false
+            more_link_text: ''
+            more_link_path: ''
+            strip_tags: false
+            trim: false
+            preserve_tags: ''
+            html: false
+          element_type: ''
+          element_class: ''
+          element_label_type: ''
+          element_label_class: ''
+          element_label_colon: false
+          element_wrapper_type: ''
+          element_wrapper_class: ''
+          element_default_classes: false
+          empty: ''
+          hide_empty: false
+          empty_zero: false
+          hide_alter_empty: true
+          click_sort_column: uri
+          type: link
+          settings:
+            trim_length: 80
+            url_only: true
+            url_plain: false
+            rel: nofollow
+            target: _blank
+          group_column: ''
+          group_columns: {  }
+          group_rows: true
+          delta_limit: 1
+          delta_offset: 0
+          delta_reversed: false
+          delta_first_last: false
+          multi_type: separator
+          separator: ', '
+          field_api_classes: false
+          plugin_id: field
         edit_node:
           id: edit_node
           table: node
@@ -6445,6 +6513,7 @@ display:
         - 'config:field.storage.media.field_media_image'
         - 'config:field.storage.node.body'
         - 'config:field.storage.node.field_news_features_date'
+        - 'config:field.storage.node.field_quick_news_links'
   page_news_society_of_fellows:
     display_plugin: page
     id: page_news_society_of_fellows

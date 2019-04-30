@@ -23,8 +23,8 @@ dependencies:
     - 'taxonomy_term:affiliation_types:f440de69-3364-4600-9a79-1d073945e660'
   module:
     - blazy
+    - daterange_compact
     - datetime
-    - datetime_range
     - link
     - media
     - node
@@ -747,11 +747,9 @@ display:
           empty_zero: false
           hide_alter_empty: true
           click_sort_column: value
-          type: daterange_default
+          type: daterange_compact
           settings:
-            timezone_override: ''
-            format_type: events
-            separator: '-'
+            format_type: medium
           group_column: value
           group_columns: {  }
           group_rows: true
@@ -774,7 +772,7 @@ display:
           exclude: false
           alter:
             alter_text: true
-            text: "<h2 class=\"title\">{{ title }}</h2>\r\n{{ field_events_event_dates }}"
+            text: "<h2 class=\"title\">{{ title }}</h2>\r\n<time>{{ field_events_event_dates }}</time?"
             make_link: true
             path: '{{ view_node }}'
             absolute: false

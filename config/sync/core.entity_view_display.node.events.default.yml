@@ -21,7 +21,7 @@ dependencies:
     - field.field.node.events.field_safe_path_alias
     - node.type.events
   module:
-    - datetime_range
+    - daterange_compact
     - ds
     - layout_builder
     - text
@@ -74,11 +74,11 @@ content:
     weight: 1
     label: hidden
     settings:
-      timezone_override: ''
-      format_type: academy_date_and_time
-      separator: '-'
-    third_party_settings: {  }
-    type: daterange_default
+      format_type: medium
+    third_party_settings:
+      ds:
+        ds_limit: ''
+    type: daterange_compact
     region: header
   field_events_event_month:
     weight: 5

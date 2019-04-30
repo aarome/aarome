@@ -6,9 +6,14 @@ dependencies:
     - field.field.media.basic_pages.field_media_caption
     - field.field.media.basic_pages.field_media_image
     - media.type.basic_pages
+    - responsive_image.styles.inside_page
   module:
-    - image
+    - layout_builder
+    - responsive_image
     - text
+third_party_settings:
+  layout_builder:
+    sections: {  }
 id: media.basic_pages.default
 targetEntityType: media
 bundle: basic_pages
@@ -25,10 +30,10 @@ content:
     weight: 0
     label: hidden
     settings:
-      image_style: ''
+      responsive_image_style: inside_page
       image_link: ''
     third_party_settings: {  }
-    type: image
+    type: responsive_image
     region: content
 hidden:
   created: true

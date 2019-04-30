@@ -20,3 +20,6 @@ display:
   page_publications_affiliated_books:
     display_options:
       title: 'Libri Affiliati'
+  page_publications_memoirs:
+    display_options:
+      title: 'Memorie della AAR'

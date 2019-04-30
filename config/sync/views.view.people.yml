@@ -1760,6 +1760,49 @@ display:
           entity_type: node
           entity_field: status
           plugin_id: boolean
+        field_affil_dates_end_value:
+          id: field_affil_dates_end_value
+          table: paragraph__field_affil_dates
+          field: field_affil_dates_end_value
+          relationship: field_people_affiliations
+          group_type: group
+          admin_label: ''
+          operator: between
+          value:
+            min: '20180901'
+            max: '20190731'
+            value: '2019-01-01'
+            type: date
+          group: 1
+          exposed: false
+          expose:
+            operator_id: ''
+            label: ''
+            description: ''
+            use_operator: false
+            operator: ''
+            identifier: ''
+            required: false
+            remember: false
+            multiple: false
+            remember_roles:
+              authenticated: authenticated
+            placeholder: ''
+            min_placeholder: ''
+            max_placeholder: ''
+          is_grouped: false
+          group_info:
+            label: ''
+            description: ''
+            identifier: ''
+            optional: true
+            widget: select
+            multiple: false
+            remember: false
+            default_group: All
+            default_group_multiple: {  }
+            group_items: {  }
+          plugin_id: datetime
         default_langcode:
           id: default_langcode
           table: node_field_data
@@ -1798,49 +1841,6 @@ display:
           entity_type: node
           entity_field: default_langcode
           plugin_id: boolean
-        field_affil_dates_value:
-          id: field_affil_dates_value
-          table: paragraph__field_affil_dates
-          field: field_affil_dates_value
-          relationship: field_people_affiliations
-          group_type: group
-          admin_label: ''
-          operator: between
-          value:
-            min: '20180101'
-            max: '20190731'
-            value: ''
-            type: date
-          group: 1
-          exposed: false
-          expose:
-            operator_id: ''
-            label: ''
-            description: ''
-            use_operator: false
-            operator: ''
-            identifier: ''
-            required: false
-            remember: false
-            multiple: false
-            remember_roles:
-              authenticated: authenticated
-            placeholder: ''
-            min_placeholder: ''
-            max_placeholder: ''
-          is_grouped: false
-          group_info:
-            label: ''
-            description: ''
-            identifier: ''
-            optional: true
-            widget: select
-            multiple: false
-            remember: false
-            default_group: All
-            default_group_multiple: {  }
-            group_items: {  }
-          plugin_id: datetime
       defaults:
         filters: false
         filter_groups: false
@@ -2791,7 +2791,7 @@ display:
           admin_label: ''
           operator: between
           value:
-            min: '20180101'
+            min: '20180901'
             max: '20190731'
             value: ''
             type: date
@@ -3294,18 +3294,18 @@ display:
           entity_type: taxonomy_term
           entity_field: default_langcode
           plugin_id: boolean
-        field_affil_dates_end_value:
-          id: field_affil_dates_end_value
+        field_affil_dates_value:
+          id: field_affil_dates_value
           table: paragraph__field_affil_dates
-          field: field_affil_dates_end_value
+          field: field_affil_dates_value
           relationship: field_people_affiliations
           group_type: group
           admin_label: ''
           operator: between
           value:
             min: '20180901'
-            max: '20190726'
-            value: '2019-01-01'
+            max: '20190731'
+            value: ''
             type: date
           group: 1
           exposed: false
@@ -4187,6 +4187,7 @@ display:
           inline: {  }
           separator: ''
           hide_empty: false
+      enabled: false
     cache_metadata:
       max-age: -1
       contexts:

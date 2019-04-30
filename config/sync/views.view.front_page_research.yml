@@ -761,6 +761,7 @@ display:
           view_mode: teaser
       display_description: ''
       rendering_language: '***LANGUAGE_language_interface***'
+      enabled: false
     cache_metadata:
       max-age: -1
       contexts:
@@ -1666,7 +1667,7 @@ display:
             alter_text: false
             text: ''
             make_link: true
-            path: '{{ view_node }}'
+            path: /research/library
             absolute: false
             external: false
             replace_spaces: false
@@ -1906,7 +1907,7 @@ display:
             alter_text: true
             text: "<h2>{{ title }}</h2>\r\n<section>{{ field_page_summary }}</section>\r\n<div class=\"more\">{{ nothing }}</div>"
             make_link: true
-            path: '{{ view_node }}'
+            path: /research/library
             absolute: false
             external: false
             replace_spaces: false

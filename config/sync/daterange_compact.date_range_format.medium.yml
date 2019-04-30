@@ -16,5 +16,5 @@ date_settings:
 datetime_settings:
   default_pattern: 'l, F j, Y–g:i A'
   separator: –
-  same_day_start_pattern: 'l, F j, Y–g:i A'
-  same_day_end_pattern: 'H:i'
+  same_day_start_pattern: 'l, F j, Y g:i A'
+  same_day_end_pattern: 'g:i A'
