@@ -1,9 +1,9 @@
-uuid: 4487a5b4-5f4e-4dfd-994e-6db4ddae8290
+uuid: 828d5ead-c2b5-4bbc-a7a5-a42f6f496994
 langcode: en
 status: true
 dependencies: {  }
 _core:
-  default_config_hash: ZAtmNljAOE-zyIN5AQLHyU4Rl2ohfIgMj2difTZDahE
+  default_config_hash: a5oJxrJEZz7fS1oCjHbIfqVKC0Bmp2z-3s2YVyLQ2ek
 id: resources
 class: null
 field_plugin_method: null
@@ -14,7 +14,7 @@ label: 'Migrating resources from CSV file'
 source:
   plugin: csv
   track_changes: true
-  path: 'public://migrations/resources-new.csv'
+  path: 'public://migrations/resources.csv'
   delimiter: ','
   enclosure: '"'
   header_row_count: 1

@@ -10,7 +10,7 @@ _core:
   default_config_hash: ddy1OsBbWxjwEI8VL1viD4I69qcLHOkul4BxbTqLBTs
 id: tema_primary_local_tasks
 theme: tema
-region: content_pre
+region: header
 weight: -10
 provider: null
 plugin: local_tasks_block

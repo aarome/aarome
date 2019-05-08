@@ -28,7 +28,7 @@ reactions:
         views_label: ''
         items_per_page: none
         region: content
-        weight: '0'
+        weight: '-1'
         context_mapping: {  }
         theme: tema
         css_class: ''
@@ -43,7 +43,7 @@ reactions:
         views_label: ''
         items_per_page: none
         region: content
-        weight: '0'
+        weight: '1'
         context_mapping: {  }
         theme: tema
         css_class: ''
@@ -58,7 +58,7 @@ reactions:
         views_label: ''
         items_per_page: none
         region: content
-        weight: '0'
+        weight: '2'
         context_mapping: {  }
         theme: tema
         css_class: ''
@@ -88,7 +88,7 @@ reactions:
         views_label: ''
         items_per_page: none
         region: content
-        weight: '0'
+        weight: '-2'
         context_mapping: {  }
         custom_id: views_block_front_page_events_events_calendar_next
         theme: tema

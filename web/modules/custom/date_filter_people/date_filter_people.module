@@ -2,7 +2,7 @@
 
 /**
  * @file
- * Contains date_filter.module.
+ * Contains date_filter_people.module.
  */
 
 use Drupal\Core\Routing\RouteMatchInterface;
@@ -10,13 +10,13 @@ use Drupal\Core\Routing\RouteMatchInterface;
 /**
  * Implements hook_help().
  */
-function date_filter_help($route_name, RouteMatchInterface $route_match) {
+function date_filter_people_help($route_name, RouteMatchInterface $route_match) {
   switch ($route_name) {
-    // Main module help for the date_filter module.
-    case 'help.page.date_filter':
+    // Main module help for the date_filter_people module.
+    case 'help.page.date_filter_people':
       $output = '';
       $output .= '<h3>' . t('About') . '</h3>';
-      $output .= '<p>' . t('Provides a custom date filter for news, events, people.') . '</p>';
+      $output .= '<p>' . t('Provides a custom date filter for people.') . '</p>';
       return $output;
 
     default:
@@ -29,8 +29,8 @@ use Drupal\Core\StringTranslation\TranslatableMarkup;
 /**
  * Implements hook_form_FORM_ID_alter().
  */
-function date_filter_form_views_exposed_form_alter(&$form, FormStateInterface $form_state, $form_id) {
-  if (isset($form['#id']) && $form['#id'] == 'views-exposed-form-news-events-press-lists-page-events-list') {
+function date_filter_people_form_views_exposed_form_alter(&$form, FormStateInterface $form_state, $form_id) {
+  if (isset($form['#id']) && $form['#id'] == 'views-exposed-form-people-page-rome-prize-fellows') {
     $options = [
       'all' => t('All years'),    
       '2019' => '2019',
@@ -50,7 +50,7 @@ function date_filter_form_views_exposed_form_alter(&$form, FormStateInterface $f
       '#type' => 'select',
       '#options' => $options,
       '#size' => NULL,
-      '#default_value' => 'all',
+      '#default_value' => '2019',
     ];
   }
 }

@@ -1,6 +1,6 @@
 uuid: a096f328-cdda-43c5-a9cc-fa0e47640da0
 langcode: en
-status: true
+status: false
 dependencies:
   module:
     - system
@@ -10,7 +10,7 @@ _core:
   default_config_hash: XJqWwLt1LDCnazcEN6QkJmCLjk4R0__-8s0OO9xeNjg
 id: tema_messages
 theme: tema
-region: messages
+region: header
 weight: -10
 provider: null
 plugin: system_messages_block

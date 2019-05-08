@@ -1,10 +1,3 @@
-date_settings:
-  default_pattern: 'j F Y'
-  same_month_start_pattern: j
-  same_month_end_pattern: 'j F Y'
-  same_year_start_pattern: 'j F'
-  same_year_end_pattern: 'j F Y'
 datetime_settings:
   default_pattern: 'l, F j, Y g:i'
   same_day_start_pattern: 'l, F j, Y g:i'
-  same_day_end_pattern: 'H:i'
