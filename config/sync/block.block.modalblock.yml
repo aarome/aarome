@@ -10,7 +10,7 @@ dependencies:
 id: modalblock
 theme: tema
 region: header
-weight: -6
+weight: -8
 provider: null
 plugin: modal_block
 settings:

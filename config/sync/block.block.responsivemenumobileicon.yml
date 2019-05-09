@@ -9,7 +9,7 @@ dependencies:
 id: responsivemenumobileicon
 theme: tema
 region: header
-weight: 0
+weight: -7
 provider: null
 plugin: responsive_menu_toggle
 settings:

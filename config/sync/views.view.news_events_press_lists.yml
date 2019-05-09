@@ -947,11 +947,9 @@ display:
           empty_zero: false
           hide_alter_empty: true
           click_sort_column: value
-          type: daterange_default
+          type: daterange_compact
           settings:
-            timezone_override: ''
-            format_type: academy_date_and_time
-            separator: 'to '
+            format_type: medium
           group_column: value
           group_columns: {  }
           group_rows: true
@@ -1139,7 +1137,7 @@ display:
           exclude: false
           alter:
             alter_text: true
-            text: "<h2>{{ title }}</h2>\r\n{{ field_events_event_dates }}\r\n<div class=\"more\">{{ title }}</div>"
+            text: "<h2>{{ title }}</h2>\r\n<time>{{ field_events_event_dates }}</time>\r\n<div class=\"more\">{{ title }}</div>"
             make_link: true
             path: '{{ view_node }}'
             absolute: false
@@ -2787,7 +2785,7 @@ display:
           exclude: false
           alter:
             alter_text: true
-            text: "<h2>{{ title }}</h2>\r\n{{ field_events_event_dates }}\r\n<div class=\"more\">{{ title }}</div>"
+            text: "<h2>{{ title }}</h2>\r\n<time>{{ field_events_event_dates }}</time>\r\n<div class=\"more\">{{ title }}</div>"
             make_link: true
             path: '{{ view_node }}'
             absolute: false

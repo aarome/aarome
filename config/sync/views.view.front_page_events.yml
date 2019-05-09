@@ -2112,7 +2112,7 @@ display:
             alter_text: true
             text: "<h2>{{ title }}</h2>\r\n<section>{{ field_page_summary }}</section>\r\n<div class=\"more\">{{ nothing }}</div>"
             make_link: true
-            path: /events/
+            path: /events/exhibitions
             absolute: false
             external: false
             replace_spaces: false
