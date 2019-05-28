@@ -65,21 +65,6 @@ reactions:
         unique: 0
         context_id: library
         uuid: 28f3b02e-cc45-473e-98d8-0a473aa8f4e4
-      22413ec8-d9ea-4387-a359-0e52a6a68163:
-        id: 'views_block:front_page_library-research_library_services'
-        label: ''
-        provider: views
-        label_display: 0
-        views_label: ''
-        items_per_page: none
-        region: content
-        weight: '1'
-        context_mapping: {  }
-        theme: tema
-        css_class: ''
-        unique: 0
-        context_id: library
-        uuid: 22413ec8-d9ea-4387-a359-0e52a6a68163
       0d3362e6-682a-49b3-9335-55f9bbd0c89f:
         id: 'views_block:front_page_library-research_library_guide'
         label: ''

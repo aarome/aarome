@@ -17,6 +17,7 @@ dependencies:
     - node.type.publications
     - node.type.quick_news
     - node.type.society_of_fellows
+    - node.type.webform
     - taxonomy.vocabulary.page_types
   module:
     - node
@@ -895,7 +896,7 @@ display:
             press_releases: press_releases
             publications: publications
             quick_news: quick_news
-            society_of_fellows: society_of_fellows
+            webform: webform
           group: 1
           exposed: true
           expose:
@@ -914,6 +915,8 @@ display:
               administrator: '0'
               site_editor: '0'
               staff: '0'
+              library: '0'
+              tours: '0'
             reduce: true
           is_grouped: false
           group_info:

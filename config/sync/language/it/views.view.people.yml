@@ -5,15 +5,9 @@ display:
   page_affiliated_fellows:
     display_options:
       title: 'Studio Affiliate'
-  page_italian_fellows:
-    display_options:
-      title: 'Borse di Studio per Italiani'
   page_juries:
     display_options:
       title: Giurie
-  page_residents:
-    display_options:
-      title: 'Residenti Invitati'
   page_visting_artists_scholars:
     display_options:
       title: 'Artisti e Studiosi Ospiti'

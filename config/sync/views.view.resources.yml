@@ -39,9 +39,9 @@ dependencies:
     - 'taxonomy_term:resource_types:5d7f50f9-b7c7-437d-85d3-cc34791c7722'
     - 'taxonomy_term:resource_types:ee43cd74-eb75-4017-8a09-a451660d4145'
   module:
-    - better_exposed_filters
     - link
     - node
+    - selective_better_exposed_filters
     - taxonomy
     - text
     - user
@@ -101,7 +101,11 @@ display:
                 bef_collapsible: false
                 is_secondary: false
                 rewrite:
-                  filter_rewrite_values: ''
+                  filter_rewrite_values: '- Any -|All subjects'
+                bef_show_only_used: 1
+            field_resources_resource_type_target_id:
+              more_options:
+                bef_show_only_used: 1
           text_input_required_format: basic_html
       pager:
         type: none

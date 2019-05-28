@@ -5,10 +5,9 @@ dependencies:
   config:
     - field.field.node.events.body
     - field.field.node.events.field_events_event_dates
-    - field.field.node.events.field_events_event_month
+    - field.field.node.events.field_events_event_dates_overrid
     - field.field.node.events.field_events_event_series
     - field.field.node.events.field_events_event_type
-    - field.field.node.events.field_events_event_year
     - field.field.node.events.field_events_image
     - field.field.node.events.field_events_legacy_id
     - field.field.node.events.field_events_rel_news_feature
@@ -51,6 +50,7 @@ third_party_settings:
       header:
         - field_events_event_series
         - field_events_event_dates
+        - field_events_event_dates_overrid
         - field_events_rel_places
         - field_events_image
         - field_events_event_year
@@ -66,7 +66,7 @@ content:
   body:
     label: hidden
     type: text_default
-    weight: 6
+    weight: 7
     settings: {  }
     third_party_settings: {  }
     region: right
@@ -80,13 +80,12 @@ content:
         ds_limit: ''
     type: daterange_compact
     region: header
-  field_events_event_month:
-    weight: 5
-    label: above
-    settings:
-      link: true
+  field_events_event_dates_overrid:
+    weight: 2
+    label: hidden
+    settings: {  }
     third_party_settings: {  }
-    type: entity_reference_label
+    type: text_default
     region: header
   field_events_event_series:
     type: entity_reference_label
@@ -96,17 +95,9 @@ content:
     settings:
       link: false
     third_party_settings: {  }
-  field_events_event_year:
-    weight: 4
-    label: above
-    settings:
-      link: true
-    third_party_settings: {  }
-    type: entity_reference_label
-    region: header
   field_events_image:
     type: entity_reference_entity_view
-    weight: 3
+    weight: 4
     region: header
     label: hidden
     settings:
@@ -114,7 +105,7 @@ content:
       link: false
     third_party_settings: {  }
   field_events_rel_places:
-    weight: 2
+    weight: 3
     label: hidden
     settings:
       view_mode: inside
@@ -123,7 +114,7 @@ content:
     type: entity_reference_entity_view
     region: header
   field_events_security_notice:
-    weight: 7
+    weight: 8
     label: hidden
     settings:
       view_mode: security_notice

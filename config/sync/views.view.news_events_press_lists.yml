@@ -26,18 +26,33 @@ dependencies:
     - node.type.quick_news
     - node.type.society_of_fellows
     - responsive_image.styles.lists
-    - taxonomy.vocabulary.event_months
     - taxonomy.vocabulary.event_series
     - taxonomy.vocabulary.event_types
-    - taxonomy.vocabulary.event_years
     - taxonomy.vocabulary.society_of_fellows_types
   content:
+    - 'taxonomy_term:event_types:004ced95-a121-412c-9e64-57c325426c39'
+    - 'taxonomy_term:event_types:2261ae15-6d07-441f-a806-a8020b11db8b'
+    - 'taxonomy_term:event_types:27dbae79-746e-4ea6-b78a-710da6578bc4'
+    - 'taxonomy_term:event_types:28dcf291-1557-4fd7-a355-387575ec7221'
+    - 'taxonomy_term:event_types:29bc7d74-18be-4d4f-a7e3-5b6124ee163a'
+    - 'taxonomy_term:event_types:2b7720fa-023c-4e55-9dd6-f11d688a336d'
+    - 'taxonomy_term:event_types:3e498c9c-61b6-48f2-8919-d4b1b2a6c2cf'
+    - 'taxonomy_term:event_types:53299921-8ec4-4416-9921-0bec5baee8d0'
+    - 'taxonomy_term:event_types:592892da-d130-41d0-bc0b-6fb55e9306f4'
     - 'taxonomy_term:event_types:59a9e259-ff9c-4054-8dad-60bf6b74f5c6'
+    - 'taxonomy_term:event_types:620a5186-61c3-4238-b33d-147fd4375a52'
+    - 'taxonomy_term:event_types:8422b4b9-e2d2-424a-931a-36f35a2c0cf2'
+    - 'taxonomy_term:event_types:8d601b57-c133-479b-aeea-9bdcb2fe9e38'
+    - 'taxonomy_term:event_types:a17b53c5-b02e-44ee-8d6f-fb25d57e98f1'
+    - 'taxonomy_term:event_types:a7033c7d-45df-4c42-a7a6-a16514df3532'
+    - 'taxonomy_term:event_types:bf40b104-2972-4016-9366-760506afde51'
+    - 'taxonomy_term:event_types:d929b572-5412-4afc-b91f-17d27746f274'
+    - 'taxonomy_term:event_types:dfc2d660-0f53-4faf-ba63-836b33b6ad27'
+    - 'taxonomy_term:event_types:ed757e1b-7ac0-40dc-8149-6c5e38ac1b0d'
     - 'taxonomy_term:society_of_fellows_types:1b6536a7-5019-4181-8d43-99cec05f9448'
     - 'taxonomy_term:society_of_fellows_types:4a4e01d9-dbd3-490a-9d44-2122f342181d'
     - 'taxonomy_term:society_of_fellows_types:915be594-3dc8-416a-806b-9074f9fb3f1f'
   module:
-    - better_exposed_filters
     - computed_field
     - daterange_compact
     - datetime
@@ -48,6 +63,7 @@ dependencies:
     - node
     - options
     - responsive_image
+    - selective_better_exposed_filters
     - taxonomy
     - text
     - user
@@ -1404,9 +1420,27 @@ display:
           relationship: none
           group_type: group
           admin_label: ''
-          operator: not
+          operator: or
           value:
+            403: 403
+            404: 404
+            405: 405
+            406: 406
+            407: 407
+            408: 408
+            417: 417
+            943: 943
             412: 412
+            414: 414
+            937: 937
+            433: 433
+            425: 425
+            420: 420
+            423: 423
+            427: 427
+            428: 428
+            413: 413
+            432: 432
           group: 1
           exposed: false
           expose:
@@ -3779,7 +3813,7 @@ display:
           relationship: none
           group_type: group
           admin_label: ''
-          order: DESC
+          order: ASC
           exposed: false
           expose:
             label: ''
@@ -3849,22 +3883,7 @@ display:
                 is_secondary: false
                 rewrite:
                   filter_rewrite_values: '- Any -|Event types'
-            field_events_event_year_target_id:
-              bef_format: default
-              more_options:
-                bef_select_all_none: false
-                bef_collapsible: false
-                is_secondary: false
-                rewrite:
-                  filter_rewrite_values: '- Any -|By year'
-            field_events_event_month_target_id:
-              bef_format: default
-              more_options:
-                bef_select_all_none: false
-                bef_collapsible: false
-                is_secondary: true
-                rewrite:
-                  filter_rewrite_values: '- Any -|By month'
+                bef_show_only_used: 1
           text_input_required_format: basic_html
       use_more: false
       use_more_always: false
@@ -5484,9 +5503,9 @@ display:
             more_link: false
             more_link_text: ''
             more_link_path: ''
-            strip_tags: false
+            strip_tags: true
             trim: false
-            preserve_tags: ''
+            preserve_tags: '<em> <strong>'
             html: false
           element_type: ''
           element_class: ''
@@ -5944,7 +5963,7 @@ display:
           click_sort_column: uri
           type: link
           settings:
-            trim_length: 80
+            trim_length: null
             url_only: true
             url_plain: false
             rel: nofollow
@@ -6315,7 +6334,7 @@ display:
           click_sort_column: uri
           type: link
           settings:
-            trim_length: 80
+            trim_length: null
             url_only: true
             url_plain: false
             rel: nofollow

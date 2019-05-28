@@ -2226,6 +2226,7 @@ display:
         filter_groups: false
         css_class: true
         fields: false
+        exposed_form: false
       rendering_language: '***LANGUAGE_language_interface***'
       filters:
         status:
@@ -2735,6 +2736,16 @@ display:
           absolute: false
           entity_type: node
           plugin_id: entity_link_edit
+      exposed_form:
+        type: basic
+        options:
+          submit_button: Apply
+          reset_button: false
+          reset_button_label: Reset
+          exposed_sorts_label: 'Sort by'
+          expose_sort_order: false
+          sort_asc_label: Asc
+          sort_desc_label: Desc
     cache_metadata:
       max-age: -1
       contexts:

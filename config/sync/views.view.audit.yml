@@ -1,6 +1,6 @@
 uuid: e0ac8fac-1f67-4e34-a0b0-62bbaad53309
 langcode: en
-status: false
+status: true
 dependencies:
   config:
     - node.type.events
@@ -355,17 +355,6 @@ display:
           hide_alter_empty: true
           plugin_id: standard
       filters:
-        status:
-          value: '1'
-          table: node_field_data
-          field: status
-          plugin_id: boolean
-          entity_type: node
-          entity_field: status
-          id: status
-          expose:
-            operator: ''
-          group: 1
         type:
           id: type
           table: node_field_data

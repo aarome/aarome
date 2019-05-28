@@ -1,3 +1,11 @@
+label: Medium
+date_settings:
+  default_pattern: 'F j, Y'
+  same_month_start_pattern: 'F j'
+  same_month_end_pattern: 'F j, Y'
+  same_year_start_pattern: 'F j'
+  same_year_end_pattern: 'F j, Y'
 datetime_settings:
-  default_pattern: 'l, F j, Y g:i'
-  same_day_start_pattern: 'l, F j, Y g:i'
+  default_pattern: 'l, F j, Y G:i'
+  same_day_start_pattern: 'l, F j, Y G:i'
+  same_day_end_pattern: 'G:i A'

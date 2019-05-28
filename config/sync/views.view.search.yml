@@ -51,7 +51,7 @@ display:
             general:
               allow_secondary: false
               secondary_label: 'Advanced options'
-              autosubmit: true
+              autosubmit: false
               autosubmit_exclude_textfield: false
               autosubmit_hide: true
             search_api_fulltext:
@@ -62,10 +62,26 @@ display:
                   filter_rewrite_values: ''
           text_input_required_format: basic_html
       pager:
-        type: some
+        type: full
         options:
-          items_per_page: 100
+          items_per_page: 25
           offset: 0
+          id: 0
+          total_pages: null
+          tags:
+            previous: '‹ Previous'
+            next: 'Next ›'
+            first: '« First'
+            last: 'Last »'
+          expose:
+            items_per_page: false
+            items_per_page_label: 'Items per page'
+            items_per_page_options: '5, 10, 25, 50'
+            items_per_page_options_all: false
+            items_per_page_options_all_label: '- All -'
+            offset: false
+            offset_label: Offset
+          quantity: 9
       style:
         type: default
         options:
@@ -656,6 +672,8 @@ display:
               administrator: '0'
               site_editor: '0'
               staff: '0'
+              library: '0'
+              tours: '0'
             placeholder: ''
           is_grouped: false
           group_info:
@@ -670,7 +688,7 @@ display:
             default_group_multiple: {  }
             group_items: {  }
           parse_mode: phrase
-          min_length: null
+          min_length: 4
           fields:
             - body
             - title
@@ -755,6 +773,7 @@ display:
         - 'languages:language_content'
         - 'languages:language_interface'
         - url
+        - url.query_args
       tags:
         - 'config:field.storage.node.field_safe_path_alias'
   page_search:
@@ -1244,10 +1263,12 @@ display:
           plugin_id: search_api_field
       defaults:
         fields: false
+      exposed_block: false
     cache_metadata:
       max-age: -1
       contexts:
         - 'languages:language_content'
         - 'languages:language_interface'
         - url
+        - url.query_args
       tags: {  }

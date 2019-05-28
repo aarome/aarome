@@ -95,21 +95,6 @@ reactions:
         unique: 0
         context_id: news
         uuid: e60c18d4-9620-494e-bf29-3b61aaaef260
-      3635e62e-3a2f-4044-b5ad-d17a384039b9:
-        id: 'views_block:front_page_news-news_press_coverage'
-        label: ''
-        provider: views
-        label_display: 0
-        views_label: ''
-        items_per_page: none
-        region: content
-        weight: '0'
-        context_mapping: {  }
-        theme: tema
-        css_class: ''
-        unique: 0
-        context_id: news
-        uuid: 3635e62e-3a2f-4044-b5ad-d17a384039b9
     id: blocks
     saved: false
     uuid: 656c08f2-0572-4177-a135-b2dd4becb996

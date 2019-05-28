@@ -17,7 +17,7 @@ close: null
 weight: 0
 uid: null
 template: false
-archive: false
+archive: true
 id: contact
 title: Contact
 description: 'Basic email contact webform.'
@@ -132,8 +132,7 @@ settings:
 access:
   create:
     roles:
-      - anonymous
-      - authenticated
+      - administrator
     users: {  }
     permissions: {  }
   view_any:

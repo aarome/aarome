@@ -1,13 +1,13 @@
-uuid: c79071ae-9dd5-4ac5-9814-21c2c1ddf020
+uuid: 196ea518-3480-4252-9606-31d3be9f0361
 langcode: en
 status: true
 dependencies:
   module:
-    - node
+    - paragraphs
     - taxonomy
-id: node.field_events_event_month
-field_name: field_events_event_month
-entity_type: node
+id: paragraph.field_affil_year
+field_name: field_affil_year
+entity_type: paragraph
 type: entity_reference
 settings:
   target_type: taxonomy_term

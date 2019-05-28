@@ -6,10 +6,9 @@ dependencies:
     - core.entity_form_mode.node.inline_form
     - field.field.node.events.body
     - field.field.node.events.field_events_event_dates
-    - field.field.node.events.field_events_event_month
+    - field.field.node.events.field_events_event_dates_overrid
     - field.field.node.events.field_events_event_series
     - field.field.node.events.field_events_event_type
-    - field.field.node.events.field_events_event_year
     - field.field.node.events.field_events_image
     - field.field.node.events.field_events_legacy_id
     - field.field.node.events.field_events_rel_news_feature
@@ -56,14 +55,20 @@ content:
     third_party_settings: {  }
     type: daterange_default
     region: content
-  field_events_event_month:
-    weight: 3
-    settings: {  }
-    third_party_settings: {  }
-    type: options_select
+  field_events_event_dates_overrid:
+    weight: 5
+    settings:
+      rows: 2
+      placeholder: ''
+    third_party_settings:
+      allowed_formats:
+        hide_help: '1'
+        hide_guidelines: '1'
+      conditional_fields: {  }
+    type: text_textarea
     region: content
   field_events_event_series:
-    weight: 6
+    weight: 7
     settings:
       match_operator: CONTAINS
       size: 60
@@ -72,19 +77,13 @@ content:
     type: entity_reference_autocomplete
     region: content
   field_events_event_type:
-    weight: 5
+    weight: 6
     settings:
       match_operator: CONTAINS
       size: 60
       placeholder: ''
     third_party_settings: {  }
     type: entity_reference_autocomplete
-    region: content
-  field_events_event_year:
-    weight: 2
-    settings: {  }
-    third_party_settings: {  }
-    type: options_select
     region: content
   field_events_image:
     weight: 11
@@ -103,7 +102,7 @@ content:
     type: inline_entity_form_complex
     region: content
   field_events_rel_places:
-    weight: 7
+    weight: 8
     settings:
       form_mode: inline_form
       override_labels: true

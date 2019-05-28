@@ -1,3 +1,4 @@
+label: Media
 display:
   default:
     display_title: Principale
@@ -60,3 +61,12 @@ display:
         langcode:
           expose:
             label: Lingua
+      title: Media
+      empty:
+        area_text_custom:
+          content: 'Non è disponibile alcun contributo mediale.'
+  media_page_list:
+    display_title: Media
+    display_options:
+      menu:
+        title: Media

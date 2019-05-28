@@ -420,7 +420,7 @@ display:
       pager:
         type: some
         options:
-          items_per_page: 10
+          items_per_page: 5
           offset: null
       css_class: 'front front_events'
       sorts:
@@ -3353,7 +3353,7 @@ display:
           exclude: false
           alter:
             alter_text: true
-            text: "{% if langcode == 'Italian' %}\r\nAltre opportunità\r\n{% elseif langcode == 'English' %}\r\nOther opporunities\r\n{% endif %}"
+            text: "{% if langcode == 'Italian' %}\r\nAltre opportunità\r\n{% elseif langcode == 'English' %}\r\nOther opportunities\r\n{% endif %}"
             make_link: true
             path: /apply
             absolute: false

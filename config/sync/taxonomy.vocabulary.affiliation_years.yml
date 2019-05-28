@@ -1,0 +1,9 @@
+uuid: f2cf454c-4440-435a-8af3-8ce46adf11e8
+langcode: en
+status: true
+dependencies: {  }
+name: 'Affiliation years'
+vid: affiliation_years
+description: ''
+hierarchy: 0
+weight: 0
