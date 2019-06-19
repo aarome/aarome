@@ -6,4 +6,5 @@ id: nightly
 label: nightly
 type: Directory
 config:
+  name: nightly
   directory: /opt/nightly

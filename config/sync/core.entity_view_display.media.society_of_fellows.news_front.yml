@@ -1,45 +1,45 @@
-uuid: 8e97b5d2-92a9-4d9e-88a3-8298f7fccbc7
+uuid: c0c11a52-7140-4044-ba95-726d18b23328
 langcode: en
 status: true
 dependencies:
   config:
+    - core.entity_view_mode.media.news_front
     - field.field.media.society_of_fellows.field_media_caption
     - field.field.media.society_of_fellows.field_media_image
     - media.type.society_of_fellows
+    - responsive_image.styles.lists
   module:
-    - image
+    - layout_builder
+    - responsive_image
     - text
-id: media.society_of_fellows.default
+third_party_settings:
+  layout_builder:
+    allow_custom: false
+    enabled: false
+id: media.society_of_fellows.news_front
 targetEntityType: media
 bundle: society_of_fellows
-mode: default
+mode: news_front
 content:
   field_media_caption:
-    weight: 2
+    weight: 1
     label: hidden
     settings: {  }
     third_party_settings: {  }
     type: text_default
     region: content
   field_media_image:
-    weight: 1
+    weight: 0
     label: hidden
     settings:
-      image_style: ''
+      responsive_image_style: lists
       image_link: ''
     third_party_settings: {  }
-    type: image
+    type: responsive_image
     region: content
-  name:
-    type: string
-    weight: 0
-    region: content
-    label: above
-    settings:
-      link_to_entity: false
-    third_party_settings: {  }
 hidden:
   created: true
   langcode: true
+  name: true
   thumbnail: true
   uid: true

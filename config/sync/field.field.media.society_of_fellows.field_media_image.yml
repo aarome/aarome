@@ -19,8 +19,8 @@ third_party_settings:
         pathauto: true
         transliterate: true
     redirect: false
-    retroactive_update: false
-    active_updating: false
+    retroactive_update: true
+    active_updating: true
     file_name:
       value: '[media:name].[file:ffp-extension-original]'
       options:
