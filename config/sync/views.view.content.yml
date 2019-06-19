@@ -896,6 +896,7 @@ display:
             press_releases: press_releases
             publications: publications
             quick_news: quick_news
+            society_of_fellows: society_of_fellows
             webform: webform
           group: 1
           exposed: true

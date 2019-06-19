@@ -12,7 +12,7 @@ id: report_a_website_problem
 title: 'Report a website problem'
 description: ''
 category: ''
-elements: "browser_type:\n  '#type': select\n  '#title': 'Browser type'\n  '#options':\n    chrome: Chrome\n    firefox: Firefox\n    opera: Opera\n    safari: Safari\n    tor: Tor\ncomputer_type:\n  '#type': select\n  '#title': 'Computer type'\n  '#options':\n    desktop: Desktop\n    laptop: Laptop\n    smart_phone: 'Smart phone'\n    tablet: Tablet\nwebpage_url:\n  '#type': url\n  '#title': 'Webpage URL'\ndescription_problem:\n  '#type': textarea\n  '#title': 'Description of problem'"
+elements: "general_section:\n  '#type': webform_section\n  '#title': 'Technical information'\n  browser_type:\n    '#type': select\n    '#title': 'Browser type'\n    '#options':\n      chrome: Chrome\n      firefox: Firefox\n      opera: Opera\n      safari: Safari\n      tor: Tor\n    '#select2': true\n  computer_type:\n    '#type': select\n    '#title': 'Computer type'\n    '#options':\n      desktop: Desktop\n      laptop: Laptop\n      smart_phone: 'Smart phone'\n      tablet: Tablet\n    '#select2': true\n  webpage_url:\n    '#type': url\n    '#title': 'Webpage URL'\n    '#required': true\n  description_problem:\n    '#type': textarea\n    '#title': 'Description of problem'\n    '#required': true"
 css: ''
 javascript: ''
 settings:

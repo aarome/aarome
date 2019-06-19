@@ -5,5 +5,4 @@ dependencies: {  }
 name: 'Resident names'
 vid: resident_fellowship_names
 description: ''
-hierarchy: 0
 weight: 0

@@ -4,6 +4,8 @@ status: true
 dependencies:
   config:
     - taxonomy.vocabulary.resident_fellowship_names
+  module:
+    - hide_revision_field
 id: taxonomy_term.resident_fellowship_names.default
 targetEntityType: taxonomy_term
 bundle: resident_fellowship_names
@@ -15,6 +17,18 @@ content:
     region: content
     settings:
       size: 60
+      placeholder: ''
+    third_party_settings: {  }
+  revision_log_message:
+    type: hide_revision_field_log_widget
+    weight: 80
+    region: content
+    settings:
+      show: true
+      default: ''
+      permission_based: false
+      allow_user_settings: true
+      rows: '5'
       placeholder: ''
     third_party_settings: {  }
 hidden:

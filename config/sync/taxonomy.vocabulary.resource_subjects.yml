@@ -5,5 +5,4 @@ dependencies: {  }
 name: 'Resource subjects'
 vid: resource_subjects
 description: ''
-hierarchy: 0
 weight: 0

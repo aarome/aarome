@@ -12,7 +12,7 @@ id: press_inquiry
 title: 'Press inquiry'
 description: ''
 category: ''
-elements: "job_title:\n  '#type': textfield\n  '#title': 'Job title'\n  '#required': true\nmedia_organization:\n  '#type': textfield\n  '#title': 'Media organization'\n  '#required': true\nmedia_organization_website:\n  '#type': textfield\n  '#title': 'Media organization website'\n  '#required': true\ntelephone_number:\n  '#type': textfield\n  '#title': 'Telephone number'\n  '#required': true\ninquiry:\n  '#type': textarea\n  '#title': Inquiry\n  '#required': true\ndeadline:\n  '#type': textfield\n  '#title': Deadline"
+elements: "contact_information:\n  '#type': webform_section\n  '#title': 'Contact information'\n  first_name:\n    '#type': textfield\n    '#title': 'First name'\n  last_name:\n    '#type': textfield\n    '#title': 'Last name'\n    '#required': true\n  job_title:\n    '#type': textfield\n    '#title': 'Job title'\n    '#required': true\n  email_address:\n    '#type': textfield\n    '#title': 'Email address'\n    '#required': true\n  media_organization:\n    '#type': textfield\n    '#title': 'Media organization'\n    '#required': true\n  media_organization_website:\n    '#type': textfield\n    '#title': 'Media organization website'\n    '#required': true\n  telephone_number:\n    '#type': textfield\n    '#title': 'Telephone number'\n    '#required': true\ninquiry_section:\n  '#type': webform_section\n  '#title': Inquiry\n  inquiry:\n    '#type': textarea\n    '#title': Inquiry\n    '#required': true\n  deadline:\n    '#type': textfield\n    '#title': Deadline"
 css: ''
 javascript: ''
 settings:

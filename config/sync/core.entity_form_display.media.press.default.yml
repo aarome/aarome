@@ -7,6 +7,7 @@ dependencies:
     - media.type.press
   module:
     - file
+    - hide_revision_field
     - path
 id: media.press.default
 targetEntityType: media
@@ -47,6 +48,18 @@ content:
     region: content
     settings: {  }
     third_party_settings: {  }
+  revision_log_message:
+    type: hide_revision_field_log_widget
+    weight: 80
+    region: content
+    settings:
+      show: true
+      default: ''
+      permission_based: false
+      allow_user_settings: true
+      rows: '5'
+      placeholder: ''
+    third_party_settings: {  }
   status:
     type: boolean_checkbox
     settings:
@@ -54,6 +67,11 @@ content:
     weight: 100
     region: content
     third_party_settings: {  }
+  translation:
+    weight: 10
+    settings: {  }
+    third_party_settings: {  }
+    region: content
   uid:
     type: entity_reference_autocomplete
     weight: 5

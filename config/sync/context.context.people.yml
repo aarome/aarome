@@ -35,6 +35,7 @@ reactions:
         unique: 0
         context_id: people
         uuid: bd2f3ae7-e131-4dd4-b100-a4138be8147c
+        custom_id: views_block_front_page_people_people_rome_prize_fellows
       4b8a522c-36b8-4965-b5ae-f60285785698:
         id: 'views_block:front_page_people-people_italian_fellows'
         label: ''
@@ -50,6 +51,7 @@ reactions:
         unique: 0
         context_id: people
         uuid: 4b8a522c-36b8-4965-b5ae-f60285785698
+        custom_id: views_block_front_page_people_people_italian_fellows
       b88ea5b2-5fc4-4c61-9ca4-eb7ecde24edb:
         id: 'views_block:front_page_people-people_residents'
         label: ''
@@ -65,6 +67,7 @@ reactions:
         unique: 0
         context_id: people
         uuid: b88ea5b2-5fc4-4c61-9ca4-eb7ecde24edb
+        custom_id: views_block_front_page_people_people_residents
       0f582a11-b8f7-4e12-b985-9c52c460ee0c:
         id: 'views_block:front_page_people-people_affiliated_fellows'
         label: ''
@@ -80,6 +83,7 @@ reactions:
         unique: 0
         context_id: people
         uuid: 0f582a11-b8f7-4e12-b985-9c52c460ee0c
+        custom_id: views_block_front_page_people_people_affiliated_fellows
       dc329104-c394-4b8b-88b8-f753f3d9dedb:
         id: 'views_block:front_page_people-people_visiting_artists_scholars'
         label: ''
@@ -95,6 +99,7 @@ reactions:
         unique: 0
         context_id: people
         uuid: dc329104-c394-4b8b-88b8-f753f3d9dedb
+        custom_id: views_block_front_page_people_people_visiting_artists_scholars
       eea2f85b-beae-4759-9e64-055f5dc50681:
         id: 'views_block:front_page_people-people_advisors'
         label: ''
@@ -110,6 +115,7 @@ reactions:
         unique: 0
         context_id: people
         uuid: eea2f85b-beae-4759-9e64-055f5dc50681
+        custom_id: views_block_front_page_people_people_advisors
       fe004224-0893-44a8-9d23-82d05cbbebfe:
         id: 'views_block:front_page_people-people_sof'
         label: ''
@@ -125,6 +131,7 @@ reactions:
         unique: 0
         context_id: people
         uuid: fe004224-0893-44a8-9d23-82d05cbbebfe
+        custom_id: views_block_front_page_people_people_sof
       2dcca92c-3e1a-42a0-8b44-25e10db93dc8:
         id: 'views_block:front_page_people-people_juries'
         label: ''

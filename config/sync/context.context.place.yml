@@ -35,6 +35,7 @@ reactions:
         unique: 0
         context_id: place
         uuid: 50346808-7b50-4c72-87d0-6271394ccde7
+        custom_id: views_block_front_page_place_place_academy
       abe6712d-4539-46a8-a25a-0fc5ed80b0a5:
         id: 'views_block:front_page_place-place_villa_aurelia'
         label: ''
@@ -50,6 +51,7 @@ reactions:
         unique: 0
         context_id: place
         uuid: abe6712d-4539-46a8-a25a-0fc5ed80b0a5
+        custom_id: views_block_front_page_place_place_villa_aurelia
       91d8b59a-d433-4327-919e-ef6559455a10:
         id: 'views_block:front_page_place-place_gardens'
         label: ''
@@ -65,6 +67,7 @@ reactions:
         unique: 0
         context_id: place
         uuid: 91d8b59a-d433-4327-919e-ef6559455a10
+        custom_id: views_block_front_page_place_place_gardens
       9f7387a8-52cd-4efc-a8c4-83b335692d3c:
         id: 'views_block:front_page_place-place_directions'
         label: ''
@@ -80,6 +83,7 @@ reactions:
         unique: 0
         context_id: place
         uuid: 9f7387a8-52cd-4efc-a8c4-83b335692d3c
+        custom_id: views_block_front_page_place_place_directions
       a1c53861-d526-4223-bf5b-400d5d21a488:
         id: 'views_block:front_page_place-place_tours'
         label: ''

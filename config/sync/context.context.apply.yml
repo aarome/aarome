@@ -35,6 +35,7 @@ reactions:
         unique: 0
         context_id: apply
         uuid: 9c4ea2b8-e8be-4876-bb04-e254b5a7e747
+        custom_id: views_block_front_page_apply_apply_italian_fellowship
       92daad31-1f08-4365-bfd6-cd748d512af6:
         id: 'views_block:front_page_apply-apply_rome_prize'
         label: ''
@@ -50,6 +51,7 @@ reactions:
         unique: 0
         context_id: apply
         uuid: 92daad31-1f08-4365-bfd6-cd748d512af6
+        custom_id: views_block_front_page_apply_apply_rome_prize
       69d2c001-382d-4845-8c3f-818a6dcda636:
         id: 'views_block:front_page_apply-apply_visiting'
         label: ''
@@ -65,6 +67,7 @@ reactions:
         unique: 0
         context_id: apply
         uuid: 69d2c001-382d-4845-8c3f-818a6dcda636
+        custom_id: views_block_front_page_apply_apply_visiting
       85cd9e71-ab98-4c39-83e8-968bba083443:
         id: 'views_block:front_page_apply-apply_affiliated'
         label: ''
@@ -80,6 +83,7 @@ reactions:
         unique: 0
         context_id: apply
         uuid: 85cd9e71-ab98-4c39-83e8-968bba083443
+        custom_id: views_block_front_page_apply_apply_affiliated
       d79a3296-bedc-475b-8bb7-01eb105742f4:
         id: 'views_block:front_page_apply-apply_academic_programs'
         label: ''
@@ -95,6 +99,7 @@ reactions:
         unique: 0
         context_id: apply
         uuid: d79a3296-bedc-475b-8bb7-01eb105742f4
+        custom_id: views_block_front_page_apply_apply_academic_programs
       aa8f701e-6341-4e9a-9b6b-8f29f1cf9fc0:
         id: 'views_block:front_page_apply-apply_rsfp'
         label: ''
@@ -110,6 +115,7 @@ reactions:
         unique: 0
         context_id: apply
         uuid: aa8f701e-6341-4e9a-9b6b-8f29f1cf9fc0
+        custom_id: views_block_front_page_apply_apply_rsfp
     id: blocks
     saved: false
     uuid: f3054c04-c3bf-432d-81aa-bc7b24f86cb4

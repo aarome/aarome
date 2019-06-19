@@ -11,6 +11,7 @@ dependencies:
     - field.field.paragraph.affiliation.field_affil_ital_fellowship_name
     - field.field.paragraph.affiliation.field_affil_residency_name
     - field.field.paragraph.affiliation.field_affil_type
+    - field.field.paragraph.affiliation.field_affil_year
     - paragraphs.paragraphs_type.affiliation
   module:
     - daterange_compact
@@ -64,3 +65,4 @@ hidden:
   field_affil_aff_fellowship_name: true
   field_affil_discipline: true
   field_affil_type: true
+  field_affil_year: true

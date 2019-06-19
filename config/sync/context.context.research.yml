@@ -35,6 +35,7 @@ reactions:
         unique: 0
         context_id: research
         uuid: dfecd1c4-bae2-4b3e-b7ee-2806fa614668
+        custom_id: views_block_front_page_research_research_library
       143bc2be-bd22-4b26-8a7b-5fe70f606036:
         id: 'views_block:front_page_research-research_resources'
         label: ''
@@ -50,6 +51,7 @@ reactions:
         unique: 0
         context_id: research
         uuid: 143bc2be-bd22-4b26-8a7b-5fe70f606036
+        custom_id: views_block_front_page_research_research_resources
       a9911324-0888-4456-9d12-87dcef68064d:
         id: 'views_block:front_page_research-research_special_collections'
         label: ''
@@ -65,6 +67,7 @@ reactions:
         unique: 0
         context_id: research
         uuid: a9911324-0888-4456-9d12-87dcef68064d
+        custom_id: views_block_front_page_research_research_special_collections
       1f9dac16-21a6-451a-8ab3-57f4ee6b4b95:
         id: 'views_block:front_page_research-research_photo_archive'
         label: ''
@@ -80,6 +83,7 @@ reactions:
         unique: 0
         context_id: research
         uuid: 1f9dac16-21a6-451a-8ab3-57f4ee6b4b95
+        custom_id: views_block_front_page_research_research_photo_archive
       57104813-65e8-4ef0-9387-4278860782e4:
         id: 'views_block:front_page_research-research_institutional_archive'
         label: ''
@@ -95,6 +99,7 @@ reactions:
         unique: 0
         context_id: research
         uuid: 57104813-65e8-4ef0-9387-4278860782e4
+        custom_id: views_block_front_page_research_research_institutional_archive
       129cd4e5-e70c-4aa9-917d-673bc0060619:
         id: 'views_block:front_page_research-research_digital_humanities_center'
         label: ''
@@ -110,6 +115,7 @@ reactions:
         unique: 0
         context_id: research
         uuid: 129cd4e5-e70c-4aa9-917d-673bc0060619
+        custom_id: views_block_front_page_research_research_digital_humanities_center
       ef910c76-cadc-41bf-9661-18f9a43362ca:
         id: 'views_block:front_page_research-research_archaeology'
         label: ''
@@ -125,6 +131,7 @@ reactions:
         unique: 0
         context_id: research
         uuid: ef910c76-cadc-41bf-9661-18f9a43362ca
+        custom_id: views_block_front_page_research_research_archaeology
     id: blocks
     saved: false
     uuid: 7f9c446a-0ec7-4f95-b577-94354fb27221

@@ -35,6 +35,7 @@ reactions:
         unique: 0
         context_id: news_feature_detail
         uuid: 049bec13-dfeb-4795-8932-4b31873a2e10
+        custom_id: views_block_news_detail_block_news_slideshow
       645be7a2-3512-44fd-9bd6-c8f2790ffad7:
         id: 'views_block:news_detail-block_news_body'
         label: ''
@@ -50,6 +51,7 @@ reactions:
         unique: 0
         context_id: news_feature_detail
         uuid: 645be7a2-3512-44fd-9bd6-c8f2790ffad7
+        custom_id: views_block_news_detail_block_news_body
     id: blocks
     saved: false
     uuid: 1083f0ba-053f-439f-a1b7-3e84b6351fcf

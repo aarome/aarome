@@ -35,6 +35,7 @@ reactions:
         unique: 0
         context_id: society_of_fellows_news_detail
         uuid: 63f2cc0b-5090-4291-8517-f5e2232ef745
+        custom_id: views_block_news_detail_block_society_of_fellows_news_slideshow
       38beb7ed-7046-48b6-afa7-31b5a74b706d:
         id: 'views_block:news_detail-block_society_of_fellows_news_body'
         label: ''
@@ -50,6 +51,7 @@ reactions:
         unique: 0
         context_id: society_of_fellows_news_detail
         uuid: 38beb7ed-7046-48b6-afa7-31b5a74b706d
+        custom_id: views_block_news_detail_block_society_of_fellows_news_body
     id: blocks
     saved: false
     uuid: bbfcfb49-8282-4f5b-a85b-0d6a719de11b

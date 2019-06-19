@@ -5,6 +5,8 @@ dependencies:
   config:
     - core.entity_view_mode.paragraph.inside_front
     - field.field.paragraph.page_section.field_page_section_body
+    - field.field.paragraph.page_section.field_page_section_files
+    - field.field.paragraph.page_section.field_page_section_links
     - field.field.paragraph.page_section.field_page_section_title
     - paragraphs.paragraphs_type.page_section
   module:
@@ -30,4 +32,6 @@ content:
     third_party_settings: {  }
     type: string
     region: content
-hidden: {  }
+hidden:
+  field_page_section_files: true
+  field_page_section_links: true

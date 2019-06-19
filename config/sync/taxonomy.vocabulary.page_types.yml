@@ -5,5 +5,4 @@ dependencies: {  }
 name: 'Page types'
 vid: page_types
 description: ''
-hierarchy: 0
 weight: 0

@@ -5,6 +5,7 @@ dependencies:
   config:
     - core.entity_view_mode.node.teaser
     - field.field.node.news_features.body
+    - field.field.node.news_features.field_news_features_byline
     - field.field.node.news_features.field_news_features_date
     - field.field.node.news_features.field_news_features_images
     - field.field.node.news_features.field_news_features_rel_events
@@ -25,6 +26,7 @@ mode: teaser
 content: {  }
 hidden:
   body: true
+  field_news_features_byline: true
   field_news_features_date: true
   field_news_features_images: true
   field_news_features_rel_events: true

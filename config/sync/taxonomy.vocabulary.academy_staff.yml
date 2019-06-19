@@ -5,5 +5,4 @@ dependencies: {  }
 name: 'Academy staff positions'
 vid: academy_staff
 description: ''
-hierarchy: 0
 weight: 0

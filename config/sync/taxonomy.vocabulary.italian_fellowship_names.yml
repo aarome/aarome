@@ -5,5 +5,4 @@ dependencies: {  }
 name: 'Italian Fellowship names'
 vid: italian_fellowship_names
 description: ''
-hierarchy: 0
 weight: 0

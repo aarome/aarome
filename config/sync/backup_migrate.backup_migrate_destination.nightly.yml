@@ -1,0 +1,9 @@
+uuid: f57ee48d-6bd2-4911-b5e7-b17fef13a0d6
+langcode: en
+status: true
+dependencies: {  }
+id: nightly
+label: nightly
+type: Directory
+config:
+  directory: /opt/nightly

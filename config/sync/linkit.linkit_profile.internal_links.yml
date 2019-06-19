@@ -13,7 +13,6 @@ matchers:
     id: 'entity:node'
     weight: 0
     settings:
-      result_description: ''
       bundles:
         page: page
       group_by_bundle: true

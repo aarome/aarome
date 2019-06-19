@@ -5,5 +5,4 @@ dependencies: {  }
 name: 'Fellowship names'
 vid: fellowship_names
 description: ''
-hierarchy: 0
 weight: 0

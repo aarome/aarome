@@ -1,5 +1,5 @@
 check:
-  disabled_extensions: false
+  disabled_extensions: true
   interval_days: 1
 fetch:
   url: ''
@@ -7,7 +7,8 @@ fetch:
   timeout: 30
 notification:
   emails:
-    - admin@example.com
-  threshold: all
+    - j@minorscience.com
+    - c.howard@aarome.org
+  threshold: security
 _core:
   default_config_hash: 2QzULf0zovJQx3J06Y9rufzzfi-CY2CTTlEfJJh2Qyw

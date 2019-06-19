@@ -5,6 +5,7 @@ dependencies:
   config:
     - taxonomy.vocabulary.event_types
   module:
+    - hide_revision_field
     - path
 id: taxonomy_term.event_types.default
 targetEntityType: taxonomy_term
@@ -31,6 +32,18 @@ content:
     weight: 3
     region: content
     settings: {  }
+    third_party_settings: {  }
+  revision_log_message:
+    type: hide_revision_field_log_widget
+    weight: 80
+    region: content
+    settings:
+      show: true
+      default: ''
+      permission_based: false
+      allow_user_settings: true
+      rows: '5'
+      placeholder: ''
     third_party_settings: {  }
   translation:
     weight: 2

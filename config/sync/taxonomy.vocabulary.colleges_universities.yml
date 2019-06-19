@@ -5,5 +5,4 @@ dependencies: {  }
 name: 'Colleges and universities'
 vid: colleges_universities
 description: ''
-hierarchy: 0
 weight: 0

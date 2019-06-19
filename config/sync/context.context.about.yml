@@ -35,6 +35,7 @@ reactions:
         unique: 0
         context_id: about
         uuid: d9964103-30af-4aeb-8dbe-aba7f973736e
+        custom_id: views_block_front_page_about_about_mission
       b955d64f-95ec-4158-82d7-e3284b6fdf16:
         id: 'views_block:front_page_about-about_place'
         label: ''
@@ -50,6 +51,7 @@ reactions:
         unique: 0
         context_id: about
         uuid: b955d64f-95ec-4158-82d7-e3284b6fdf16
+        custom_id: views_block_front_page_about_about_place
       0f5e6734-6a9e-40fd-bdce-25e564983388:
         id: 'views_block:front_page_about-about_rsfp'
         label: ''
@@ -65,6 +67,7 @@ reactions:
         unique: 0
         context_id: about
         uuid: 0f5e6734-6a9e-40fd-bdce-25e564983388
+        custom_id: views_block_front_page_about_about_rsfp
       42b17ac5-2b18-4b08-a81b-2e696788a9c3:
         id: 'views_block:front_page_about-about_board'
         label: ''
@@ -80,6 +83,7 @@ reactions:
         unique: 0
         context_id: about
         uuid: 42b17ac5-2b18-4b08-a81b-2e696788a9c3
+        custom_id: views_block_front_page_about_about_board
       56aadea4-e914-447d-b4c0-206a92f4b8d2:
         id: 'views_block:front_page_about-about_staff'
         label: ''
@@ -95,6 +99,7 @@ reactions:
         unique: 0
         context_id: about
         uuid: 56aadea4-e914-447d-b4c0-206a92f4b8d2
+        custom_id: views_block_front_page_about_about_staff
       a7f1edd5-3554-42b9-9420-91a4c47b3cb4:
         id: 'views_block:front_page_about-about_jobs'
         label: ''
@@ -110,6 +115,7 @@ reactions:
         unique: 0
         context_id: about
         uuid: a7f1edd5-3554-42b9-9420-91a4c47b3cb4
+        custom_id: views_block_front_page_about_about_jobs
     id: blocks
     saved: false
     uuid: 3b197fb0-5096-4bbd-b223-1ab9dc34a758

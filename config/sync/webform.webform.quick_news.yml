@@ -14,7 +14,7 @@ id: quick_news
 title: 'Quick news'
 description: ''
 category: ''
-elements: "name:\n  '#type': textfield\n  '#title': Name\n  '#required': true\nemail:\n  '#type': email\n  '#title': Email\n  '#required': true\nquick_news_year:\n  '#type': textfield\n  '#title': 'Fellowship or residency year'\n  '#required': true\nquick_news_url:\n  '#type': url\n  '#title': 'URL of news or event item'\n  '#required': true\nquick_news_description:\n  '#type': textarea\n  '#title': 'Description of news or event'\n  '#required': true\nactions:\n  '#type': webform_actions\n  '#title': 'Submit button(s)'\n  '#submit__label': 'Send message'"
+elements: "general_section:\n  '#type': webform_section\n  '#title': 'Contact information'\n  name:\n    '#type': textfield\n    '#title': Name\n    '#required': true\n  email:\n    '#type': email\n    '#title': Email\n    '#required': true\n  quick_news_year:\n    '#type': textfield\n    '#title': 'Fellowship or residency year'\n    '#required': true\nnews_event_section:\n  '#type': webform_section\n  '#title': 'News or Event item'\n  link_news_event:\n    '#type': textfield\n    '#title': 'Link to news or event'\n    '#required': true\n  quick_news_description:\n    '#type': textarea\n    '#title': 'Description of news or event'\n    '#required': true\nactions:\n  '#type': webform_actions\n  '#title': 'Submit button(s)'\n  '#submit__label': 'Send message'"
 css: ''
 javascript: ''
 settings:

@@ -1,2 +1,3 @@
 settings:
   confirmation_message: 'Il messaggio è stato inviato.'
+elements: "general_section:\n  '#title': 'Informazioni sui contatti'\nname:\n  '#title': Nome\nemail:\n  '#title': 'Indirizzo email'\nquick_news_year:\n  '#title': 'Anno di fellowship o di residenza'\nnews_event_section:\n  '#title': 'Notizie o evento'\nlink_news_event:\n  '#title': 'Link a notizie o eventi'\nquick_news_description:\n  '#title': 'Descrizione di notizie o eventi'\nactions:\n  '#submit__label': Invia\n"

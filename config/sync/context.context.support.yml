@@ -39,6 +39,7 @@ reactions:
         unique: 0
         context_id: support
         uuid: c9cf6f81-fc10-46d6-811a-cfe25c1d4e9f
+        custom_id: views_block_front_page_support_support_join
       84058cd9-972f-4f1e-aecf-3f92875b15ca:
         id: 'views_block:front_page_support-support_experience_packages'
         label: ''
@@ -54,6 +55,7 @@ reactions:
         unique: 0
         context_id: support
         uuid: 84058cd9-972f-4f1e-aecf-3f92875b15ca
+        custom_id: views_block_front_page_support_support_experience_packages
       20b806fc-c6e9-4a05-903f-8e3b400bb24c:
         id: 'views_block:front_page_support-support_planned_giving'
         label: ''
@@ -69,6 +71,7 @@ reactions:
         unique: 0
         context_id: support
         uuid: 20b806fc-c6e9-4a05-903f-8e3b400bb24c
+        custom_id: views_block_front_page_support_support_planned_giving
       4fb54ba1-5118-4e24-8f3e-a1e8340a00c6:
         id: 'views_block:front_page_support-support_corporate'
         label: ''
@@ -84,6 +87,7 @@ reactions:
         unique: 0
         context_id: support
         uuid: 4fb54ba1-5118-4e24-8f3e-a1e8340a00c6
+        custom_id: views_block_front_page_support_support_corporate
       5a19e86b-a361-44de-a0cc-d229ec36353e:
         id: 'views_block:front_page_support-support_donate'
         label: ''
@@ -99,6 +103,7 @@ reactions:
         unique: 0
         context_id: support
         uuid: 5a19e86b-a361-44de-a0cc-d229ec36353e
+        custom_id: views_block_front_page_support_support_donate
       3b852865-eea0-40b8-9781-dacc1f26fb07:
         id: 'views_block:front_page_support-support_galas'
         label: ''
@@ -114,6 +119,7 @@ reactions:
         unique: 0
         context_id: support
         uuid: 3b852865-eea0-40b8-9781-dacc1f26fb07
+        custom_id: views_block_front_page_support_support_galas
     id: blocks
     saved: false
     uuid: eb1ea5fe-1f04-491e-afb8-a144ac048d41

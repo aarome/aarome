@@ -965,7 +965,7 @@ display:
           click_sort_column: value
           type: daterange_compact
           settings:
-            format_type: medium
+            format_type: exhibitions
           group_column: value
           group_columns: {  }
           group_rows: true

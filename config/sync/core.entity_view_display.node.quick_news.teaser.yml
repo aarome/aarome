@@ -7,6 +7,7 @@ dependencies:
     - field.field.node.quick_news.body
     - field.field.node.quick_news.field_quick_news_image
     - field.field.node.quick_news.field_quick_news_links
+    - field.field.node.quick_news.field_quick_news_published_date
     - field.field.node.quick_news.field_quick_news_rel_events
     - field.field.node.quick_news.field_quick_news_rel_people
     - node.type.quick_news
@@ -34,6 +35,7 @@ content:
 hidden:
   field_quick_news_image: true
   field_quick_news_links: true
+  field_quick_news_published_date: true
   field_quick_news_rel_events: true
   field_quick_news_rel_people: true
   langcode: true

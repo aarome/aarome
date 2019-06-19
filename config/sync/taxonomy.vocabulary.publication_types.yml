@@ -5,5 +5,4 @@ dependencies: {  }
 name: 'Publication types'
 vid: publication_types
 description: ''
-hierarchy: 0
 weight: 0

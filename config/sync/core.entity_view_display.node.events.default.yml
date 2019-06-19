@@ -53,8 +53,6 @@ third_party_settings:
         - field_events_event_dates_overrid
         - field_events_rel_places
         - field_events_image
-        - field_events_event_year
-        - field_events_event_month
       right:
         - body
         - field_events_security_notice

@@ -5,5 +5,4 @@ dependencies: {  }
 name: 'Event months'
 vid: event_months
 description: ''
-hierarchy: 0
 weight: 0

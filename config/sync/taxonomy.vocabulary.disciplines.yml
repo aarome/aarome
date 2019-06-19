@@ -5,5 +5,4 @@ dependencies: {  }
 name: Disciplines
 vid: disciplines
 description: ''
-hierarchy: 0
 weight: 0

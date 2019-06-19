@@ -3,7 +3,7 @@ langcode: en
 status: true
 dependencies: {  }
 _core:
-  default_config_hash: ha01VnPYPNfnCnrYMcrPaCAR2J6wHQYpbLsQVnfNnos
+  default_config_hash: Nt27VcWvsO6S2zeRy5EvVfVG9MRYCIIdWz53x-6qlCY
 id: text_und_7_0_0
 label: 'Language Undefined Text Field'
 managed_schema: false
@@ -57,7 +57,7 @@ field_type:
         class: solr.WhitespaceTokenizerFactory
       filters:
         -
-          class: solr.SynonymFilterFactory
+          class: solr.SynonymGraphFilterFactory
           synonyms: synonyms.txt
           expand: true
           ignoreCase: true

@@ -35,6 +35,7 @@ reactions:
         unique: 0
         context_id: photographic_archive
         uuid: c672005f-205b-4805-afa9-bb6416c7cc0b
+        custom_id: views_block_front_page_photographic_archive_photographic_archive_notice
       78c49c5d-5eeb-420e-a3a2-1a8d96aafa50:
         id: 'views_block:front_page_photographic_archive-photographic_archive_overview'
         label: ''
@@ -50,6 +51,7 @@ reactions:
         unique: 0
         context_id: photographic_archive
         uuid: 78c49c5d-5eeb-420e-a3a2-1a8d96aafa50
+        custom_id: views_block_front_page_photographic_archive_photographic_archive_overview
       657225d5-bdfc-4b6f-9dde-c87e1ad30cf5:
         id: 'views_block:front_page_photographic_archive-photographic_archive_index'
         label: ''
@@ -65,6 +67,7 @@ reactions:
         unique: 0
         context_id: photographic_archive
         uuid: 657225d5-bdfc-4b6f-9dde-c87e1ad30cf5
+        custom_id: views_block_front_page_photographic_archive_photographic_archive_index
       93c23cbe-01ba-425d-b446-f7cb0a83a019:
         id: 'views_block:front_page_photographic_archive-photographic_archive_rights_permissions'
         label: ''
@@ -80,6 +83,7 @@ reactions:
         unique: 0
         context_id: photographic_archive
         uuid: 93c23cbe-01ba-425d-b446-f7cb0a83a019
+        custom_id: views_block_front_page_photographic_archive_photographic_archive_rights_permissions
       b23bf3f9-e628-43de-a694-ee362e6af342:
         id: 'views_block:front_page_photographic_archive-photographic_archive_exhibitions_events'
         label: ''
@@ -95,6 +99,7 @@ reactions:
         unique: 0
         context_id: photographic_archive
         uuid: b23bf3f9-e628-43de-a694-ee362e6af342
+        custom_id: views_block_front_page_photographic_archive_photographic_archive_exhibitions_events
       6a9d0c65-3864-4809-a3d2-43ec3b20ec56:
         id: 'views_block:front_page_photographic_archive-photographic_archive_publications'
         label: ''
@@ -110,6 +115,7 @@ reactions:
         unique: 0
         context_id: photographic_archive
         uuid: 6a9d0c65-3864-4809-a3d2-43ec3b20ec56
+        custom_id: views_block_front_page_photographic_archive_photographic_archive_publications
       d1132d04-5e76-4544-b9df-b606faf9f853:
         id: 'views_block:front_page_photographic_archive-photographic_archive_online_exhibitions_projects'
         label: ''
@@ -125,6 +131,7 @@ reactions:
         unique: 0
         context_id: photographic_archive
         uuid: d1132d04-5e76-4544-b9df-b606faf9f853
+        custom_id: views_block_front_page_photographic_archive_photographic_archive_online_exhibitions_projects
     id: blocks
     saved: false
     uuid: 5d2521c3-4691-4643-a22f-0e201d7bdc4a
