@@ -32,6 +32,7 @@
 
 # Ignore Vagrant configuration files
 /vm
+Vagrantfile
 
 # Ignore developer  resources
 /web/sites/development.services.yml
