@@ -35,12 +35,13 @@
 
 # Ignore developer  resources
 /web/sites/development.services.yml
-
-# Ignore ST files
-/*.sublime*
+/web/sites/default/services.yml
+package.xml
 
 # Ignore local workspace files
 queries.sql
+aarome.code-workspace
+/*.sublime*
 
 # Ignore drush aliases
 ansible.cfg
@@ -59,3 +60,7 @@ drush/site-aliases/
 /web/modules/custom/d8views-master.zip
 /web/modules/custom/d8views/
 /web/modules/custom/input/
+
+# Ignore local robots file
+robots.txt
+
