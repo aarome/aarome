@@ -1,0 +1,44 @@
+uuid: 5c632d54-f308-4761-b7f6-d339b8efc5a3
+langcode: en
+status: true
+dependencies:
+  config:
+    - core.entity_form_mode.node.inline_form
+    - field.field.node.places.body
+    - field.field.node.places.field_places_address
+    - field.field.node.places.field_places_rel_events
+    - node.type.places
+  module:
+    - address
+id: node.places.inline_form
+targetEntityType: node
+bundle: places
+mode: inline_form
+content:
+  field_places_address:
+    weight: 1
+    settings:
+      default_country: IT
+    third_party_settings: {  }
+    type: address_default
+    region: content
+  title:
+    type: string_textfield
+    weight: 0
+    region: content
+    settings:
+      size: 60
+      placeholder: ''
+    third_party_settings: {  }
+hidden:
+  body: true
+  created: true
+  field_places_rel_events: true
+  langcode: true
+  path: true
+  promote: true
+  revision_log: true
+  status: true
+  sticky: true
+  translation: true
+  uid: true

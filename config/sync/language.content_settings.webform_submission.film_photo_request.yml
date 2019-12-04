@@ -1,0 +1,11 @@
+uuid: 81979fe4-cbac-4f79-aa19-ef98aebe19a2
+langcode: en
+status: true
+dependencies:
+  config:
+    - webform.webform.film_photo_request
+id: webform_submission.film_photo_request
+target_entity_type_id: webform_submission
+target_bundle: film_photo_request
+default_langcode: site_default
+language_alterable: false
