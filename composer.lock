@@ -4,7 +4,7 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#installing-dependencies",
         "This file is @generated automatically"
     ],
-    "content-hash": "cc33a267b67c82e905109d6341aee6cd",
+    "content-hash": "94403da5441249702385299658fb31c0",
     "packages": [
         {
             "name": "asm89/stack-cors",
@@ -2052,24 +2052,18 @@
         },
         {
             "name": "drupal/address",
-            "version": "1.7.0",
+            "version": "dev-1.x",
             "source": {
                 "type": "git",
                 "url": "https://git.drupalcode.org/project/address.git",
-                "reference": "8.x-1.7"
-            },
-            "dist": {
-                "type": "zip",
-                "url": "https://ftp.drupal.org/files/projects/address-8.x-1.7.zip",
-                "reference": "8.x-1.7",
-                "shasum": "dab23a510090e59e3e6bc77faa517b523ad048ae"
+                "reference": "2b75d8332231521bf938ce4eca87601308dfbfcf"
             },
             "require": {
                 "commerceguys/addressing": "^1.0.0",
                 "drupal/core": "^8.6"
             },
             "require-dev": {
-                "drupal/token": "^1.0"
+                "drupal/token": "1.x-dev"
             },
             "type": "drupal-module",
             "extra": {
@@ -2077,11 +2071,11 @@
                     "dev-1.x": "1.x-dev"
                 },
                 "drupal": {
-                    "version": "8.x-1.7",
-                    "datestamp": "1559642884",
+                    "version": "8.x-1.7+13-dev",
+                    "datestamp": "1575394680",
                     "security-coverage": {
-                        "status": "covered",
-                        "message": "Covered by Drupal's security advisory policy"
+                        "status": "not-covered",
+                        "message": "Dev releases are not covered by Drupal security advisories."
                     }
                 }
             },
@@ -2115,7 +2109,8 @@
             "homepage": "http://drupal.org/project/address",
             "support": {
                 "source": "https://git.drupalcode.org/project/address"
-            }
+            },
+            "time": "2019-12-04T21:02:28+00:00"
         },
         {
             "name": "drupal/admin_toolbar",
@@ -13273,6 +13268,7 @@
     "aliases": [],
     "minimum-stability": "dev",
     "stability-flags": {
+        "drupal/address": 20,
         "drupal/auto_entitylabel": 10,
         "drupal/cer": 15,
         "drupal/claro": 10,
