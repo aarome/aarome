@@ -104,6 +104,8 @@
         "drupal/webform": "^5.0@RC",
         "drupal/webp": "^1.0@beta",
         "drush/drush": "^9.0.0",
+        "npm-asset/blazy": "^1.8",
+        "npm-asset/slick-carousel": "^1.8",
         "oomphinc/composer-installers-extender": "^1.1",
         "twig/twig": "1.39.1",
         "vlucas/phpdotenv": "^2.4",
@@ -158,11 +160,32 @@
         "drupal-scaffold": {
             "locations": {
                 "web-root": "web/"
+            },
+            "allowed-packages": [
+                "drupal/core"
+            ],
+            "file-mapping": {
+                "[web-root]/.htaccess": {
+                    "mode": "replace",
+                    "path": "web/core/assets/scaffold/files/htaccess",
+                    "overwrite": false
+                },
+                "[web-root]/sites/development.services.yml": {
+                    "mode": "replace",
+                    "path": "web/core/assets/scaffold/files/development.services.yml",
+                    "overwrite": false
+                }
             }
         },
         "installer-paths": {
             "web/core": [
                 "type:drupal-core"
+            ],
+            "web/libraries/slick": [
+                "npm-asset/slick-carousel"
+            ],
+            "web/libraries/blazy": [
+                "npm-asset/blazy"
             ],
             "web/libraries/{$name}": [
                 "type:drupal-library",

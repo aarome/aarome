@@ -4,7 +4,7 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#installing-dependencies",
         "This file is @generated automatically"
     ],
-    "content-hash": "aecd13035b1af2c101423c18fa11de30",
+    "content-hash": "73eccaacedda4b7f8b97e8853e361b34",
     "packages": [
         {
             "name": "asm89/stack-cors",
@@ -8104,6 +8104,30 @@
                 "php"
             ],
             "time": "2019-11-08T13:50:10+00:00"
+        },
+        {
+            "name": "npm-asset/blazy",
+            "version": "1.8.2",
+            "dist": {
+                "type": "tar",
+                "url": "https://registry.npmjs.org/blazy/-/blazy-1.8.2.tgz"
+            },
+            "type": "npm-asset",
+            "license": [
+                "MIT"
+            ]
+        },
+        {
+            "name": "npm-asset/slick-carousel",
+            "version": "1.8.1",
+            "dist": {
+                "type": "tar",
+                "url": "https://registry.npmjs.org/slick-carousel/-/slick-carousel-1.8.1.tgz"
+            },
+            "type": "npm-asset",
+            "license": [
+                "MIT"
+            ]
         },
         {
             "name": "oomphinc/composer-installers-extender",
