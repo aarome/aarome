@@ -13,6 +13,14 @@
         {
             "type": "composer",
             "url": "https://packages.drupal.org/8"
+        },
+        {
+            "url": "https://github.com/previousnext/drush_cmi_tools.git",
+            "type": "git"
+        },
+        {
+            "type": "composer",
+            "url": "https://asset-packagist.org"
         }
     ],
     "require": {
@@ -28,16 +36,15 @@
         "drupal/auto_entitylabel": "^2.1@beta",
         "drupal/backup_migrate": "^4.0",
         "drupal/better_exposed_filters": "3.0-alpha4",
-        "drupal/blazy": "2.0.0-rc5",
+        "drupal/blazy": "2.0.0-rc6",
         "drupal/block_class": "^1.0",
         "drupal/cer": "^4.0@alpha",
         "drupal/chosen": "^2.6",
-        "drupal/claro": "^1.0@beta",
         "drupal/computed_field": "2.0-beta1",
         "drupal/config_devel": "^1.2",
         "drupal/config_tools": "^1.0@alpha",
         "drupal/context": "4.x-dev",
-        "drupal/core": "^8.7.3",
+        "drupal/core": "^8.8.1",
         "drupal/date_popup": "^1.0",
         "drupal/daterange_compact": "1.x-dev",
         "drupal/datetime_extras": "1.x-dev",
@@ -69,7 +76,7 @@
         "drupal/override_node_options": "^2.4",
         "drupal/owlcarousel": "^1.0@alpha",
         "drupal/paragraphs": "1.x-dev",
-        "drupal/pathauto": "^1.2",
+        "drupal/pathauto": "^1.6",
         "drupal/responsive_favicons": "^1.4",
         "drupal/responsive_menu": "^2.6",
         "drupal/search_api": "^1.9",
@@ -95,16 +102,19 @@
         "drupal/views_url_alias": "^1.0",
         "drupal/views_url_path_arguments": "1.x-dev",
         "drupal/webform": "^5.0@RC",
+        "drupal/webp": "^1.0@beta",
         "drush/drush": "^9.0.0",
+        "oomphinc/composer-installers-extender": "^1.1",
         "twig/twig": "1.39.1",
         "vlucas/phpdotenv": "^2.4",
         "webflo/drupal-finder": "^1.0.0",
         "webmozart/path-util": "^2.3"
     },
     "require-dev": {
+        "drupal/core-dev": "^8.8.1",
         "drupal/devel": "^1.2",
         "geerlingguy/drupal-vm": "^4.9",
-        "webflo/drupal-core-require-dev": "^8.7.3"
+        "symfony/debug": "^3.4"
     },
     "conflict": {
         "drupal/drupal": "*"
@@ -137,12 +147,26 @@
         ]
     },
     "extra": {
+        "composer-exit-on-patch-failure": true,
+        "patchLevel": {
+            "drupal/core": "-p2"
+        },
+        "installer-types": [
+            "library",
+            "npm-asset"
+        ],
+        "drupal-scaffold": {
+            "locations": {
+                "web-root": "web/"
+            }
+        },
         "installer-paths": {
             "web/core": [
                 "type:drupal-core"
             ],
             "web/libraries/{$name}": [
-                "type:drupal-library"
+                "type:drupal-library",
+                "type:npm-asset"
             ],
             "web/modules/contrib/{$name}": [
                 "type:drupal-module"
@@ -153,15 +177,9 @@
             "web/themes/contrib/{$name}": [
                 "type:drupal-theme"
             ],
-            "drush/Commands/{$name}": [
+            "drush/Commands/contrib/{$name}": [
                 "type:drupal-drush"
             ]
-        },
-        "drupal-scaffold": {
-            "initial": {
-                ".editorconfig": "../.editorconfig",
-                ".gitattributes": "../.gitattributes"
-            }
         }
     }
 }
