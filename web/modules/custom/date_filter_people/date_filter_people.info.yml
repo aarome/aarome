@@ -1,0 +1,5 @@
+name: 'Date filter people'
+type: module
+description: 'Provides a custom date filter for people.'
+core: 8.x
+package: 'Custom'

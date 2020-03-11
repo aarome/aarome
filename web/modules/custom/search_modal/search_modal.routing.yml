@@ -1,0 +1,7 @@
+search_modal.modal:
+  path: 'search'
+  defaults:
+    _title: 'Modal'
+    _controller: '\Drupal\search_modal\Controller\SearchModalController::modal'
+  requirements:
+    _permission: 'access content'

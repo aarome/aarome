@@ -44,6 +44,3 @@ Vagrantfile
 
 # Ignore custom modules
 /web/modules/custom/migrations
-
-
-/vm

@@ -1,0 +1,19 @@
+uuid: d321e7c4-5f97-4f60-91de-392b9031aa49
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_resources_legacy_id
+    - node.type.library_resources
+id: node.library_resources.field_resources_legacy_id
+field_name: field_resources_legacy_id
+entity_type: node
+bundle: library_resources
+label: 'Legacy identifier'
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: string

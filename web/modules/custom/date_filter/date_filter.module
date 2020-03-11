@@ -1,0 +1,56 @@
+<?php
+
+/**
+ * @file
+ * Contains date_filter.module.
+ */
+
+use Drupal\Core\Routing\RouteMatchInterface;
+
+/**
+ * Implements hook_help().
+ */
+function date_filter_help($route_name, RouteMatchInterface $route_match) {
+  switch ($route_name) {
+    // Main module help for the date_filter module.
+    case 'help.page.date_filter':
+      $output = '';
+      $output .= '<h3>' . t('About') . '</h3>';
+      $output .= '<p>' . t('Provides a custom date filter for news, events, people.') . '</p>';
+      return $output;
+
+    default:
+  }
+}
+
+use Drupal\Core\Form\FormStateInterface;
+use Drupal\Core\StringTranslation\TranslatableMarkup;
+
+/**
+ * Implements hook_form_FORM_ID_alter().
+ */
+function date_filter_form_views_exposed_form_alter(&$form, FormStateInterface $form_state, $form_id) {
+  if (isset($form['#id']) && $form['#id'] == 'views-exposed-form-news-events-press-lists-page-events-list') {
+    $options = [
+      'all' => t('All years'),    
+      '2019' => '2019',
+      '2018' => '2018',
+      '2017' => '2017',
+      '2016' => '2016',
+      '2015' => '2015',
+      '2014' => '2014',
+      '2013' => '2013',
+      '2012' => '2012',
+      '2011' => '2011',
+      '2010' => '2010',
+    ];
+
+    $form['year'] = [
+      '#title' => new TranslatableMarkup('By year'),
+      '#type' => 'select',
+      '#options' => $options,
+      '#size' => NULL,
+      '#default_value' => 'all',
+    ];
+  }
+}

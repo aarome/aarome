@@ -1,0 +1,43 @@
+uuid: 4b576539-955a-470d-b9d0-80d71c864af3
+langcode: en
+status: true
+dependencies:
+  module:
+    - system
+name: electronic_journals
+label: 'Electronic journals'
+group: Lists
+description: ''
+requireAllConditions: false
+disabled: false
+conditions:
+  request_path:
+    id: request_path
+    pages: "/research/resources/electronic-journals\r\n/ricerca/risorse/riviste-elettroniche"
+    negate: 0
+    uuid: c8ce63e8-7feb-49c2-9cb6-2b7db9b3a1c4
+    context_mapping: {  }
+reactions:
+  blocks:
+    blocks:
+      5d70412d-fa52-4304-863d-1b71a8ba6d63:
+        id: 'views_block:resources-block_electronic_journals_list'
+        label: ''
+        provider: views
+        label_display: 0
+        views_label: ''
+        items_per_page: none
+        region: content
+        weight: '0'
+        context_mapping: {  }
+        custom_id: views_block_resources_block_electronic_journals_list
+        theme: tema
+        css_class: ''
+        unique: 0
+        context_id: electronic_journals
+        uuid: 5d70412d-fa52-4304-863d-1b71a8ba6d63
+    id: blocks
+    saved: false
+    uuid: bad692c9-676f-47e4-a89f-4c1c8ee4cd80
+    include_default_blocks: 1
+weight: 0

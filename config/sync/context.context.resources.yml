@@ -1,0 +1,159 @@
+uuid: ad836137-712d-4dfd-a123-bfead718e888
+langcode: en
+status: true
+dependencies:
+  module:
+    - system
+name: resources
+label: Resources
+group: Frontpages
+description: ''
+requireAllConditions: false
+disabled: false
+conditions:
+  request_path:
+    id: request_path
+    pages: "/research/resources\r\n/ricerca/risorse"
+    negate: 0
+    uuid: 74d07a0d-7966-4e1a-a125-f2bb3dfc0b89
+    context_mapping: {  }
+reactions:
+  blocks:
+    blocks:
+      bff20622-803e-445f-99fe-2ecdff51c461:
+        id: 'views_block:front_page_resources-resources_online_catalogues'
+        label: ''
+        provider: views
+        label_display: 0
+        views_label: ''
+        items_per_page: none
+        region: content
+        weight: '-3'
+        context_mapping: {  }
+        theme: tema
+        css_class: ''
+        unique: 0
+        context_id: resources
+        uuid: bff20622-803e-445f-99fe-2ecdff51c461
+        custom_id: views_block_front_page_resources_resources_online_catalogues
+      14c7dfeb-92de-499f-9578-e57f8a606787:
+        id: 'views_block:front_page_resources-resources_digital_humanities_center'
+        label: ''
+        provider: views
+        label_display: 0
+        views_label: ''
+        items_per_page: none
+        region: content
+        weight: '-2'
+        context_mapping: {  }
+        theme: tema
+        css_class: ''
+        unique: 0
+        context_id: resources
+        uuid: 14c7dfeb-92de-499f-9578-e57f8a606787
+        custom_id: views_block_front_page_resources_resources_digital_humanities_center
+      33c1f44f-c7d2-4087-906b-d4a9e732c620:
+        id: 'views_block:front_page_resources-resources_electronic_journals'
+        label: ''
+        provider: views
+        label_display: 0
+        views_label: ''
+        items_per_page: none
+        region: content
+        weight: '-1'
+        context_mapping: {  }
+        theme: tema
+        css_class: ''
+        unique: 0
+        context_id: resources
+        uuid: 33c1f44f-c7d2-4087-906b-d4a9e732c620
+        custom_id: views_block_front_page_resources_resources_electronic_journals
+      40837f18-caff-4089-8935-8e9dbfffcca4:
+        id: 'views_block:front_page_resources-resources_databases_digital_collections'
+        label: ''
+        provider: views
+        label_display: 0
+        views_label: ''
+        items_per_page: none
+        region: content
+        weight: '0'
+        context_mapping: {  }
+        theme: tema
+        css_class: ''
+        unique: 0
+        context_id: resources
+        uuid: 40837f18-caff-4089-8935-8e9dbfffcca4
+        custom_id: views_block_front_page_resources_resources_databases_digital_collections
+      f01b8e80-1c29-4308-b8cb-838dfa922479:
+        id: 'views_block:front_page_resources-resources_libraries_institutions'
+        label: ''
+        provider: views
+        label_display: 0
+        views_label: ''
+        items_per_page: none
+        region: content
+        weight: '1'
+        context_mapping: {  }
+        theme: tema
+        css_class: ''
+        unique: 0
+        context_id: resources
+        uuid: f01b8e80-1c29-4308-b8cb-838dfa922479
+        custom_id: views_block_front_page_resources_resources_libraries_institutions
+      c506d79e-f38b-4d47-aa7f-0c73f0d2bddc:
+        id: 'views_block:front_page_resources-resources_digital_maps_gis'
+        label: ''
+        provider: views
+        label_display: 0
+        views_label: ''
+        items_per_page: none
+        region: content
+        weight: '2'
+        context_mapping: {  }
+        theme: tema
+        css_class: ''
+        unique: 0
+        context_id: resources
+        uuid: c506d79e-f38b-4d47-aa7f-0c73f0d2bddc
+        custom_id: views_block_front_page_resources_resources_digital_maps_gis
+      761d6d7b-4c0f-48c9-8ce9-9e8b1506b1ff:
+        id: 'views_block:front_page_resources-resources_tutorials'
+        label: ''
+        provider: views
+        label_display: 0
+        views_label: ''
+        items_per_page: none
+        region: content
+        weight: '3'
+        context_mapping: {  }
+        theme: tema
+        css_class: ''
+        unique: 0
+        context_id: resources
+        uuid: 761d6d7b-4c0f-48c9-8ce9-9e8b1506b1ff
+        custom_id: views_block_front_page_resources_resources_tutorials
+      908d9c12-f23b-408d-ae5a-bb0a5079d2fc:
+        id: 'views_block:front_page_resources-resources_useful_links'
+        label: ''
+        provider: views
+        label_display: 0
+        views_label: ''
+        items_per_page: none
+        region: content
+        weight: '4'
+        context_mapping: {  }
+        theme: tema
+        css_class: ''
+        unique: 0
+        context_id: resources
+        uuid: 908d9c12-f23b-408d-ae5a-bb0a5079d2fc
+        custom_id: views_block_front_page_resources_resources_useful_links
+    id: blocks
+    saved: false
+    uuid: 5d8c8617-7a5f-4758-b7f5-705c7efa01a7
+    include_default_blocks: 1
+  body_class:
+    id: body_class
+    body_class: section-front
+    saved: false
+weight: 0

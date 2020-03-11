@@ -1,0 +1,23 @@
+uuid: 4cfc7356-8074-4615-95cc-31c0636efa32
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.media.field_file_language
+    - media.type.press_releases
+  module:
+    - options
+id: media.press_releases.field_file_language
+field_name: field_file_language
+entity_type: media
+bundle: press_releases
+label: Language
+description: ''
+required: false
+translatable: true
+default_value:
+  -
+    value: en
+default_value_callback: ''
+settings: {  }
+field_type: list_string

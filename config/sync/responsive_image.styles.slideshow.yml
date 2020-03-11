@@ -1,0 +1,55 @@
+uuid: 19a76f2b-94ed-4f1e-8bc5-40fe6ffaefca
+langcode: en
+status: true
+dependencies:
+  config:
+    - image.style.max_1440x1440
+    - image.style.max_2880x2880
+    - image.style.max_720x720
+  theme:
+    - tema
+id: slideshow
+label: Slideshow
+image_style_mappings:
+  -
+    breakpoint_id: tema.extra-large
+    multiplier: 1x
+    image_mapping_type: image_style
+    image_mapping: max_1440x1440
+  -
+    breakpoint_id: tema.extra-large
+    multiplier: 2x
+    image_mapping_type: image_style
+    image_mapping: max_2880x2880
+  -
+    breakpoint_id: tema.large
+    multiplier: 1x
+    image_mapping_type: image_style
+    image_mapping: max_1440x1440
+  -
+    breakpoint_id: tema.large
+    multiplier: 2x
+    image_mapping_type: image_style
+    image_mapping: max_2880x2880
+  -
+    breakpoint_id: tema.medium
+    multiplier: 1x
+    image_mapping_type: image_style
+    image_mapping: max_720x720
+  -
+    breakpoint_id: tema.medium
+    multiplier: 2x
+    image_mapping_type: image_style
+    image_mapping: max_1440x1440
+  -
+    breakpoint_id: tema.small
+    multiplier: 1x
+    image_mapping_type: image_style
+    image_mapping: max_720x720
+  -
+    breakpoint_id: tema.small
+    multiplier: 2x
+    image_mapping_type: image_style
+    image_mapping: max_1440x1440
+breakpoint_group: tema
+fallback_image_style: '_empty image_'

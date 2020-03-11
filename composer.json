@@ -13,11 +13,20 @@
         {
             "type": "composer",
             "url": "https://packages.drupal.org/8"
+        },
+        {
+            "url": "https://github.com/previousnext/drush_cmi_tools.git",
+            "type": "git"
+        },
+        {
+            "type": "composer",
+            "url": "https://asset-packagist.org"
         }
     ],
     "require": {
         "composer/installers": "^1.2",
         "cweagans/composer-patches": "^1.6",
+        "drupal-composer/drupal-scaffold": "^2.5",
         "drupal/address": "1.x-dev",
         "drupal/admin_toolbar": "^1.24",
         "drupal/admin_toolbar_tools": "^1.24",
@@ -27,7 +36,7 @@
         "drupal/auto_entitylabel": "^2.1@beta",
         "drupal/backup_migrate": "^4.0",
         "drupal/better_exposed_filters": "3.0-alpha4",
-        "drupal/blazy": "2.0.0-rc5",
+        "drupal/blazy": "2.0.0-rc6",
         "drupal/block_class": "^1.0",
         "drupal/cer": "^4.0@alpha",
         "drupal/chosen": "^2.6",
@@ -35,12 +44,10 @@
         "drupal/config_devel": "^1.2",
         "drupal/config_tools": "^1.0@alpha",
         "drupal/context": "4.x-dev",
-        "drupal/core-composer-scaffold": "^8.8",
-        "drupal/core-recommended": "^8.8",
+        "drupal/core": "^8.8.1",
         "drupal/date_popup": "^1.0",
         "drupal/daterange_compact": "1.x-dev",
         "drupal/datetime_extras": "1.x-dev",
-        "drupal/devel_entity_updates": "^1.0",
         "drupal/dropdown_language": "^2.2",
         "drupal/ds": "^3.3",
         "drupal/easy_breadcrumb": "^1.8",
@@ -100,14 +107,16 @@
         "npm-asset/blazy": "^1.8",
         "npm-asset/slick-carousel": "^1.8",
         "oomphinc/composer-installers-extender": "^1.1",
+        "twig/twig": "1.39.1",
         "vlucas/phpdotenv": "^2.4",
         "webflo/drupal-finder": "^1.0.0",
-        "webmozart/path-util": "^2.3",
-        "zaporylie/composer-drupal-optimizations": "^1.0"
+        "webmozart/path-util": "^2.3"
     },
     "require-dev": {
+        "drupal/core-dev": "^8.8.1",
         "drupal/devel": "^1.2",
-        "geerlingguy/drupal-vm": "^4.9"
+        "geerlingguy/drupal-vm": "^4.9",
+        "symfony/debug": "^3.4"
     },
     "conflict": {
         "drupal/drupal": "*"
@@ -148,6 +157,26 @@
             "library",
             "npm-asset"
         ],
+        "drupal-scaffold": {
+            "locations": {
+                "web-root": "web/"
+            },
+            "allowed-packages": [
+                "drupal/core"
+            ],
+            "file-mapping": {
+                "[web-root]/.htaccess": {
+                    "mode": "replace",
+                    "path": "web/core/assets/scaffold/files/htaccess",
+                    "overwrite": false
+                },
+                "[web-root]/sites/development.services.yml": {
+                    "mode": "replace",
+                    "path": "web/core/assets/scaffold/files/development.services.yml",
+                    "overwrite": false
+                }
+            }
+        },
         "installer-paths": {
             "web/core": [
                 "type:drupal-core"
@@ -171,24 +200,9 @@
             "web/themes/contrib/{$name}": [
                 "type:drupal-theme"
             ],
-            "drush/Commands/{$name}": [
+            "drush/Commands/contrib/{$name}": [
                 "type:drupal-drush"
             ]
-        },
-        "drupal-scaffold": {
-            "locations": {
-                "web-root": "web/"
-            },
-            "allowed-packages": [
-                "drupal/core"
-            ],
-            "file-mapping": {
-                "[web-root]/.htaccess": {
-                    "mode": "replace",
-                    "path": "web/core/assets/scaffold/files/htaccess",
-                    "overwrite": false
-                }
-            }
         }
     }
 }

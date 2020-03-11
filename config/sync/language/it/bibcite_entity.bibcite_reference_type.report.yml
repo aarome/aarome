@@ -1,0 +1,6 @@
+label: Resoconto
+fields:
+  bibcite_type_of_work:
+    label: Tipo
+  bibcite_place_published:
+    label: Città
