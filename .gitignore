@@ -17,6 +17,7 @@
 /web/sites/default/default.settings.php
 /web/sites/example.settings.local.php
 /web/web.config
+ansible.cfg
 
 # Ignore sensitive information
 /web/sites/*/settings.php
