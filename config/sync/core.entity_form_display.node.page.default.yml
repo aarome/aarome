@@ -1,0 +1,138 @@
+uuid: 0fbca2cb-d0a3-4d58-80ce-88c66ccf2457
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.field.node.page.body
+    - field.field.node.page.field_page_image
+    - field.field.node.page.field_page_page_section
+    - field.field.node.page.field_page_summary
+    - field.field.node.page.field_page_type
+    - node.type.page
+  module:
+    - allowed_formats
+    - inline_entity_form
+    - paragraphs
+    - path
+    - text
+_core:
+  default_config_hash: sb0qCkzU_8mNq29NehYAU8jCBXWPLeX0UN8sYFVGVcw
+id: node.page.default
+targetEntityType: node
+bundle: page
+mode: default
+content:
+  created:
+    type: datetime_timestamp
+    weight: 8
+    region: content
+    settings: {  }
+    third_party_settings: {  }
+  field_page_image:
+    weight: 5
+    settings:
+      form_mode: default
+      label_singular: ''
+      label_plural: ''
+      collapsible: true
+      allow_new: true
+      allow_existing: true
+      match_operator: CONTAINS
+      override_labels: false
+      collapsed: false
+      allow_duplicate: false
+    third_party_settings: {  }
+    type: inline_entity_form_complex
+    region: content
+  field_page_page_section:
+    type: paragraphs
+    weight: 4
+    settings:
+      title: 'Page section'
+      title_plural: 'Page ections'
+      edit_mode: open
+      closed_mode: summary
+      autocollapse: none
+      add_mode: dropdown
+      form_display_mode: default
+      default_paragraph_type: page_section
+      features:
+        duplicate: duplicate
+        collapse_edit_all: collapse_edit_all
+        add_above: '0'
+      closed_mode_threshold: 0
+    third_party_settings: {  }
+    region: content
+  field_page_summary:
+    weight: 3
+    settings:
+      rows: 1
+      placeholder: ''
+    third_party_settings:
+      allowed_formats:
+        hide_help: '1'
+        hide_guidelines: '1'
+    type: text_textarea
+    region: content
+  field_page_type:
+    weight: 12
+    settings:
+      match_operator: CONTAINS
+      size: 60
+      placeholder: ''
+    third_party_settings: {  }
+    type: entity_reference_autocomplete
+    region: content
+  langcode:
+    type: language_select
+    weight: 0
+    region: content
+    settings:
+      include_locked: true
+    third_party_settings: {  }
+  path:
+    type: path
+    weight: 10
+    region: content
+    settings: {  }
+    third_party_settings: {  }
+  promote:
+    type: boolean_checkbox
+    settings:
+      display_label: true
+    weight: 9
+    region: content
+    third_party_settings: {  }
+  status:
+    type: boolean_checkbox
+    settings:
+      display_label: true
+    weight: 11
+    region: content
+    third_party_settings: {  }
+  title:
+    type: string_textfield
+    weight: 2
+    region: content
+    settings:
+      size: 60
+      placeholder: ''
+    third_party_settings: {  }
+  translation:
+    weight: 6
+    region: content
+    settings: {  }
+    third_party_settings: {  }
+  uid:
+    type: entity_reference_autocomplete
+    weight: 7
+    region: content
+    settings:
+      match_operator: CONTAINS
+      size: 60
+      placeholder: ''
+    third_party_settings: {  }
+hidden:
+  body: true
+  revision_log: true
+  sticky: true

@@ -1,0 +1,43 @@
+uuid: 62f1485a-a0c7-44fb-92bb-be4a059d03c9
+langcode: en
+status: true
+dependencies:
+  module:
+    - system
+name: useful_links
+label: 'Useful links'
+group: Lists
+description: ''
+requireAllConditions: false
+disabled: false
+conditions:
+  request_path:
+    id: request_path
+    pages: "/research/resources/useful-links\r\n/ricerca/risorse/link-utili"
+    negate: 0
+    uuid: 15a7c799-b6a2-4047-ab64-da59e8a5134d
+    context_mapping: {  }
+reactions:
+  blocks:
+    blocks:
+      7d354d0e-c007-421a-81de-686da9ff61bc:
+        id: 'views_block:resources-block_useful_links_list'
+        label: ''
+        provider: views
+        label_display: 0
+        views_label: ''
+        items_per_page: none
+        region: content
+        weight: '0'
+        context_mapping: {  }
+        custom_id: views_block_resources_block_useful_links_list
+        theme: tema
+        css_class: ''
+        unique: 0
+        context_id: useful_links
+        uuid: 7d354d0e-c007-421a-81de-686da9ff61bc
+    id: blocks
+    saved: false
+    uuid: f57644ba-e22d-4253-a9af-e4d312ac3f75
+    include_default_blocks: 1
+weight: 0

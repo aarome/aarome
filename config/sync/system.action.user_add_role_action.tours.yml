@@ -1,0 +1,14 @@
+uuid: e4d5613f-3c34-443a-a456-b8ad0d693f35
+langcode: en
+status: true
+dependencies:
+  config:
+    - user.role.tours
+  module:
+    - user
+id: user_add_role_action.tours
+label: 'Add the Tours role to the selected user(s)'
+type: user
+plugin: user_add_role_action
+configuration:
+  rid: tours

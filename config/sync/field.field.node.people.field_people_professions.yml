@@ -1,0 +1,19 @@
+uuid: 0cde8e28-bf6d-4c36-ba0b-7b5f73f42949
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_people_professions
+    - node.type.people
+id: node.people.field_people_professions
+field_name: field_people_professions
+entity_type: node
+bundle: people
+label: Profession
+description: ''
+required: false
+translatable: true
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: string

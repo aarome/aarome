@@ -1,0 +1,36 @@
+uuid: 310a5b28-6a87-4455-8938-5739f6af27d6
+langcode: en
+status: true
+dependencies:
+  config:
+    - core.entity_view_mode.node.security_notice
+    - field.field.node.page.body
+    - field.field.node.page.field_page_image
+    - field.field.node.page.field_page_page_section
+    - field.field.node.page.field_page_summary
+    - field.field.node.page.field_page_type
+    - node.type.page
+  module:
+    - text
+    - user
+_core:
+  default_config_hash: g1S3_GLaxq4l3I9RIca5Mlz02MxI2KmOquZpHw59akM
+id: node.page.security_notice
+targetEntityType: node
+bundle: page
+mode: security_notice
+content:
+  field_page_summary:
+    type: text_default
+    weight: 0
+    region: content
+    label: hidden
+    settings: {  }
+    third_party_settings: {  }
+hidden:
+  body: true
+  field_page_image: true
+  field_page_page_section: true
+  field_page_type: true
+  langcode: true
+  links: true

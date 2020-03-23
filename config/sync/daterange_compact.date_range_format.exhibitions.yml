@@ -1,0 +1,18 @@
+uuid: 641341ee-d292-4cfa-874e-05d87963f1d3
+langcode: en
+status: true
+dependencies: {  }
+id: exhibitions
+label: Exhibitions
+date_settings:
+  default_pattern: 'F j, Y'
+  separator: –
+  same_month_start_pattern: 'F j'
+  same_month_end_pattern: 'j, Y'
+  same_year_start_pattern: 'F j'
+  same_year_end_pattern: 'F j, Y'
+datetime_settings:
+  default_pattern: 'l, F j, Y'
+  separator: –
+  same_day_start_pattern: ''
+  same_day_end_pattern: ''

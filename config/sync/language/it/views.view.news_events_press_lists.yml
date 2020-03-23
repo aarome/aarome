@@ -1,0 +1,25 @@
+display:
+  page_news_features_list:
+    display_options:
+      title: Articoli
+  page_press_press_releases:
+    display_options:
+      title: 'Comunicati Stampa'
+  page_1:
+    display_options:
+      title: Mostra
+  page_2:
+    display_options:
+      title: Serie
+  page_news_quick_news_list:
+    display_options:
+      title: 'Notizie Veloci'
+  page_press_press_coverage:
+    display_options:
+      title: 'Copertura Stampa'
+  page_events_list_next:
+    display_options:
+      title: 'Prossimi 30 Giorni'
+  page_news_sof:
+    display_options:
+      title: 'Attualita e eventi'

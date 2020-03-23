@@ -1,0 +1,20 @@
+uuid: 0a76a20b-31c8-46e5-b436-ca8209c585df
+langcode: en
+status: true
+dependencies:
+  module:
+    - media
+    - node
+id: node.field_press_releases_files
+field_name: field_press_releases_files
+entity_type: node
+type: entity_reference
+settings:
+  target_type: media
+module: core
+locked: false
+cardinality: -1
+translatable: true
+indexes: {  }
+persist_with_no_fields: false
+custom_storage: false

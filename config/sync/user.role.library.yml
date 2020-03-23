@@ -1,0 +1,13 @@
+uuid: 887bad2b-2dbd-4270-a955-794c6b6df9eb
+langcode: en
+status: true
+dependencies: {  }
+id: library
+label: Library
+weight: 5
+is_admin: null
+permissions:
+  - 'access webform overview'
+  - 'access webform submission user'
+  - 'delete any webform submission'
+  - 'view any webform submission'

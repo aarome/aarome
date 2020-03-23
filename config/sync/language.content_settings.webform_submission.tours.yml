@@ -1,0 +1,11 @@
+uuid: 8f7884fc-1b82-4333-9e87-eb3d4805936a
+langcode: en
+status: true
+dependencies:
+  config:
+    - webform.webform.tours
+id: webform_submission.tours
+target_entity_type_id: webform_submission
+target_bundle: tours
+default_langcode: site_default
+language_alterable: false
