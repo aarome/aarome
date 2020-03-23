@@ -1,4 +1,4 @@
 obfuscate:
-  method: rot_13
+  method: html_entity
 _core:
   default_config_hash: bo03TSjYuExLAKzDM6HGn1bwjYHhrDFWTNaHfQAirC4
