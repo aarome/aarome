@@ -12,6 +12,9 @@
 /web/sites/default/default.settings.php
 /web/sites/example.settings.local.php
 /web/web.config
+/web/sites/default/default.settings.php
+/web/modules/custom/migrations
+/web/sites/default/default.settings.php
 
 # Ignore sensitive information
 /web/sites/*/settings.php
