@@ -1,8 +1,0 @@
-uuid: c054623c-c8c7-43d9-ac59-dae726573d1b
-langcode: en
-status: true
-dependencies: {  }
-name: 'Affiliation types'
-vid: affiliation_types
-description: ''
-weight: 0

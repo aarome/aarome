@@ -1,9 +1,0 @@
-fields:
-  bibcite_edition:
-    label: Versione
-  bibcite_pages:
-    label: Descrizione
-  bibcite_type_of_work:
-    label: Tipo
-  bibcite_place_published:
-    label: Città

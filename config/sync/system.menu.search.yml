@@ -1,8 +1,0 @@
-uuid: 341f8465-db96-47e8-ad66-ec8b6cd2694b
-langcode: en
-status: true
-dependencies: {  }
-id: search
-label: Search
-description: ''
-locked: false
