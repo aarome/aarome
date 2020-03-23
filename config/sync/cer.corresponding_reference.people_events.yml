@@ -1,0 +1,13 @@
+uuid: e1c852ac-54f4-452a-9988-741d33b875aa
+langcode: en
+status: true
+dependencies: {  }
+id: people_events
+label: 'People to events'
+enabled: true
+first_field: field_people_rel_events
+second_field: field_events_rel_people
+bundles:
+  node:
+    - events
+    - people

@@ -1,0 +1,10 @@
+uuid: 0949b548-bb40-4dce-8f8a-822e0225211b
+langcode: en
+status: true
+dependencies:
+  module:
+    - paragraphs
+id: paragraph.fellowship
+label: Fellowship
+targetEntityType: paragraph
+cache: true

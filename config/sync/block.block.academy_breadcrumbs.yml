@@ -1,0 +1,29 @@
+uuid: 50db48f1-5bd1-4e91-b438-0fda5bd93382
+langcode: en
+status: true
+dependencies:
+  module:
+    - language
+    - system
+  theme:
+    - academy
+id: academy_breadcrumbs
+theme: academy
+region: breadcrumb
+weight: -8
+provider: null
+plugin: system_breadcrumb_block
+settings:
+  id: system_breadcrumb_block
+  label: Breadcrumbs
+  provider: system
+  label_display: '0'
+visibility:
+  language:
+    id: language
+    langcodes:
+      en: en
+      it: it
+    negate: false
+    context_mapping:
+      language: '@language.current_language_context:language_interface'

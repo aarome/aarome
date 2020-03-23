@@ -1,0 +1,16 @@
+uuid: aa0eae5d-a98c-4223-b4ce-251b01a8bb67
+langcode: en
+status: true
+dependencies: {  }
+name: portrait_front_wide
+label: 'Portrait front wide'
+effects:
+  d89c9319-620a-468e-a344-15865e0be186:
+    uuid: d89c9319-620a-468e-a344-15865e0be186
+    id: image_scale
+    weight: 1
+    data:
+      width: null
+      height: 400
+      upscale: true
+pipeline: __default__

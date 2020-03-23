@@ -1,0 +1,28 @@
+uuid: 273bab7f-865b-42b3-ab24-59373675bcb8
+langcode: it
+status: true
+dependencies:
+  module:
+    - language
+  theme:
+    - academy
+id: academy_languageswitcher
+theme: academy
+region: header
+weight: -6
+provider: null
+plugin: 'language_block:language_interface'
+settings:
+  id: 'language_block:language_interface'
+  label: 'Language switcher'
+  provider: language
+  label_display: '0'
+visibility:
+  language:
+    id: language
+    langcodes:
+      en: en
+      it: it
+    negate: false
+    context_mapping:
+      language: '@language.current_language_context:language_interface'

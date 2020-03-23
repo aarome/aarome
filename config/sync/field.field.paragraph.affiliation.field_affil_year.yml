@@ -1,0 +1,29 @@
+uuid: 7cb342e8-0bef-4e27-a2c7-c6c46fe5f52e
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.paragraph.field_affil_year
+    - paragraphs.paragraphs_type.affiliation
+    - taxonomy.vocabulary.affiliation_years
+id: paragraph.affiliation.field_affil_year
+field_name: field_affil_year
+entity_type: paragraph
+bundle: affiliation
+label: 'Affiliation year'
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings:
+  handler: 'default:taxonomy_term'
+  handler_settings:
+    target_bundles:
+      affiliation_years: affiliation_years
+    sort:
+      field: name
+      direction: asc
+    auto_create: false
+    auto_create_bundle: ''
+field_type: entity_reference
