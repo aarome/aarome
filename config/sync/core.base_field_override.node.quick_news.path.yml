@@ -1,0 +1,20 @@
+uuid: fe329cc1-41c0-4d52-be70-bbd5da84f318
+langcode: en
+status: true
+dependencies:
+  config:
+    - node.type.quick_news
+  module:
+    - path
+id: node.quick_news.path
+field_name: path
+entity_type: node
+bundle: quick_news
+label: 'URL alias'
+description: ''
+required: false
+translatable: true
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: path

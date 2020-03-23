@@ -1,0 +1,23 @@
+uuid: 0781ffae-8a91-4b3d-b8ab-d27936cb2556
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.paragraph.field_page_section_links
+    - paragraphs.paragraphs_type.page_section
+  module:
+    - link
+id: paragraph.page_section.field_page_section_links
+field_name: field_page_section_links
+entity_type: paragraph
+bundle: page_section
+label: Links
+description: ''
+required: false
+translatable: true
+default_value: {  }
+default_value_callback: ''
+settings:
+  link_type: 17
+  title: 1
+field_type: link

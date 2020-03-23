@@ -1,0 +1,47 @@
+uuid: b6352ab3-b6ec-403e-ad6c-fc4e6a50b310
+langcode: en
+status: true
+dependencies: {  }
+_core:
+  default_config_hash: dJ0L2DNSj5q6XVZAGsuVDpJTh5UeYkIPwKrUOOpr8YI
+id: authenticated
+label: 'Authenticated user'
+weight: 1
+is_admin: false
+permissions:
+  - 'access comments'
+  - 'access content'
+  - 'access shortcuts'
+  - 'edit behavior plugin settings'
+  - 'override events published option'
+  - 'override library_resources published option'
+  - 'override news_features published option'
+  - 'override page published option'
+  - 'override people published option'
+  - 'override places published option'
+  - 'override press published option'
+  - 'override press_releases published option'
+  - 'override publications published option'
+  - 'override quick_news published option'
+  - 'override society_of_fellows published option'
+  - 'override webform published option'
+  - 'post comments'
+  - 'search content'
+  - 'skip comment approval'
+  - 'use text format basic_html'
+  - 'use text format summary_html'
+  - 'view any unpublished events content'
+  - 'view any unpublished library_resources content'
+  - 'view any unpublished news_features content'
+  - 'view any unpublished page content'
+  - 'view any unpublished people content'
+  - 'view any unpublished places content'
+  - 'view any unpublished press content'
+  - 'view any unpublished press_releases content'
+  - 'view any unpublished publications content'
+  - 'view any unpublished quick_news content'
+  - 'view any unpublished society_of_fellows content'
+  - 'view any unpublished webform content'
+  - 'view media'
+  - 'view own unpublished media'
+  - 'view unpublished paragraphs'
