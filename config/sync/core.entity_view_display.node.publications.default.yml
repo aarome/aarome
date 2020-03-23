@@ -13,7 +13,9 @@ dependencies:
     - field.field.node.publications.field_publications_publisher
     - field.field.node.publications.field_publications_type
     - node.type.publications
+    - responsive_image.styles.wide
   module:
+    - blazy
     - datetime
     - link
     - text
@@ -32,7 +34,7 @@ content:
     region: content
   field_publication_files:
     type: entity_reference_entity_view
-    weight: 7
+    weight: 6
     label: hidden
     settings:
       view_mode: default
@@ -57,16 +59,62 @@ content:
     type: datetime_default
     region: content
   field_publications_image:
-    type: entity_reference_entity_view
-    weight: 6
+    type: blazy_media
+    weight: 8
+    region: content
     label: hidden
     settings:
+      image_style: ''
+      responsive_image_style: wide
+      media_switch: ''
+      thumbnail_style: ''
+      ratio: ''
       view_mode: default
-      link: false
+      sizes: ''
+      breakpoints:
+        xs:
+          image_style: ''
+          width: ''
+        sm:
+          image_style: ''
+          width: ''
+        md:
+          image_style: ''
+          width: ''
+        lg:
+          image_style: ''
+          width: ''
+        xl:
+          image_style: ''
+          width: ''
+      current_view_mode: default
+      background: false
+      caption:
+        field_media_image: '0'
+      class: ''
+      id: ''
+      image: ''
+      link: ''
+      overlay: ''
+      title: ''
+      vanilla: false
+      icon: ''
+      layout: ''
+      cache: 0
+      optionset: default
+      skin: ''
+      style: ''
+      box_caption: ''
+      box_caption_custom: ''
+      box_style: ''
+      box_media_style: ''
+      grid: 0
+      grid_header: ''
+      grid_medium: 0
+      grid_small: 0
     third_party_settings: {  }
-    region: content
   field_publications_links:
-    weight: 9
+    weight: 7
     label: hidden
     settings:
       trim_length: 80
@@ -101,10 +149,6 @@ content:
     third_party_settings: {  }
     type: entity_reference_label
     region: content
-  links:
-    weight: 8
-    region: content
-    settings: {  }
-    third_party_settings: {  }
 hidden:
   langcode: true
+  links: true

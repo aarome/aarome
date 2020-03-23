@@ -43,13 +43,13 @@ settings:
           items:
             - Source
   plugins:
-    language:
-      language_list: un
+    stylescombo:
+      styles: ''
     drupallink:
       linkit_enabled: true
       linkit_profile: internal_links
-    stylescombo:
-      styles: ''
+    language:
+      language_list: un
 image_upload:
   status: true
   scheme: public

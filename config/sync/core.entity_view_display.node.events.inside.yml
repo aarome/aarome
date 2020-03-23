@@ -1,6 +1,6 @@
 uuid: 3ed5a31b-ecee-49c5-a7c5-cb25e1907698
 langcode: en
-status: true
+status: false
 dependencies:
   config:
     - core.entity_view_mode.node.inside
@@ -62,14 +62,13 @@ content:
     type: entity_reference_label
     region: content
   field_events_image:
-    type: entity_reference_entity_view
+    type: entity_reference_label
     weight: 1
+    region: content
     label: hidden
     settings:
-      view_mode: event_front
-      link: false
+      link: true
     third_party_settings: {  }
-    region: content
   field_events_rel_news_feature:
     weight: 7
     label: above
@@ -111,7 +110,7 @@ content:
     type: entity_reference_label
     region: content
   field_events_summary:
-    weight: 14
+    weight: 11
     label: above
     settings: {  }
     third_party_settings: {  }

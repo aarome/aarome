@@ -36,8 +36,24 @@ reactions:
         unique: 0
         context_id: research_databases
         uuid: 6ab9fde7-deca-4829-8bc0-7911d99c3486
+      022a8789-1c4c-4bf7-b713-52546899e5bd:
+        id: 'views_block:resources-block_research_database_list'
+        label: ''
+        provider: views
+        label_display: 0
+        views_label: ''
+        items_per_page: none
+        region: content
+        weight: '0'
+        context_mapping: {  }
+        custom_id: research_database_list
+        theme: academy
+        css_class: 'list resource-list research-database-list'
+        unique: 0
+        context_id: research_databases
+        uuid: 022a8789-1c4c-4bf7-b713-52546899e5bd
     id: blocks
     saved: false
     uuid: ad3e3a26-ebe7-415d-bcc5-c5f1c22916c6
     include_default_blocks: 1
-weight: 0
+weight: -12

@@ -1,6 +1,6 @@
 uuid: 7fec8bfa-983d-49d0-98e1-5ee595bd3462
 langcode: en
-status: true
+status: false
 dependencies:
   config:
     - core.entity_view_mode.media.event_detail
@@ -20,7 +20,7 @@ content:
     type: text_default
     weight: 1
     region: content
-    label: hidden
+    label: above
     settings: {  }
     third_party_settings: {  }
   field_media_image:

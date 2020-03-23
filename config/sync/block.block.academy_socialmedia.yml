@@ -1,0 +1,29 @@
+uuid: 9ef3de0a-677c-42a6-82f9-d12a5389efe9
+langcode: en
+status: true
+dependencies:
+  config:
+    - system.menu.social-media
+  module:
+    - block_class
+    - system
+  theme:
+    - academy
+third_party_settings:
+  block_class:
+    classes: social
+id: academy_socialmedia
+theme: academy
+region: footer_second
+weight: -8
+provider: null
+plugin: 'system_menu_block:social-media'
+settings:
+  id: 'system_menu_block:social-media'
+  label: 'Social media'
+  provider: system
+  label_display: '0'
+  level: 1
+  depth: 0
+  expand_all_items: false
+visibility: {  }

@@ -10,7 +10,9 @@ dependencies:
     - node.type.society_of_fellows
   module:
     - allowed_formats
+    - entity_form_field_label
     - hide_revision_field
+    - inline_entity_form
     - path
     - text
 id: node.society_of_fellows.default
@@ -25,6 +27,7 @@ content:
       rows: 9
       summary_rows: 3
       placeholder: ''
+      show_summary: false
     third_party_settings: {  }
     region: content
   created:
@@ -36,11 +39,22 @@ content:
   field_sof_images:
     weight: 13
     settings:
+      form_mode: default
+      label_singular: ''
+      label_plural: ''
+      collapsible: true
+      allow_new: true
+      allow_existing: true
       match_operator: CONTAINS
-      size: 60
-      placeholder: ''
-    third_party_settings: {  }
-    type: entity_reference_autocomplete
+      revision: false
+      override_labels: false
+      collapsed: false
+      allow_duplicate: false
+    third_party_settings:
+      entity_form_field_label:
+        new_label: ''
+        rewrite_label: 0
+    type: inline_entity_form_complex
     region: content
   field_sof_summary:
     weight: 3
@@ -54,13 +68,10 @@ content:
     type: text_textarea
     region: content
   field_sof_type:
-    weight: 15
-    settings:
-      match_operator: CONTAINS
-      size: 60
-      placeholder: ''
+    weight: 1
+    settings: {  }
     third_party_settings: {  }
-    type: entity_reference_autocomplete
+    type: options_buttons
     region: content
   langcode:
     type: language_select
@@ -128,6 +139,7 @@ content:
       match_operator: CONTAINS
       size: 60
       placeholder: ''
+      match_limit: 10
     region: content
     third_party_settings: {  }
 hidden: {  }

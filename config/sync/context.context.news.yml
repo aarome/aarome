@@ -6,7 +6,7 @@ dependencies:
     - system
 name: news
 label: News
-group: Frontpages
+group: 'News and Events lists'
 description: ''
 requireAllConditions: false
 disabled: false
@@ -116,6 +116,86 @@ reactions:
         unique: 0
         context_id: news
         uuid: 12ee88a9-b98e-4454-8a8d-1e2d87661d77
+      f59ed464-434a-40a3-ad2d-01e5c3aa1505:
+        id: 'views_block:front_page_news-news_news_features'
+        label: ''
+        provider: views
+        label_display: 0
+        views_label: ''
+        items_per_page: none
+        region: content
+        weight: '-2'
+        context_mapping: {  }
+        custom_id: news_features
+        theme: academy
+        css_class: 'features card'
+        unique: 0
+        context_id: news
+        uuid: f59ed464-434a-40a3-ad2d-01e5c3aa1505
+      bc775623-5a9e-4614-83e4-425a3182b0a7:
+        id: 'views_block:front_page_news-news_quick_news'
+        label: ''
+        provider: views
+        label_display: 0
+        views_label: ''
+        items_per_page: none
+        region: content
+        weight: '-1'
+        context_mapping: {  }
+        custom_id: quick_news
+        theme: academy
+        css_class: 'quick-news card'
+        unique: 0
+        context_id: news
+        uuid: bc775623-5a9e-4614-83e4-425a3182b0a7
+      0ec31489-564d-4e89-a4eb-2ce0e9480acb:
+        id: 'views_block:front_page_news-news_press_releases'
+        label: ''
+        provider: views
+        label_display: 0
+        views_label: ''
+        items_per_page: none
+        region: content
+        weight: '1'
+        context_mapping: {  }
+        custom_id: press_releases
+        theme: academy
+        css_class: 'press-releases card'
+        unique: 0
+        context_id: news
+        uuid: 0ec31489-564d-4e89-a4eb-2ce0e9480acb
+      d96a798d-c1cf-429f-b1da-baf440054a2d:
+        id: 'views_block:front_page_news-contact_submit_news'
+        label: ''
+        provider: views
+        label_display: 0
+        views_label: ''
+        items_per_page: none
+        region: content
+        weight: '2'
+        context_mapping: {  }
+        custom_id: submit_news
+        theme: academy
+        css_class: 'submit-news card'
+        unique: 0
+        context_id: news
+        uuid: d96a798d-c1cf-429f-b1da-baf440054a2d
+      8e174141-a4fa-4a29-ba80-e38adbf8de12:
+        id: 'views_block:front_page_news-contact_film_photo_request'
+        label: ''
+        provider: views
+        label_display: 0
+        views_label: ''
+        items_per_page: none
+        region: content
+        weight: '3'
+        context_mapping: {  }
+        custom_id: film_photo_request
+        theme: academy
+        css_class: 'film-photo-request card'
+        unique: 0
+        context_id: news
+        uuid: 8e174141-a4fa-4a29-ba80-e38adbf8de12
     id: blocks
     saved: false
     uuid: 656c08f2-0572-4177-a135-b2dd4becb996
@@ -124,4 +204,4 @@ reactions:
     id: body_class
     body_class: section-front
     saved: false
-weight: 0
+weight: -14

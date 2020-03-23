@@ -36,8 +36,24 @@ reactions:
         unique: 0
         context_id: electronic_journals
         uuid: 5d70412d-fa52-4304-863d-1b71a8ba6d63
+      5300efec-d40f-4bd1-874b-9010f0fc23d1:
+        id: 'views_block:resources-block_electronic_journals_list'
+        label: ''
+        provider: views
+        label_display: 0
+        views_label: ''
+        items_per_page: none
+        region: content
+        weight: '0'
+        context_mapping: {  }
+        custom_id: electronic_journals_list
+        theme: academy
+        css_class: 'list resource-list electronic-journals-list'
+        unique: 0
+        context_id: electronic_journals
+        uuid: 5300efec-d40f-4bd1-874b-9010f0fc23d1
     id: blocks
     saved: false
     uuid: bad692c9-676f-47e4-a89f-4c1c8ee4cd80
     include_default_blocks: 1
-weight: 0
+weight: -14

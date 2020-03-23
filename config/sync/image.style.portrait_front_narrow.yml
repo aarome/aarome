@@ -11,5 +11,6 @@ effects:
     weight: 1
     data:
       width: null
-      height: 450
-      upscale: true
+      height: 300
+      upscale: false
+pipeline: __default__

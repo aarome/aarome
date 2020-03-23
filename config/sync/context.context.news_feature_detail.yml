@@ -6,7 +6,7 @@ dependencies:
     - system
 name: news_feature_detail
 label: 'News feature detail'
-group: 'Inside pages'
+group: News
 description: ''
 requireAllConditions: false
 disabled: false
@@ -24,4 +24,4 @@ reactions:
     saved: false
     uuid: 1083f0ba-053f-439f-a1b7-3e84b6351fcf
     include_default_blocks: 1
-weight: -8
+weight: -13

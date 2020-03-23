@@ -6,7 +6,7 @@ dependencies:
     - system
 name: society_of_fellows_news_detail
 label: 'Society of Fellows news detail'
-group: 'Inside pages'
+group: News
 description: ''
 requireAllConditions: false
 disabled: false
@@ -56,4 +56,4 @@ reactions:
     saved: false
     uuid: bbfcfb49-8282-4f5b-a85b-0d6a719de11b
     include_default_blocks: 1
-weight: -9
+weight: -11

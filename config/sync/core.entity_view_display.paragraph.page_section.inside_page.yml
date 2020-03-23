@@ -10,34 +10,9 @@ dependencies:
     - field.field.paragraph.page_section.field_page_section_title
     - paragraphs.paragraphs_type.page_section
   module:
-    - ds
     - file
     - link
     - text
-third_party_settings:
-  ds:
-    layout:
-      id: ds_2col_fluid
-      library: ds/ds_2col_fluid
-      disable_css: false
-      entity_classes: no_classes
-      settings:
-        wrappers:
-          left: div
-          right: div
-        outer_wrapper: div
-        attributes: ''
-        link_attribute: ''
-        link_custom: ''
-        classes:
-          layout_class: {  }
-    regions:
-      left:
-        - field_page_section_title
-      right:
-        - field_page_section_body
-        - field_page_section_files
-        - field_page_section_links
 id: paragraph.page_section.inside_page
 targetEntityType: paragraph
 bundle: page_section

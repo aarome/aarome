@@ -6,8 +6,6 @@ dependencies:
     - field.storage.node.field_people_portrait
     - media.type.people
     - node.type.people
-  content:
-    - 'media:people:fb3949e9-54ee-4c4a-8f5f-9fb0a368aee2'
 id: node.people.field_people_portrait
 field_name: field_people_portrait
 entity_type: node
@@ -16,9 +14,7 @@ label: Portrait
 description: ''
 required: false
 translatable: true
-default_value:
-  -
-    target_uuid: fb3949e9-54ee-4c4a-8f5f-9fb0a368aee2
+default_value: {  }
 default_value_callback: ''
 settings:
   handler: 'default:media'

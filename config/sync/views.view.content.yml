@@ -4,6 +4,7 @@ status: true
 dependencies:
   config:
     - field.storage.node.field_page_type
+    - node.type.empty_page
     - node.type.events
     - node.type.library_resources
     - node.type.news_features
@@ -21,6 +22,7 @@ dependencies:
     - node
     - taxonomy
     - user
+    - view_unpublished
 _core:
   default_config_hash: tS8PbpJX90aRFC3-UTgXzdqkq7_2frk2pz4TMijEebM
 id: content
@@ -30,7 +32,6 @@ description: 'Find and manage content.'
 tag: default
 base_table: node_field_data
 base_field: nid
-core: 8.x
 display:
   default:
     display_options:
@@ -592,6 +593,8 @@ display:
               authenticated: authenticated
               anonymous: '0'
               administrator: '0'
+            operator_limit_selection: false
+            operator_list: {  }
           is_grouped: false
           group_info:
             label: ''
@@ -617,6 +620,7 @@ display:
           operator: in
           value:
             page: page
+            empty_page: empty_page
             events: events
             library_resources: library_resources
             news_features: news_features
@@ -648,6 +652,8 @@ display:
               library: '0'
               tours: '0'
             reduce: false
+            operator_limit_selection: false
+            operator_list: {  }
           is_grouped: false
           group_info:
             label: ''
@@ -686,6 +692,8 @@ display:
             multiple: false
             remember_roles:
               authenticated: authenticated
+            operator_limit_selection: false
+            operator_list: {  }
           is_grouped: true
           group_info:
             label: 'Published status'
@@ -738,6 +746,8 @@ display:
               administrator: '0'
               site_editor: '0'
             reduce: true
+            operator_limit_selection: false
+            operator_list: {  }
           is_grouped: false
           group_info:
             label: ''
@@ -762,6 +772,9 @@ display:
           plugin_id: node_status
           group: 1
           entity_type: node
+          expose:
+            operator_limit_selection: false
+            operator_list: {  }
       sorts:
         title:
           id: title
@@ -860,6 +873,8 @@ display:
               authenticated: authenticated
               anonymous: '0'
               administrator: '0'
+            operator_limit_selection: false
+            operator_list: {  }
           is_grouped: false
           group_info:
             label: ''
@@ -917,6 +932,8 @@ display:
               library: '0'
               tours: '0'
             reduce: true
+            operator_limit_selection: false
+            operator_list: {  }
           is_grouped: false
           group_info:
             label: ''
@@ -959,6 +976,8 @@ display:
               administrator: '0'
               site_editor: '0'
             reduce: false
+            operator_limit_selection: false
+            operator_list: {  }
           is_grouped: false
           group_info:
             label: ''
@@ -1001,6 +1020,8 @@ display:
             multiple: false
             remember_roles:
               authenticated: authenticated
+            operator_limit_selection: false
+            operator_list: {  }
           is_grouped: true
           group_info:
             label: 'Published status'
@@ -1033,6 +1054,9 @@ display:
           plugin_id: node_status
           group: 1
           entity_type: node
+          expose:
+            operator_limit_selection: false
+            operator_list: {  }
       defaults:
         filters: false
         filter_groups: false

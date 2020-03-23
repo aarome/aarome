@@ -29,28 +29,33 @@ dependencies:
     - field.field.node.people.field_people_website
     - node.type.people
   module:
-    - text
+    - entity_reference_revisions
     - user
 id: node.people.teaser
 targetEntityType: node
 bundle: people
 mode: teaser
 content:
-  body:
+  field_people_affiliations:
+    type: entity_reference_revisions_entity_view
+    weight: 1
+    region: content
     label: hidden
-    type: text_summary_or_trimmed
-    weight: 101
     settings:
-      trim_length: 600
+      view_mode: preview
+      link: ''
     third_party_settings: {  }
+  field_people_portrait:
+    type: entity_reference_entity_view
+    weight: 0
     region: content
-  links:
-    weight: 100
-    region: content
-    settings: {  }
+    label: hidden
+    settings:
+      view_mode: slick
+      link: false
     third_party_settings: {  }
 hidden:
-  field_people_affiliations: true
+  body: true
   field_people_biographical_note: true
   field_people_birthplace: true
   field_people_dob: true
@@ -61,7 +66,6 @@ hidden:
   field_people_memberships: true
   field_people_name: true
   field_people_place_death: true
-  field_people_portrait: true
   field_people_professions: true
   field_people_project_description: true
   field_people_project_title: true
@@ -73,3 +77,4 @@ hidden:
   field_people_rel_press_releases: true
   field_people_website: true
   langcode: true
+  links: true

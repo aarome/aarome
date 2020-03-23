@@ -67,7 +67,32 @@ content:
     region: content
   field_people_name:
     weight: 0
-    settings: {  }
+    settings:
+      labels:
+        title: Title
+        given: Given
+        middle: 'Middle name(s)'
+        family: Family
+        generational: Generational
+        credentials: Credentials
+      size:
+        title: 6
+        given: 20
+        middle: 20
+        family: 20
+        generational: 5
+        credentials: 35
+      title_display:
+        title: description
+        given: description
+        middle: description
+        family: description
+        generational: description
+        credentials: description
+      widget_layout: stacked
+      show_component_required_marker: false
+      credentials_inline: false
+      override_field_settings: false
     third_party_settings: {  }
     type: name_default
     region: content
@@ -111,6 +136,22 @@ content:
     third_party_settings: {  }
     type: string_textfield
     region: content
+  field_people_rel_events:
+    type: inline_entity_form_complex
+    weight: 16
+    region: content
+    settings:
+      form_mode: default
+      label_singular: ''
+      label_plural: ''
+      allow_new: true
+      allow_existing: true
+      match_operator: CONTAINS
+      override_labels: false
+      collapsible: false
+      collapsed: false
+      allow_duplicate: false
+    third_party_settings: {  }
   path:
     type: path
     weight: 14
@@ -170,6 +211,7 @@ content:
       match_operator: CONTAINS
       size: 60
       placeholder: ''
+      match_limit: 10
     region: content
     third_party_settings: {  }
 hidden:
@@ -184,7 +226,6 @@ hidden:
   field_people_place_death: true
   field_people_re_bio_id: true
   field_people_re_system_id: true
-  field_people_rel_events: true
   field_people_rel_news_features: true
   field_people_rel_press: true
   field_people_rel_press_releases: true

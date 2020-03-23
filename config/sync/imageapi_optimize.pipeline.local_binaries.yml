@@ -37,7 +37,7 @@ processors:
     weight: 4
     data:
       manual_executable_path: ''
-      progressive: true
+      progressive: 0
       quality: 80
       size: null
   74c9f4a7-e5c8-4ddd-8698-4d940f73fea9:
