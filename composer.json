@@ -50,6 +50,7 @@
         "drupal/date_popup": "^1.0",
         "drupal/daterange_compact": "1.x-dev",
         "drupal/datetime_extras": "1.x-dev",
+        "drupal/devel_entity_updates": "^1.0",
         "drupal/dropdown_language": "^2.2",
         "drupal/ds": "^3.3",
         "drupal/easy_breadcrumb": "^1.8",
