@@ -15,7 +15,6 @@ dependencies:
     - paragraphs.paragraphs_type.affiliation
   module:
     - daterange_compact
-    - ds
 id: paragraph.affiliation.fellowship
 targetEntityType: paragraph
 bundle: affiliation
@@ -28,9 +27,7 @@ content:
     label: hidden
     settings:
       format_type: medium
-    third_party_settings:
-      ds:
-        ds_limit: ''
+    third_party_settings: {  }
   field_affil_fellowship_name:
     weight: 1
     label: hidden

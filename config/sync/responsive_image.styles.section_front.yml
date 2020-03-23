@@ -3,53 +3,15 @@ langcode: en
 status: true
 dependencies:
   config:
-    - image.style.max_1440x1440
-    - image.style.max_2880x2880
-    - image.style.max_720x720
-  theme:
-    - tema
+    - image.style.max_1440x900
+    - image.style.thumbnail
 id: section_front
 label: 'Section front'
 image_style_mappings:
   -
-    breakpoint_id: tema.extra-large
+    breakpoint_id: responsive_image.viewport_sizing
     multiplier: 1x
     image_mapping_type: image_style
-    image_mapping: max_720x720
-  -
-    breakpoint_id: tema.extra-large
-    multiplier: 2x
-    image_mapping_type: image_style
-    image_mapping: max_1440x1440
-  -
-    breakpoint_id: tema.large
-    multiplier: 1x
-    image_mapping_type: image_style
-    image_mapping: max_1440x1440
-  -
-    breakpoint_id: tema.large
-    multiplier: 2x
-    image_mapping_type: image_style
-    image_mapping: max_2880x2880
-  -
-    breakpoint_id: tema.medium
-    multiplier: 1x
-    image_mapping_type: image_style
-    image_mapping: max_720x720
-  -
-    breakpoint_id: tema.medium
-    multiplier: 2x
-    image_mapping_type: image_style
-    image_mapping: max_1440x1440
-  -
-    breakpoint_id: tema.small
-    multiplier: 1x
-    image_mapping_type: image_style
-    image_mapping: max_720x720
-  -
-    breakpoint_id: tema.small
-    multiplier: 2x
-    image_mapping_type: image_style
-    image_mapping: max_1440x1440
-breakpoint_group: tema
-fallback_image_style: '_empty image_'
+    image_mapping: max_1440x900
+breakpoint_group: responsive_image
+fallback_image_style: thumbnail

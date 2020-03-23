@@ -6,7 +6,7 @@ dependencies:
     - system
 name: archaeology
 label: Archaeology
-group: Frontpages
+group: Research
 description: ''
 requireAllConditions: false
 disabled: false
@@ -132,6 +132,118 @@ reactions:
         context_id: archaeology
         uuid: fdb4a4a0-b2c8-4ea9-a613-60af87eab779
         custom_id: views_block_front_page_archaeology_archaeology_archaeological_archive
+      d6069795-ebc0-4749-9fae-681656b43658:
+        id: 'views_block:front_page_archaeology-archaeology_norton'
+        label: ''
+        provider: views
+        label_display: 0
+        views_label: ''
+        items_per_page: none
+        region: content
+        weight: '-3'
+        context_mapping: {  }
+        custom_id: archaeology_norton
+        theme: academy
+        css_class: 'norton card'
+        unique: 0
+        context_id: archaeology
+        uuid: d6069795-ebc0-4749-9fae-681656b43658
+      ec51dafb-2a4d-46e3-96d8-c496ce290c16:
+        id: 'views_block:front_page_archaeology-archaeology_study_collection'
+        label: ''
+        provider: views
+        label_display: 0
+        views_label: ''
+        items_per_page: none
+        region: content
+        weight: '-2'
+        context_mapping: {  }
+        custom_id: study_collection
+        theme: academy
+        css_class: 'study card'
+        unique: 0
+        context_id: archaeology
+        uuid: ec51dafb-2a4d-46e3-96d8-c496ce290c16
+      10d73371-0baf-4dd1-aa03-edc0911caec6:
+        id: 'views_block:front_page_archaeology-archaeology_ongoing_projects'
+        label: ''
+        provider: views
+        label_display: visible
+        views_label: ''
+        items_per_page: none
+        region: content
+        weight: '-1'
+        context_mapping: {  }
+        custom_id: ongoing
+        theme: academy
+        css_class: 'ongoing card'
+        unique: 0
+        context_id: archaeology
+        uuid: 10d73371-0baf-4dd1-aa03-edc0911caec6
+      6f61757a-0d4c-4eaf-9027-6a995a070a79:
+        id: 'views_block:front_page_archaeology-archaeology_archaeological_archive'
+        label: ''
+        provider: views
+        label_display: 0
+        views_label: ''
+        items_per_page: none
+        region: content
+        weight: '0'
+        context_mapping: {  }
+        custom_id: archaeological_archive
+        theme: academy
+        css_class: 'archaeological-archive card'
+        unique: 0
+        context_id: archaeology
+        uuid: 6f61757a-0d4c-4eaf-9027-6a995a070a79
+      bf533e49-efcf-4fbf-b3d1-8a15f81c047e:
+        id: 'views_block:front_page_archaeology-archaeology_projects_publication_phase'
+        label: ''
+        provider: views
+        label_display: 0
+        views_label: ''
+        items_per_page: none
+        region: content
+        weight: '1'
+        context_mapping: {  }
+        custom_id: archaeology_publications
+        theme: academy
+        css_class: 'archaeology-publications card'
+        unique: 0
+        context_id: archaeology
+        uuid: bf533e49-efcf-4fbf-b3d1-8a15f81c047e
+      0df12702-d94a-44bf-b368-a101c72802a2:
+        id: 'views_block:front_page_archaeology-archaeology_completed_projects'
+        label: ''
+        provider: views
+        label_display: 0
+        views_label: ''
+        items_per_page: none
+        region: content
+        weight: '2'
+        context_mapping: {  }
+        custom_id: archaeology_completed
+        theme: academy
+        css_class: 'archaeology-completed card'
+        unique: 0
+        context_id: archaeology
+        uuid: 0df12702-d94a-44bf-b368-a101c72802a2
+      5ab767e9-d225-4033-8013-1a68266a5db0:
+        id: 'views_block:front_page_archaeology-archaeology_affiliated_projects'
+        label: ''
+        provider: views
+        label_display: 0
+        views_label: ''
+        items_per_page: none
+        region: content
+        weight: '3'
+        context_mapping: {  }
+        custom_id: archaeology_affiliated
+        theme: academy
+        css_class: 'archaeology-affiliated card'
+        unique: 0
+        context_id: archaeology
+        uuid: 5ab767e9-d225-4033-8013-1a68266a5db0
     id: blocks
     saved: false
     uuid: 4110404e-06eb-41eb-86de-c806dea489b6
@@ -140,4 +252,4 @@ reactions:
     id: body_class
     body_class: section-front
     saved: false
-weight: 0
+weight: -14

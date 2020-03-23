@@ -6,7 +6,7 @@ dependencies:
     - system
 name: people
 label: People
-group: Frontpages
+group: People
 description: ''
 requireAllConditions: false
 disabled: false
@@ -148,6 +148,134 @@ reactions:
         unique: 0
         context_id: people
         uuid: 2dcca92c-3e1a-42a0-8b44-25e10db93dc8
+      e82aad68-0e5a-47e4-b6c8-9be59738b247:
+        id: 'views_block:front_page_people-people_affiliated_fellows'
+        label: ''
+        provider: views
+        label_display: 0
+        views_label: ''
+        items_per_page: none
+        region: content
+        weight: '1'
+        context_mapping: {  }
+        custom_id: people_affiliated_fellows
+        theme: academy
+        css_class: 'affiliated-fellows card'
+        unique: 0
+        context_id: people
+        uuid: e82aad68-0e5a-47e4-b6c8-9be59738b247
+      da0cf1d4-6eff-4ed9-90d2-e560e8ec9a76:
+        id: 'views_block:front_page_people-people_italian_fellows'
+        label: ''
+        provider: views
+        label_display: 0
+        views_label: ''
+        items_per_page: none
+        region: content
+        weight: '-1'
+        context_mapping: {  }
+        custom_id: people_italian_fellows
+        theme: academy
+        css_class: 'italian-fellows card'
+        unique: 0
+        context_id: people
+        uuid: da0cf1d4-6eff-4ed9-90d2-e560e8ec9a76
+      0458f563-37e1-41d9-b946-1897953281f1:
+        id: 'views_block:front_page_people-people_residents'
+        label: ''
+        provider: views
+        label_display: 0
+        views_label: ''
+        items_per_page: none
+        region: content
+        weight: '-2'
+        context_mapping: {  }
+        custom_id: people_residents
+        theme: academy
+        css_class: 'residents card'
+        unique: 0
+        context_id: people
+        uuid: 0458f563-37e1-41d9-b946-1897953281f1
+      2a5ddd04-8efc-4672-be62-773b41c9e229:
+        id: 'views_block:front_page_people-people_rome_prize_fellows'
+        label: ''
+        provider: views
+        label_display: 0
+        views_label: ''
+        items_per_page: none
+        region: content
+        weight: '-3'
+        context_mapping: {  }
+        custom_id: people_fellows
+        theme: academy
+        css_class: 'fellows card'
+        unique: 0
+        context_id: people
+        uuid: 2a5ddd04-8efc-4672-be62-773b41c9e229
+      e131105a-4d2e-4b6f-bed7-0aaf54061aee:
+        id: 'views_block:front_page_people-people_sof'
+        label: ''
+        provider: views
+        label_display: visible
+        views_label: ''
+        items_per_page: none
+        region: content
+        weight: '4'
+        context_mapping: {  }
+        custom_id: people_sof
+        theme: academy
+        css_class: 'sof card'
+        unique: 0
+        context_id: people
+        uuid: e131105a-4d2e-4b6f-bed7-0aaf54061aee
+      3a5984fb-ca84-427c-80af-601d8b596d0a:
+        id: 'views_block:front_page_people-people_visiting_artists_scholars'
+        label: ''
+        provider: views
+        label_display: visible
+        views_label: ''
+        items_per_page: none
+        region: content
+        weight: '0'
+        context_mapping: {  }
+        custom_id: people_visiting
+        theme: academy
+        css_class: 'visiting card'
+        unique: 0
+        context_id: people
+        uuid: 3a5984fb-ca84-427c-80af-601d8b596d0a
+      8705a42d-0dbe-4bc8-8ac9-95682dfe4258:
+        id: 'views_block:front_page_people-juries'
+        label: ''
+        provider: views
+        label_display: visible
+        views_label: ''
+        items_per_page: none
+        region: content
+        weight: '2'
+        context_mapping: {  }
+        custom_id: people_juries
+        theme: academy
+        css_class: 'juries card'
+        unique: 0
+        context_id: people
+        uuid: 8705a42d-0dbe-4bc8-8ac9-95682dfe4258
+      83296421-b8ab-4f36-ad18-973170e495f1:
+        id: 'views_block:front_page_people-advisors'
+        label: ''
+        provider: views
+        label_display: visible
+        views_label: ''
+        items_per_page: none
+        region: content
+        weight: '3'
+        context_mapping: {  }
+        custom_id: people_advisors
+        theme: academy
+        css_class: 'advisors card'
+        unique: 0
+        context_id: people
+        uuid: 83296421-b8ab-4f36-ad18-973170e495f1
     id: blocks
     saved: false
     uuid: 1d38bd1e-be3b-4a9a-87ed-74498e73f11a
@@ -156,4 +284,4 @@ reactions:
     id: body_class
     body_class: section-front
     saved: false
-weight: 0
+weight: -13

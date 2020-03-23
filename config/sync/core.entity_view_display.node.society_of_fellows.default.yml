@@ -9,34 +9,8 @@ dependencies:
     - field.field.node.society_of_fellows.field_sof_type
     - node.type.society_of_fellows
   module:
-    - ds
-    - slick_media
     - text
     - user
-third_party_settings:
-  ds:
-    layout:
-      id: ds_2col_stacked_fluid
-      library: ds/ds_2col_stacked_fluid
-      disable_css: false
-      entity_classes: no_classes
-      settings:
-        wrappers:
-          header: div
-          left: div
-          right: div
-          footer: div
-        outer_wrapper: div
-        attributes: ''
-        link_attribute: ''
-        link_custom: ''
-        classes:
-          layout_class: {  }
-    regions:
-      header:
-        - field_sof_images
-      right:
-        - body
 id: node.society_of_fellows.default
 targetEntityType: node
 bundle: society_of_fellows
@@ -50,89 +24,13 @@ content:
     third_party_settings: {  }
     region: right
   field_sof_images:
-    type: slick_media
-    weight: 0
-    label: hidden
+    weight: 2
+    label: above
     settings:
-      optionset: news_slideshow
-      optionset_thumbnail: ''
-      skin: ''
-      skin_thumbnail: ''
-      image_style: ''
-      thumbnail_style: ''
-      responsive_image_style: slideshow
-      thumbnail_effect: ''
-      thumbnail_position: ''
-      media_switch: ''
-      view_mode: default
-      ratio: ''
-      iframe_lazy: true
-      image: ''
-      title: ''
-      link: ''
-      layout: ''
-      thumbnail_caption: ''
-      class: ''
-      caption:
-        field_media_caption: field_media_caption
-        field_media_image: '0'
-      cache: 0
-      sizes: ''
-      breakpoints:
-        xs:
-          image_style: ''
-          width: ''
-          breakpoint: ''
-        sm:
-          image_style: ''
-          width: ''
-          breakpoint: ''
-        md:
-          image_style: ''
-          width: ''
-          breakpoint: ''
-        lg:
-          image_style: ''
-          width: ''
-          breakpoint: ''
-        xl:
-          image_style: ''
-          width: ''
-          breakpoint: ''
-      current_view_mode: default
-      vanilla: false
-      background: false
-      override: false
-      overridables:
-        arrows: '0'
-        autoplay: '0'
-        dots: '0'
-        draggable: '0'
-        infinite: '0'
-        mouseWheel: '0'
-        randomize: '0'
-        variableWidth: '0'
-      thumbnail: ''
-      preserve_keys: false
-      visible_items: 0
-      skin_arrows: ''
-      skin_dots: ''
-      style: ''
-      icon: ''
-      box_caption: ''
-      box_caption_custom: ''
-      box_style: ''
-      box_media_style: ''
-      grid: 0
-      grid_header: ''
-      grid_medium: 0
-      grid_small: 0
-      id: ''
-      overlay: ''
-    third_party_settings:
-      ds:
-        ds_limit: ''
-    region: header
+      link: true
+    third_party_settings: {  }
+    type: entity_reference_label
+    region: content
 hidden:
   field_sof_summary: true
   field_sof_type: true

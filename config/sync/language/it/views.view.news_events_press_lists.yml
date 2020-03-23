@@ -5,15 +5,6 @@ display:
   page_press_press_releases:
     display_options:
       title: 'Comunicati Stampa'
-  page_1:
-    display_options:
-      title: Mostra
-  page_2:
-    display_options:
-      title: Serie
-  page_news_quick_news_list:
-    display_options:
-      title: 'Notizie Veloci'
   page_press_press_coverage:
     display_options:
       title: 'Copertura Stampa'
@@ -23,3 +14,6 @@ display:
   page_news_sof:
     display_options:
       title: 'Attualita e eventi'
+  page_events_list:
+    display_options:
+      title: Calendario
