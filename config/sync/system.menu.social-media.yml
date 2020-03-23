@@ -1,8 +1,0 @@
-uuid: db152c81-7f97-4dad-a947-592248598d43
-langcode: en
-status: true
-dependencies: {  }
-id: social-media
-label: 'Social media'
-description: 'Social media links'
-locked: false
