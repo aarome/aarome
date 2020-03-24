@@ -1,8 +1,12 @@
+uuid: a618e552-f288-4ead-a643-19d049dc44b1
 langcode: en
 status: open
 dependencies:
   module:
     - honeypot
+third_party_settings:
+  honeypot:
+    honeypot: true
 open: null
 close: null
 weight: 0
@@ -233,7 +237,3 @@ handlers:
       theme_name: tema
       parameters: {  }
 variants: {  }
-uuid: a618e552-f288-4ead-a643-19d049dc44b1
-third_party_settings:
-  honeypot:
-    honeypot: true

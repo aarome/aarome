@@ -1,6 +1,9 @@
+uuid: 6afb1981-daec-46e6-9e77-33e58f586017
 langcode: en
 status: open
 dependencies: {  }
+_core:
+  default_config_hash: Wr3D_FbFiYNueRX67Vz66-JZi2Lj7KGcu8Q3xqCaQwg
 open: null
 close: null
 weight: 0
@@ -249,6 +252,3 @@ handlers:
       theme_name: ''
       parameters: {  }
 variants: {  }
-uuid: 6afb1981-daec-46e6-9e77-33e58f586017
-_core:
-  default_config_hash: Wr3D_FbFiYNueRX67Vz66-JZi2Lj7KGcu8Q3xqCaQwg
