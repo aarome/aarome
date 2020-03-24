@@ -1,8 +1,12 @@
+uuid: 0ba39864-211c-4cbd-acda-15a8e2571595
 langcode: en
 status: closed
 dependencies:
   module:
     - honeypot
+third_party_settings:
+  honeypot:
+    honeypot: true
 open: null
 close: null
 weight: 0
@@ -233,7 +237,3 @@ handlers:
       theme_name: tema
       parameters: {  }
 variants: {  }
-uuid: 0ba39864-211c-4cbd-acda-15a8e2571595
-third_party_settings:
-  honeypot:
-    honeypot: true

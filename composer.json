@@ -35,7 +35,6 @@
         "drupal/auto_entitylabel": "^2.1@beta",
         "drupal/backup_migrate": "^4.0",
         "drupal/better_exposed_filters": "3.0-alpha4",
-        "drupal/blazy": "^2.0",
         "drupal/block_class": "^1.0",
         "drupal/cer": "^4.0@alpha",
         "drupal/chosen": "^2.6",

@@ -2112,7 +2112,7 @@ display:
             alter_text: true
             text: link<span></span>
             make_link: true
-            path: /publications/academy-books
+            path: /publications/affiliated-books
             absolute: false
             external: false
             replace_spaces: false
@@ -2659,7 +2659,7 @@ display:
             alter_text: true
             text: link<span></span>
             make_link: true
-            path: /publications/academy-books
+            path: /publications/cookbooks
             absolute: false
             external: false
             replace_spaces: false
@@ -3753,7 +3753,7 @@ display:
             alter_text: true
             text: link<span></span>
             make_link: true
-            path: /publications/exhibition-catalogues
+            path: /publications/memoirs
             absolute: false
             external: false
             replace_spaces: false
@@ -4303,7 +4303,7 @@ display:
             alter_text: true
             text: link<span></span>
             make_link: true
-            path: /publications/exhibition-catalogues
+            path: /publications/papers-monographs
             absolute: false
             external: false
             replace_spaces: false
@@ -5330,7 +5330,7 @@ display:
             alter_text: true
             text: link<span></span>
             make_link: true
-            path: /publications/exhibition-catalogues
+            path: /publications/supplements-memoirs
             absolute: false
             external: false
             replace_spaces: false
