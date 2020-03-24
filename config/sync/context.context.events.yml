@@ -6,7 +6,7 @@ dependencies:
     - system
 name: events
 label: Events
-group: Frontpages
+group: 'News and Events lists'
 description: ''
 requireAllConditions: false
 disabled: false
@@ -28,7 +28,7 @@ reactions:
         views_label: ''
         items_per_page: none
         region: content
-        weight: '-1'
+        weight: '0'
         context_mapping: {  }
         theme: tema
         css_class: ''
@@ -76,7 +76,7 @@ reactions:
         views_label: ''
         items_per_page: none
         region: content
-        weight: '0'
+        weight: '-1'
         context_mapping: {  }
         theme: tema
         css_class: ''
@@ -100,6 +100,86 @@ reactions:
         unique: 0
         context_id: events
         uuid: faf66151-f958-4a5c-9a88-3148274398d8
+      9fe5cb7f-9292-4945-aae5-63bf130f4d69:
+        id: 'views_block:front_page_events-events_calendar_next'
+        label: ''
+        provider: views
+        label_display: 0
+        views_label: ''
+        items_per_page: none
+        region: content
+        weight: '-1'
+        context_mapping: {  }
+        custom_id: calendar_next
+        theme: academy
+        css_class: 'calendar-next card'
+        unique: 0
+        context_id: events
+        uuid: 9fe5cb7f-9292-4945-aae5-63bf130f4d69
+      898fb71c-d450-4d71-b782-f36cac710219:
+        id: 'views_block:front_page_events-events_exhibtions'
+        label: ''
+        provider: views
+        label_display: 0
+        views_label: ''
+        items_per_page: none
+        region: content
+        weight: '0'
+        context_mapping: {  }
+        custom_id: events_exhibtions
+        theme: academy
+        css_class: 'exhibitions card'
+        unique: 0
+        context_id: events
+        uuid: 898fb71c-d450-4d71-b782-f36cac710219
+      3e2294a0-a3ec-4e6c-a836-2c3a9d5269c0:
+        id: 'views_block:front_page_events-events_series'
+        label: ''
+        provider: views
+        label_display: 0
+        views_label: ''
+        items_per_page: none
+        region: content
+        weight: '1'
+        context_mapping: {  }
+        custom_id: events_series
+        theme: academy
+        css_class: 'series card'
+        unique: 0
+        context_id: events
+        uuid: 3e2294a0-a3ec-4e6c-a836-2c3a9d5269c0
+      c65a270a-0422-4758-be08-2103fdd9cce1:
+        id: 'views_block:front_page_events-events_watch'
+        label: ''
+        provider: views
+        label_display: 0
+        views_label: ''
+        items_per_page: none
+        region: content
+        weight: '2'
+        context_mapping: {  }
+        custom_id: events_watch
+        theme: academy
+        css_class: 'watch card'
+        unique: 0
+        context_id: events
+        uuid: c65a270a-0422-4758-be08-2103fdd9cce1
+      15a2f5d2-477a-4a76-94da-f5c6560a30c5:
+        id: 'views_block:front_page_events-events_calendar'
+        label: ''
+        provider: views
+        label_display: 0
+        views_label: ''
+        items_per_page: none
+        region: content
+        weight: '-2'
+        context_mapping: {  }
+        custom_id: events_calendar
+        theme: academy
+        css_class: 'calendar card'
+        unique: 0
+        context_id: events
+        uuid: 15a2f5d2-477a-4a76-94da-f5c6560a30c5
     id: blocks
     saved: false
     uuid: f1cb3668-384e-4cea-9739-1e69411a32fb
@@ -108,4 +188,4 @@ reactions:
     id: body_class
     body_class: section-front
     saved: false
-weight: 0
+weight: -6

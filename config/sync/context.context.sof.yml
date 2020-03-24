@@ -116,6 +116,102 @@ reactions:
         unique: 0
         context_id: sof
         uuid: 3266e3dd-766f-4ff3-92c8-9d803fd8381d
+      4a60fee8-17f2-4f5c-bcc5-a7ef1a76a9f1:
+        id: 'views_block:front_page_sof-sof_council'
+        label: ''
+        provider: views
+        label_display: 0
+        views_label: ''
+        items_per_page: none
+        region: content
+        weight: '-2'
+        context_mapping: {  }
+        custom_id: sof_council
+        theme: academy
+        css_class: 'sof-council card'
+        unique: 0
+        context_id: sof
+        uuid: 4a60fee8-17f2-4f5c-bcc5-a7ef1a76a9f1
+      5fb48a19-fbad-4466-89f4-7149e96b0df3:
+        id: 'views_block:front_page_sof-sof_history'
+        label: ''
+        provider: views
+        label_display: 0
+        views_label: ''
+        items_per_page: none
+        region: content
+        weight: '-1'
+        context_mapping: {  }
+        custom_id: sof_history
+        theme: academy
+        css_class: 'sof-history card'
+        unique: 0
+        context_id: sof
+        uuid: 5fb48a19-fbad-4466-89f4-7149e96b0df3
+      194262a5-3518-4f15-8c53-6022693d884f:
+        id: 'views_block:front_page_sof-sof_bylaws'
+        label: ''
+        provider: views
+        label_display: 0
+        views_label: ''
+        items_per_page: none
+        region: content
+        weight: '0'
+        context_mapping: {  }
+        custom_id: sof_bylaws
+        theme: academy
+        css_class: 'sof-bylaws card'
+        unique: 0
+        context_id: sof
+        uuid: 194262a5-3518-4f15-8c53-6022693d884f
+      76034cc7-54c8-4f16-be0e-120033aba6d6:
+        id: 'views_block:front_page_sof-sof_news'
+        label: ''
+        provider: views
+        label_display: 0
+        views_label: ''
+        items_per_page: none
+        region: content
+        weight: '1'
+        context_mapping: {  }
+        custom_id: sof_news
+        theme: academy
+        css_class: 'sof-news card'
+        unique: 0
+        context_id: sof
+        uuid: 76034cc7-54c8-4f16-be0e-120033aba6d6
+      7cf071a5-939a-429a-b058-52034c08c4ed:
+        id: 'views_block:front_page_sof-sof_past_presidents'
+        label: ''
+        provider: views
+        label_display: 0
+        views_label: ''
+        items_per_page: none
+        region: content
+        weight: '3'
+        context_mapping: {  }
+        custom_id: sof_past_presidents
+        theme: academy
+        css_class: 'sof-past-presidents card'
+        unique: 0
+        context_id: sof
+        uuid: 7cf071a5-939a-429a-b058-52034c08c4ed
+      2f5b02d6-5c1e-46ec-8314-78816127ee45:
+        id: 'views_block:front_page_sof-sof_directory'
+        label: ''
+        provider: views
+        label_display: 0
+        views_label: ''
+        items_per_page: none
+        region: content
+        weight: '2'
+        context_mapping: {  }
+        custom_id: sof_directory
+        theme: academy
+        css_class: 'sof-directory card'
+        unique: 0
+        context_id: sof
+        uuid: 2f5b02d6-5c1e-46ec-8314-78816127ee45
     id: blocks
     saved: false
     uuid: 4dc6ee89-f759-4b67-8b23-388bb297ada7
@@ -124,4 +220,4 @@ reactions:
     id: body_class
     body_class: section-front
     saved: false
-weight: 0
+weight: -14

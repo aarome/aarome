@@ -10,6 +10,7 @@ effects:
     id: image_scale
     weight: 1
     data:
-      width: null
-      height: 450
+      width: 900
+      height: 600
       upscale: true
+pipeline: local_binaries

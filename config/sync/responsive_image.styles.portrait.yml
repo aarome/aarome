@@ -3,52 +3,51 @@ langcode: en
 status: true
 dependencies:
   config:
-    - image.style.portrait_narrow_720x720
-    - image.style.portrait_wide_1440x1440
+    - image.style.portrait
   theme:
-    - tema
+    - academy
 id: portrait
 label: Portrait
 image_style_mappings:
   -
-    breakpoint_id: tema.extra-large
+    breakpoint_id: academy.extra-large
     multiplier: 1x
     image_mapping_type: image_style
-    image_mapping: portrait_narrow_720x720
+    image_mapping: portrait
   -
-    breakpoint_id: tema.extra-large
+    breakpoint_id: academy.extra-large
     multiplier: 2x
     image_mapping_type: image_style
-    image_mapping: portrait_narrow_720x720
+    image_mapping: portrait
   -
-    breakpoint_id: tema.large
+    breakpoint_id: academy.large
     multiplier: 1x
     image_mapping_type: image_style
-    image_mapping: portrait_wide_1440x1440
+    image_mapping: portrait
   -
-    breakpoint_id: tema.large
+    breakpoint_id: academy.large
     multiplier: 2x
     image_mapping_type: image_style
-    image_mapping: portrait_wide_1440x1440
+    image_mapping: portrait
   -
-    breakpoint_id: tema.medium
+    breakpoint_id: academy.medium
     multiplier: 1x
     image_mapping_type: image_style
-    image_mapping: portrait_narrow_720x720
+    image_mapping: portrait
   -
-    breakpoint_id: tema.medium
+    breakpoint_id: academy.medium
     multiplier: 2x
     image_mapping_type: image_style
-    image_mapping: portrait_wide_1440x1440
+    image_mapping: portrait
   -
-    breakpoint_id: tema.small
+    breakpoint_id: academy.small
     multiplier: 1x
     image_mapping_type: image_style
-    image_mapping: portrait_narrow_720x720
+    image_mapping: portrait
   -
-    breakpoint_id: tema.small
+    breakpoint_id: academy.small
     multiplier: 2x
     image_mapping_type: image_style
-    image_mapping: portrait_narrow_720x720
-breakpoint_group: tema
+    image_mapping: portrait
+breakpoint_group: academy
 fallback_image_style: '_empty image_'

@@ -1,0 +1,33 @@
+uuid: 8c678faf-213b-4a87-96a9-cb81769b2e85
+langcode: en
+status: true
+dependencies:
+  config:
+    - core.entity_view_mode.media.slick
+    - field.field.media.people.field_media_caption
+    - field.field.media.people.field_media_image
+    - image.style.portrait_front_wide
+    - media.type.people
+  module:
+    - image
+id: media.people.slick
+targetEntityType: media
+bundle: people
+mode: slick
+content:
+  field_media_image:
+    weight: 0
+    label: hidden
+    settings:
+      image_style: portrait_front_wide
+      image_link: ''
+    third_party_settings: {  }
+    type: image
+    region: content
+hidden:
+  created: true
+  field_media_caption: true
+  langcode: true
+  name: true
+  thumbnail: true
+  uid: true

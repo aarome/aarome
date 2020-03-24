@@ -17,6 +17,23 @@ third_party_settings:
     finalize: false
     commit_before_finalize: false
     commit_after_finalize: false
+    highlighter:
+      maxAnalyzedChars: 51200
+      fragmenter: gap
+      regex:
+        slop: 0.5
+        pattern: blank
+        maxAnalyzedChars: 10000
+      usePhraseHighlighter: true
+      highlightMultiTerm: true
+      preserveMulti: false
+      highlight:
+        mergeContiguous: false
+        requireFieldMatch: false
+        snippets: 3
+        fragsize: 0
+    advanced:
+      index_prefix: ''
 id: academy
 name: academy
 description: ''
@@ -77,11 +94,11 @@ datasource_settings:
         - news_features
         - page
         - people
-        - places
         - press
         - press_releases
         - publications
         - quick_news
+        - society_of_fellows
     languages:
       default: true
       selected: {  }
@@ -140,11 +157,7 @@ processor_settings:
     fields:
       - name
       - title
-      - type
     ignorable: '[''¿¡!?,.:;]'
-    weights:
-      preprocess_index: -10
-      preprocess_query: -10
     ignorable_classes:
       - Pc
       - Pd
@@ -153,6 +166,9 @@ processor_settings:
       - Pi
       - Po
       - Ps
+    weights:
+      preprocess_index: -10
+      preprocess_query: -10
   rendered_item: {  }
   reverse_entity_references: {  }
   solr_date_range:
@@ -168,7 +184,6 @@ processor_settings:
           news_features: !!float 8
           page: !!float 13
           people: !!float 13
-          places: !!float 0
           press: 0.5
           press_releases: 0.5
           publications: 0.5

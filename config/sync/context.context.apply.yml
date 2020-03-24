@@ -6,7 +6,7 @@ dependencies:
     - system
 name: apply
 label: Apply
-group: Frontpages
+group: Apply
 description: ''
 requireAllConditions: false
 disabled: false
@@ -116,6 +116,102 @@ reactions:
         context_id: apply
         uuid: aa8f701e-6341-4e9a-9b6b-8f29f1cf9fc0
         custom_id: views_block_front_page_apply_apply_rsfp
+      420e2ba5-943c-4dfc-8ec0-cda9562874f6:
+        id: 'views_block:front_page_apply-apply_academic_programs'
+        label: ''
+        provider: views
+        label_display: 0
+        views_label: ''
+        items_per_page: none
+        region: content
+        weight: '2'
+        context_mapping: {  }
+        custom_id: apply_academic
+        theme: academy
+        css_class: 'academic card'
+        unique: 0
+        context_id: apply
+        uuid: 420e2ba5-943c-4dfc-8ec0-cda9562874f6
+      ff788aad-6fb0-42b3-ab59-74b1286175bb:
+        id: 'views_block:front_page_apply-apply_rome_prize'
+        label: ''
+        provider: views
+        label_display: 0
+        views_label: ''
+        items_per_page: none
+        region: content
+        weight: '-2'
+        context_mapping: {  }
+        custom_id: apply_rome_prize
+        theme: academy
+        css_class: 'rome-prize card'
+        unique: 0
+        context_id: apply
+        uuid: ff788aad-6fb0-42b3-ab59-74b1286175bb
+      ac910021-534a-4ae5-ad9e-efd3d4f36801:
+        id: 'views_block:front_page_apply-apply_italian_fellowship'
+        label: ''
+        provider: views
+        label_display: 0
+        views_label: ''
+        items_per_page: none
+        region: content
+        weight: '-1'
+        context_mapping: {  }
+        custom_id: apply_italian_fellowship
+        theme: academy
+        css_class: 'italian-fellowship card'
+        unique: 0
+        context_id: apply
+        uuid: ac910021-534a-4ae5-ad9e-efd3d4f36801
+      82df82a4-b5a8-4b2f-a05c-784f641ea0c8:
+        id: 'views_block:front_page_apply-apply_visiting'
+        label: ''
+        provider: views
+        label_display: 0
+        views_label: ''
+        items_per_page: none
+        region: content
+        weight: '1'
+        context_mapping: {  }
+        custom_id: apply_visiting
+        theme: academy
+        css_class: 'visiting card'
+        unique: 0
+        context_id: apply
+        uuid: 82df82a4-b5a8-4b2f-a05c-784f641ea0c8
+      9b8ff51f-8817-4bec-8f23-06a4ee7562cf:
+        id: 'views_block:front_page_apply-apply_affiliated'
+        label: ''
+        provider: views
+        label_display: 0
+        views_label: ''
+        items_per_page: none
+        region: content
+        weight: '0'
+        context_mapping: {  }
+        custom_id: apply_affiliated
+        theme: academy
+        css_class: 'affiliated card'
+        unique: 0
+        context_id: apply
+        uuid: 9b8ff51f-8817-4bec-8f23-06a4ee7562cf
+      832319f2-cfb3-41f6-80af-e7726c3aaa95:
+        id: 'views_block:front_page_apply-apply_rsfp'
+        label: ''
+        provider: views
+        label_display: 0
+        views_label: ''
+        items_per_page: none
+        region: content
+        weight: '3'
+        context_mapping: {  }
+        custom_id: apply_rsfp
+        theme: academy
+        css_class: 'rsfp card'
+        unique: 0
+        context_id: apply
+        uuid: 832319f2-cfb3-41f6-80af-e7726c3aaa95
     id: blocks
     saved: false
     uuid: f3054c04-c3bf-432d-81aa-bc7b24f86cb4
@@ -124,4 +220,4 @@ reactions:
     id: body_class
     body_class: section-front
     saved: false
-weight: 0
+weight: -14

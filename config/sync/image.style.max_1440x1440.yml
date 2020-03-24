@@ -12,4 +12,5 @@ effects:
     data:
       width: 1440
       height: 1440
-      upscale: true
+      upscale: false
+pipeline: __default__

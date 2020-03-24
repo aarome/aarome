@@ -6,7 +6,7 @@ dependencies:
     - system
 name: research
 label: Research
-group: Frontpages
+group: Research
 description: ''
 requireAllConditions: false
 disabled: false
@@ -132,6 +132,118 @@ reactions:
         context_id: research
         uuid: ef910c76-cadc-41bf-9661-18f9a43362ca
         custom_id: views_block_front_page_research_research_archaeology
+      f8ec4248-3f07-4c93-9abf-055f57fbb6c3:
+        id: 'views_block:front_page_research-research_library'
+        label: ''
+        provider: views
+        label_display: 0
+        views_label: ''
+        items_per_page: none
+        region: content
+        weight: '-3'
+        context_mapping: {  }
+        custom_id: library
+        theme: academy
+        css_class: 'library card'
+        unique: 0
+        context_id: research
+        uuid: f8ec4248-3f07-4c93-9abf-055f57fbb6c3
+      f7aac781-5991-49c2-a73c-32f7741bdf2f:
+        id: 'views_block:front_page_research-research_digital_humanities_center'
+        label: ''
+        provider: views
+        label_display: 0
+        views_label: ''
+        items_per_page: none
+        region: content
+        weight: '-2'
+        context_mapping: {  }
+        custom_id: dhc
+        theme: academy
+        css_class: 'dhc card'
+        unique: 0
+        context_id: research
+        uuid: f7aac781-5991-49c2-a73c-32f7741bdf2f
+      eb0923a4-0c66-4a67-aa43-129c262b65dc:
+        id: 'views_block:front_page_research-research_resources'
+        label: ''
+        provider: views
+        label_display: 0
+        views_label: ''
+        items_per_page: none
+        region: content
+        weight: '-1'
+        context_mapping: {  }
+        custom_id: resources
+        theme: academy
+        css_class: 'resources card'
+        unique: 0
+        context_id: research
+        uuid: eb0923a4-0c66-4a67-aa43-129c262b65dc
+      269500c5-13cd-4732-b5f0-c0023203c54e:
+        id: 'views_block:front_page_research-research_special_collections'
+        label: ''
+        provider: views
+        label_display: 0
+        views_label: ''
+        items_per_page: none
+        region: content
+        weight: '0'
+        context_mapping: {  }
+        custom_id: special_collections
+        theme: academy
+        css_class: 'special-collections card'
+        unique: 0
+        context_id: research
+        uuid: 269500c5-13cd-4732-b5f0-c0023203c54e
+      dfe33c87-e1ab-452b-95a7-2d7556a5393e:
+        id: 'views_block:front_page_research-research_photo_archive'
+        label: ''
+        provider: views
+        label_display: 0
+        views_label: ''
+        items_per_page: none
+        region: content
+        weight: '1'
+        context_mapping: {  }
+        custom_id: photo_archive
+        theme: academy
+        css_class: 'photo-archive card'
+        unique: 0
+        context_id: research
+        uuid: dfe33c87-e1ab-452b-95a7-2d7556a5393e
+      97ebbca6-add2-4174-8b31-090a1900402a:
+        id: 'views_block:front_page_research-research_institutional_archive'
+        label: ''
+        provider: views
+        label_display: 0
+        views_label: ''
+        items_per_page: none
+        region: content
+        weight: '2'
+        context_mapping: {  }
+        custom_id: institutional_archive
+        theme: academy
+        css_class: 'institutional-archive card'
+        unique: 0
+        context_id: research
+        uuid: 97ebbca6-add2-4174-8b31-090a1900402a
+      b240e0f6-b001-4875-8463-5d8e7fb3bce9:
+        id: 'views_block:front_page_research-research_archaeology'
+        label: ''
+        provider: views
+        label_display: 0
+        views_label: ''
+        items_per_page: none
+        region: content
+        weight: '3'
+        context_mapping: {  }
+        custom_id: archaeology
+        theme: academy
+        css_class: 'archaeology card'
+        unique: 0
+        context_id: research
+        uuid: b240e0f6-b001-4875-8463-5d8e7fb3bce9
     id: blocks
     saved: false
     uuid: 7f9c446a-0ec7-4f95-b577-94354fb27221
@@ -140,4 +252,4 @@ reactions:
     id: body_class
     body_class: section-front
     saved: false
-weight: 0
+weight: -11

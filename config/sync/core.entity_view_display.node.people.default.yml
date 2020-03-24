@@ -27,50 +27,12 @@ dependencies:
     - field.field.node.people.field_people_rel_press_releases
     - field.field.node.people.field_people_website
     - node.type.people
+    - responsive_image.styles.portrait
   module:
-    - ds
+    - blazy
     - entity_reference_revisions
-    - link
     - text
     - user
-third_party_settings:
-  ds:
-    layout:
-      id: ds_2col_fluid
-      library: ds/ds_2col_fluid
-      disable_css: false
-      entity_classes: no_classes
-      settings:
-        wrappers:
-          left: div
-          right: div
-        outer_wrapper: div
-        attributes: ''
-        link_attribute: ''
-        link_custom: ''
-        classes:
-          layout_class: {  }
-    regions:
-      left:
-        - field_people_portrait
-      right:
-        - node_title
-        - field_people_affiliations
-        - field_people_professions
-        - field_people_project_title
-        - field_people_project_description
-        - field_people_biographical_note
-        - field_people_website
-    fields:
-      node_title:
-        plugin_id: node_title
-        weight: 1
-        label: hidden
-        formatter: default
-        settings:
-          wrapper: h4
-          class: ''
-          link: false
 id: node.people.default
 targetEntityType: node
 bundle: people
@@ -78,64 +40,100 @@ mode: default
 content:
   field_people_affiliations:
     type: entity_reference_revisions_entity_view
-    weight: 2
-    region: right
-    label: hidden
-    settings:
-      view_mode: fellowship
-      link: ''
-    third_party_settings: {  }
-  field_people_biographical_note:
-    weight: 6
-    label: inline
-    settings: {  }
-    third_party_settings: {  }
-    type: text_default
-    region: right
-  field_people_portrait:
-    type: entity_reference_entity_view
-    weight: 0
+    weight: 1
+    region: content
     label: hidden
     settings:
       view_mode: default
-      link: false
+      link: ''
     third_party_settings: {  }
-    region: left
-  field_people_professions:
-    weight: 3
-    label: above
-    settings:
-      link_to_entity: false
-    third_party_settings: {  }
-    type: string
-    region: right
-  field_people_project_description:
+  field_people_biographical_note:
+    type: text_default
     weight: 5
+    region: content
     label: above
     settings: {  }
     third_party_settings: {  }
-    type: text_default
-    region: right
-  field_people_project_title:
+  field_people_portrait:
+    type: blazy_media
+    weight: 0
+    region: content
+    label: hidden
+    settings:
+      image_style: ''
+      responsive_image_style: portrait
+      media_switch: ''
+      thumbnail_style: ''
+      ratio: ''
+      view_mode: default
+      sizes: ''
+      breakpoints:
+        xs:
+          image_style: ''
+          width: ''
+        sm:
+          image_style: ''
+          width: ''
+        md:
+          image_style: ''
+          width: ''
+        lg:
+          image_style: ''
+          width: ''
+        xl:
+          image_style: ''
+          width: ''
+      current_view_mode: default
+      background: false
+      caption:
+        field_media_caption: '0'
+        field_media_image: '0'
+      class: ''
+      id: ''
+      image: ''
+      link: ''
+      overlay: ''
+      title: ''
+      vanilla: false
+      icon: ''
+      layout: ''
+      cache: 0
+      skin: ''
+      style: ''
+      box_caption: ''
+      box_caption_custom: ''
+      box_style: ''
+      box_media_style: ''
+      grid: 0
+      grid_header: ''
+      grid_medium: 0
+      grid_small: 0
+      fx: ''
+      _uri: ''
+    third_party_settings: {  }
+  field_people_professions:
+    type: string
     weight: 4
+    region: content
     label: above
     settings:
       link_to_entity: false
     third_party_settings: {  }
+  field_people_project_description:
+    type: text_default
+    weight: 2
+    region: content
+    label: above
+    settings: {  }
+    third_party_settings: {  }
+  field_people_project_title:
     type: string
-    region: right
-  field_people_website:
-    weight: 7
+    weight: 3
+    region: content
     label: above
     settings:
-      trim_length: 80
-      url_only: false
-      url_plain: false
-      rel: ''
-      target: ''
+      link_to_entity: false
     third_party_settings: {  }
-    type: link
-    region: right
 hidden:
   body: true
   field_people_birthplace: true
@@ -153,5 +151,6 @@ hidden:
   field_people_rel_news_features: true
   field_people_rel_press: true
   field_people_rel_press_releases: true
+  field_people_website: true
   langcode: true
   links: true

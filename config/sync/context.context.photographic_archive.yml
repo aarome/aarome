@@ -6,7 +6,7 @@ dependencies:
     - system
 name: photographic_archive
 label: 'Photographic Archive'
-group: Frontpages
+group: Research
 description: ''
 requireAllConditions: false
 disabled: false
@@ -132,6 +132,118 @@ reactions:
         context_id: photographic_archive
         uuid: d1132d04-5e76-4544-b9df-b606faf9f853
         custom_id: views_block_front_page_photographic_archive_photographic_archive_online_exhibitions_projects
+      05ed61e4-8cb8-484a-9ea7-0060efac1b27:
+        id: 'views_block:front_page_photographic_archive-photographic_archive_notice'
+        label: ''
+        provider: views
+        label_display: 0
+        views_label: ''
+        items_per_page: none
+        region: content
+        weight: '-3'
+        context_mapping: {  }
+        custom_id: photographic_notice
+        theme: academy
+        css_class: 'photographic card'
+        unique: 0
+        context_id: photographic_archive
+        uuid: 05ed61e4-8cb8-484a-9ea7-0060efac1b27
+      7553a898-d075-4f78-8164-aca91bf04b19:
+        id: 'views_block:front_page_photographic_archive-photographic_archive_overview'
+        label: ''
+        provider: views
+        label_display: 0
+        views_label: ''
+        items_per_page: none
+        region: content
+        weight: '-2'
+        context_mapping: {  }
+        custom_id: photographic_overview
+        theme: academy
+        css_class: 'photographic card'
+        unique: 0
+        context_id: photographic_archive
+        uuid: 7553a898-d075-4f78-8164-aca91bf04b19
+      d5b05356-e9a2-4f2d-83ab-16e95f2afb45:
+        id: 'views_block:front_page_photographic_archive-photographic_archive_index'
+        label: ''
+        provider: views
+        label_display: 0
+        views_label: ''
+        items_per_page: none
+        region: content
+        weight: '-1'
+        context_mapping: {  }
+        custom_id: photographic_index
+        theme: academy
+        css_class: 'photographic card'
+        unique: 0
+        context_id: photographic_archive
+        uuid: d5b05356-e9a2-4f2d-83ab-16e95f2afb45
+      609fe1d4-5eba-44a0-a4eb-dfe919818d07:
+        id: 'views_block:front_page_photographic_archive-photographic_archive_rights_permissions'
+        label: ''
+        provider: views
+        label_display: 0
+        views_label: ''
+        items_per_page: none
+        region: content
+        weight: '0'
+        context_mapping: {  }
+        custom_id: photographic_rights
+        theme: academy
+        css_class: 'photographic card'
+        unique: 0
+        context_id: photographic_archive
+        uuid: 609fe1d4-5eba-44a0-a4eb-dfe919818d07
+      7a6dc177-500f-4b0f-94b0-394fc3b32546:
+        id: 'views_block:front_page_photographic_archive-photographic_archive_exhibitions_events'
+        label: ''
+        provider: views
+        label_display: 0
+        views_label: ''
+        items_per_page: none
+        region: content
+        weight: '1'
+        context_mapping: {  }
+        custom_id: photographic_exhibitions
+        theme: academy
+        css_class: 'photographic card'
+        unique: 0
+        context_id: photographic_archive
+        uuid: 7a6dc177-500f-4b0f-94b0-394fc3b32546
+      7aa8d5d8-8735-43b9-a6a7-ee86acca695c:
+        id: 'views_block:front_page_photographic_archive-photographic_archive_publications'
+        label: ''
+        provider: views
+        label_display: 0
+        views_label: ''
+        items_per_page: none
+        region: content
+        weight: '2'
+        context_mapping: {  }
+        custom_id: photographic_publications
+        theme: academy
+        css_class: 'photographic card'
+        unique: 0
+        context_id: photographic_archive
+        uuid: 7aa8d5d8-8735-43b9-a6a7-ee86acca695c
+      d0edd0cf-8afe-4abd-a67c-b3cdb12d275c:
+        id: 'views_block:front_page_photographic_archive-photographic_archive_online_exhibitions_projects'
+        label: ''
+        provider: views
+        label_display: 0
+        views_label: ''
+        items_per_page: none
+        region: content
+        weight: '3'
+        context_mapping: {  }
+        custom_id: photographic_online
+        theme: academy
+        css_class: 'photographic card'
+        unique: 0
+        context_id: photographic_archive
+        uuid: d0edd0cf-8afe-4abd-a67c-b3cdb12d275c
     id: blocks
     saved: false
     uuid: 5d2521c3-4691-4643-a22f-0e201d7bdc4a
@@ -140,4 +252,4 @@ reactions:
     id: body_class
     body_class: section-front
     saved: false
-weight: -7
+weight: -12
