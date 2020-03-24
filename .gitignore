@@ -18,6 +18,8 @@
 /web/sites/example.settings.local.php
 /web/web.config
 ansible.cfg
+/web/sites/example.settings.local.php
+/web/robots.txt
 
 # Ignore sensitive information
 /web/sites/*/settings.php
