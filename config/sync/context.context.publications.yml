@@ -204,7 +204,7 @@ reactions:
         views_label: ''
         items_per_page: none
         region: content
-        weight: '3'
+        weight: '0'
         context_mapping: {  }
         custom_id: affiliated_books
         theme: academy
@@ -220,7 +220,7 @@ reactions:
         views_label: ''
         items_per_page: none
         region: content
-        weight: '0'
+        weight: '1'
         context_mapping: {  }
         custom_id: memoirs
         theme: academy
@@ -236,7 +236,7 @@ reactions:
         views_label: ''
         items_per_page: none
         region: content
-        weight: '1'
+        weight: '2'
         context_mapping: {  }
         custom_id: supplements
         theme: academy
@@ -252,7 +252,7 @@ reactions:
         views_label: ''
         items_per_page: none
         region: content
-        weight: '2'
+        weight: '3'
         context_mapping: {  }
         custom_id: monographs
         theme: academy

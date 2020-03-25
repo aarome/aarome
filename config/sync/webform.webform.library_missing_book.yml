@@ -1,12 +1,8 @@
-uuid: 9a06b333-160d-4cb1-ac80-bafc4cccd322
 langcode: en
 status: open
 dependencies:
   module:
     - honeypot
-third_party_settings:
-  honeypot:
-    honeypot: true
 open: null
 close: null
 weight: 0
@@ -237,3 +233,7 @@ handlers:
       theme_name: tema
       parameters: {  }
 variants: {  }
+uuid: 9a06b333-160d-4cb1-ac80-bafc4cccd322
+third_party_settings:
+  honeypot:
+    honeypot: true

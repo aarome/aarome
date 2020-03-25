@@ -1,12 +1,8 @@
-uuid: f26d31e4-195c-43a7-a253-419e3725cb78
 langcode: en
 status: open
 dependencies:
   module:
     - honeypot
-third_party_settings:
-  honeypot:
-    honeypot: true
 open: null
 close: null
 weight: 0
@@ -239,3 +235,7 @@ handlers:
       theme_name: ''
       parameters: {  }
 variants: {  }
+uuid: f26d31e4-195c-43a7-a253-419e3725cb78
+third_party_settings:
+  honeypot:
+    honeypot: true

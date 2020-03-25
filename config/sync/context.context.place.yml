@@ -148,22 +148,6 @@ reactions:
         unique: 0
         context_id: place
         uuid: 27a8a94d-f920-461d-b2c1-144e30a66bd4
-      bd7ef140-74c8-4c0f-bb2c-612a9a8dc7d4:
-        id: 'views_block:front_page_place-place_tours'
-        label: ''
-        provider: views
-        label_display: 0
-        views_label: ''
-        items_per_page: none
-        region: content
-        weight: '2'
-        context_mapping: {  }
-        custom_id: place_tours
-        theme: academy
-        css_class: 'tours card'
-        unique: 0
-        context_id: place
-        uuid: bd7ef140-74c8-4c0f-bb2c-612a9a8dc7d4
       a3dbca43-cf1c-4c7b-a00a-3a75b1633177:
         id: 'views_block:front_page_place-place_villa_aurelia'
         label: ''

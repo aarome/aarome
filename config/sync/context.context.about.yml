@@ -196,6 +196,22 @@ reactions:
         unique: 0
         context_id: about
         uuid: 066b431d-a169-4667-bc78-b1aab5a689a0
+      2fa4b5d5-ae94-4c14-898c-56e6577b49ea:
+        id: 'views_block:front_page_place-place_tours'
+        label: ''
+        provider: views
+        label_display: 0
+        views_label: ''
+        items_per_page: none
+        region: content
+        weight: '3'
+        context_mapping: {  }
+        custom_id: place_tours
+        theme: academy
+        css_class: 'tour card'
+        unique: 0
+        context_id: about
+        uuid: 2fa4b5d5-ae94-4c14-898c-56e6577b49ea
     id: blocks
     saved: false
     uuid: 3b197fb0-5096-4bbd-b223-1ab9dc34a758
