@@ -17,7 +17,7 @@ display:
             description: ''
   page_news_sof:
     display_options:
-      title: 'Attualita e eventi'
+      title: 'Attualità e eventi'
   page_events_list:
     display_options:
       title: Calendario

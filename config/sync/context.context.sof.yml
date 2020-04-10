@@ -140,7 +140,7 @@ reactions:
         views_label: ''
         items_per_page: none
         region: content
-        weight: '-1'
+        weight: '0'
         context_mapping: {  }
         custom_id: sof_history
         theme: academy
@@ -156,7 +156,7 @@ reactions:
         views_label: ''
         items_per_page: none
         region: content
-        weight: '0'
+        weight: '1'
         context_mapping: {  }
         custom_id: sof_bylaws
         theme: academy
@@ -172,7 +172,7 @@ reactions:
         views_label: ''
         items_per_page: none
         region: content
-        weight: '1'
+        weight: '-1'
         context_mapping: {  }
         custom_id: sof_news
         theme: academy
