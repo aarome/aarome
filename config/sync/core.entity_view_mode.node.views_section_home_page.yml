@@ -1,0 +1,10 @@
+uuid: 338085b7-3442-44e7-8683-c6bfa7309535
+langcode: en
+status: true
+dependencies:
+  module:
+    - node
+id: node.views_section_home_page
+label: 'Views section home page'
+targetEntityType: node
+cache: true

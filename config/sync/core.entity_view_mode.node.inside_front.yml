@@ -1,0 +1,10 @@
+uuid: efec9768-cd6a-4437-b354-a50ed4b66a37
+langcode: en
+status: true
+dependencies:
+  module:
+    - node
+id: node.inside_front
+label: 'Inside front'
+targetEntityType: node
+cache: true

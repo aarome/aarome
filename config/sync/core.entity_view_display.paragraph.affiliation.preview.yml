@@ -1,0 +1,36 @@
+uuid: 4059c5a5-60ab-4f76-8a64-17d459fc91f9
+langcode: en
+status: true
+dependencies:
+  config:
+    - core.entity_view_mode.paragraph.preview
+    - field.field.paragraph.affiliation.field_affil_aff_fellowship_name
+    - field.field.paragraph.affiliation.field_affil_dates
+    - field.field.paragraph.affiliation.field_affil_discipline
+    - field.field.paragraph.affiliation.field_affil_fellowship_name
+    - field.field.paragraph.affiliation.field_affil_ital_fellowship_name
+    - field.field.paragraph.affiliation.field_affil_residency_name
+    - field.field.paragraph.affiliation.field_affil_type
+    - field.field.paragraph.affiliation.field_affil_year
+    - paragraphs.paragraphs_type.affiliation
+id: paragraph.affiliation.preview
+targetEntityType: paragraph
+bundle: affiliation
+mode: preview
+content:
+  field_affil_discipline:
+    weight: 0
+    label: hidden
+    settings:
+      link: false
+    third_party_settings: {  }
+    type: entity_reference_label
+    region: content
+hidden:
+  field_affil_aff_fellowship_name: true
+  field_affil_dates: true
+  field_affil_fellowship_name: true
+  field_affil_ital_fellowship_name: true
+  field_affil_residency_name: true
+  field_affil_type: true
+  field_affil_year: true

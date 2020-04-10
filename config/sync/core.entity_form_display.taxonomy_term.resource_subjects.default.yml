@@ -1,0 +1,55 @@
+uuid: 11aa211b-ad3a-4c19-b86b-8863807fa452
+langcode: en
+status: true
+dependencies:
+  config:
+    - taxonomy.vocabulary.resource_subjects
+  module:
+    - hide_revision_field
+id: taxonomy_term.resource_subjects.default
+targetEntityType: taxonomy_term
+bundle: resource_subjects
+mode: default
+content:
+  langcode:
+    type: language_select
+    weight: 1
+    region: content
+    settings:
+      include_locked: true
+    third_party_settings: {  }
+  name:
+    type: string_textfield
+    weight: 0
+    region: content
+    settings:
+      size: 60
+      placeholder: ''
+    third_party_settings: {  }
+  revision_log_message:
+    type: hide_revision_field_log_widget
+    weight: 80
+    region: content
+    settings:
+      show: true
+      default: ''
+      permission_based: false
+      allow_user_settings: true
+      rows: '5'
+      placeholder: ''
+    third_party_settings: {  }
+  status:
+    type: boolean_checkbox
+    settings:
+      display_label: true
+    weight: 100
+    region: content
+    third_party_settings: {  }
+  translation:
+    weight: 2
+    region: content
+    settings: {  }
+    third_party_settings: {  }
+hidden:
+  description: true
+  path: true

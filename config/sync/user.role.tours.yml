@@ -1,0 +1,9 @@
+uuid: 9acfc006-9ef7-43db-b232-fd4d20d9cef9
+langcode: en
+status: true
+dependencies: {  }
+id: tours
+label: Tours
+weight: 6
+is_admin: null
+permissions: {  }

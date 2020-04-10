@@ -1,0 +1,25 @@
+uuid: 8698f20e-3daa-4385-abd4-af095807bf0b
+langcode: en
+status: true
+dependencies:
+  module:
+    - system
+  theme:
+    - academy
+id: academy_pagetitle
+theme: academy
+region: page_title
+weight: -8
+provider: null
+plugin: page_title_block
+settings:
+  id: page_title_block
+  label: 'Page title'
+  provider: core
+  label_display: '0'
+visibility:
+  request_path:
+    id: request_path
+    pages: "<front>\r\n"
+    negate: true
+    context_mapping: {  }

@@ -1,0 +1,43 @@
+uuid: 19a76f2b-94ed-4f1e-8bc5-40fe6ffaefca
+langcode: en
+status: true
+dependencies:
+  config:
+    - image.style.max_1440x1440
+  theme:
+    - academy
+id: slideshow
+label: Slideshow
+image_style_mappings:
+  -
+    breakpoint_id: academy.responsive-menu
+    multiplier: 1x
+    image_mapping_type: image_style
+    image_mapping: max_1440x1440
+  -
+    breakpoint_id: academy.responsive-menu
+    multiplier: 2x
+    image_mapping_type: image_style
+    image_mapping: max_1440x1440
+  -
+    breakpoint_id: academy.large
+    multiplier: 1x
+    image_mapping_type: image_style
+    image_mapping: max_1440x1440
+  -
+    breakpoint_id: academy.large
+    multiplier: 2x
+    image_mapping_type: image_style
+    image_mapping: max_1440x1440
+  -
+    breakpoint_id: academy.medium
+    multiplier: 1x
+    image_mapping_type: image_style
+    image_mapping: max_1440x1440
+  -
+    breakpoint_id: academy.medium
+    multiplier: 2x
+    image_mapping_type: image_style
+    image_mapping: max_1440x1440
+breakpoint_group: academy
+fallback_image_style: max_1440x1440

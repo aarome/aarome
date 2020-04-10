@@ -1,0 +1,26 @@
+uuid: 55c961b4-1701-4691-872b-8f75889d90e9
+langcode: en
+status: true
+dependencies:
+  module:
+    - search_modal
+    - system
+  theme:
+    - academy
+id: academy_modalblock
+theme: academy
+region: header
+weight: -5
+provider: null
+plugin: modal_block
+settings:
+  id: modal_block
+  label: 'Modal block'
+  provider: search_modal
+  label_display: visible
+visibility:
+  request_path:
+    id: request_path
+    pages: /search
+    negate: true
+    context_mapping: {  }

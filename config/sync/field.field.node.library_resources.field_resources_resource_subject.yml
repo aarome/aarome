@@ -1,0 +1,29 @@
+uuid: 3f9a2531-0b2a-4a71-ad87-be55ed1c3259
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_resources_resource_subject
+    - node.type.library_resources
+    - taxonomy.vocabulary.resource_subjects
+id: node.library_resources.field_resources_resource_subject
+field_name: field_resources_resource_subject
+entity_type: node
+bundle: library_resources
+label: 'Resource subject'
+description: ''
+required: false
+translatable: true
+default_value: {  }
+default_value_callback: ''
+settings:
+  handler: 'default:taxonomy_term'
+  handler_settings:
+    target_bundles:
+      resource_subjects: resource_subjects
+    sort:
+      field: name
+      direction: asc
+    auto_create: false
+    auto_create_bundle: ''
+field_type: entity_reference

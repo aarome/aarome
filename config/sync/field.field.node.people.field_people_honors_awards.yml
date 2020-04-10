@@ -1,0 +1,21 @@
+uuid: 846a72ab-146c-4a49-b14f-502c510afe08
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_people_honors_awards
+    - node.type.people
+  module:
+    - text
+id: node.people.field_people_honors_awards
+field_name: field_people_honors_awards
+entity_type: node
+bundle: people
+label: 'Honors and Awards'
+description: ''
+required: false
+translatable: true
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: text_long

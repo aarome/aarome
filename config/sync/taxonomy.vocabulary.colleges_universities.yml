@@ -1,0 +1,8 @@
+uuid: 76491ae7-822c-470d-9c18-1f667e609371
+langcode: en
+status: true
+dependencies: {  }
+name: 'Colleges and universities'
+vid: colleges_universities
+description: ''
+weight: 0

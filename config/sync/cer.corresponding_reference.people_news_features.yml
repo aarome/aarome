@@ -1,0 +1,13 @@
+uuid: 126ba964-2ad9-44be-aa38-25fc6e7f2cb4
+langcode: en
+status: true
+dependencies: {  }
+id: people_news_features
+label: 'People to news features'
+enabled: true
+first_field: field_people_rel_news_features
+second_field: field_news_features_rel_people
+bundles:
+  node:
+    - news_features
+    - people
