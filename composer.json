@@ -85,11 +85,7 @@
         "drupal/pathauto": "^1.6",
         "drupal/responsive_favicons": "^1.4",
         "drupal/responsive_menu": "^2.6",
-<<<<<<< HEAD
-        "drupal/search_api": "^1.15",
-=======
         "drupal/search_api": "^1.16",
->>>>>>> 73d9e55cb444d9151c20803779f84902830e12e7
         "drupal/search_api_solr": "^3.9",
         "drupal/selective_better_exposed_filters": "^1.0@beta",
         "drupal/slick": "2.0-rc4",
