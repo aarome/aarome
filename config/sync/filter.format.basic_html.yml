@@ -7,7 +7,6 @@ dependencies:
     - editor
     - linkit
     - media
-    - spamspan
 _core:
   default_config_hash: P8ddpAIKtawJDi5SzOwCzVnnNYqONewSTJ6Xn0dW_aQ
 name: 'Basic HTML'
@@ -97,19 +96,5 @@ filters:
     weight: -38
     settings:
       default_view_mode: default
-      allowed_media_types: {  }
       allowed_view_modes: {  }
-  filter_spamspan:
-    id: filter_spamspan
-    provider: spamspan
-    status: true
-    weight: -47
-    settings:
-      spamspan_at: ' [at] '
-      spamspan_use_graphic: '0'
-      spamspan_dot_enable: '0'
-      spamspan_dot: ' [dot] '
-      spamspan_use_form: '0'
-      spamspan_form_pattern: '<a href="%url?goto=%email">%displaytext</a>'
-      spamspan_form_default_url: contact
-      spamspan_form_default_displaytext: 'contact form'
+      allowed_media_types: {  }
