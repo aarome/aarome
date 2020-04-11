@@ -1,1197 +1,17 @@
-59:
-  id:
-    value: '59'
-  uuid:
-    value: 021f4163-e526-481b-80eb-1004696b99a1
-  langcode:
-    value: en
-  bundle:
-    value: menu_link_content
-  enabled:
-    value: '1'
-  title:
-    value: 'Institutional Archive'
-  description: false
-  menu_name:
-    value: footer
-  link:
-    uri: 'internal:/research/institutional-archive'
-    title: ''
-    options: {  }
-  external:
-    value: '0'
-  rediscover:
-    value: '1'
-  weight:
-    value: '-55'
-  expanded:
-    value: '0'
-  parent:
-    value: 'menu_link_content:937c071e-e765-4f8a-8150-0ab1b3daca79'
-  changed:
-    value: '1548735099'
-  default_langcode:
-    value: '1'
-  content_translation_source:
-    value: und
-  content_translation_outdated:
-    value: '0'
-  content_translation_uid:
-    target_id: '1'
-  content_translation_status:
-    value: '1'
-  content_translation_created:
-    value: '1534360544'
-30:
-  id:
-    value: '30'
-  uuid:
-    value: 07534716-a3e0-42d7-9d48-fd6bb54165b2
-  langcode:
-    value: en
-  bundle:
-    value: menu_link_content
-  enabled:
-    value: '1'
-  title:
-    value: Staff
-  description: false
-  menu_name:
-    value: footer
-  link:
-    uri: 'internal:/about/staff'
-    title: ''
-    options: {  }
-  external:
-    value: '0'
-  rediscover:
-    value: '1'
-  weight:
-    value: '-56'
-  expanded:
-    value: '0'
-  parent:
-    value: 'menu_link_content:c2b0e763-c626-4481-bf34-988f9346f3b1'
-  changed:
-    value: '1548734170'
-  default_langcode:
-    value: '1'
-  content_translation_source:
-    value: und
-  content_translation_outdated:
-    value: '0'
-  content_translation_uid:
-    target_id: '1'
-  content_translation_status:
-    value: '1'
-  content_translation_created:
-    value: '1534349763'
-46:
-  id:
-    value: '46'
-  uuid:
-    value: 08ed7f18-7329-4940-8d4d-9e4d55a09724
-  langcode:
-    value: en
-  bundle:
-    value: menu_link_content
-  enabled:
-    value: '1'
-  title:
-    value: News
-  description: false
-  menu_name:
-    value: footer
-  link:
-    uri: 'internal:/news'
-    title: ''
-    options: {  }
-  external:
-    value: '0'
-  rediscover:
-    value: '1'
-  weight:
-    value: '-54'
-  expanded:
-    value: '1'
-  parent: false
-  changed:
-    value: '1538425294'
-  default_langcode:
-    value: '1'
-  content_translation_source:
-    value: und
-  content_translation_outdated:
-    value: '0'
-  content_translation_uid:
-    target_id: '1'
-  content_translation_status:
-    value: '1'
-  content_translation_created:
-    value: '1534359099'
-37:
-  id:
-    value: '37'
-  uuid:
-    value: 0b3bff36-1937-42c2-b99a-0f140dafeff9
-  langcode:
-    value: en
-  bundle:
-    value: menu_link_content
-  enabled:
-    value: '1'
-  title:
-    value: Events
-  description: false
-  menu_name:
-    value: footer
-  link:
-    uri: 'internal:/events'
-    title: ''
-    options: {  }
-  external:
-    value: '0'
-  rediscover:
-    value: '1'
-  weight:
-    value: '-55'
-  expanded:
-    value: '1'
-  parent: false
-  changed:
-    value: '1538425294'
-  default_langcode:
-    value: '1'
-  content_translation_source:
-    value: und
-  content_translation_outdated:
-    value: '0'
-  content_translation_uid:
-    target_id: '1'
-  content_translation_status:
-    value: '1'
-  content_translation_created:
-    value: '1534358718'
-39:
-  id:
-    value: '39'
-  uuid:
-    value: 0ee0015a-52ac-4dcb-b931-ac93b75740e7
-  langcode:
-    value: en
-  bundle:
-    value: menu_link_content
-  enabled:
-    value: '1'
-  title:
-    value: Watch
-  description: false
-  menu_name:
-    value: footer
-  link:
-    uri: 'internal:/events/watch'
-    title: ''
-    options: {  }
-  external:
-    value: '0'
-  rediscover:
-    value: '1'
-  weight:
-    value: '-58'
-  expanded:
-    value: '0'
-  parent:
-    value: 'menu_link_content:0b3bff36-1937-42c2-b99a-0f140dafeff9'
-  changed:
-    value: '1548735273'
-  default_langcode:
-    value: '1'
-  content_translation_source:
-    value: und
-  content_translation_outdated:
-    value: '0'
-  content_translation_uid:
-    target_id: '1'
-  content_translation_status:
-    value: '1'
-  content_translation_created:
-    value: '1534358847'
-60:
-  id:
-    value: '60'
-  uuid:
-    value: 0ef8bdc9-4852-4b98-9246-b02b244fdd35
-  langcode:
-    value: en
-  bundle:
-    value: menu_link_content
-  enabled:
-    value: '1'
-  title:
-    value: Archaeology
-  description: false
-  menu_name:
-    value: footer
-  link:
-    uri: 'internal:/research/archaeology'
-    title: ''
-    options: {  }
-  external:
-    value: '0'
-  rediscover:
-    value: '1'
-  weight:
-    value: '-54'
-  expanded:
-    value: '0'
-  parent:
-    value: 'menu_link_content:937c071e-e765-4f8a-8150-0ab1b3daca79'
-  changed:
-    value: '1548735099'
-  default_langcode:
-    value: '1'
-  content_translation_source:
-    value: und
-  content_translation_outdated:
-    value: '0'
-  content_translation_uid:
-    target_id: '1'
-  content_translation_status:
-    value: '1'
-  content_translation_created:
-    value: '1534360587'
-83:
-  id:
-    value: '83'
-  uuid:
-    value: 122121e8-ea55-41e3-9446-140ad6821aca
-  langcode:
-    value: en
-  bundle:
-    value: menu_link_content
-  enabled:
-    value: '1'
-  title:
-    value: Shop
-  description: false
-  menu_name:
-    value: footer
-  link:
-    uri: 'https://shop.aarome.org/'
-    title: ''
-    options: {  }
-  external:
-    value: '0'
-  rediscover:
-    value: '0'
-  weight:
-    value: '-61'
-  expanded:
-    value: '0'
-  parent:
-    value: 'menu_link_content:22906eec-3031-4408-a3be-d191cbf0de06'
-  changed:
-    value: '1548735493'
-  default_langcode:
-    value: '1'
-  content_translation_source:
-    value: und
-  content_translation_outdated:
-    value: '0'
-  content_translation_uid:
-    target_id: '1'
-  content_translation_status:
-    value: '1'
-  content_translation_created:
-    value: '1537560479'
-67:
-  id:
-    value: '67'
-  uuid:
-    value: 160e28c2-c2bb-4899-abda-74028e619c62
-  langcode:
-    value: en
-  bundle:
-    value: menu_link_content
-  enabled:
-    value: '1'
-  title:
-    value: 'Affiliated Fellows'
-  description: false
-  menu_name:
-    value: footer
-  link:
-    uri: 'internal:/people/affiliated-fellows'
-    title: ''
-    options: {  }
-  external:
-    value: '0'
-  rediscover:
-    value: '1'
-  weight:
-    value: '-57'
-  expanded:
-    value: '0'
-  parent:
-    value: 'menu_link_content:fe223a34-80cd-4624-8850-918e9cf28999'
-  changed:
-    value: '1548735099'
-  default_langcode:
-    value: '1'
-  content_translation_source:
-    value: und
-  content_translation_outdated:
-    value: '0'
-  content_translation_uid:
-    target_id: '1'
-  content_translation_status:
-    value: '1'
-  content_translation_created:
-    value: '1534360951'
-51:
-  id:
-    value: '51'
-  uuid:
-    value: 1a6e0622-eb50-498e-af16-6cde0285e055
-  langcode:
-    value: en
-  bundle:
-    value: menu_link_content
-  enabled:
-    value: '1'
-  title:
-    value: 'Submit News'
-  description: false
-  menu_name:
-    value: footer
-  link:
-    uri: 'internal:/news/submit'
-    title: ''
-    options: {  }
-  external:
-    value: '0'
-  rediscover:
-    value: '1'
-  weight:
-    value: '-57'
-  expanded:
-    value: '0'
-  parent:
-    value: 'menu_link_content:08ed7f18-7329-4940-8d4d-9e4d55a09724'
-  changed:
-    value: '1548735099'
-  default_langcode:
-    value: '1'
-  content_translation_source:
-    value: und
-  content_translation_outdated:
-    value: '0'
-  content_translation_uid:
-    target_id: '1'
-  content_translation_status:
-    value: '1'
-  content_translation_created:
-    value: '1534359233'
-40:
-  id:
-    value: '40'
-  uuid:
-    value: 1d7e6a1f-42f5-4be9-a778-ca6f095b28c8
-  langcode:
-    value: en
-  bundle:
-    value: menu_link_content
-  enabled:
-    value: '1'
-  title:
-    value: Donate
-  description: false
-  menu_name:
-    value: footer
-  link:
-    uri: 'internal:/support/donate'
-    title: ''
-    options: {  }
-  external:
-    value: '0'
-  rediscover:
-    value: '1'
-  weight:
-    value: '-67'
-  expanded:
-    value: '0'
-  parent:
-    value: 'menu_link_content:22906eec-3031-4408-a3be-d191cbf0de06'
-  changed:
-    value: '1548735493'
-  default_langcode:
-    value: '1'
-  content_translation_source:
-    value: und
-  content_translation_outdated:
-    value: '0'
-  content_translation_uid:
-    target_id: '1'
-  content_translation_status:
-    value: '1'
-  content_translation_created:
-    value: '1534358918'
-45:
-  id:
-    value: '45'
-  uuid:
-    value: 22906eec-3031-4408-a3be-d191cbf0de06
-  langcode:
-    value: en
-  bundle:
-    value: menu_link_content
-  enabled:
-    value: '1'
-  title:
-    value: Support
-  description: false
-  menu_name:
-    value: footer
-  link:
-    uri: 'internal:/support'
-    title: ''
-    options: {  }
-  external:
-    value: '0'
-  rediscover:
-    value: '1'
-  weight:
-    value: '-51'
-  expanded:
-    value: '1'
-  parent: false
-  changed:
-    value: '1538425294'
-  default_langcode:
-    value: '1'
-  content_translation_source:
-    value: und
-  content_translation_outdated:
-    value: '0'
-  content_translation_uid:
-    target_id: '1'
-  content_translation_status:
-    value: '1'
-  content_translation_created:
-    value: '1534359061'
-36:
-  id:
-    value: '36'
-  uuid:
-    value: 236a9418-f7ba-4800-870c-46094cd6d357
-  langcode:
-    value: en
-  bundle:
-    value: menu_link_content
-  enabled:
-    value: '1'
-  title:
-    value: Apply
-  description: false
-  menu_name:
-    value: footer
-  link:
-    uri: 'internal:/apply'
-    title: ''
-    options: {  }
-  external:
-    value: '0'
-  rediscover:
-    value: '1'
-  weight:
-    value: '-56'
-  expanded:
-    value: '1'
-  parent: false
-  changed:
-    value: '1538425294'
-  default_langcode:
-    value: '1'
-  content_translation_source:
-    value: und
-  content_translation_outdated:
-    value: '0'
-  content_translation_uid:
-    target_id: '1'
-  content_translation_status:
-    value: '1'
-  content_translation_created:
-    value: '1534356757'
-74:
-  id:
-    value: '74'
-  uuid:
-    value: 2afb51d3-232c-4092-9989-b6e1ab21b8ce
-  langcode:
-    value: en
-  bundle:
-    value: menu_link_content
-  enabled:
-    value: '1'
-  title:
-    value: 'Society of Fellows News'
-  description: false
-  menu_name:
-    value: footer
-  link:
-    uri: 'internal:/publications/society-of-fellows-news'
-    title: ''
-    options: {  }
-  external:
-    value: '0'
-  rediscover:
-    value: '1'
-  weight:
-    value: '-59'
-  expanded:
-    value: '0'
-  parent:
-    value: 'menu_link_content:bc30e759-deef-473f-8227-1111b610a1e6'
-  changed:
-    value: '1548735583'
-  default_langcode:
-    value: '1'
-  content_translation_source:
-    value: und
-  content_translation_outdated:
-    value: '0'
-  content_translation_uid:
-    target_id: '1'
-  content_translation_status:
-    value: '1'
-  content_translation_created:
-    value: '1534439217'
-50:
-  id:
-    value: '50'
-  uuid:
-    value: 2cab4fe6-b398-4633-b478-56a1197bc3bc
-  langcode:
-    value: en
-  bundle:
-    value: menu_link_content
-  enabled:
-    value: '1'
-  title:
-    value: 'Press Coverage'
-  description: false
-  menu_name:
-    value: footer
-  link:
-    uri: 'internal:/press/coverage'
-    title: ''
-    options: {  }
-  external:
-    value: '0'
-  rediscover:
-    value: '1'
-  weight:
-    value: '-56'
-  expanded:
-    value: '0'
-  parent:
-    value: 'menu_link_content:08ed7f18-7329-4940-8d4d-9e4d55a09724'
-  changed:
-    value: '1548735099'
-  default_langcode:
-    value: '1'
-  content_translation_source:
-    value: und
-  content_translation_outdated:
-    value: '0'
-  content_translation_uid:
-    target_id: '1'
-  content_translation_status:
-    value: '1'
-  content_translation_created:
-    value: '1534359212'
-95:
-  id:
-    value: '95'
-  uuid:
-    value: 3116b632-b3e1-4a82-ace9-407830651cd1
-  langcode:
-    value: en
-  bundle:
-    value: menu_link_content
-  enabled:
-    value: '1'
-  title:
-    value: Advisors
-  description: false
-  menu_name:
-    value: footer
-  link:
-    uri: 'internal:/people/advisors'
-    title: ''
-    options: {  }
-  external:
-    value: '0'
-  rediscover:
-    value: '1'
-  weight:
-    value: '-54'
-  expanded:
-    value: '0'
-  parent:
-    value: 'menu_link_content:fe223a34-80cd-4624-8850-918e9cf28999'
-  changed:
-    value: '1548735099'
-  default_langcode:
-    value: '1'
-  content_translation_source:
-    value: und
-  content_translation_outdated:
-    value: '0'
-  content_translation_uid:
-    target_id: '1'
-  content_translation_status:
-    value: '1'
-  content_translation_created:
-    value: '1548735012'
-96:
-  id:
-    value: '96'
-  uuid:
-    value: 37269092-d063-458a-aaff-86156c8d1b1c
-  langcode:
-    value: en
-  bundle:
-    value: menu_link_content
-  enabled:
-    value: '1'
-  title:
-    value: Series
-  description: false
-  menu_name:
-    value: footer
-  link:
-    uri: 'internal:/events/series'
-    title: ''
-    options: {  }
-  external:
-    value: '0'
-  rediscover:
-    value: '1'
-  weight:
-    value: '-59'
-  expanded:
-    value: '0'
-  parent:
-    value: 'menu_link_content:0b3bff36-1937-42c2-b99a-0f140dafeff9'
-  changed:
-    value: '1548735273'
-  default_langcode:
-    value: '1'
-  content_translation_source:
-    value: und
-  content_translation_outdated:
-    value: '0'
-  content_translation_uid:
-    target_id: '1'
-  content_translation_status:
-    value: '1'
-  content_translation_created:
-    value: '1548735264'
-70:
-  id:
-    value: '70'
-  uuid:
-    value: 372812e7-2f05-4dd0-9519-c43219c1e35a
-  langcode:
-    value: en
-  bundle:
-    value: menu_link_content
-  enabled:
-    value: '1'
-  title:
-    value: 'Exhibition Catalogues'
-  description: false
-  menu_name:
-    value: footer
-  link:
-    uri: 'internal:/publications/exhibition-catalogues'
-    title: ''
-    options: {  }
-  external:
-    value: '0'
-  rediscover:
-    value: '1'
-  weight:
-    value: '-66'
-  expanded:
-    value: '0'
-  parent:
-    value: 'menu_link_content:bc30e759-deef-473f-8227-1111b610a1e6'
-  changed:
-    value: '1548735583'
-  default_langcode:
-    value: '1'
-  content_translation_source:
-    value: und
-  content_translation_outdated:
-    value: '0'
-  content_translation_uid:
-    target_id: '1'
-  content_translation_status:
-    value: '1'
-  content_translation_created:
-    value: '1534439089'
-43:
-  id:
-    value: '43'
-  uuid:
-    value: 3c824e21-02be-440e-b03f-047ddc01f8e8
-  langcode:
-    value: en
-  bundle:
-    value: menu_link_content
-  enabled:
-    value: '1'
-  title:
-    value: 'Planned Giving'
-  description: false
-  menu_name:
-    value: footer
-  link:
-    uri: 'internal:/support/planned-giving'
-    title: ''
-    options: {  }
-  external:
-    value: '0'
-  rediscover:
-    value: '1'
-  weight:
-    value: '-63'
-  expanded:
-    value: '0'
-  parent:
-    value: 'menu_link_content:22906eec-3031-4408-a3be-d191cbf0de06'
-  changed:
-    value: '1548735493'
-  default_langcode:
-    value: '1'
-  content_translation_source:
-    value: und
-  content_translation_outdated:
-    value: '0'
-  content_translation_uid:
-    target_id: '1'
-  content_translation_status:
-    value: '1'
-  content_translation_created:
-    value: '1534359015'
-54:
-  id:
-    value: '54'
-  uuid:
-    value: 41c77455-0e12-4a73-a0fa-5613e0c3ea2e
-  langcode:
-    value: en
-  bundle:
-    value: menu_link_content
-  enabled:
-    value: '1'
-  title:
-    value: 'Digital Humanities Center'
-  description: false
-  menu_name:
-    value: footer
-  link:
-    uri: 'https://dhc.aarome.org'
-    title: ''
-    options: {  }
-  external:
-    value: '0'
-  rediscover:
-    value: '0'
-  weight:
-    value: '-59'
-  expanded:
-    value: '0'
-  parent:
-    value: 'menu_link_content:937c071e-e765-4f8a-8150-0ab1b3daca79'
-  changed:
-    value: '1538425294'
-  default_langcode:
-    value: '1'
-  content_translation_source:
-    value: und
-  content_translation_outdated:
-    value: '0'
-  content_translation_uid:
-    target_id: '1'
-  content_translation_status:
-    value: '1'
-  content_translation_created:
-    value: '1534360399'
-61:
-  id:
-    value: '61'
-  uuid:
-    value: 4a50c814-0320-4f96-9501-ddcca1fbddfb
-  langcode:
-    value: en
-  bundle:
-    value: menu_link_content
-  enabled:
-    value: '1'
-  title:
-    value: 'Society of Fellows'
-  description: false
-  menu_name:
-    value: footer
-  link:
-    uri: 'internal:/society-of-fellows'
-    title: ''
-    options: {  }
-  external:
-    value: '0'
-  rediscover:
-    value: '1'
-  weight:
-    value: '-53'
-  expanded:
-    value: '0'
-  parent:
-    value: 'menu_link_content:fe223a34-80cd-4624-8850-918e9cf28999'
-  changed:
-    value: '1548735099'
-  default_langcode:
-    value: '1'
-  content_translation_source:
-    value: und
-  content_translation_outdated:
-    value: '0'
-  content_translation_uid:
-    target_id: '1'
-  content_translation_status:
-    value: '1'
-  content_translation_created:
-    value: '1534360770'
-97:
-  id:
-    value: '97'
-  uuid:
-    value: 588db349-e161-49b2-9f6c-37d3aa96cf25
-  langcode:
-    value: en
-  bundle:
-    value: menu_link_content
-  enabled:
-    value: '1'
-  title:
-    value: 'Academic Programs'
-  description: false
-  menu_name:
-    value: footer
-  link:
-    uri: 'internal:/apply/academic-programs'
-    title: ''
-    options: {  }
-  external:
-    value: '0'
-  rediscover:
-    value: '1'
-  weight:
-    value: '-63'
-  expanded:
-    value: '0'
-  parent:
-    value: 'menu_link_content:236a9418-f7ba-4800-870c-46094cd6d357'
-  changed:
-    value: '1548735583'
-  default_langcode:
-    value: '1'
-  content_translation_source:
-    value: und
-  content_translation_outdated:
-    value: '0'
-  content_translation_uid:
-    target_id: '1'
-  content_translation_status:
-    value: '1'
-  content_translation_created:
-    value: '1548735297'
-58:
-  id:
-    value: '58'
-  uuid:
-    value: 5a0f130d-56a5-41db-8675-53cb939937a6
-  langcode:
-    value: en
-  bundle:
-    value: menu_link_content
-  enabled:
-    value: '1'
-  title:
-    value: 'Photographic Archive'
-  description: false
-  menu_name:
-    value: footer
-  link:
-    uri: 'internal:/research/photographic-archive'
-    title: ''
-    options: {  }
-  external:
-    value: '0'
-  rediscover:
-    value: '1'
-  weight:
-    value: '-56'
-  expanded:
-    value: '0'
-  parent:
-    value: 'menu_link_content:937c071e-e765-4f8a-8150-0ab1b3daca79'
-  changed:
-    value: '1548735099'
-  default_langcode:
-    value: '1'
-  content_translation_source:
-    value: und
-  content_translation_outdated:
-    value: '0'
-  content_translation_uid:
-    target_id: '1'
-  content_translation_status:
-    value: '1'
-  content_translation_created:
-    value: '1534360524'
-101:
-  id:
-    value: '101'
-  uuid:
-    value: 620b1954-be34-4862-a0bd-332113394da6
-  langcode:
-    value: en
-  bundle:
-    value: menu_link_content
-  enabled:
-    value: '1'
-  title:
-    value: 'Supplements to the Memoirs'
-  description: false
-  menu_name:
-    value: footer
-  link:
-    uri: 'internal:/publications/supplements-memoirs'
-    title: ''
-    options: {  }
-  external:
-    value: '0'
-  rediscover:
-    value: '1'
-  weight:
-    value: '-62'
-  expanded:
-    value: '0'
-  parent:
-    value: 'menu_link_content:bc30e759-deef-473f-8227-1111b610a1e6'
-  changed:
-    value: '1548735583'
-  default_langcode:
-    value: '1'
-  content_translation_source:
-    value: und
-  content_translation_outdated:
-    value: '0'
-  content_translation_uid:
-    target_id: '1'
-  content_translation_status:
-    value: '1'
-  content_translation_created:
-    value: '1548735439'
-57:
-  id:
-    value: '57'
-  uuid:
-    value: 621e6db6-69cd-42eb-82fe-a20c83ddd497
-  langcode:
-    value: en
-  bundle:
-    value: menu_link_content
-  enabled:
-    value: '1'
-  title:
-    value: 'Special Collections'
-  description: false
-  menu_name:
-    value: footer
-  link:
-    uri: 'internal:/research/special-collections'
-    title: ''
-    options: {  }
-  external:
-    value: '0'
-  rediscover:
-    value: '1'
-  weight:
-    value: '-57'
-  expanded:
-    value: '0'
-  parent:
-    value: 'menu_link_content:937c071e-e765-4f8a-8150-0ab1b3daca79'
-  changed:
-    value: '1548735099'
-  default_langcode:
-    value: '1'
-  content_translation_source:
-    value: und
-  content_translation_outdated:
-    value: '0'
-  content_translation_uid:
-    target_id: '1'
-  content_translation_status:
-    value: '1'
-  content_translation_created:
-    value: '1534360485'
-27:
-  id:
-    value: '27'
-  uuid:
-    value: 6cd32803-f203-4139-bc79-8677bfe9efdf
-  langcode:
-    value: en
-  bundle:
-    value: menu_link_content
-  enabled:
-    value: '1'
-  title:
-    value: Place
-  description: false
-  menu_name:
-    value: footer
-  link:
-    uri: 'internal:/about/place'
-    title: ''
-    options: {  }
-  external:
-    value: '0'
-  rediscover:
-    value: '1'
-  weight:
-    value: '-58'
-  expanded:
-    value: '0'
-  parent:
-    value: 'menu_link_content:c2b0e763-c626-4481-bf34-988f9346f3b1'
-  changed:
-    value: '1548734170'
-  default_langcode:
-    value: '1'
-  content_translation_source:
-    value: und
-  content_translation_outdated:
-    value: '0'
-  content_translation_uid:
-    target_id: '1'
-  content_translation_status:
-    value: '1'
-  content_translation_created:
-    value: '1534349666'
-44:
-  id:
-    value: '44'
-  uuid:
-    value: 6e08241c-a6d5-48b9-ae15-0a4b07ca2ca2
-  langcode:
-    value: en
-  bundle:
-    value: menu_link_content
-  enabled:
-    value: '1'
-  title:
-    value: Corporate
-  description: false
-  menu_name:
-    value: footer
-  link:
-    uri: 'internal:/support/corporate'
-    title: ''
-    options: {  }
-  external:
-    value: '0'
-  rediscover:
-    value: '1'
-  weight:
-    value: '-62'
-  expanded:
-    value: '0'
-  parent:
-    value: 'menu_link_content:22906eec-3031-4408-a3be-d191cbf0de06'
-  changed:
-    value: '1548735493'
-  default_langcode:
-    value: '1'
-  content_translation_source:
-    value: und
-  content_translation_outdated:
-    value: '0'
-  content_translation_uid:
-    target_id: '1'
-  content_translation_status:
-    value: '1'
-  content_translation_created:
-    value: '1534359036'
-88:
-  id:
-    value: '88'
-  uuid:
-    value: 71cecfd2-9149-44fa-985a-2dfbc8855afe
-  langcode:
-    value: en
-  bundle:
-    value: menu_link_content
-  enabled:
-    value: '0'
-  title:
-    value: 'American Academy in Rome'
-  description: false
-  menu_name:
-    value: footer
-  link:
-    uri: 'internal:/'
-    title: ''
-    options:
-      attributes:
-        class: home
-  external:
-    value: '0'
-  rediscover:
-    value: '1'
-  weight:
-    value: '-59'
-  expanded:
-    value: '0'
-  parent: false
-  changed:
-    value: '1539982693'
-  default_langcode:
-    value: '1'
-  content_translation_source:
-    value: und
-  content_translation_outdated:
-    value: '0'
-  content_translation_uid:
-    target_id: '1'
-  content_translation_status:
-    value: '1'
-  content_translation_created:
-    value: '1538425273'
 3:
   id:
     value: '3'
   uuid:
     value: 7a23f876-c375-4a60-adf5-d73dcd2e2f92
+  revision_id:
+    value: '3'
   langcode:
     value: en
   bundle:
     value: menu_link_content
+  revision_created: false
+  revision_user: false
+  revision_log_message: false
   enabled:
     value: '1'
   title:
@@ -1217,6 +37,11 @@
     value: '1548735583'
   default_langcode:
     value: '1'
+  revision_default:
+    value: '1'
+  revision_translation_affected:
+    value: '1'
+  metatag: false
   content_translation_source:
     value: und
   content_translation_outdated:
@@ -1227,1246 +52,20 @@
     value: '1'
   content_translation_created:
     value: '1533164571'
-41:
-  id:
-    value: '41'
-  uuid:
-    value: 7a26d7ea-97be-4e12-9363-ab09b62e6131
-  langcode:
-    value: en
-  bundle:
-    value: menu_link_content
-  enabled:
-    value: '1'
-  title:
-    value: 'Join or Renew'
-  description: false
-  menu_name:
-    value: footer
-  link:
-    uri: 'internal:/support/join-renew'
-    title: ''
-    options: {  }
-  external:
-    value: '0'
-  rediscover:
-    value: '1'
-  weight:
-    value: '-66'
-  expanded:
-    value: '0'
-  parent:
-    value: 'menu_link_content:22906eec-3031-4408-a3be-d191cbf0de06'
-  changed:
-    value: '1548735493'
-  default_langcode:
-    value: '1'
-  content_translation_source:
-    value: und
-  content_translation_outdated:
-    value: '0'
-  content_translation_uid:
-    target_id: '1'
-  content_translation_status:
-    value: '1'
-  content_translation_created:
-    value: '1534358954'
-31:
-  id:
-    value: '31'
-  uuid:
-    value: 7dc0c01e-7fa2-4f09-a1f2-de53dfcf1d16
-  langcode:
-    value: en
-  bundle:
-    value: menu_link_content
-  enabled:
-    value: '1'
-  title:
-    value: Board
-  description: false
-  menu_name:
-    value: footer
-  link:
-    uri: 'internal:/about/board-trustees'
-    title: ''
-    options: {  }
-  external:
-    value: '0'
-  rediscover:
-    value: '1'
-  weight:
-    value: '-57'
-  expanded:
-    value: '0'
-  parent:
-    value: 'menu_link_content:c2b0e763-c626-4481-bf34-988f9346f3b1'
-  changed:
-    value: '1548734170'
-  default_langcode:
-    value: '1'
-  content_translation_source:
-    value: und
-  content_translation_outdated:
-    value: '0'
-  content_translation_uid:
-    target_id: '1'
-  content_translation_status:
-    value: '1'
-  content_translation_created:
-    value: '1534349841'
-9:
-  id:
-    value: '9'
-  uuid:
-    value: 7f909959-b106-44db-ba88-0957a1c7e1a4
-  langcode:
-    value: en
-  bundle:
-    value: menu_link_content
-  enabled:
-    value: '1'
-  title:
-    value: 'Rome Sustainable Food Project'
-  description: false
-  menu_name:
-    value: footer
-  link:
-    uri: 'internal:/apply/rome-sustainable-food-project'
-    title: ''
-    options: {  }
-  external:
-    value: '0'
-  rediscover:
-    value: '1'
-  weight:
-    value: '-62'
-  expanded:
-    value: '0'
-  parent:
-    value: 'menu_link_content:236a9418-f7ba-4800-870c-46094cd6d357'
-  changed:
-    value: '1548735583'
-  default_langcode:
-    value: '1'
-  content_translation_source:
-    value: und
-  content_translation_outdated:
-    value: '0'
-  content_translation_uid:
-    target_id: '1'
-  content_translation_status:
-    value: '1'
-  content_translation_created:
-    value: '1533164755'
-56:
-  id:
-    value: '56'
-  uuid:
-    value: 82a72c4b-f550-43b2-b71a-75c51e3df5d5
-  langcode:
-    value: en
-  bundle:
-    value: menu_link_content
-  enabled:
-    value: '1'
-  title:
-    value: Resources
-  description: false
-  menu_name:
-    value: footer
-  link:
-    uri: 'internal:/research/resources/'
-    title: ''
-    options: {  }
-  external:
-    value: '0'
-  rediscover:
-    value: '1'
-  weight:
-    value: '-58'
-  expanded:
-    value: '0'
-  parent:
-    value: 'menu_link_content:937c071e-e765-4f8a-8150-0ab1b3daca79'
-  changed:
-    value: '1548735099'
-  default_langcode:
-    value: '1'
-  content_translation_source:
-    value: und
-  content_translation_outdated:
-    value: '0'
-  content_translation_uid:
-    target_id: '1'
-  content_translation_status:
-    value: '1'
-  content_translation_created:
-    value: '1534360450'
-65:
-  id:
-    value: '65'
-  uuid:
-    value: 84b4cea5-3b8c-46c9-8144-7aa1a4849e5b
-  langcode:
-    value: en
-  bundle:
-    value: menu_link_content
-  enabled:
-    value: '1'
-  title:
-    value: Residents
-  description: false
-  menu_name:
-    value: footer
-  link:
-    uri: 'internal:/people/residents'
-    title: ''
-    options: {  }
-  external:
-    value: '0'
-  rediscover:
-    value: '1'
-  weight:
-    value: '-58'
-  expanded:
-    value: '0'
-  parent:
-    value: 'menu_link_content:fe223a34-80cd-4624-8850-918e9cf28999'
-  changed:
-    value: '1548735099'
-  default_langcode:
-    value: '1'
-  content_translation_source:
-    value: und
-  content_translation_outdated:
-    value: '0'
-  content_translation_uid:
-    target_id: '1'
-  content_translation_status:
-    value: '1'
-  content_translation_created:
-    value: '1534360920'
-71:
-  id:
-    value: '71'
-  uuid:
-    value: 88428b3f-c224-4459-a5d8-ea54a00034b3
-  langcode:
-    value: en
-  bundle:
-    value: menu_link_content
-  enabled:
-    value: '1'
-  title:
-    value: 'Memoirs of the AAR'
-  description: false
-  menu_name:
-    value: footer
-  link:
-    uri: 'internal:/publications/memoirs'
-    title: ''
-    options: {  }
-  external:
-    value: '0'
-  rediscover:
-    value: '1'
-  weight:
-    value: '-63'
-  expanded:
-    value: '0'
-  parent:
-    value: 'menu_link_content:bc30e759-deef-473f-8227-1111b610a1e6'
-  changed:
-    value: '1548735583'
-  default_langcode:
-    value: '1'
-  content_translation_source:
-    value: und
-  content_translation_outdated:
-    value: '0'
-  content_translation_uid:
-    target_id: '1'
-  content_translation_status:
-    value: '1'
-  content_translation_created:
-    value: '1534439114'
-66:
-  id:
-    value: '66'
-  uuid:
-    value: 8bc92c04-01e0-4538-afa0-eb2cff025ccf
-  langcode:
-    value: en
-  bundle:
-    value: menu_link_content
-  enabled:
-    value: '1'
-  title:
-    value: 'Visiting Artists & Scholars'
-  description: false
-  menu_name:
-    value: footer
-  link:
-    uri: 'internal:/people/visiting-artists-and-scholars'
-    title: ''
-    options: {  }
-  external:
-    value: '0'
-  rediscover:
-    value: '1'
-  weight:
-    value: '-56'
-  expanded:
-    value: '0'
-  parent:
-    value: 'menu_link_content:fe223a34-80cd-4624-8850-918e9cf28999'
-  changed:
-    value: '1548735099'
-  default_langcode:
-    value: '1'
-  content_translation_source:
-    value: und
-  content_translation_outdated:
-    value: '0'
-  content_translation_uid:
-    target_id: '1'
-  content_translation_status:
-    value: '1'
-  content_translation_created:
-    value: '1534360937'
-63:
-  id:
-    value: '63'
-  uuid:
-    value: 8c458558-1336-4f12-9573-eae1efc423f0
-  langcode:
-    value: en
-  bundle:
-    value: menu_link_content
-  enabled:
-    value: '1'
-  title:
-    value: 'Rome Prize Fellows'
-  description: false
-  menu_name:
-    value: footer
-  link:
-    uri: 'internal:/people/rome-prize-fellows'
-    title: ''
-    options: {  }
-  external:
-    value: '0'
-  rediscover:
-    value: '1'
-  weight:
-    value: '-60'
-  expanded:
-    value: '0'
-  parent:
-    value: 'menu_link_content:fe223a34-80cd-4624-8850-918e9cf28999'
-  changed:
-    value: '1548735099'
-  default_langcode:
-    value: '1'
-  content_translation_source:
-    value: und
-  content_translation_outdated:
-    value: '0'
-  content_translation_uid:
-    target_id: '1'
-  content_translation_status:
-    value: '1'
-  content_translation_created:
-    value: '1534360892'
-73:
-  id:
-    value: '73'
-  uuid:
-    value: 90a9d059-7289-4e16-b5ff-ab02d487db32
-  langcode:
-    value: en
-  bundle:
-    value: menu_link_content
-  enabled:
-    value: '1'
-  title:
-    value: Cookbooks
-  description: false
-  menu_name:
-    value: footer
-  link:
-    uri: 'internal:/publications/cookbooks'
-    title: ''
-    options: {  }
-  external:
-    value: '0'
-  rediscover:
-    value: '1'
-  weight:
-    value: '-60'
-  expanded:
-    value: '0'
-  parent:
-    value: 'menu_link_content:bc30e759-deef-473f-8227-1111b610a1e6'
-  changed:
-    value: '1548735583'
-  default_langcode:
-    value: '1'
-  content_translation_source:
-    value: und
-  content_translation_outdated:
-    value: '0'
-  content_translation_uid:
-    target_id: '1'
-  content_translation_status:
-    value: '1'
-  content_translation_created:
-    value: '1534439189'
-42:
-  id:
-    value: '42'
-  uuid:
-    value: 9163a77c-8bdf-47bd-b4fc-fb1c52b80285
-  langcode:
-    value: en
-  bundle:
-    value: menu_link_content
-  enabled:
-    value: '1'
-  title:
-    value: Galas
-  description: false
-  menu_name:
-    value: footer
-  link:
-    uri: 'internal:/support/galas'
-    title: ''
-    options: {  }
-  external:
-    value: '0'
-  rediscover:
-    value: '1'
-  weight:
-    value: '-65'
-  expanded:
-    value: '0'
-  parent:
-    value: 'menu_link_content:22906eec-3031-4408-a3be-d191cbf0de06'
-  changed:
-    value: '1548735493'
-  default_langcode:
-    value: '1'
-  content_translation_source:
-    value: und
-  content_translation_outdated:
-    value: '0'
-  content_translation_uid:
-    target_id: '1'
-  content_translation_status:
-    value: '1'
-  content_translation_created:
-    value: '1534358989'
-52:
-  id:
-    value: '52'
-  uuid:
-    value: 937c071e-e765-4f8a-8150-0ab1b3daca79
-  langcode:
-    value: en
-  bundle:
-    value: menu_link_content
-  enabled:
-    value: '1'
-  title:
-    value: Research
-  description: false
-  menu_name:
-    value: footer
-  link:
-    uri: 'internal:/research'
-    title: ''
-    options: {  }
-  external:
-    value: '0'
-  rediscover:
-    value: '1'
-  weight:
-    value: '-53'
-  expanded:
-    value: '1'
-  parent: false
-  changed:
-    value: '1538425294'
-  default_langcode:
-    value: '1'
-  content_translation_source:
-    value: und
-  content_translation_outdated:
-    value: '0'
-  content_translation_uid:
-    target_id: '1'
-  content_translation_status:
-    value: '1'
-  content_translation_created:
-    value: '1534359281'
-5:
-  id:
-    value: '5'
-  uuid:
-    value: 9df28439-ee76-4434-9237-fca2afdb365d
-  langcode:
-    value: en
-  bundle:
-    value: menu_link_content
-  enabled:
-    value: '1'
-  title:
-    value: 'Italian Fellowships'
-  description: false
-  menu_name:
-    value: footer
-  link:
-    uri: 'internal:/apply/italian-fellowships'
-    title: ''
-    options: {  }
-  external:
-    value: '0'
-  rediscover:
-    value: '1'
-  weight:
-    value: '-66'
-  expanded:
-    value: '0'
-  parent:
-    value: 'menu_link_content:236a9418-f7ba-4800-870c-46094cd6d357'
-  changed:
-    value: '1548735583'
-  default_langcode:
-    value: '1'
-  content_translation_source:
-    value: und
-  content_translation_outdated:
-    value: '0'
-  content_translation_uid:
-    target_id: '1'
-  content_translation_status:
-    value: '1'
-  content_translation_created:
-    value: '1533164614'
-75:
-  id:
-    value: '75'
-  uuid:
-    value: abb3f0b4-f9e8-4579-9c99-d2a2650fc34e
-  langcode:
-    value: en
-  bundle:
-    value: menu_link_content
-  enabled:
-    value: '1'
-  title:
-    value: Exhibitions
-  description: false
-  menu_name:
-    value: footer
-  link:
-    uri: 'internal:/events/exhibitions'
-    title: ''
-    options: {  }
-  external:
-    value: '0'
-  rediscover:
-    value: '1'
-  weight:
-    value: '-60'
-  expanded:
-    value: '0'
-  parent:
-    value: 'menu_link_content:0b3bff36-1937-42c2-b99a-0f140dafeff9'
-  changed:
-    value: '1548735273'
-  default_langcode:
-    value: '1'
-  content_translation_source:
-    value: und
-  content_translation_outdated:
-    value: '0'
-  content_translation_uid:
-    target_id: '1'
-  content_translation_status:
-    value: '1'
-  content_translation_created:
-    value: '1534439277'
-78:
-  id:
-    value: '78'
-  uuid:
-    value: ac367dd9-739b-4ece-8f6a-da19d43bfbdb
-  langcode:
-    value: en
-  bundle:
-    value: menu_link_content
-  enabled:
-    value: '0'
-  title:
-    value: 'Visiting Scholars'
-  description: false
-  menu_name:
-    value: footer
-  link:
-    uri: 'internal:/people/visiting-scholars'
-    title: ''
-    options: {  }
-  external:
-    value: '0'
-  rediscover:
-    value: '1'
-  weight:
-    value: '-51'
-  expanded:
-    value: '0'
-  parent:
-    value: 'menu_link_content:fe223a34-80cd-4624-8850-918e9cf28999'
-  changed:
-    value: '1548735099'
-  default_langcode:
-    value: '1'
-  content_translation_source:
-    value: und
-  content_translation_outdated:
-    value: '0'
-  content_translation_uid:
-    target_id: '1'
-  content_translation_status:
-    value: '1'
-  content_translation_created:
-    value: '1534450102'
-55:
-  id:
-    value: '55'
-  uuid:
-    value: b1f18b53-48c0-4f0f-8f71-9687a953ef58
-  langcode:
-    value: en
-  bundle:
-    value: menu_link_content
-  enabled:
-    value: '1'
-  title:
-    value: Library
-  description: false
-  menu_name:
-    value: footer
-  link:
-    uri: 'internal:/research/library'
-    title: ''
-    options: {  }
-  external:
-    value: '0'
-  rediscover:
-    value: '1'
-  weight:
-    value: '-60'
-  expanded:
-    value: '0'
-  parent:
-    value: 'menu_link_content:937c071e-e765-4f8a-8150-0ab1b3daca79'
-  changed:
-    value: '1548735099'
-  default_langcode:
-    value: '1'
-  content_translation_source:
-    value: und
-  content_translation_outdated:
-    value: '0'
-  content_translation_uid:
-    target_id: '1'
-  content_translation_status:
-    value: '1'
-  content_translation_created:
-    value: '1534360426'
-102:
-  id:
-    value: '102'
-  uuid:
-    value: b22ae1b4-3d01-4bc2-b3f3-622d9edc8726
-  langcode:
-    value: en
-  bundle:
-    value: menu_link_content
-  enabled:
-    value: '1'
-  title:
-    value: 'Support Opportunities'
-  description: false
-  menu_name:
-    value: footer
-  link:
-    uri: 'internal:/support/opportunities'
-    title: ''
-    options: {  }
-  external:
-    value: '0'
-  rediscover:
-    value: '1'
-  weight:
-    value: '-64'
-  expanded:
-    value: '0'
-  parent:
-    value: 'menu_link_content:22906eec-3031-4408-a3be-d191cbf0de06'
-  changed:
-    value: '1548735493'
-  default_langcode:
-    value: '1'
-  content_translation_source:
-    value: und
-  content_translation_outdated:
-    value: '0'
-  content_translation_uid:
-    target_id: '1'
-  content_translation_status:
-    value: '1'
-  content_translation_created:
-    value: '1548735478'
-53:
-  id:
-    value: '53'
-  uuid:
-    value: bc30e759-deef-473f-8227-1111b610a1e6
-  langcode:
-    value: en
-  bundle:
-    value: menu_link_content
-  enabled:
-    value: '1'
-  title:
-    value: Publications
-  description: false
-  menu_name:
-    value: footer
-  link:
-    uri: 'internal:/publications'
-    title: ''
-    options: {  }
-  external:
-    value: '0'
-  rediscover:
-    value: '1'
-  weight:
-    value: '-52'
-  expanded:
-    value: '1'
-  parent: false
-  changed:
-    value: '1538425294'
-  default_langcode:
-    value: '1'
-  content_translation_source:
-    value: und
-  content_translation_outdated:
-    value: '0'
-  content_translation_uid:
-    target_id: '1'
-  content_translation_status:
-    value: '1'
-  content_translation_created:
-    value: '1534359300'
-49:
-  id:
-    value: '49'
-  uuid:
-    value: bc802301-6fac-466a-ada5-39d77c91284e
-  langcode:
-    value: en
-  bundle:
-    value: menu_link_content
-  enabled:
-    value: '1'
-  title:
-    value: 'Press Releases'
-  description: false
-  menu_name:
-    value: footer
-  link:
-    uri: 'internal:/news/press-releases'
-    title: ''
-    options: {  }
-  external:
-    value: '0'
-  rediscover:
-    value: '1'
-  weight:
-    value: '-58'
-  expanded:
-    value: '0'
-  parent:
-    value: 'menu_link_content:08ed7f18-7329-4940-8d4d-9e4d55a09724'
-  changed:
-    value: '1548735099'
-  default_langcode:
-    value: '1'
-  content_translation_source:
-    value: und
-  content_translation_outdated:
-    value: '0'
-  content_translation_uid:
-    target_id: '1'
-  content_translation_status:
-    value: '1'
-  content_translation_created:
-    value: '1534359183'
-69:
-  id:
-    value: '69'
-  uuid:
-    value: c02a3919-6c29-4bda-abb4-3ddc115ae867
-  langcode:
-    value: en
-  bundle:
-    value: menu_link_content
-  enabled:
-    value: '1'
-  title:
-    value: 'AAR Magazine'
-  description: false
-  menu_name:
-    value: footer
-  link:
-    uri: 'internal:/publications/magazine'
-    title: ''
-    options: {  }
-  external:
-    value: '0'
-  rediscover:
-    value: '1'
-  weight:
-    value: '-67'
-  expanded:
-    value: '0'
-  parent:
-    value: 'menu_link_content:bc30e759-deef-473f-8227-1111b610a1e6'
-  changed:
-    value: '1548735583'
-  default_langcode:
-    value: '1'
-  content_translation_source:
-    value: und
-  content_translation_outdated:
-    value: '0'
-  content_translation_uid:
-    target_id: '1'
-  content_translation_status:
-    value: '1'
-  content_translation_created:
-    value: '1534439063'
-68:
-  id:
-    value: '68'
-  uuid:
-    value: c0d4911d-cc41-4981-99a2-35984ab86446
-  langcode:
-    value: en
-  bundle:
-    value: menu_link_content
-  enabled:
-    value: '1'
-  title:
-    value: Juries
-  description: false
-  menu_name:
-    value: footer
-  link:
-    uri: 'internal:/people/juries'
-    title: ''
-    options: {  }
-  external:
-    value: '0'
-  rediscover:
-    value: '1'
-  weight:
-    value: '-55'
-  expanded:
-    value: '0'
-  parent:
-    value: 'menu_link_content:fe223a34-80cd-4624-8850-918e9cf28999'
-  changed:
-    value: '1548735099'
-  default_langcode:
-    value: '1'
-  content_translation_source:
-    value: und
-  content_translation_outdated:
-    value: '0'
-  content_translation_uid:
-    target_id: '1'
-  content_translation_status:
-    value: '1'
-  content_translation_created:
-    value: '1534360982'
-25:
-  id:
-    value: '25'
-  uuid:
-    value: c2b0e763-c626-4481-bf34-988f9346f3b1
-  langcode:
-    value: en
-  bundle:
-    value: menu_link_content
-  enabled:
-    value: '1'
-  title:
-    value: About
-  description: false
-  menu_name:
-    value: footer
-  link:
-    uri: 'internal:/about'
-    title: ''
-    options:
-      attributes:
-        class: about
-  external:
-    value: '0'
-  rediscover:
-    value: '1'
-  weight:
-    value: '-58'
-  expanded:
-    value: '1'
-  parent: false
-  changed:
-    value: '1538516083'
-  default_langcode:
-    value: '1'
-  content_translation_source:
-    value: und
-  content_translation_outdated:
-    value: '0'
-  content_translation_uid:
-    target_id: '1'
-  content_translation_status:
-    value: '1'
-  content_translation_created:
-    value: '1534349622'
-38:
-  id:
-    value: '38'
-  uuid:
-    value: c3b0a7e8-5aad-43b3-a4c5-8f28fa354eae
-  langcode:
-    value: en
-  bundle:
-    value: menu_link_content
-  enabled:
-    value: '1'
-  title:
-    value: Calendar
-  description: false
-  menu_name:
-    value: footer
-  link:
-    uri: 'internal:/events/calendar'
-    title: ''
-    options: {  }
-  external:
-    value: '0'
-  rediscover:
-    value: '1'
-  weight:
-    value: '-61'
-  expanded:
-    value: '0'
-  parent:
-    value: 'menu_link_content:0b3bff36-1937-42c2-b99a-0f140dafeff9'
-  changed:
-    value: '1548735273'
-  default_langcode:
-    value: '1'
-  content_translation_source:
-    value: und
-  content_translation_outdated:
-    value: '0'
-  content_translation_uid:
-    target_id: '1'
-  content_translation_status:
-    value: '1'
-  content_translation_created:
-    value: '1534358771'
-64:
-  id:
-    value: '64'
-  uuid:
-    value: c4dd4bf6-5125-4ae4-8f3d-d7a0a62b5d10
-  langcode:
-    value: en
-  bundle:
-    value: menu_link_content
-  enabled:
-    value: '1'
-  title:
-    value: 'Italian Fellows'
-  description: false
-  menu_name:
-    value: footer
-  link:
-    uri: 'internal:/people/italian-fellows'
-    title: ''
-    options: {  }
-  external:
-    value: '0'
-  rediscover:
-    value: '1'
-  weight:
-    value: '-59'
-  expanded:
-    value: '0'
-  parent:
-    value: 'menu_link_content:fe223a34-80cd-4624-8850-918e9cf28999'
-  changed:
-    value: '1548735099'
-  default_langcode:
-    value: '1'
-  content_translation_source:
-    value: und
-  content_translation_outdated:
-    value: '0'
-  content_translation_uid:
-    target_id: '1'
-  content_translation_status:
-    value: '1'
-  content_translation_created:
-    value: '1534360908'
-99:
-  id:
-    value: '99'
-  uuid:
-    value: cc0d58f8-10e2-4d9c-bcbe-bc207917a8c4
-  langcode:
-    value: en
-  bundle:
-    value: menu_link_content
-  enabled:
-    value: '1'
-  title:
-    value: 'Academy Books'
-  description: false
-  menu_name:
-    value: footer
-  link:
-    uri: 'internal:/publications/academy-books'
-    title: ''
-    options: {  }
-  external:
-    value: '0'
-  rediscover:
-    value: '1'
-  weight:
-    value: '-65'
-  expanded:
-    value: '0'
-  parent:
-    value: 'menu_link_content:bc30e759-deef-473f-8227-1111b610a1e6'
-  changed:
-    value: '1548735583'
-  default_langcode:
-    value: '1'
-  content_translation_source:
-    value: und
-  content_translation_outdated:
-    value: '0'
-  content_translation_uid:
-    target_id: '1'
-  content_translation_status:
-    value: '1'
-  content_translation_created:
-    value: '1548735384'
-32:
-  id:
-    value: '32'
-  uuid:
-    value: cde58024-dbc7-4036-9f21-20b9b63d6e34
-  langcode:
-    value: en
-  bundle:
-    value: menu_link_content
-  enabled:
-    value: '1'
-  title:
-    value: 'Jobs & Internships'
-  description: false
-  menu_name:
-    value: footer
-  link:
-    uri: 'internal:/about/jobs-internships'
-    title: ''
-    options: {  }
-  external:
-    value: '0'
-  rediscover:
-    value: '1'
-  weight:
-    value: '-54'
-  expanded:
-    value: '0'
-  parent:
-    value: 'menu_link_content:c2b0e763-c626-4481-bf34-988f9346f3b1'
-  changed:
-    value: '1548734170'
-  default_langcode:
-    value: '1'
-  content_translation_source:
-    value: und
-  content_translation_outdated:
-    value: '0'
-  content_translation_uid:
-    target_id: '1'
-  content_translation_status:
-    value: '1'
-  content_translation_created:
-    value: '1534349863'
-6:
-  id:
-    value: '6'
-  uuid:
-    value: d1497fd4-8c83-4805-9faa-a02f16c051eb
-  langcode:
-    value: en
-  bundle:
-    value: menu_link_content
-  enabled:
-    value: '1'
-  title:
-    value: 'Visiting Artists & Scholars'
-  description: false
-  menu_name:
-    value: footer
-  link:
-    uri: 'internal:/apply/visiting-artists-scholars'
-    title: ''
-    options: {  }
-  external:
-    value: '0'
-  rediscover:
-    value: '1'
-  weight:
-    value: '-64'
-  expanded:
-    value: '0'
-  parent:
-    value: 'menu_link_content:236a9418-f7ba-4800-870c-46094cd6d357'
-  changed:
-    value: '1548735583'
-  default_langcode:
-    value: '1'
-  content_translation_source:
-    value: und
-  content_translation_outdated:
-    value: '0'
-  content_translation_uid:
-    target_id: '1'
-  content_translation_status:
-    value: '1'
-  content_translation_created:
-    value: '1533164642'
-98:
-  id:
-    value: '98'
-  uuid:
-    value: d2647dea-4ee8-4310-b720-e395a60a8f21
-  langcode:
-    value: en
-  bundle:
-    value: menu_link_content
-  enabled:
-    value: '1'
-  title:
-    value: 'Film & Photography Request Form'
-  description: false
-  menu_name:
-    value: footer
-  link:
-    uri: 'internal:/film-photography-request'
-    title: ''
-    options: {  }
-  external:
-    value: '0'
-  rediscover:
-    value: '1'
-  weight:
-    value: '0'
-  expanded:
-    value: '0'
-  parent:
-    value: 'menu_link_content:08ed7f18-7329-4940-8d4d-9e4d55a09724'
-  changed:
-    value: '1548735327'
-  default_langcode:
-    value: '1'
-  content_translation_source:
-    value: und
-  content_translation_outdated:
-    value: '0'
-  content_translation_uid:
-    target_id: '1'
-  content_translation_status:
-    value: '1'
-  content_translation_created:
-    value: '1548735327'
-47:
-  id:
-    value: '47'
-  uuid:
-    value: d9f3cde0-9bf5-4ebf-85d5-7b2b088f071c
-  langcode:
-    value: en
-  bundle:
-    value: menu_link_content
-  enabled:
-    value: '1'
-  title:
-    value: Features
-  description: false
-  menu_name:
-    value: footer
-  link:
-    uri: 'internal:/news/features'
-    title: ''
-    options: {  }
-  external:
-    value: '0'
-  rediscover:
-    value: '1'
-  weight:
-    value: '-60'
-  expanded:
-    value: '0'
-  parent:
-    value: 'menu_link_content:08ed7f18-7329-4940-8d4d-9e4d55a09724'
-  changed:
-    value: '1548735099'
-  default_langcode:
-    value: '1'
-  content_translation_source:
-    value: und
-  content_translation_outdated:
-    value: '0'
-  content_translation_uid:
-    target_id: '1'
-  content_translation_status:
-    value: '1'
-  content_translation_created:
-    value: '1534359126'
 4:
   id:
     value: '4'
   uuid:
     value: df107f53-f28d-4bbd-8c2b-91033bfa449a
+  revision_id:
+    value: '4'
   langcode:
     value: en
   bundle:
     value: menu_link_content
+  revision_created: false
+  revision_user: false
+  revision_log_message: false
   enabled:
     value: '1'
   title:
@@ -2492,6 +91,11 @@
     value: '1548735583'
   default_langcode:
     value: '1'
+  revision_default:
+    value: '1'
+  revision_translation_affected:
+    value: '1'
+  metatag: false
   content_translation_source:
     value: und
   content_translation_outdated:
@@ -2502,24 +106,29 @@
     value: '1'
   content_translation_created:
     value: '1533164590'
-77:
+5:
   id:
-    value: '77'
+    value: '5'
   uuid:
-    value: e2dbfa32-e320-4988-85a4-3fbc4ba8b20b
+    value: 9df28439-ee76-4434-9237-fca2afdb365d
+  revision_id:
+    value: '5'
   langcode:
     value: en
   bundle:
     value: menu_link_content
+  revision_created: false
+  revision_user: false
+  revision_log_message: false
   enabled:
-    value: '0'
+    value: '1'
   title:
-    value: 'Visiting Artists'
+    value: 'Italian Fellowships'
   description: false
   menu_name:
     value: footer
   link:
-    uri: 'internal:/people/visiting-artists'
+    uri: 'internal:/apply/italian-fellowships'
     title: ''
     options: {  }
   external:
@@ -2527,15 +136,20 @@
   rediscover:
     value: '1'
   weight:
-    value: '-52'
+    value: '-66'
   expanded:
     value: '0'
   parent:
-    value: 'menu_link_content:fe223a34-80cd-4624-8850-918e9cf28999'
+    value: 'menu_link_content:236a9418-f7ba-4800-870c-46094cd6d357'
   changed:
-    value: '1548735099'
+    value: '1548735583'
   default_langcode:
     value: '1'
+  revision_default:
+    value: '1'
+  revision_translation_affected:
+    value: '1'
+  metatag: false
   content_translation_source:
     value: und
   content_translation_outdated:
@@ -2545,25 +159,30 @@
   content_translation_status:
     value: '1'
   content_translation_created:
-    value: '1534450077'
-100:
+    value: '1533164614'
+6:
   id:
-    value: '100'
+    value: '6'
   uuid:
-    value: e4d236e2-6fdc-47a1-878a-2b92d7cfd5ed
+    value: d1497fd4-8c83-4805-9faa-a02f16c051eb
+  revision_id:
+    value: '6'
   langcode:
     value: en
   bundle:
     value: menu_link_content
+  revision_created: false
+  revision_user: false
+  revision_log_message: false
   enabled:
     value: '1'
   title:
-    value: 'Affiliated Books'
+    value: 'Visiting Artists & Scholars'
   description: false
   menu_name:
     value: footer
   link:
-    uri: 'internal:/publications/affiliated-books'
+    uri: 'internal:/apply/visiting-artists-scholars'
     title: ''
     options: {  }
   external:
@@ -2575,11 +194,16 @@
   expanded:
     value: '0'
   parent:
-    value: 'menu_link_content:bc30e759-deef-473f-8227-1111b610a1e6'
+    value: 'menu_link_content:236a9418-f7ba-4800-870c-46094cd6d357'
   changed:
-    value: '1548735583'
+    value: '1551906272'
   default_langcode:
     value: '1'
+  revision_default:
+    value: '1'
+  revision_translation_affected:
+    value: '1'
+  metatag: false
   content_translation_source:
     value: und
   content_translation_outdated:
@@ -2589,25 +213,30 @@
   content_translation_status:
     value: '1'
   content_translation_created:
-    value: '1548735405'
-8:
+    value: '1533164642'
+9:
   id:
-    value: '8'
+    value: '9'
   uuid:
-    value: e55e6bd7-7106-45a5-a272-6b2fec8485d4
+    value: 7f909959-b106-44db-ba88-0957a1c7e1a4
+  revision_id:
+    value: '9'
   langcode:
     value: en
   bundle:
     value: menu_link_content
+  revision_created: false
+  revision_user: false
+  revision_log_message: false
   enabled:
-    value: '0'
+    value: '1'
   title:
-    value: 'Winter Programs'
+    value: 'Rome Sustainable Food Project'
   description: false
   menu_name:
     value: footer
   link:
-    uri: 'internal:/apply/winter-programs'
+    uri: 'internal:/apply/rome-sustainable-food-project'
     title: ''
     options: {  }
   external:
@@ -2615,7 +244,7 @@
   rediscover:
     value: '1'
   weight:
-    value: '-60'
+    value: '-62'
   expanded:
     value: '0'
   parent:
@@ -2624,6 +253,11 @@
     value: '1548735583'
   default_langcode:
     value: '1'
+  revision_default:
+    value: '1'
+  revision_translation_affected:
+    value: '1'
+  metatag: false
   content_translation_source:
     value: und
   content_translation_outdated:
@@ -2633,41 +267,52 @@
   content_translation_status:
     value: '1'
   content_translation_created:
-    value: '1533164725'
-72:
+    value: '1533164755'
+25:
   id:
-    value: '72'
+    value: '25'
   uuid:
-    value: e8bc0014-c80d-47f8-9971-2e4ddde2a095
+    value: c2b0e763-c626-4481-bf34-988f9346f3b1
+  revision_id:
+    value: '25'
   langcode:
     value: en
   bundle:
     value: menu_link_content
+  revision_created: false
+  revision_user: false
+  revision_log_message: false
   enabled:
     value: '1'
   title:
-    value: 'Papers & Monographs'
+    value: About
   description: false
   menu_name:
     value: footer
   link:
-    uri: 'internal:/publications/papers-monographs'
+    uri: 'internal:/about'
     title: ''
-    options: {  }
+    options:
+      attributes:
+        class: about
   external:
     value: '0'
   rediscover:
     value: '1'
   weight:
-    value: '-61'
+    value: '-58'
   expanded:
-    value: '0'
-  parent:
-    value: 'menu_link_content:bc30e759-deef-473f-8227-1111b610a1e6'
+    value: '1'
+  parent: false
   changed:
-    value: '1548735583'
+    value: '1548880145'
   default_langcode:
     value: '1'
+  revision_default:
+    value: '1'
+  revision_translation_affected:
+    value: '1'
+  metatag: false
   content_translation_source:
     value: und
   content_translation_outdated:
@@ -2677,60 +322,21 @@
   content_translation_status:
     value: '1'
   content_translation_created:
-    value: '1534439169'
-7:
-  id:
-    value: '7'
-  uuid:
-    value: f2b03b57-87d0-4102-90e8-7b41aa74bd5b
-  langcode:
-    value: en
-  bundle:
-    value: menu_link_content
-  enabled:
-    value: '0'
-  title:
-    value: 'Summer Programs'
-  description: false
-  menu_name:
-    value: footer
-  link:
-    uri: 'internal:/apply/summer-programs'
-    title: ''
-    options: {  }
-  external:
-    value: '0'
-  rediscover:
-    value: '1'
-  weight:
-    value: '-61'
-  expanded:
-    value: '0'
-  parent:
-    value: 'menu_link_content:236a9418-f7ba-4800-870c-46094cd6d357'
-  changed:
-    value: '1548735583'
-  default_langcode:
-    value: '1'
-  content_translation_source:
-    value: und
-  content_translation_outdated:
-    value: '0'
-  content_translation_uid:
-    target_id: '1'
-  content_translation_status:
-    value: '1'
-  content_translation_created:
-    value: '1533164708'
+    value: '1534349622'
 26:
   id:
     value: '26'
   uuid:
     value: f931000c-2850-40ad-9c21-07f36480dc3f
+  revision_id:
+    value: '26'
   langcode:
     value: en
   bundle:
     value: menu_link_content
+  revision_created: false
+  revision_user: false
+  revision_log_message: false
   enabled:
     value: '1'
   title:
@@ -2739,7 +345,599 @@
   menu_name:
     value: footer
   link:
-    uri: 'internal:/about/mission'
+    uri: 'entity:node/1'
+    title: ''
+    options: {  }
+  external:
+    value: '0'
+  rediscover:
+    value: '0'
+  weight:
+    value: '-69'
+  expanded:
+    value: '0'
+  parent:
+    value: 'menu_link_content:c2b0e763-c626-4481-bf34-988f9346f3b1'
+  changed:
+    value: '1556660129'
+  default_langcode:
+    value: '1'
+  revision_default:
+    value: '1'
+  revision_translation_affected:
+    value: '1'
+  metatag: false
+  content_translation_source:
+    value: und
+  content_translation_outdated:
+    value: '0'
+  content_translation_uid:
+    target_id: '1'
+  content_translation_status:
+    value: '1'
+  content_translation_created:
+    value: '1534349649'
+27:
+  id:
+    value: '27'
+  uuid:
+    value: 6cd32803-f203-4139-bc79-8677bfe9efdf
+  revision_id:
+    value: '27'
+  langcode:
+    value: en
+  bundle:
+    value: menu_link_content
+  revision_created: false
+  revision_user: false
+  revision_log_message: false
+  enabled:
+    value: '1'
+  title:
+    value: Place
+  description: false
+  menu_name:
+    value: footer
+  link:
+    uri: 'internal:/about/place'
+    title: ''
+    options: {  }
+  external:
+    value: '0'
+  rediscover:
+    value: '1'
+  weight:
+    value: '-68'
+  expanded:
+    value: '0'
+  parent:
+    value: 'menu_link_content:c2b0e763-c626-4481-bf34-988f9346f3b1'
+  changed:
+    value: '1579742573'
+  default_langcode:
+    value: '1'
+  revision_default:
+    value: '1'
+  revision_translation_affected:
+    value: '1'
+  metatag: false
+  content_translation_source:
+    value: und
+  content_translation_outdated:
+    value: '0'
+  content_translation_uid:
+    target_id: '1'
+  content_translation_status:
+    value: '1'
+  content_translation_created:
+    value: '1534349666'
+30:
+  id:
+    value: '30'
+  uuid:
+    value: 07534716-a3e0-42d7-9d48-fd6bb54165b2
+  revision_id:
+    value: '30'
+  langcode:
+    value: en
+  bundle:
+    value: menu_link_content
+  revision_created: false
+  revision_user: false
+  revision_log_message: false
+  enabled:
+    value: '1'
+  title:
+    value: Staff
+  description: false
+  menu_name:
+    value: footer
+  link:
+    uri: 'entity:node/54'
+    title: ''
+    options: {  }
+  external:
+    value: '0'
+  rediscover:
+    value: '0'
+  weight:
+    value: '-66'
+  expanded:
+    value: '0'
+  parent:
+    value: 'menu_link_content:c2b0e763-c626-4481-bf34-988f9346f3b1'
+  changed:
+    value: '1556660129'
+  default_langcode:
+    value: '1'
+  revision_default:
+    value: '1'
+  revision_translation_affected:
+    value: '1'
+  metatag: false
+  content_translation_source:
+    value: und
+  content_translation_outdated:
+    value: '0'
+  content_translation_uid:
+    target_id: '1'
+  content_translation_status:
+    value: '1'
+  content_translation_created:
+    value: '1534349763'
+31:
+  id:
+    value: '31'
+  uuid:
+    value: 7dc0c01e-7fa2-4f09-a1f2-de53dfcf1d16
+  revision_id:
+    value: '31'
+  langcode:
+    value: en
+  bundle:
+    value: menu_link_content
+  revision_created: false
+  revision_user: false
+  revision_log_message: false
+  enabled:
+    value: '1'
+  title:
+    value: Board
+  description: false
+  menu_name:
+    value: footer
+  link:
+    uri: 'entity:node/64'
+    title: ''
+    options: {  }
+  external:
+    value: '0'
+  rediscover:
+    value: '0'
+  weight:
+    value: '-67'
+  expanded:
+    value: '0'
+  parent:
+    value: 'menu_link_content:c2b0e763-c626-4481-bf34-988f9346f3b1'
+  changed:
+    value: '1556660129'
+  default_langcode:
+    value: '1'
+  revision_default:
+    value: '1'
+  revision_translation_affected:
+    value: '1'
+  metatag: false
+  content_translation_source:
+    value: und
+  content_translation_outdated:
+    value: '0'
+  content_translation_uid:
+    target_id: '1'
+  content_translation_status:
+    value: '1'
+  content_translation_created:
+    value: '1534349841'
+32:
+  id:
+    value: '32'
+  uuid:
+    value: cde58024-dbc7-4036-9f21-20b9b63d6e34
+  revision_id:
+    value: '32'
+  langcode:
+    value: en
+  bundle:
+    value: menu_link_content
+  revision_created: false
+  revision_user: false
+  revision_log_message: false
+  enabled:
+    value: '1'
+  title:
+    value: 'Jobs & Internships'
+  description: false
+  menu_name:
+    value: footer
+  link:
+    uri: 'entity:node/70'
+    title: ''
+    options: {  }
+  external:
+    value: '0'
+  rediscover:
+    value: '0'
+  weight:
+    value: '-65'
+  expanded:
+    value: '0'
+  parent:
+    value: 'menu_link_content:c2b0e763-c626-4481-bf34-988f9346f3b1'
+  changed:
+    value: '1556660129'
+  default_langcode:
+    value: '1'
+  revision_default:
+    value: '1'
+  revision_translation_affected:
+    value: '1'
+  metatag: false
+  content_translation_source:
+    value: und
+  content_translation_outdated:
+    value: '0'
+  content_translation_uid:
+    target_id: '1'
+  content_translation_status:
+    value: '1'
+  content_translation_created:
+    value: '1534349863'
+36:
+  id:
+    value: '36'
+  uuid:
+    value: 236a9418-f7ba-4800-870c-46094cd6d357
+  revision_id:
+    value: '36'
+  langcode:
+    value: en
+  bundle:
+    value: menu_link_content
+  revision_created: false
+  revision_user: false
+  revision_log_message: false
+  enabled:
+    value: '1'
+  title:
+    value: Apply
+  description: false
+  menu_name:
+    value: footer
+  link:
+    uri: 'internal:/apply'
+    title: ''
+    options: {  }
+  external:
+    value: '0'
+  rediscover:
+    value: '1'
+  weight:
+    value: '-56'
+  expanded:
+    value: '1'
+  parent: false
+  changed:
+    value: '1548880145'
+  default_langcode:
+    value: '1'
+  revision_default:
+    value: '1'
+  revision_translation_affected:
+    value: '1'
+  metatag: false
+  content_translation_source:
+    value: und
+  content_translation_outdated:
+    value: '0'
+  content_translation_uid:
+    target_id: '1'
+  content_translation_status:
+    value: '1'
+  content_translation_created:
+    value: '1534356757'
+37:
+  id:
+    value: '37'
+  uuid:
+    value: 0b3bff36-1937-42c2-b99a-0f140dafeff9
+  revision_id:
+    value: '37'
+  langcode:
+    value: en
+  bundle:
+    value: menu_link_content
+  revision_created: false
+  revision_user: false
+  revision_log_message: false
+  enabled:
+    value: '1'
+  title:
+    value: Events
+  description: false
+  menu_name:
+    value: footer
+  link:
+    uri: 'internal:/events'
+    title: ''
+    options: {  }
+  external:
+    value: '0'
+  rediscover:
+    value: '1'
+  weight:
+    value: '-55'
+  expanded:
+    value: '1'
+  parent: false
+  changed:
+    value: '1548880145'
+  default_langcode:
+    value: '1'
+  revision_default:
+    value: '1'
+  revision_translation_affected:
+    value: '1'
+  metatag: false
+  content_translation_source:
+    value: und
+  content_translation_outdated:
+    value: '0'
+  content_translation_uid:
+    target_id: '1'
+  content_translation_status:
+    value: '1'
+  content_translation_created:
+    value: '1534358718'
+38:
+  id:
+    value: '38'
+  uuid:
+    value: c3b0a7e8-5aad-43b3-a4c5-8f28fa354eae
+  revision_id:
+    value: '38'
+  langcode:
+    value: en
+  bundle:
+    value: menu_link_content
+  revision_created: false
+  revision_user: false
+  revision_log_message: false
+  enabled:
+    value: '1'
+  title:
+    value: 'Full Calendar'
+  description: false
+  menu_name:
+    value: footer
+  link:
+    uri: 'internal:/events/calendar'
+    title: ''
+    options: {  }
+  external:
+    value: '0'
+  rediscover:
+    value: '1'
+  weight:
+    value: '-64'
+  expanded:
+    value: '0'
+  parent:
+    value: 'menu_link_content:0b3bff36-1937-42c2-b99a-0f140dafeff9'
+  changed:
+    value: '1573842849'
+  default_langcode:
+    value: '1'
+  revision_default:
+    value: '1'
+  revision_translation_affected:
+    value: '1'
+  metatag: false
+  content_translation_source:
+    value: und
+  content_translation_outdated:
+    value: '0'
+  content_translation_uid:
+    target_id: '1'
+  content_translation_status:
+    value: '1'
+  content_translation_created:
+    value: '1534358771'
+39:
+  id:
+    value: '39'
+  uuid:
+    value: 0ee0015a-52ac-4dcb-b931-ac93b75740e7
+  revision_id:
+    value: '39'
+  langcode:
+    value: en
+  bundle:
+    value: menu_link_content
+  revision_created: false
+  revision_user: false
+  revision_log_message: false
+  enabled:
+    value: '1'
+  title:
+    value: Watch
+  description: false
+  menu_name:
+    value: footer
+  link:
+    uri: 'https://livestream.com/aarome'
+    title: ''
+    options: {  }
+  external:
+    value: '0'
+  rediscover:
+    value: '0'
+  weight:
+    value: '-61'
+  expanded:
+    value: '0'
+  parent:
+    value: 'menu_link_content:0b3bff36-1937-42c2-b99a-0f140dafeff9'
+  changed:
+    value: '1573842849'
+  default_langcode:
+    value: '1'
+  revision_default:
+    value: '1'
+  revision_translation_affected:
+    value: '1'
+  metatag: false
+  content_translation_source:
+    value: und
+  content_translation_outdated:
+    value: '0'
+  content_translation_uid:
+    target_id: '1'
+  content_translation_status:
+    value: '1'
+  content_translation_created:
+    value: '1534358847'
+41:
+  id:
+    value: '41'
+  uuid:
+    value: 7a26d7ea-97be-4e12-9363-ab09b62e6131
+  revision_id:
+    value: '41'
+  langcode:
+    value: en
+  bundle:
+    value: menu_link_content
+  revision_created: false
+  revision_user: false
+  revision_log_message: false
+  enabled:
+    value: '1'
+  title:
+    value: 'Join & Renew'
+  description: false
+  menu_name:
+    value: footer
+  link:
+    uri: 'internal:/support/join-renew'
+    title: ''
+    options: {  }
+  external:
+    value: '0'
+  rediscover:
+    value: '1'
+  weight:
+    value: '-63'
+  expanded:
+    value: '0'
+  parent:
+    value: 'menu_link_content:22906eec-3031-4408-a3be-d191cbf0de06'
+  changed:
+    value: '1586569655'
+  default_langcode:
+    value: '1'
+  revision_default:
+    value: '1'
+  revision_translation_affected:
+    value: '1'
+  metatag: false
+  content_translation_source:
+    value: und
+  content_translation_outdated:
+    value: '0'
+  content_translation_uid:
+    target_id: '1'
+  content_translation_status:
+    value: '1'
+  content_translation_created:
+    value: '1534358954'
+42:
+  id:
+    value: '42'
+  uuid:
+    value: 9163a77c-8bdf-47bd-b4fc-fb1c52b80285
+  revision_id:
+    value: '42'
+  langcode:
+    value: en
+  bundle:
+    value: menu_link_content
+  revision_created: false
+  revision_user: false
+  revision_log_message: false
+  enabled:
+    value: '1'
+  title:
+    value: 'New York Gala'
+  description: false
+  menu_name:
+    value: footer
+  link:
+    uri: 'internal:/support/new-york-gala'
+    title: ''
+    options: {  }
+  external:
+    value: '0'
+  rediscover:
+    value: '1'
+  weight:
+    value: '-61'
+  expanded:
+    value: '0'
+  parent:
+    value: 'menu_link_content:22906eec-3031-4408-a3be-d191cbf0de06'
+  changed:
+    value: '1586569762'
+  default_langcode:
+    value: '1'
+  revision_default:
+    value: '1'
+  revision_translation_affected:
+    value: '1'
+  metatag: false
+  content_translation_source:
+    value: und
+  content_translation_outdated:
+    value: '0'
+  content_translation_uid:
+    target_id: '1'
+  content_translation_status:
+    value: '1'
+  content_translation_created:
+    value: '1534358989'
+43:
+  id:
+    value: '43'
+  uuid:
+    value: 3c824e21-02be-440e-b03f-047ddc01f8e8
+  revision_id:
+    value: '43'
+  langcode:
+    value: en
+  bundle:
+    value: menu_link_content
+  revision_created: false
+  revision_user: false
+  revision_log_message: false
+  enabled:
+    value: '1'
+  title:
+    value: 'Planned Giving'
+  description: false
+  menu_name:
+    value: footer
+  link:
+    uri: 'internal:/support/planned-giving'
     title: ''
     options: {  }
   external:
@@ -2751,11 +949,16 @@
   expanded:
     value: '0'
   parent:
-    value: 'menu_link_content:c2b0e763-c626-4481-bf34-988f9346f3b1'
+    value: 'menu_link_content:22906eec-3031-4408-a3be-d191cbf0de06'
   changed:
-    value: '1548734170'
+    value: '1586569655'
   default_langcode:
     value: '1'
+  revision_default:
+    value: '1'
+  revision_translation_affected:
+    value: '1'
+  metatag: false
   content_translation_source:
     value: und
   content_translation_outdated:
@@ -2765,25 +968,30 @@
   content_translation_status:
     value: '1'
   content_translation_created:
-    value: '1534349649'
-94:
+    value: '1534359015'
+44:
   id:
-    value: '94'
+    value: '44'
   uuid:
-    value: fb336871-d854-46d6-85f1-144a8638f0af
+    value: 6e08241c-a6d5-48b9-ae15-0a4b07ca2ca2
+  revision_id:
+    value: '44'
   langcode:
     value: en
   bundle:
     value: menu_link_content
+  revision_created: false
+  revision_user: false
+  revision_log_message: false
   enabled:
     value: '1'
   title:
-    value: 'Rome Sustainable Food Project'
+    value: Corporate
   description: false
   menu_name:
     value: footer
   link:
-    uri: 'internal:/rome-sustainable-food-project'
+    uri: 'internal:/support/corporate'
     title: ''
     options: {  }
   external:
@@ -2791,15 +999,20 @@
   rediscover:
     value: '1'
   weight:
-    value: '-55'
+    value: '-58'
   expanded:
     value: '0'
   parent:
-    value: 'menu_link_content:c2b0e763-c626-4481-bf34-988f9346f3b1'
+    value: 'menu_link_content:22906eec-3031-4408-a3be-d191cbf0de06'
   changed:
-    value: '1548734170'
+    value: '1586569655'
   default_langcode:
     value: '1'
+  revision_default:
+    value: '1'
+  revision_translation_affected:
+    value: '1'
+  metatag: false
   content_translation_source:
     value: und
   content_translation_outdated:
@@ -2809,16 +1022,881 @@
   content_translation_status:
     value: '1'
   content_translation_created:
-    value: '1548734138'
+    value: '1534359036'
+45:
+  id:
+    value: '45'
+  uuid:
+    value: 22906eec-3031-4408-a3be-d191cbf0de06
+  revision_id:
+    value: '45'
+  langcode:
+    value: en
+  bundle:
+    value: menu_link_content
+  revision_created: false
+  revision_user: false
+  revision_log_message: false
+  enabled:
+    value: '1'
+  title:
+    value: Support
+  description: false
+  menu_name:
+    value: footer
+  link:
+    uri: 'internal:/support'
+    title: ''
+    options: {  }
+  external:
+    value: '0'
+  rediscover:
+    value: '1'
+  weight:
+    value: '-51'
+  expanded:
+    value: '1'
+  parent: false
+  changed:
+    value: '1548880145'
+  default_langcode:
+    value: '1'
+  revision_default:
+    value: '1'
+  revision_translation_affected:
+    value: '1'
+  metatag: false
+  content_translation_source:
+    value: und
+  content_translation_outdated:
+    value: '0'
+  content_translation_uid:
+    target_id: '1'
+  content_translation_status:
+    value: '1'
+  content_translation_created:
+    value: '1534359061'
+46:
+  id:
+    value: '46'
+  uuid:
+    value: 08ed7f18-7329-4940-8d4d-9e4d55a09724
+  revision_id:
+    value: '46'
+  langcode:
+    value: en
+  bundle:
+    value: menu_link_content
+  revision_created: false
+  revision_user: false
+  revision_log_message: false
+  enabled:
+    value: '1'
+  title:
+    value: News
+  description: false
+  menu_name:
+    value: footer
+  link:
+    uri: 'internal:/news'
+    title: ''
+    options: {  }
+  external:
+    value: '0'
+  rediscover:
+    value: '1'
+  weight:
+    value: '-54'
+  expanded:
+    value: '1'
+  parent: false
+  changed:
+    value: '1548880145'
+  default_langcode:
+    value: '1'
+  revision_default:
+    value: '1'
+  revision_translation_affected:
+    value: '1'
+  metatag: false
+  content_translation_source:
+    value: und
+  content_translation_outdated:
+    value: '0'
+  content_translation_uid:
+    target_id: '1'
+  content_translation_status:
+    value: '1'
+  content_translation_created:
+    value: '1534359099'
+47:
+  id:
+    value: '47'
+  uuid:
+    value: d9f3cde0-9bf5-4ebf-85d5-7b2b088f071c
+  revision_id:
+    value: '47'
+  langcode:
+    value: en
+  bundle:
+    value: menu_link_content
+  revision_created: false
+  revision_user: false
+  revision_log_message: false
+  enabled:
+    value: '1'
+  title:
+    value: Features
+  description: false
+  menu_name:
+    value: footer
+  link:
+    uri: 'internal:/news/features'
+    title: ''
+    options: {  }
+  external:
+    value: '0'
+  rediscover:
+    value: '1'
+  weight:
+    value: '-68'
+  expanded:
+    value: '0'
+  parent:
+    value: 'menu_link_content:08ed7f18-7329-4940-8d4d-9e4d55a09724'
+  changed:
+    value: '1556228288'
+  default_langcode:
+    value: '1'
+  revision_default:
+    value: '1'
+  revision_translation_affected:
+    value: '1'
+  metatag: false
+  content_translation_source:
+    value: und
+  content_translation_outdated:
+    value: '0'
+  content_translation_uid:
+    target_id: '1'
+  content_translation_status:
+    value: '1'
+  content_translation_created:
+    value: '1534359126'
+49:
+  id:
+    value: '49'
+  uuid:
+    value: bc802301-6fac-466a-ada5-39d77c91284e
+  revision_id:
+    value: '49'
+  langcode:
+    value: en
+  bundle:
+    value: menu_link_content
+  revision_created: false
+  revision_user: false
+  revision_log_message: false
+  enabled:
+    value: '1'
+  title:
+    value: 'Press Releases'
+  description: false
+  menu_name:
+    value: footer
+  link:
+    uri: 'internal:/news/press-releases'
+    title: ''
+    options: {  }
+  external:
+    value: '0'
+  rediscover:
+    value: '1'
+  weight:
+    value: '-65'
+  expanded:
+    value: '0'
+  parent:
+    value: 'menu_link_content:08ed7f18-7329-4940-8d4d-9e4d55a09724'
+  changed:
+    value: '1556230036'
+  default_langcode:
+    value: '1'
+  revision_default:
+    value: '1'
+  revision_translation_affected:
+    value: '1'
+  metatag: false
+  content_translation_source:
+    value: und
+  content_translation_outdated:
+    value: '0'
+  content_translation_uid:
+    target_id: '1'
+  content_translation_status:
+    value: '1'
+  content_translation_created:
+    value: '1534359183'
+50:
+  id:
+    value: '50'
+  uuid:
+    value: 2cab4fe6-b398-4633-b478-56a1197bc3bc
+  revision_id:
+    value: '50'
+  langcode:
+    value: en
+  bundle:
+    value: menu_link_content
+  revision_created: false
+  revision_user: false
+  revision_log_message: false
+  enabled:
+    value: '0'
+  title:
+    value: 'Press Coverage'
+  description: false
+  menu_name:
+    value: footer
+  link:
+    uri: 'internal:/news/coverage'
+    title: ''
+    options: {  }
+  external:
+    value: '0'
+  rediscover:
+    value: '1'
+  weight:
+    value: '-66'
+  expanded:
+    value: '0'
+  parent:
+    value: 'menu_link_content:08ed7f18-7329-4940-8d4d-9e4d55a09724'
+  changed:
+    value: '1584992738'
+  default_langcode:
+    value: '1'
+  revision_default:
+    value: '1'
+  revision_translation_affected:
+    value: '1'
+  metatag: false
+  content_translation_source:
+    value: und
+  content_translation_outdated:
+    value: '0'
+  content_translation_uid:
+    target_id: '1'
+  content_translation_status:
+    value: '1'
+  content_translation_created:
+    value: '1534359212'
+51:
+  id:
+    value: '51'
+  uuid:
+    value: 1a6e0622-eb50-498e-af16-6cde0285e055
+  revision_id:
+    value: '51'
+  langcode:
+    value: en
+  bundle:
+    value: menu_link_content
+  revision_created: false
+  revision_user: false
+  revision_log_message: false
+  enabled:
+    value: '1'
+  title:
+    value: 'Submit Quick News'
+  description: false
+  menu_name:
+    value: footer
+  link:
+    uri: 'internal:/news/quick-news/submit'
+    title: ''
+    options: {  }
+  external:
+    value: '0'
+  rediscover:
+    value: '1'
+  weight:
+    value: '-64'
+  expanded:
+    value: '0'
+  parent:
+    value: 'menu_link_content:08ed7f18-7329-4940-8d4d-9e4d55a09724'
+  changed:
+    value: '1559166462'
+  default_langcode:
+    value: '1'
+  revision_default:
+    value: '1'
+  revision_translation_affected:
+    value: '1'
+  metatag: false
+  content_translation_source:
+    value: und
+  content_translation_outdated:
+    value: '0'
+  content_translation_uid:
+    target_id: '1'
+  content_translation_status:
+    value: '1'
+  content_translation_created:
+    value: '1534359233'
+52:
+  id:
+    value: '52'
+  uuid:
+    value: 937c071e-e765-4f8a-8150-0ab1b3daca79
+  revision_id:
+    value: '52'
+  langcode:
+    value: en
+  bundle:
+    value: menu_link_content
+  revision_created: false
+  revision_user: false
+  revision_log_message: false
+  enabled:
+    value: '1'
+  title:
+    value: Research
+  description: false
+  menu_name:
+    value: footer
+  link:
+    uri: 'internal:/research'
+    title: ''
+    options: {  }
+  external:
+    value: '0'
+  rediscover:
+    value: '1'
+  weight:
+    value: '-53'
+  expanded:
+    value: '1'
+  parent: false
+  changed:
+    value: '1548880145'
+  default_langcode:
+    value: '1'
+  revision_default:
+    value: '1'
+  revision_translation_affected:
+    value: '1'
+  metatag: false
+  content_translation_source:
+    value: und
+  content_translation_outdated:
+    value: '0'
+  content_translation_uid:
+    target_id: '1'
+  content_translation_status:
+    value: '1'
+  content_translation_created:
+    value: '1534359281'
+53:
+  id:
+    value: '53'
+  uuid:
+    value: bc30e759-deef-473f-8227-1111b610a1e6
+  revision_id:
+    value: '53'
+  langcode:
+    value: en
+  bundle:
+    value: menu_link_content
+  revision_created: false
+  revision_user: false
+  revision_log_message: false
+  enabled:
+    value: '1'
+  title:
+    value: Publications
+  description: false
+  menu_name:
+    value: footer
+  link:
+    uri: 'internal:/publications'
+    title: ''
+    options: {  }
+  external:
+    value: '0'
+  rediscover:
+    value: '1'
+  weight:
+    value: '-52'
+  expanded:
+    value: '1'
+  parent: false
+  changed:
+    value: '1548880145'
+  default_langcode:
+    value: '1'
+  revision_default:
+    value: '1'
+  revision_translation_affected:
+    value: '1'
+  metatag: false
+  content_translation_source:
+    value: und
+  content_translation_outdated:
+    value: '0'
+  content_translation_uid:
+    target_id: '1'
+  content_translation_status:
+    value: '1'
+  content_translation_created:
+    value: '1534359300'
+54:
+  id:
+    value: '54'
+  uuid:
+    value: 41c77455-0e12-4a73-a0fa-5613e0c3ea2e
+  revision_id:
+    value: '54'
+  langcode:
+    value: en
+  bundle:
+    value: menu_link_content
+  revision_created: false
+  revision_user: false
+  revision_log_message: false
+  enabled:
+    value: '1'
+  title:
+    value: 'Digital Humanities Center'
+  description: false
+  menu_name:
+    value: footer
+  link:
+    uri: 'https://dhc.aarome.org'
+    title: ''
+    options: {  }
+  external:
+    value: '0'
+  rediscover:
+    value: '0'
+  weight:
+    value: '-67'
+  expanded:
+    value: '0'
+  parent:
+    value: 'menu_link_content:937c071e-e765-4f8a-8150-0ab1b3daca79'
+  changed:
+    value: '1553108062'
+  default_langcode:
+    value: '1'
+  revision_default:
+    value: '1'
+  revision_translation_affected:
+    value: '1'
+  metatag: false
+  content_translation_source:
+    value: und
+  content_translation_outdated:
+    value: '0'
+  content_translation_uid:
+    target_id: '1'
+  content_translation_status:
+    value: '1'
+  content_translation_created:
+    value: '1534360399'
+55:
+  id:
+    value: '55'
+  uuid:
+    value: b1f18b53-48c0-4f0f-8f71-9687a953ef58
+  revision_id:
+    value: '55'
+  langcode:
+    value: en
+  bundle:
+    value: menu_link_content
+  revision_created: false
+  revision_user: false
+  revision_log_message: false
+  enabled:
+    value: '1'
+  title:
+    value: Library
+  description: false
+  menu_name:
+    value: footer
+  link:
+    uri: 'internal:/research/library'
+    title: ''
+    options: {  }
+  external:
+    value: '0'
+  rediscover:
+    value: '1'
+  weight:
+    value: '-69'
+  expanded:
+    value: '0'
+  parent:
+    value: 'menu_link_content:937c071e-e765-4f8a-8150-0ab1b3daca79'
+  changed:
+    value: '1556558473'
+  default_langcode:
+    value: '1'
+  revision_default:
+    value: '1'
+  revision_translation_affected:
+    value: '1'
+  metatag: false
+  content_translation_source:
+    value: und
+  content_translation_outdated:
+    value: '0'
+  content_translation_uid:
+    target_id: '1'
+  content_translation_status:
+    value: '1'
+  content_translation_created:
+    value: '1534360426'
+56:
+  id:
+    value: '56'
+  uuid:
+    value: 82a72c4b-f550-43b2-b71a-75c51e3df5d5
+  revision_id:
+    value: '56'
+  langcode:
+    value: en
+  bundle:
+    value: menu_link_content
+  revision_created: false
+  revision_user: false
+  revision_log_message: false
+  enabled:
+    value: '1'
+  title:
+    value: Resources
+  description: false
+  menu_name:
+    value: footer
+  link:
+    uri: 'internal:/research/resources/'
+    title: ''
+    options: {  }
+  external:
+    value: '0'
+  rediscover:
+    value: '1'
+  weight:
+    value: '-66'
+  expanded:
+    value: '0'
+  parent:
+    value: 'menu_link_content:937c071e-e765-4f8a-8150-0ab1b3daca79'
+  changed:
+    value: '1556558473'
+  default_langcode:
+    value: '1'
+  revision_default:
+    value: '1'
+  revision_translation_affected:
+    value: '1'
+  metatag: false
+  content_translation_source:
+    value: und
+  content_translation_outdated:
+    value: '0'
+  content_translation_uid:
+    target_id: '1'
+  content_translation_status:
+    value: '1'
+  content_translation_created:
+    value: '1534360450'
+57:
+  id:
+    value: '57'
+  uuid:
+    value: 621e6db6-69cd-42eb-82fe-a20c83ddd497
+  revision_id:
+    value: '57'
+  langcode:
+    value: en
+  bundle:
+    value: menu_link_content
+  revision_created: false
+  revision_user: false
+  revision_log_message: false
+  enabled:
+    value: '1'
+  title:
+    value: 'Special Collections'
+  description: false
+  menu_name:
+    value: footer
+  link:
+    uri: 'internal:/research/special-collections'
+    title: ''
+    options: {  }
+  external:
+    value: '0'
+  rediscover:
+    value: '1'
+  weight:
+    value: '-65'
+  expanded:
+    value: '0'
+  parent:
+    value: 'menu_link_content:937c071e-e765-4f8a-8150-0ab1b3daca79'
+  changed:
+    value: '1556558473'
+  default_langcode:
+    value: '1'
+  revision_default:
+    value: '1'
+  revision_translation_affected:
+    value: '1'
+  metatag: false
+  content_translation_source:
+    value: und
+  content_translation_outdated:
+    value: '0'
+  content_translation_uid:
+    target_id: '1'
+  content_translation_status:
+    value: '1'
+  content_translation_created:
+    value: '1534360485'
+58:
+  id:
+    value: '58'
+  uuid:
+    value: 5a0f130d-56a5-41db-8675-53cb939937a6
+  revision_id:
+    value: '58'
+  langcode:
+    value: en
+  bundle:
+    value: menu_link_content
+  revision_created: false
+  revision_user: false
+  revision_log_message: false
+  enabled:
+    value: '1'
+  title:
+    value: 'Photographic Archive'
+  description: false
+  menu_name:
+    value: footer
+  link:
+    uri: 'internal:/research/photographic-archive'
+    title: ''
+    options: {  }
+  external:
+    value: '0'
+  rediscover:
+    value: '1'
+  weight:
+    value: '-64'
+  expanded:
+    value: '0'
+  parent:
+    value: 'menu_link_content:937c071e-e765-4f8a-8150-0ab1b3daca79'
+  changed:
+    value: '1556558473'
+  default_langcode:
+    value: '1'
+  revision_default:
+    value: '1'
+  revision_translation_affected:
+    value: '1'
+  metatag: false
+  content_translation_source:
+    value: und
+  content_translation_outdated:
+    value: '0'
+  content_translation_uid:
+    target_id: '1'
+  content_translation_status:
+    value: '1'
+  content_translation_created:
+    value: '1534360524'
+59:
+  id:
+    value: '59'
+  uuid:
+    value: 021f4163-e526-481b-80eb-1004696b99a1
+  revision_id:
+    value: '59'
+  langcode:
+    value: en
+  bundle:
+    value: menu_link_content
+  revision_created: false
+  revision_user: false
+  revision_log_message: false
+  enabled:
+    value: '1'
+  title:
+    value: 'Institutional Archive'
+  description: false
+  menu_name:
+    value: footer
+  link:
+    uri: 'internal:/research/institutional-archive'
+    title: ''
+    options: {  }
+  external:
+    value: '0'
+  rediscover:
+    value: '1'
+  weight:
+    value: '-63'
+  expanded:
+    value: '0'
+  parent:
+    value: 'menu_link_content:937c071e-e765-4f8a-8150-0ab1b3daca79'
+  changed:
+    value: '1556558473'
+  default_langcode:
+    value: '1'
+  revision_default:
+    value: '1'
+  revision_translation_affected:
+    value: '1'
+  metatag: false
+  content_translation_source:
+    value: und
+  content_translation_outdated:
+    value: '0'
+  content_translation_uid:
+    target_id: '1'
+  content_translation_status:
+    value: '1'
+  content_translation_created:
+    value: '1534360544'
+60:
+  id:
+    value: '60'
+  uuid:
+    value: 0ef8bdc9-4852-4b98-9246-b02b244fdd35
+  revision_id:
+    value: '60'
+  langcode:
+    value: en
+  bundle:
+    value: menu_link_content
+  revision_created: false
+  revision_user: false
+  revision_log_message: false
+  enabled:
+    value: '1'
+  title:
+    value: Archaeology
+  description: false
+  menu_name:
+    value: footer
+  link:
+    uri: 'internal:/research/archaeology'
+    title: ''
+    options: {  }
+  external:
+    value: '0'
+  rediscover:
+    value: '1'
+  weight:
+    value: '-62'
+  expanded:
+    value: '0'
+  parent:
+    value: 'menu_link_content:937c071e-e765-4f8a-8150-0ab1b3daca79'
+  changed:
+    value: '1556558473'
+  default_langcode:
+    value: '1'
+  revision_default:
+    value: '1'
+  revision_translation_affected:
+    value: '1'
+  metatag: false
+  content_translation_source:
+    value: und
+  content_translation_outdated:
+    value: '0'
+  content_translation_uid:
+    target_id: '1'
+  content_translation_status:
+    value: '1'
+  content_translation_created:
+    value: '1534360587'
+61:
+  id:
+    value: '61'
+  uuid:
+    value: 4a50c814-0320-4f96-9501-ddcca1fbddfb
+  revision_id:
+    value: '61'
+  langcode:
+    value: en
+  bundle:
+    value: menu_link_content
+  revision_created: false
+  revision_user: false
+  revision_log_message: false
+  enabled:
+    value: '1'
+  title:
+    value: 'Society of Fellows'
+  description: false
+  menu_name:
+    value: footer
+  link:
+    uri: 'internal:/society-of-fellows'
+    title: ''
+    options: {  }
+  external:
+    value: '0'
+  rediscover:
+    value: '1'
+  weight:
+    value: '-58'
+  expanded:
+    value: '0'
+  parent:
+    value: 'menu_link_content:fe223a34-80cd-4624-8850-918e9cf28999'
+  changed:
+    value: '1586548734'
+  default_langcode:
+    value: '1'
+  revision_default:
+    value: '1'
+  revision_translation_affected:
+    value: '1'
+  metatag: false
+  content_translation_source:
+    value: und
+  content_translation_outdated:
+    value: '0'
+  content_translation_uid:
+    target_id: '1'
+  content_translation_status:
+    value: '1'
+  content_translation_created:
+    value: '1534360770'
 62:
   id:
     value: '62'
   uuid:
     value: fe223a34-80cd-4624-8850-918e9cf28999
+  revision_id:
+    value: '62'
   langcode:
     value: en
   bundle:
     value: menu_link_content
+  revision_created: false
+  revision_user: false
+  revision_log_message: false
   enabled:
     value: '1'
   title:
@@ -2840,9 +1918,14 @@
     value: '1'
   parent: false
   changed:
-    value: '1538425294'
+    value: '1548880145'
   default_langcode:
     value: '1'
+  revision_default:
+    value: '1'
+  revision_translation_affected:
+    value: '1'
+  metatag: false
   content_translation_source:
     value: und
   content_translation_outdated:
@@ -2853,24 +1936,29 @@
     value: '1'
   content_translation_created:
     value: '1534360853'
-48:
+63:
   id:
-    value: '48'
+    value: '63'
   uuid:
-    value: ff5b77b2-0f8e-4c30-a6ac-ef52cdf312f1
+    value: 8c458558-1336-4f12-9573-eae1efc423f0
+  revision_id:
+    value: '63'
   langcode:
     value: en
   bundle:
     value: menu_link_content
+  revision_created: false
+  revision_user: false
+  revision_log_message: false
   enabled:
     value: '1'
   title:
-    value: 'Quick News'
+    value: 'Rome Prize Fellows'
   description: false
   menu_name:
     value: footer
   link:
-    uri: 'internal:/news/quick-news'
+    uri: 'internal:/people/rome-prize-fellows'
     title: ''
     options: {  }
   external:
@@ -2878,15 +1966,20 @@
   rediscover:
     value: '1'
   weight:
-    value: '-59'
+    value: '-63'
   expanded:
     value: '0'
   parent:
-    value: 'menu_link_content:08ed7f18-7329-4940-8d4d-9e4d55a09724'
+    value: 'menu_link_content:fe223a34-80cd-4624-8850-918e9cf28999'
   changed:
-    value: '1548735099'
+    value: '1586548734'
   default_langcode:
     value: '1'
+  revision_default:
+    value: '1'
+  revision_translation_affected:
+    value: '1'
+  metatag: false
   content_translation_source:
     value: und
   content_translation_outdated:
@@ -2896,4 +1989,1467 @@
   content_translation_status:
     value: '1'
   content_translation_created:
-    value: '1534359139'
+    value: '1534360892'
+64:
+  id:
+    value: '64'
+  uuid:
+    value: c4dd4bf6-5125-4ae4-8f3d-d7a0a62b5d10
+  revision_id:
+    value: '64'
+  langcode:
+    value: en
+  bundle:
+    value: menu_link_content
+  revision_created: false
+  revision_user: false
+  revision_log_message: false
+  enabled:
+    value: '1'
+  title:
+    value: 'Italian Fellows'
+  description: false
+  menu_name:
+    value: footer
+  link:
+    uri: 'internal:/people/italian-fellows'
+    title: ''
+    options: {  }
+  external:
+    value: '0'
+  rediscover:
+    value: '1'
+  weight:
+    value: '-62'
+  expanded:
+    value: '0'
+  parent:
+    value: 'menu_link_content:fe223a34-80cd-4624-8850-918e9cf28999'
+  changed:
+    value: '1586548734'
+  default_langcode:
+    value: '1'
+  revision_default:
+    value: '1'
+  revision_translation_affected:
+    value: '1'
+  metatag: false
+  content_translation_source:
+    value: und
+  content_translation_outdated:
+    value: '0'
+  content_translation_uid:
+    target_id: '1'
+  content_translation_status:
+    value: '1'
+  content_translation_created:
+    value: '1534360908'
+65:
+  id:
+    value: '65'
+  uuid:
+    value: 84b4cea5-3b8c-46c9-8144-7aa1a4849e5b
+  revision_id:
+    value: '65'
+  langcode:
+    value: en
+  bundle:
+    value: menu_link_content
+  revision_created: false
+  revision_user: false
+  revision_log_message: false
+  enabled:
+    value: '1'
+  title:
+    value: Residents
+  description: false
+  menu_name:
+    value: footer
+  link:
+    uri: 'internal:/people/residents'
+    title: ''
+    options: {  }
+  external:
+    value: '0'
+  rediscover:
+    value: '1'
+  weight:
+    value: '-61'
+  expanded:
+    value: '0'
+  parent:
+    value: 'menu_link_content:fe223a34-80cd-4624-8850-918e9cf28999'
+  changed:
+    value: '1586548734'
+  default_langcode:
+    value: '1'
+  revision_default:
+    value: '1'
+  revision_translation_affected:
+    value: '1'
+  metatag: false
+  content_translation_source:
+    value: und
+  content_translation_outdated:
+    value: '0'
+  content_translation_uid:
+    target_id: '1'
+  content_translation_status:
+    value: '1'
+  content_translation_created:
+    value: '1534360920'
+66:
+  id:
+    value: '66'
+  uuid:
+    value: 8bc92c04-01e0-4538-afa0-eb2cff025ccf
+  revision_id:
+    value: '66'
+  langcode:
+    value: en
+  bundle:
+    value: menu_link_content
+  revision_created: false
+  revision_user: false
+  revision_log_message: false
+  enabled:
+    value: '1'
+  title:
+    value: 'Visiting Artists & Scholars'
+  description: false
+  menu_name:
+    value: footer
+  link:
+    uri: 'entity:node/2434'
+    title: ''
+    options: {  }
+  external:
+    value: '0'
+  rediscover:
+    value: '0'
+  weight:
+    value: '-59'
+  expanded:
+    value: '0'
+  parent:
+    value: 'menu_link_content:fe223a34-80cd-4624-8850-918e9cf28999'
+  changed:
+    value: '1586548734'
+  default_langcode:
+    value: '1'
+  revision_default:
+    value: '1'
+  revision_translation_affected:
+    value: '1'
+  metatag: false
+  content_translation_source:
+    value: und
+  content_translation_outdated:
+    value: '0'
+  content_translation_uid:
+    target_id: '1'
+  content_translation_status:
+    value: '1'
+  content_translation_created:
+    value: '1534360937'
+67:
+  id:
+    value: '67'
+  uuid:
+    value: 160e28c2-c2bb-4899-abda-74028e619c62
+  revision_id:
+    value: '67'
+  langcode:
+    value: en
+  bundle:
+    value: menu_link_content
+  revision_created: false
+  revision_user: false
+  revision_log_message: false
+  enabled:
+    value: '1'
+  title:
+    value: 'Affiliated Fellows'
+  description: false
+  menu_name:
+    value: footer
+  link:
+    uri: 'entity:node/2433'
+    title: ''
+    options: {  }
+  external:
+    value: '0'
+  rediscover:
+    value: '0'
+  weight:
+    value: '-60'
+  expanded:
+    value: '0'
+  parent:
+    value: 'menu_link_content:fe223a34-80cd-4624-8850-918e9cf28999'
+  changed:
+    value: '1586548734'
+  default_langcode:
+    value: '1'
+  revision_default:
+    value: '1'
+  revision_translation_affected:
+    value: '1'
+  metatag: false
+  content_translation_source:
+    value: und
+  content_translation_outdated:
+    value: '0'
+  content_translation_uid:
+    target_id: '1'
+  content_translation_status:
+    value: '1'
+  content_translation_created:
+    value: '1534360951'
+68:
+  id:
+    value: '68'
+  uuid:
+    value: c0d4911d-cc41-4981-99a2-35984ab86446
+  revision_id:
+    value: '68'
+  langcode:
+    value: en
+  bundle:
+    value: menu_link_content
+  revision_created: false
+  revision_user: false
+  revision_log_message: false
+  enabled:
+    value: '1'
+  title:
+    value: Juries
+  description: false
+  menu_name:
+    value: footer
+  link:
+    uri: 'internal:/people/juries'
+    title: ''
+    options: {  }
+  external:
+    value: '0'
+  rediscover:
+    value: '1'
+  weight:
+    value: '-57'
+  expanded:
+    value: '0'
+  parent:
+    value: 'menu_link_content:fe223a34-80cd-4624-8850-918e9cf28999'
+  changed:
+    value: '1586548734'
+  default_langcode:
+    value: '1'
+  revision_default:
+    value: '1'
+  revision_translation_affected:
+    value: '1'
+  metatag: false
+  content_translation_source:
+    value: und
+  content_translation_outdated:
+    value: '0'
+  content_translation_uid:
+    target_id: '1'
+  content_translation_status:
+    value: '1'
+  content_translation_created:
+    value: '1534360982'
+69:
+  id:
+    value: '69'
+  uuid:
+    value: c02a3919-6c29-4bda-abb4-3ddc115ae867
+  revision_id:
+    value: '69'
+  langcode:
+    value: en
+  bundle:
+    value: menu_link_content
+  revision_created: false
+  revision_user: false
+  revision_log_message: false
+  enabled:
+    value: '1'
+  title:
+    value: 'AAR Magazine'
+  description: false
+  menu_name:
+    value: footer
+  link:
+    uri: 'internal:/publications/magazine'
+    title: ''
+    options: {  }
+  external:
+    value: '0'
+  rediscover:
+    value: '1'
+  weight:
+    value: '-69'
+  expanded:
+    value: '0'
+  parent:
+    value: 'menu_link_content:bc30e759-deef-473f-8227-1111b610a1e6'
+  changed:
+    value: '1556558473'
+  default_langcode:
+    value: '1'
+  revision_default:
+    value: '1'
+  revision_translation_affected:
+    value: '1'
+  metatag: false
+  content_translation_source:
+    value: und
+  content_translation_outdated:
+    value: '0'
+  content_translation_uid:
+    target_id: '1'
+  content_translation_status:
+    value: '1'
+  content_translation_created:
+    value: '1534439063'
+70:
+  id:
+    value: '70'
+  uuid:
+    value: 372812e7-2f05-4dd0-9519-c43219c1e35a
+  revision_id:
+    value: '70'
+  langcode:
+    value: en
+  bundle:
+    value: menu_link_content
+  revision_created: false
+  revision_user: false
+  revision_log_message: false
+  enabled:
+    value: '1'
+  title:
+    value: 'Exhibition Catalogues'
+  description: false
+  menu_name:
+    value: footer
+  link:
+    uri: 'internal:/publications/exhibition-catalogues'
+    title: ''
+    options: {  }
+  external:
+    value: '0'
+  rediscover:
+    value: '1'
+  weight:
+    value: '-68'
+  expanded:
+    value: '0'
+  parent:
+    value: 'menu_link_content:bc30e759-deef-473f-8227-1111b610a1e6'
+  changed:
+    value: '1556558473'
+  default_langcode:
+    value: '1'
+  revision_default:
+    value: '1'
+  revision_translation_affected:
+    value: '1'
+  metatag: false
+  content_translation_source:
+    value: und
+  content_translation_outdated:
+    value: '0'
+  content_translation_uid:
+    target_id: '1'
+  content_translation_status:
+    value: '1'
+  content_translation_created:
+    value: '1534439089'
+71:
+  id:
+    value: '71'
+  uuid:
+    value: 88428b3f-c224-4459-a5d8-ea54a00034b3
+  revision_id:
+    value: '71'
+  langcode:
+    value: en
+  bundle:
+    value: menu_link_content
+  revision_created: false
+  revision_user: false
+  revision_log_message: false
+  enabled:
+    value: '1'
+  title:
+    value: 'Memoirs of the AAR'
+  description: false
+  menu_name:
+    value: footer
+  link:
+    uri: 'internal:/publications/memoirs'
+    title: ''
+    options: {  }
+  external:
+    value: '0'
+  rediscover:
+    value: '1'
+  weight:
+    value: '-64'
+  expanded:
+    value: '0'
+  parent:
+    value: 'menu_link_content:bc30e759-deef-473f-8227-1111b610a1e6'
+  changed:
+    value: '1556558473'
+  default_langcode:
+    value: '1'
+  revision_default:
+    value: '1'
+  revision_translation_affected:
+    value: '1'
+  metatag: false
+  content_translation_source:
+    value: und
+  content_translation_outdated:
+    value: '0'
+  content_translation_uid:
+    target_id: '1'
+  content_translation_status:
+    value: '1'
+  content_translation_created:
+    value: '1534439114'
+72:
+  id:
+    value: '72'
+  uuid:
+    value: e8bc0014-c80d-47f8-9971-2e4ddde2a095
+  revision_id:
+    value: '72'
+  langcode:
+    value: en
+  bundle:
+    value: menu_link_content
+  revision_created: false
+  revision_user: false
+  revision_log_message: false
+  enabled:
+    value: '1'
+  title:
+    value: 'Papers & Monographs'
+  description: false
+  menu_name:
+    value: footer
+  link:
+    uri: 'internal:/publications/papers-monographs'
+    title: ''
+    options: {  }
+  external:
+    value: '0'
+  rediscover:
+    value: '1'
+  weight:
+    value: '-62'
+  expanded:
+    value: '0'
+  parent:
+    value: 'menu_link_content:bc30e759-deef-473f-8227-1111b610a1e6'
+  changed:
+    value: '1556558473'
+  default_langcode:
+    value: '1'
+  revision_default:
+    value: '1'
+  revision_translation_affected:
+    value: '1'
+  metatag: false
+  content_translation_source:
+    value: und
+  content_translation_outdated:
+    value: '0'
+  content_translation_uid:
+    target_id: '1'
+  content_translation_status:
+    value: '1'
+  content_translation_created:
+    value: '1534439169'
+73:
+  id:
+    value: '73'
+  uuid:
+    value: 90a9d059-7289-4e16-b5ff-ab02d487db32
+  revision_id:
+    value: '73'
+  langcode:
+    value: en
+  bundle:
+    value: menu_link_content
+  revision_created: false
+  revision_user: false
+  revision_log_message: false
+  enabled:
+    value: '1'
+  title:
+    value: Cookbooks
+  description: false
+  menu_name:
+    value: footer
+  link:
+    uri: 'internal:/publications/cookbooks'
+    title: ''
+    options: {  }
+  external:
+    value: '0'
+  rediscover:
+    value: '1'
+  weight:
+    value: '-61'
+  expanded:
+    value: '0'
+  parent:
+    value: 'menu_link_content:bc30e759-deef-473f-8227-1111b610a1e6'
+  changed:
+    value: '1556558473'
+  default_langcode:
+    value: '1'
+  revision_default:
+    value: '1'
+  revision_translation_affected:
+    value: '1'
+  metatag: false
+  content_translation_source:
+    value: und
+  content_translation_outdated:
+    value: '0'
+  content_translation_uid:
+    target_id: '1'
+  content_translation_status:
+    value: '1'
+  content_translation_created:
+    value: '1534439189'
+74:
+  id:
+    value: '74'
+  uuid:
+    value: 2afb51d3-232c-4092-9989-b6e1ab21b8ce
+  revision_id:
+    value: '74'
+  langcode:
+    value: en
+  bundle:
+    value: menu_link_content
+  revision_created: false
+  revision_user: false
+  revision_log_message: false
+  enabled:
+    value: '0'
+  title:
+    value: 'Society of Fellows News'
+  description: false
+  menu_name:
+    value: footer
+  link:
+    uri: 'internal:/society-of-fellows/news'
+    title: ''
+    options: {  }
+  external:
+    value: '0'
+  rediscover:
+    value: '1'
+  weight:
+    value: '-60'
+  expanded:
+    value: '0'
+  parent:
+    value: 'menu_link_content:bc30e759-deef-473f-8227-1111b610a1e6'
+  changed:
+    value: '1556558473'
+  default_langcode:
+    value: '1'
+  revision_default:
+    value: '1'
+  revision_translation_affected:
+    value: '1'
+  metatag: false
+  content_translation_source:
+    value: und
+  content_translation_outdated:
+    value: '0'
+  content_translation_uid:
+    target_id: '1'
+  content_translation_status:
+    value: '1'
+  content_translation_created:
+    value: '1534439217'
+75:
+  id:
+    value: '75'
+  uuid:
+    value: abb3f0b4-f9e8-4579-9c99-d2a2650fc34e
+  revision_id:
+    value: '75'
+  langcode:
+    value: en
+  bundle:
+    value: menu_link_content
+  revision_created: false
+  revision_user: false
+  revision_log_message: false
+  enabled:
+    value: '1'
+  title:
+    value: Exhibitions
+  description: false
+  menu_name:
+    value: footer
+  link:
+    uri: 'internal:/events/exhibitions'
+    title: ''
+    options: {  }
+  external:
+    value: '0'
+  rediscover:
+    value: '1'
+  weight:
+    value: '-63'
+  expanded:
+    value: '0'
+  parent:
+    value: 'menu_link_content:0b3bff36-1937-42c2-b99a-0f140dafeff9'
+  changed:
+    value: '1573842849'
+  default_langcode:
+    value: '1'
+  revision_default:
+    value: '1'
+  revision_translation_affected:
+    value: '1'
+  metatag: false
+  content_translation_source:
+    value: und
+  content_translation_outdated:
+    value: '0'
+  content_translation_uid:
+    target_id: '1'
+  content_translation_status:
+    value: '1'
+  content_translation_created:
+    value: '1534439277'
+83:
+  id:
+    value: '83'
+  uuid:
+    value: 122121e8-ea55-41e3-9446-140ad6821aca
+  revision_id:
+    value: '83'
+  langcode:
+    value: en
+  bundle:
+    value: menu_link_content
+  revision_created: false
+  revision_user: false
+  revision_log_message: false
+  enabled:
+    value: '1'
+  title:
+    value: Shop
+  description: false
+  menu_name:
+    value: footer
+  link:
+    uri: 'https://shop.aarome.org/'
+    title: ''
+    options: {  }
+  external:
+    value: '0'
+  rediscover:
+    value: '0'
+  weight:
+    value: '-57'
+  expanded:
+    value: '0'
+  parent:
+    value: 'menu_link_content:22906eec-3031-4408-a3be-d191cbf0de06'
+  changed:
+    value: '1586569655'
+  default_langcode:
+    value: '1'
+  revision_default:
+    value: '1'
+  revision_translation_affected:
+    value: '1'
+  metatag: false
+  content_translation_source:
+    value: und
+  content_translation_outdated:
+    value: '0'
+  content_translation_uid:
+    target_id: '1'
+  content_translation_status:
+    value: '1'
+  content_translation_created:
+    value: '1537560479'
+88:
+  id:
+    value: '88'
+  uuid:
+    value: 71cecfd2-9149-44fa-985a-2dfbc8855afe
+  revision_id:
+    value: '88'
+  langcode:
+    value: en
+  bundle:
+    value: menu_link_content
+  revision_created: false
+  revision_user: false
+  revision_log_message: false
+  enabled:
+    value: '0'
+  title:
+    value: 'American Academy in Rome'
+  description: false
+  menu_name:
+    value: footer
+  link:
+    uri: 'internal:/'
+    title: ''
+    options:
+      attributes:
+        class: home
+  external:
+    value: '0'
+  rediscover:
+    value: '1'
+  weight:
+    value: '-59'
+  expanded:
+    value: '0'
+  parent: false
+  changed:
+    value: '1548880145'
+  default_langcode:
+    value: '1'
+  revision_default:
+    value: '1'
+  revision_translation_affected:
+    value: '1'
+  metatag: false
+  content_translation_source:
+    value: und
+  content_translation_outdated:
+    value: '0'
+  content_translation_uid:
+    target_id: '1'
+  content_translation_status:
+    value: '1'
+  content_translation_created:
+    value: '1538425273'
+94:
+  id:
+    value: '94'
+  uuid:
+    value: 3116b632-b3e1-4a82-ace9-407830651cd1
+  revision_id:
+    value: '94'
+  langcode:
+    value: en
+  bundle:
+    value: menu_link_content
+  revision_created: false
+  revision_user: false
+  revision_log_message: false
+  enabled:
+    value: '1'
+  title:
+    value: Advisors
+  description: false
+  menu_name:
+    value: footer
+  link:
+    uri: 'internal:/people/advisors'
+    title: ''
+    options: {  }
+  external:
+    value: '0'
+  rediscover:
+    value: '1'
+  weight:
+    value: '-56'
+  expanded:
+    value: '0'
+  parent:
+    value: 'menu_link_content:fe223a34-80cd-4624-8850-918e9cf28999'
+  changed:
+    value: '1586548734'
+  default_langcode:
+    value: '1'
+  revision_default:
+    value: '1'
+  revision_translation_affected:
+    value: '1'
+  metatag: false
+  content_translation_source:
+    value: und
+  content_translation_outdated:
+    value: '0'
+  content_translation_uid:
+    target_id: '1'
+  content_translation_status:
+    value: '1'
+  content_translation_created:
+    value: '1548735012'
+95:
+  id:
+    value: '95'
+  uuid:
+    value: 37269092-d063-458a-aaff-86156c8d1b1c
+  revision_id:
+    value: '95'
+  langcode:
+    value: en
+  bundle:
+    value: menu_link_content
+  revision_created: false
+  revision_user: false
+  revision_log_message: false
+  enabled:
+    value: '1'
+  title:
+    value: Series
+  description: false
+  menu_name:
+    value: footer
+  link:
+    uri: 'internal:/events/series'
+    title: ''
+    options: {  }
+  external:
+    value: '0'
+  rediscover:
+    value: '1'
+  weight:
+    value: '-62'
+  expanded:
+    value: '0'
+  parent:
+    value: 'menu_link_content:0b3bff36-1937-42c2-b99a-0f140dafeff9'
+  changed:
+    value: '1573842849'
+  default_langcode:
+    value: '1'
+  revision_default:
+    value: '1'
+  revision_translation_affected:
+    value: '1'
+  metatag: false
+  content_translation_source:
+    value: und
+  content_translation_outdated:
+    value: '0'
+  content_translation_uid:
+    target_id: '1'
+  content_translation_status:
+    value: '1'
+  content_translation_created:
+    value: '1548735264'
+96:
+  id:
+    value: '96'
+  uuid:
+    value: 588db349-e161-49b2-9f6c-37d3aa96cf25
+  revision_id:
+    value: '96'
+  langcode:
+    value: en
+  bundle:
+    value: menu_link_content
+  revision_created: false
+  revision_user: false
+  revision_log_message: false
+  enabled:
+    value: '1'
+  title:
+    value: 'Academic Programs'
+  description: false
+  menu_name:
+    value: footer
+  link:
+    uri: 'entity:node/50'
+    title: ''
+    options: {  }
+  external:
+    value: '0'
+  rediscover:
+    value: '0'
+  weight:
+    value: '-63'
+  expanded:
+    value: '0'
+  parent:
+    value: 'menu_link_content:236a9418-f7ba-4800-870c-46094cd6d357'
+  changed:
+    value: '1556226303'
+  default_langcode:
+    value: '1'
+  revision_default:
+    value: '1'
+  revision_translation_affected:
+    value: '1'
+  metatag: false
+  content_translation_source:
+    value: und
+  content_translation_outdated:
+    value: '0'
+  content_translation_uid:
+    target_id: '1'
+  content_translation_status:
+    value: '1'
+  content_translation_created:
+    value: '1548735297'
+97:
+  id:
+    value: '97'
+  uuid:
+    value: 620b1954-be34-4862-a0bd-332113394da6
+  revision_id:
+    value: '97'
+  langcode:
+    value: en
+  bundle:
+    value: menu_link_content
+  revision_created: false
+  revision_user: false
+  revision_log_message: false
+  enabled:
+    value: '1'
+  title:
+    value: 'Supplements to the Memoirs'
+  description: false
+  menu_name:
+    value: footer
+  link:
+    uri: 'internal:/publications/supplements-memoirs'
+    title: ''
+    options: {  }
+  external:
+    value: '0'
+  rediscover:
+    value: '1'
+  weight:
+    value: '-63'
+  expanded:
+    value: '0'
+  parent:
+    value: 'menu_link_content:bc30e759-deef-473f-8227-1111b610a1e6'
+  changed:
+    value: '1556558473'
+  default_langcode:
+    value: '1'
+  revision_default:
+    value: '1'
+  revision_translation_affected:
+    value: '1'
+  metatag: false
+  content_translation_source:
+    value: und
+  content_translation_outdated:
+    value: '0'
+  content_translation_uid:
+    target_id: '1'
+  content_translation_status:
+    value: '1'
+  content_translation_created:
+    value: '1548735439'
+98:
+  id:
+    value: '98'
+  uuid:
+    value: b22ae1b4-3d01-4bc2-b3f3-622d9edc8726
+  revision_id:
+    value: '98'
+  langcode:
+    value: en
+  bundle:
+    value: menu_link_content
+  revision_created: false
+  revision_user: false
+  revision_log_message: false
+  enabled:
+    value: '0'
+  title:
+    value: 'Support Opportunities'
+  description: false
+  menu_name:
+    value: footer
+  link:
+    uri: 'internal:/support/support-opportunities'
+    title: ''
+    options: {  }
+  external:
+    value: '0'
+  rediscover:
+    value: '1'
+  weight:
+    value: '-60'
+  expanded:
+    value: '0'
+  parent:
+    value: 'menu_link_content:22906eec-3031-4408-a3be-d191cbf0de06'
+  changed:
+    value: '1586569655'
+  default_langcode:
+    value: '1'
+  revision_default:
+    value: '1'
+  revision_translation_affected:
+    value: '1'
+  metatag: false
+  content_translation_source:
+    value: und
+  content_translation_outdated:
+    value: '0'
+  content_translation_uid:
+    target_id: '1'
+  content_translation_status:
+    value: '1'
+  content_translation_created:
+    value: '1548735478'
+99:
+  id:
+    value: '99'
+  uuid:
+    value: cc0d58f8-10e2-4d9c-bcbe-bc207917a8c4
+  revision_id:
+    value: '99'
+  langcode:
+    value: en
+  bundle:
+    value: menu_link_content
+  revision_created: false
+  revision_user: false
+  revision_log_message: false
+  enabled:
+    value: '1'
+  title:
+    value: 'Academy Books'
+  description: false
+  menu_name:
+    value: footer
+  link:
+    uri: 'internal:/publications/academy-books'
+    title: ''
+    options: {  }
+  external:
+    value: '0'
+  rediscover:
+    value: '1'
+  weight:
+    value: '-66'
+  expanded:
+    value: '0'
+  parent:
+    value: 'menu_link_content:bc30e759-deef-473f-8227-1111b610a1e6'
+  changed:
+    value: '1553108062'
+  default_langcode:
+    value: '1'
+  revision_default:
+    value: '1'
+  revision_translation_affected:
+    value: '1'
+  metatag: false
+  content_translation_source:
+    value: und
+  content_translation_outdated:
+    value: '0'
+  content_translation_uid:
+    target_id: '1'
+  content_translation_status:
+    value: '1'
+  content_translation_created:
+    value: '1548735384'
+100:
+  id:
+    value: '100'
+  uuid:
+    value: d2647dea-4ee8-4310-b720-e395a60a8f21
+  revision_id:
+    value: '100'
+  langcode:
+    value: en
+  bundle:
+    value: menu_link_content
+  revision_created: false
+  revision_user: false
+  revision_log_message: false
+  enabled:
+    value: '1'
+  title:
+    value: 'Film & Photography Requests'
+  description: false
+  menu_name:
+    value: footer
+  link:
+    uri: 'internal:/news/film-photo-request'
+    title: ''
+    options: {  }
+  external:
+    value: '0'
+  rediscover:
+    value: '1'
+  weight:
+    value: '-63'
+  expanded:
+    value: '0'
+  parent:
+    value: 'menu_link_content:08ed7f18-7329-4940-8d4d-9e4d55a09724'
+  changed:
+    value: '1556231866'
+  default_langcode:
+    value: '1'
+  revision_default:
+    value: '1'
+  revision_translation_affected:
+    value: '1'
+  metatag: false
+  content_translation_source:
+    value: und
+  content_translation_outdated:
+    value: '0'
+  content_translation_uid:
+    target_id: '1'
+  content_translation_status:
+    value: '1'
+  content_translation_created:
+    value: '1548735327'
+101:
+  id:
+    value: '101'
+  uuid:
+    value: e4d236e2-6fdc-47a1-878a-2b92d7cfd5ed
+  revision_id:
+    value: '101'
+  langcode:
+    value: en
+  bundle:
+    value: menu_link_content
+  revision_created: false
+  revision_user: false
+  revision_log_message: false
+  enabled:
+    value: '1'
+  title:
+    value: 'Affiliated Books'
+  description: false
+  menu_name:
+    value: footer
+  link:
+    uri: 'internal:/publications/affiliated-books'
+    title: ''
+    options: {  }
+  external:
+    value: '0'
+  rediscover:
+    value: '1'
+  weight:
+    value: '-65'
+  expanded:
+    value: '0'
+  parent:
+    value: 'menu_link_content:bc30e759-deef-473f-8227-1111b610a1e6'
+  changed:
+    value: '1553108062'
+  default_langcode:
+    value: '1'
+  revision_default:
+    value: '1'
+  revision_translation_affected:
+    value: '1'
+  metatag: false
+  content_translation_source:
+    value: und
+  content_translation_outdated:
+    value: '0'
+  content_translation_uid:
+    target_id: '1'
+  content_translation_status:
+    value: '1'
+  content_translation_created:
+    value: '1548735405'
+102:
+  id:
+    value: '102'
+  uuid:
+    value: fb336871-d854-46d6-85f1-144a8638f0af
+  revision_id:
+    value: '102'
+  langcode:
+    value: en
+  bundle:
+    value: menu_link_content
+  revision_created: false
+  revision_user: false
+  revision_log_message: false
+  enabled:
+    value: '1'
+  title:
+    value: 'Rome Sustainable Food Project'
+  description: false
+  menu_name:
+    value: footer
+  link:
+    uri: 'entity:node/10'
+    title: ''
+    options: {  }
+  external:
+    value: '0'
+  rediscover:
+    value: '0'
+  weight:
+    value: '-64'
+  expanded:
+    value: '0'
+  parent:
+    value: 'menu_link_content:c2b0e763-c626-4481-bf34-988f9346f3b1'
+  changed:
+    value: '1556225324'
+  default_langcode:
+    value: '1'
+  revision_default:
+    value: '1'
+  revision_translation_affected:
+    value: '1'
+  metatag: false
+  content_translation_source:
+    value: und
+  content_translation_outdated:
+    value: '0'
+  content_translation_uid:
+    target_id: '1'
+  content_translation_status:
+    value: '1'
+  content_translation_created:
+    value: '1548734138'
+134:
+  id:
+    value: '134'
+  uuid:
+    value: 665f9737-d2d7-457f-96ac-5b5490b4107a
+  revision_id:
+    value: '134'
+  langcode:
+    value: en
+  bundle:
+    value: menu_link_content
+  revision_created: false
+  revision_user: false
+  revision_log_message: false
+  enabled:
+    value: '1'
+  title:
+    value: Tours
+  description: false
+  menu_name:
+    value: footer
+  link:
+    uri: 'entity:node/4559'
+    title: ''
+    options: {  }
+  external:
+    value: '0'
+  rediscover:
+    value: '0'
+  weight:
+    value: '-63'
+  expanded:
+    value: '0'
+  parent:
+    value: 'menu_link_content:c2b0e763-c626-4481-bf34-988f9346f3b1'
+  changed:
+    value: '1556660129'
+  default_langcode:
+    value: '1'
+  revision_default:
+    value: '1'
+  revision_translation_affected:
+    value: '1'
+  metatag: false
+  content_translation_source:
+    value: und
+  content_translation_outdated:
+    value: '0'
+  content_translation_uid:
+    target_id: '1'
+  content_translation_status:
+    value: '1'
+  content_translation_created:
+    value: '1553108040'
+135:
+  id:
+    value: '135'
+  uuid:
+    value: 1e168a88-1a47-44f8-b657-85fe481561e5
+  revision_id:
+    value: '135'
+  langcode:
+    value: en
+  bundle:
+    value: menu_link_content
+  revision_created: false
+  revision_user: false
+  revision_log_message: false
+  enabled:
+    value: '1'
+  title:
+    value: 'Next 30 Days'
+  description: false
+  menu_name:
+    value: footer
+  link:
+    uri: 'internal:/events/next-30-days'
+    title: ''
+    options: {  }
+  external:
+    value: '0'
+  rediscover:
+    value: '1'
+  weight:
+    value: '-69'
+  expanded:
+    value: '0'
+  parent:
+    value: 'menu_link_content:0b3bff36-1937-42c2-b99a-0f140dafeff9'
+  changed:
+    value: '1556565991'
+  default_langcode:
+    value: '1'
+  revision_default:
+    value: '1'
+  revision_translation_affected:
+    value: '1'
+  metatag: false
+  content_translation_source:
+    value: und
+  content_translation_outdated:
+    value: '0'
+  content_translation_uid:
+    target_id: '1'
+  content_translation_status:
+    value: '1'
+  content_translation_created:
+    value: '1556558439'
+138:
+  id:
+    value: '138'
+  uuid:
+    value: 39348739-72f4-4831-991b-2eed233f05d7
+  revision_id:
+    value: '138'
+  langcode:
+    value: en
+  bundle:
+    value: menu_link_content
+  revision_created:
+    value: '1586569609'
+  revision_user: false
+  revision_log_message: false
+  enabled:
+    value: '1'
+  title:
+    value: 'McKim Medal Gala'
+  description: false
+  menu_name:
+    value: footer
+  link:
+    uri: 'internal:/support/mckim-medal-gala'
+    title: ''
+    options:
+      attributes:
+        target: _self
+  external:
+    value: '0'
+  rediscover:
+    value: '1'
+  weight:
+    value: '-62'
+  expanded:
+    value: '0'
+  parent:
+    value: 'menu_link_content:22906eec-3031-4408-a3be-d191cbf0de06'
+  changed:
+    value: '1586569655'
+  default_langcode:
+    value: '1'
+  revision_default:
+    value: '1'
+  revision_translation_affected:
+    value: '1'
+  metatag: false
+  content_translation_source:
+    value: und
+  content_translation_outdated:
+    value: '0'
+  content_translation_uid:
+    target_id: '1'
+  content_translation_status:
+    value: '1'
+  content_translation_created:
+    value: '1586569609'
+139:
+  id:
+    value: '139'
+  uuid:
+    value: 44b973df-81d3-4e74-8fb5-75d7503eac0a
+  revision_id:
+    value: '139'
+  langcode:
+    value: en
+  bundle:
+    value: menu_link_content
+  revision_created:
+    value: '1586570225'
+  revision_user: false
+  revision_log_message: false
+  enabled:
+    value: '1'
+  title:
+    value: 'Annual Fund'
+  description: false
+  menu_name:
+    value: footer
+  link:
+    uri: 'entity:node/25'
+    title: ''
+    options: {  }
+  external:
+    value: '0'
+  rediscover:
+    value: '0'
+  weight:
+    value: '-64'
+  expanded:
+    value: '0'
+  parent:
+    value: 'menu_link_content:22906eec-3031-4408-a3be-d191cbf0de06'
+  changed:
+    value: '1586570346'
+  default_langcode:
+    value: '1'
+  revision_default:
+    value: '1'
+  revision_translation_affected:
+    value: '1'
+  metatag: false
+  content_translation_source:
+    value: und
+  content_translation_outdated:
+    value: '0'
+  content_translation_uid:
+    target_id: '1'
+  content_translation_status:
+    value: '1'
+  content_translation_created:
+    value: '1586570225'
