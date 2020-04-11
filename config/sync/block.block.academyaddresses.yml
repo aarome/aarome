@@ -1,0 +1,29 @@
+uuid: 78bd73bb-873d-46f7-b213-9abc6d5a2f3b
+langcode: en
+status: true
+dependencies:
+  content:
+    - 'block_content:basic:e263ce32-8c05-426f-b160-f03a10297e2c'
+  module:
+    - block_class
+    - block_content
+  theme:
+    - tema
+third_party_settings:
+  block_class:
+    classes: addresses
+id: academyaddresses
+theme: tema
+region: footer_second
+weight: -6
+provider: null
+plugin: 'block_content:e263ce32-8c05-426f-b160-f03a10297e2c'
+settings:
+  id: 'block_content:e263ce32-8c05-426f-b160-f03a10297e2c'
+  label: 'Academy addresses'
+  provider: block_content
+  label_display: '0'
+  status: true
+  info: ''
+  view_mode: full
+visibility: {  }

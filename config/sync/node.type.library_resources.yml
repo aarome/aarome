@@ -1,0 +1,17 @@
+uuid: 27ac241d-9eb5-48c9-ae93-3c6a2dfcf9d1
+langcode: en
+status: true
+dependencies:
+  module:
+    - menu_ui
+third_party_settings:
+  menu_ui:
+    available_menus: {  }
+    parent: ''
+name: 'Library resources'
+type: library_resources
+description: 'Includes links and descriptions of scholarly resources. '
+help: ''
+new_revision: false
+preview_mode: 1
+display_submitted: false

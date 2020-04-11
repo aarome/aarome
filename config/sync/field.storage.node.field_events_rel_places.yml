@@ -1,0 +1,19 @@
+uuid: ef072eea-5632-4343-ba95-849177edd841
+langcode: en
+status: true
+dependencies:
+  module:
+    - node
+id: node.field_events_rel_places
+field_name: field_events_rel_places
+entity_type: node
+type: entity_reference
+settings:
+  target_type: node
+module: core
+locked: false
+cardinality: 1
+translatable: true
+indexes: {  }
+persist_with_no_fields: false
+custom_storage: false

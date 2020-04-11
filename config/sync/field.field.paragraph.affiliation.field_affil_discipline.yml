@@ -1,0 +1,29 @@
+uuid: 6c64fdee-351d-49dc-80ff-910b1c9d25e8
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.paragraph.field_affil_discipline
+    - paragraphs.paragraphs_type.affiliation
+    - taxonomy.vocabulary.disciplines
+id: paragraph.affiliation.field_affil_discipline
+field_name: field_affil_discipline
+entity_type: paragraph
+bundle: affiliation
+label: Discipline
+description: ''
+required: false
+translatable: true
+default_value: {  }
+default_value_callback: ''
+settings:
+  handler: 'default:taxonomy_term'
+  handler_settings:
+    target_bundles:
+      disciplines: disciplines
+    sort:
+      field: name
+      direction: asc
+    auto_create: false
+    auto_create_bundle: ''
+field_type: entity_reference

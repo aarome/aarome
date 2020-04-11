@@ -1,0 +1,36 @@
+display:
+  page_press_press_releases:
+    display_options:
+      title: 'Comunicati Stampa'
+  page_press_press_coverage:
+    display_options:
+      title: 'Copertura Stampa'
+  page_events_list_next:
+    display_options:
+      title: 'Prossimi 30 Giorni'
+      filters:
+        field_events_event_type_target_id:
+          group_info:
+            description: ''
+        field_events_event_year_target_id:
+          group_info:
+            description: ''
+  page_news_sof:
+    display_options:
+      title: 'Attualità e eventi'
+  page_events_list:
+    display_options:
+      title: Calendario
+      filters:
+        field_events_event_type_target_id:
+          group_info:
+            description: ''
+  exhibitions:
+    display_options:
+      filters:
+        field_events_event_type_target_id:
+          group_info:
+            description: ''
+  news_features:
+    display_options:
+      title: Articoli

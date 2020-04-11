@@ -1,0 +1,10 @@
+uuid: 2377d4cc-7f3a-418f-ba6d-251cf8c0aa0e
+langcode: en
+status: true
+dependencies:
+  module:
+    - node
+id: node.security_notice
+label: 'Security notice'
+targetEntityType: node
+cache: true
