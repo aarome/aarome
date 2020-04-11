@@ -168,22 +168,6 @@ reactions:
         unique: 0
         context_id: support
         uuid: 1d20c3f8-23d0-4a65-8325-4340670d081b
-      f6eb121e-bd2d-4788-8e11-b17e2fa4698b:
-        id: 'views_block:front_page_support-support_experience_packages'
-        label: ''
-        provider: views
-        label_display: 0
-        views_label: ''
-        items_per_page: none
-        region: content
-        weight: '1'
-        context_mapping: {  }
-        custom_id: support_opportunities
-        theme: academy
-        css_class: 'opportunities card'
-        unique: 0
-        context_id: support
-        uuid: f6eb121e-bd2d-4788-8e11-b17e2fa4698b
       9572d28d-2461-4f46-8ce8-0d39f3d9fb63:
         id: 'views_block:front_page_support-support_planned_giving'
         label: ''
@@ -216,6 +200,22 @@ reactions:
         unique: 0
         context_id: support
         uuid: 4826100e-1245-4a84-88f2-9639391d06c4
+      a53ff969-50fe-4af6-b51b-ea04b808373c:
+        id: 'views_block:front_page_support-support_new_york_gala'
+        label: ''
+        provider: views
+        label_display: 0
+        views_label: ''
+        items_per_page: none
+        region: content
+        weight: '1'
+        context_mapping: {  }
+        custom_id: new_york_gala
+        theme: academy
+        css_class: 'new_york_gala card'
+        unique: 0
+        context_id: support
+        uuid: a53ff969-50fe-4af6-b51b-ea04b808373c
     id: blocks
     saved: false
     uuid: eb1ea5fe-1f04-491e-afb8-a144ac048d41
