@@ -75,7 +75,6 @@ module:
   node: 0
   node_edit_protection: 0
   noreqnewpass: 0
-  obfuscate: 0
   optional_end_date: 0
   options: 0
   override_node_options: 0
@@ -96,6 +95,7 @@ module:
   slick_ui: 0
   slick_views: 0
   smtp: 0
+  spamspan: 0
   system: 0
   taxonomy: 0
   text: 0
