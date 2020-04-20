@@ -21,3 +21,9 @@ display:
   page_quick_news_features_list:
     display_options:
       title: 'Notizie Veloci'
+  exhibitions:
+    display_options:
+      title: Mostra
+  series:
+    display_options:
+      title: Serie
