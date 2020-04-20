@@ -11,11 +11,11 @@ _core:
   default_config_hash: ALaJtTMWaPkrzRKrWM1z4u7BslSR_0tTzlGXfeZPhDQ
 include_invalid_paths: true
 excluded_paths: "/form/library\r\n/node/4648/webform/confirmation?token=-Fx6JVHau5CAtX0xKnzpMed8ltveMkJgfatlMlvHLok\r\n/it"
-replaced_titles: "Attualita eventi::Attualita e eventi \r\nNews events::News & Events"
+replaced_titles: "Attualita eventi::Attualita e eventi \r\nNews events::News & Events\r\n"
 segments_separator: null
 title_segment_as_link: false
 title_from_page_when_available: false
 applies_admin_routes: false
-custom_paths: ''
+custom_paths: '/events/calendar/next-30-days :: Events'
 use_page_title_as_menu_title_fallback: true
 term_hierarchy: false

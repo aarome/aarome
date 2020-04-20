@@ -1567,7 +1567,7 @@ display:
             alter_text: true
             text: link<span></span>
             make_link: true
-            path: /events/calendar/next-30-days
+            path: /events/next-30-days
             absolute: true
             external: false
             replace_spaces: false
