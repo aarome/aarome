@@ -9,14 +9,18 @@
     value: en
   bundle:
     value: menu_link_content
-  revision_created: false
-  revision_user: false
-  revision_log_message: false
+  revision_created:
+    value: '0'
+  revision_user:
+    target_id: '0'
+  revision_log_message:
+    value: ''
   enabled:
     value: '1'
   title:
     value: 'Rome Prize'
-  description: false
+  description:
+    value: ''
   menu_name:
     value: footer
   link:
@@ -34,7 +38,7 @@
   parent:
     value: 'menu_link_content:236a9418-f7ba-4800-870c-46094cd6d357'
   changed:
-    value: '1548735583'
+    value: '1586570797'
   default_langcode:
     value: '1'
   revision_default:
@@ -63,14 +67,18 @@
     value: en
   bundle:
     value: menu_link_content
-  revision_created: false
-  revision_user: false
-  revision_log_message: false
+  revision_created:
+    value: '0'
+  revision_user:
+    target_id: '0'
+  revision_log_message:
+    value: ''
   enabled:
     value: '1'
   title:
     value: 'Affiliated Fellowships'
-  description: false
+  description:
+    value: ''
   menu_name:
     value: footer
   link:
@@ -88,7 +96,7 @@
   parent:
     value: 'menu_link_content:236a9418-f7ba-4800-870c-46094cd6d357'
   changed:
-    value: '1548735583'
+    value: '1586570797'
   default_langcode:
     value: '1'
   revision_default:
@@ -117,14 +125,18 @@
     value: en
   bundle:
     value: menu_link_content
-  revision_created: false
-  revision_user: false
-  revision_log_message: false
+  revision_created:
+    value: '0'
+  revision_user:
+    target_id: '0'
+  revision_log_message:
+    value: ''
   enabled:
     value: '1'
   title:
     value: 'Italian Fellowships'
-  description: false
+  description:
+    value: ''
   menu_name:
     value: footer
   link:
@@ -142,7 +154,7 @@
   parent:
     value: 'menu_link_content:236a9418-f7ba-4800-870c-46094cd6d357'
   changed:
-    value: '1548735583'
+    value: '1586570797'
   default_langcode:
     value: '1'
   revision_default:
@@ -171,14 +183,18 @@
     value: en
   bundle:
     value: menu_link_content
-  revision_created: false
-  revision_user: false
-  revision_log_message: false
+  revision_created:
+    value: '0'
+  revision_user:
+    target_id: '0'
+  revision_log_message:
+    value: ''
   enabled:
     value: '1'
   title:
     value: 'Visiting Artists & Scholars'
-  description: false
+  description:
+    value: ''
   menu_name:
     value: footer
   link:
@@ -196,7 +212,7 @@
   parent:
     value: 'menu_link_content:236a9418-f7ba-4800-870c-46094cd6d357'
   changed:
-    value: '1551906272'
+    value: '1586570797'
   default_langcode:
     value: '1'
   revision_default:
@@ -225,14 +241,18 @@
     value: en
   bundle:
     value: menu_link_content
-  revision_created: false
-  revision_user: false
-  revision_log_message: false
+  revision_created:
+    value: '0'
+  revision_user:
+    target_id: '0'
+  revision_log_message:
+    value: ''
   enabled:
     value: '1'
   title:
     value: 'Rome Sustainable Food Project'
-  description: false
+  description:
+    value: ''
   menu_name:
     value: footer
   link:
@@ -250,7 +270,7 @@
   parent:
     value: 'menu_link_content:236a9418-f7ba-4800-870c-46094cd6d357'
   changed:
-    value: '1548735583'
+    value: '1586570797'
   default_langcode:
     value: '1'
   revision_default:
@@ -279,14 +299,18 @@
     value: en
   bundle:
     value: menu_link_content
-  revision_created: false
-  revision_user: false
-  revision_log_message: false
+  revision_created:
+    value: '0'
+  revision_user:
+    target_id: '0'
+  revision_log_message:
+    value: ''
   enabled:
     value: '1'
   title:
     value: About
-  description: false
+  description:
+    value: ''
   menu_name:
     value: footer
   link:
@@ -303,9 +327,10 @@
     value: '-58'
   expanded:
     value: '1'
-  parent: false
+  parent:
+    value: ''
   changed:
-    value: '1548880145'
+    value: '1586570797'
   default_langcode:
     value: '1'
   revision_default:
@@ -334,14 +359,18 @@
     value: en
   bundle:
     value: menu_link_content
-  revision_created: false
-  revision_user: false
-  revision_log_message: false
+  revision_created:
+    value: '0'
+  revision_user:
+    target_id: '0'
+  revision_log_message:
+    value: ''
   enabled:
     value: '1'
   title:
     value: Mission
-  description: false
+  description:
+    value: ''
   menu_name:
     value: footer
   link:
@@ -359,7 +388,7 @@
   parent:
     value: 'menu_link_content:c2b0e763-c626-4481-bf34-988f9346f3b1'
   changed:
-    value: '1556660129'
+    value: '1586570797'
   default_langcode:
     value: '1'
   revision_default:
@@ -388,14 +417,18 @@
     value: en
   bundle:
     value: menu_link_content
-  revision_created: false
-  revision_user: false
-  revision_log_message: false
+  revision_created:
+    value: '0'
+  revision_user:
+    target_id: '0'
+  revision_log_message:
+    value: ''
   enabled:
     value: '1'
   title:
     value: Place
-  description: false
+  description:
+    value: ''
   menu_name:
     value: footer
   link:
@@ -413,7 +446,7 @@
   parent:
     value: 'menu_link_content:c2b0e763-c626-4481-bf34-988f9346f3b1'
   changed:
-    value: '1579742573'
+    value: '1586570797'
   default_langcode:
     value: '1'
   revision_default:
@@ -442,14 +475,18 @@
     value: en
   bundle:
     value: menu_link_content
-  revision_created: false
-  revision_user: false
-  revision_log_message: false
+  revision_created:
+    value: '0'
+  revision_user:
+    target_id: '0'
+  revision_log_message:
+    value: ''
   enabled:
     value: '1'
   title:
     value: Staff
-  description: false
+  description:
+    value: ''
   menu_name:
     value: footer
   link:
@@ -467,7 +504,7 @@
   parent:
     value: 'menu_link_content:c2b0e763-c626-4481-bf34-988f9346f3b1'
   changed:
-    value: '1556660129'
+    value: '1586570797'
   default_langcode:
     value: '1'
   revision_default:
@@ -496,14 +533,18 @@
     value: en
   bundle:
     value: menu_link_content
-  revision_created: false
-  revision_user: false
-  revision_log_message: false
+  revision_created:
+    value: '0'
+  revision_user:
+    target_id: '0'
+  revision_log_message:
+    value: ''
   enabled:
     value: '1'
   title:
     value: Board
-  description: false
+  description:
+    value: ''
   menu_name:
     value: footer
   link:
@@ -521,7 +562,7 @@
   parent:
     value: 'menu_link_content:c2b0e763-c626-4481-bf34-988f9346f3b1'
   changed:
-    value: '1556660129'
+    value: '1586570797'
   default_langcode:
     value: '1'
   revision_default:
@@ -550,14 +591,18 @@
     value: en
   bundle:
     value: menu_link_content
-  revision_created: false
-  revision_user: false
-  revision_log_message: false
+  revision_created:
+    value: '0'
+  revision_user:
+    target_id: '0'
+  revision_log_message:
+    value: ''
   enabled:
     value: '1'
   title:
     value: 'Jobs & Internships'
-  description: false
+  description:
+    value: ''
   menu_name:
     value: footer
   link:
@@ -575,7 +620,7 @@
   parent:
     value: 'menu_link_content:c2b0e763-c626-4481-bf34-988f9346f3b1'
   changed:
-    value: '1556660129'
+    value: '1586570797'
   default_langcode:
     value: '1'
   revision_default:
@@ -604,14 +649,18 @@
     value: en
   bundle:
     value: menu_link_content
-  revision_created: false
-  revision_user: false
-  revision_log_message: false
+  revision_created:
+    value: '0'
+  revision_user:
+    target_id: '0'
+  revision_log_message:
+    value: ''
   enabled:
     value: '1'
   title:
     value: Apply
-  description: false
+  description:
+    value: ''
   menu_name:
     value: footer
   link:
@@ -626,9 +675,10 @@
     value: '-56'
   expanded:
     value: '1'
-  parent: false
+  parent:
+    value: ''
   changed:
-    value: '1548880145'
+    value: '1586570797'
   default_langcode:
     value: '1'
   revision_default:
@@ -657,14 +707,18 @@
     value: en
   bundle:
     value: menu_link_content
-  revision_created: false
-  revision_user: false
-  revision_log_message: false
+  revision_created:
+    value: '0'
+  revision_user:
+    target_id: '0'
+  revision_log_message:
+    value: ''
   enabled:
     value: '1'
   title:
     value: Events
-  description: false
+  description:
+    value: ''
   menu_name:
     value: footer
   link:
@@ -679,9 +733,10 @@
     value: '-55'
   expanded:
     value: '1'
-  parent: false
+  parent:
+    value: ''
   changed:
-    value: '1548880145'
+    value: '1586570797'
   default_langcode:
     value: '1'
   revision_default:
@@ -710,14 +765,18 @@
     value: en
   bundle:
     value: menu_link_content
-  revision_created: false
-  revision_user: false
-  revision_log_message: false
+  revision_created:
+    value: '0'
+  revision_user:
+    target_id: '0'
+  revision_log_message:
+    value: ''
   enabled:
     value: '1'
   title:
     value: 'Full Calendar'
-  description: false
+  description:
+    value: ''
   menu_name:
     value: footer
   link:
@@ -735,7 +794,7 @@
   parent:
     value: 'menu_link_content:0b3bff36-1937-42c2-b99a-0f140dafeff9'
   changed:
-    value: '1573842849'
+    value: '1586570797'
   default_langcode:
     value: '1'
   revision_default:
@@ -764,14 +823,18 @@
     value: en
   bundle:
     value: menu_link_content
-  revision_created: false
-  revision_user: false
-  revision_log_message: false
+  revision_created:
+    value: '0'
+  revision_user:
+    target_id: '0'
+  revision_log_message:
+    value: ''
   enabled:
     value: '1'
   title:
     value: Watch
-  description: false
+  description:
+    value: ''
   menu_name:
     value: footer
   link:
@@ -789,7 +852,7 @@
   parent:
     value: 'menu_link_content:0b3bff36-1937-42c2-b99a-0f140dafeff9'
   changed:
-    value: '1573842849'
+    value: '1586570797'
   default_langcode:
     value: '1'
   revision_default:
@@ -818,14 +881,18 @@
     value: en
   bundle:
     value: menu_link_content
-  revision_created: false
-  revision_user: false
-  revision_log_message: false
+  revision_created:
+    value: '0'
+  revision_user:
+    target_id: '0'
+  revision_log_message:
+    value: ''
   enabled:
     value: '1'
   title:
     value: 'Join & Renew'
-  description: false
+  description:
+    value: ''
   menu_name:
     value: footer
   link:
@@ -872,8 +939,10 @@
     value: en
   bundle:
     value: menu_link_content
-  revision_created: false
-  revision_user: false
+  revision_created:
+    value: '0'
+  revision_user:
+    target_id: '0'
   revision_log_message: false
   enabled:
     value: '1'
@@ -926,14 +995,18 @@
     value: en
   bundle:
     value: menu_link_content
-  revision_created: false
-  revision_user: false
-  revision_log_message: false
+  revision_created:
+    value: '0'
+  revision_user:
+    target_id: '0'
+  revision_log_message:
+    value: ''
   enabled:
     value: '1'
   title:
     value: 'Planned Giving'
-  description: false
+  description:
+    value: ''
   menu_name:
     value: footer
   link:
@@ -980,14 +1053,18 @@
     value: en
   bundle:
     value: menu_link_content
-  revision_created: false
-  revision_user: false
-  revision_log_message: false
+  revision_created:
+    value: '0'
+  revision_user:
+    target_id: '0'
+  revision_log_message:
+    value: ''
   enabled:
     value: '1'
   title:
     value: Corporate
-  description: false
+  description:
+    value: ''
   menu_name:
     value: footer
   link:
@@ -1034,14 +1111,18 @@
     value: en
   bundle:
     value: menu_link_content
-  revision_created: false
-  revision_user: false
-  revision_log_message: false
+  revision_created:
+    value: '0'
+  revision_user:
+    target_id: '0'
+  revision_log_message:
+    value: ''
   enabled:
     value: '1'
   title:
     value: Support
-  description: false
+  description:
+    value: ''
   menu_name:
     value: footer
   link:
@@ -1056,9 +1137,10 @@
     value: '-51'
   expanded:
     value: '1'
-  parent: false
+  parent:
+    value: ''
   changed:
-    value: '1548880145'
+    value: '1586570797'
   default_langcode:
     value: '1'
   revision_default:
@@ -1087,14 +1169,18 @@
     value: en
   bundle:
     value: menu_link_content
-  revision_created: false
-  revision_user: false
-  revision_log_message: false
+  revision_created:
+    value: '0'
+  revision_user:
+    target_id: '0'
+  revision_log_message:
+    value: ''
   enabled:
     value: '1'
   title:
     value: News
-  description: false
+  description:
+    value: ''
   menu_name:
     value: footer
   link:
@@ -1109,9 +1195,10 @@
     value: '-54'
   expanded:
     value: '1'
-  parent: false
+  parent:
+    value: ''
   changed:
-    value: '1548880145'
+    value: '1586570797'
   default_langcode:
     value: '1'
   revision_default:
@@ -1140,8 +1227,10 @@
     value: en
   bundle:
     value: menu_link_content
-  revision_created: false
-  revision_user: false
+  revision_created:
+    value: '0'
+  revision_user:
+    target_id: '0'
   revision_log_message: false
   enabled:
     value: '1'
@@ -1159,13 +1248,13 @@
   rediscover:
     value: '1'
   weight:
-    value: '-68'
+    value: '-65'
   expanded:
     value: '0'
   parent:
     value: 'menu_link_content:08ed7f18-7329-4940-8d4d-9e4d55a09724'
   changed:
-    value: '1556228288'
+    value: '1587410292'
   default_langcode:
     value: '1'
   revision_default:
@@ -1194,8 +1283,10 @@
     value: en
   bundle:
     value: menu_link_content
-  revision_created: false
-  revision_user: false
+  revision_created:
+    value: '0'
+  revision_user:
+    target_id: '0'
   revision_log_message: false
   enabled:
     value: '1'
@@ -1213,13 +1304,13 @@
   rediscover:
     value: '1'
   weight:
-    value: '-65'
+    value: '-62'
   expanded:
     value: '0'
   parent:
     value: 'menu_link_content:08ed7f18-7329-4940-8d4d-9e4d55a09724'
   changed:
-    value: '1556230036'
+    value: '1587410292'
   default_langcode:
     value: '1'
   revision_default:
@@ -1248,8 +1339,10 @@
     value: en
   bundle:
     value: menu_link_content
-  revision_created: false
-  revision_user: false
+  revision_created:
+    value: '0'
+  revision_user:
+    target_id: '0'
   revision_log_message: false
   enabled:
     value: '0'
@@ -1267,13 +1360,13 @@
   rediscover:
     value: '1'
   weight:
-    value: '-66'
+    value: '-63'
   expanded:
     value: '0'
   parent:
     value: 'menu_link_content:08ed7f18-7329-4940-8d4d-9e4d55a09724'
   changed:
-    value: '1584992738'
+    value: '1587410292'
   default_langcode:
     value: '1'
   revision_default:
@@ -1302,8 +1395,10 @@
     value: en
   bundle:
     value: menu_link_content
-  revision_created: false
-  revision_user: false
+  revision_created:
+    value: '0'
+  revision_user:
+    target_id: '0'
   revision_log_message: false
   enabled:
     value: '1'
@@ -1321,13 +1416,13 @@
   rediscover:
     value: '1'
   weight:
-    value: '-64'
+    value: '-61'
   expanded:
     value: '0'
   parent:
     value: 'menu_link_content:08ed7f18-7329-4940-8d4d-9e4d55a09724'
   changed:
-    value: '1559166462'
+    value: '1587410292'
   default_langcode:
     value: '1'
   revision_default:
@@ -1356,14 +1451,18 @@
     value: en
   bundle:
     value: menu_link_content
-  revision_created: false
-  revision_user: false
-  revision_log_message: false
+  revision_created:
+    value: '0'
+  revision_user:
+    target_id: '0'
+  revision_log_message:
+    value: ''
   enabled:
     value: '1'
   title:
     value: Research
-  description: false
+  description:
+    value: ''
   menu_name:
     value: footer
   link:
@@ -1378,9 +1477,10 @@
     value: '-53'
   expanded:
     value: '1'
-  parent: false
+  parent:
+    value: ''
   changed:
-    value: '1548880145'
+    value: '1586570797'
   default_langcode:
     value: '1'
   revision_default:
@@ -1409,14 +1509,18 @@
     value: en
   bundle:
     value: menu_link_content
-  revision_created: false
-  revision_user: false
-  revision_log_message: false
+  revision_created:
+    value: '0'
+  revision_user:
+    target_id: '0'
+  revision_log_message:
+    value: ''
   enabled:
     value: '1'
   title:
     value: Publications
-  description: false
+  description:
+    value: ''
   menu_name:
     value: footer
   link:
@@ -1431,9 +1535,10 @@
     value: '-52'
   expanded:
     value: '1'
-  parent: false
+  parent:
+    value: ''
   changed:
-    value: '1548880145'
+    value: '1586570797'
   default_langcode:
     value: '1'
   revision_default:
@@ -1462,14 +1567,18 @@
     value: en
   bundle:
     value: menu_link_content
-  revision_created: false
-  revision_user: false
-  revision_log_message: false
+  revision_created:
+    value: '0'
+  revision_user:
+    target_id: '0'
+  revision_log_message:
+    value: ''
   enabled:
     value: '1'
   title:
     value: 'Digital Humanities Center'
-  description: false
+  description:
+    value: ''
   menu_name:
     value: footer
   link:
@@ -1487,7 +1596,7 @@
   parent:
     value: 'menu_link_content:937c071e-e765-4f8a-8150-0ab1b3daca79'
   changed:
-    value: '1553108062'
+    value: '1586570797'
   default_langcode:
     value: '1'
   revision_default:
@@ -1516,14 +1625,18 @@
     value: en
   bundle:
     value: menu_link_content
-  revision_created: false
-  revision_user: false
-  revision_log_message: false
+  revision_created:
+    value: '0'
+  revision_user:
+    target_id: '0'
+  revision_log_message:
+    value: ''
   enabled:
     value: '1'
   title:
     value: Library
-  description: false
+  description:
+    value: ''
   menu_name:
     value: footer
   link:
@@ -1541,7 +1654,7 @@
   parent:
     value: 'menu_link_content:937c071e-e765-4f8a-8150-0ab1b3daca79'
   changed:
-    value: '1556558473'
+    value: '1586570797'
   default_langcode:
     value: '1'
   revision_default:
@@ -1570,14 +1683,18 @@
     value: en
   bundle:
     value: menu_link_content
-  revision_created: false
-  revision_user: false
-  revision_log_message: false
+  revision_created:
+    value: '0'
+  revision_user:
+    target_id: '0'
+  revision_log_message:
+    value: ''
   enabled:
     value: '1'
   title:
     value: Resources
-  description: false
+  description:
+    value: ''
   menu_name:
     value: footer
   link:
@@ -1595,7 +1712,7 @@
   parent:
     value: 'menu_link_content:937c071e-e765-4f8a-8150-0ab1b3daca79'
   changed:
-    value: '1556558473'
+    value: '1586570797'
   default_langcode:
     value: '1'
   revision_default:
@@ -1624,14 +1741,18 @@
     value: en
   bundle:
     value: menu_link_content
-  revision_created: false
-  revision_user: false
-  revision_log_message: false
+  revision_created:
+    value: '0'
+  revision_user:
+    target_id: '0'
+  revision_log_message:
+    value: ''
   enabled:
     value: '1'
   title:
     value: 'Special Collections'
-  description: false
+  description:
+    value: ''
   menu_name:
     value: footer
   link:
@@ -1649,7 +1770,7 @@
   parent:
     value: 'menu_link_content:937c071e-e765-4f8a-8150-0ab1b3daca79'
   changed:
-    value: '1556558473'
+    value: '1586570797'
   default_langcode:
     value: '1'
   revision_default:
@@ -1678,14 +1799,18 @@
     value: en
   bundle:
     value: menu_link_content
-  revision_created: false
-  revision_user: false
-  revision_log_message: false
+  revision_created:
+    value: '0'
+  revision_user:
+    target_id: '0'
+  revision_log_message:
+    value: ''
   enabled:
     value: '1'
   title:
     value: 'Photographic Archive'
-  description: false
+  description:
+    value: ''
   menu_name:
     value: footer
   link:
@@ -1703,7 +1828,7 @@
   parent:
     value: 'menu_link_content:937c071e-e765-4f8a-8150-0ab1b3daca79'
   changed:
-    value: '1556558473'
+    value: '1586570797'
   default_langcode:
     value: '1'
   revision_default:
@@ -1732,14 +1857,18 @@
     value: en
   bundle:
     value: menu_link_content
-  revision_created: false
-  revision_user: false
-  revision_log_message: false
+  revision_created:
+    value: '0'
+  revision_user:
+    target_id: '0'
+  revision_log_message:
+    value: ''
   enabled:
     value: '1'
   title:
     value: 'Institutional Archive'
-  description: false
+  description:
+    value: ''
   menu_name:
     value: footer
   link:
@@ -1757,7 +1886,7 @@
   parent:
     value: 'menu_link_content:937c071e-e765-4f8a-8150-0ab1b3daca79'
   changed:
-    value: '1556558473'
+    value: '1586570797'
   default_langcode:
     value: '1'
   revision_default:
@@ -1786,14 +1915,18 @@
     value: en
   bundle:
     value: menu_link_content
-  revision_created: false
-  revision_user: false
-  revision_log_message: false
+  revision_created:
+    value: '0'
+  revision_user:
+    target_id: '0'
+  revision_log_message:
+    value: ''
   enabled:
     value: '1'
   title:
     value: Archaeology
-  description: false
+  description:
+    value: ''
   menu_name:
     value: footer
   link:
@@ -1811,7 +1944,7 @@
   parent:
     value: 'menu_link_content:937c071e-e765-4f8a-8150-0ab1b3daca79'
   changed:
-    value: '1556558473'
+    value: '1586570797'
   default_langcode:
     value: '1'
   revision_default:
@@ -1840,14 +1973,18 @@
     value: en
   bundle:
     value: menu_link_content
-  revision_created: false
-  revision_user: false
-  revision_log_message: false
+  revision_created:
+    value: '0'
+  revision_user:
+    target_id: '0'
+  revision_log_message:
+    value: ''
   enabled:
     value: '1'
   title:
     value: 'Society of Fellows'
-  description: false
+  description:
+    value: ''
   menu_name:
     value: footer
   link:
@@ -1865,7 +2002,7 @@
   parent:
     value: 'menu_link_content:fe223a34-80cd-4624-8850-918e9cf28999'
   changed:
-    value: '1586548734'
+    value: '1586570797'
   default_langcode:
     value: '1'
   revision_default:
@@ -1894,14 +2031,18 @@
     value: en
   bundle:
     value: menu_link_content
-  revision_created: false
-  revision_user: false
-  revision_log_message: false
+  revision_created:
+    value: '0'
+  revision_user:
+    target_id: '0'
+  revision_log_message:
+    value: ''
   enabled:
     value: '1'
   title:
     value: People
-  description: false
+  description:
+    value: ''
   menu_name:
     value: footer
   link:
@@ -1916,9 +2057,10 @@
     value: '-57'
   expanded:
     value: '1'
-  parent: false
+  parent:
+    value: ''
   changed:
-    value: '1548880145'
+    value: '1586570797'
   default_langcode:
     value: '1'
   revision_default:
@@ -1947,14 +2089,18 @@
     value: en
   bundle:
     value: menu_link_content
-  revision_created: false
-  revision_user: false
-  revision_log_message: false
+  revision_created:
+    value: '0'
+  revision_user:
+    target_id: '0'
+  revision_log_message:
+    value: ''
   enabled:
     value: '1'
   title:
     value: 'Rome Prize Fellows'
-  description: false
+  description:
+    value: ''
   menu_name:
     value: footer
   link:
@@ -1972,7 +2118,7 @@
   parent:
     value: 'menu_link_content:fe223a34-80cd-4624-8850-918e9cf28999'
   changed:
-    value: '1586548734'
+    value: '1586570797'
   default_langcode:
     value: '1'
   revision_default:
@@ -2001,14 +2147,18 @@
     value: en
   bundle:
     value: menu_link_content
-  revision_created: false
-  revision_user: false
-  revision_log_message: false
+  revision_created:
+    value: '0'
+  revision_user:
+    target_id: '0'
+  revision_log_message:
+    value: ''
   enabled:
     value: '1'
   title:
     value: 'Italian Fellows'
-  description: false
+  description:
+    value: ''
   menu_name:
     value: footer
   link:
@@ -2026,7 +2176,7 @@
   parent:
     value: 'menu_link_content:fe223a34-80cd-4624-8850-918e9cf28999'
   changed:
-    value: '1586548734'
+    value: '1586570797'
   default_langcode:
     value: '1'
   revision_default:
@@ -2055,14 +2205,18 @@
     value: en
   bundle:
     value: menu_link_content
-  revision_created: false
-  revision_user: false
-  revision_log_message: false
+  revision_created:
+    value: '0'
+  revision_user:
+    target_id: '0'
+  revision_log_message:
+    value: ''
   enabled:
     value: '1'
   title:
     value: Residents
-  description: false
+  description:
+    value: ''
   menu_name:
     value: footer
   link:
@@ -2080,7 +2234,7 @@
   parent:
     value: 'menu_link_content:fe223a34-80cd-4624-8850-918e9cf28999'
   changed:
-    value: '1586548734'
+    value: '1586570797'
   default_langcode:
     value: '1'
   revision_default:
@@ -2109,14 +2263,18 @@
     value: en
   bundle:
     value: menu_link_content
-  revision_created: false
-  revision_user: false
-  revision_log_message: false
+  revision_created:
+    value: '0'
+  revision_user:
+    target_id: '0'
+  revision_log_message:
+    value: ''
   enabled:
     value: '1'
   title:
     value: 'Visiting Artists & Scholars'
-  description: false
+  description:
+    value: ''
   menu_name:
     value: footer
   link:
@@ -2134,7 +2292,7 @@
   parent:
     value: 'menu_link_content:fe223a34-80cd-4624-8850-918e9cf28999'
   changed:
-    value: '1586548734'
+    value: '1586570797'
   default_langcode:
     value: '1'
   revision_default:
@@ -2163,14 +2321,18 @@
     value: en
   bundle:
     value: menu_link_content
-  revision_created: false
-  revision_user: false
-  revision_log_message: false
+  revision_created:
+    value: '0'
+  revision_user:
+    target_id: '0'
+  revision_log_message:
+    value: ''
   enabled:
     value: '1'
   title:
     value: 'Affiliated Fellows'
-  description: false
+  description:
+    value: ''
   menu_name:
     value: footer
   link:
@@ -2188,7 +2350,7 @@
   parent:
     value: 'menu_link_content:fe223a34-80cd-4624-8850-918e9cf28999'
   changed:
-    value: '1586548734'
+    value: '1586570797'
   default_langcode:
     value: '1'
   revision_default:
@@ -2217,14 +2379,18 @@
     value: en
   bundle:
     value: menu_link_content
-  revision_created: false
-  revision_user: false
-  revision_log_message: false
+  revision_created:
+    value: '0'
+  revision_user:
+    target_id: '0'
+  revision_log_message:
+    value: ''
   enabled:
     value: '1'
   title:
     value: Juries
-  description: false
+  description:
+    value: ''
   menu_name:
     value: footer
   link:
@@ -2242,7 +2408,7 @@
   parent:
     value: 'menu_link_content:fe223a34-80cd-4624-8850-918e9cf28999'
   changed:
-    value: '1586548734'
+    value: '1586570797'
   default_langcode:
     value: '1'
   revision_default:
@@ -2271,14 +2437,18 @@
     value: en
   bundle:
     value: menu_link_content
-  revision_created: false
-  revision_user: false
-  revision_log_message: false
+  revision_created:
+    value: '0'
+  revision_user:
+    target_id: '0'
+  revision_log_message:
+    value: ''
   enabled:
     value: '1'
   title:
     value: 'AAR Magazine'
-  description: false
+  description:
+    value: ''
   menu_name:
     value: footer
   link:
@@ -2296,7 +2466,7 @@
   parent:
     value: 'menu_link_content:bc30e759-deef-473f-8227-1111b610a1e6'
   changed:
-    value: '1556558473'
+    value: '1586570797'
   default_langcode:
     value: '1'
   revision_default:
@@ -2325,14 +2495,18 @@
     value: en
   bundle:
     value: menu_link_content
-  revision_created: false
-  revision_user: false
-  revision_log_message: false
+  revision_created:
+    value: '0'
+  revision_user:
+    target_id: '0'
+  revision_log_message:
+    value: ''
   enabled:
     value: '1'
   title:
     value: 'Exhibition Catalogues'
-  description: false
+  description:
+    value: ''
   menu_name:
     value: footer
   link:
@@ -2350,7 +2524,7 @@
   parent:
     value: 'menu_link_content:bc30e759-deef-473f-8227-1111b610a1e6'
   changed:
-    value: '1556558473'
+    value: '1586570797'
   default_langcode:
     value: '1'
   revision_default:
@@ -2379,14 +2553,18 @@
     value: en
   bundle:
     value: menu_link_content
-  revision_created: false
-  revision_user: false
-  revision_log_message: false
+  revision_created:
+    value: '0'
+  revision_user:
+    target_id: '0'
+  revision_log_message:
+    value: ''
   enabled:
     value: '1'
   title:
     value: 'Memoirs of the AAR'
-  description: false
+  description:
+    value: ''
   menu_name:
     value: footer
   link:
@@ -2404,7 +2582,7 @@
   parent:
     value: 'menu_link_content:bc30e759-deef-473f-8227-1111b610a1e6'
   changed:
-    value: '1556558473'
+    value: '1586570797'
   default_langcode:
     value: '1'
   revision_default:
@@ -2433,14 +2611,18 @@
     value: en
   bundle:
     value: menu_link_content
-  revision_created: false
-  revision_user: false
-  revision_log_message: false
+  revision_created:
+    value: '0'
+  revision_user:
+    target_id: '0'
+  revision_log_message:
+    value: ''
   enabled:
     value: '1'
   title:
     value: 'Papers & Monographs'
-  description: false
+  description:
+    value: ''
   menu_name:
     value: footer
   link:
@@ -2458,7 +2640,7 @@
   parent:
     value: 'menu_link_content:bc30e759-deef-473f-8227-1111b610a1e6'
   changed:
-    value: '1556558473'
+    value: '1586570797'
   default_langcode:
     value: '1'
   revision_default:
@@ -2487,14 +2669,18 @@
     value: en
   bundle:
     value: menu_link_content
-  revision_created: false
-  revision_user: false
-  revision_log_message: false
+  revision_created:
+    value: '0'
+  revision_user:
+    target_id: '0'
+  revision_log_message:
+    value: ''
   enabled:
     value: '1'
   title:
     value: Cookbooks
-  description: false
+  description:
+    value: ''
   menu_name:
     value: footer
   link:
@@ -2512,7 +2698,7 @@
   parent:
     value: 'menu_link_content:bc30e759-deef-473f-8227-1111b610a1e6'
   changed:
-    value: '1556558473'
+    value: '1586570797'
   default_langcode:
     value: '1'
   revision_default:
@@ -2541,14 +2727,18 @@
     value: en
   bundle:
     value: menu_link_content
-  revision_created: false
-  revision_user: false
-  revision_log_message: false
+  revision_created:
+    value: '0'
+  revision_user:
+    target_id: '0'
+  revision_log_message:
+    value: ''
   enabled:
     value: '0'
   title:
     value: 'Society of Fellows News'
-  description: false
+  description:
+    value: ''
   menu_name:
     value: footer
   link:
@@ -2566,7 +2756,7 @@
   parent:
     value: 'menu_link_content:bc30e759-deef-473f-8227-1111b610a1e6'
   changed:
-    value: '1556558473'
+    value: '1586570797'
   default_langcode:
     value: '1'
   revision_default:
@@ -2595,14 +2785,18 @@
     value: en
   bundle:
     value: menu_link_content
-  revision_created: false
-  revision_user: false
-  revision_log_message: false
+  revision_created:
+    value: '0'
+  revision_user:
+    target_id: '0'
+  revision_log_message:
+    value: ''
   enabled:
     value: '1'
   title:
     value: Exhibitions
-  description: false
+  description:
+    value: ''
   menu_name:
     value: footer
   link:
@@ -2620,7 +2814,7 @@
   parent:
     value: 'menu_link_content:0b3bff36-1937-42c2-b99a-0f140dafeff9'
   changed:
-    value: '1573842849'
+    value: '1586570797'
   default_langcode:
     value: '1'
   revision_default:
@@ -2649,14 +2843,18 @@
     value: en
   bundle:
     value: menu_link_content
-  revision_created: false
-  revision_user: false
-  revision_log_message: false
+  revision_created:
+    value: '0'
+  revision_user:
+    target_id: '0'
+  revision_log_message:
+    value: ''
   enabled:
     value: '1'
   title:
     value: Shop
-  description: false
+  description:
+    value: ''
   menu_name:
     value: footer
   link:
@@ -2703,14 +2901,18 @@
     value: en
   bundle:
     value: menu_link_content
-  revision_created: false
-  revision_user: false
-  revision_log_message: false
+  revision_created:
+    value: '0'
+  revision_user:
+    target_id: '0'
+  revision_log_message:
+    value: ''
   enabled:
     value: '0'
   title:
     value: 'American Academy in Rome'
-  description: false
+  description:
+    value: ''
   menu_name:
     value: footer
   link:
@@ -2727,9 +2929,10 @@
     value: '-59'
   expanded:
     value: '0'
-  parent: false
+  parent:
+    value: ''
   changed:
-    value: '1548880145'
+    value: '1586570797'
   default_langcode:
     value: '1'
   revision_default:
@@ -2758,14 +2961,18 @@
     value: en
   bundle:
     value: menu_link_content
-  revision_created: false
-  revision_user: false
-  revision_log_message: false
+  revision_created:
+    value: '0'
+  revision_user:
+    target_id: '0'
+  revision_log_message:
+    value: ''
   enabled:
     value: '1'
   title:
     value: Advisors
-  description: false
+  description:
+    value: ''
   menu_name:
     value: footer
   link:
@@ -2783,7 +2990,7 @@
   parent:
     value: 'menu_link_content:fe223a34-80cd-4624-8850-918e9cf28999'
   changed:
-    value: '1586548734'
+    value: '1586570797'
   default_langcode:
     value: '1'
   revision_default:
@@ -2812,14 +3019,18 @@
     value: en
   bundle:
     value: menu_link_content
-  revision_created: false
-  revision_user: false
-  revision_log_message: false
+  revision_created:
+    value: '0'
+  revision_user:
+    target_id: '0'
+  revision_log_message:
+    value: ''
   enabled:
     value: '1'
   title:
     value: Series
-  description: false
+  description:
+    value: ''
   menu_name:
     value: footer
   link:
@@ -2837,7 +3048,7 @@
   parent:
     value: 'menu_link_content:0b3bff36-1937-42c2-b99a-0f140dafeff9'
   changed:
-    value: '1573842849'
+    value: '1586570797'
   default_langcode:
     value: '1'
   revision_default:
@@ -2866,14 +3077,18 @@
     value: en
   bundle:
     value: menu_link_content
-  revision_created: false
-  revision_user: false
-  revision_log_message: false
+  revision_created:
+    value: '0'
+  revision_user:
+    target_id: '0'
+  revision_log_message:
+    value: ''
   enabled:
     value: '1'
   title:
     value: 'Academic Programs'
-  description: false
+  description:
+    value: ''
   menu_name:
     value: footer
   link:
@@ -2891,7 +3106,7 @@
   parent:
     value: 'menu_link_content:236a9418-f7ba-4800-870c-46094cd6d357'
   changed:
-    value: '1556226303'
+    value: '1586570797'
   default_langcode:
     value: '1'
   revision_default:
@@ -2920,14 +3135,18 @@
     value: en
   bundle:
     value: menu_link_content
-  revision_created: false
-  revision_user: false
-  revision_log_message: false
+  revision_created:
+    value: '0'
+  revision_user:
+    target_id: '0'
+  revision_log_message:
+    value: ''
   enabled:
     value: '1'
   title:
     value: 'Supplements to the Memoirs'
-  description: false
+  description:
+    value: ''
   menu_name:
     value: footer
   link:
@@ -2945,7 +3164,7 @@
   parent:
     value: 'menu_link_content:bc30e759-deef-473f-8227-1111b610a1e6'
   changed:
-    value: '1556558473'
+    value: '1586570797'
   default_langcode:
     value: '1'
   revision_default:
@@ -2974,14 +3193,18 @@
     value: en
   bundle:
     value: menu_link_content
-  revision_created: false
-  revision_user: false
-  revision_log_message: false
+  revision_created:
+    value: '0'
+  revision_user:
+    target_id: '0'
+  revision_log_message:
+    value: ''
   enabled:
     value: '0'
   title:
     value: 'Support Opportunities'
-  description: false
+  description:
+    value: ''
   menu_name:
     value: footer
   link:
@@ -3028,14 +3251,18 @@
     value: en
   bundle:
     value: menu_link_content
-  revision_created: false
-  revision_user: false
-  revision_log_message: false
+  revision_created:
+    value: '0'
+  revision_user:
+    target_id: '0'
+  revision_log_message:
+    value: ''
   enabled:
     value: '1'
   title:
     value: 'Academy Books'
-  description: false
+  description:
+    value: ''
   menu_name:
     value: footer
   link:
@@ -3053,7 +3280,7 @@
   parent:
     value: 'menu_link_content:bc30e759-deef-473f-8227-1111b610a1e6'
   changed:
-    value: '1553108062'
+    value: '1586570797'
   default_langcode:
     value: '1'
   revision_default:
@@ -3082,8 +3309,10 @@
     value: en
   bundle:
     value: menu_link_content
-  revision_created: false
-  revision_user: false
+  revision_created:
+    value: '0'
+  revision_user:
+    target_id: '0'
   revision_log_message: false
   enabled:
     value: '1'
@@ -3101,13 +3330,13 @@
   rediscover:
     value: '1'
   weight:
-    value: '-63'
+    value: '-60'
   expanded:
     value: '0'
   parent:
     value: 'menu_link_content:08ed7f18-7329-4940-8d4d-9e4d55a09724'
   changed:
-    value: '1556231866'
+    value: '1587410292'
   default_langcode:
     value: '1'
   revision_default:
@@ -3136,14 +3365,18 @@
     value: en
   bundle:
     value: menu_link_content
-  revision_created: false
-  revision_user: false
-  revision_log_message: false
+  revision_created:
+    value: '0'
+  revision_user:
+    target_id: '0'
+  revision_log_message:
+    value: ''
   enabled:
     value: '1'
   title:
     value: 'Affiliated Books'
-  description: false
+  description:
+    value: ''
   menu_name:
     value: footer
   link:
@@ -3161,7 +3394,7 @@
   parent:
     value: 'menu_link_content:bc30e759-deef-473f-8227-1111b610a1e6'
   changed:
-    value: '1553108062'
+    value: '1586570797'
   default_langcode:
     value: '1'
   revision_default:
@@ -3190,14 +3423,18 @@
     value: en
   bundle:
     value: menu_link_content
-  revision_created: false
-  revision_user: false
-  revision_log_message: false
+  revision_created:
+    value: '0'
+  revision_user:
+    target_id: '0'
+  revision_log_message:
+    value: ''
   enabled:
     value: '1'
   title:
     value: 'Rome Sustainable Food Project'
-  description: false
+  description:
+    value: ''
   menu_name:
     value: footer
   link:
@@ -3215,7 +3452,7 @@
   parent:
     value: 'menu_link_content:c2b0e763-c626-4481-bf34-988f9346f3b1'
   changed:
-    value: '1556225324'
+    value: '1586570797'
   default_langcode:
     value: '1'
   revision_default:
@@ -3244,14 +3481,18 @@
     value: en
   bundle:
     value: menu_link_content
-  revision_created: false
-  revision_user: false
-  revision_log_message: false
+  revision_created:
+    value: '0'
+  revision_user:
+    target_id: '0'
+  revision_log_message:
+    value: ''
   enabled:
     value: '1'
   title:
     value: Tours
-  description: false
+  description:
+    value: ''
   menu_name:
     value: footer
   link:
@@ -3269,7 +3510,7 @@
   parent:
     value: 'menu_link_content:c2b0e763-c626-4481-bf34-988f9346f3b1'
   changed:
-    value: '1556660129'
+    value: '1586570797'
   default_langcode:
     value: '1'
   revision_default:
@@ -3298,8 +3539,10 @@
     value: en
   bundle:
     value: menu_link_content
-  revision_created: false
-  revision_user: false
+  revision_created:
+    value: '0'
+  revision_user:
+    target_id: '0'
   revision_log_message: false
   enabled:
     value: '1'
@@ -3323,7 +3566,7 @@
   parent:
     value: 'menu_link_content:0b3bff36-1937-42c2-b99a-0f140dafeff9'
   changed:
-    value: '1556565991'
+    value: '1587405955'
   default_langcode:
     value: '1'
   revision_default:
@@ -3354,13 +3597,16 @@
     value: menu_link_content
   revision_created:
     value: '1586569609'
-  revision_user: false
-  revision_log_message: false
+  revision_user:
+    target_id: '0'
+  revision_log_message:
+    value: ''
   enabled:
     value: '1'
   title:
     value: 'McKim Medal Gala'
-  description: false
+  description:
+    value: ''
   menu_name:
     value: footer
   link:
@@ -3411,7 +3657,8 @@
     value: menu_link_content
   revision_created:
     value: '1586570225'
-  revision_user: false
+  revision_user:
+    target_id: '0'
   revision_log_message: false
   enabled:
     value: '1'
@@ -3435,7 +3682,7 @@
   parent:
     value: 'menu_link_content:22906eec-3031-4408-a3be-d191cbf0de06'
   changed:
-    value: '1586570346'
+    value: '1586803079'
   default_langcode:
     value: '1'
   revision_default:
@@ -3453,3 +3700,58 @@
     value: '1'
   content_translation_created:
     value: '1586570225'
+140:
+  id:
+    value: '140'
+  uuid:
+    value: 03669664-bf59-401f-9026-742806000a1e
+  revision_id:
+    value: '140'
+  langcode:
+    value: en
+  bundle:
+    value: menu_link_content
+  revision_created:
+    value: '1587410272'
+  revision_user: false
+  revision_log_message: false
+  enabled:
+    value: '1'
+  title:
+    value: 'Quick News'
+  description: false
+  menu_name:
+    value: footer
+  link:
+    uri: 'internal:/news/quick-news'
+    title: ''
+    options: {  }
+  external:
+    value: '0'
+  rediscover:
+    value: '1'
+  weight:
+    value: '-64'
+  expanded:
+    value: '0'
+  parent:
+    value: 'menu_link_content:08ed7f18-7329-4940-8d4d-9e4d55a09724'
+  changed:
+    value: '1587410292'
+  default_langcode:
+    value: '1'
+  revision_default:
+    value: '1'
+  revision_translation_affected:
+    value: '1'
+  metatag: false
+  content_translation_source:
+    value: und
+  content_translation_outdated:
+    value: '0'
+  content_translation_uid:
+    target_id: '1'
+  content_translation_status:
+    value: '1'
+  content_translation_created:
+    value: '1587410272'
