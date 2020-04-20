@@ -2982,7 +2982,7 @@ display:
           query_comment: ''
           query_tags: {  }
       group_by: false
-      use_ajax: false
+      use_ajax: true
     cache_metadata:
       max-age: -1
       contexts:
