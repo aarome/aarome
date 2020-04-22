@@ -1,0 +1,31 @@
+uuid: f64dc08e-514c-45f6-ac8a-8fa3c363ea77
+langcode: en
+status: true
+dependencies:
+  content:
+    - 'block_content:basic:8cc3012d-dbb9-4169-8f06-415918b8db3c'
+  module:
+    - block_content
+    - system
+  theme:
+    - academy
+id: notice
+theme: academy
+region: header_pre
+weight: 0
+provider: null
+plugin: 'block_content:8cc3012d-dbb9-4169-8f06-415918b8db3c'
+settings:
+  id: 'block_content:8cc3012d-dbb9-4169-8f06-415918b8db3c'
+  label: Notice
+  provider: block_content
+  label_display: visible
+  status: true
+  info: ''
+  view_mode: full
+visibility:
+  request_path:
+    id: request_path
+    pages: '<front>'
+    negate: false
+    context_mapping: {  }
