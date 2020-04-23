@@ -12,13 +12,13 @@ name: Type
 url_alias: type
 weight: -1
 min_count: 1
-show_only_one_result: false
+show_only_one_result: true
 field_identifier: type
 facet_source_id: 'search_api:views_page__search__search'
 widget:
   type: checkbox
   config:
-    show_numbers: false
+    show_numbers: true
     soft_limit: 0
     soft_limit_settings:
       show_less_label: 'Show less'
@@ -34,26 +34,14 @@ hard_limit: 0
 exclude: false
 only_visible_when_facet_source_is_visible: true
 processor_configs:
-  active_widget_order:
-    processor_id: active_widget_order
-    weights:
-      sort: 20
-    settings:
-      sort: DESC
-  count_widget_order:
-    processor_id: count_widget_order
-    weights:
-      sort: 30
-    settings:
-      sort: DESC
   display_value_widget_order:
     processor_id: display_value_widget_order
     weights:
       sort: 40
     settings:
       sort: ASC
-  list_item:
-    processor_id: list_item
+  translate_entity:
+    processor_id: translate_entity
     weights:
       build: 5
     settings: {  }
@@ -64,5 +52,7 @@ processor_configs:
       build: 15
     settings: {  }
 empty_behavior:
-  behavior: none
+  behavior: text
+  text_format: plain_text
+  text: 'No results'
 show_title: true
