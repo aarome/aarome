@@ -20,24 +20,25 @@ conditions:
 reactions:
   blocks:
     blocks:
-      3e505221-431d-4afc-b11a-f5f0f5c6885d:
+      9545e849-7fe1-43c0-a40e-8e98629931df:
         id: facets_block
         label: 'Facets Block'
         provider: facets_block
         label_display: 0
         region: content_pre
         weight: '0'
-        show_title: 1
-        exclude_empty_facets: 0
+        show_title: 0
+        exclude_empty_facets: 1
         facets_to_include:
-          'facet_block:content_type': 'facet_block:content_type'
+          'facet_block:type': 'facet_block:type'
+          'facet_block:dates': 'facet_block:dates'
         context_mapping: {  }
         custom_id: facets_block
         theme: academy
-        css_class: facets
+        css_class: ''
         unique: 0
         context_id: search
-        uuid: 3e505221-431d-4afc-b11a-f5f0f5c6885d
+        uuid: 9545e849-7fe1-43c0-a40e-8e98629931df
     id: blocks
     saved: false
     uuid: f09c4810-0f1e-4316-95e5-27cf680518f9
