@@ -5,6 +5,7 @@ dependencies:
   config:
     - core.entity_view_mode.node.full
     - field.field.node.page.body
+    - field.field.node.page.field_page_callout
     - field.field.node.page.field_page_image
     - field.field.node.page.field_page_page_section
     - field.field.node.page.field_page_summary
@@ -89,7 +90,9 @@ content:
     region: content
 hidden:
   body: true
+  field_page_callout: true
   field_page_summary: true
   field_page_type: true
   langcode: true
   links: true
+  search_api_excerpt: true

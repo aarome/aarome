@@ -4,6 +4,7 @@ status: true
 dependencies:
   config:
     - field.field.node.page.body
+    - field.field.node.page.field_page_callout
     - field.field.node.page.field_page_image
     - field.field.node.page.field_page_page_section
     - field.field.node.page.field_page_summary
@@ -11,6 +12,7 @@ dependencies:
     - node.type.page
   module:
     - allowed_formats
+    - block_field
     - inline_entity_form
     - paragraphs
     - path
@@ -28,6 +30,15 @@ content:
     region: content
     settings: {  }
     third_party_settings: {  }
+  field_page_callout:
+    weight: 11
+    settings:
+      plugin_id: ''
+      settings: {  }
+      configuration_form: full
+    third_party_settings: {  }
+    type: block_field_default
+    region: content
   field_page_image:
     weight: 4
     settings:
@@ -57,9 +68,9 @@ content:
       form_display_mode: default
       default_paragraph_type: page_section
       features:
-        duplicate: duplicate
-        collapse_edit_all: collapse_edit_all
         add_above: '0'
+        collapse_edit_all: collapse_edit_all
+        duplicate: duplicate
       closed_mode_threshold: 0
     third_party_settings: {  }
     region: content

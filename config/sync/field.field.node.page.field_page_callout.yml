@@ -1,0 +1,26 @@
+uuid: a7154393-2eae-4d00-a02e-6f4bd4d288e1
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_page_callout
+    - node.type.page
+  module:
+    - block_field
+id: node.page.field_page_callout
+field_name: field_page_callout
+entity_type: node
+bundle: page
+label: Callout
+description: ''
+required: false
+translatable: true
+default_value:
+  -
+    plugin_id: 'block_content:2e58915b-b79a-498b-9040-5cb6a14d96eb'
+    settings: {  }
+default_value_callback: ''
+settings:
+  plugin_ids:
+    'block_content:2e58915b-b79a-498b-9040-5cb6a14d96eb': 'block_content:2e58915b-b79a-498b-9040-5cb6a14d96eb'
+field_type: block_field

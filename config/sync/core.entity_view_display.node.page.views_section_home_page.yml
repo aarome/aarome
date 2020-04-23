@@ -5,6 +5,7 @@ dependencies:
   config:
     - core.entity_view_mode.node.views_section_home_page
     - field.field.node.page.body
+    - field.field.node.page.field_page_callout
     - field.field.node.page.field_page_image
     - field.field.node.page.field_page_page_section
     - field.field.node.page.field_page_summary
@@ -34,7 +35,9 @@ content:
     third_party_settings: {  }
 hidden:
   body: true
+  field_page_callout: true
   field_page_image: true
   field_page_summary: true
   field_page_type: true
   langcode: true
+  search_api_excerpt: true

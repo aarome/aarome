@@ -1,0 +1,44 @@
+uuid: a40498ac-55c6-4213-8e5c-977060bd8226
+langcode: en
+status: true
+dependencies:
+  module:
+    - system
+name: rare_book_room
+label: 'Rare book room'
+group: Callouts
+description: ''
+requireAllConditions: false
+disabled: false
+conditions:
+  request_path:
+    id: request_path
+    pages: /research/special-collections/rare-book-room
+    negate: 0
+    uuid: edda4f52-1581-45ab-adc9-c655a8c2dee7
+    context_mapping: {  }
+reactions:
+  blocks:
+    blocks:
+      cb65577c-bd40-40e6-85c3-be154c9a1d45:
+        id: 'block_content:3fe6fb5b-42c1-439d-b05a-6af177089d5f'
+        label: 'Barbara Goldsmith Rare Book Room'
+        provider: block_content
+        label_display: 0
+        status: true
+        info: ''
+        view_mode: full
+        region: callout
+        weight: '0'
+        context_mapping: {  }
+        custom_id: callout_rare_book
+        theme: academy
+        css_class: 'callout callout-rare-book'
+        unique: 0
+        context_id: rare_book_room
+        uuid: cb65577c-bd40-40e6-85c3-be154c9a1d45
+    id: blocks
+    saved: false
+    uuid: 2c146523-c0ef-475c-9c91-3a7c97fe6f34
+    include_default_blocks: 0
+weight: 0

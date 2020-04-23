@@ -4,12 +4,14 @@ status: true
 dependencies:
   config:
     - field.field.node.page.body
+    - field.field.node.page.field_page_callout
     - field.field.node.page.field_page_image
     - field.field.node.page.field_page_page_section
     - field.field.node.page.field_page_summary
     - field.field.node.page.field_page_type
     - node.type.page
   module:
+    - block_field
     - text
     - user
 _core:
@@ -19,6 +21,13 @@ targetEntityType: node
 bundle: page
 mode: default
 content:
+  field_page_callout:
+    weight: 2
+    label: above
+    settings: {  }
+    third_party_settings: {  }
+    type: block_field
+    region: content
   field_page_image:
     type: entity_reference_entity_view
     weight: 0
@@ -41,3 +50,4 @@ hidden:
   field_page_type: true
   langcode: true
   links: true
+  search_api_excerpt: true
