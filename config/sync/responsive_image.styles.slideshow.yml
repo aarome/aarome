@@ -3,41 +3,53 @@ langcode: en
 status: true
 dependencies:
   config:
-    - image.style.max_1440x1440
+    - image.style.max_1300x1300
+    - image.style.max_2600x2600
+    - image.style.max_650x650
   theme:
     - academy
 id: slideshow
 label: Slideshow
 image_style_mappings:
   -
-    breakpoint_id: academy.responsive-menu
+    breakpoint_id: academy.extra-large
     multiplier: 1x
     image_mapping_type: image_style
-    image_mapping: max_1440x1440
+    image_mapping: max_1300x1300
   -
-    breakpoint_id: academy.responsive-menu
+    breakpoint_id: academy.extra-large
     multiplier: 2x
     image_mapping_type: image_style
-    image_mapping: max_1440x1440
+    image_mapping: max_2600x2600
   -
     breakpoint_id: academy.large
     multiplier: 1x
     image_mapping_type: image_style
-    image_mapping: max_1440x1440
+    image_mapping: max_1300x1300
   -
     breakpoint_id: academy.large
     multiplier: 2x
     image_mapping_type: image_style
-    image_mapping: max_1440x1440
+    image_mapping: max_2600x2600
   -
     breakpoint_id: academy.medium
     multiplier: 1x
     image_mapping_type: image_style
-    image_mapping: max_1440x1440
+    image_mapping: max_650x650
   -
     breakpoint_id: academy.medium
     multiplier: 2x
     image_mapping_type: image_style
-    image_mapping: max_1440x1440
+    image_mapping: max_1300x1300
+  -
+    breakpoint_id: academy.small
+    multiplier: 1x
+    image_mapping_type: image_style
+    image_mapping: max_650x650
+  -
+    breakpoint_id: academy.small
+    multiplier: 2x
+    image_mapping_type: image_style
+    image_mapping: max_1300x1300
 breakpoint_group: academy
-fallback_image_style: max_1440x1440
+fallback_image_style: '_empty image_'

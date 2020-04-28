@@ -11,6 +11,7 @@ dependencies:
     - field.field.node.news_features.field_news_features_rel_people
     - field.field.node.news_features.field_news_features_summary
     - node.type.news_features
+    - responsive_image.styles.slideshow
   module:
     - slick_media
     - text
@@ -36,13 +37,17 @@ content:
       skin: default
       skin_thumbnail: ''
       image_style: ''
-      responsive_image_style: ''
+      responsive_image_style: slideshow
       thumbnail_effect: ''
       thumbnail_position: ''
       media_switch: ''
+      box_style: ''
       thumbnail_style: ''
+      box_media_style: ''
       ratio: ''
+      box_caption: ''
       view_mode: default
+      box_caption_custom: ''
       image: ''
       title: ''
       link: ''
@@ -51,25 +56,7 @@ content:
       class: ''
       caption:
         field_media_caption: field_media_caption
-        field_media_image: '0'
       cache: 0
-      sizes: ''
-      breakpoints:
-        xs:
-          image_style: ''
-          width: ''
-        sm:
-          image_style: ''
-          width: ''
-        md:
-          image_style: ''
-          width: ''
-        lg:
-          image_style: ''
-          width: ''
-        xl:
-          image_style: ''
-          width: ''
       current_view_mode: default
       vanilla: false
       background: false
@@ -86,16 +73,16 @@ content:
       thumbnail: ''
       skin_arrows: ''
       skin_dots: ''
+      fx: ''
       style: ''
       icon: ''
-      box_caption: ''
-      box_caption_custom: ''
-      box_style: ''
-      box_media_style: ''
+      _uri: ''
+      breakpoints: {  }
+      sizes: ''
+      grid_header: ''
       preserve_keys: false
       visible_items: 0
       grid: 0
-      grid_header: ''
       grid_medium: 0
       grid_small: 0
       id: ''
@@ -111,3 +98,4 @@ hidden:
   field_news_features_summary: true
   langcode: true
   links: true
+  search_api_excerpt: true

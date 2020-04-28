@@ -15,7 +15,7 @@ effects:
     id: image_scale
     weight: 1
     data:
-      width: 650
-      height: 650
+      width: null
+      height: 400
       upscale: true
 pipeline: __default__

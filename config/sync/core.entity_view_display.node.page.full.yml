@@ -11,9 +11,10 @@ dependencies:
     - field.field.node.page.field_page_summary
     - field.field.node.page.field_page_type
     - node.type.page
-    - responsive_image.styles.inside_page
+    - responsive_image.styles.wide
   module:
     - blazy
+    - block_field
     - entity_reference_revisions
     - user
 _core:
@@ -23,6 +24,13 @@ targetEntityType: node
 bundle: page
 mode: full
 content:
+  field_page_callout:
+    type: block_field
+    weight: 1
+    region: content
+    label: hidden
+    settings: {  }
+    third_party_settings: {  }
   field_page_image:
     type: blazy_media
     weight: 0
@@ -30,31 +38,17 @@ content:
     label: hidden
     settings:
       image_style: ''
-      responsive_image_style: inside_page
+      responsive_image_style: wide
       media_switch: ''
+      box_style: ''
       thumbnail_style: ''
+      box_media_style: ''
       ratio: ''
+      box_caption: ''
       view_mode: default
+      box_caption_custom: ''
       caption:
         field_media_caption: field_media_caption
-        field_media_image: '0'
-      sizes: ''
-      breakpoints:
-        xs:
-          image_style: ''
-          width: ''
-        sm:
-          image_style: ''
-          width: ''
-        md:
-          image_style: ''
-          width: ''
-        lg:
-          image_style: ''
-          width: ''
-        xl:
-          image_style: ''
-          width: ''
       current_view_mode: full
       background: false
       class: ''
@@ -67,21 +61,20 @@ content:
       icon: ''
       layout: ''
       cache: 0
-      optionset: default
       skin: ''
+      fx: ''
       style: ''
-      box_caption: ''
-      box_caption_custom: ''
-      box_style: ''
-      box_media_style: ''
-      grid: 0
+      _uri: ''
+      breakpoints: {  }
+      sizes: ''
       grid_header: ''
+      grid: 0
       grid_medium: 0
       grid_small: 0
     third_party_settings: {  }
   field_page_page_section:
     type: entity_reference_revisions_entity_view
-    weight: 1
+    weight: 2
     label: hidden
     settings:
       view_mode: inside_page
@@ -90,7 +83,6 @@ content:
     region: content
 hidden:
   body: true
-  field_page_callout: true
   field_page_summary: true
   field_page_type: true
   langcode: true
