@@ -13,6 +13,7 @@ permissions:
   - 'access content'
   - 'access devel information'
   - 'access kint'
+  - 'display eu cookie compliance popup'
   - 'search content'
   - 'use text format restricted_html'
   - 'view empty pages'
