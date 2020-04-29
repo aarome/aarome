@@ -1,0 +1,10 @@
+uuid: 2bd244d1-4f86-4665-b045-71b6ab54b6be
+langcode: en
+status: true
+dependencies:
+  module:
+    - node
+id: node.location_teaser
+label: 'Location teaser'
+targetEntityType: node
+cache: true

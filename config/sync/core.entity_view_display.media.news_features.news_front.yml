@@ -1,0 +1,73 @@
+uuid: 4d47c575-73ff-4a44-b489-604e464d9413
+langcode: en
+status: true
+dependencies:
+  config:
+    - core.entity_view_mode.media.news_front
+    - field.field.media.news_features.field_media_caption
+    - field.field.media.news_features.field_media_image
+    - media.type.news_features
+    - responsive_image.styles.wide
+  module:
+    - blazy
+id: media.news_features.news_front
+targetEntityType: media
+bundle: news_features
+mode: news_front
+content:
+  field_media_image:
+    weight: 0
+    label: hidden
+    settings:
+      image_style: ''
+      responsive_image_style: wide
+      media_switch: ''
+      thumbnail_style: ''
+      ratio: ''
+      sizes: ''
+      breakpoints:
+        xs:
+          image_style: ''
+          width: ''
+        sm:
+          image_style: ''
+          width: ''
+        md:
+          image_style: ''
+          width: ''
+        lg:
+          image_style: ''
+          width: ''
+        xl:
+          image_style: ''
+          width: ''
+      current_view_mode: news_front
+      background: false
+      caption:
+        title: '0'
+        alt: '0'
+      icon: ''
+      layout: ''
+      view_mode: ''
+      cache: 0
+      optionset: default
+      skin: ''
+      style: ''
+      box_caption: ''
+      box_caption_custom: ''
+      box_style: ''
+      box_media_style: ''
+      grid: 0
+      grid_header: ''
+      grid_medium: 0
+      grid_small: 0
+    third_party_settings: {  }
+    type: blazy
+    region: content
+hidden:
+  created: true
+  field_media_caption: true
+  langcode: true
+  name: true
+  thumbnail: true
+  uid: true

@@ -1,0 +1,19 @@
+uuid: b6cd4e3e-5455-4e30-92d5-21c216296269
+langcode: en
+status: true
+dependencies:
+  module:
+    - node
+    - text
+id: node.field_people_memberships
+field_name: field_people_memberships
+entity_type: node
+type: text_long
+settings: {  }
+module: text
+locked: false
+cardinality: 1
+translatable: true
+indexes: {  }
+persist_with_no_fields: false
+custom_storage: false

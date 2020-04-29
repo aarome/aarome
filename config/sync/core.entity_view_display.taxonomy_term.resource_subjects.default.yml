@@ -1,0 +1,14 @@
+uuid: b1d15bbb-bd63-412c-ae11-628f0a57c8a8
+langcode: en
+status: true
+dependencies:
+  config:
+    - taxonomy.vocabulary.resource_subjects
+id: taxonomy_term.resource_subjects.default
+targetEntityType: taxonomy_term
+bundle: resource_subjects
+mode: default
+content: {  }
+hidden:
+  description: true
+  langcode: true

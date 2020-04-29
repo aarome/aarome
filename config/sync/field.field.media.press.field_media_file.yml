@@ -1,0 +1,46 @@
+uuid: 64db0e37-c99b-4fd7-a844-e766cea67a71
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.media.field_media_file
+    - media.type.press
+  module:
+    - file
+    - filefield_paths
+third_party_settings:
+  filefield_paths:
+    enabled: true
+    file_path:
+      value: files/press
+      options:
+        slashes: true
+        pathauto: true
+        transliterate: true
+    redirect: false
+    retroactive_update: true
+    active_updating: true
+    file_name:
+      value: '[media:name].[file:ffp-extension-original]'
+      options:
+        slashes: true
+        pathauto: true
+        transliterate: true
+id: media.press.field_media_file
+field_name: field_media_file
+entity_type: media
+bundle: press
+label: File
+description: ''
+required: true
+translatable: true
+default_value: {  }
+default_value_callback: ''
+settings:
+  file_directory: '[date:custom:Y]-[date:custom:m]'
+  file_extensions: pdf
+  max_filesize: '5 MB'
+  description_field: true
+  handler: 'default:file'
+  handler_settings: {  }
+field_type: file

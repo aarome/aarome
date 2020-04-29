@@ -1,0 +1,21 @@
+uuid: 8e136381-4d20-495f-a803-579d3b11caf1
+langcode: en
+status: true
+dependencies:
+  config:
+    - core.entity_view_mode.node.teaser
+    - node.type.empty_page
+  module:
+    - user
+id: node.empty_page.teaser
+targetEntityType: node
+bundle: empty_page
+mode: teaser
+content:
+  links:
+    weight: 100
+    settings: {  }
+    third_party_settings: {  }
+    region: content
+hidden:
+  langcode: true

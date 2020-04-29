@@ -1,0 +1,101 @@
+uuid: 1895c66f-ad22-4761-8c49-ab44be8a44bc
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.field.node.news_features.body
+    - field.field.node.news_features.field_news_features_byline
+    - field.field.node.news_features.field_news_features_date
+    - field.field.node.news_features.field_news_features_images
+    - field.field.node.news_features.field_news_features_rel_events
+    - field.field.node.news_features.field_news_features_rel_people
+    - field.field.node.news_features.field_news_features_summary
+    - node.type.news_features
+    - responsive_image.styles.slideshow
+  module:
+    - slick_media
+    - text
+    - user
+id: node.news_features.default
+targetEntityType: node
+bundle: news_features
+mode: default
+content:
+  body:
+    type: text_default
+    weight: 1
+    region: content
+    label: hidden
+    settings: {  }
+    third_party_settings: {  }
+  field_news_features_images:
+    weight: 0
+    label: hidden
+    settings:
+      optionset: slideshow
+      optionset_thumbnail: ''
+      skin: default
+      skin_thumbnail: ''
+      image_style: ''
+      responsive_image_style: slideshow
+      thumbnail_effect: ''
+      thumbnail_position: ''
+      media_switch: ''
+      box_style: ''
+      thumbnail_style: ''
+      box_media_style: ''
+      ratio: ''
+      box_caption: ''
+      view_mode: default
+      box_caption_custom: ''
+      image: ''
+      title: ''
+      link: ''
+      layout: ''
+      thumbnail_caption: ''
+      class: ''
+      caption:
+        field_media_caption: field_media_caption
+      cache: 0
+      current_view_mode: default
+      vanilla: false
+      background: false
+      override: false
+      overridables:
+        arrows: '0'
+        autoplay: '0'
+        dots: '0'
+        draggable: '0'
+        infinite: '0'
+        mouseWheel: '0'
+        randomize: '0'
+        variableWidth: '0'
+      thumbnail: ''
+      skin_arrows: ''
+      skin_dots: ''
+      fx: ''
+      style: ''
+      icon: ''
+      _uri: ''
+      breakpoints: {  }
+      sizes: ''
+      grid_header: ''
+      preserve_keys: false
+      visible_items: 0
+      grid: 0
+      grid_medium: 0
+      grid_small: 0
+      id: ''
+      overlay: ''
+    third_party_settings: {  }
+    type: slick_media
+    region: content
+hidden:
+  field_news_features_byline: true
+  field_news_features_date: true
+  field_news_features_rel_events: true
+  field_news_features_rel_people: true
+  field_news_features_summary: true
+  langcode: true
+  links: true
+  search_api_excerpt: true

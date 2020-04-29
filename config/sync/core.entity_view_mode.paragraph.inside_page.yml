@@ -1,0 +1,10 @@
+uuid: 2f608094-7106-4cee-9c89-7118211d6e4e
+langcode: en
+status: true
+dependencies:
+  module:
+    - paragraphs
+id: paragraph.inside_page
+label: 'Inside page'
+targetEntityType: paragraph
+cache: true

@@ -1,0 +1,63 @@
+uuid: 35b7f49f-eb44-4d11-b178-25a24b0f2c65
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.field.media.image.field_media_caption
+    - field.field.media.image.field_media_image
+    - image.style.thumbnail
+    - media.type.image
+  module:
+    - hide_revision_field
+    - image
+    - text
+_core:
+  default_config_hash: nZlttO4YMwMCpkhYMz7bQ1ZMjABGc59YY1us3eSfvTY
+id: media.image.default
+targetEntityType: media
+bundle: image
+mode: default
+content:
+  field_media_caption:
+    weight: 2
+    settings:
+      size: 60
+      placeholder: ''
+    third_party_settings: {  }
+    type: text_textfield
+    region: content
+  field_media_image:
+    settings:
+      progress_indicator: throbber
+      preview_image_style: thumbnail
+    third_party_settings: {  }
+    type: image_image
+    weight: 1
+    region: content
+  name:
+    type: string_textfield
+    weight: 0
+    region: content
+    settings:
+      size: 60
+      placeholder: ''
+    third_party_settings: {  }
+  revision_log_message:
+    type: hide_revision_field_log_widget
+    weight: 80
+    region: content
+    settings:
+      show: true
+      default: ''
+      permission_based: false
+      allow_user_settings: true
+      rows: '5'
+      placeholder: ''
+    third_party_settings: {  }
+hidden:
+  created: true
+  langcode: true
+  path: true
+  status: true
+  translation: true
+  uid: true

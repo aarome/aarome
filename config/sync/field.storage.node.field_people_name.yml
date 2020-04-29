@@ -1,0 +1,19 @@
+uuid: 3f05321a-ca62-4490-ae36-b1722464034b
+langcode: en
+status: true
+dependencies:
+  module:
+    - name
+    - node
+id: node.field_people_name
+field_name: field_people_name
+entity_type: node
+type: name
+settings: {  }
+module: name
+locked: false
+cardinality: 1
+translatable: true
+indexes: {  }
+persist_with_no_fields: false
+custom_storage: false

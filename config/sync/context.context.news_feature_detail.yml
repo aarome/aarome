@@ -1,0 +1,27 @@
+uuid: 87aa73d3-a89b-4d9a-822c-7c7e3eb5209f
+langcode: en
+status: true
+dependencies:
+  module:
+    - system
+name: news_feature_detail
+label: 'News feature detail'
+group: News
+description: ''
+requireAllConditions: false
+disabled: false
+conditions:
+  request_path:
+    id: request_path
+    pages: '/news/features/*'
+    negate: 0
+    uuid: 511d0504-cd7e-4478-8dd8-a436fb539b55
+    context_mapping: {  }
+reactions:
+  blocks:
+    blocks: {  }
+    id: blocks
+    saved: false
+    uuid: 1083f0ba-053f-439f-a1b7-3e84b6351fcf
+    include_default_blocks: 1
+weight: -13

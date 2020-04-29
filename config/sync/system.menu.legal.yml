@@ -1,0 +1,8 @@
+uuid: 85b038fd-4e67-458b-aac8-352f7cfde6f6
+langcode: en
+status: true
+dependencies: {  }
+id: legal
+label: Legal
+description: 'Legal, privacy, and intranet links'
+locked: false

@@ -1,0 +1,53 @@
+uuid: fef141c8-2a86-4744-9b92-5a4854143583
+langcode: en
+status: true
+dependencies:
+  config:
+    - image.style.max_650x650
+  theme:
+    - academy
+id: portrait
+label: Portrait
+image_style_mappings:
+  -
+    breakpoint_id: academy.extra-large
+    multiplier: 1x
+    image_mapping_type: image_style
+    image_mapping: max_650x650
+  -
+    breakpoint_id: academy.extra-large
+    multiplier: 2x
+    image_mapping_type: image_style
+    image_mapping: max_650x650
+  -
+    breakpoint_id: academy.large
+    multiplier: 1x
+    image_mapping_type: image_style
+    image_mapping: max_650x650
+  -
+    breakpoint_id: academy.large
+    multiplier: 2x
+    image_mapping_type: image_style
+    image_mapping: max_650x650
+  -
+    breakpoint_id: academy.medium
+    multiplier: 1x
+    image_mapping_type: image_style
+    image_mapping: max_650x650
+  -
+    breakpoint_id: academy.medium
+    multiplier: 2x
+    image_mapping_type: image_style
+    image_mapping: max_650x650
+  -
+    breakpoint_id: academy.small
+    multiplier: 1x
+    image_mapping_type: image_style
+    image_mapping: max_650x650
+  -
+    breakpoint_id: academy.small
+    multiplier: 2x
+    image_mapping_type: image_style
+    image_mapping: max_650x650
+breakpoint_group: academy
+fallback_image_style: '_empty image_'
