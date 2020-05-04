@@ -2342,39 +2342,22 @@ display:
             style: ''
             background: false
             caption:
-              field_media_audio_file: '0'
               field_media_caption: '0'
-              field_media_image: '0'
-              field_media_file: '0'
               field_media_file_type: '0'
               field_file_language: '0'
-              field_media_video_file: '0'
-            view_mode: event_front
+            view_mode: default
             image_style: ''
             thumbnail_style: ''
             responsive_image_style: wide
             media_switch: ''
             ratio: ''
+            box_style: ''
+            box_media_style: ''
+            box_caption: ''
+            box_caption_custom: ''
             grid: null
             grid_medium: null
             grid_small: null
-            sizes: ''
-            breakpoints:
-              xs:
-                image_style: ''
-                width: ''
-              sm:
-                image_style: ''
-                width: ''
-              md:
-                image_style: ''
-                width: ''
-              lg:
-                image_style: ''
-                width: ''
-              xl:
-                image_style: ''
-                width: ''
             current_view_mode: _custom
           group_column: target_id
           group_columns: {  }

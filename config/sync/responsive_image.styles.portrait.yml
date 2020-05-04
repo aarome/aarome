@@ -3,6 +3,8 @@ langcode: en
 status: true
 dependencies:
   config:
+    - image.style.max_1300x1300
+    - image.style.max_325x325
     - image.style.max_650x650
   theme:
     - academy
@@ -10,44 +12,23 @@ id: portrait
 label: Portrait
 image_style_mappings:
   -
-    breakpoint_id: academy.extra-large
+    breakpoint_id: academy.mobile
+    multiplier: 1x
+    image_mapping_type: sizes
+    image_mapping:
+      sizes: 100vw
+      sizes_image_styles:
+        - max_1300x1300
+        - max_650x650
+  -
+    breakpoint_id: academy.tablet
     multiplier: 1x
     image_mapping_type: image_style
-    image_mapping: max_650x650
+    image_mapping: max_325x325
   -
-    breakpoint_id: academy.extra-large
-    multiplier: 2x
-    image_mapping_type: image_style
-    image_mapping: max_650x650
-  -
-    breakpoint_id: academy.large
-    multiplier: 1x
-    image_mapping_type: image_style
-    image_mapping: max_650x650
-  -
-    breakpoint_id: academy.large
-    multiplier: 2x
-    image_mapping_type: image_style
-    image_mapping: max_650x650
-  -
-    breakpoint_id: academy.medium
-    multiplier: 1x
-    image_mapping_type: image_style
-    image_mapping: max_650x650
-  -
-    breakpoint_id: academy.medium
-    multiplier: 2x
-    image_mapping_type: image_style
-    image_mapping: max_650x650
-  -
-    breakpoint_id: academy.small
-    multiplier: 1x
-    image_mapping_type: image_style
-    image_mapping: max_650x650
-  -
-    breakpoint_id: academy.small
+    breakpoint_id: academy.tablet
     multiplier: 2x
     image_mapping_type: image_style
     image_mapping: max_650x650
 breakpoint_group: academy
-fallback_image_style: '_empty image_'
+fallback_image_style: '_original image_'

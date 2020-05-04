@@ -944,14 +944,14 @@ display:
             trim: false
             preserve_tags: ''
             html: false
-          element_type: ''
-          element_class: ''
+          element_type: h3
+          element_class: discipline
           element_label_type: ''
           element_label_class: ''
           element_label_colon: false
           element_wrapper_type: ''
           element_wrapper_class: ''
-          element_default_classes: true
+          element_default_classes: false
           empty: ''
           hide_empty: false
           empty_zero: false
@@ -1087,23 +1087,9 @@ display:
             responsive_image_style: portrait
             media_switch: ''
             ratio: ''
-            sizes: ''
-            breakpoints:
-              xs:
-                image_style: ''
-                width: ''
-              sm:
-                image_style: ''
-                width: ''
-              md:
-                image_style: ''
-                width: ''
-              lg:
-                image_style: ''
-                width: ''
-              xl:
-                image_style: ''
-                width: ''
+            box_style: ''
+            box_caption: ''
+            box_caption_custom: ''
             current_view_mode: _custom
           group_column: target_id
           group_columns: {  }
@@ -1750,6 +1736,7 @@ display:
         group_by: false
         exposed_form: false
         header: false
+        use_ajax: false
       filter_groups:
         operator: AND
         groups:
@@ -1795,14 +1782,14 @@ display:
             trim: false
             preserve_tags: ''
             html: false
-          element_type: ''
-          element_class: ''
+          element_type: h3
+          element_class: discipline
           element_label_type: ''
           element_label_class: ''
           element_label_colon: false
           element_wrapper_type: ''
           element_wrapper_class: ''
-          element_default_classes: true
+          element_default_classes: false
           empty: ''
           hide_empty: false
           empty_zero: false
@@ -2326,6 +2313,7 @@ display:
                   filter_rewrite_values: '- Any -|All years'
           text_input_required_format: basic_html
       header: {  }
+      use_ajax: false
     cache_metadata:
       max-age: -1
       contexts:
@@ -2647,14 +2635,14 @@ display:
             trim: false
             preserve_tags: ''
             html: false
-          element_type: ''
-          element_class: ''
+          element_type: h3
+          element_class: discipline
           element_label_type: ''
           element_label_class: ''
           element_label_colon: false
           element_wrapper_type: ''
           element_wrapper_class: ''
-          element_default_classes: true
+          element_default_classes: false
           empty: ''
           hide_empty: false
           empty_zero: false
