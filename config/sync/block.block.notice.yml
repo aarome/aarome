@@ -1,11 +1,12 @@
-uuid: 683665f0-d6ab-4129-baaa-a4c124a4638e
+uuid: 6e8ef3c6-eae9-44a0-8ab2-4421c98e70f0
 langcode: en
 status: true
 dependencies:
   content:
-    - 'block_content:basic:6d27aa55-6765-4b2e-8776-f6309f1f98d5'
+    - 'block_content:basic:8cc3012d-dbb9-4169-8f06-415918b8db3c'
   module:
     - block_content
+    - system
   theme:
     - academy
 id: notice
@@ -13,13 +14,18 @@ theme: academy
 region: highlighted
 weight: 0
 provider: null
-plugin: 'block_content:6d27aa55-6765-4b2e-8776-f6309f1f98d5'
+plugin: 'block_content:8cc3012d-dbb9-4169-8f06-415918b8db3c'
 settings:
-  id: 'block_content:6d27aa55-6765-4b2e-8776-f6309f1f98d5'
+  id: 'block_content:8cc3012d-dbb9-4169-8f06-415918b8db3c'
   label: Notice
   provider: block_content
   label_display: '0'
   status: true
   info: ''
   view_mode: full
-visibility: {  }
+visibility:
+  request_path:
+    id: request_path
+    pages: '<front>'
+    negate: false
+    context_mapping: {  }
