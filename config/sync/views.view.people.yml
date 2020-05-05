@@ -2778,23 +2778,9 @@ display:
             responsive_image_style: portrait
             media_switch: ''
             ratio: ''
-            sizes: ''
-            breakpoints:
-              xs:
-                image_style: ''
-                width: ''
-              sm:
-                image_style: ''
-                width: ''
-              md:
-                image_style: ''
-                width: ''
-              lg:
-                image_style: ''
-                width: ''
-              xl:
-                image_style: ''
-                width: ''
+            box_style: ''
+            box_caption: ''
+            box_caption_custom: ''
             current_view_mode: _custom
           group_column: target_id
           group_columns: {  }
