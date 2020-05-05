@@ -1,1 +1,0 @@
-elements: "general_section:\n  '#title': ' Informazioni tecniche'\nbrowser_type:\n  '#title': 'Tipo di browser'\ncomputer_type:\n  '#title': 'Tipo di computer'\nwebpage_url:\n  '#title': 'Pagina web URL'\ndescription_problem:\n  '#title': 'Descrizione del problema'\n"
