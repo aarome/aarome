@@ -1,0 +1,7 @@
+fields:
+  bibcite_edition:
+    label: Sessione
+  bibcite_place_published:
+    label: Città
+  bibcite_original_publication:
+    label: Cronologia

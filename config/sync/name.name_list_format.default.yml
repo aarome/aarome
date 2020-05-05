@@ -1,0 +1,12 @@
+uuid: a55e757c-72af-4f2b-87c9-b50afce14d86
+langcode: en
+status: true
+dependencies: {  }
+id: default
+label: Default
+locked: true
+delimiter: ', '
+and: text
+delimiter_precedes_last: never
+el_al_min: 3
+el_al_first: 1

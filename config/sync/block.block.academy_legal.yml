@@ -1,0 +1,29 @@
+uuid: 788cbcdf-f340-46ee-87d4-0fd4f6fe825e
+langcode: en
+status: true
+dependencies:
+  config:
+    - system.menu.legal
+  module:
+    - block_class
+    - system
+  theme:
+    - academy
+third_party_settings:
+  block_class:
+    classes: legal
+id: academy_legal
+theme: academy
+region: footer_second
+weight: -6
+provider: null
+plugin: 'system_menu_block:legal'
+settings:
+  id: 'system_menu_block:legal'
+  label: Legal
+  provider: system
+  label_display: '0'
+  level: 1
+  depth: 0
+  expand_all_items: false
+visibility: {  }

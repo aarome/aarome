@@ -1,0 +1,25 @@
+uuid: eb4802e5-5dc0-4ff5-9039-e9330f6215a3
+langcode: en
+status: true
+dependencies:
+  content:
+    - 'block_content:basic:2a4b5d2e-f5b0-43a0-8efd-19faed352de9'
+  module:
+    - block_content
+  theme:
+    - tema
+id: copyright
+theme: tema
+region: footer_second
+weight: 0
+provider: null
+plugin: 'block_content:2a4b5d2e-f5b0-43a0-8efd-19faed352de9'
+settings:
+  id: 'block_content:2a4b5d2e-f5b0-43a0-8efd-19faed352de9'
+  label: Copyright
+  provider: block_content
+  label_display: '0'
+  status: true
+  info: ''
+  view_mode: full
+visibility: {  }

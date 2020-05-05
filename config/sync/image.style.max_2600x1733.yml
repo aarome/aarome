@@ -1,0 +1,8 @@
+uuid: e4aa517a-e08f-4c7e-a80e-5e2f13133042
+langcode: en
+status: true
+dependencies: {  }
+name: max_2600x1733
+label: 'Max 2600x1733 (constrained height)'
+effects: {  }
+pipeline: __default__

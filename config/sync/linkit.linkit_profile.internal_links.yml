@@ -1,0 +1,22 @@
+uuid: 297df32a-3b67-4da0-aaed-474241721062
+langcode: en
+status: true
+dependencies:
+  module:
+    - node
+id: internal_links
+label: 'Internal links'
+description: ''
+matchers:
+  48903067-f727-45bf-a198-a03196f6f9eb:
+    uuid: 48903067-f727-45bf-a198-a03196f6f9eb
+    id: 'entity:node'
+    weight: 0
+    settings:
+      bundles:
+        page: page
+      group_by_bundle: true
+      include_unpublished: false
+      metadata: ''
+      substitution_type: canonical
+      limit: 100

@@ -1,0 +1,33 @@
+uuid: 83915a7f-b6ba-4520-8a68-7831115083e9
+langcode: en
+status: true
+dependencies:
+  module:
+    - language
+    - node
+id: society_of_fellows
+label: 'Society of Fellows'
+type: 'canonical_entities:node'
+pattern: '/society-of-fellows/news-events/[node:title]'
+selection_criteria:
+  e71f88dd-82f5-4d60-b637-e4e5908a0f32:
+    id: node_type
+    bundles:
+      society_of_fellows: society_of_fellows
+    negate: false
+    context_mapping:
+      node: node
+    uuid: e71f88dd-82f5-4d60-b637-e4e5908a0f32
+  01a65d4f-2719-48b8-ad82-d1c62d261a8a:
+    id: language
+    langcodes:
+      en: en
+    negate: false
+    context_mapping:
+      language: 'node:langcode:language'
+    uuid: 01a65d4f-2719-48b8-ad82-d1c62d261a8a
+selection_logic: and
+weight: -10
+relationships:
+  'node:langcode:language':
+    label: Language

@@ -1,0 +1,40 @@
+uuid: 262a83f6-c6ba-4940-99f4-9e3591bda2ad
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.field.taxonomy_term.affiliation_types.field_affiliation_types_plural
+    - field.field.taxonomy_term.affiliation_types.field_affiliation_types_singluar
+    - taxonomy.vocabulary.affiliation_types
+  module:
+    - text
+id: taxonomy_term.affiliation_types.default
+targetEntityType: taxonomy_term
+bundle: affiliation_types
+mode: default
+content:
+  description:
+    label: hidden
+    type: text_default
+    weight: 0
+    region: content
+    settings: {  }
+    third_party_settings: {  }
+  field_affiliation_types_plural:
+    weight: 1
+    label: above
+    settings:
+      link_to_entity: false
+    third_party_settings: {  }
+    type: string
+    region: content
+  field_affiliation_types_singluar:
+    weight: 2
+    label: above
+    settings:
+      link_to_entity: false
+    third_party_settings: {  }
+    type: string
+    region: content
+hidden:
+  langcode: true

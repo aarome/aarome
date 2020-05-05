@@ -1,0 +1,57 @@
+uuid: 2d13fd86-1d35-4cf7-982e-12aca39b4bbc
+langcode: en
+status: false
+dependencies:
+  config:
+    - core.entity_view_mode.node.teaser
+    - field.field.node.events.body
+    - field.field.node.events.field_events_event_dates
+    - field.field.node.events.field_events_event_dates_overrid
+    - field.field.node.events.field_events_event_series
+    - field.field.node.events.field_events_event_type
+    - field.field.node.events.field_events_image
+    - field.field.node.events.field_events_legacy_id
+    - field.field.node.events.field_events_rel_news_feature
+    - field.field.node.events.field_events_rel_people
+    - field.field.node.events.field_events_rel_places
+    - field.field.node.events.field_events_rel_press
+    - field.field.node.events.field_events_rel_press_releases
+    - field.field.node.events.field_events_security_notice
+    - field.field.node.events.field_events_summary
+    - node.type.events
+  module:
+    - text
+    - user
+id: node.events.teaser
+targetEntityType: node
+bundle: events
+mode: teaser
+content:
+  body:
+    label: hidden
+    type: text_summary_or_trimmed
+    weight: 101
+    settings:
+      trim_length: 600
+    third_party_settings: {  }
+    region: content
+  links:
+    weight: 100
+    region: content
+    settings: {  }
+    third_party_settings: {  }
+hidden:
+  field_events_event_dates: true
+  field_events_event_dates_overrid: true
+  field_events_event_series: true
+  field_events_event_type: true
+  field_events_image: true
+  field_events_legacy_id: true
+  field_events_rel_news_feature: true
+  field_events_rel_people: true
+  field_events_rel_places: true
+  field_events_rel_press: true
+  field_events_rel_press_releases: true
+  field_events_security_notice: true
+  field_events_summary: true
+  langcode: true

@@ -1,0 +1,59 @@
+uuid: a12bb2db-7b79-4a1c-9e37-769f03fd9ff1
+langcode: en
+status: true
+dependencies:
+  module:
+    - system
+name: society_of_fellows_obituaries_detail
+label: 'Society of Fellows obituaries detail'
+group: News
+description: ''
+requireAllConditions: false
+disabled: false
+conditions:
+  request_path:
+    id: request_path
+    pages: '/society-of-fellows/obituaries/*'
+    negate: 0
+    uuid: 0dd73de6-6cb6-4cd0-80e7-e62fa966c6fd
+    context_mapping: {  }
+reactions:
+  blocks:
+    blocks:
+      0c77a5f4-b713-4bd2-8e26-a8f616503ab3:
+        id: 'views_block:events_detail-block_society_of_fellows_obituaries_body'
+        label: ''
+        provider: views
+        label_display: 0
+        views_label: ''
+        items_per_page: none
+        region: content
+        weight: '0'
+        context_mapping: {  }
+        theme: tema
+        css_class: ''
+        unique: 0
+        context_id: society_of_fellows_obituaries_detail
+        uuid: 0c77a5f4-b713-4bd2-8e26-a8f616503ab3
+        custom_id: views_block_events_detail_block_society_of_fellows_obituaries_body
+      e3e39472-27d9-4604-b0bf-3668989403fa:
+        id: 'views_block:events_detail-block_society_of_fellows_obituaries_slideshow'
+        label: ''
+        provider: views
+        label_display: 0
+        views_label: ''
+        items_per_page: none
+        region: content
+        weight: '0'
+        context_mapping: {  }
+        theme: tema
+        css_class: ''
+        unique: 0
+        context_id: society_of_fellows_obituaries_detail
+        uuid: e3e39472-27d9-4604-b0bf-3668989403fa
+        custom_id: views_block_events_detail_block_society_of_fellows_obituaries_slideshow
+    id: blocks
+    saved: false
+    uuid: c700bb85-2028-407f-a3f8-e09cb0dbd251
+    include_default_blocks: 1
+weight: -10

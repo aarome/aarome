@@ -1,0 +1,26 @@
+uuid: 56d32439-1b0c-4482-8249-6ff99c07757a
+langcode: en
+status: true
+dependencies:
+  module:
+    - search_modal
+    - system
+  theme:
+    - tema
+id: modalblock
+theme: tema
+region: header
+weight: -8
+provider: null
+plugin: modal_block
+settings:
+  id: modal_block
+  label: 'Modal block'
+  provider: search_modal
+  label_display: '0'
+visibility:
+  request_path:
+    id: request_path
+    pages: /search
+    negate: true
+    context_mapping: {  }
