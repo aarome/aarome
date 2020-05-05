@@ -128,7 +128,7 @@ reactions:
         views_label: ''
         items_per_page: none
         region: content
-        weight: '-2'
+        weight: '-3'
         context_mapping: {  }
         custom_id: support_donate
         theme: academy
@@ -144,7 +144,7 @@ reactions:
         views_label: ''
         items_per_page: none
         region: content
-        weight: '-1'
+        weight: '-2'
         context_mapping: {  }
         custom_id: support_join
         theme: academy
@@ -160,7 +160,7 @@ reactions:
         views_label: ''
         items_per_page: none
         region: content
-        weight: '0'
+        weight: '-1'
         context_mapping: {  }
         custom_id: support_galas
         theme: academy
@@ -208,7 +208,7 @@ reactions:
         views_label: ''
         items_per_page: none
         region: content
-        weight: '1'
+        weight: '0'
         context_mapping: {  }
         custom_id: new_york_gala
         theme: academy
@@ -216,6 +216,22 @@ reactions:
         unique: 0
         context_id: support
         uuid: a53ff969-50fe-4af6-b51b-ea04b808373c
+      d92d8368-51fb-4064-ab52-943805cf89fe:
+        id: 'views_block:front_page_support-support_packages'
+        label: ''
+        provider: views
+        label_display: 0
+        views_label: ''
+        items_per_page: none
+        region: content
+        weight: '1'
+        context_mapping: {  }
+        custom_id: support_packages
+        theme: academy
+        css_class: 'packages card'
+        unique: 0
+        context_id: support
+        uuid: d92d8368-51fb-4064-ab52-943805cf89fe
     id: blocks
     saved: false
     uuid: eb1ea5fe-1f04-491e-afb8-a144ac048d41

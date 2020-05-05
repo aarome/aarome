@@ -1,0 +1,159 @@
+uuid: 139a8d2c-77a1-4b33-a39a-c05438aa2324
+langcode: en
+status: true
+dependencies:
+  module:
+    - system
+name: history
+label: History
+group: About
+description: ''
+requireAllConditions: false
+disabled: false
+conditions:
+  request_path:
+    id: request_path
+    pages: "/about/history\r\n/informazioni/storia"
+    negate: 0
+    uuid: 4811e3b4-87db-42d8-ac86-ae5c263517c8
+    context_mapping: {  }
+reactions:
+  blocks:
+    blocks:
+      50346808-7b50-4c72-87d0-6271394ccde7:
+        id: 'views_block:front_page_place-place_academy'
+        label: ''
+        provider: views
+        label_display: 0
+        views_label: ''
+        items_per_page: none
+        region: content
+        weight: '-2'
+        context_mapping: {  }
+        theme: tema
+        css_class: ''
+        unique: 0
+        context_id: place
+        uuid: 50346808-7b50-4c72-87d0-6271394ccde7
+        custom_id: views_block_front_page_place_place_academy
+      abe6712d-4539-46a8-a25a-0fc5ed80b0a5:
+        id: 'views_block:front_page_place-place_villa_aurelia'
+        label: ''
+        provider: views
+        label_display: 0
+        views_label: ''
+        items_per_page: none
+        region: content
+        weight: '-1'
+        context_mapping: {  }
+        theme: tema
+        css_class: ''
+        unique: 0
+        context_id: place
+        uuid: abe6712d-4539-46a8-a25a-0fc5ed80b0a5
+        custom_id: views_block_front_page_place_place_villa_aurelia
+      91d8b59a-d433-4327-919e-ef6559455a10:
+        id: 'views_block:front_page_place-place_gardens'
+        label: ''
+        provider: views
+        label_display: 0
+        views_label: ''
+        items_per_page: none
+        region: content
+        weight: '0'
+        context_mapping: {  }
+        theme: tema
+        css_class: ''
+        unique: 0
+        context_id: place
+        uuid: 91d8b59a-d433-4327-919e-ef6559455a10
+        custom_id: views_block_front_page_place_place_gardens
+      9f7387a8-52cd-4efc-a8c4-83b335692d3c:
+        id: 'views_block:front_page_place-place_directions'
+        label: ''
+        provider: views
+        label_display: 0
+        views_label: ''
+        items_per_page: none
+        region: content
+        weight: '1'
+        context_mapping: {  }
+        theme: tema
+        css_class: ''
+        unique: 0
+        context_id: place
+        uuid: 9f7387a8-52cd-4efc-a8c4-83b335692d3c
+        custom_id: views_block_front_page_place_place_directions
+      a1c53861-d526-4223-bf5b-400d5d21a488:
+        id: 'views_block:front_page_place-place_tours'
+        label: ''
+        provider: views
+        label_display: 0
+        views_label: ''
+        items_per_page: none
+        region: content
+        weight: '2'
+        context_mapping: {  }
+        custom_id: views_block_front_page_place_place_tours
+        theme: tema
+        css_class: ''
+        unique: 0
+        context_id: place
+        uuid: a1c53861-d526-4223-bf5b-400d5d21a488
+      634cc939-eb02-44d6-ae44-a2906f52fd62:
+        id: 'views_block:front_page_place-place_academy'
+        label: ''
+        provider: views
+        label_display: 0
+        views_label: ''
+        items_per_page: none
+        region: content
+        weight: '-1'
+        context_mapping: {  }
+        custom_id: place_academy
+        theme: academy
+        css_class: 'academy card'
+        unique: 0
+        context_id: place
+        uuid: 634cc939-eb02-44d6-ae44-a2906f52fd62
+      27a8a94d-f920-461d-b2c1-144e30a66bd4:
+        id: 'views_block:front_page_place-place_gardens'
+        label: ''
+        provider: views
+        label_display: 0
+        views_label: ''
+        items_per_page: none
+        region: content
+        weight: '1'
+        context_mapping: {  }
+        custom_id: place_gardens
+        theme: academy
+        css_class: 'gardens card'
+        unique: 0
+        context_id: place
+        uuid: 27a8a94d-f920-461d-b2c1-144e30a66bd4
+      a3dbca43-cf1c-4c7b-a00a-3a75b1633177:
+        id: 'views_block:front_page_place-place_villa_aurelia'
+        label: ''
+        provider: views
+        label_display: visible
+        views_label: ''
+        items_per_page: none
+        region: content
+        weight: '0'
+        context_mapping: {  }
+        custom_id: place_villa_aurelia
+        theme: academy
+        css_class: 'villa_aurelia card'
+        unique: 0
+        context_id: place
+        uuid: a3dbca43-cf1c-4c7b-a00a-3a75b1633177
+    id: blocks
+    saved: false
+    uuid: 3ea3dab5-0d04-45b7-ba8a-ff0d29ba96aa
+    include_default_blocks: 1
+  body_class:
+    id: body_class
+    body_class: section-front
+    saved: false
+weight: -13

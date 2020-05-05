@@ -3,9 +3,8 @@ langcode: en
 status: true
 dependencies:
   config:
-    - image.style.max_1300x1300
-    - image.style.max_325x325
-    - image.style.max_650x650
+    - image.style.max_1300x867
+    - image.style.max_600x400
   theme:
     - academy
 id: portrait
@@ -18,17 +17,44 @@ image_style_mappings:
     image_mapping:
       sizes: 100vw
       sizes_image_styles:
-        - max_1300x1300
-        - max_650x650
+        - max_600x400
+  -
+    breakpoint_id: academy.mobile
+    multiplier: 2x
+    image_mapping_type: sizes
+    image_mapping:
+      sizes: 100vw
+      sizes_image_styles:
+        - max_1300x867
   -
     breakpoint_id: academy.tablet
     multiplier: 1x
     image_mapping_type: image_style
-    image_mapping: max_325x325
+    image_mapping: max_600x400
   -
     breakpoint_id: academy.tablet
     multiplier: 2x
     image_mapping_type: image_style
-    image_mapping: max_650x650
+    image_mapping: max_1300x867
+  -
+    breakpoint_id: academy.desktop
+    multiplier: 1x
+    image_mapping_type: image_style
+    image_mapping: max_600x400
+  -
+    breakpoint_id: academy.desktop
+    multiplier: 2x
+    image_mapping_type: image_style
+    image_mapping: max_1300x867
+  -
+    breakpoint_id: academy.wide
+    multiplier: 1x
+    image_mapping_type: image_style
+    image_mapping: max_600x400
+  -
+    breakpoint_id: academy.wide
+    multiplier: 2x
+    image_mapping_type: image_style
+    image_mapping: max_1300x867
 breakpoint_group: academy
 fallback_image_style: '_original image_'
