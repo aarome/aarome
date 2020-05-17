@@ -1,0 +1,33 @@
+uuid: b49a4483-f266-4eb3-928e-a961e646cef7
+langcode: en
+status: true
+dependencies:
+  config:
+    - core.entity_view_mode.media.event_front
+    - field.field.media.society_of_fellows.field_media_caption
+    - field.field.media.society_of_fellows.field_media_image
+    - image.style.max_650x650
+    - media.type.society_of_fellows
+  module:
+    - image
+id: media.society_of_fellows.event_front
+targetEntityType: media
+bundle: society_of_fellows
+mode: event_front
+content:
+  field_media_image:
+    weight: 0
+    label: hidden
+    settings:
+      image_style: max_650x650
+      image_link: ''
+    third_party_settings: {  }
+    type: image
+    region: content
+hidden:
+  created: true
+  field_media_caption: true
+  langcode: true
+  name: true
+  thumbnail: true
+  uid: true

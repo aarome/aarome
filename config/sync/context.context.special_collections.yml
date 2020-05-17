@@ -1,0 +1,191 @@
+uuid: 028619b6-cd8b-4e4f-8c44-33018811b8ea
+langcode: en
+status: true
+dependencies:
+  module:
+    - system
+name: special_collections
+label: 'Special Collections'
+group: Research
+description: ''
+requireAllConditions: false
+disabled: false
+conditions:
+  request_path:
+    id: request_path
+    pages: "/research/special-collections\r\n/ricerca/altre-collezioni"
+    negate: 0
+    uuid: b4a8d423-3881-43ad-a5a4-b5d7d15095b9
+    context_mapping: {  }
+reactions:
+  blocks:
+    blocks:
+      1aedfc37-7cfd-4991-9101-326fc56d9cd1:
+        id: 'views_block:front_page_special_collections-special_collections_barbara_goldsmith'
+        label: ''
+        provider: views
+        label_display: 0
+        views_label: ''
+        items_per_page: none
+        region: content
+        weight: '0'
+        context_mapping: {  }
+        theme: tema
+        css_class: ''
+        unique: 0
+        context_id: special_collections
+        uuid: 1aedfc37-7cfd-4991-9101-326fc56d9cd1
+        custom_id: views_block_front_page_special_collections_special_collections_barbara_goldsmith
+      d1f9d287-e1ca-47d1-81a2-1f5c85c43732:
+        id: 'views_block:front_page_special_collections-special_collections_maps'
+        label: ''
+        provider: views
+        label_display: 0
+        views_label: ''
+        items_per_page: none
+        region: content
+        weight: '0'
+        context_mapping: {  }
+        theme: tema
+        css_class: ''
+        unique: 0
+        context_id: special_collections
+        uuid: d1f9d287-e1ca-47d1-81a2-1f5c85c43732
+        custom_id: views_block_front_page_special_collections_special_collections_maps
+      bc6c805a-fff6-4d2d-a8f7-8ca65842b2fc:
+        id: 'views_block:front_page_special_collections-special_collections_music_collection'
+        label: ''
+        provider: views
+        label_display: 0
+        views_label: ''
+        items_per_page: none
+        region: content
+        weight: '0'
+        context_mapping: {  }
+        theme: tema
+        css_class: ''
+        unique: 0
+        context_id: special_collections
+        uuid: bc6c805a-fff6-4d2d-a8f7-8ca65842b2fc
+        custom_id: views_block_front_page_special_collections_special_collections_music_collection
+      0c434af3-fc95-49af-bc8d-511188b0eef8:
+        id: 'views_block:front_page_special_collections-special_collections_music_scores'
+        label: ''
+        provider: views
+        label_display: 0
+        views_label: ''
+        items_per_page: none
+        region: content
+        weight: '0'
+        context_mapping: {  }
+        theme: tema
+        css_class: ''
+        unique: 0
+        context_id: special_collections
+        uuid: 0c434af3-fc95-49af-bc8d-511188b0eef8
+        custom_id: views_block_front_page_special_collections_special_collections_music_scores
+      90b04dad-add7-4a61-99f1-d69713abb82a:
+        id: 'views_block:front_page_special_collections-special_collections_microfilm_microfiche'
+        label: ''
+        provider: views
+        label_display: 0
+        views_label: ''
+        items_per_page: none
+        region: content
+        weight: '0'
+        context_mapping: {  }
+        theme: tema
+        css_class: ''
+        unique: 0
+        context_id: special_collections
+        uuid: 90b04dad-add7-4a61-99f1-d69713abb82a
+        custom_id: views_block_front_page_special_collections_special_collections_microfilm_microfiche
+      e6fdb734-22fb-4ea8-9e11-df96f4e306d7:
+        id: 'views_block:front_page_special_collections-special_collections_barbara_goldsmith'
+        label: ''
+        provider: views
+        label_display: 0
+        views_label: ''
+        items_per_page: none
+        region: content
+        weight: '-2'
+        context_mapping: {  }
+        custom_id: goldsmith
+        theme: academy
+        css_class: 'goldsmith card'
+        unique: 0
+        context_id: special_collections
+        uuid: e6fdb734-22fb-4ea8-9e11-df96f4e306d7
+      08dfcb78-524a-4f32-8edb-83cc80c6ae10:
+        id: 'views_block:front_page_special_collections-special_collections_maps'
+        label: ''
+        provider: views
+        label_display: visible
+        views_label: ''
+        items_per_page: none
+        region: content
+        weight: '-1'
+        context_mapping: {  }
+        custom_id: maps
+        theme: academy
+        css_class: 'maps card'
+        unique: 0
+        context_id: special_collections
+        uuid: 08dfcb78-524a-4f32-8edb-83cc80c6ae10
+      05129cc9-4142-43e8-9806-e495940e3a24:
+        id: 'views_block:front_page_special_collections-special_collections_music_collection'
+        label: ''
+        provider: views
+        label_display: 0
+        views_label: ''
+        items_per_page: none
+        region: content
+        weight: '0'
+        context_mapping: {  }
+        custom_id: music_collection
+        theme: academy
+        css_class: 'music-collection card'
+        unique: 0
+        context_id: special_collections
+        uuid: 05129cc9-4142-43e8-9806-e495940e3a24
+      75d6a917-bc8e-4441-a05a-6963fb55bc88:
+        id: 'views_block:front_page_special_collections-special_collections_music_scores'
+        label: ''
+        provider: views
+        label_display: 0
+        views_label: ''
+        items_per_page: none
+        region: content
+        weight: '1'
+        context_mapping: {  }
+        custom_id: music_scores
+        theme: academy
+        css_class: 'scores card'
+        unique: 0
+        context_id: special_collections
+        uuid: 75d6a917-bc8e-4441-a05a-6963fb55bc88
+      0af53bad-acf9-4b83-9fea-b87ad0341f4f:
+        id: 'views_block:front_page_special_collections-special_collections_microfilm_microfiche'
+        label: ''
+        provider: views
+        label_display: visible
+        views_label: ''
+        items_per_page: none
+        region: content
+        weight: '2'
+        context_mapping: {  }
+        custom_id: microfiche
+        theme: academy
+        css_class: 'microfiche card'
+        unique: 0
+        context_id: special_collections
+        uuid: 0af53bad-acf9-4b83-9fea-b87ad0341f4f
+    id: blocks
+    saved: false
+    uuid: 2f54e8bc-1830-4678-b5c0-76121574a132
+    include_default_blocks: 1
+  body_class:
+    id: body_class
+    body_class: section-front
+    saved: false
+weight: -11

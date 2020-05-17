@@ -1,0 +1,33 @@
+uuid: 1ddbb43d-2617-406e-b2c7-f2ae72235e24
+langcode: en
+status: true
+dependencies:
+  module:
+    - language
+    - node
+id: library_resources
+label: 'Library resources'
+type: 'canonical_entities:node'
+pattern: '[node:title]'
+selection_criteria:
+  32e9efec-0742-43cc-94ec-8c26fb4bc005:
+    id: node_type
+    bundles:
+      library_resources: library_resources
+    negate: false
+    context_mapping:
+      node: node
+    uuid: 32e9efec-0742-43cc-94ec-8c26fb4bc005
+  017dc9f4-09bc-443f-a736-924feab5ca26:
+    id: language
+    langcodes:
+      en: en
+    negate: false
+    context_mapping:
+      language: 'node:langcode:language'
+    uuid: 017dc9f4-09bc-443f-a736-924feab5ca26
+selection_logic: and
+weight: -10
+relationships:
+  'node:langcode:language':
+    label: Language

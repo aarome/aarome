@@ -1,0 +1,10 @@
+uuid: 71c024a7-44f7-4d88-bda7-3d93688c65fb
+langcode: en
+status: true
+dependencies:
+  module:
+    - media
+id: media.event_front
+label: 'Event front'
+targetEntityType: media
+cache: true

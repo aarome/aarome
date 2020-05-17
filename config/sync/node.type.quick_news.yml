@@ -1,0 +1,17 @@
+uuid: e175b501-c835-4de0-93b4-0ea99e42e10b
+langcode: en
+status: true
+dependencies:
+  module:
+    - menu_ui
+third_party_settings:
+  menu_ui:
+    available_menus: {  }
+    parent: ''
+name: 'Quick news'
+type: quick_news
+description: 'Short news items about Academy fellows and residents. '
+help: ''
+new_revision: false
+preview_mode: 1
+display_submitted: false

@@ -1,0 +1,16 @@
+uuid: 04db586f-a432-46fa-acd0-8c07f1b818d2
+langcode: en
+status: true
+dependencies:
+  config:
+    - node.type.empty_page
+  module:
+    - content_translation
+third_party_settings:
+  content_translation:
+    enabled: true
+id: node.empty_page
+target_entity_type_id: node
+target_bundle: empty_page
+default_langcode: site_default
+language_alterable: false

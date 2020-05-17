@@ -1,0 +1,44 @@
+uuid: 0f6cb542-b7c0-495f-92f5-6c51a4364c37
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.field.media.press_releases.field_file_language
+    - field.field.media.press_releases.field_media_file
+    - media.type.press_releases
+  module:
+    - file
+id: media.press_releases.default
+targetEntityType: media
+bundle: press_releases
+mode: default
+content:
+  field_file_language:
+    weight: 0
+    settings: {  }
+    third_party_settings: {  }
+    type: options_select
+    region: content
+  field_media_file:
+    weight: 2
+    settings:
+      progress_indicator: throbber
+    third_party_settings: {  }
+    type: file_generic
+    region: content
+  name:
+    type: string_textfield
+    weight: 1
+    region: content
+    settings:
+      size: 60
+      placeholder: ''
+    third_party_settings: {  }
+hidden:
+  created: true
+  langcode: true
+  path: true
+  revision_log_message: true
+  status: true
+  translation: true
+  uid: true

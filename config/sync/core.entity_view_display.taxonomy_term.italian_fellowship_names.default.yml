@@ -1,0 +1,22 @@
+uuid: 9cd485f8-9ca8-4355-b716-d556e3a09ba3
+langcode: en
+status: true
+dependencies:
+  config:
+    - taxonomy.vocabulary.italian_fellowship_names
+  module:
+    - text
+id: taxonomy_term.italian_fellowship_names.default
+targetEntityType: taxonomy_term
+bundle: italian_fellowship_names
+mode: default
+content:
+  description:
+    label: hidden
+    type: text_default
+    weight: 0
+    region: content
+    settings: {  }
+    third_party_settings: {  }
+hidden:
+  langcode: true

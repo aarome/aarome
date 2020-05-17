@@ -1,0 +1,11 @@
+uuid: aa16f1bb-1b16-464d-9dab-e581327f219a
+langcode: en
+status: true
+dependencies:
+  theme:
+    - academy
+id: portrait_front
+label: 'Portrait front'
+image_style_mappings: {  }
+breakpoint_group: academy
+fallback_image_style: '_empty image_'

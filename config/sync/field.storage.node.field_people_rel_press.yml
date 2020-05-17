@@ -1,0 +1,19 @@
+uuid: 5c1bb5fa-a7d4-4dbd-85f3-2667658a65bf
+langcode: en
+status: true
+dependencies:
+  module:
+    - node
+id: node.field_people_rel_press
+field_name: field_people_rel_press
+entity_type: node
+type: entity_reference
+settings:
+  target_type: node
+module: core
+locked: false
+cardinality: -1
+translatable: true
+indexes: {  }
+persist_with_no_fields: false
+custom_storage: false

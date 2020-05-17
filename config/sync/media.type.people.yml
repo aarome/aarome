@@ -1,0 +1,13 @@
+uuid: 58354ff2-5640-4ebe-8731-fb1c7486df3a
+langcode: en
+status: true
+dependencies: {  }
+id: people
+label: People
+description: ''
+source: image
+queue_thumbnail_downloads: false
+new_revision: false
+source_configuration:
+  source_field: field_media_image
+field_map: {  }
