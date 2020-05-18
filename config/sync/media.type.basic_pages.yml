@@ -1,0 +1,13 @@
+uuid: fbcc926a-bb19-4644-8985-2bc354af5876
+langcode: en
+status: true
+dependencies: {  }
+id: basic_pages
+label: 'Basic pages'
+description: ''
+source: image
+queue_thumbnail_downloads: false
+new_revision: false
+source_configuration:
+  source_field: field_media_image
+field_map: {  }

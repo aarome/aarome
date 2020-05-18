@@ -1,0 +1,87 @@
+uuid: 9b85a619-7d02-4e15-8f82-00214b8336b6
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.field.node.page.body
+    - field.field.node.page.field_page_callout
+    - field.field.node.page.field_page_image
+    - field.field.node.page.field_page_page_section
+    - field.field.node.page.field_page_summary
+    - field.field.node.page.field_page_type
+    - node.type.page
+    - responsive_image.styles.wide
+  module:
+    - blazy
+    - block_field
+    - text
+    - user
+_core:
+  default_config_hash: g1S3_GLaxq4l3I9RIca5Mlz02MxI2KmOquZpHw59akM
+id: node.page.default
+targetEntityType: node
+bundle: page
+mode: default
+content:
+  field_page_callout:
+    weight: 2
+    label: above
+    settings: {  }
+    third_party_settings: {  }
+    type: block_field
+    region: content
+  field_page_image:
+    type: blazy_media
+    weight: 0
+    label: hidden
+    settings:
+      image_style: ''
+      responsive_image_style: wide
+      media_switch: ''
+      box_style: ''
+      thumbnail_style: ''
+      box_media_style: ''
+      ratio: ''
+      box_caption: ''
+      view_mode: default
+      box_caption_custom: ''
+      current_view_mode: default
+      background: false
+      caption:
+        field_media_caption: '0'
+      class: ''
+      id: ''
+      image: ''
+      link: ''
+      overlay: ''
+      title: ''
+      vanilla: false
+      icon: ''
+      layout: ''
+      cache: 0
+      skin: ''
+      fx: ''
+      style: ''
+      _uri: ''
+      breakpoints: {  }
+      sizes: ''
+      grid_header: ''
+      grid: 0
+      grid_medium: 0
+      grid_small: 0
+    third_party_settings: {  }
+    region: content
+  field_page_summary:
+    weight: 1
+    label: hidden
+    settings: {  }
+    third_party_settings: {  }
+    type: text_default
+    region: content
+hidden:
+  body: true
+  field_page_page_section: true
+  field_page_type: true
+  langcode: true
+  links: true
+  search_api_excerpt: true

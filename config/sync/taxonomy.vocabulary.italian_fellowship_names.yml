@@ -1,0 +1,8 @@
+uuid: ad717501-ee1c-419d-a352-22fd06494e28
+langcode: en
+status: true
+dependencies: {  }
+name: 'Italian Fellowship names'
+vid: italian_fellowship_names
+description: ''
+weight: 0

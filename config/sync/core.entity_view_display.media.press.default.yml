@@ -1,0 +1,28 @@
+uuid: cd2f7421-a960-431a-8e5e-8b3ca3c8356f
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.field.media.press.field_media_file
+    - media.type.press
+  module:
+    - file
+id: media.press.default
+targetEntityType: media
+bundle: press
+mode: default
+content:
+  field_media_file:
+    weight: 0
+    label: hidden
+    settings:
+      use_description_as_link_text: true
+    third_party_settings: {  }
+    type: file_default
+    region: content
+hidden:
+  created: true
+  langcode: true
+  name: true
+  thumbnail: true
+  uid: true

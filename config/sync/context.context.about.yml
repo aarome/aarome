@@ -1,0 +1,143 @@
+uuid: 4eb9f7ec-bcaa-486e-87d7-568343201e0f
+langcode: en
+status: true
+dependencies:
+  module:
+    - system
+name: about
+label: About
+group: About
+description: ''
+requireAllConditions: false
+disabled: false
+conditions:
+  request_path:
+    id: request_path
+    pages: "/about\r\n/informazioni"
+    negate: 0
+    uuid: 2e08338e-f718-4698-95d6-0ce58f6443bb
+    context_mapping: {  }
+reactions:
+  blocks:
+    blocks:
+      e3ffb245-2aed-49b7-80e2-383606bc8fba:
+        id: 'views_block:front_page_about-about_mission'
+        label: ''
+        provider: views
+        label_display: 0
+        views_label: ''
+        items_per_page: none
+        region: content
+        weight: '-3'
+        context_mapping: {  }
+        custom_id: about_mission
+        theme: academy
+        css_class: 'mission card'
+        unique: 0
+        context_id: about
+        uuid: e3ffb245-2aed-49b7-80e2-383606bc8fba
+      591a7497-4050-483f-b2d6-2ee4ad60ffc9:
+        id: 'views_block:front_page_about-about_place'
+        label: ''
+        provider: views
+        label_display: 0
+        views_label: ''
+        items_per_page: none
+        region: content
+        weight: '-2'
+        context_mapping: {  }
+        custom_id: about_place
+        theme: academy
+        css_class: 'place card'
+        unique: 0
+        context_id: about
+        uuid: 591a7497-4050-483f-b2d6-2ee4ad60ffc9
+      2569a1b8-f716-4d2e-a38e-129c2579c928:
+        id: 'views_block:front_page_about-about_board'
+        label: ''
+        provider: views
+        label_display: 0
+        views_label: ''
+        items_per_page: none
+        region: content
+        weight: '-1'
+        context_mapping: {  }
+        custom_id: about_board
+        theme: academy
+        css_class: 'board card'
+        unique: 0
+        context_id: about
+        uuid: 2569a1b8-f716-4d2e-a38e-129c2579c928
+      1bb5cf06-cadd-462f-a79d-402732b04de0:
+        id: 'views_block:front_page_about-about_staff'
+        label: ''
+        provider: views
+        label_display: 0
+        views_label: ''
+        items_per_page: none
+        region: content
+        weight: '0'
+        context_mapping: {  }
+        custom_id: about_staff
+        theme: academy
+        css_class: 'staff card'
+        unique: 0
+        context_id: about
+        uuid: 1bb5cf06-cadd-462f-a79d-402732b04de0
+      2c9c2e22-6a66-4151-b2ac-c04179a52f25:
+        id: 'views_block:front_page_about-about_rsfp'
+        label: ''
+        provider: views
+        label_display: 0
+        views_label: ''
+        items_per_page: none
+        region: content
+        weight: '1'
+        context_mapping: {  }
+        custom_id: about_rsfp
+        theme: academy
+        css_class: ' rsfp card'
+        unique: 0
+        context_id: about
+        uuid: 2c9c2e22-6a66-4151-b2ac-c04179a52f25
+      2b56e289-b7cf-4ccc-9132-acf9ce6fe710:
+        id: 'views_block:front_page_place-place_tours'
+        label: ''
+        provider: views
+        label_display: 0
+        views_label: ''
+        items_per_page: none
+        region: content
+        weight: '3'
+        context_mapping: {  }
+        custom_id: about_tours
+        theme: academy
+        css_class: 'tour card'
+        unique: 0
+        context_id: about
+        uuid: 2b56e289-b7cf-4ccc-9132-acf9ce6fe710
+      f623f47e-7035-491f-9614-7dd7374c1292:
+        id: 'views_block:front_page_place-about_directions'
+        label: ''
+        provider: views
+        label_display: 0
+        views_label: ''
+        items_per_page: none
+        region: content
+        weight: '2'
+        context_mapping: {  }
+        custom_id: about_directions
+        theme: academy
+        css_class: 'directions card'
+        unique: 0
+        context_id: about
+        uuid: f623f47e-7035-491f-9614-7dd7374c1292
+    id: blocks
+    saved: false
+    uuid: 25338839-fb48-4660-93df-4b0befaf0efc
+    include_default_blocks: 1
+  body_class:
+    id: body_class
+    body_class: section-front
+    saved: false
+weight: -14

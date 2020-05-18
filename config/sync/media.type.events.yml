@@ -1,0 +1,13 @@
+uuid: 14aa5de7-6ef2-438c-bc57-59f3733a8eb9
+langcode: en
+status: true
+dependencies: {  }
+id: events
+label: Events
+description: 'Image media bundle for Academy events.'
+source: image
+queue_thumbnail_downloads: false
+new_revision: false
+source_configuration:
+  source_field: field_media_image
+field_map: {  }
