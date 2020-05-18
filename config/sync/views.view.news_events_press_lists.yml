@@ -5679,7 +5679,7 @@ display:
           query_comment: ''
           query_tags: {  }
       group_by: false
-      use_ajax: true
+      use_ajax: false
     cache_metadata:
       max-age: -1
       contexts:
