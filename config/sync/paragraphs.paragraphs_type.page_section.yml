@@ -1,9 +1,0 @@
-uuid: a717130c-32fb-4c28-baaa-17579de50fa1
-langcode: en
-status: true
-dependencies: {  }
-id: page_section
-label: 'Page section'
-icon_uuid: null
-description: ''
-behavior_plugins: {  }

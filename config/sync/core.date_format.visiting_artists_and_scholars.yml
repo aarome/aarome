@@ -1,8 +1,0 @@
-uuid: 2c6daddb-e1c8-47f0-bef5-9f5724e4ff17
-langcode: en
-status: true
-dependencies: {  }
-id: visiting_artists_and_scholars
-label: 'Visiting Artists and Scholars'
-locked: false
-pattern: 'F Y'
