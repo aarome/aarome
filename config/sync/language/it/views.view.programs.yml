@@ -1,4 +1,7 @@
 display:
-  page_academic_programs:
+  default:
     display_options:
-      title: 'Programmi accademici'
+      pager:
+        options:
+          views_infinite_scroll:
+            button_text: 'More programs'

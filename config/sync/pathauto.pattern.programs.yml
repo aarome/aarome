@@ -1,0 +1,22 @@
+uuid: 37646ab7-e87f-4108-bf29-18aa19317fd6
+langcode: en
+status: true
+dependencies:
+  module:
+    - node
+id: programs
+label: Programs
+type: 'canonical_entities:node'
+pattern: '/apply/academic-programs/[node:title]'
+selection_criteria:
+  9da803fe-afc7-45e1-8d8b-550367fae419:
+    id: node_type
+    bundles:
+      programs: programs
+    negate: false
+    context_mapping:
+      node: node
+    uuid: 9da803fe-afc7-45e1-8d8b-550367fae419
+selection_logic: and
+weight: -5
+relationships: {  }

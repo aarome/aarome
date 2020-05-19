@@ -1,18 +1,18 @@
-uuid: 3797182f-8988-406d-b476-284d146389b2
+uuid: 9330dc78-380a-48d6-82bb-649441b68809
 langcode: en
 status: true
 dependencies:
   config:
-    - taxonomy.vocabulary.byline
+    - node.type.programs
   module:
     - content_translation
 third_party_settings:
   content_translation:
-    enabled: false
+    enabled: true
     bundle_settings:
       untranslatable_fields_hide: '0'
-id: taxonomy_term.byline
-target_entity_type_id: taxonomy_term
-target_bundle: byline
+id: node.programs
+target_entity_type_id: node
+target_bundle: programs
 default_langcode: site_default
-language_alterable: false
+language_alterable: true

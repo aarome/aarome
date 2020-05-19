@@ -1,47 +1,41 @@
-uuid: 0fbca2cb-d0a3-4d58-80ce-88c66ccf2457
+uuid: e9350f5c-5393-4c4c-b2af-144fa92f775b
 langcode: en
 status: true
 dependencies:
   config:
-    - field.field.node.page.body
-    - field.field.node.page.field_page_callout
-    - field.field.node.page.field_page_image
-    - field.field.node.page.field_page_page_section
-    - field.field.node.page.field_page_summary
-    - field.field.node.page.field_page_type
-    - node.type.page
+    - field.field.node.programs.body
+    - field.field.node.programs.field_program_dates
+    - field.field.node.programs.field_program_image
+    - field.field.node.programs.field_program_page_section
+    - field.field.node.programs.field_program_summary
+    - node.type.programs
   module:
-    - allowed_formats
-    - block_field
+    - datetime_range
     - entity_form_field_label
+    - hide_revision_field
     - inline_entity_form
     - paragraphs
     - path
     - text
-_core:
-  default_config_hash: sb0qCkzU_8mNq29NehYAU8jCBXWPLeX0UN8sYFVGVcw
-id: node.page.default
+id: node.programs.default
 targetEntityType: node
-bundle: page
+bundle: programs
 mode: default
 content:
   created:
     type: datetime_timestamp
-    weight: 8
+    weight: 3
     region: content
     settings: {  }
     third_party_settings: {  }
-  field_page_callout:
-    weight: 12
-    settings:
-      plugin_id: ''
-      settings: {  }
-      configuration_form: full
+  field_program_dates:
+    weight: 10
+    settings: {  }
     third_party_settings: {  }
-    type: block_field_default
+    type: daterange_default
     region: content
-  field_page_image:
-    weight: 5
+  field_program_image:
+    weight: 13
     settings:
       form_mode: default
       label_singular: ''
@@ -50,16 +44,19 @@ content:
       allow_new: true
       allow_existing: true
       match_operator: CONTAINS
+      revision: false
       override_labels: false
       collapsed: false
       allow_duplicate: false
-      revision: false
-    third_party_settings: {  }
+    third_party_settings:
+      entity_form_field_label:
+        new_label: ''
+        rewrite_label: 0
     type: inline_entity_form_complex
     region: content
-  field_page_page_section:
+  field_program_page_section:
     type: paragraphs
-    weight: 4
+    weight: 12
     settings:
       title: 'Page section'
       title_plural: 'Page sections'
@@ -79,23 +76,14 @@ content:
         new_label: ''
         rewrite_label: 0
     region: content
-  field_page_summary:
-    weight: 3
+  field_program_summary:
+    weight: 11
     settings:
-      rows: 1
+      rows: 5
       placeholder: ''
-    third_party_settings:
-      allowed_formats:
-        hide_help: '1'
-        hide_guidelines: '1'
+    third_party_settings: {  }
     type: text_textarea
     region: content
-  field_page_type:
-    type: options_select
-    weight: 1
-    region: content
-    settings: {  }
-    third_party_settings: {  }
   langcode:
     type: language_select
     weight: 0
@@ -105,7 +93,7 @@ content:
     third_party_settings: {  }
   path:
     type: path
-    weight: 10
+    weight: 7
     region: content
     settings: {  }
     third_party_settings: {  }
@@ -113,40 +101,57 @@ content:
     type: boolean_checkbox
     settings:
       display_label: true
-    weight: 9
+    weight: 5
     region: content
+    third_party_settings: {  }
+  revision_log:
+    type: hide_revision_field_log_widget
+    weight: 8
+    region: content
+    settings:
+      show: true
+      default: ''
+      permission_based: false
+      allow_user_settings: true
+      rows: 5
+      placeholder: ''
     third_party_settings: {  }
   status:
     type: boolean_checkbox
     settings:
       display_label: true
-    weight: 11
+    weight: 9
+    region: content
+    third_party_settings: {  }
+  sticky:
+    type: boolean_checkbox
+    settings:
+      display_label: true
+    weight: 6
     region: content
     third_party_settings: {  }
   title:
     type: string_textfield
-    weight: 2
+    weight: 1
     region: content
     settings:
       size: 60
       placeholder: ''
     third_party_settings: {  }
   translation:
-    weight: 6
+    weight: 4
     region: content
     settings: {  }
     third_party_settings: {  }
   uid:
     type: entity_reference_autocomplete
-    weight: 7
-    region: content
+    weight: 2
     settings:
       match_operator: CONTAINS
       size: 60
       placeholder: ''
       match_limit: 10
+    region: content
     third_party_settings: {  }
 hidden:
   body: true
-  revision_log: true
-  sticky: true
