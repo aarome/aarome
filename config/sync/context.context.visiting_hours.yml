@@ -1,0 +1,95 @@
+uuid: 0470ba94-7153-489e-b17e-7014ee173bf3
+langcode: en
+status: true
+dependencies:
+  module:
+    - system
+name: visiting_hours
+label: 'Visiting hours'
+group: Callouts
+description: ''
+requireAllConditions: false
+disabled: false
+conditions:
+  request_path:
+    id: request_path
+    pages: "/research/*/*\r\n/ricerca/*/*"
+    negate: 0
+    uuid: 377eb754-15af-4676-91ff-dd84fce76b46
+    context_mapping: {  }
+reactions:
+  blocks:
+    blocks:
+      ad51eb7d-4307-418f-9b43-737c4afdf0ec:
+        id: 'block_content:39cfb1e3-dba6-44f9-b7ea-33418432deeb'
+        label: 'Photographic Archive'
+        provider: block_content
+        label_display: visible
+        status: true
+        info: ''
+        view_mode: full
+        region: callout
+        weight: '1'
+        context_mapping: {  }
+        custom_id: callout_photo_archive
+        theme: academy
+        css_class: 'callout photo-archvive'
+        unique: 0
+        context_id: visiting_hours
+        uuid: ad51eb7d-4307-418f-9b43-737c4afdf0ec
+      7c20406f-6233-4879-9faa-6cab02033b7d:
+        id: 'block_content:68e8fc84-0ef3-4c54-8f05-2ff3cd5b0888'
+        label: Library
+        provider: block_content
+        label_display: visible
+        status: true
+        info: ''
+        view_mode: full
+        region: callout
+        weight: '0'
+        context_mapping: {  }
+        custom_id: callout_library
+        theme: academy
+        css_class: 'callout library'
+        unique: 0
+        context_id: visiting_hours
+        uuid: 7c20406f-6233-4879-9faa-6cab02033b7d
+      eb9c6758-8b47-4933-9698-b524c6edb787:
+        id: 'block_content:44068066-589e-4e31-8c60-c637e65a3adc'
+        label: 'Archaeological Study Collection'
+        provider: block_content
+        label_display: visible
+        status: true
+        info: ''
+        view_mode: full
+        region: callout
+        weight: '-1'
+        context_mapping: {  }
+        custom_id: callout_study_collection
+        theme: academy
+        css_class: 'callout study_collection'
+        unique: 0
+        context_id: visiting_hours
+        uuid: eb9c6758-8b47-4933-9698-b524c6edb787
+      2abb0c57-3738-432a-b5f4-eeb3d19be112:
+        id: 'block_content:3fe6fb5b-42c1-439d-b05a-6af177089d5f'
+        label: 'Barbara Goldsmith Rare Book Room'
+        provider: block_content
+        label_display: visible
+        status: true
+        info: ''
+        view_mode: full
+        region: callout
+        weight: '2'
+        context_mapping: {  }
+        custom_id: callout_rare_book
+        theme: academy
+        css_class: 'callout rare_book'
+        unique: 0
+        context_id: visiting_hours
+        uuid: 2abb0c57-3738-432a-b5f4-eeb3d19be112
+    id: blocks
+    saved: false
+    uuid: 8da2c5fb-1b71-4aa6-a9a2-c50528172eb0
+    include_default_blocks: 1
+weight: 0

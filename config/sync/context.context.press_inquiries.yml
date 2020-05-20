@@ -1,0 +1,44 @@
+uuid: 5907354e-0464-4b21-b8c5-f61b0f0c83dd
+langcode: en
+status: true
+dependencies:
+  module:
+    - system
+name: press_inquiries
+label: 'Press inquiries'
+group: Callouts
+description: ''
+requireAllConditions: false
+disabled: false
+conditions:
+  request_path:
+    id: request_path
+    pages: "/news/coverage\r\n/news/press-releases\r\n/news/features/*"
+    negate: 0
+    uuid: b6847024-a09f-4ea7-be9e-241847cf4a34
+    context_mapping: {  }
+reactions:
+  blocks:
+    blocks:
+      1dfe298f-30d0-44b2-a2d9-176483104464:
+        id: 'block_content:3a37cca5-7dad-4bc3-92ef-7071a3f0e1e8'
+        label: 'Press inquiries'
+        provider: block_content
+        label_display: visible
+        status: true
+        info: ''
+        view_mode: full
+        region: callout
+        weight: '0'
+        context_mapping: {  }
+        custom_id: press_inquiries
+        theme: academy
+        css_class: 'callout press-inquiries'
+        unique: 0
+        context_id: press_inquiries
+        uuid: 1dfe298f-30d0-44b2-a2d9-176483104464
+    id: blocks
+    saved: false
+    uuid: fac7fce3-6bf9-45ff-9db5-d5af212b6cfe
+    include_default_blocks: 1
+weight: 0

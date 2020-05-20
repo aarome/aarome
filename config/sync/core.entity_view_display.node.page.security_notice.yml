@@ -5,7 +5,6 @@ dependencies:
   config:
     - core.entity_view_mode.node.security_notice
     - field.field.node.page.body
-    - field.field.node.page.field_page_callout
     - field.field.node.page.field_page_image
     - field.field.node.page.field_page_page_section
     - field.field.node.page.field_page_summary
@@ -30,7 +29,6 @@ content:
     third_party_settings: {  }
 hidden:
   body: true
-  field_page_callout: true
   field_page_image: true
   field_page_page_section: true
   field_page_type: true

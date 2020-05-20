@@ -116,22 +116,6 @@ reactions:
         unique: 0
         context_id: about
         uuid: 2b56e289-b7cf-4ccc-9132-acf9ce6fe710
-      f623f47e-7035-491f-9614-7dd7374c1292:
-        id: 'views_block:front_page_place-about_directions'
-        label: ''
-        provider: views
-        label_display: 0
-        views_label: ''
-        items_per_page: none
-        region: content
-        weight: '2'
-        context_mapping: {  }
-        custom_id: about_directions
-        theme: academy
-        css_class: 'directions card'
-        unique: 0
-        context_id: about
-        uuid: f623f47e-7035-491f-9614-7dd7374c1292
     id: blocks
     saved: false
     uuid: 25338839-fb48-4660-93df-4b0befaf0efc

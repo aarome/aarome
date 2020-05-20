@@ -5,7 +5,6 @@ dependencies:
   config:
     - core.entity_view_mode.node.search_index
     - field.field.node.page.body
-    - field.field.node.page.field_page_callout
     - field.field.node.page.field_page_image
     - field.field.node.page.field_page_page_section
     - field.field.node.page.field_page_summary
@@ -29,7 +28,6 @@ content:
     label: hidden
     region: content
 hidden:
-  field_page_callout: true
   field_page_image: true
   field_page_page_section: true
   field_page_summary: true

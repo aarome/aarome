@@ -957,7 +957,7 @@ display:
   about_place:
     display_plugin: block
     id: about_place
-    display_title: /about/place
+    display_title: /about/history
     position: 3
     display_options:
       display_extenders: {  }
@@ -1471,7 +1471,7 @@ display:
           exclude: true
           alter:
             alter_text: true
-            text: "{% if langcode  == 'English' %}\r\n/about/place\r\n{% else %}\r\n/informazioni/luoghi\r\n{% endif %}"
+            text: "{% if langcode  == 'English' %}\r\n/about/history\r\n{% else %}\r\n/informazioni/storia\r\n{% endif %}"
             make_link: false
             path: ''
             absolute: false

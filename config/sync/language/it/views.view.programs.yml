@@ -3,5 +3,7 @@ display:
     display_options:
       pager:
         options:
-          views_infinite_scroll:
-            button_text: 'More programs'
+          views_infinite_scroll: {  }
+  academic_programs:
+    display_options:
+      title: 'Programmi accademici'
