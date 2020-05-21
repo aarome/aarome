@@ -108,7 +108,7 @@ reactions:
         views_label: ''
         items_per_page: none
         region: content
-        weight: '3'
+        weight: '2'
         context_mapping: {  }
         custom_id: about_tours
         theme: academy
@@ -116,6 +116,22 @@ reactions:
         unique: 0
         context_id: about
         uuid: 2b56e289-b7cf-4ccc-9132-acf9ce6fe710
+      8f017275-6520-470e-8d6d-4b882d706a9a:
+        id: 'views_block:front_page_about-about_jobs'
+        label: ''
+        provider: views
+        label_display: visible
+        views_label: ''
+        items_per_page: none
+        region: content
+        weight: '3'
+        context_mapping: {  }
+        custom_id: about_jobs
+        theme: academy
+        css_class: 'jobs card'
+        unique: 0
+        context_id: about
+        uuid: 8f017275-6520-470e-8d6d-4b882d706a9a
     id: blocks
     saved: false
     uuid: 25338839-fb48-4660-93df-4b0befaf0efc
