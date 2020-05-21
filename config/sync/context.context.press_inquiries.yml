@@ -24,7 +24,7 @@ reactions:
         id: 'block_content:3a37cca5-7dad-4bc3-92ef-7071a3f0e1e8'
         label: 'Press inquiries'
         provider: block_content
-        label_display: visible
+        label_display: 0
         status: true
         info: ''
         view_mode: full

@@ -18,7 +18,7 @@ dependencies:
     - field.field.node.events.field_events_security_notice
     - field.field.node.events.field_events_summary
     - node.type.events
-    - responsive_image.styles.inside_page
+    - responsive_image.styles.wide
   module:
     - blazy
     - daterange_compact
@@ -75,34 +75,20 @@ content:
     settings:
       style: ''
       image_style: ''
-      responsive_image_style: inside_page
+      responsive_image_style: wide
       media_switch: ''
+      box_style: ''
       thumbnail_style: ''
+      box_media_style: ''
       ratio: ''
+      box_caption: ''
       view_mode: default
+      box_caption_custom: ''
       grid: null
       grid_medium: null
       grid_small: null
       caption:
         field_media_caption: field_media_caption
-        field_media_image: '0'
-      sizes: ''
-      breakpoints:
-        xs:
-          image_style: ''
-          width: ''
-        sm:
-          image_style: ''
-          width: ''
-        md:
-          image_style: ''
-          width: ''
-        lg:
-          image_style: ''
-          width: ''
-        xl:
-          image_style: ''
-          width: ''
       current_view_mode: default
       background: false
       class: ''
@@ -115,12 +101,11 @@ content:
       icon: ''
       layout: ''
       cache: 0
-      optionset: default
       skin: ''
-      box_caption: ''
-      box_caption_custom: ''
-      box_style: ''
-      box_media_style: ''
+      fx: ''
+      _uri: ''
+      breakpoints: {  }
+      sizes: ''
       grid_header: ''
     third_party_settings: {  }
   field_events_rel_places:
@@ -150,3 +135,4 @@ hidden:
   field_events_summary: true
   langcode: true
   links: true
+  search_api_excerpt: true

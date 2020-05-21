@@ -3495,8 +3495,8 @@ display:
           alter:
             alter_text: true
             text: '{{ view_node }}<span></span>'
-            make_link: false
-            path: ''
+            make_link: true
+            path: '{{ view_node }}'
             absolute: false
             external: false
             replace_spaces: false
