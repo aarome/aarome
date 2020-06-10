@@ -5,10 +5,7 @@ dependencies:
   config:
     - core.entity_view_mode.node.slideshow
     - field.field.node.events.body
-<<<<<<< HEAD
     - field.field.node.events.field_events_canceled
-=======
->>>>>>> e42e298d52f2cdb64e4faa93c3a4e8ff7e7d9fc4
     - field.field.node.events.field_events_event_dates
     - field.field.node.events.field_events_event_dates_overrid
     - field.field.node.events.field_events_event_series
@@ -84,10 +81,7 @@ content:
     third_party_settings: {  }
 hidden:
   body: true
-<<<<<<< HEAD
   field_events_canceled: true
-=======
->>>>>>> e42e298d52f2cdb64e4faa93c3a4e8ff7e7d9fc4
   field_events_event_dates_overrid: true
   field_events_event_series: true
   field_events_event_type: true

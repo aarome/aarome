@@ -15,7 +15,7 @@ third_party_settings:
 id: academy_socialmedia
 theme: academy
 region: footer_second
-weight: -7
+weight: -8
 provider: null
 plugin: 'system_menu_block:social-media'
 settings:

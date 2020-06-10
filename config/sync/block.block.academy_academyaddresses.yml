@@ -15,7 +15,7 @@ third_party_settings:
 id: academy_academyaddresses
 theme: academy
 region: footer_second
-weight: -6
+weight: -7
 provider: null
 plugin: 'block_content:e263ce32-8c05-426f-b160-f03a10297e2c'
 settings:
