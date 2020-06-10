@@ -27,7 +27,7 @@ dependencies:
     - field.field.node.people.field_people_rel_press_releases
     - field.field.node.people.field_people_website
     - node.type.people
-    - responsive_image.styles.portrait
+    - responsive_image.styles.portrait_detail
   module:
     - blazy
     - entity_reference_revisions
@@ -61,33 +61,19 @@ content:
     label: hidden
     settings:
       image_style: ''
-      responsive_image_style: portrait
+      responsive_image_style: portrait_detail
       media_switch: ''
+      box_style: ''
       thumbnail_style: ''
+      box_media_style: ''
       ratio: ''
+      box_caption: ''
       view_mode: default
-      sizes: ''
-      breakpoints:
-        xs:
-          image_style: ''
-          width: ''
-        sm:
-          image_style: ''
-          width: ''
-        md:
-          image_style: ''
-          width: ''
-        lg:
-          image_style: ''
-          width: ''
-        xl:
-          image_style: ''
-          width: ''
+      box_caption_custom: ''
       current_view_mode: default
       background: false
       caption:
         field_media_caption: '0'
-        field_media_image: '0'
       class: ''
       id: ''
       image: ''
@@ -99,17 +85,15 @@ content:
       layout: ''
       cache: 0
       skin: ''
+      fx: ''
       style: ''
-      box_caption: ''
-      box_caption_custom: ''
-      box_style: ''
-      box_media_style: ''
-      grid: 0
+      _uri: ''
+      breakpoints: {  }
+      sizes: ''
       grid_header: ''
+      grid: 0
       grid_medium: 0
       grid_small: 0
-      fx: ''
-      _uri: ''
     third_party_settings: {  }
   field_people_professions:
     type: string
@@ -154,3 +138,4 @@ hidden:
   field_people_website: true
   langcode: true
   links: true
+  search_api_excerpt: true

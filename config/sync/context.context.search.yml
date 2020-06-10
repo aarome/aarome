@@ -6,7 +6,7 @@ dependencies:
     - system
 name: search
 label: Search
-group: Callouts
+group: Search
 description: ''
 requireAllConditions: false
 disabled: false

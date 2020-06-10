@@ -1,2 +1,5 @@
 settings:
   confirmation_message: 'Il messaggio è stato inviato.'
+handlers:
+  email_notification:
+    label: 'Email di notifica'

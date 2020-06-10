@@ -1,0 +1,20 @@
+uuid: 139bc7ed-9d89-4f90-a3a4-4618da37df0d
+langcode: en
+status: true
+dependencies:
+  config:
+    - taxonomy.vocabulary.byline
+  module:
+    - path
+id: taxonomy_term.byline.path
+field_name: path
+entity_type: taxonomy_term
+bundle: byline
+label: 'URL alias'
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: path

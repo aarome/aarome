@@ -28,7 +28,7 @@ reactions:
         views_label: ''
         items_per_page: none
         region: content
-        weight: '-2'
+        weight: '-3'
         context_mapping: {  }
         custom_id: about_mission
         theme: academy
@@ -44,7 +44,7 @@ reactions:
         views_label: ''
         items_per_page: none
         region: content
-        weight: '-1'
+        weight: '-2'
         context_mapping: {  }
         custom_id: about_place
         theme: academy
@@ -60,7 +60,7 @@ reactions:
         views_label: ''
         items_per_page: none
         region: content
-        weight: '0'
+        weight: '-1'
         context_mapping: {  }
         custom_id: about_board
         theme: academy
@@ -76,7 +76,7 @@ reactions:
         views_label: ''
         items_per_page: none
         region: content
-        weight: '1'
+        weight: '0'
         context_mapping: {  }
         custom_id: about_staff
         theme: academy
@@ -92,7 +92,7 @@ reactions:
         views_label: ''
         items_per_page: none
         region: content
-        weight: '2'
+        weight: '1'
         context_mapping: {  }
         custom_id: about_rsfp
         theme: academy
@@ -116,6 +116,38 @@ reactions:
         unique: 0
         context_id: about
         uuid: 2b56e289-b7cf-4ccc-9132-acf9ce6fe710
+      8f017275-6520-470e-8d6d-4b882d706a9a:
+        id: 'views_block:front_page_about-about_jobs'
+        label: ''
+        provider: views
+        label_display: visible
+        views_label: ''
+        items_per_page: none
+        region: content
+        weight: '4'
+        context_mapping: {  }
+        custom_id: about_jobs
+        theme: academy
+        css_class: 'jobs card'
+        unique: 0
+        context_id: about
+        uuid: 8f017275-6520-470e-8d6d-4b882d706a9a
+      39f7bb09-29a9-4780-824e-31fb7bddfd10:
+        id: 'views_block:front_page_people-people_sof'
+        label: ''
+        provider: views
+        label_display: visible
+        views_label: ''
+        items_per_page: none
+        region: content
+        weight: '2'
+        context_mapping: {  }
+        custom_id: people_sof
+        theme: academy
+        css_class: 'sof card'
+        unique: 0
+        context_id: about
+        uuid: 39f7bb09-29a9-4780-824e-31fb7bddfd10
     id: blocks
     saved: false
     uuid: 25338839-fb48-4660-93df-4b0befaf0efc

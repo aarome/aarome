@@ -4,7 +4,6 @@ status: true
 dependencies:
   config:
     - field.field.node.page.body
-    - field.field.node.page.field_page_callout
     - field.field.node.page.field_page_image
     - field.field.node.page.field_page_page_section
     - field.field.node.page.field_page_summary
@@ -12,7 +11,7 @@ dependencies:
     - node.type.page
   module:
     - allowed_formats
-    - block_field
+    - entity_form_field_label
     - inline_entity_form
     - paragraphs
     - path
@@ -30,15 +29,6 @@ content:
     region: content
     settings: {  }
     third_party_settings: {  }
-  field_page_callout:
-    weight: 11
-    settings:
-      plugin_id: ''
-      settings: {  }
-      configuration_form: full
-    third_party_settings: {  }
-    type: block_field_default
-    region: content
   field_page_image:
     weight: 4
     settings:
@@ -52,6 +42,7 @@ content:
       override_labels: false
       collapsed: false
       allow_duplicate: false
+      revision: false
     third_party_settings: {  }
     type: inline_entity_form_complex
     region: content
@@ -60,10 +51,11 @@ content:
     weight: 3
     settings:
       title: 'Page section'
-      title_plural: 'Page ections'
+      title_plural: 'Page sections'
       edit_mode: open
       closed_mode: summary
       autocollapse: none
+      closed_mode_threshold: 0
       add_mode: dropdown
       form_display_mode: default
       default_paragraph_type: page_section
@@ -71,8 +63,10 @@ content:
         add_above: '0'
         collapse_edit_all: collapse_edit_all
         duplicate: duplicate
-      closed_mode_threshold: 0
-    third_party_settings: {  }
+    third_party_settings:
+      entity_form_field_label:
+        new_label: ''
+        rewrite_label: 0
     region: content
   field_page_summary:
     weight: 2

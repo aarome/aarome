@@ -30,6 +30,7 @@ permissions:
   - 'skip comment approval'
   - 'use text format basic_html'
   - 'use text format summary_html'
+  - 'use toolbar_language_switcher'
   - 'view any unpublished events content'
   - 'view any unpublished library_resources content'
   - 'view any unpublished news_features content'

@@ -1,7 +1,4 @@
 display:
-  page_press_press_releases:
-    display_options:
-      title: 'Comunicati Stampa'
   page_press_press_coverage:
     display_options:
       title: 'Copertura Stampa'

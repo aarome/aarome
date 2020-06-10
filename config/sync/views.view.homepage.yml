@@ -4,6 +4,7 @@ status: true
 dependencies:
   config:
     - core.entity_view_mode.node.full
+    - core.entity_view_mode.node.slideshow
     - core.entity_view_mode.node.teaser
     - field.storage.media.field_media_image
     - field.storage.node.field_events_event_dates
@@ -24,12 +25,10 @@ dependencies:
     - blazy
     - daterange_compact
     - datetime
-    - image
     - link
     - media
     - node
     - paragraphs
-    - slick_views
     - taxonomy
     - user
 id: homepage
@@ -74,7 +73,7 @@ display:
       pager:
         type: some
         options:
-          items_per_page: 30
+          items_per_page: 10
           offset: 0
       style:
         type: default
@@ -431,6 +430,7 @@ display:
         css_class: false
         style: false
         row: false
+        show_admin_links: false
       block_description: 'Front (Events)'
       pager:
         type: some
@@ -511,10 +511,21 @@ display:
           empty_zero: false
           hide_alter_empty: true
           click_sort_column: target_id
-          type: image
+          type: blazy
           settings:
+            background: false
+            caption:
+              title: '0'
+              alt: '0'
             image_style: ''
-            image_link: ''
+            thumbnail_style: ''
+            responsive_image_style: wide
+            media_switch: ''
+            ratio: ''
+            box_style: ''
+            box_caption: ''
+            box_caption_custom: ''
+            current_view_mode: _custom
           group_column: ''
           group_columns: {  }
           group_rows: true
@@ -637,54 +648,19 @@ display:
           field_api_classes: false
           plugin_id: field
       rendering_language: '***LANGUAGE_language_interface***'
-      css_class: 'front front-events'
+      css_class: 'front front-events swiper-container swiper-events'
       style:
-        type: slick
+        type: default
         options:
-          vanilla: false
-          optionset: slideshow
-          skin: default
-          layout: ''
-          caption:
-            field_events_event_dates: field_events_event_dates
-            field_media_image: '0'
-            title: '0'
-          optionset_thumbnail: ''
-          skin_thumbnail: ''
-          thumbnail_position: ''
-          thumbnail_caption: ''
-          grid: null
-          grid_medium: null
-          grid_small: null
-          visible_items: null
-          preserve_keys: false
-          image: field_media_image
-          thumbnail: ''
-          overlay: ''
-          title: title
-          link: ''
-          class: ''
-          id: ''
-          override: false
-          overridables:
-            arrows: '0'
-            autoplay: '0'
-            dots: '0'
-            draggable: '0'
-            infinite: '0'
-            mouseWheel: '0'
-            randomize: '0'
-            variableWidth: '0'
-          cache: 0
-          current_view_mode: events
-          thumbnail_effect: ''
+          row_class: ''
+          default_row_class: false
+          uses_fields: false
       row:
-        type: fields
+        type: 'entity:node'
         options:
-          default_field_elements: false
-          inline: {  }
-          separator: ''
-          hide_empty: false
+          relationship: none
+          view_mode: slideshow
+      show_admin_links: false
     cache_metadata:
       max-age: -1
       contexts:
@@ -954,52 +930,18 @@ display:
       rendering_language: '***LANGUAGE_language_interface***'
       title: 'Meet the Fellows'
       style:
-        type: slick
+        type: default
         options:
-          vanilla: true
-          optionset: fellows
-          skin: default
-          layout: ''
-          caption:
-            title: title
-            field_affil_discipline: field_affil_discipline
-            field_media_image: '0'
-          optionset_thumbnail: ''
-          skin_thumbnail: ''
-          thumbnail_position: ''
-          thumbnail_caption: ''
-          grid: null
-          grid_medium: null
-          grid_small: null
-          visible_items: null
-          preserve_keys: false
-          image: field_media_image
-          thumbnail: ''
-          overlay: ''
-          title: ''
-          link: ''
-          class: ''
-          id: ''
-          override: false
-          overridables:
-            arrows: arrows
-            draggable: draggable
-            infinite: infinite
-            randomize: randomize
-            variableWidth: variableWidth
-            autoplay: '0'
-            dots: '0'
-            mouseWheel: '0'
-          cache: 0
-          current_view_mode: fellows
-          thumbnail_effect: ''
+          row_class: ''
+          default_row_class: false
+          uses_fields: false
       row:
         type: 'entity:node'
         options:
           relationship: none
           view_mode: teaser
       display_description: ''
-      css_class: 'front front-fellows'
+      css_class: 'front front-fellows swiper-container swiper-fellows'
       relationships:
         field_people_portrait:
           id: field_people_portrait
@@ -2115,45 +2057,11 @@ display:
       rendering_language: '***LANGUAGE_language_interface***'
       title: 'Invited Residents'
       style:
-        type: slick
+        type: default
         options:
-          vanilla: true
-          optionset: fellows
-          skin: default
-          layout: ''
-          caption:
-            title: title
-            field_affil_discipline: field_affil_discipline
-            field_media_image: '0'
-          optionset_thumbnail: ''
-          skin_thumbnail: ''
-          thumbnail_position: ''
-          thumbnail_caption: ''
-          grid: null
-          grid_medium: null
-          grid_small: null
-          visible_items: null
-          preserve_keys: false
-          image: field_media_image
-          thumbnail: ''
-          overlay: ''
-          title: ''
-          link: ''
-          class: ''
-          id: ''
-          override: true
-          overridables:
-            arrows: arrows
-            draggable: draggable
-            infinite: infinite
-            randomize: randomize
-            variableWidth: variableWidth
-            autoplay: '0'
-            dots: '0'
-            mouseWheel: '0'
-          cache: 0
-          current_view_mode: residents
-          thumbnail_effect: ''
+          row_class: ''
+          default_row_class: false
+          uses_fields: false
       row:
         type: 'entity:node'
         options:

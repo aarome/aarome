@@ -438,59 +438,6 @@ display:
           empty_zero: false
           hide_alter_empty: false
           plugin_id: custom
-        edit_node_1:
-          id: edit_node_1
-          table: node
-          field: edit_node
-          relationship: none
-          group_type: group
-          admin_label: ''
-          label: ''
-          exclude: false
-          alter:
-            alter_text: false
-            text: ''
-            make_link: false
-            path: ''
-            absolute: false
-            external: false
-            replace_spaces: false
-            path_case: none
-            trim_whitespace: false
-            alt: ''
-            rel: ''
-            link_class: ''
-            prefix: ''
-            suffix: ''
-            target: ''
-            nl2br: false
-            max_length: 0
-            word_boundary: true
-            ellipsis: true
-            more_link: false
-            more_link_text: ''
-            more_link_path: ''
-            strip_tags: false
-            trim: false
-            preserve_tags: ''
-            html: false
-          element_type: div
-          element_class: edit
-          element_label_type: ''
-          element_label_class: ''
-          element_label_colon: false
-          element_wrapper_type: ''
-          element_wrapper_class: ''
-          element_default_classes: false
-          empty: ''
-          hide_empty: false
-          empty_zero: false
-          hide_alter_empty: true
-          text: edit
-          output_url_as_text: false
-          absolute: false
-          entity_type: node
-          plugin_id: entity_link_edit
       filters:
         status:
           value: '1'
@@ -618,22 +565,23 @@ display:
       tags:
         - 'config:field.storage.media.field_media_image'
         - 'config:field.storage.node.field_page_summary'
-  place_academy:
+  about_directions:
     display_plugin: block
-    id: place_academy
-    display_title: /place/academy
-    position: 1
+    id: about_directions
+    display_title: /place/directions
+    position: 4
     display_options:
       display_extenders: {  }
-      block_description: 'Place (About the Academy)'
+      block_description: 'About (Directions)'
       display_description: ''
       defaults:
         arguments: true
         filters: false
         filter_groups: false
+        css_class: false
         fields: true
-        css_class: true
       rendering_language: '***LANGUAGE_language_interface***'
+      css_class: block_front
       filters:
         status:
           value: '1'
@@ -659,7 +607,7 @@ display:
           value:
             min: ''
             max: ''
-            value: '1815'
+            value: '5'
           group: 1
           exposed: false
           expose:
@@ -747,23 +695,22 @@ display:
       tags:
         - 'config:field.storage.media.field_media_image'
         - 'config:field.storage.node.field_page_summary'
-  place_directions:
+  place_academy:
     display_plugin: block
-    id: place_directions
-    display_title: /place/directions
-    position: 4
+    id: place_academy
+    display_title: /place/academy
+    position: 1
     display_options:
       display_extenders: {  }
-      block_description: 'Place (Directions)'
+      block_description: 'Place (About the Academy)'
       display_description: ''
       defaults:
         arguments: true
         filters: false
         filter_groups: false
-        css_class: false
         fields: true
+        css_class: true
       rendering_language: '***LANGUAGE_language_interface***'
-      css_class: block_front
       filters:
         status:
           value: '1'
@@ -789,7 +736,7 @@ display:
           value:
             min: ''
             max: ''
-            value: '5'
+            value: '1815'
           group: 1
           exposed: false
           expose:

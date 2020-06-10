@@ -1,0 +1,18 @@
+uuid: 471f30c4-6415-432d-bcf3-883d32aedcbd
+langcode: en
+status: true
+dependencies:
+  config:
+    - node.type.programs
+id: node.programs.title
+field_name: title
+entity_type: node
+bundle: programs
+label: 'Program title'
+description: ''
+required: true
+translatable: true
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: string

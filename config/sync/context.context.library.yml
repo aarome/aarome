@@ -156,7 +156,7 @@ reactions:
         views_label: ''
         items_per_page: none
         region: content
-        weight: '-2'
+        weight: '-1'
         context_mapping: {  }
         custom_id: request_forms
         theme: academy
@@ -172,7 +172,7 @@ reactions:
         views_label: ''
         items_per_page: none
         region: content
-        weight: '-1'
+        weight: '0'
         context_mapping: {  }
         custom_id: library_access
         theme: academy
@@ -188,7 +188,7 @@ reactions:
         views_label: ''
         items_per_page: none
         region: content
-        weight: '0'
+        weight: '1'
         context_mapping: {  }
         custom_id: special_collections
         theme: academy
@@ -196,22 +196,6 @@ reactions:
         unique: 0
         context_id: library
         uuid: 5c4e35ff-49da-47dc-a859-6cf2255221b0
-      a76acbf5-1679-43cf-9b78-1303722f447f:
-        id: 'views_block:front_page_library-research_library_guide'
-        label: ''
-        provider: views
-        label_display: 0
-        views_label: ''
-        items_per_page: none
-        region: content
-        weight: '1'
-        context_mapping: {  }
-        custom_id: library_guides
-        theme: academy
-        css_class: 'guides card'
-        unique: 0
-        context_id: library
-        uuid: a76acbf5-1679-43cf-9b78-1303722f447f
       22ea695a-d63a-4f90-bd9d-74893b0d4dda:
         id: 'views_block:front_page_library-research_library_new_acquisitions'
         label: ''
@@ -220,7 +204,7 @@ reactions:
         views_label: ''
         items_per_page: none
         region: content
-        weight: '2'
+        weight: '3'
         context_mapping: {  }
         custom_id: library_new_acquisitions
         theme: academy
@@ -236,7 +220,7 @@ reactions:
         views_label: ''
         items_per_page: none
         region: content
-        weight: '3'
+        weight: '4'
         context_mapping: {  }
         custom_id: library_friends
         theme: academy
@@ -244,6 +228,22 @@ reactions:
         unique: 0
         context_id: library
         uuid: f672bd4c-2f13-4500-80e1-e239da728506
+      3614b3f6-9555-49bf-96c1-9550aeb650a6:
+        id: 'views_block:front_page_library-research_library_about'
+        label: ''
+        provider: views
+        label_display: 0
+        views_label: ''
+        items_per_page: none
+        region: content
+        weight: '-2'
+        context_mapping: {  }
+        custom_id: library_about
+        theme: academy
+        css_class: 'about card'
+        unique: 0
+        context_id: library
+        uuid: 3614b3f6-9555-49bf-96c1-9550aeb650a6
     id: blocks
     saved: false
     uuid: 22c50481-227e-45b8-8435-c506739923b4

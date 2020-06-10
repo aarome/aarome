@@ -13,6 +13,7 @@ dependencies:
     - node.type.places
     - node.type.press
     - node.type.press_releases
+    - node.type.programs
     - node.type.publications
     - node.type.quick_news
     - node.type.society_of_fellows
@@ -628,6 +629,7 @@ display:
             places: places
             press: press
             press_releases: press_releases
+            programs: programs
             publications: publications
             quick_news: quick_news
             society_of_fellows: society_of_fellows
@@ -639,6 +641,8 @@ display:
             description: ''
             use_operator: false
             operator: type_op
+            operator_limit_selection: false
+            operator_list: {  }
             identifier: type
             required: false
             remember: false
@@ -652,8 +656,6 @@ display:
               library: '0'
               tours: '0'
             reduce: false
-            operator_limit_selection: false
-            operator_list: {  }
           is_grouped: false
           group_info:
             label: ''
@@ -907,6 +909,7 @@ display:
             places: places
             press: press
             press_releases: press_releases
+            programs: programs
             publications: publications
             quick_news: quick_news
             society_of_fellows: society_of_fellows
@@ -919,6 +922,8 @@ display:
             description: ''
             use_operator: false
             operator: type_op
+            operator_limit_selection: false
+            operator_list: {  }
             identifier: type
             required: false
             remember: false
@@ -932,8 +937,6 @@ display:
               library: '0'
               tours: '0'
             reduce: true
-            operator_limit_selection: false
-            operator_list: {  }
           is_grouped: false
           group_info:
             label: ''

@@ -128,7 +128,7 @@ reactions:
         views_label: ''
         items_per_page: none
         region: content
-        weight: '-2'
+        weight: '-3'
         context_mapping: {  }
         custom_id: support_donate
         theme: academy
@@ -144,7 +144,7 @@ reactions:
         views_label: ''
         items_per_page: none
         region: content
-        weight: '-1'
+        weight: '-2'
         context_mapping: {  }
         custom_id: support_join
         theme: academy
@@ -160,7 +160,7 @@ reactions:
         views_label: ''
         items_per_page: none
         region: content
-        weight: '0'
+        weight: '-1'
         context_mapping: {  }
         custom_id: support_galas
         theme: academy
@@ -208,7 +208,7 @@ reactions:
         views_label: ''
         items_per_page: none
         region: content
-        weight: '1'
+        weight: '0'
         context_mapping: {  }
         custom_id: new_york_gala
         theme: academy

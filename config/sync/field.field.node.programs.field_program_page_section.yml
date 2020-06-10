@@ -1,0 +1,34 @@
+uuid: 140c9659-9891-4f32-bb13-b7e6b2021dc0
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_program_page_section
+    - node.type.programs
+    - paragraphs.paragraphs_type.page_section
+  module:
+    - entity_reference_revisions
+id: node.programs.field_program_page_section
+field_name: field_program_page_section
+entity_type: node
+bundle: programs
+label: 'Page section'
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings:
+  handler: 'default:paragraph'
+  handler_settings:
+    negate: 0
+    target_bundles:
+      page_section: page_section
+    target_bundles_drag_drop:
+      affiliation:
+        weight: 3
+        enabled: false
+      page_section:
+        enabled: true
+        weight: 4
+field_type: entity_reference_revisions

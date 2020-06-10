@@ -212,22 +212,6 @@ reactions:
         unique: 0
         context_id: people
         uuid: 2a5ddd04-8efc-4672-be62-773b41c9e229
-      e131105a-4d2e-4b6f-bed7-0aaf54061aee:
-        id: 'views_block:front_page_people-people_sof'
-        label: ''
-        provider: views
-        label_display: visible
-        views_label: ''
-        items_per_page: none
-        region: content
-        weight: '2'
-        context_mapping: {  }
-        custom_id: people_sof
-        theme: academy
-        css_class: 'sof card'
-        unique: 0
-        context_id: people
-        uuid: e131105a-4d2e-4b6f-bed7-0aaf54061aee
       3a5984fb-ca84-427c-80af-601d8b596d0a:
         id: 'views_block:front_page_people-people_visiting_artists_scholars'
         label: ''

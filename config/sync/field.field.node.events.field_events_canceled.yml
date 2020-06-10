@@ -1,0 +1,23 @@
+uuid: c3795a7e-361f-4a4b-ace9-4ba353ea2077
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_events_canceled
+    - node.type.events
+id: node.events.field_events_canceled
+field_name: field_events_canceled
+entity_type: node
+bundle: events
+label: Canceled
+description: ''
+required: false
+translatable: true
+default_value:
+  -
+    value: 0
+default_value_callback: ''
+settings:
+  on_label: Canceled
+  off_label: 'Canceled (Italian)'
+field_type: boolean

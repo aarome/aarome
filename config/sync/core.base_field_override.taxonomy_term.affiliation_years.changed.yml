@@ -1,0 +1,18 @@
+uuid: 9440101d-7c95-413e-8744-c93fd9d0bb47
+langcode: en
+status: true
+dependencies:
+  config:
+    - taxonomy.vocabulary.affiliation_years
+id: taxonomy_term.affiliation_years.changed
+field_name: changed
+entity_type: taxonomy_term
+bundle: affiliation_years
+label: Changed
+description: 'The time that the term was last edited.'
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: changed

@@ -1,0 +1,20 @@
+uuid: 1e9778c7-a117-430b-a4b7-d9463fe1f3f9
+langcode: en
+status: true
+dependencies:
+  config:
+    - taxonomy.vocabulary.event_years
+  module:
+    - path
+id: taxonomy_term.event_years.path
+field_name: path
+entity_type: taxonomy_term
+bundle: event_years
+label: 'URL alias'
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: path
