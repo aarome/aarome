@@ -3,7 +3,11 @@ langcode: en
 status: true
 dependencies:
   config:
+<<<<<<< HEAD
     - image.style.max_1300x867
+=======
+    - image.style.max_400x300
+>>>>>>> e42e298d52f2cdb64e4faa93c3a4e8ff7e7d9fc4
     - image.style.max_600x400
   theme:
     - academy
@@ -17,7 +21,11 @@ image_style_mappings:
     image_mapping:
       sizes: 100vw
       sizes_image_styles:
+<<<<<<< HEAD
         - max_600x400
+=======
+        - max_400x300
+>>>>>>> e42e298d52f2cdb64e4faa93c3a4e8ff7e7d9fc4
   -
     breakpoint_id: academy.mobile
     multiplier: 2x
@@ -25,36 +33,64 @@ image_style_mappings:
     image_mapping:
       sizes: 100vw
       sizes_image_styles:
+<<<<<<< HEAD
         - max_1300x867
+=======
+        - max_600x400
+>>>>>>> e42e298d52f2cdb64e4faa93c3a4e8ff7e7d9fc4
   -
     breakpoint_id: academy.tablet
     multiplier: 1x
     image_mapping_type: image_style
+<<<<<<< HEAD
     image_mapping: max_600x400
+=======
+    image_mapping: max_400x300
+>>>>>>> e42e298d52f2cdb64e4faa93c3a4e8ff7e7d9fc4
   -
     breakpoint_id: academy.tablet
     multiplier: 2x
     image_mapping_type: image_style
+<<<<<<< HEAD
     image_mapping: max_1300x867
+=======
+    image_mapping: max_600x400
+>>>>>>> e42e298d52f2cdb64e4faa93c3a4e8ff7e7d9fc4
   -
     breakpoint_id: academy.desktop
     multiplier: 1x
     image_mapping_type: image_style
+<<<<<<< HEAD
     image_mapping: max_600x400
+=======
+    image_mapping: max_400x300
+>>>>>>> e42e298d52f2cdb64e4faa93c3a4e8ff7e7d9fc4
   -
     breakpoint_id: academy.desktop
     multiplier: 2x
     image_mapping_type: image_style
+<<<<<<< HEAD
     image_mapping: max_1300x867
+=======
+    image_mapping: max_600x400
+>>>>>>> e42e298d52f2cdb64e4faa93c3a4e8ff7e7d9fc4
   -
     breakpoint_id: academy.wide
     multiplier: 1x
     image_mapping_type: image_style
+<<<<<<< HEAD
     image_mapping: max_600x400
+=======
+    image_mapping: max_400x300
+>>>>>>> e42e298d52f2cdb64e4faa93c3a4e8ff7e7d9fc4
   -
     breakpoint_id: academy.wide
     multiplier: 2x
     image_mapping_type: image_style
+<<<<<<< HEAD
     image_mapping: max_1300x867
+=======
+    image_mapping: max_600x400
+>>>>>>> e42e298d52f2cdb64e4faa93c3a4e8ff7e7d9fc4
 breakpoint_group: academy
 fallback_image_style: '_original image_'
