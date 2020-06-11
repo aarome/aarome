@@ -6,6 +6,7 @@ dependencies:
     - core.entity_view_mode.node.full
     - field.storage.media.field_media_file
     - field.storage.node.body
+    - field.storage.node.field_events_canceled
     - field.storage.node.field_events_event_dates
     - field.storage.node.field_events_event_series
     - field.storage.node.field_events_event_type
@@ -2204,15 +2205,78 @@ display:
           separator: ', '
           field_api_classes: false
           plugin_id: field
+        field_events_event_series:
+          id: field_events_event_series
+          table: node__field_events_event_series
+          field: field_events_event_series
+          relationship: none
+          group_type: group
+          admin_label: 'Event series (token)'
+          label: ''
+          exclude: true
+          alter:
+            alter_text: false
+            text: 'Part of the {{ field_events_event_series }} series'
+            make_link: false
+            path: ''
+            absolute: false
+            external: false
+            replace_spaces: false
+            path_case: none
+            trim_whitespace: false
+            alt: ''
+            rel: ''
+            link_class: ''
+            prefix: ''
+            suffix: ''
+            target: ''
+            nl2br: false
+            max_length: 0
+            word_boundary: true
+            ellipsis: true
+            more_link: false
+            more_link_text: ''
+            more_link_path: ''
+            strip_tags: false
+            trim: false
+            preserve_tags: ''
+            html: false
+          element_type: ''
+          element_class: ''
+          element_label_type: ''
+          element_label_class: ''
+          element_label_colon: false
+          element_wrapper_type: ''
+          element_wrapper_class: ''
+          element_default_classes: false
+          empty: ''
+          hide_empty: false
+          empty_zero: false
+          hide_alter_empty: true
+          click_sort_column: target_id
+          type: entity_reference_label
+          settings:
+            link: false
+          group_column: target_id
+          group_columns: {  }
+          group_rows: true
+          delta_limit: 0
+          delta_offset: 0
+          delta_reversed: false
+          delta_first_last: false
+          multi_type: ul
+          separator: ' '
+          field_api_classes: false
+          plugin_id: field
         field_events_event_type:
           id: field_events_event_type
           table: node__field_events_event_type
           field: field_events_event_type
           relationship: none
           group_type: group
-          admin_label: ''
+          admin_label: 'Event type (token)'
           label: ''
-          exclude: false
+          exclude: true
           alter:
             alter_text: false
             text: ''
@@ -2240,8 +2304,8 @@ display:
             trim: false
             preserve_tags: ''
             html: false
-          element_type: div
-          element_class: type
+          element_type: ''
+          element_class: ''
           element_label_type: ''
           element_label_class: ''
           element_label_colon: false
@@ -2267,6 +2331,55 @@ display:
           separator: ', '
           field_api_classes: false
           plugin_id: field
+        nothing_3:
+          id: nothing_3
+          table: views
+          field: nothing
+          relationship: none
+          group_type: group
+          admin_label: 'Event series/type logic'
+          label: ''
+          exclude: false
+          alter:
+            alter_text: true
+            text: "{% if field_events_event_series %}\r\n<div class=\"type\">{{ field_events_event_series }}</div>\r\n{% else %}\r\n<div class=\"type\">{{ field_events_event_type }}</div>\r\n{% endif %}"
+            make_link: false
+            path: ''
+            absolute: false
+            external: false
+            replace_spaces: false
+            path_case: none
+            trim_whitespace: false
+            alt: ''
+            rel: ''
+            link_class: ''
+            prefix: ''
+            suffix: ''
+            target: ''
+            nl2br: false
+            max_length: 0
+            word_boundary: true
+            ellipsis: true
+            more_link: false
+            more_link_text: ''
+            more_link_path: ''
+            strip_tags: false
+            trim: false
+            preserve_tags: ''
+            html: false
+          element_type: ''
+          element_class: ''
+          element_label_type: ''
+          element_label_class: ''
+          element_label_colon: false
+          element_wrapper_type: ''
+          element_wrapper_class: ''
+          element_default_classes: false
+          empty: ''
+          hide_empty: false
+          empty_zero: false
+          hide_alter_empty: false
+          plugin_id: custom
         title:
           id: title
           table: node_field_data
@@ -2566,69 +2679,6 @@ display:
           empty_zero: false
           hide_alter_empty: false
           plugin_id: custom
-        field_events_event_series:
-          id: field_events_event_series
-          table: node__field_events_event_series
-          field: field_events_event_series
-          relationship: none
-          group_type: group
-          admin_label: ''
-          label: ''
-          exclude: false
-          alter:
-            alter_text: true
-            text: 'Part of the {{ field_events_event_series }} series'
-            make_link: false
-            path: ''
-            absolute: false
-            external: false
-            replace_spaces: false
-            path_case: none
-            trim_whitespace: false
-            alt: ''
-            rel: ''
-            link_class: ''
-            prefix: ''
-            suffix: ''
-            target: ''
-            nl2br: false
-            max_length: 0
-            word_boundary: true
-            ellipsis: true
-            more_link: false
-            more_link_text: ''
-            more_link_path: ''
-            strip_tags: false
-            trim: false
-            preserve_tags: ''
-            html: false
-          element_type: p
-          element_class: series
-          element_label_type: ''
-          element_label_class: ''
-          element_label_colon: false
-          element_wrapper_type: ''
-          element_wrapper_class: ''
-          element_default_classes: false
-          empty: ''
-          hide_empty: false
-          empty_zero: false
-          hide_alter_empty: true
-          click_sort_column: target_id
-          type: entity_reference_label
-          settings:
-            link: false
-          group_column: target_id
-          group_columns: {  }
-          group_rows: true
-          delta_limit: 1
-          delta_offset: 0
-          delta_reversed: false
-          delta_first_last: false
-          multi_type: separator
-          separator: ', '
-          field_api_classes: false
-          plugin_id: field
         nothing:
           id: nothing
           table: views
@@ -2769,6 +2819,120 @@ display:
             html: false
           element_type: div
           element_class: card-link
+          element_label_type: ''
+          element_label_class: ''
+          element_label_colon: false
+          element_wrapper_type: ''
+          element_wrapper_class: ''
+          element_default_classes: false
+          empty: ''
+          hide_empty: false
+          empty_zero: false
+          hide_alter_empty: false
+          plugin_id: custom
+        field_events_canceled:
+          id: field_events_canceled
+          table: node__field_events_canceled
+          field: field_events_canceled
+          relationship: none
+          group_type: group
+          admin_label: 'Canceled (token)'
+          label: ''
+          exclude: true
+          alter:
+            alter_text: false
+            text: ''
+            make_link: false
+            path: ''
+            absolute: false
+            external: false
+            replace_spaces: false
+            path_case: none
+            trim_whitespace: false
+            alt: ''
+            rel: ''
+            link_class: ''
+            prefix: ''
+            suffix: ''
+            target: ''
+            nl2br: false
+            max_length: 0
+            word_boundary: true
+            ellipsis: true
+            more_link: false
+            more_link_text: ''
+            more_link_path: ''
+            strip_tags: false
+            trim: false
+            preserve_tags: ''
+            html: false
+          element_type: ''
+          element_class: ''
+          element_label_type: ''
+          element_label_class: ''
+          element_label_colon: false
+          element_wrapper_type: ''
+          element_wrapper_class: ''
+          element_default_classes: false
+          empty: ''
+          hide_empty: true
+          empty_zero: true
+          hide_alter_empty: true
+          click_sort_column: value
+          type: boolean
+          settings:
+            format: custom
+            format_custom_true: Canceled
+            format_custom_false: ''
+          group_column: value
+          group_columns: {  }
+          group_rows: true
+          delta_limit: 0
+          delta_offset: 0
+          delta_reversed: false
+          delta_first_last: false
+          multi_type: separator
+          separator: ', '
+          field_api_classes: false
+          plugin_id: field
+        nothing_4:
+          id: nothing_4
+          table: views
+          field: nothing
+          relationship: none
+          group_type: group
+          admin_label: Canceled
+          label: ''
+          exclude: false
+          alter:
+            alter_text: true
+            text: "{% if field_events_canceled %}\r\n  <div class=\"canceled\">{{ field_events_canceled }}</div>\r\n{% endif %}\r\n\r\n"
+            make_link: false
+            path: ''
+            absolute: false
+            external: false
+            replace_spaces: false
+            path_case: none
+            trim_whitespace: false
+            alt: ''
+            rel: ''
+            link_class: ''
+            prefix: ''
+            suffix: ''
+            target: ''
+            nl2br: false
+            max_length: 0
+            word_boundary: true
+            ellipsis: true
+            more_link: false
+            more_link_text: ''
+            more_link_path: ''
+            strip_tags: false
+            trim: false
+            preserve_tags: ''
+            html: false
+          element_type: ''
+          element_class: ''
           element_label_type: ''
           element_label_class: ''
           element_label_colon: false
@@ -2930,6 +3094,7 @@ display:
         - 'user.node_grants:view'
         - user.permissions
       tags:
+        - 'config:field.storage.node.field_events_canceled'
         - 'config:field.storage.node.field_events_event_dates'
         - 'config:field.storage.node.field_events_event_series'
         - 'config:field.storage.node.field_events_event_type'

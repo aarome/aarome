@@ -15,7 +15,7 @@ third_party_settings:
 id: academy_legal
 theme: academy
 region: footer_second
-weight: -5
+weight: -6
 provider: null
 plugin: 'system_menu_block:legal'
 settings:

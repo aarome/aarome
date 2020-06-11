@@ -4,6 +4,7 @@ status: true
 dependencies:
   config:
     - field.field.node.events.body
+    - field.field.node.events.field_events_canceled
     - field.field.node.events.field_events_event_dates
     - field.field.node.events.field_events_event_dates_overrid
     - field.field.node.events.field_events_event_series
@@ -36,6 +37,16 @@ content:
     label: hidden
     settings: {  }
     third_party_settings: {  }
+  field_events_canceled:
+    weight: 8
+    label: above
+    settings:
+      format: default
+      format_custom_false: ''
+      format_custom_true: ''
+    third_party_settings: {  }
+    type: boolean
+    region: content
   field_events_event_dates:
     type: daterange_compact
     weight: 3
