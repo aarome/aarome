@@ -1,0 +1,28 @@
+uuid: d556662e-3ffc-4ae5-9831-14ac514b1312
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_publication_files
+    - media.type.publication_files
+    - node.type.publications
+id: node.publications.field_publication_files
+field_name: field_publication_files
+entity_type: node
+bundle: publications
+label: 'Publication file(s)'
+description: ''
+required: false
+translatable: true
+default_value: {  }
+default_value_callback: ''
+settings:
+  handler: 'default:media'
+  handler_settings:
+    target_bundles:
+      publication_files: publication_files
+    sort:
+      field: _none
+    auto_create: false
+    auto_create_bundle: ''
+field_type: entity_reference

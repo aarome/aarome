@@ -1,0 +1,43 @@
+uuid: 9c9609ff-603e-4cfe-89b6-0bab28be5583
+langcode: en
+status: false
+dependencies:
+  config:
+    - core.entity_view_mode.node.inside_front
+    - field.field.node.page.body
+    - field.field.node.page.field_page_image
+    - field.field.node.page.field_page_page_section
+    - field.field.node.page.field_page_summary
+    - field.field.node.page.field_page_type
+    - node.type.page
+  module:
+    - entity_reference_revisions
+    - user
+_core:
+  default_config_hash: g1S3_GLaxq4l3I9RIca5Mlz02MxI2KmOquZpHw59akM
+id: node.page.inside_front
+targetEntityType: node
+bundle: page
+mode: inside_front
+content:
+  field_page_page_section:
+    type: entity_reference_revisions_entity_view
+    weight: 1
+    label: hidden
+    settings:
+      view_mode: inside_front
+      link: ''
+    third_party_settings: {  }
+    region: content
+  links:
+    weight: 0
+    region: content
+    settings: {  }
+    third_party_settings: {  }
+hidden:
+  body: true
+  field_page_image: true
+  field_page_summary: true
+  field_page_type: true
+  langcode: true
+  search_api_excerpt: true

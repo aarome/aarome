@@ -1,0 +1,18 @@
+uuid: 01c8d016-8567-4a33-be14-eebf38ce3c1f
+langcode: en
+status: true
+dependencies:
+  config:
+    - taxonomy.vocabulary.byline
+id: taxonomy_term.byline.name
+field_name: name
+entity_type: taxonomy_term
+bundle: byline
+label: Name
+description: ''
+required: true
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: string

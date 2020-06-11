@@ -1,0 +1,26 @@
+uuid: 78f59997-5a66-42f8-9e55-ad4380db8a13
+langcode: en
+status: false
+dependencies:
+  enforced:
+    module:
+      - slick
+_core:
+  default_config_hash: 5a0XjVhEEAyUepcrlJ_dDj-nyWfHerv4B3GW9aTdIPI
+id: slideshow
+name: slideshow
+label: Slideshow
+weight: -10
+group: ''
+skin: ''
+breakpoints: 0
+optimized: true
+options:
+  options__active_tab: edit-options-settings
+  settings:
+    mobileFirst: true
+    adaptiveHeight: true
+    centerMode: true
+    lazyLoad: blazy
+    respondTo: slider
+    slidesToShow: 1

@@ -1,0 +1,10 @@
+uuid: e51a2722-6a8d-433d-9134-f8274faaee43
+langcode: en
+status: true
+dependencies:
+  module:
+    - node
+id: node.node_no_title
+label: 'Node no title'
+targetEntityType: node
+cache: true

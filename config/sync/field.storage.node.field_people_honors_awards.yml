@@ -1,0 +1,19 @@
+uuid: 691e29a4-923e-4ac4-acfc-921185f9fbd9
+langcode: en
+status: true
+dependencies:
+  module:
+    - node
+    - text
+id: node.field_people_honors_awards
+field_name: field_people_honors_awards
+entity_type: node
+type: text_long
+settings: {  }
+module: text
+locked: false
+cardinality: 1
+translatable: true
+indexes: {  }
+persist_with_no_fields: false
+custom_storage: false

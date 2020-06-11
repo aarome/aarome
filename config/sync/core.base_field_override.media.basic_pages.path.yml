@@ -1,0 +1,20 @@
+uuid: 35ebe3e4-ac35-4ceb-b5e6-178abb626839
+langcode: en
+status: true
+dependencies:
+  config:
+    - media.type.basic_pages
+  module:
+    - path
+id: media.basic_pages.path
+field_name: path
+entity_type: media
+bundle: basic_pages
+label: 'URL alias'
+description: ''
+required: false
+translatable: true
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: path

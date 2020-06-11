@@ -1,0 +1,16 @@
+uuid: 9926951e-3cc6-40fd-a76f-b3fb2e91e3b0
+langcode: en
+status: true
+dependencies: {  }
+name: max_1300x867
+label: 'Max 1300x867 (constrained height)'
+effects:
+  72f3b8f7-ecad-49e9-9b0a-8d7048885a51:
+    uuid: 72f3b8f7-ecad-49e9-9b0a-8d7048885a51
+    id: image_scale
+    weight: 1
+    data:
+      width: null
+      height: 867
+      upscale: true
+pipeline: local_binaries

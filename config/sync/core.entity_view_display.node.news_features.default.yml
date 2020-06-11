@@ -1,0 +1,45 @@
+uuid: 1895c66f-ad22-4761-8c49-ab44be8a44bc
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.field.node.news_features.body
+    - field.field.node.news_features.field_news_features_byline
+    - field.field.node.news_features.field_news_features_date
+    - field.field.node.news_features.field_news_features_images
+    - field.field.node.news_features.field_news_features_rel_events
+    - field.field.node.news_features.field_news_features_rel_people
+    - field.field.node.news_features.field_news_features_summary
+    - node.type.news_features
+  module:
+    - text
+    - user
+id: node.news_features.default
+targetEntityType: node
+bundle: news_features
+mode: default
+content:
+  body:
+    type: text_default
+    weight: 1
+    region: content
+    label: hidden
+    settings: {  }
+    third_party_settings: {  }
+  field_news_features_images:
+    weight: 0
+    label: hidden
+    settings:
+      link: true
+    third_party_settings: {  }
+    type: entity_reference_label
+    region: content
+hidden:
+  field_news_features_byline: true
+  field_news_features_date: true
+  field_news_features_rel_events: true
+  field_news_features_rel_people: true
+  field_news_features_summary: true
+  langcode: true
+  links: true
+  search_api_excerpt: true

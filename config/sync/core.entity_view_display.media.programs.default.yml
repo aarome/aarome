@@ -1,0 +1,39 @@
+uuid: ca737bb5-df75-42f5-aeb4-769aab0e9972
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.field.media.programs.field_media_caption
+    - field.field.media.programs.field_media_image
+    - media.type.programs
+  module:
+    - image
+    - text
+id: media.programs.default
+targetEntityType: media
+bundle: programs
+mode: default
+content:
+  field_media_caption:
+    weight: 1
+    label: hidden
+    settings: {  }
+    third_party_settings: {  }
+    type: text_default
+    region: content
+  field_media_image:
+    label: hidden
+    weight: 0
+    settings:
+      image_style: ''
+      image_link: ''
+    third_party_settings: {  }
+    type: image
+    region: content
+hidden:
+  created: true
+  langcode: true
+  name: true
+  search_api_excerpt: true
+  thumbnail: true
+  uid: true

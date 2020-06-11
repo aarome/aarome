@@ -1,0 +1,48 @@
+uuid: 49742a7a-a017-444f-bcfd-ebbc0628d75a
+langcode: en
+status: true
+dependencies:
+  config:
+    - core.entity_view_mode.paragraph.frontpages
+    - field.field.paragraph.page_section.field_page_section_body
+    - field.field.paragraph.page_section.field_page_section_files
+    - field.field.paragraph.page_section.field_page_section_links
+    - field.field.paragraph.page_section.field_page_section_title
+    - paragraphs.paragraphs_type.page_section
+  module:
+    - link
+    - text
+id: paragraph.page_section.frontpages
+targetEntityType: paragraph
+bundle: page_section
+mode: frontpages
+content:
+  field_page_section_body:
+    weight: 1
+    label: hidden
+    settings: {  }
+    third_party_settings: {  }
+    type: text_default
+    region: content
+  field_page_section_links:
+    type: link
+    weight: 2
+    region: content
+    label: hidden
+    settings:
+      trim_length: 80
+      url_only: false
+      url_plain: false
+      rel: ''
+      target: ''
+    third_party_settings: {  }
+  field_page_section_title:
+    type: string
+    weight: 0
+    region: content
+    label: hidden
+    settings:
+      link_to_entity: false
+    third_party_settings: {  }
+hidden:
+  field_page_section_files: true

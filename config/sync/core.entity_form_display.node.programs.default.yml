@@ -1,0 +1,157 @@
+uuid: e9350f5c-5393-4c4c-b2af-144fa92f775b
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.field.node.programs.body
+    - field.field.node.programs.field_program_dates
+    - field.field.node.programs.field_program_image
+    - field.field.node.programs.field_program_page_section
+    - field.field.node.programs.field_program_summary
+    - node.type.programs
+  module:
+    - datetime_range
+    - entity_form_field_label
+    - hide_revision_field
+    - inline_entity_form
+    - paragraphs
+    - path
+    - text
+id: node.programs.default
+targetEntityType: node
+bundle: programs
+mode: default
+content:
+  created:
+    type: datetime_timestamp
+    weight: 3
+    region: content
+    settings: {  }
+    third_party_settings: {  }
+  field_program_dates:
+    weight: 10
+    settings: {  }
+    third_party_settings: {  }
+    type: daterange_default
+    region: content
+  field_program_image:
+    weight: 13
+    settings:
+      form_mode: default
+      label_singular: ''
+      label_plural: ''
+      collapsible: true
+      allow_new: true
+      allow_existing: true
+      match_operator: CONTAINS
+      revision: false
+      override_labels: false
+      collapsed: false
+      allow_duplicate: false
+    third_party_settings:
+      entity_form_field_label:
+        new_label: ''
+        rewrite_label: 0
+    type: inline_entity_form_complex
+    region: content
+  field_program_page_section:
+    type: paragraphs
+    weight: 12
+    settings:
+      title: 'Page section'
+      title_plural: 'Page sections'
+      edit_mode: open
+      closed_mode: summary
+      autocollapse: none
+      closed_mode_threshold: 0
+      add_mode: dropdown
+      form_display_mode: default
+      default_paragraph_type: page_section
+      features:
+        add_above: '0'
+        collapse_edit_all: collapse_edit_all
+        duplicate: duplicate
+    third_party_settings:
+      entity_form_field_label:
+        new_label: ''
+        rewrite_label: 0
+    region: content
+  field_program_summary:
+    weight: 11
+    settings:
+      rows: 5
+      placeholder: ''
+    third_party_settings: {  }
+    type: text_textarea
+    region: content
+  langcode:
+    type: language_select
+    weight: 0
+    region: content
+    settings:
+      include_locked: true
+    third_party_settings: {  }
+  path:
+    type: path
+    weight: 7
+    region: content
+    settings: {  }
+    third_party_settings: {  }
+  promote:
+    type: boolean_checkbox
+    settings:
+      display_label: true
+    weight: 5
+    region: content
+    third_party_settings: {  }
+  revision_log:
+    type: hide_revision_field_log_widget
+    weight: 8
+    region: content
+    settings:
+      show: true
+      default: ''
+      permission_based: false
+      allow_user_settings: true
+      rows: 5
+      placeholder: ''
+    third_party_settings: {  }
+  status:
+    type: boolean_checkbox
+    settings:
+      display_label: true
+    weight: 9
+    region: content
+    third_party_settings: {  }
+  sticky:
+    type: boolean_checkbox
+    settings:
+      display_label: true
+    weight: 6
+    region: content
+    third_party_settings: {  }
+  title:
+    type: string_textfield
+    weight: 1
+    region: content
+    settings:
+      size: 60
+      placeholder: ''
+    third_party_settings: {  }
+  translation:
+    weight: 4
+    region: content
+    settings: {  }
+    third_party_settings: {  }
+  uid:
+    type: entity_reference_autocomplete
+    weight: 2
+    settings:
+      match_operator: CONTAINS
+      size: 60
+      placeholder: ''
+      match_limit: 10
+    region: content
+    third_party_settings: {  }
+hidden:
+  body: true

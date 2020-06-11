@@ -1,0 +1,29 @@
+uuid: f000973a-a921-4029-a7cf-d6a95e08690a
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_program_summary
+    - node.type.programs
+  module:
+    - allowed_formats
+    - text
+third_party_settings:
+  allowed_formats:
+    basic_html: basic_html
+    restricted_html: '0'
+    summary_html: '0'
+    full_html: '0'
+    plain_text: '0'
+id: node.programs.field_program_summary
+field_name: field_program_summary
+entity_type: node
+bundle: programs
+label: 'Program summary'
+description: ''
+required: false
+translatable: true
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: text_long
