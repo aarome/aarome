@@ -5,7 +5,6 @@ dependencies:
   config:
     - core.entity_view_mode.node.slideshow
     - field.field.node.events.body
-    - field.field.node.events.field_events_canceled
     - field.field.node.events.field_events_event_dates
     - field.field.node.events.field_events_event_dates_overrid
     - field.field.node.events.field_events_event_series
@@ -81,7 +80,6 @@ content:
     third_party_settings: {  }
 hidden:
   body: true
-  field_events_canceled: true
   field_events_event_dates_overrid: true
   field_events_event_series: true
   field_events_event_type: true

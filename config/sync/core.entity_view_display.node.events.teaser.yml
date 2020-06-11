@@ -5,7 +5,6 @@ dependencies:
   config:
     - core.entity_view_mode.node.teaser
     - field.field.node.events.body
-    - field.field.node.events.field_events_canceled
     - field.field.node.events.field_events_event_dates
     - field.field.node.events.field_events_event_dates_overrid
     - field.field.node.events.field_events_event_series
@@ -42,7 +41,6 @@ content:
     settings: {  }
     third_party_settings: {  }
 hidden:
-  field_events_canceled: true
   field_events_event_dates: true
   field_events_event_dates_overrid: true
   field_events_event_series: true
@@ -57,4 +55,3 @@ hidden:
   field_events_security_notice: true
   field_events_summary: true
   langcode: true
-  search_api_excerpt: true

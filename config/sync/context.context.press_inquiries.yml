@@ -37,40 +37,6 @@ reactions:
         unique: 0
         context_id: press_inquiries
         uuid: 1dfe298f-30d0-44b2-a2d9-176483104464
-      1c357491-887c-4944-8dde-9bd7e4fffd70:
-        id: 'block_content:c0b5cbde-579d-40a4-ae60-b35a421bfbf1'
-        label: 'Contact information: NYC'
-        provider: block_content
-        label_display: visible
-        status: true
-        info: ''
-        view_mode: full
-        region: callout
-        weight: '2'
-        context_mapping: {  }
-        custom_id: contact_nyc
-        theme: academy
-        css_class: 'callout contact'
-        unique: 0
-        context_id: press_inquiries
-        uuid: 1c357491-887c-4944-8dde-9bd7e4fffd70
-      83c61858-1cac-4969-86f1-89acf6071289:
-        id: 'block_content:461201c6-7f54-4420-ba10-09d44037557b'
-        label: 'Contact information: Rome'
-        provider: block_content
-        label_display: visible
-        status: true
-        info: ''
-        view_mode: full
-        region: callout
-        weight: '1'
-        context_mapping: {  }
-        custom_id: contact_rome
-        theme: academy
-        css_class: 'callout contact'
-        unique: 0
-        context_id: press_inquiries
-        uuid: 83c61858-1cac-4969-86f1-89acf6071289
       0f453fcd-ba86-487c-ab5a-88f2e401b721:
         id: 'block_content:af5a625d-a45a-4b15-9c95-fcd558b9e8b9'
         label: 'Press inquiries Rome'
