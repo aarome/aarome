@@ -32,6 +32,7 @@ ansible.cfg
 
 # Ignore SimpleTest multi-site environment.
 /web/sites/simpletest
+/web/
 
 # Ignore .env files as they are personal
 /.env.
@@ -53,3 +54,4 @@ Vagrantfile
 /web/modules/custom/migrations
 
 # Ignore config/sync
+/config/sync
