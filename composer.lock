@@ -4,7 +4,7 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#installing-dependencies",
         "This file is @generated automatically"
     ],
-    "content-hash": "ed9f17f3eb0ac8356799752d6e3e21fb",
+    "content-hash": "f735a94773284638c3d5ddaef2767eef",
     "packages": [
         {
             "name": "asm89/stack-cors",
@@ -2392,6 +2392,14 @@
                     "homepage": "https://www.drupal.org/user/216396"
                 },
                 {
+                    "name": "colan",
+                    "homepage": "https://www.drupal.org/user/58704"
+                },
+                {
+                    "name": "diqidoq",
+                    "homepage": "https://www.drupal.org/user/1001934"
+                },
+                {
                     "name": "purushotam.rai",
                     "homepage": "https://www.drupal.org/user/3193859"
                 }
@@ -2399,7 +2407,7 @@
             "description": "Allows hiding of entity label fields and automatic label creation.",
             "homepage": "https://www.drupal.org/project/auto_entitylabel",
             "support": {
-                "source": "http://cgit.drupalcode.org/auto_entitylabel",
+                "source": "https://git.drupalcode.org/project/auto_entitylabel",
                 "issues": "https://www.drupal.org/project/issues/auto_entitylabel"
             }
         },
@@ -2507,6 +2515,10 @@
             ],
             "authors": [
                 {
+                    "name": "Etroid",
+                    "homepage": "https://www.drupal.org/user/3048985"
+                },
+                {
                     "name": "chr.fritsch",
                     "homepage": "https://www.drupal.org/user/2103716"
                 },
@@ -2519,10 +2531,6 @@
                     "homepage": "https://www.drupal.org/user/192273"
                 },
                 {
-                    "name": "mortona2k",
-                    "homepage": "https://www.drupal.org/user/1029484"
-                },
-                {
                     "name": "rlhawk",
                     "homepage": "https://www.drupal.org/user/352283"
                 }
@@ -2530,7 +2538,7 @@
             "description": "Provides advanced options (such as links, checkboxes, or jQueryUI widgets) for exposed Views elements.",
             "homepage": "https://www.drupal.org/project/better_exposed_filters",
             "support": {
-                "source": "http://cgit.drupalcode.org/better_exposed_filters"
+                "source": "https://git.drupalcode.org/project/better_exposed_filters"
             }
         },
         {
@@ -2697,6 +2705,66 @@
             }
         },
         {
+            "name": "drupal/block_field",
+            "version": "1.0.0-alpha8",
+            "source": {
+                "type": "git",
+                "url": "https://git.drupalcode.org/project/block_field.git",
+                "reference": "8.x-1.0-alpha8"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://ftp.drupal.org/files/projects/block_field-8.x-1.0-alpha8.zip",
+                "reference": "8.x-1.0-alpha8",
+                "shasum": "faffdd869263c3103f5c6a7a8d71ac440df1115f"
+            },
+            "require": {
+                "drupal/core": "~8.0"
+            },
+            "type": "drupal-module",
+            "extra": {
+                "drupal": {
+                    "version": "8.x-1.0-alpha8",
+                    "datestamp": "1536732480",
+                    "security-coverage": {
+                        "status": "not-covered",
+                        "message": "Project has not opted into security advisory coverage!"
+                    }
+                }
+            },
+            "notification-url": "https://packages.drupal.org/8/downloads",
+            "license": [
+                "GPL-2.0-or-later"
+            ],
+            "authors": [
+                {
+                    "name": "Berdir",
+                    "homepage": "https://www.drupal.org/user/214652"
+                },
+                {
+                    "name": "acbramley",
+                    "homepage": "https://www.drupal.org/user/1036766"
+                },
+                {
+                    "name": "fenstrat",
+                    "homepage": "https://www.drupal.org/user/362649"
+                },
+                {
+                    "name": "jrockowitz",
+                    "homepage": "https://www.drupal.org/user/371407"
+                },
+                {
+                    "name": "michaellander",
+                    "homepage": "https://www.drupal.org/user/636494"
+                }
+            ],
+            "description": "Provides a field that allows a content entity to create and configure custom block instances.",
+            "homepage": "https://www.drupal.org/project/block_field",
+            "support": {
+                "source": "https://git.drupalcode.org/project/block_field"
+            }
+        },
+        {
             "name": "drupal/cer",
             "version": "4.0.0-alpha2",
             "source": {
@@ -2752,7 +2820,7 @@
             "description": "Allows user to create two-way references between entities.",
             "homepage": "https://www.drupal.org/project/cer",
             "support": {
-                "source": "http://cgit.drupalcode.org/cer"
+                "source": "https://git.drupalcode.org/project/cer"
             }
         },
         {
@@ -2771,7 +2839,7 @@
             },
             "require": {
                 "drupal/chosen_lib": "*",
-                "drupal/core": "^8 || ^9",
+                "drupal/core": "~8.0",
                 "harvesthq/chosen": "^1.8.7"
             },
             "type": "drupal-module",
@@ -2781,7 +2849,7 @@
                 },
                 "drupal": {
                     "version": "8.x-2.9",
-                    "datestamp": "1576963005",
+                    "datestamp": "1576594384",
                     "security-coverage": {
                         "status": "covered",
                         "message": "Covered by Drupal's security advisory policy"
@@ -2846,7 +2914,7 @@
             "version": "2.9.0",
             "require": {
                 "drupal/chosen": "self.version",
-                "drupal/core": "^8 || ^9",
+                "drupal/core": "~8.0",
                 "php": ">=5.6.0"
             },
             "type": "metapackage",
@@ -2856,7 +2924,7 @@
                 },
                 "drupal": {
                     "version": "8.x-2.9",
-                    "datestamp": "1576963005",
+                    "datestamp": "1576594384",
                     "security-coverage": {
                         "status": "covered",
                         "message": "Covered by Drupal's security advisory policy"
@@ -3004,7 +3072,7 @@
                 },
                 "drupal": {
                     "version": "8.x-2.0-beta1",
-                    "datestamp": "1546032480",
+                    "datestamp": "1563825485",
                     "security-coverage": {
                         "status": "not-covered",
                         "message": "Beta releases are not covered by Drupal security advisories."
@@ -3052,7 +3120,7 @@
             "description": "Defines a field type that allows values to be \"computed\" via PHP code.",
             "homepage": "https://www.drupal.org/project/computed_field",
             "support": {
-                "source": "http://cgit.drupalcode.org/computed_field"
+                "source": "https://git.drupalcode.org/project/computed_field"
             }
         },
         {
@@ -3185,7 +3253,7 @@
             "description": "Tools for managing config with git",
             "homepage": "https://drupal.org/project/config_tools",
             "support": {
-                "source": "http://cgit.drupalcode.org/config_tools"
+                "source": "https://git.drupalcode.org/project/config_tools"
             }
         },
         {
@@ -3763,7 +3831,7 @@
             "description": "Provides a HTML 5 date popup for all views filters.",
             "homepage": "https://www.drupal.org/project/date_popup",
             "support": {
-                "source": "http://cgit.drupalcode.org/date_popup"
+                "source": "https://git.drupalcode.org/project/date_popup"
             }
         },
         {
@@ -3936,6 +4004,10 @@
                 {
                     "name": "See contributors",
                     "homepage": "https://www.drupal.org/node/3236/committers"
+                },
+                {
+                    "name": "pcambra",
+                    "homepage": "https://www.drupal.org/user/122101"
                 },
                 {
                     "name": "salvis",
@@ -4310,7 +4382,7 @@
             "description": "A simple empty page solution. Assists in creating empty menu callbacks mostly used for pages that only consist of blocks.",
             "homepage": "https://www.drupal.org/project/empty_page",
             "support": {
-                "source": "http://cgit.drupalcode.org/empty_page"
+                "source": "https://git.drupalcode.org/project/empty_page"
             }
         },
         {
@@ -4476,7 +4548,7 @@
             "description": "Allows administrator to configure entity view fallback languages.",
             "homepage": "https://www.drupal.org/project/entity_language_fallback",
             "support": {
-                "source": "http://cgit.drupalcode.org/entity_language_fallback"
+                "source": "https://git.drupalcode.org/project/entity_language_fallback"
             }
         },
         {
@@ -4539,6 +4611,110 @@
             "homepage": "https://www.drupal.org/project/entity_reference_revisions",
             "support": {
                 "source": "https://git.drupalcode.org/project/entity_reference_revisions"
+            }
+        },
+        {
+            "name": "drupal/eu_cookie_compliance",
+            "version": "1.9.0",
+            "source": {
+                "type": "git",
+                "url": "https://git.drupalcode.org/project/eu-cookie-compliance.git",
+                "reference": "8.x-1.9"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://ftp.drupal.org/files/projects/eu_cookie_compliance-8.x-1.9.zip",
+                "reference": "8.x-1.9",
+                "shasum": "1dd57c3fe517d907c0a44bee4ef73f30e98993d3"
+            },
+            "require": {
+                "drupal/core": "^8.8 || ^9"
+            },
+            "type": "drupal-module",
+            "extra": {
+                "drupal": {
+                    "version": "8.x-1.9",
+                    "datestamp": "1588751057",
+                    "security-coverage": {
+                        "status": "covered",
+                        "message": "Covered by Drupal's security advisory policy"
+                    }
+                }
+            },
+            "notification-url": "https://packages.drupal.org/8/downloads",
+            "license": [
+                "GPL-2.0+"
+            ],
+            "authors": [
+                {
+                    "name": "Marcin Pajdzik",
+                    "homepage": "https://www.drupal.org/u/marcin-pajdzik",
+                    "role": "Maintainer"
+                },
+                {
+                    "name": "Sven Berg Ryen",
+                    "homepage": "https://www.drupal.org/u/svenryen",
+                    "role": "Maintainer"
+                },
+                {
+                    "name": "See other contributors",
+                    "homepage": "https://www.drupal.org/node/1538032/committers"
+                },
+                {
+                    "name": "achton",
+                    "homepage": "https://www.drupal.org/user/712454"
+                },
+                {
+                    "name": "blairski",
+                    "homepage": "https://www.drupal.org/user/120835"
+                },
+                {
+                    "name": "dakku",
+                    "homepage": "https://www.drupal.org/user/97634"
+                },
+                {
+                    "name": "grzegorz.bartman",
+                    "homepage": "https://www.drupal.org/user/363120"
+                },
+                {
+                    "name": "id.tornado",
+                    "homepage": "https://www.drupal.org/user/2754049"
+                },
+                {
+                    "name": "killua99",
+                    "homepage": "https://www.drupal.org/user/699418"
+                },
+                {
+                    "name": "mibfire",
+                    "homepage": "https://www.drupal.org/user/155136"
+                },
+                {
+                    "name": "naveenvalecha",
+                    "homepage": "https://www.drupal.org/user/2665733"
+                },
+                {
+                    "name": "nielsaers",
+                    "homepage": "https://www.drupal.org/user/752444"
+                },
+                {
+                    "name": "svenryen",
+                    "homepage": "https://www.drupal.org/user/667244"
+                }
+            ],
+            "description": "This module aims at making the website compliant with the new EU cookie regulation.",
+            "homepage": "https://drupal.org/project/eu_cookie_compliance",
+            "keywords": [
+                "Cookie",
+                "CookieCompliance",
+                "Drupal",
+                "GDPR"
+            ],
+            "support": {
+                "source": "https://cgit.drupalcode.org/eu-cookie-compliance",
+                "docs": "https://www.drupal.org/project/eu_cookie_compliance",
+                "forum": "https://drupal.stackexchange.com/search?q=eu+cookie+compliance",
+                "issues": "https://www.drupal.org/project/issues/eu_cookie_compliance?version=8.x",
+                "irc": "irc://irc.freenode.org/drupal-contribute"
             }
         },
         {
@@ -4651,6 +4827,65 @@
                 "source": "https://git.drupalcode.org/project/facets_block",
                 "issues": "https://www.drupal.org/project/issues/facets_block",
                 "email": "nikolovski84@gmail.com"
+            }
+        },
+        {
+            "name": "drupal/fast_404",
+            "version": "2.0.0-alpha5",
+            "source": {
+                "type": "git",
+                "url": "https://git.drupalcode.org/project/fast_404.git",
+                "reference": "8.x-2.0-alpha5"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://ftp.drupal.org/files/projects/fast_404-8.x-2.0-alpha5.zip",
+                "reference": "8.x-2.0-alpha5",
+                "shasum": "071518c28f73ed011068ec0dbfe07a5904b8f982"
+            },
+            "require": {
+                "drupal/core": "^8.8"
+            },
+            "type": "drupal-module",
+            "extra": {
+                "drupal": {
+                    "version": "8.x-2.0-alpha5",
+                    "datestamp": "1590876049",
+                    "security-coverage": {
+                        "status": "not-covered",
+                        "message": "Alpha releases are not covered by Drupal security advisories."
+                    }
+                }
+            },
+            "notification-url": "https://packages.drupal.org/8/downloads",
+            "license": [
+                "GPL-2.0-or-later"
+            ],
+            "authors": [
+                {
+                    "name": "adammalone",
+                    "homepage": "https://www.drupal.org/user/1295980"
+                },
+                {
+                    "name": "bonus",
+                    "homepage": "https://www.drupal.org/user/360002"
+                },
+                {
+                    "name": "naveenvalecha",
+                    "homepage": "https://www.drupal.org/user/2665733"
+                },
+                {
+                    "name": "neetu morwani",
+                    "homepage": "https://www.drupal.org/user/2632025"
+                },
+                {
+                    "name": "soyarma",
+                    "homepage": "https://www.drupal.org/user/286273"
+                }
+            ],
+            "homepage": "https://www.drupal.org/project/fast_404",
+            "support": {
+                "source": "https://git.drupalcode.org/project/fast_404"
             }
         },
         {
@@ -5096,7 +5331,7 @@
                 },
                 "drupal": {
                     "version": "8.x-5.0-beta8",
-                    "datestamp": "1545966784",
+                    "datestamp": "1562194985",
                     "security-coverage": {
                         "status": "not-covered",
                         "message": "Beta releases are not covered by Drupal security advisories."
@@ -5182,7 +5417,7 @@
             "description": "Provides configurable blocks of menu links.",
             "homepage": "https://www.drupal.org/project/menu_block",
             "support": {
-                "source": "http://cgit.drupalcode.org/menu_block"
+                "source": "https://git.drupalcode.org/project/menu_block"
             }
         },
         {
@@ -5300,8 +5535,8 @@
                     "dev-1.x": "1.x-dev"
                 },
                 "drupal": {
-                    "version": "8.x-1.2+0-dev",
-                    "datestamp": "1576099985",
+                    "version": "8.x-1.2+1-dev",
+                    "datestamp": "1584210644",
                     "security-coverage": {
                         "status": "not-covered",
                         "message": "Dev releases are not covered by Drupal security advisories."
@@ -5598,7 +5833,7 @@
             "description": "Disable link to request a new password",
             "homepage": "https://www.drupal.org/project/noreqnewpass",
             "support": {
-                "source": "http://cgit.drupalcode.org/noreqnewpass"
+                "source": "https://git.drupalcode.org/project/noreqnewpass"
             }
         },
         {
@@ -5964,6 +6199,54 @@
             }
         },
         {
+            "name": "drupal/persistent_login",
+            "version": "1.3.0",
+            "source": {
+                "type": "git",
+                "url": "https://git.drupalcode.org/project/persistent_login.git",
+                "reference": "8.x-1.3"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://ftp.drupal.org/files/projects/persistent_login-8.x-1.3.zip",
+                "reference": "8.x-1.3",
+                "shasum": "dfff4cb76d6b3888073dd992bcf4d51b1bb47696"
+            },
+            "require": {
+                "drupal/core": "^8.3 || ^9.0"
+            },
+            "type": "drupal-module",
+            "extra": {
+                "drupal": {
+                    "version": "8.x-1.3",
+                    "datestamp": "1591597823",
+                    "security-coverage": {
+                        "status": "covered",
+                        "message": "Covered by Drupal's security advisory policy"
+                    }
+                }
+            },
+            "notification-url": "https://packages.drupal.org/8/downloads",
+            "license": [
+                "GPL-2.0-or-later"
+            ],
+            "authors": [
+                {
+                    "name": "gapple",
+                    "homepage": "https://www.drupal.org/user/490940"
+                }
+            ],
+            "description": "Provides a \"Remember Me\" feature on the login form.",
+            "homepage": "https://www.drupal.org/project/persistent_login",
+            "keywords": [
+                "Drupal"
+            ],
+            "support": {
+                "source": "https://git.drupalcode.org/project/persistent_login",
+                "issues": "https://www.drupal.org/project/issues/persistent_login"
+            }
+        },
+        {
             "name": "drupal/responsive_favicons",
             "version": "1.5.0",
             "source": {
@@ -6188,6 +6471,9 @@
             },
             "type": "drupal-module",
             "extra": {
+                "branch-alias": {
+                    "dev-3.x": "3.x-dev"
+                },
                 "drupal": {
                     "version": "8.x-3.9",
                     "datestamp": "1581700341",
@@ -6793,6 +7079,61 @@
             }
         },
         {
+            "name": "drupal/toolbar_language_switcher",
+            "version": "1.0.0-alpha3",
+            "source": {
+                "type": "git",
+                "url": "https://git.drupalcode.org/project/toolbar_language_switcher.git",
+                "reference": "8.x-1.0-alpha3"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://ftp.drupal.org/files/projects/toolbar_language_switcher-8.x-1.0-alpha3.zip",
+                "reference": "8.x-1.0-alpha3",
+                "shasum": "81858bc62be56245cdb5c0ce24ed538f57c8a95c"
+            },
+            "require": {
+                "drupal/core": "*"
+            },
+            "type": "drupal-module",
+            "extra": {
+                "branch-alias": {
+                    "dev-1.x": "1.x-dev"
+                },
+                "drupal": {
+                    "version": "8.x-1.0-alpha3",
+                    "datestamp": "1574680381",
+                    "security-coverage": {
+                        "status": "not-covered",
+                        "message": "Alpha releases are not covered by Drupal security advisories."
+                    }
+                }
+            },
+            "notification-url": "https://packages.drupal.org/8/downloads",
+            "license": [
+                "GPL-2.0-or-later"
+            ],
+            "authors": [
+                {
+                    "name": "Mykola Veryha",
+                    "homepage": "https://www.drupal.org/user/3496327"
+                },
+                {
+                    "name": "Romixua",
+                    "homepage": "https://www.drupal.org/user/3516201"
+                },
+                {
+                    "name": "voleger",
+                    "homepage": "https://www.drupal.org/user/3260314"
+                }
+            ],
+            "description": "Provides Toolbar Language Switcher for visualization of the current page language context and possibility to change it.",
+            "homepage": "https://www.drupal.org/project/toolbar_language_switcher",
+            "support": {
+                "source": "https://git.drupalcode.org/project/toolbar_language_switcher"
+            }
+        },
+        {
             "name": "drupal/twig_tweak",
             "version": "2.5.0",
             "source": {
@@ -6845,6 +7186,62 @@
             "support": {
                 "source": "https://git.drupalcode.org/project/twig_tweak",
                 "issues": "https://www.drupal.org/project/issues/twig_tweak"
+            }
+        },
+        {
+            "name": "drupal/video_embed_field",
+            "version": "2.4.0",
+            "source": {
+                "type": "git",
+                "url": "https://git.drupalcode.org/project/video_embed_field.git",
+                "reference": "8.x-2.4"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://ftp.drupal.org/files/projects/video_embed_field-8.x-2.4.zip",
+                "reference": "8.x-2.4",
+                "shasum": "96b14bb93c1bb6a07b84315a4f87367870f8b574"
+            },
+            "require": {
+                "drupal/core": "^8.8 || ^9"
+            },
+            "require-dev": {
+                "drupal/colorbox": "^1.0",
+                "drupal/video_embed_media": "*"
+            },
+            "type": "drupal-module",
+            "extra": {
+                "drupal": {
+                    "version": "8.x-2.4",
+                    "datestamp": "1587686284",
+                    "security-coverage": {
+                        "status": "covered",
+                        "message": "Covered by Drupal's security advisory policy"
+                    }
+                }
+            },
+            "notification-url": "https://packages.drupal.org/8/downloads",
+            "license": [
+                "GPL-2.0+"
+            ],
+            "authors": [
+                {
+                    "name": "Sam152",
+                    "homepage": "https://www.drupal.org/user/1485048"
+                },
+                {
+                    "name": "jec006",
+                    "homepage": "https://www.drupal.org/user/855980"
+                },
+                {
+                    "name": "plopesc",
+                    "homepage": "https://www.drupal.org/user/282415"
+                }
+            ],
+            "description": "A pluggable field type for storing videos from external video hosts such as Vimeo and YouTube.",
+            "homepage": "https://www.drupal.org/project/video_embed_field",
+            "support": {
+                "source": "https://git.drupalcode.org/project/video_embed_field"
             }
         },
         {
@@ -7116,7 +7513,7 @@
             "description": "Shows views rows as fieldset",
             "homepage": "https://www.drupal.org/project/views_fieldset",
             "support": {
-                "source": "http://cgit.drupalcode.org/views_fieldset"
+                "source": "https://git.drupalcode.org/project/views_fieldset"
             },
             "time": "2014-11-06T17:30:20+00:00"
         },
@@ -7172,7 +7569,7 @@
             "description": "Adds fieldsets to Views.",
             "homepage": "https://www.drupal.org/project/views_fieldsets",
             "support": {
-                "source": "http://cgit.drupalcode.org/views_fieldsets"
+                "source": "https://git.drupalcode.org/project/views_fieldsets"
             }
         },
         {
@@ -7274,7 +7671,7 @@
             "description": "The view style plugin, that combines result rows into sets, wrapped by HTML element and attribute.",
             "homepage": "https://www.drupal.org/project/views_rows_wrapper",
             "support": {
-                "source": "http://cgit.drupalcode.org/views_rows_wrapper"
+                "source": "https://git.drupalcode.org/project/views_rows_wrapper"
             }
         },
         {
@@ -7389,7 +7786,7 @@
             ],
             "homepage": "https://www.drupal.org/project/views_url_alias",
             "support": {
-                "source": "http://cgit.drupalcode.org/views_url_alias"
+                "source": "https://git.drupalcode.org/project/views_url_alias"
             }
         },
         {
@@ -7767,12 +8164,12 @@
             "version": "0.9.1",
             "source": {
                 "type": "git",
-                "url": "https://github.com/njh/easyrdf.git",
+                "url": "https://github.com/easyrdf/easyrdf.git",
                 "reference": "acd09dfe0555fbcfa254291e433c45fdd4652566"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/njh/easyrdf/zipball/acd09dfe0555fbcfa254291e433c45fdd4652566",
+                "url": "https://api.github.com/repos/easyrdf/easyrdf/zipball/acd09dfe0555fbcfa254291e433c45fdd4652566",
                 "reference": "acd09dfe0555fbcfa254291e433c45fdd4652566",
                 "shasum": ""
             },
@@ -7802,14 +8199,14 @@
             "authors": [
                 {
                     "name": "Nicholas Humfrey",
-                    "role": "Developer",
                     "email": "njh@aelius.com",
-                    "homepage": "http://www.aelius.com/njh/"
+                    "homepage": "http://www.aelius.com/njh/",
+                    "role": "Developer"
                 },
                 {
                     "name": "Alexey Zakhlestin",
-                    "role": "Developer",
-                    "email": "indeyets@gmail.com"
+                    "email": "indeyets@gmail.com",
+                    "role": "Developer"
                 }
             ],
             "description": "EasyRdf is a PHP library designed to make it easy to consume and produce RDF.",
@@ -8352,9 +8749,9 @@
             "authors": [
                 {
                     "name": "Phil Bennett",
-                    "role": "Developer",
                     "email": "philipobenito@gmail.com",
-                    "homepage": "http://www.philipobenito.com"
+                    "homepage": "http://www.philipobenito.com",
+                    "role": "Developer"
                 }
             ],
             "description": "A fast and intuitive dependency injection container.",
@@ -8601,24 +8998,119 @@
             "version": "1.8.2",
             "dist": {
                 "type": "tar",
-                "url": "https://registry.npmjs.org/blazy/-/blazy-1.8.2.tgz"
+                "url": "https://registry.npmjs.org/blazy/-/blazy-1.8.2.tgz",
+                "shasum": "50dfd638baaf9003efd6eb3a836aca54184ab6da"
             },
-            "type": "npm-asset",
+            "type": "npm-asset-library",
+            "extra": {
+                "npm-asset-bugs": {
+                    "url": "https://github.com/dinbror/blazy/issues"
+                },
+                "npm-asset-main": "blazy.js",
+                "npm-asset-directories": {
+                    "example": "example"
+                },
+                "npm-asset-repository": {
+                    "type": "git",
+                    "url": "git://github.com/dinbror/blazy.git"
+                },
+                "npm-asset-scripts": {
+                    "test": "echo \"Error: no test specified\" && exit 1"
+                }
+            },
             "license": [
                 "MIT"
-            ]
+            ],
+            "authors": [
+                {
+                    "name": "Bjørn Klinggaard",
+                    "url": "http://dinbror.dk/blazy"
+                }
+            ],
+            "description": "A fast lightweight pure JavaScript script for lazy loading and multi-serving images, iframes, videos and more.",
+            "homepage": "https://github.com/dinbror/blazy",
+            "keywords": [
+                "blazy",
+                "blazy.js",
+                "blazyjs",
+                "iframe",
+                "image",
+                "images",
+                "lazy",
+                "lazyload",
+                "lazyloading",
+                "performance",
+                "picture",
+                "responsive",
+                "retina",
+                "srcset",
+                "unity",
+                "video"
+            ],
+            "time": "2016-10-26T04:54:24+00:00"
         },
         {
             "name": "npm-asset/slick-carousel",
             "version": "1.8.1",
             "dist": {
                 "type": "tar",
-                "url": "https://registry.npmjs.org/slick-carousel/-/slick-carousel-1.8.1.tgz"
+                "url": "https://registry.npmjs.org/slick-carousel/-/slick-carousel-1.8.1.tgz",
+                "shasum": "a4bfb29014887bb66ce528b90bd0cda262cc8f8d"
             },
-            "type": "npm-asset",
+            "type": "npm-asset-library",
+            "extra": {
+                "npm-asset-bugs": {
+                    "url": "https://github.com/kenwheeler/slick/issues"
+                },
+                "npm-asset-main": "slick/slick.js",
+                "npm-asset-directories": [],
+                "npm-asset-repository": {
+                    "type": "git",
+                    "url": "git+https://github.com/kenwheeler/slick.git"
+                }
+            },
             "license": [
                 "MIT"
-            ]
+            ],
+            "authors": [
+                {
+                    "name": "Ken Wheeler",
+                    "email": "ken_wheeler@me.com"
+                },
+                {
+                    "name": "ken wheeler",
+                    "email": "ken_wheeler@me.com",
+                    "url": "http://kenwheeler.github.io/"
+                },
+                {
+                    "name": "simon goellner",
+                    "email": "simey.me@gmail.com",
+                    "url": "http://simey.me"
+                },
+                {
+                    "name": "ahmad el-alfy",
+                    "email": "ahmadalfy@gmail.com",
+                    "url": "http://www.alfy.me"
+                },
+                {
+                    "name": "leggomuhgreggo",
+                    "email": "gwestneat@gmail.com"
+                },
+                {
+                    "name": "ashley mcknight",
+                    "email": "ash@sharpteef.net"
+                }
+            ],
+            "description": "the last carousel you'll ever need",
+            "homepage": "https://github.com/kenwheeler/slick#readme",
+            "keywords": [
+                "carousel",
+                "js",
+                "responsive",
+                "slick",
+                "slider"
+            ],
+            "time": "2017-10-03T17:51:24+00:00"
         },
         {
             "name": "oomphinc/composer-installers-extender",
@@ -14496,12 +14988,14 @@
     "stability-flags": {
         "drupal/address": 20,
         "drupal/auto_entitylabel": 10,
+        "drupal/block_field": 15,
         "drupal/cer": 15,
         "drupal/config_tools": 15,
         "drupal/context": 20,
         "drupal/context_active_trail": 5,
         "drupal/daterange_compact": 20,
         "drupal/datetime_extras": 20,
+        "drupal/fast_404": 15,
         "drupal/filefield_paths": 20,
         "drupal/hacked": 10,
         "drupal/imageapi_optimize": 15,
@@ -14516,6 +15010,7 @@
         "drupal/paragraphs": 20,
         "drupal/selective_better_exposed_filters": 10,
         "drupal/smtp": 10,
+        "drupal/toolbar_language_switcher": 15,
         "drupal/view_unpublished": 15,
         "drupal/views_fieldset": 20,
         "drupal/views_url_path_arguments": 20,

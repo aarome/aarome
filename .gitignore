@@ -27,7 +27,6 @@ ansible.cfg
 /web/sites/development.services.yml
 /web/sites/example.sites.php
 
-
 # Ignore Drupal's file directory
 /web/sites/*/files/
 
@@ -53,3 +52,4 @@ Vagrantfile
 # Ignore custom modules
 /web/modules/custom/migrations
 
+# Ignore config/sync
