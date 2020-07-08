@@ -4,7 +4,7 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#installing-dependencies",
         "This file is @generated automatically"
     ],
-    "content-hash": "6d933de6149111d7cd952731e2eac275",
+    "content-hash": "2ebd9628c3fdec81edd9ac5df5605511",
     "packages": [
         {
             "name": "asm89/stack-cors",
@@ -2705,66 +2705,6 @@
             }
         },
         {
-            "name": "drupal/block_field",
-            "version": "1.0.0-alpha8",
-            "source": {
-                "type": "git",
-                "url": "https://git.drupalcode.org/project/block_field.git",
-                "reference": "8.x-1.0-alpha8"
-            },
-            "dist": {
-                "type": "zip",
-                "url": "https://ftp.drupal.org/files/projects/block_field-8.x-1.0-alpha8.zip",
-                "reference": "8.x-1.0-alpha8",
-                "shasum": "faffdd869263c3103f5c6a7a8d71ac440df1115f"
-            },
-            "require": {
-                "drupal/core": "~8.0"
-            },
-            "type": "drupal-module",
-            "extra": {
-                "drupal": {
-                    "version": "8.x-1.0-alpha8",
-                    "datestamp": "1536732480",
-                    "security-coverage": {
-                        "status": "not-covered",
-                        "message": "Project has not opted into security advisory coverage!"
-                    }
-                }
-            },
-            "notification-url": "https://packages.drupal.org/8/downloads",
-            "license": [
-                "GPL-2.0-or-later"
-            ],
-            "authors": [
-                {
-                    "name": "Berdir",
-                    "homepage": "https://www.drupal.org/user/214652"
-                },
-                {
-                    "name": "acbramley",
-                    "homepage": "https://www.drupal.org/user/1036766"
-                },
-                {
-                    "name": "fenstrat",
-                    "homepage": "https://www.drupal.org/user/362649"
-                },
-                {
-                    "name": "jrockowitz",
-                    "homepage": "https://www.drupal.org/user/371407"
-                },
-                {
-                    "name": "michaellander",
-                    "homepage": "https://www.drupal.org/user/636494"
-                }
-            ],
-            "description": "Provides a field that allows a content entity to create and configure custom block instances.",
-            "homepage": "https://www.drupal.org/project/block_field",
-            "support": {
-                "source": "https://git.drupalcode.org/project/block_field"
-            }
-        },
-        {
             "name": "drupal/cer",
             "version": "4.0.0-alpha2",
             "source": {
@@ -2982,145 +2922,6 @@
             "homepage": "https://www.drupal.org/project/chosen",
             "support": {
                 "source": "https://git.drupalcode.org/project/chosen"
-            }
-        },
-        {
-            "name": "drupal/colorbox",
-            "version": "1.4.0",
-            "source": {
-                "type": "git",
-                "url": "https://git.drupalcode.org/project/colorbox.git",
-                "reference": "8.x-1.4"
-            },
-            "dist": {
-                "type": "zip",
-                "url": "https://ftp.drupal.org/files/projects/colorbox-8.x-1.4.zip",
-                "reference": "8.x-1.4",
-                "shasum": "bf163fd2d28450c1324512ad7e6a72fc48d274e3"
-            },
-            "require": {
-                "drupal/core": "*"
-            },
-            "type": "drupal-module",
-            "extra": {
-                "branch-alias": {
-                    "dev-1.x": "1.x-dev"
-                },
-                "drupal": {
-                    "version": "8.x-1.4",
-                    "datestamp": "1493051344",
-                    "security-coverage": {
-                        "status": "covered",
-                        "message": "Covered by Drupal's security advisory policy"
-                    }
-                }
-            },
-            "notification-url": "https://packages.drupal.org/8/downloads",
-            "license": [
-                "GPL-2.0+"
-            ],
-            "authors": [
-                {
-                    "name": "RenatoG",
-                    "homepage": "https://www.drupal.org/user/3326031"
-                },
-                {
-                    "name": "Sam152",
-                    "homepage": "https://www.drupal.org/user/1485048"
-                },
-                {
-                    "name": "frjo",
-                    "homepage": "https://www.drupal.org/user/5546"
-                },
-                {
-                    "name": "jdwfly",
-                    "homepage": "https://www.drupal.org/user/298179"
-                },
-                {
-                    "name": "rsmylski",
-                    "homepage": "https://www.drupal.org/user/1324348"
-                }
-            ],
-            "description": "A light-weight, customizable lightbox plugin for jQuery.",
-            "homepage": "https://www.drupal.org/project/colorbox",
-            "support": {
-                "source": "https://cgit.drupalcode.org/colorbox",
-                "issues": "https://www.drupal.org/project/colorbox"
-            }
-        },
-        {
-            "name": "drupal/computed_field",
-            "version": "2.0.0-beta1",
-            "source": {
-                "type": "git",
-                "url": "https://git.drupalcode.org/project/computed_field.git",
-                "reference": "8.x-2.0-beta1"
-            },
-            "dist": {
-                "type": "zip",
-                "url": "https://ftp.drupal.org/files/projects/computed_field-8.x-2.0-beta1.zip",
-                "reference": "8.x-2.0-beta1",
-                "shasum": "a918cb85b7865f15cc5a5c327e37964e53545161"
-            },
-            "require": {
-                "drupal/core": "~8.0"
-            },
-            "type": "drupal-module",
-            "extra": {
-                "branch-alias": {
-                    "dev-2.x": "2.x-dev"
-                },
-                "drupal": {
-                    "version": "8.x-2.0-beta1",
-                    "datestamp": "1563825485",
-                    "security-coverage": {
-                        "status": "not-covered",
-                        "message": "Beta releases are not covered by Drupal security advisories."
-                    }
-                }
-            },
-            "notification-url": "https://packages.drupal.org/8/downloads",
-            "license": [
-                "GPL-2.0-or-later"
-            ],
-            "authors": [
-                {
-                    "name": "Agileware",
-                    "homepage": "https://www.drupal.org/user/89106"
-                },
-                {
-                    "name": "Moonshine",
-                    "homepage": "https://www.drupal.org/user/133705"
-                },
-                {
-                    "name": "Pedro Lozano",
-                    "homepage": "https://www.drupal.org/user/123766"
-                },
-                {
-                    "name": "colan",
-                    "homepage": "https://www.drupal.org/user/58704"
-                },
-                {
-                    "name": "dealancer",
-                    "homepage": "https://www.drupal.org/user/243418"
-                },
-                {
-                    "name": "markus_petrux",
-                    "homepage": "https://www.drupal.org/user/39593"
-                },
-                {
-                    "name": "nickcaballero",
-                    "homepage": "https://www.drupal.org/user/588336"
-                },
-                {
-                    "name": "ram4nd",
-                    "homepage": "https://www.drupal.org/user/601534"
-                }
-            ],
-            "description": "Defines a field type that allows values to be \"computed\" via PHP code.",
-            "homepage": "https://www.drupal.org/project/computed_field",
-            "support": {
-                "source": "https://git.drupalcode.org/project/computed_field"
             }
         },
         {
@@ -3364,58 +3165,6 @@
                 "docs": "https://github.com/oddhill/context"
             },
             "time": "2019-05-06T20:14:35+00:00"
-        },
-        {
-            "name": "drupal/context_active_trail",
-            "version": "1.0.0-rc2",
-            "source": {
-                "type": "git",
-                "url": "https://git.drupalcode.org/project/context_active_trail.git",
-                "reference": "8.x-1.0-rc2"
-            },
-            "dist": {
-                "type": "zip",
-                "url": "https://ftp.drupal.org/files/projects/context_active_trail-8.x-1.0-rc2.zip",
-                "reference": "8.x-1.0-rc2",
-                "shasum": "89e13630b02f2b25994f4f64c09b2a3789b51b60"
-            },
-            "require": {
-                "drupal/context": "*",
-                "drupal/core": "~8.0"
-            },
-            "type": "drupal-module",
-            "extra": {
-                "branch-alias": {
-                    "dev-1.x": "1.x-dev"
-                },
-                "drupal": {
-                    "version": "8.x-1.0-rc2",
-                    "datestamp": "1516893485",
-                    "security-coverage": {
-                        "status": "not-covered",
-                        "message": "Project has not opted into security advisory coverage!"
-                    }
-                }
-            },
-            "notification-url": "https://packages.drupal.org/8/downloads",
-            "license": [
-                "GPL-2.0-or-later"
-            ],
-            "authors": [
-                {
-                    "name": "jigarius",
-                    "homepage": "https://www.drupal.org/user/2492730"
-                },
-                {
-                    "name": "vasi",
-                    "homepage": "https://www.drupal.org/user/390545"
-                }
-            ],
-            "description": "Set the active trail based on context.",
-            "homepage": "https://www.drupal.org/project/context_active_trail",
-            "support": {
-                "source": "https://git.drupalcode.org/project/context_active_trail"
-            }
         },
         {
             "name": "drupal/core",
@@ -3875,70 +3624,6 @@
                 "source": "https://git.drupalcode.org/project/daterange_compact"
             },
             "time": "2017-06-12T21:30:07+00:00"
-        },
-        {
-            "name": "drupal/datetime_extras",
-            "version": "dev-1.x",
-            "source": {
-                "type": "git",
-                "url": "https://git.drupalcode.org/project/datetime_extras.git",
-                "reference": "0cc8357ed9765fdd0b8035747c0e13da82c6bd90"
-            },
-            "require": {
-                "drupal/core": "~8"
-            },
-            "require-dev": {
-                "drupal/duration_field": "^2.0"
-            },
-            "suggest": {
-                "drupal/duration_field": "Required to use the 'daterange_duration' field widget"
-            },
-            "type": "drupal-module",
-            "extra": {
-                "branch-alias": {
-                    "dev-1.x": "1.x-dev"
-                },
-                "drupal": {
-                    "version": "8.x-1.0-alpha1+11-dev",
-                    "datestamp": "1573259584",
-                    "security-coverage": {
-                        "status": "not-covered",
-                        "message": "Dev releases are not covered by Drupal security advisories."
-                    }
-                }
-            },
-            "notification-url": "https://packages.drupal.org/8/downloads",
-            "license": [
-                "GPL-2.0"
-            ],
-            "authors": [
-                {
-                    "name": "dww",
-                    "homepage": "https://www.drupal.org/user/46549"
-                },
-                {
-                    "name": "heddn",
-                    "homepage": "https://www.drupal.org/user/1463982"
-                },
-                {
-                    "name": "jhedstrom",
-                    "homepage": "https://www.drupal.org/user/208732"
-                },
-                {
-                    "name": "mpdonadio",
-                    "homepage": "https://www.drupal.org/user/325244"
-                },
-                {
-                    "name": "vijaycs85",
-                    "homepage": "https://www.drupal.org/user/93488"
-                }
-            ],
-            "description": "Extends core Datetime and Datetime Range functionality.",
-            "homepage": "https://www.drupal.org/project/datetime_extras",
-            "support": {
-                "source": "https://git.drupalcode.org/project/datetime_extras"
-            },
-            "time": "2019-12-23T09:53:24+00:00"
         },
         {
             "name": "drupal/devel",
@@ -5834,65 +5519,6 @@
             }
         },
         {
-            "name": "drupal/obfuscate",
-            "version": "1.0.0-alpha3",
-            "source": {
-                "type": "git",
-                "url": "https://git.drupalcode.org/project/obfuscate.git",
-                "reference": "8.x-1.0-alpha3"
-            },
-            "dist": {
-                "type": "zip",
-                "url": "https://ftp.drupal.org/files/projects/obfuscate-8.x-1.0-alpha3.zip",
-                "reference": "8.x-1.0-alpha3",
-                "shasum": "fcdd77e00e99dd96923f02ae5b8b31dbc2024541"
-            },
-            "require": {
-                "drupal/core": "*"
-            },
-            "type": "drupal-module",
-            "extra": {
-                "branch-alias": {
-                    "dev-1.x": "1.x-dev"
-                },
-                "drupal": {
-                    "version": "8.x-1.0-alpha3",
-                    "datestamp": "1538406480",
-                    "security-coverage": {
-                        "status": "not-covered",
-                        "message": "Project has not opted into security advisory coverage!"
-                    }
-                }
-            },
-            "notification-url": "https://packages.drupal.org/8/downloads",
-            "license": [
-                "GPL-2.0+"
-            ],
-            "authors": [
-                {
-                    "name": "Raphael Larrinaga",
-                    "homepage": "https://www.drupal.org/user/2873013"
-                },
-                {
-                    "name": "Rockabelly",
-                    "homepage": "https://www.drupal.org/user/2649181"
-                },
-                {
-                    "name": "colorfield",
-                    "homepage": "https://www.drupal.org/user/2295486"
-                }
-            ],
-            "description": "Obfuscates email addresses with a Field Formatter of Email field, a text Filter and a Twig extension.",
-            "homepage": "https://www.drupal.org/project/obfuscate",
-            "keywords": [
-                "Drupal"
-            ],
-            "support": {
-                "source": "http://cgit.drupalcode.org/obfuscate",
-                "issues": "https://www.drupal.org/project/issues/obfuscate"
-            }
-        },
-        {
             "name": "drupal/optional_end_date",
             "version": "1.0.0",
             "source": {
@@ -5985,74 +5611,6 @@
             "homepage": "https://www.drupal.org/project/override_node_options",
             "support": {
                 "source": "https://git.drupalcode.org/project/override_node_options"
-            }
-        },
-        {
-            "name": "drupal/owlcarousel",
-            "version": "1.0.0-alpha3",
-            "source": {
-                "type": "git",
-                "url": "https://git.drupalcode.org/project/owl-carousel.git",
-                "reference": "8.x-1.0-alpha3"
-            },
-            "dist": {
-                "type": "zip",
-                "url": "https://ftp.drupal.org/files/projects/owlcarousel-8.x-1.0-alpha3.zip",
-                "reference": "8.x-1.0-alpha3",
-                "shasum": "38a5bdb64e67a42cc0429e4f005949cfd65dfafa"
-            },
-            "require": {
-                "drupal/core": "*"
-            },
-            "type": "drupal-module",
-            "extra": {
-                "branch-alias": {
-                    "dev-1.x": "1.x-dev"
-                },
-                "drupal": {
-                    "version": "8.x-1.0-alpha3",
-                    "datestamp": "1548504780",
-                    "security-coverage": {
-                        "status": "not-covered",
-                        "message": "Alpha releases are not covered by Drupal security advisories."
-                    }
-                }
-            },
-            "notification-url": "https://packages.drupal.org/8/downloads",
-            "license": [
-                "GPL-2.0+"
-            ],
-            "authors": [
-                {
-                    "name": "Anybody",
-                    "homepage": "https://www.drupal.org/user/291091"
-                },
-                {
-                    "name": "Sebastien @Actualys",
-                    "homepage": "https://www.drupal.org/user/380104"
-                },
-                {
-                    "name": "aburrows",
-                    "homepage": "https://www.drupal.org/user/577844"
-                },
-                {
-                    "name": "ipwa",
-                    "homepage": "https://www.drupal.org/user/130909"
-                },
-                {
-                    "name": "swim",
-                    "homepage": "https://www.drupal.org/user/1968266"
-                },
-                {
-                    "name": "thomas.frobieter",
-                    "homepage": "https://www.drupal.org/user/409335"
-                }
-            ],
-            "description": "Drupal integration for Owl Carousel",
-            "homepage": "https://www.drupal.org/project/owlcarousel",
-            "support": {
-                "source": "https://git.drupalcode.org/project/owlcarousel",
-                "issues": "https://www.drupal.org/project/owlcarousel"
             }
         },
         {
@@ -6298,55 +5856,6 @@
             "support": {
                 "source": "http://cgit.drupalcode.org/responsive_favicons",
                 "issues": "https://www.drupal.org/project/issues/responsive_favicons"
-            }
-        },
-        {
-            "name": "drupal/responsive_menu",
-            "version": "2.6.0",
-            "source": {
-                "type": "git",
-                "url": "https://git.drupalcode.org/project/responsive_menu.git",
-                "reference": "8.x-2.6"
-            },
-            "dist": {
-                "type": "zip",
-                "url": "https://ftp.drupal.org/files/projects/responsive_menu-8.x-2.6.zip",
-                "reference": "8.x-2.6",
-                "shasum": "8dc4f4251ada211fad52aa9d0c02d50c4752d457"
-            },
-            "require": {
-                "drupal/core": "^8.4"
-            },
-            "type": "drupal-module",
-            "extra": {
-                "branch-alias": {
-                    "dev-2.x": "2.x-dev"
-                },
-                "drupal": {
-                    "version": "8.x-2.6",
-                    "datestamp": "1515872884",
-                    "security-coverage": {
-                        "status": "covered",
-                        "message": "Covered by Drupal's security advisory policy"
-                    }
-                }
-            },
-            "notification-url": "https://packages.drupal.org/8/downloads",
-            "license": [
-                "GPL-2.0+"
-            ],
-            "authors": [
-                {
-                    "name": "Tancredi D'Onofrio (tanc)",
-                    "homepage": "https://www.drupal.org/u/tanc",
-                    "role": "Maintainer"
-                }
-            ],
-            "description": "Provides a javascript based off-canvas responsive menu with depth. At wider browser widths it provides a horizontal menu capable of drop downs and flyouts",
-            "homepage": "https://drupal.org/project/responsive_menu",
-            "support": {
-                "source": "https://cgit.drupalcode.org/responsive_menu",
-                "issues": "https://drupal.org/project/issues/responsive_menu"
             }
         },
         {
@@ -6636,62 +6145,6 @@
             }
         },
         {
-            "name": "drupal/slick_media",
-            "version": "2.0.0-alpha2",
-            "source": {
-                "type": "git",
-                "url": "https://git.drupalcode.org/project/slick_media.git",
-                "reference": "8.x-2.0-alpha2"
-            },
-            "dist": {
-                "type": "zip",
-                "url": "https://ftp.drupal.org/files/projects/slick_media-8.x-2.0-alpha2.zip",
-                "reference": "8.x-2.0-alpha2",
-                "shasum": "9aa7dfeaebc0776454bbf74450e5f2ed360f320d"
-            },
-            "require": {
-                "drupal/core": "^8.4",
-                "drupal/slick": "*"
-            },
-            "type": "drupal-module",
-            "extra": {
-                "branch-alias": {
-                    "dev-2.x": "2.x-dev"
-                },
-                "drupal": {
-                    "version": "8.x-2.0-alpha2",
-                    "datestamp": "1545238380",
-                    "security-coverage": {
-                        "status": "not-covered",
-                        "message": "Alpha releases are not covered by Drupal security advisories."
-                    }
-                }
-            },
-            "notification-url": "https://packages.drupal.org/8/downloads",
-            "license": [
-                "GPL-2.0-or-later"
-            ],
-            "authors": [
-                {
-                    "name": "axel.rutz",
-                    "homepage": "https://www.drupal.org/user/229048"
-                },
-                {
-                    "name": "chr.fritsch",
-                    "homepage": "https://www.drupal.org/user/2103716"
-                },
-                {
-                    "name": "gausarts",
-                    "homepage": "https://www.drupal.org/user/159062"
-                }
-            ],
-            "description": "Provides Slick carousel integration with Media entity.",
-            "homepage": "https://www.drupal.org/project/slick_media",
-            "support": {
-                "source": "https://git.drupalcode.org/project/slick_media"
-            }
-        },
-        {
             "name": "drupal/slick_views",
             "version": "2.3.0",
             "source": {
@@ -6864,91 +6317,6 @@
             "homepage": "http://drupal.org/project/spamspan",
             "support": {
                 "source": "https://git.drupalcode.org/project/spamspan"
-            }
-        },
-        {
-            "name": "drupal/tmgmt",
-            "version": "1.10.0",
-            "source": {
-                "type": "git",
-                "url": "https://git.drupalcode.org/project/tmgmt.git",
-                "reference": "8.x-1.10"
-            },
-            "dist": {
-                "type": "zip",
-                "url": "https://ftp.drupal.org/files/projects/tmgmt-8.x-1.10.zip",
-                "reference": "8.x-1.10",
-                "shasum": "c33a65ec6066fcf538f815f875d6d625e5bbd470"
-            },
-            "require": {
-                "drupal/core": "*"
-            },
-            "require-dev": {
-                "drupal/metatag": "1.x-dev",
-                "drupal/pathauto": "1.x-dev",
-                "drupal/tmgmt_content": "*",
-                "drupal/tmgmt_file": "*",
-                "drupal/tmgmt_language_combination": "*",
-                "drupal/tmgmt_local": "*",
-                "drupal/tmgmt_locale": "*",
-                "drupal/webform": "^5.0"
-            },
-            "type": "drupal-module",
-            "extra": {
-                "branch-alias": {
-                    "dev-1.x": "1.x-dev"
-                },
-                "drupal": {
-                    "version": "8.x-1.10",
-                    "datestamp": "1564034286",
-                    "security-coverage": {
-                        "status": "covered",
-                        "message": "Covered by Drupal's security advisory policy"
-                    }
-                }
-            },
-            "notification-url": "https://packages.drupal.org/8/downloads",
-            "license": [
-                "GPL-2.0+"
-            ],
-            "authors": [
-                {
-                    "name": "Berdir",
-                    "homepage": "https://www.drupal.org/user/214652"
-                },
-                {
-                    "name": "Schnitzel",
-                    "homepage": "https://www.drupal.org/user/643820"
-                },
-                {
-                    "name": "cgalli",
-                    "homepage": "https://www.drupal.org/user/77453"
-                },
-                {
-                    "name": "dawehner",
-                    "homepage": "https://www.drupal.org/user/99340"
-                },
-                {
-                    "name": "floretan",
-                    "homepage": "https://www.drupal.org/user/66163"
-                },
-                {
-                    "name": "fubhy",
-                    "homepage": "https://www.drupal.org/user/761344"
-                },
-                {
-                    "name": "miro_dietiker",
-                    "homepage": "https://www.drupal.org/user/227761"
-                },
-                {
-                    "name": "webflo",
-                    "homepage": "https://www.drupal.org/user/254778"
-                }
-            ],
-            "description": "Translation Management Tool",
-            "homepage": "https://www.drupal.org/project/tmgmt",
-            "support": {
-                "source": "https://git.drupalcode.org/project/tmgmt"
             }
         },
         {
@@ -7237,54 +6605,6 @@
             }
         },
         {
-            "name": "drupal/view_mode_selector",
-            "version": "1.0.0-beta1",
-            "source": {
-                "type": "git",
-                "url": "https://git.drupalcode.org/project/view_mode_selector.git",
-                "reference": "8.x-1.0-beta1"
-            },
-            "dist": {
-                "type": "zip",
-                "url": "https://ftp.drupal.org/files/projects/view_mode_selector-8.x-1.0-beta1.zip",
-                "reference": "8.x-1.0-beta1",
-                "shasum": "f477cf9f75cbbc467fda71f012cb0b5dc43b1718"
-            },
-            "require": {
-                "drupal/core": "^8 || ^9"
-            },
-            "type": "drupal-module",
-            "extra": {
-                "drupal": {
-                    "version": "8.x-1.0-beta1",
-                    "datestamp": "1592270360",
-                    "security-coverage": {
-                        "status": "not-covered",
-                        "message": "Beta releases are not covered by Drupal security advisories."
-                    }
-                }
-            },
-            "notification-url": "https://packages.drupal.org/8/downloads",
-            "license": [
-                "GPL-2.0-or-later"
-            ],
-            "authors": [
-                {
-                    "name": "axe312",
-                    "homepage": "https://www.drupal.org/user/682114"
-                },
-                {
-                    "name": "yannickoo",
-                    "homepage": "https://www.drupal.org/user/531118"
-                }
-            ],
-            "description": "Provides a new field type for changing the view mode of an entity.",
-            "homepage": "https://www.drupal.org/project/view_mode_selector",
-            "support": {
-                "source": "https://git.drupalcode.org/project/view_mode_selector"
-            }
-        },
-        {
             "name": "drupal/view_unpublished",
             "version": "1.0.0-alpha1",
             "source": {
@@ -7414,205 +6734,6 @@
             }
         },
         {
-            "name": "drupal/views_conditional",
-            "version": "1.0.0",
-            "source": {
-                "type": "git",
-                "url": "https://git.drupalcode.org/project/views_conditional.git",
-                "reference": "8.x-1.0"
-            },
-            "dist": {
-                "type": "zip",
-                "url": "https://ftp.drupal.org/files/projects/views_conditional-8.x-1.0.zip",
-                "reference": "8.x-1.0",
-                "shasum": "50a70b1120ab2e504485f4f9df6a8820fbb5e678"
-            },
-            "require": {
-                "drupal/core": "*"
-            },
-            "type": "drupal-module",
-            "extra": {
-                "branch-alias": {
-                    "dev-1.x": "1.x-dev"
-                },
-                "drupal": {
-                    "version": "8.x-1.0",
-                    "datestamp": "1522043885",
-                    "security-coverage": {
-                        "status": "covered",
-                        "message": "Covered by Drupal's security advisory policy"
-                    }
-                }
-            },
-            "notification-url": "https://packages.drupal.org/8/downloads",
-            "license": [
-                "GPL-2.0-or-later"
-            ],
-            "authors": [
-                {
-                    "name": "MChittenden",
-                    "homepage": "https://www.drupal.org/user/2288348"
-                },
-                {
-                    "name": "anand.toshniwal93",
-                    "homepage": "https://www.drupal.org/user/3345088"
-                },
-                {
-                    "name": "ofry",
-                    "homepage": "https://www.drupal.org/user/2740599"
-                }
-            ],
-            "description": "Allows conditional views output.",
-            "homepage": "https://www.drupal.org/project/views_conditional",
-            "support": {
-                "source": "https://git.drupalcode.org/project/views_conditional"
-            }
-        },
-        {
-            "name": "drupal/views_contextual_filters_or",
-            "version": "1.1.0",
-            "source": {
-                "type": "git",
-                "url": "https://git.drupalcode.org/project/views_contextual_filters_or.git",
-                "reference": "8.x-1.1"
-            },
-            "dist": {
-                "type": "zip",
-                "url": "https://ftp.drupal.org/files/projects/views_contextual_filters_or-8.x-1.1.zip",
-                "reference": "8.x-1.1",
-                "shasum": "41162d8891249206a5290a2c8ef2d0dfb5407411"
-            },
-            "require": {
-                "drupal/core": "*"
-            },
-            "type": "drupal-module",
-            "extra": {
-                "branch-alias": {
-                    "dev-1.x": "1.x-dev"
-                },
-                "drupal": {
-                    "version": "8.x-1.1",
-                    "datestamp": "1548869880",
-                    "security-coverage": {
-                        "status": "covered",
-                        "message": "Covered by Drupal's security advisory policy"
-                    }
-                }
-            },
-            "notification-url": "https://packages.drupal.org/8/downloads",
-            "license": [
-                "GPL-2.0+"
-            ],
-            "authors": [
-                {
-                    "name": "m.lebedev",
-                    "homepage": "https://www.drupal.org/user/2566550"
-                }
-            ],
-            "description": "Modify views query to support OR conditions for contextual filters.",
-            "homepage": "https://www.drupal.org/project/views_contextual_filters_or",
-            "support": {
-                "source": "https://git.drupalcode.org/project/views_contextual_filters_or"
-            }
-        },
-        {
-            "name": "drupal/views_fieldset",
-            "version": "dev-1.x",
-            "source": {
-                "type": "git",
-                "url": "https://git.drupalcode.org/project/views_fieldset.git",
-                "reference": "f4c75aaae54dc23ec561459543238d0d524b84bf"
-            },
-            "require": {
-                "drupal/core": "*"
-            },
-            "type": "drupal-module",
-            "extra": {
-                "branch-alias": {
-                    "dev-1.x": "1.x-dev"
-                },
-                "drupal": {
-                    "version": "8.x-1.x-dev",
-                    "datestamp": "1415295180",
-                    "security-coverage": {
-                        "status": "not-covered",
-                        "message": "Dev releases are not covered by Drupal security advisories."
-                    }
-                }
-            },
-            "notification-url": "https://packages.drupal.org/8/downloads",
-            "license": [
-                "GPL-2.0-or-later"
-            ],
-            "authors": [
-                {
-                    "name": "jibran",
-                    "homepage": "https://www.drupal.org/user/1198144"
-                }
-            ],
-            "description": "Shows views rows as fieldset",
-            "homepage": "https://www.drupal.org/project/views_fieldset",
-            "support": {
-                "source": "https://git.drupalcode.org/project/views_fieldset"
-            },
-            "time": "2014-11-06T17:30:20+00:00"
-        },
-        {
-            "name": "drupal/views_fieldsets",
-            "version": "3.3.0",
-            "source": {
-                "type": "git",
-                "url": "https://git.drupalcode.org/project/views_fieldsets.git",
-                "reference": "8.x-3.3"
-            },
-            "dist": {
-                "type": "zip",
-                "url": "https://ftp.drupal.org/files/projects/views_fieldsets-8.x-3.3.zip",
-                "reference": "8.x-3.3",
-                "shasum": "2bcfa3bb920ec79bee016ca7d255dcf0c8bcbff1"
-            },
-            "require": {
-                "drupal/core": "~8.0"
-            },
-            "type": "drupal-module",
-            "extra": {
-                "branch-alias": {
-                    "dev-3.x": "3.x-dev"
-                },
-                "drupal": {
-                    "version": "8.x-3.3",
-                    "datestamp": "1519199885",
-                    "security-coverage": {
-                        "status": "covered",
-                        "message": "Covered by Drupal's security advisory policy"
-                    }
-                }
-            },
-            "notification-url": "https://packages.drupal.org/8/downloads",
-            "license": [
-                "GPL-2.0-or-later"
-            ],
-            "authors": [
-                {
-                    "name": "pifagor",
-                    "homepage": "https://www.drupal.org/user/2375692"
-                },
-                {
-                    "name": "ron_s",
-                    "homepage": "https://www.drupal.org/user/184990"
-                },
-                {
-                    "name": "rudiedirkx",
-                    "homepage": "https://www.drupal.org/user/890274"
-                }
-            ],
-            "description": "Adds fieldsets to Views.",
-            "homepage": "https://www.drupal.org/project/views_fieldsets",
-            "support": {
-                "source": "https://git.drupalcode.org/project/views_fieldsets"
-            }
-        },
-        {
             "name": "drupal/views_infinite_scroll",
             "version": "1.7.0",
             "source": {
@@ -7665,114 +6786,6 @@
             "homepage": "https://www.drupal.org/project/views_infinite_scroll",
             "support": {
                 "source": "https://git.drupalcode.org/project/views_infinite_scroll"
-            }
-        },
-        {
-            "name": "drupal/views_rows_wrapper",
-            "version": "1.1.0",
-            "source": {
-                "type": "git",
-                "url": "https://git.drupalcode.org/project/views_rows_wrapper.git",
-                "reference": "8.x-1.1"
-            },
-            "dist": {
-                "type": "zip",
-                "url": "https://ftp.drupal.org/files/projects/views_rows_wrapper-8.x-1.1.zip",
-                "reference": "8.x-1.1",
-                "shasum": "f6e538133a185b7e006ff8c7bd2e5515e9775835"
-            },
-            "require": {
-                "drupal/core": "*"
-            },
-            "type": "drupal-module",
-            "extra": {
-                "branch-alias": {
-                    "dev-1.x": "1.x-dev"
-                },
-                "drupal": {
-                    "version": "8.x-1.1",
-                    "datestamp": "1541614380",
-                    "security-coverage": {
-                        "status": "covered",
-                        "message": "Covered by Drupal's security advisory policy"
-                    }
-                }
-            },
-            "notification-url": "https://packages.drupal.org/8/downloads",
-            "license": [
-                "GPL-2.0-or-later"
-            ],
-            "authors": [
-                {
-                    "name": "Polarwinds",
-                    "homepage": "https://www.drupal.org/user/3554061"
-                }
-            ],
-            "description": "The view style plugin, that combines result rows into sets, wrapped by HTML element and attribute.",
-            "homepage": "https://www.drupal.org/project/views_rows_wrapper",
-            "support": {
-                "source": "https://git.drupalcode.org/project/views_rows_wrapper"
-            }
-        },
-        {
-            "name": "drupal/views_slideshow",
-            "version": "4.6.0",
-            "source": {
-                "type": "git",
-                "url": "https://git.drupalcode.org/project/views_slideshow.git",
-                "reference": "8.x-4.6"
-            },
-            "dist": {
-                "type": "zip",
-                "url": "https://ftp.drupal.org/files/projects/views_slideshow-8.x-4.6.zip",
-                "reference": "8.x-4.6",
-                "shasum": "c0b2d3c0765b9215fdefb3313dd42a8bbb7409c5"
-            },
-            "require": {
-                "drupal/core": "*"
-            },
-            "type": "drupal-module",
-            "extra": {
-                "branch-alias": {
-                    "dev-4.x": "4.x-dev"
-                },
-                "drupal": {
-                    "version": "8.x-4.6",
-                    "datestamp": "1510987085",
-                    "security-coverage": {
-                        "status": "covered",
-                        "message": "Covered by Drupal's security advisory policy"
-                    }
-                }
-            },
-            "notification-url": "https://packages.drupal.org/8/downloads",
-            "license": [
-                "GPL-2.0+"
-            ],
-            "authors": [
-                {
-                    "name": "See contributors",
-                    "homepage": "https://www.drupal.org/node/160350/committers"
-                },
-                {
-                    "name": "aaron",
-                    "homepage": "https://www.drupal.org/user/33420"
-                },
-                {
-                    "name": "redndahead",
-                    "homepage": "https://www.drupal.org/user/160320"
-                },
-                {
-                    "name": "vbouchet",
-                    "homepage": "https://www.drupal.org/user/1671428"
-                }
-            ],
-            "description": "Describes relationships between entities.",
-            "homepage": "https://www.drupal.org/project/views_slideshow",
-            "support": {
-                "source": "https://cgit.drupalcode.org/views_slideshow",
-                "issues": "https://www.drupal.org/project/issues/views_slideshow",
-                "irc": "irc://irc.freenode.org/drupal-contribute"
             }
         },
         {
@@ -7990,64 +7003,6 @@
                 "issues": "https://www.drupal.org/project/issues/webform?version=8.x",
                 "docs": "https://www.drupal.org/docs/8/modules/webform",
                 "forum": "https://drupal.stackexchange.com/questions/tagged/webform"
-            }
-        },
-        {
-            "name": "drupal/webp",
-            "version": "1.0.0-beta2",
-            "source": {
-                "type": "git",
-                "url": "https://git.drupalcode.org/project/webp.git",
-                "reference": "8.x-1.0-beta2"
-            },
-            "dist": {
-                "type": "zip",
-                "url": "https://ftp.drupal.org/files/projects/webp-8.x-1.0-beta2.zip",
-                "reference": "8.x-1.0-beta2",
-                "shasum": "ae936a5c4097b9272344ff30541bdb9d23f11ad0"
-            },
-            "require": {
-                "drupal/core": "*",
-                "ext-gd": "*"
-            },
-            "type": "drupal-module",
-            "extra": {
-                "branch-alias": {
-                    "dev-1.x": "1.x-dev"
-                },
-                "drupal": {
-                    "version": "8.x-1.0-beta2",
-                    "datestamp": "1563510185",
-                    "security-coverage": {
-                        "status": "not-covered",
-                        "message": "Beta releases are not covered by Drupal security advisories."
-                    }
-                }
-            },
-            "notification-url": "https://packages.drupal.org/8/downloads",
-            "license": [
-                "GPL-2.0+"
-            ],
-            "authors": [
-                {
-                    "name": "Bart Vanhoutte",
-                    "homepage": "https://www.drupal.org/user/1133754",
-                    "email": "bart@croquemonsieur.be",
-                    "role": "Maintainer"
-                },
-                {
-                    "name": "alexmoreno",
-                    "homepage": "https://www.drupal.org/user/145609"
-                }
-            ],
-            "description": "Generates WebP copies of image style derivatives.",
-            "homepage": "https://www.drupal.org/project/webp",
-            "keywords": [
-                "Drupal"
-            ],
-            "support": {
-                "source": "http://cgit.drupalcode.org/webp",
-                "issues": "https://www.drupal.org/project/issues/webp"
             }
         },
         {
@@ -15028,13 +13983,10 @@
     "stability-flags": {
         "drupal/address": 20,
         "drupal/auto_entitylabel": 10,
-        "drupal/block_field": 15,
         "drupal/cer": 15,
         "drupal/config_tools": 15,
         "drupal/context": 20,
-        "drupal/context_active_trail": 5,
         "drupal/daterange_compact": 20,
-        "drupal/datetime_extras": 20,
         "drupal/easy_breadcrumb": 20,
         "drupal/fast_404": 15,
         "drupal/filefield_paths": 20,
@@ -15046,19 +13998,14 @@
         "drupal/menu_trail_by_path": 20,
         "drupal/name": 5,
         "drupal/node_edit_protection": 15,
-        "drupal/obfuscate": 15,
         "drupal/optional_end_date": 10,
-        "drupal/owlcarousel": 15,
         "drupal/paragraphs": 20,
         "drupal/selective_better_exposed_filters": 10,
         "drupal/smtp": 10,
         "drupal/toolbar_language_switcher": 15,
-        "drupal/view_mode_selector": 10,
         "drupal/view_unpublished": 15,
-        "drupal/views_fieldset": 20,
         "drupal/views_url_path_arguments": 20,
-        "drupal/webform": 5,
-        "drupal/webp": 10
+        "drupal/webform": 5
     },
     "prefer-stable": true,
     "prefer-lowest": false,
