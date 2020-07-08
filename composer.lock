@@ -4,7 +4,7 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#installing-dependencies",
         "This file is @generated automatically"
     ],
-    "content-hash": "f735a94773284638c3d5ddaef2767eef",
+    "content-hash": "6d933de6149111d7cd952731e2eac275",
     "packages": [
         {
             "name": "asm89/stack-cors",
@@ -4202,20 +4202,14 @@
         },
         {
             "name": "drupal/easy_breadcrumb",
-            "version": "1.12.0",
+            "version": "dev-1.x",
             "source": {
                 "type": "git",
                 "url": "https://git.drupalcode.org/project/easy_breadcrumb.git",
-                "reference": "8.x-1.12"
-            },
-            "dist": {
-                "type": "zip",
-                "url": "https://ftp.drupal.org/files/projects/easy_breadcrumb-8.x-1.12.zip",
-                "reference": "8.x-1.12",
-                "shasum": "1364f8d3e36b1847279eeabf14ed26c62afcd750"
+                "reference": "eb64ed1af887befabe03b5212601810c9f1908d2"
             },
             "require": {
-                "drupal/core": "~8.0"
+                "drupal/core": "^8 || ^9"
             },
             "type": "drupal-module",
             "extra": {
@@ -4223,22 +4217,28 @@
                     "dev-1.x": "1.x-dev"
                 },
                 "drupal": {
-                    "version": "8.x-1.12",
-                    "datestamp": "1557509285",
+                    "version": "8.x-1.12+45-dev",
+                    "datestamp": "1593861477",
                     "security-coverage": {
-                        "status": "covered",
-                        "message": "Covered by Drupal's security advisory policy"
+                        "status": "not-covered",
+                        "message": "Dev releases are not covered by Drupal security advisories."
                     }
                 }
             },
             "notification-url": "https://packages.drupal.org/8/downloads",
             "license": [
-                "GPL-2.0+"
+                "GPL-2.0-or-later"
             ],
             "authors": [
                 {
+                    "name": "Neslee Canil Pinto",
+                    "homepage": "https://www.drupal.org/u/neslee-canil-pinto",
+                    "role": "Maintainer"
+                },
+                {
                     "name": "Greg Boggs",
-                    "homepage": "https://www.drupal.org/user/153069"
+                    "homepage": "https://www.drupal.org/u/greg-boggs",
+                    "role": "Maintainer"
                 },
                 {
                     "name": "RenatoG",
@@ -4272,8 +4272,10 @@
             "description": "Adds configuration to the system breadcrumbs.",
             "homepage": "https://www.drupal.org/project/easy_breadcrumb",
             "support": {
-                "source": "https://git.drupalcode.org/project/easy_breadcrumb"
-            }
+                "source": "https://git.drupalcode.org/project/easy_breadcrumb",
+                "issues": "https://www.drupal.org/project/issues/easy_breadcrumb"
+            },
+            "time": "2020-07-04T11:23:19+00:00"
         },
         {
             "name": "drupal/editor_advanced_link",
@@ -5001,17 +5003,11 @@
         },
         {
             "name": "drupal/hide_revision_field",
-            "version": "2.1.0",
+            "version": "dev-2.x",
             "source": {
                 "type": "git",
                 "url": "https://git.drupalcode.org/project/hide_revision_field.git",
-                "reference": "8.x-2.1"
-            },
-            "dist": {
-                "type": "zip",
-                "url": "https://ftp.drupal.org/files/projects/hide_revision_field-8.x-2.1.zip",
-                "reference": "8.x-2.1",
-                "shasum": "1d924bdcda121b128176e99736537f04e069b316"
+                "reference": "15ea5890a4885780abe37dd5896b989575022509"
             },
             "require": {
                 "drupal/core": "^8.5"
@@ -5027,11 +5023,11 @@
                     "dev-2.x": "2.x-dev"
                 },
                 "drupal": {
-                    "version": "8.x-2.1",
-                    "datestamp": "1537427280",
+                    "version": "8.x-2.1+6-dev",
+                    "datestamp": "1541485380",
                     "security-coverage": {
-                        "status": "covered",
-                        "message": "Covered by Drupal's security advisory policy"
+                        "status": "not-covered",
+                        "message": "Dev releases are not covered by Drupal security advisories."
                     }
                 }
             },
@@ -5049,7 +5045,8 @@
             "homepage": "https://www.drupal.org/project/hide_revision_field",
             "support": {
                 "source": "http://cgit.drupalcode.org/hide_revision_field"
-            }
+            },
+            "time": "2018-11-06T06:21:46+00:00"
         },
         {
             "name": "drupal/honeypot",
@@ -6580,44 +6577,42 @@
         },
         {
             "name": "drupal/slick",
-            "version": "2.0.0-rc4",
+            "version": "2.2.0",
             "source": {
                 "type": "git",
                 "url": "https://git.drupalcode.org/project/slick.git",
-                "reference": "8.x-2.0-rc4"
+                "reference": "8.x-2.2"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://ftp.drupal.org/files/projects/slick-8.x-2.0-rc4.zip",
-                "reference": "8.x-2.0-rc4",
-                "shasum": "5d4e9936aeb398d5194c0ed4eb4ee388642bcb08"
+                "url": "https://ftp.drupal.org/files/projects/slick-8.x-2.2.zip",
+                "reference": "8.x-2.2",
+                "shasum": "789395b52697b6cee27648e478c4e579eee9540b"
             },
             "require": {
                 "drupal/blazy": "~2.0",
-                "drupal/core": "~8.0"
+                "drupal/core": "^8.8 || ^9"
             },
             "type": "drupal-module",
             "extra": {
-                "branch-alias": {
-                    "dev-2.x": "2.x-dev"
-                },
                 "drupal": {
-                    "version": "8.x-2.0-rc4",
-                    "datestamp": "1567239490",
+                    "version": "8.x-2.2",
+                    "datestamp": "1588861104",
                     "security-coverage": {
-                        "status": "not-covered",
-                        "message": "RC releases are not covered by Drupal security advisories."
+                        "status": "covered",
+                        "message": "Covered by Drupal's security advisory policy"
                     }
                 }
             },
             "notification-url": "https://packages.drupal.org/8/downloads",
             "license": [
-                "GPL-2.0+"
+                "GPL-2.0-or-later"
             ],
             "authors": [
                 {
-                    "name": "arshadcn",
-                    "homepage": "https://www.drupal.org/user/571032"
+                    "name": "Contributors",
+                    "homepage": "https://www.drupal.org/node/2232779/committers",
+                    "role": "Contributors"
                 },
                 {
                     "name": "gausarts",
@@ -6636,7 +6631,7 @@
                 "slideshow"
             ],
             "support": {
-                "source": "http://cgit.drupalcode.org/slick",
+                "source": "https://git.drupalcode.org/project/slick",
                 "issues": "https://drupal.org/project/issues/slick"
             }
         },
@@ -6698,17 +6693,17 @@
         },
         {
             "name": "drupal/slick_views",
-            "version": "2.2.0",
+            "version": "2.3.0",
             "source": {
                 "type": "git",
                 "url": "https://git.drupalcode.org/project/slick_views.git",
-                "reference": "8.x-2.2"
+                "reference": "8.x-2.3"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://ftp.drupal.org/files/projects/slick_views-8.x-2.2.zip",
-                "reference": "8.x-2.2",
-                "shasum": "e187e29ad30dd07564907ddd8fedf8972134aaa1"
+                "url": "https://ftp.drupal.org/files/projects/slick_views-8.x-2.3.zip",
+                "reference": "8.x-2.3",
+                "shasum": "974ece2c6a0f805c5cfc0e619f330cabf714633c"
             },
             "require": {
                 "drupal/core": "^8 || ^9",
@@ -6716,12 +6711,9 @@
             },
             "type": "drupal-module",
             "extra": {
-                "branch-alias": {
-                    "dev-2.x": "2.x-dev"
-                },
                 "drupal": {
-                    "version": "8.x-2.2",
-                    "datestamp": "1581742125",
+                    "version": "8.x-2.3",
+                    "datestamp": "1589111335",
                     "security-coverage": {
                         "status": "covered",
                         "message": "Covered by Drupal's security advisory policy"
@@ -7242,6 +7234,54 @@
             "homepage": "https://www.drupal.org/project/video_embed_field",
             "support": {
                 "source": "https://git.drupalcode.org/project/video_embed_field"
+            }
+        },
+        {
+            "name": "drupal/view_mode_selector",
+            "version": "1.0.0-beta1",
+            "source": {
+                "type": "git",
+                "url": "https://git.drupalcode.org/project/view_mode_selector.git",
+                "reference": "8.x-1.0-beta1"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://ftp.drupal.org/files/projects/view_mode_selector-8.x-1.0-beta1.zip",
+                "reference": "8.x-1.0-beta1",
+                "shasum": "f477cf9f75cbbc467fda71f012cb0b5dc43b1718"
+            },
+            "require": {
+                "drupal/core": "^8 || ^9"
+            },
+            "type": "drupal-module",
+            "extra": {
+                "drupal": {
+                    "version": "8.x-1.0-beta1",
+                    "datestamp": "1592270360",
+                    "security-coverage": {
+                        "status": "not-covered",
+                        "message": "Beta releases are not covered by Drupal security advisories."
+                    }
+                }
+            },
+            "notification-url": "https://packages.drupal.org/8/downloads",
+            "license": [
+                "GPL-2.0-or-later"
+            ],
+            "authors": [
+                {
+                    "name": "axe312",
+                    "homepage": "https://www.drupal.org/user/682114"
+                },
+                {
+                    "name": "yannickoo",
+                    "homepage": "https://www.drupal.org/user/531118"
+                }
+            ],
+            "description": "Provides a new field type for changing the view mode of an entity.",
+            "homepage": "https://www.drupal.org/project/view_mode_selector",
+            "support": {
+                "source": "https://git.drupalcode.org/project/view_mode_selector"
             }
         },
         {
@@ -14995,9 +15035,11 @@
         "drupal/context_active_trail": 5,
         "drupal/daterange_compact": 20,
         "drupal/datetime_extras": 20,
+        "drupal/easy_breadcrumb": 20,
         "drupal/fast_404": 15,
         "drupal/filefield_paths": 20,
         "drupal/hacked": 10,
+        "drupal/hide_revision_field": 20,
         "drupal/imageapi_optimize": 15,
         "drupal/imageapi_optimize_binaries": 15,
         "drupal/inline_entity_form": 5,
@@ -15011,6 +15053,7 @@
         "drupal/selective_better_exposed_filters": 10,
         "drupal/smtp": 10,
         "drupal/toolbar_language_switcher": 15,
+        "drupal/view_mode_selector": 10,
         "drupal/view_unpublished": 15,
         "drupal/views_fieldset": 20,
         "drupal/views_url_path_arguments": 20,
