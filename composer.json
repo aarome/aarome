@@ -40,6 +40,7 @@
         "drupal/cer": "^4.0@alpha",
         "drupal/chosen": "^2.6",
         "drupal/config_devel": "^1.2",
+        "drupal/config_split": "^1.4",
         "drupal/config_tools": "^1.0@alpha",
         "drupal/context": "4.x-dev",
         "drupal/core": "^8.8.1",
