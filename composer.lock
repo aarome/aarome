@@ -4,7 +4,7 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#installing-dependencies",
         "This file is @generated automatically"
     ],
-    "content-hash": "8156540b55d13efc0548da3c0527467d",
+    "content-hash": "a7e99f2d12fed282c5099499ffe8318f",
     "packages": [
         {
             "name": "asm89/stack-cors",
@@ -2392,14 +2392,6 @@
                     "homepage": "https://www.drupal.org/user/216396"
                 },
                 {
-                    "name": "colan",
-                    "homepage": "https://www.drupal.org/user/58704"
-                },
-                {
-                    "name": "diqidoq",
-                    "homepage": "https://www.drupal.org/user/1001934"
-                },
-                {
                     "name": "purushotam.rai",
                     "homepage": "https://www.drupal.org/user/3193859"
                 }
@@ -2407,7 +2399,7 @@
             "description": "Allows hiding of entity label fields and automatic label creation.",
             "homepage": "https://www.drupal.org/project/auto_entitylabel",
             "support": {
-                "source": "https://git.drupalcode.org/project/auto_entitylabel",
+                "source": "http://cgit.drupalcode.org/auto_entitylabel",
                 "issues": "https://www.drupal.org/project/issues/auto_entitylabel"
             }
         },
@@ -2515,10 +2507,6 @@
             ],
             "authors": [
                 {
-                    "name": "Etroid",
-                    "homepage": "https://www.drupal.org/user/3048985"
-                },
-                {
                     "name": "chr.fritsch",
                     "homepage": "https://www.drupal.org/user/2103716"
                 },
@@ -2531,6 +2519,10 @@
                     "homepage": "https://www.drupal.org/user/192273"
                 },
                 {
+                    "name": "mortona2k",
+                    "homepage": "https://www.drupal.org/user/1029484"
+                },
+                {
                     "name": "rlhawk",
                     "homepage": "https://www.drupal.org/user/352283"
                 }
@@ -2538,7 +2530,7 @@
             "description": "Provides advanced options (such as links, checkboxes, or jQueryUI widgets) for exposed Views elements.",
             "homepage": "https://www.drupal.org/project/better_exposed_filters",
             "support": {
-                "source": "https://git.drupalcode.org/project/better_exposed_filters"
+                "source": "http://cgit.drupalcode.org/better_exposed_filters"
             }
         },
         {
@@ -2560,9 +2552,6 @@
             },
             "type": "drupal-module",
             "extra": {
-                "branch-alias": {
-                    "dev-2.x": "2.x-dev"
-                },
                 "drupal": {
                     "version": "8.x-2.0",
                     "datestamp": "1582995235",
@@ -2586,6 +2575,10 @@
                     "name": "Contributors",
                     "homepage": "https://www.drupal.org/node/2663268/committers",
                     "role": "Contributor"
+                },
+                {
+                    "name": "geek-merlin",
+                    "homepage": "https://www.drupal.org/user/229048"
                 },
                 {
                     "name": "sun",
@@ -2760,7 +2753,7 @@
             "description": "Allows user to create two-way references between entities.",
             "homepage": "https://www.drupal.org/project/cer",
             "support": {
-                "source": "https://git.drupalcode.org/project/cer"
+                "source": "http://cgit.drupalcode.org/cer"
             }
         },
         {
@@ -2779,7 +2772,7 @@
             },
             "require": {
                 "drupal/chosen_lib": "*",
-                "drupal/core": "~8.0",
+                "drupal/core": "^8 || ^9",
                 "harvesthq/chosen": "^1.8.7"
             },
             "type": "drupal-module",
@@ -2789,7 +2782,7 @@
                 },
                 "drupal": {
                     "version": "8.x-2.9",
-                    "datestamp": "1576594384",
+                    "datestamp": "1576963005",
                     "security-coverage": {
                         "status": "covered",
                         "message": "Covered by Drupal's security advisory policy"
@@ -2854,7 +2847,7 @@
             "version": "2.9.0",
             "require": {
                 "drupal/chosen": "self.version",
-                "drupal/core": "~8.0",
+                "drupal/core": "^8 || ^9",
                 "php": ">=5.6.0"
             },
             "type": "metapackage",
@@ -2864,7 +2857,7 @@
                 },
                 "drupal": {
                     "version": "8.x-2.9",
-                    "datestamp": "1576594384",
+                    "datestamp": "1576963005",
                     "security-coverage": {
                         "status": "covered",
                         "message": "Covered by Drupal's security advisory policy"
@@ -3189,7 +3182,7 @@
             "description": "Tools for managing config with git",
             "homepage": "https://drupal.org/project/config_tools",
             "support": {
-                "source": "https://git.drupalcode.org/project/config_tools"
+                "source": "http://cgit.drupalcode.org/config_tools"
             }
         },
         {
@@ -3715,7 +3708,7 @@
             "description": "Provides a HTML 5 date popup for all views filters.",
             "homepage": "https://www.drupal.org/project/date_popup",
             "support": {
-                "source": "https://git.drupalcode.org/project/date_popup"
+                "source": "http://cgit.drupalcode.org/date_popup"
             }
         },
         {
@@ -3824,10 +3817,6 @@
                 {
                     "name": "See contributors",
                     "homepage": "https://www.drupal.org/node/3236/committers"
-                },
-                {
-                    "name": "pcambra",
-                    "homepage": "https://www.drupal.org/user/122101"
                 },
                 {
                     "name": "salvis",
@@ -4146,29 +4135,26 @@
         },
         {
             "name": "drupal/empty_page",
-            "version": "2.0.0",
+            "version": "3.0.0",
             "source": {
                 "type": "git",
                 "url": "https://git.drupalcode.org/project/empty_page.git",
-                "reference": "8.x-2.0"
+                "reference": "8.x-3.0"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://ftp.drupal.org/files/projects/empty_page-8.x-2.0.zip",
-                "reference": "8.x-2.0",
-                "shasum": "a506edc2e6eecce3802184fa58d8f7960b2da130"
+                "url": "https://ftp.drupal.org/files/projects/empty_page-8.x-3.0.zip",
+                "reference": "8.x-3.0",
+                "shasum": "207a1ac3d66c5cfb4f8129e26670e30c66d4cd06"
             },
             "require": {
-                "drupal/core": "~8.0"
+                "drupal/core": "^8 || ^9"
             },
             "type": "drupal-module",
             "extra": {
-                "branch-alias": {
-                    "dev-2.x": "2.x-dev"
-                },
                 "drupal": {
-                    "version": "8.x-2.0",
-                    "datestamp": "1520245685",
+                    "version": "8.x-3.0",
+                    "datestamp": "1592930944",
                     "security-coverage": {
                         "status": "covered",
                         "message": "Covered by Drupal's security advisory policy"
@@ -4370,7 +4356,7 @@
             "description": "Allows administrator to configure entity view fallback languages.",
             "homepage": "https://www.drupal.org/project/entity_language_fallback",
             "support": {
-                "source": "https://git.drupalcode.org/project/entity_language_fallback"
+                "source": "http://cgit.drupalcode.org/entity_language_fallback"
             }
         },
         {
@@ -5148,7 +5134,7 @@
                 },
                 "drupal": {
                     "version": "8.x-5.0-beta8",
-                    "datestamp": "1562194985",
+                    "datestamp": "1545966784",
                     "security-coverage": {
                         "status": "not-covered",
                         "message": "Beta releases are not covered by Drupal security advisories."
@@ -5234,7 +5220,7 @@
             "description": "Provides configurable blocks of menu links.",
             "homepage": "https://www.drupal.org/project/menu_block",
             "support": {
-                "source": "https://git.drupalcode.org/project/menu_block"
+                "source": "http://cgit.drupalcode.org/menu_block"
             }
         },
         {
@@ -5352,8 +5338,8 @@
                     "dev-1.x": "1.x-dev"
                 },
                 "drupal": {
-                    "version": "8.x-1.2+1-dev",
-                    "datestamp": "1584210644",
+                    "version": "8.x-1.2+0-dev",
+                    "datestamp": "1576099985",
                     "security-coverage": {
                         "status": "not-covered",
                         "message": "Dev releases are not covered by Drupal security advisories."
@@ -5650,7 +5636,7 @@
             "description": "Disable link to request a new password",
             "homepage": "https://www.drupal.org/project/noreqnewpass",
             "support": {
-                "source": "https://git.drupalcode.org/project/noreqnewpass"
+                "source": "http://cgit.drupalcode.org/noreqnewpass"
             }
         },
         {
@@ -6112,9 +6098,6 @@
             },
             "type": "drupal-module",
             "extra": {
-                "branch-alias": {
-                    "dev-3.x": "3.x-dev"
-                },
                 "drupal": {
                     "version": "8.x-3.9",
                     "datestamp": "1581700341",
@@ -6708,7 +6691,7 @@
             "extra": {
                 "drupal": {
                     "version": "8.x-2.4",
-                    "datestamp": "1587686284",
+                    "datestamp": "1587686337",
                     "security-coverage": {
                         "status": "covered",
                         "message": "Covered by Drupal's security advisory policy"
@@ -6974,7 +6957,7 @@
             ],
             "homepage": "https://www.drupal.org/project/views_url_alias",
             "support": {
-                "source": "https://git.drupalcode.org/project/views_url_alias"
+                "source": "http://cgit.drupalcode.org/views_url_alias"
             }
         },
         {
@@ -7329,14 +7312,14 @@
             "authors": [
                 {
                     "name": "Nicholas Humfrey",
+                    "role": "Developer",
                     "email": "njh@aelius.com",
-                    "homepage": "http://www.aelius.com/njh/",
-                    "role": "Developer"
+                    "homepage": "http://www.aelius.com/njh/"
                 },
                 {
                     "name": "Alexey Zakhlestin",
-                    "email": "indeyets@gmail.com",
-                    "role": "Developer"
+                    "role": "Developer",
+                    "email": "indeyets@gmail.com"
                 }
             ],
             "description": "EasyRdf is a PHP library designed to make it easy to consume and produce RDF.",
@@ -7879,9 +7862,9 @@
             "authors": [
                 {
                     "name": "Phil Bennett",
+                    "role": "Developer",
                     "email": "philipobenito@gmail.com",
-                    "homepage": "http://www.philipobenito.com",
-                    "role": "Developer"
+                    "homepage": "http://www.philipobenito.com"
                 }
             ],
             "description": "A fast and intuitive dependency injection container.",
@@ -8128,119 +8111,24 @@
             "version": "1.8.2",
             "dist": {
                 "type": "tar",
-                "url": "https://registry.npmjs.org/blazy/-/blazy-1.8.2.tgz",
-                "shasum": "50dfd638baaf9003efd6eb3a836aca54184ab6da"
+                "url": "https://registry.npmjs.org/blazy/-/blazy-1.8.2.tgz"
             },
-            "type": "npm-asset-library",
-            "extra": {
-                "npm-asset-bugs": {
-                    "url": "https://github.com/dinbror/blazy/issues"
-                },
-                "npm-asset-main": "blazy.js",
-                "npm-asset-directories": {
-                    "example": "example"
-                },
-                "npm-asset-repository": {
-                    "type": "git",
-                    "url": "git://github.com/dinbror/blazy.git"
-                },
-                "npm-asset-scripts": {
-                    "test": "echo \"Error: no test specified\" && exit 1"
-                }
-            },
+            "type": "npm-asset",
             "license": [
                 "MIT"
-            ],
-            "authors": [
-                {
-                    "name": "Bjørn Klinggaard",
-                    "url": "http://dinbror.dk/blazy"
-                }
-            ],
-            "description": "A fast lightweight pure JavaScript script for lazy loading and multi-serving images, iframes, videos and more.",
-            "homepage": "https://github.com/dinbror/blazy",
-            "keywords": [
-                "blazy",
-                "blazy.js",
-                "blazyjs",
-                "iframe",
-                "image",
-                "images",
-                "lazy",
-                "lazyload",
-                "lazyloading",
-                "performance",
-                "picture",
-                "responsive",
-                "retina",
-                "srcset",
-                "unity",
-                "video"
-            ],
-            "time": "2016-10-26T04:54:24+00:00"
+            ]
         },
         {
             "name": "npm-asset/slick-carousel",
             "version": "1.8.1",
             "dist": {
                 "type": "tar",
-                "url": "https://registry.npmjs.org/slick-carousel/-/slick-carousel-1.8.1.tgz",
-                "shasum": "a4bfb29014887bb66ce528b90bd0cda262cc8f8d"
+                "url": "https://registry.npmjs.org/slick-carousel/-/slick-carousel-1.8.1.tgz"
             },
-            "type": "npm-asset-library",
-            "extra": {
-                "npm-asset-bugs": {
-                    "url": "https://github.com/kenwheeler/slick/issues"
-                },
-                "npm-asset-main": "slick/slick.js",
-                "npm-asset-directories": [],
-                "npm-asset-repository": {
-                    "type": "git",
-                    "url": "git+https://github.com/kenwheeler/slick.git"
-                }
-            },
+            "type": "npm-asset",
             "license": [
                 "MIT"
-            ],
-            "authors": [
-                {
-                    "name": "Ken Wheeler",
-                    "email": "ken_wheeler@me.com"
-                },
-                {
-                    "name": "ken wheeler",
-                    "email": "ken_wheeler@me.com",
-                    "url": "http://kenwheeler.github.io/"
-                },
-                {
-                    "name": "simon goellner",
-                    "email": "simey.me@gmail.com",
-                    "url": "http://simey.me"
-                },
-                {
-                    "name": "ahmad el-alfy",
-                    "email": "ahmadalfy@gmail.com",
-                    "url": "http://www.alfy.me"
-                },
-                {
-                    "name": "leggomuhgreggo",
-                    "email": "gwestneat@gmail.com"
-                },
-                {
-                    "name": "ashley mcknight",
-                    "email": "ash@sharpteef.net"
-                }
-            ],
-            "description": "the last carousel you'll ever need",
-            "homepage": "https://github.com/kenwheeler/slick#readme",
-            "keywords": [
-                "carousel",
-                "js",
-                "responsive",
-                "slick",
-                "slider"
-            ],
-            "time": "2017-10-03T17:51:24+00:00"
+            ]
         },
         {
             "name": "oomphinc/composer-installers-extender",
