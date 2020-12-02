@@ -4,7 +4,7 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#installing-dependencies",
         "This file is @generated automatically"
     ],
-    "content-hash": "c0d468f888c2f3d1a5003835ecd1b794",
+    "content-hash": "ad0450ca3328d338d6c1b9211fcb8c42",
     "packages": [
         {
             "name": "asm89/stack-cors",
@@ -2026,6 +2026,7 @@
                 "reflection",
                 "static"
             ],
+            "abandoned": "roave/better-reflection",
             "time": "2020-03-27T11:06:43+00:00"
         },
         {
@@ -2349,6 +2350,54 @@
             "support": {
                 "source": "https://git.drupalcode.org/project/adminimal_theme",
                 "issues": "https://www.drupal.org/project/issues/adminimal_theme"
+            }
+        },
+        {
+            "name": "drupal/ala",
+            "version": "1.5.0",
+            "source": {
+                "type": "git",
+                "url": "https://git.drupalcode.org/project/ala.git",
+                "reference": "8.x-1.5"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://ftp.drupal.org/files/projects/ala-8.x-1.5.zip",
+                "reference": "8.x-1.5",
+                "shasum": "2e7d9609f40f0e5f6bbabb1e1fa9b10be4a06bd5"
+            },
+            "require": {
+                "drupal/core": "^8"
+            },
+            "type": "drupal-module",
+            "extra": {
+                "drupal": {
+                    "version": "8.x-1.5",
+                    "datestamp": "1579251145",
+                    "security-coverage": {
+                        "status": "not-covered",
+                        "message": "Project has not opted into security advisory coverage!"
+                    }
+                }
+            },
+            "notification-url": "https://packages.drupal.org/8/downloads",
+            "license": [
+                "GPL-2.0-or-later"
+            ],
+            "authors": [
+                {
+                    "name": "iaconba",
+                    "homepage": "https://www.drupal.org/user/3314043"
+                },
+                {
+                    "name": "kushan4157",
+                    "homepage": "https://www.drupal.org/user/3619158"
+                }
+            ],
+            "description": "Provide a widget for Link field type which permits to choose class, target, icon and user role.",
+            "homepage": "https://www.drupal.org/project/ala",
+            "support": {
+                "source": "https://git.drupalcode.org/project/ala"
             }
         },
         {
@@ -2839,6 +2888,108 @@
             }
         },
         {
+            "name": "drupal/block_content_permissions",
+            "version": "1.10.0",
+            "source": {
+                "type": "git",
+                "url": "https://git.drupalcode.org/project/block_content_permissions.git",
+                "reference": "8.x-1.10"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://ftp.drupal.org/files/projects/block_content_permissions-8.x-1.10.zip",
+                "reference": "8.x-1.10",
+                "shasum": "03cfd1ff8edb05ea0f953916b23ef7b3aed82ab4"
+            },
+            "require": {
+                "drupal/core": "^8 || ^9"
+            },
+            "suggest": {
+                "drupal/block_region_permissions": "Block Region Permissions adds permissions for administering 'blocks' based on each theme's regions."
+            },
+            "type": "drupal-module",
+            "extra": {
+                "drupal": {
+                    "version": "8.x-1.10",
+                    "datestamp": "1593975004",
+                    "security-coverage": {
+                        "status": "covered",
+                        "message": "Covered by Drupal's security advisory policy"
+                    }
+                }
+            },
+            "notification-url": "https://packages.drupal.org/8/downloads",
+            "license": [
+                "GPL-2.0-or-later"
+            ],
+            "authors": [
+                {
+                    "name": "Joshua Roberson",
+                    "homepage": "https://www.drupal.org/u/joshuaroberson",
+                    "role": "Maintainer"
+                }
+            ],
+            "description": "Block Content Permissions adds permissions for administering 'block content types' and 'block content'.",
+            "homepage": "https://www.drupal.org/project/block_content_permissions",
+            "support": {
+                "source": "https://git.drupalcode.org/project/block_content_permissions",
+                "issues": "https://www.drupal.org/project/issues/block_content_permissions"
+            }
+        },
+        {
+            "name": "drupal/block_permissions",
+            "version": "1.1.0",
+            "source": {
+                "type": "git",
+                "url": "https://git.drupalcode.org/project/block_permissions.git",
+                "reference": "8.x-1.1"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://ftp.drupal.org/files/projects/block_permissions-8.x-1.1.zip",
+                "reference": "8.x-1.1",
+                "shasum": "734c00f78dfb674294b2d35bc87fcaed7ecf2042"
+            },
+            "require": {
+                "drupal/core": "^8 || ^9"
+            },
+            "type": "drupal-module",
+            "extra": {
+                "drupal": {
+                    "version": "8.x-1.1",
+                    "datestamp": "1592480089",
+                    "security-coverage": {
+                        "status": "covered",
+                        "message": "Covered by Drupal's security advisory policy"
+                    }
+                }
+            },
+            "notification-url": "https://packages.drupal.org/8/downloads",
+            "license": [
+                "GPL-2.0+"
+            ],
+            "authors": [
+                {
+                    "name": "Steven Buteneers",
+                    "homepage": "https://www.drupal.org/user/3301055"
+                },
+                {
+                    "name": "jefuri",
+                    "homepage": "https://www.drupal.org/user/2733365"
+                },
+                {
+                    "name": "michielnugter",
+                    "homepage": "https://www.drupal.org/user/1023784"
+                }
+            ],
+            "description": "Adds specific permissions for administering blocks.",
+            "homepage": "https://www.drupal.org/project/block_permissions",
+            "support": {
+                "source": "http://cgit.drupalcode.org/block_permissions",
+                "issues": "https://www.drupal.org/project/issues/block_permissions?version=8.x"
+            }
+        },
+        {
             "name": "drupal/cer",
             "version": "4.0.0-alpha2",
             "source": {
@@ -2895,61 +3046,6 @@
             "homepage": "https://www.drupal.org/project/cer",
             "support": {
                 "source": "https://git.drupalcode.org/project/cer"
-            }
-        },
-        {
-            "name": "drupal/checklistapi",
-            "version": "1.11.0",
-            "source": {
-                "type": "git",
-                "url": "https://git.drupalcode.org/project/checklistapi.git",
-                "reference": "8.x-1.11"
-            },
-            "dist": {
-                "type": "zip",
-                "url": "https://ftp.drupal.org/files/projects/checklistapi-8.x-1.11.zip",
-                "reference": "8.x-1.11",
-                "shasum": "78fcf8ff6edd02f2cdfc907981db119dfca795c2"
-            },
-            "require": {
-                "drupal/core": "^8 || ^9",
-                "php": ">=5.6.0"
-            },
-            "type": "drupal-module",
-            "extra": {
-                "drupal": {
-                    "version": "8.x-1.11",
-                    "datestamp": "1586540246",
-                    "security-coverage": {
-                        "status": "covered",
-                        "message": "Covered by Drupal's security advisory policy"
-                    }
-                },
-                "branch-alias": {
-                    "dev-master": "1.x-dev"
-                },
-                "drush": {
-                    "services": {
-                        "drush.services.yml": "^10"
-                    }
-                }
-            },
-            "notification-url": "https://packages.drupal.org/8/downloads",
-            "license": [
-                "GPL-2.0-or-later"
-            ],
-            "authors": [
-                {
-                    "name": "Travis Carden",
-                    "homepage": "https://www.drupal.org/user/236758",
-                    "email": "travis.carden@gmail.com"
-                }
-            ],
-            "description": "Provides an API for creating fillable, persistent checklists.",
-            "homepage": "http://drupal.org/project/checklistapi",
-            "support": {
-                "source": "https://git.drupalcode.org/project/checklistapi",
-                "issues": "https://www.drupal.org/project/issues/checklistapi"
             }
         },
         {
@@ -5012,6 +5108,54 @@
             "time": "2020-03-14T03:32:57+00:00"
         },
         {
+            "name": "drupal/form_placeholder",
+            "version": "1.0.0",
+            "source": {
+                "type": "git",
+                "url": "https://git.drupalcode.org/project/form_placeholder.git",
+                "reference": "8.x-1.0"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://ftp.drupal.org/files/projects/form_placeholder-8.x-1.0.zip",
+                "reference": "8.x-1.0",
+                "shasum": "0ddd717726bb0495dbe0321406e7ea587bb11033"
+            },
+            "require": {
+                "drupal/core": "~8.0"
+            },
+            "type": "drupal-module",
+            "extra": {
+                "drupal": {
+                    "version": "8.x-1.0",
+                    "datestamp": "1519312384",
+                    "security-coverage": {
+                        "status": "covered",
+                        "message": "Covered by Drupal's security advisory policy"
+                    }
+                }
+            },
+            "notification-url": "https://packages.drupal.org/8/downloads",
+            "license": [
+                "GPL-2.0+"
+            ],
+            "authors": [
+                {
+                    "name": "pifagor",
+                    "homepage": "https://www.drupal.org/user/2375692"
+                },
+                {
+                    "name": "rafenden",
+                    "homepage": "https://www.drupal.org/user/1576260"
+                }
+            ],
+            "description": "Use field labels as placeholders for all elements in chosen form.",
+            "homepage": "https://drupal.org/project/form_placeholder",
+            "support": {
+                "source": "https://git.drupalcode.org/project/form_placeholder"
+            }
+        },
+        {
             "name": "drupal/google_analytics",
             "version": "3.1.0",
             "source": {
@@ -6393,55 +6537,6 @@
             }
         },
         {
-            "name": "drupal/production_checklist",
-            "version": "1.0.0-alpha5",
-            "source": {
-                "type": "git",
-                "url": "https://git.drupalcode.org/project/production_checklist.git",
-                "reference": "8.x-1.0-alpha5"
-            },
-            "dist": {
-                "type": "zip",
-                "url": "https://ftp.drupal.org/files/projects/production_checklist-8.x-1.0-alpha5.zip",
-                "reference": "8.x-1.0-alpha5",
-                "shasum": "6da360d2ab2c988d3fe35386e761a0fc79869302"
-            },
-            "require": {
-                "drupal/checklistapi": "~1.7",
-                "drupal/core": "^8.5.0 || ^9"
-            },
-            "type": "drupal-module",
-            "extra": {
-                "drupal": {
-                    "version": "8.x-1.0-alpha5",
-                    "datestamp": "1587591088",
-                    "security-coverage": {
-                        "status": "not-covered",
-                        "message": "Project has not opted into security advisory coverage!"
-                    }
-                }
-            },
-            "notification-url": "https://packages.drupal.org/8/downloads",
-            "license": [
-                "GPL-2.0+"
-            ],
-            "authors": [
-                {
-                    "name": "colorfield",
-                    "homepage": "https://www.drupal.org/user/2295486"
-                }
-            ],
-            "description": "A checklist for site launch and maintenance based on the active configuration.",
-            "homepage": "https://www.drupal.org/project/production_checklist",
-            "keywords": [
-                "Drupal"
-            ],
-            "support": {
-                "source": "http://cgit.drupalcode.org/production_checklist",
-                "issues": "https://www.drupal.org/project/issues/production_checklist"
-            }
-        },
-        {
             "name": "drupal/redirect",
             "version": "1.6.0",
             "source": {
@@ -6722,62 +6817,6 @@
                 "source": "http://git.drupal.org/project/search_api_solr.git",
                 "issues": "https://www.drupal.org/project/issues/search_api_solr",
                 "irc": "https://drupalchat.me/channel/search"
-            }
-        },
-        {
-            "name": "drupal/security_review",
-            "version": "1.0.0-alpha1",
-            "source": {
-                "type": "git",
-                "url": "https://git.drupalcode.org/project/security_review.git",
-                "reference": "8.x-1.0-alpha1"
-            },
-            "dist": {
-                "type": "zip",
-                "url": "https://ftp.drupal.org/files/projects/security_review-8.x-1.0-alpha1.zip",
-                "reference": "8.x-1.0-alpha1",
-                "shasum": "450ceaa273b06a0285ffaa10aba0dac7846f24c7"
-            },
-            "require": {
-                "drupal/core": "~8.0"
-            },
-            "type": "drupal-module",
-            "extra": {
-                "drupal": {
-                    "version": "8.x-1.0-alpha1",
-                    "datestamp": "1587157573",
-                    "security-coverage": {
-                        "status": "not-covered",
-                        "message": "Alpha releases are not covered by Drupal security advisories."
-                    }
-                }
-            },
-            "notification-url": "https://packages.drupal.org/8/downloads",
-            "license": [
-                "GPL-2.0-or-later"
-            ],
-            "authors": [
-                {
-                    "name": "banviktor",
-                    "homepage": "https://www.drupal.org/user/3176333"
-                },
-                {
-                    "name": "coltrane",
-                    "homepage": "https://www.drupal.org/user/91990"
-                },
-                {
-                    "name": "dsnopek",
-                    "homepage": "https://www.drupal.org/user/266527"
-                },
-                {
-                    "name": "greggles",
-                    "homepage": "https://www.drupal.org/user/36762"
-                }
-            ],
-            "description": "Site security and configuration review module.",
-            "homepage": "https://www.drupal.org/project/security_review",
-            "support": {
-                "source": "https://git.drupalcode.org/project/security_review"
             }
         },
         {
@@ -13839,6 +13878,7 @@
             "keywords": [
                 "tokenizer"
             ],
+            "abandoned": true,
             "time": "2019-09-17T06:23:10+00:00"
         },
         {
@@ -14997,8 +15037,6 @@
         "drupal/node_edit_protection": 15,
         "drupal/optional_end_date": 10,
         "drupal/paragraphs": 20,
-        "drupal/production_checklist": 15,
-        "drupal/security_review": 15,
         "drupal/select2_all": 15,
         "drupal/selective_better_exposed_filters": 10,
         "drupal/smtp": 5,
