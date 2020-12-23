@@ -1,0 +1,22 @@
+diff --git a/src/EasyBreadcrumbBuilder.php b/src/EasyBreadcrumbBuilder.php
+index 8116d74..bbbe268 100755
+--- a/src/EasyBreadcrumbBuilder.php
++++ b/src/EasyBreadcrumbBuilder.php
+@@ -37,6 +37,7 @@ use Symfony\Component\Routing\Matcher\RequestMatcherInterface;
+ use Symfony\Component\Routing\Exception\RouteNotFoundException;
+ use Drupal\Core\Entity\EntityTypeManagerInterface;
+ use Drupal\Core\Entity\EntityRepositoryInterface;
++use Drupal\Core\Render\Markup;
+ 
+ /**
+  * Primary implementation for the Easy Breadcrumb builder.
+@@ -425,6 +426,9 @@ class EasyBreadcrumbBuilder implements BreadcrumbBuilderInterface {
+             }
+           }
+ 
++          // Convert to markup object to avoid double escaped titles.
++          $title = Markup::create($title);
++
+           // Add a linked breadcrumb unless it's the current page.
+           if ($i == 0
+               && $this->config->get(EasyBreadcrumbConstants::INCLUDE_TITLE_SEGMENT)
