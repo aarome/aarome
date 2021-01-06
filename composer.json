@@ -106,8 +106,6 @@
         "drupal/view_unpublished": "^1.0@alpha",
         "drupal/views_bulk_operations": "^3.9",
         "drupal/views_infinite_scroll": "^1.7",
-        "drupal/views_url_alias": "^1.0",
-        "drupal/views_url_path_arguments": "^1.1",
         "drupal/webform": "^5.0@RC",
         "drush/drush": "^9.0.0",
         "npm-asset/blazy": "^1.8",

@@ -1,126 +1,144 @@
-# Composer template for Drupal projects
 
-[![Build Status](https://travis-ci.org/jasloe/drupal-project.svg?branch=8.x)](https://travis-ci.org/jasloe/drupal-project)
+CONTENTS OF THIS FILE
+---------------------
 
-This project template provides a starter kit for managing Drupal site
-dependencies with [Composer](https://getcomposer.org/).
+ * About Drupal
+ * Configuration and features
+ * Installation profiles
+ * Appearance
+ * Developing for Drupal
+ * More information
 
-This fork is a modified version of the "official" drupal-composer repository. It includes a handful of conveniences and customizations for use in both development and production.
 
-These include:
+ABOUT DRUPAL
+------------
 
-- require oomphinc/composer-installers-extender": "^1.1"
-- adding library and npm-asset installer types
-- including custom paths for commonly used third-party libraries
-- baked in support for DrupalVM
-- custom vm directory for use by DrupalVM
-- post-install composer scripts (create library directory, build resources for theme suggestions)
-- Travis CI build tests, etc.
-- post-install cmds
-- will inevitably include core patches
-  ....
+Drupal is an open source content management platform supporting a variety of
+websites ranging from personal weblogs to large community-driven websites. For
+more information, see the Drupal website at https://www.drupal.org, and join
+the Drupal community at https://www.drupal.org/community.
 
-Usage notes below are excerpted from the drupal-composer repository.
+Legal information about Drupal:
+ * Know your rights when using Drupal:
+   See LICENSE.txt in the "core" directory.
+ * Learn about the Drupal trademark and logo policy:
+   https://www.drupal.com/trademark
 
-## Usage
 
-```
-composer create-project jasloe/drupal-project:8.x-dev some-dir
-```
+CONFIGURATION AND FEATURES
+--------------------------
 
-The `composer create-project` command passes ownership of all files to the
-project that is created. You should create a new git repository, and commit
-all files not excluded by the .gitignore file.
+Drupal core (what you get when you download and extract a drupal-x.y.tar.gz or
+drupal-x.y.zip file from https://www.drupal.org/project/drupal) has what you
+need to get started with your website. It includes several modules (extensions
+that add functionality) for common website features, such as managing content,
+user accounts, image uploading, and search. Core comes with many options that
+allow site-specific configuration. In addition to the core modules, there are
+thousands of contributed modules (for functionality not included with Drupal
+core) available for download.
 
-## What does the template do?
+More about configuration:
+ * Install, update, and maintain Drupal:
+   See INSTALL.txt and UPDATE.txt in the "core" directory.
+ * Learn about how to use Drupal to create your site:
+   https://www.drupal.org/documentation
+ * Follow best practices:
+   https://www.drupal.org/best-practices
+ * Download contributed modules to /modules to extend Drupal's functionality:
+   https://www.drupal.org/project/modules
+ * See also: "Developing for Drupal" for writing your own modules, below.
 
-When installing the given `composer.json` some tasks are taken care of:
 
-- Drupal will be installed in the `web`-directory.
-- Autoloader is implemented to use the generated composer autoloader in `vendor/autoload.php`,
-  instead of the one provided by Drupal (`web/vendor/autoload.php`).
-- Modules (packages of type `drupal-module`) will be placed in `web/modules/contrib/`
-- Theme (packages of type `drupal-theme`) will be placed in `web/themes/contrib/`
-- Profiles (packages of type `drupal-profile`) will be placed in `web/profiles/contrib/`
-- Creates default writable versions of `settings.php` and `services.yml`.
-- Creates `web/sites/default/files`-directory.
-- Latest version of drush is installed locally for use at `vendor/bin/drush`.
-- Latest version of DrupalConsole is installed locally for use at `vendor/bin/drupal`.
-- Creates environment variables based on your .env file. See [.env.example](.env.example).
+INSTALLATION PROFILES
+---------------------
 
-## Updating Drupal Core
+Installation profiles define additional steps (such as enabling modules,
+defining content types, etc.) that run after the base installation provided
+by core when Drupal is first installed. There are two basic installation
+profiles provided with Drupal core.
 
-This project will attempt to keep all of your Drupal Core files up-to-date; the
-project [drupal/core-composer-scaffold](https://github.com/drupal/core-composer-scaffold)
-is used to ensure that your scaffold files are updated every time drupal/core is
-updated. If you customize any of the "scaffolding" files (commonly .htaccess),
-you may need to merge conflicts if any of your modified files are updated in a
-new release of Drupal core.
+Installation profiles from the Drupal community modify the installation process
+to provide a website for a specific use case, such as a CMS for media
+publishers, a web-based project tracking tool, or a full-fledged CRM for
+non-profit organizations raising money and accepting donations. They can be
+distributed as bare installation profiles or as "distributions". Distributions
+include Drupal core, the installation profile, and all other required
+extensions, such as contributed and custom modules, themes, and third-party
+libraries. Bare installation profiles require you to download Drupal Core and
+the required extensions separately; place the downloaded profile in the
+/profiles directory before you start the installation process.
 
-Follow the steps below to update your core files.
+More about installation profiles and distributions:
+ * Read about the difference between installation profiles and distributions:
+   https://www.drupal.org/docs/8/distributions/creating-distributions
+ * Download contributed installation profiles and distributions:
+   https://www.drupal.org/project/distributions
+ * Develop your own installation profile or distribution:
+   https://www.drupal.org/docs/8/creating-distributions
 
-1. Run `composer update drupal/core drupal/core-dev --with-dependencies` to update Drupal Core and its dependencies.
-2. Run `git diff` to determine if any of the scaffolding files have changed.
-   Review the files for any changes and restore any customizations to
-   `.htaccess` or `robots.txt`.
-3. Commit everything all together in a single commit, so `web` will remain in
-   sync with the `core` when checking out branches or running `git bisect`.
-4. In the event that there are non-trivial conflicts in step 2, you may wish
-   to perform these steps on a branch, and use `git merge` to combine the
-   updated core files with your customized files. This facilitates the use
-   of a [three-way merge tool such as kdiff3](http://www.gitshah.com/2010/12/how-to-setup-kdiff-as-diff-tool-for-git.html). This setup is not necessary if your changes are simple;
-   keeping all of your modifications at the beginning or end of the file is a
-   good strategy to keep merges easy.
 
-## Generate composer.json from existing project
+APPEARANCE
+----------
 
-With using [the "Composer Generate" drush extension](https://www.drupal.org/project/composer_generate)
-you can now generate a basic `composer.json` file from an existing project. Note
-that the generated `composer.json` might differ from this project's file.
+In Drupal, the appearance of your site is set by the theme (themes are
+extensions that set fonts, colors, and layout). Drupal core comes with several
+themes. More themes are available for download, and you can also create your own
+custom theme.
 
-## FAQ
+More about themes:
+ * Download contributed themes to /themes to modify Drupal's appearance:
+   https://www.drupal.org/project/themes
+ * Develop your own theme:
+   https://www.drupal.org/docs/8/theming
 
-### Should I commit the contrib modules I download?
 
-Composer recommends **no**. They provide [argumentation against but also
-workrounds if a project decides to do it anyway](https://getcomposer.org/doc/faqs/should-i-commit-the-dependencies-in-my-vendor-directory.md).
+DEVELOPING FOR DRUPAL
+---------------------
 
-### Should I commit the scaffolding files?
+Drupal contains an extensive API that allows you to add to and modify the
+functionality of your site. The API consists of "hooks", which allow modules to
+react to system events and customize Drupal's behavior, and functions that
+standardize common operations such as database queries and form generation. The
+flexible hook architecture means that you should never need to directly modify
+the files that come with Drupal core to achieve the functionality you want;
+instead, functionality modifications take the form of modules.
 
-The [Drupal Composer Scaffold](https://github.com/drupal/core-composer-scaffold) plugin can download the scaffold files (like
-index.php, update.php, …) to the web/ directory of your project. If you have not customized those files you could choose
-to not check them into your version control system (e.g. git). If that is the case for your project it might be
-convenient to automatically run the drupal-scaffold plugin after every install or update of your project. You can
-achieve that by registering `@composer drupal:scaffold` as post-install and post-update command in your composer.json:
+When you need new functionality for your Drupal site, search for existing
+contributed modules. If you find a module that matches except for a bug or an
+additional needed feature, change the module and contribute your improvements
+back to the project in the form of a "patch". Create new custom modules only
+when nothing existing comes close to what you need.
 
-```json
-"scripts": {
-    "post-install-cmd": [
-        "@composer drupal:scaffold",
-        "..."
-    ],
-    "post-update-cmd": [
-        "@composer drupal:scaffold",
-        "..."
-    ]
-},
-```
+More about developing:
+ * Search for existing contributed modules:
+   https://www.drupal.org/project/modules
+ * Contribute a patch:
+   https://www.drupal.org/patch/submit
+ * Develop your own module:
+   https://www.drupal.org/developing/modules
+ * Follow programming best practices:
+   https://www.drupal.org/developing/best-practices
+ * Refer to the API documentation:
+   https://api.drupal.org/api/drupal/8
+ * Learn from documented Drupal API examples:
+   https://www.drupal.org/project/examples
 
-### How can I apply patches to downloaded modules?
 
-If you need to apply patches (depending on the project being modified, a pull
-request is often a better solution), you can do so with the
-[composer-patches](https://github.com/cweagans/composer-patches) plugin.
+MORE INFORMATION
+----------------
 
-To add a patch to drupal module foobar insert the patches section in the extra
-section of composer.json:
+ * See the Drupal.org online documentation:
+   https://www.drupal.org/documentation
 
-```json
-"extra": {
-    "patches": {
-        "drupal/foobar": {
-            "Patch description": "URL or local path to patch"
-        }
-    }
-}
-```
+ * For a list of security announcements, see the "Security advisories" page at
+   https://www.drupal.org/security (available as an RSS feed). This page also
+   describes how to subscribe to these announcements via email.
+
+ * For information about the Drupal security process, or to find out how to
+   report a potential security issue to the Drupal security team, see the
+   "Security team" page at https://www.drupal.org/security-team
+
+ * For information about the wide range of available support options, visit
+   https://www.drupal.org and click on Community and Support in the top or
+   bottom navigation.
+
