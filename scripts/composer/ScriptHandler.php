@@ -9,10 +9,6 @@ namespace DrupalProject\composer;
 
 use Composer\Script\Event;
 use Composer\Semver\Comparator;
-<<<<<<< HEAD
-=======
-use Drupal\Core\Site\Settings;
->>>>>>> fdb971ab538c971ba031689cefac0d056ed92f7d
 use DrupalFinder\DrupalFinder;
 use Symfony\Component\Filesystem\Filesystem;
 use Webmozart\PathUtil\Path;
@@ -40,22 +36,15 @@ class ScriptHandler {
     }
 
     // Prepare the settings file for installation
-    if (!$fs->exists($drupalRoot . '/sites/default/settings.php') && $fs->exists($drupalRoot . '/sites/default/default.settings.php')) {
+    if (!$fs->exists($drupalRoot . '/sites/default/settings.php') and $fs->exists($drupalRoot . '/sites/default/default.settings.php')) {
       $fs->copy($drupalRoot . '/sites/default/default.settings.php', $drupalRoot . '/sites/default/settings.php');
       require_once $drupalRoot . '/core/includes/bootstrap.inc';
       require_once $drupalRoot . '/core/includes/install.inc';
-<<<<<<< HEAD
       $settings['config_directories'] = [
         CONFIG_SYNC_DIRECTORY => (object) [
           'value' => Path::makeRelative($drupalFinder->getComposerRoot() . '/config/sync', $drupalRoot),
           'required' => TRUE,
         ],
-=======
-      new Settings([]);
-      $settings['settings']['config_sync_directory'] = (object) [
-        'value' => Path::makeRelative($drupalFinder->getComposerRoot() . '/config/sync', $drupalRoot),
-        'required' => TRUE,
->>>>>>> fdb971ab538c971ba031689cefac0d056ed92f7d
       ];
       drupal_rewrite_settings($settings, $drupalRoot . '/sites/default/settings.php');
       $fs->chmod($drupalRoot . '/sites/default/settings.php', 0666);
@@ -69,17 +58,6 @@ class ScriptHandler {
       umask($oldmask);
       $event->getIO()->write("Created a sites/default/files directory with chmod 0777");
     }
-<<<<<<< HEAD
-=======
-
-    // Create the libraries directory with chmod 0744
-    if (!$fs->exists($drupalRoot . '/libraries')) {
-      $oldmask = umask(0);
-      $fs->mkdir($drupalRoot . '/libraries', 0744);
-      umask($oldmask);
-      $event->getIO()->write("Created a libraries directory with chmod 0744");
-    }
->>>>>>> fdb971ab538c971ba031689cefac0d056ed92f7d
   }
 
   /**
@@ -120,7 +98,3 @@ class ScriptHandler {
   }
 
 }
-<<<<<<< HEAD
-
-=======
->>>>>>> fdb971ab538c971ba031689cefac0d056ed92f7d
