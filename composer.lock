@@ -4,7 +4,7 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#installing-dependencies",
         "This file is @generated automatically"
     ],
-    "content-hash": "5fe4b3df886c3cfca7ebb2f15f01f8ee",
+    "content-hash": "62abe7f5bd1fd6d198ccba733891af3b",
     "packages": [
         {
             "name": "asm89/stack-cors",
@@ -1271,6 +1271,7 @@
             "keywords": [
                 "git"
             ],
+            "abandoned": "symplify/git-wrapper",
             "time": "2016-04-19T16:12:33+00:00"
         },
         {
@@ -2537,6 +2538,14 @@
                     "homepage": "https://www.drupal.org/user/216396"
                 },
                 {
+                    "name": "colan",
+                    "homepage": "https://www.drupal.org/user/58704"
+                },
+                {
+                    "name": "diqidoq",
+                    "homepage": "https://www.drupal.org/user/1001934"
+                },
+                {
                     "name": "purushotam.rai",
                     "homepage": "https://www.drupal.org/user/3193859"
                 }
@@ -2544,7 +2553,7 @@
             "description": "Allows hiding of entity label fields and automatic label creation.",
             "homepage": "https://www.drupal.org/project/auto_entitylabel",
             "support": {
-                "source": "http://cgit.drupalcode.org/auto_entitylabel",
+                "source": "https://git.drupalcode.org/project/auto_entitylabel",
                 "issues": "https://www.drupal.org/project/issues/auto_entitylabel"
             }
         },
@@ -2617,32 +2626,26 @@
         },
         {
             "name": "drupal/better_exposed_filters",
-            "version": "3.0.0-alpha4",
+            "version": "dev-4.x",
             "source": {
                 "type": "git",
                 "url": "https://git.drupalcode.org/project/better_exposed_filters.git",
-                "reference": "8.x-3.0-alpha4"
-            },
-            "dist": {
-                "type": "zip",
-                "url": "https://ftp.drupal.org/files/projects/better_exposed_filters-8.x-3.0-alpha4.zip",
-                "reference": "8.x-3.0-alpha4",
-                "shasum": "f42013d1fc36d45212d582e18afc59bc2c364719"
+                "reference": "bb449aa3cd649427f9330173291e4a96c2b4219d"
             },
             "require": {
-                "drupal/core": "*"
+                "drupal/core": "^8"
             },
             "type": "drupal-module",
             "extra": {
                 "branch-alias": {
-                    "dev-3.x": "3.x-dev"
+                    "dev-4.x": "4.x-dev"
                 },
                 "drupal": {
-                    "version": "8.x-3.0-alpha4",
-                    "datestamp": "1540513084",
+                    "version": "8.x-4.0-beta2+20-dev",
+                    "datestamp": "1613666935",
                     "security-coverage": {
                         "status": "not-covered",
-                        "message": "Alpha releases are not covered by Drupal security advisories."
+                        "message": "Dev releases are not covered by Drupal security advisories."
                     }
                 }
             },
@@ -2651,6 +2654,14 @@
                 "GPL-2.0-or-later"
             ],
             "authors": [
+                {
+                    "name": "Mike Keran",
+                    "homepage": "https://www.drupal.org/u/mikeker"
+                },
+                {
+                    "name": "Martin Keereman",
+                    "homepage": "https://www.drupal.org/u/etroid"
+                },
                 {
                     "name": "chr.fritsch",
                     "homepage": "https://www.drupal.org/user/2103716"
@@ -2664,19 +2675,17 @@
                     "homepage": "https://www.drupal.org/user/192273"
                 },
                 {
-                    "name": "mortona2k",
-                    "homepage": "https://www.drupal.org/user/1029484"
-                },
-                {
                     "name": "rlhawk",
                     "homepage": "https://www.drupal.org/user/352283"
                 }
             ],
-            "description": "Provides advanced options (such as links, checkboxes, or jQueryUI widgets) for exposed Views elements.",
+            "description": "Replaces the Views default single- or multi-select boxes with more advanced options.",
             "homepage": "https://www.drupal.org/project/better_exposed_filters",
             "support": {
-                "source": "http://cgit.drupalcode.org/better_exposed_filters"
-            }
+                "source": "https://git.drupalcode.org/project/better_exposed_filters",
+                "issues": "https://www.drupal.org/project/issues/better_exposed_filters"
+            },
+            "time": "2021-02-18T16:48:30+00:00"
         },
         {
             "name": "drupal/blazy",
@@ -2999,7 +3008,7 @@
             "description": "Allows user to create two-way references between entities.",
             "homepage": "https://www.drupal.org/project/cer",
             "support": {
-                "source": "http://cgit.drupalcode.org/cer"
+                "source": "https://git.drupalcode.org/project/cer"
             }
         },
         {
@@ -3422,7 +3431,7 @@
             "description": "Tools for managing config with git",
             "homepage": "https://drupal.org/project/config_tools",
             "support": {
-                "source": "http://cgit.drupalcode.org/config_tools"
+                "source": "https://git.drupalcode.org/project/config_tools"
             }
         },
         {
@@ -4061,6 +4070,10 @@
                     "homepage": "https://www.drupal.org/node/3236/committers"
                 },
                 {
+                    "name": "pcambra",
+                    "homepage": "https://www.drupal.org/user/122101"
+                },
+                {
                     "name": "salvis",
                     "homepage": "https://www.drupal.org/user/82964"
                 },
@@ -4489,10 +4502,13 @@
                 "shasum": "8feb9b3e057596d43bca073737c43bae159340d4"
             },
             "require": {
-                "drupal/core": "^8"
+                "drupal/core": "*"
             },
             "type": "drupal-module",
             "extra": {
+                "branch-alias": {
+                    "dev-1.x": "1.x-dev"
+                },
                 "drupal": {
                     "version": "8.x-1.3",
                     "datestamp": "1539000480",
@@ -5475,7 +5491,7 @@
                 },
                 "drupal": {
                     "version": "8.x-5.0-beta8",
-                    "datestamp": "1545966784",
+                    "datestamp": "1562194985",
                     "security-coverage": {
                         "status": "not-covered",
                         "message": "Beta releases are not covered by Drupal security advisories."
@@ -6556,12 +6572,20 @@
                     "homepage": "https://www.drupal.org/u/jansete"
                 },
                 {
+                    "name": "cmlara",
+                    "homepage": "https://www.drupal.org/user/1790054"
+                },
+                {
                     "name": "jansete",
                     "homepage": "https://www.drupal.org/user/1358146"
                 },
                 {
                     "name": "naveenvalecha",
                     "homepage": "https://www.drupal.org/user/2665733"
+                },
+                {
+                    "name": "ram4nd",
+                    "homepage": "https://www.drupal.org/user/601534"
                 }
             ],
             "description": "Adds an Amazon Simple Storage Service-based remote file system to Drupal.",
@@ -6850,33 +6874,30 @@
         },
         {
             "name": "drupal/selective_better_exposed_filters",
-            "version": "1.0.0-beta2",
+            "version": "2.0.0-beta6",
             "source": {
                 "type": "git",
                 "url": "https://git.drupalcode.org/project/selective_better_exposed_filters.git",
-                "reference": "8.x-1.0-beta2"
+                "reference": "8.x-2.0-beta6"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://ftp.drupal.org/files/projects/selective_better_exposed_filters-8.x-1.0-beta2.zip",
-                "reference": "8.x-1.0-beta2",
-                "shasum": "7e2d437a88de42988288dcda5a8a3807f66c5b55"
+                "url": "https://ftp.drupal.org/files/projects/selective_better_exposed_filters-8.x-2.0-beta6.zip",
+                "reference": "8.x-2.0-beta6",
+                "shasum": "66e5606a40a88d57fa017e786a74de6fed190989"
             },
             "require": {
-                "drupal/better_exposed_filters": "^3.0",
-                "drupal/core": "~8.0"
+                "drupal/better_exposed_filters": "^4.0 || ^5.0",
+                "drupal/core": "^8 || ^9"
             },
             "type": "drupal-module",
             "extra": {
-                "branch-alias": {
-                    "dev-1.x": "1.x-dev"
-                },
                 "drupal": {
-                    "version": "8.x-1.0-beta2",
-                    "datestamp": "1565365384",
+                    "version": "8.x-2.0-beta6",
+                    "datestamp": "1595929214",
                     "security-coverage": {
                         "status": "not-covered",
-                        "message": "Project has not opted into security advisory coverage!"
+                        "message": "Beta releases are not covered by Drupal security advisories."
                     }
                 }
             },
@@ -14795,6 +14816,7 @@
     "stability-flags": {
         "drupal/address": 20,
         "drupal/auto_entitylabel": 10,
+        "drupal/better_exposed_filters": 20,
         "drupal/cer": 15,
         "drupal/config_tools": 15,
         "drupal/context": 20,
